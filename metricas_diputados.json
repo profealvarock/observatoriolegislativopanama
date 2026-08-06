@@ -32,7 +32,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -51,7 +51,7 @@
       "asistencia_pleno": 3.0,
       "asistencia_comisiones": 1.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.7,
       "comisiones": [
@@ -109,7 +109,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 3.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.6,
       "comisiones": [
@@ -148,7 +148,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -187,7 +187,7 @@
       "asistencia_pleno": 4.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.8,
       "comisiones": [
@@ -265,7 +265,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 3.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.6,
       "comisiones": [
@@ -381,7 +381,7 @@
       "asistencia_pleno": 3.0,
       "asistencia_comisiones": 3.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.1,
       "comisiones": [
@@ -419,7 +419,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -516,7 +516,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -554,7 +554,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -592,7 +592,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -611,7 +611,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 1.0,
       "calificacion": 4.0,
       "comisiones": [
@@ -630,7 +630,7 @@
       "asistencia_pleno": 3.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 1.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.3,
       "comisiones": [
@@ -668,7 +668,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -706,7 +706,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -763,7 +763,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -782,7 +782,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 3.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.6,
       "comisiones": [
@@ -897,7 +897,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -1030,7 +1030,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 3.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.6,
       "comisiones": [
@@ -1049,7 +1049,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -1107,7 +1107,7 @@
       "asistencia_pleno": 4.0,
       "asistencia_comisiones": 2.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.2,
       "comisiones": [
@@ -1145,7 +1145,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -1278,7 +1278,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -1297,7 +1297,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
@@ -1316,7 +1316,7 @@
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
-      "declaracion_intereses": null,
+      "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
