@@ -1,12 +1,12 @@
 {
-  "fecha_extraccion": "20260814_100543",
+  "fecha_extraccion": "20260815_092853",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
-  "total_proyectos": 844,
+  "total_proyectos": 845,
   "total_leyes": 103,
   "total_diputados": 71,
   "etapas": {
-    "Preliminar": 115,
+    "Preliminar": 116,
     "Prohijado": 11,
     "Primer Debate": 164,
     "Retirado por proponente": 41,
@@ -42,7 +42,7 @@
     "2026-03": 49,
     "2026-04": 24,
     "2026-07": 104,
-    "2026-08": 33
+    "2026-08": 34
   },
   "diputados": [
     {
@@ -2024,7 +2024,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Ezequiel Cedeño",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1j-BLrnzwbewFubNVYPQmsx7XYPiQX_Wo",
       "perfil": "https://espaciocivico.org/diputados/patsy-lee-renteria",
       "slug": "patsy-lee-renteria",
       "proyectos": 17,
@@ -2171,7 +2171,7 @@
       "circuito": "8-4",
       "provincia": "Panamá",
       "suplente": "Herminia Thompson",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1ikvRFnKl6U2bMNySKm5amHNDKYppcskS",
       "perfil": "https://espaciocivico.org/diputados/roberto-zuniga",
       "slug": "roberto-zuniga",
       "proyectos": 17,
@@ -2331,7 +2331,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "proyectos": 17,
@@ -4003,7 +4003,7 @@
       "circuito": "9-1",
       "provincia": "Veraguas",
       "suplente": "Sara Itzela Gómez Castillo",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1hcMWMaf8IEKqoOgsfK81PBJDFKmT3BZl",
       "perfil": "https://espaciocivico.org/diputados/miguel-angel-campos",
       "slug": "miguel-angel-campos",
       "proyectos": 10,
@@ -4112,7 +4112,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Edilberto Guerrero",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1srtYX5JwXU2jT8wpfL8pJo8V0ChK0JIT",
       "perfil": "https://espaciocivico.org/diputados/paulette-thomas",
       "slug": "paulette-thomas",
       "proyectos": 10,
@@ -4217,6 +4217,115 @@
       "calificacion": 5.0,
       "comisiones": [
         "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🎓 Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 1
+    },
+    {
+      "nombre": "Raúl Pineda",
+      "partido": "Partido Revolucionario Democrático",
+      "circuito": "8-2",
+      "provincia": "Panamá",
+      "suplente": "Joana Cedeño",
+      "foto": "https://espaciocivico.org/api/drive-image/1NUJpKCIyY7uNj23WAfPSnnuvcuYySFVY",
+      "perfil": "https://espaciocivico.org/diputados/raul-pineda",
+      "slug": "raul-pineda",
+      "proyectos": 10,
+      "leyes": 2,
+      "co_patrocinios": 5,
+      "etapas": {
+        "Preliminar": 4,
+        "Primer Debate": 1,
+        "Archivado": 1,
+        "Ley": 2,
+        "Segundo Debate": 2
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "8051",
+          "titulo": "QUE ADOPTA MEDIDAS PARA LA PREVENCION Y CONTROL DE LA LUDOPATIA EN PANAMA",
+          "fecha": "25-08-2025"
+        },
+        {
+          "ficha": "8020",
+          "titulo": "QUE ESTABLECE LA IDENTIFICACION OBLIGATORIA DEL ORIGEN Y LA DIFERENCIACION DE PRODUCTOS ALIMENTICIOS ORIGINALES, SUCEDANEOS E IMITACIONES EN PANAMA",
+          "fecha": "18-08-2025"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8538",
+          "titulo": "QUE MODIFICA LA LEY 22 DE 29 DE JULIO DE 1991 MODERNIZA EL FONDO DE AHORRO HABITACIONAL FONDHABI CREA EL PROGRAMA MI PRIMERA VIVIENDA Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "11-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8508",
+          "titulo": "QUE MODIFICA EL ARTÍCULO 135 DEL CÓDIGO PENAL Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "03-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8515",
+          "titulo": "QUE ADICIONA UNA SECCION II AL CAPITULO I DEL TITULO 11 DEL LIBRO IV DEL CODIGO SANITARIO, CREA EL SISTEMA DE HABILITACION SANITARIA PARA MANIPULADORES DE ALIMENTOS, ESTABLECE EL CARNE SANITARIO UNICO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "03-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8449",
+          "titulo": "QUE ESTABLECE EL RÉGIMEN ESPECIAL DE PROTECCIÓN DEL CONSUMIDOR FINANCIEROS Y DICTA OTRAS DISPOSICIONES COMPLEMENTARIAS",
+          "fecha": "15-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8251",
+          "titulo": "QUE MODIFICA LA LEY 51 DE 29 DE SEPTIEMBRE DE 2010, AMPLIA LA COMPETENCIA DE LA AUTORIDAD DE ASEO URBANO Y DOMICILIARIO E INCORPORA DE MANERA DEFINITIVA AL DISTRITO DE SAN MIGUELITO.",
+          "fecha": "21-01-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8112",
+          "titulo": "QUE MODIFICA Y ADICIONA DISPOSICIONES A LA LEY 45 DE 2007, SOBRE DE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA",
+          "fecha": "15-09-2025",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "8051",
+          "titulo": "QUE ADOPTA MEDIDAS PARA LA PREVENCION Y CONTROL DE LA LUDOPATIA EN PANAMA",
+          "fecha": "25-08-2025",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "8020",
+          "titulo": "QUE ESTABLECE LA IDENTIFICACION OBLIGATORIA DEL ORIGEN Y LA DIFERENCIACION DE PRODUCTOS ALIMENTICIOS ORIGINALES, SUCEDANEOS E IMITACIONES EN PANAMA",
+          "fecha": "18-08-2025",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7953",
+          "titulo": "QUE GARANTIZA EL ACCESO GRATUITO A ESTACIONAMIENTOS PARA CONTRIBUYENTES EN OFICINAS PUBLICAS CON ATENCION PRESENCIAL",
+          "fecha": "23-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7465",
+          "titulo": "QUE MODIFICA ARTICULO DE LA LEY 45 DE 31 DE OCTUBRE DE 2007, SOBRE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA",
+          "fecha": "24-07-2024",
+          "etapa": "Segundo Debate"
+        }
+      ],
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/raul-pineda",
+      "planilla_texto": "B/. 81,600",
+      "planilla_valor": 81600.0,
+      "asistencia_pleno": 3.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "🌎 Relaciones Exteriores | 📊 Economía y Finanzas | ⚖️ Gobierno, Justicia y Asuntos Constitucionales | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
       "comisiones_cantidad": 1
     },
@@ -4516,7 +4625,7 @@
       "circuito": "4-4",
       "provincia": "Chiriquí",
       "suplente": "Ariel Rios",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1bzczX1uQsA7ZObR9g3aMyrVZqhphKSfd",
       "perfil": "https://espaciocivico.org/diputados/medin-jimenez-pitti",
       "slug": "medin-jimenez-pitti",
       "proyectos": 9,
@@ -4604,115 +4713,12 @@
       "comisiones_cantidad": 1
     },
     {
-      "nombre": "Raúl Pineda",
-      "partido": "Partido Revolucionario Democrático",
-      "circuito": "8-2",
-      "provincia": "Panamá",
-      "suplente": "Joana Cedeño",
-      "foto": "https://espaciocivico.org/api/drive-image/1NUJpKCIyY7uNj23WAfPSnnuvcuYySFVY",
-      "perfil": "https://espaciocivico.org/diputados/raul-pineda",
-      "slug": "raul-pineda",
-      "proyectos": 9,
-      "leyes": 2,
-      "co_patrocinios": 5,
-      "etapas": {
-        "Preliminar": 3,
-        "Primer Debate": 1,
-        "Archivado": 1,
-        "Ley": 2,
-        "Segundo Debate": 2
-      },
-      "leyes_detalle": [
-        {
-          "ficha": "8051",
-          "titulo": "QUE ADOPTA MEDIDAS PARA LA PREVENCION Y CONTROL DE LA LUDOPATIA EN PANAMA",
-          "fecha": "25-08-2025"
-        },
-        {
-          "ficha": "8020",
-          "titulo": "QUE ESTABLECE LA IDENTIFICACION OBLIGATORIA DEL ORIGEN Y LA DIFERENCIACION DE PRODUCTOS ALIMENTICIOS ORIGINALES, SUCEDANEOS E IMITACIONES EN PANAMA",
-          "fecha": "18-08-2025"
-        }
-      ],
-      "proyectos_detalle": [
-        {
-          "ficha": "8508",
-          "titulo": "QUE MODIFICA EL ARTÍCULO 135 DEL CÓDIGO PENAL Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "03-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8515",
-          "titulo": "QUE ADICIONA UNA SECCION II AL CAPITULO I DEL TITULO 11 DEL LIBRO IV DEL CODIGO SANITARIO, CREA EL SISTEMA DE HABILITACION SANITARIA PARA MANIPULADORES DE ALIMENTOS, ESTABLECE EL CARNE SANITARIO UNICO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "03-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8449",
-          "titulo": "QUE ESTABLECE EL RÉGIMEN ESPECIAL DE PROTECCIÓN DEL CONSUMIDOR FINANCIEROS Y DICTA OTRAS DISPOSICIONES COMPLEMENTARIAS",
-          "fecha": "15-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8251",
-          "titulo": "QUE MODIFICA LA LEY 51 DE 29 DE SEPTIEMBRE DE 2010, AMPLIA LA COMPETENCIA DE LA AUTORIDAD DE ASEO URBANO Y DOMICILIARIO E INCORPORA DE MANERA DEFINITIVA AL DISTRITO DE SAN MIGUELITO.",
-          "fecha": "21-01-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8112",
-          "titulo": "QUE MODIFICA Y ADICIONA DISPOSICIONES A LA LEY 45 DE 2007, SOBRE DE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA",
-          "fecha": "15-09-2025",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "8051",
-          "titulo": "QUE ADOPTA MEDIDAS PARA LA PREVENCION Y CONTROL DE LA LUDOPATIA EN PANAMA",
-          "fecha": "25-08-2025",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "8020",
-          "titulo": "QUE ESTABLECE LA IDENTIFICACION OBLIGATORIA DEL ORIGEN Y LA DIFERENCIACION DE PRODUCTOS ALIMENTICIOS ORIGINALES, SUCEDANEOS E IMITACIONES EN PANAMA",
-          "fecha": "18-08-2025",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7953",
-          "titulo": "QUE GARANTIZA EL ACCESO GRATUITO A ESTACIONAMIENTOS PARA CONTRIBUYENTES EN OFICINAS PUBLICAS CON ATENCION PRESENCIAL",
-          "fecha": "23-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7465",
-          "titulo": "QUE MODIFICA ARTICULO DE LA LEY 45 DE 31 DE OCTUBRE DE 2007, SOBRE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA",
-          "fecha": "24-07-2024",
-          "etapa": "Segundo Debate"
-        }
-      ],
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/raul-pineda",
-      "planilla_texto": "B/. 81,600",
-      "planilla_valor": 81600.0,
-      "asistencia_pleno": 3.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "🌎 Relaciones Exteriores | 📊 Economía y Finanzas | ⚖️ Gobierno, Justicia y Asuntos Constitucionales | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 1
-    },
-    {
       "nombre": "Yamireliz Chong",
       "partido": "Coalición Vamos",
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
       "proyectos": 9,
@@ -5544,7 +5550,7 @@
       "circuito": "2-1",
       "provincia": "Coclé",
       "suplente": "Arnulfo Arias",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1yMOQxvs9m2DgBGTJoJBImggEYxIPh1ZY",
       "perfil": "https://espaciocivico.org/diputados/julio-de-la-guardia",
       "slug": "julio-de-la-guardia",
       "proyectos": 5,
@@ -5756,7 +5762,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Lalo' Antonio",
-      "foto": "https://espaciocivico.org/api/drive-image/1l64FLwc0g2vmPoSlnMbRWcIzT0BBthgE",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
       "proyectos": 5,
@@ -6424,7 +6430,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "proyectos": 3,
@@ -6631,7 +6637,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "proyectos": 2,
@@ -6940,7 +6946,7 @@
       "circuito": "12-2",
       "provincia": "Ngöbe Buglé",
       "suplente": "Dominga Bejerano Mitre",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1iQ6etwoF70tDfhYBkhDhcpoJdDm_H6og",
       "perfil": "https://espaciocivico.org/diputados/nixon-andrade",
       "slug": "nixon-andrade",
       "proyectos": 0,
@@ -6971,7 +6977,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "proyectos": 0,
@@ -7002,7 +7008,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Alejandro Salazar",
-      "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
       "proyectos": 0,
@@ -7448,7 +7454,7 @@
     },
     "Partido Revolucionario Democrático": {
       "diputados": 13,
-      "proyectos": 147,
+      "proyectos": 148,
       "leyes": 14
     },
     "Partido Popular": {
@@ -7480,7 +7486,7 @@
   "por_provincia": {
     "Panamá": {
       "diputados": 25,
-      "proyectos": 506,
+      "proyectos": 507,
       "leyes": 40
     },
     "Panamá Oeste": {
@@ -7540,34 +7546,34 @@
     }
   },
   "por_provincia_filtros": {
-    "Veraguas": {
+    "Panamá": {
       "2024": {
-        "Ley": 18,
-        "debate": 33,
-        "analisis": 12,
-        "sinAvance": 20,
-        "all": 83
+        "Ley": 24,
+        "debate": 50,
+        "analisis": 24,
+        "sinAvance": 37,
+        "all": 135
       },
       "2025": {
-        "Ley": 7,
-        "debate": 69,
-        "analisis": 18,
-        "sinAvance": 15,
-        "all": 109
+        "Ley": 15,
+        "debate": 118,
+        "analisis": 31,
+        "sinAvance": 45,
+        "all": 209
       },
       "2026": {
         "Ley": 1,
-        "debate": 31,
-        "analisis": 22,
-        "sinAvance": 7,
-        "all": 61
+        "debate": 61,
+        "analisis": 83,
+        "sinAvance": 18,
+        "all": 163
       },
       "all": {
-        "Ley": 26,
-        "debate": 133,
-        "analisis": 52,
-        "sinAvance": 42,
-        "all": 253
+        "Ley": 40,
+        "debate": 229,
+        "analisis": 138,
+        "sinAvance": 100,
+        "all": 507
       }
     },
     "Panamá Oeste": {
@@ -7630,34 +7636,34 @@
         "all": 165
       }
     },
-    "Panamá": {
+    "Veraguas": {
       "2024": {
-        "Ley": 24,
-        "debate": 50,
-        "analisis": 24,
-        "sinAvance": 37,
-        "all": 135
+        "Ley": 18,
+        "debate": 33,
+        "analisis": 12,
+        "sinAvance": 20,
+        "all": 83
       },
       "2025": {
-        "Ley": 15,
-        "debate": 118,
-        "analisis": 31,
-        "sinAvance": 45,
-        "all": 209
+        "Ley": 7,
+        "debate": 69,
+        "analisis": 18,
+        "sinAvance": 15,
+        "all": 109
       },
       "2026": {
         "Ley": 1,
-        "debate": 61,
-        "analisis": 82,
-        "sinAvance": 18,
-        "all": 162
+        "debate": 31,
+        "analisis": 22,
+        "sinAvance": 7,
+        "all": 61
       },
       "all": {
-        "Ley": 40,
-        "debate": 229,
-        "analisis": 137,
-        "sinAvance": 100,
-        "all": 506
+        "Ley": 26,
+        "debate": 133,
+        "analisis": 52,
+        "sinAvance": 42,
+        "all": 253
       }
     },
     "Herrera": {
@@ -7690,124 +7696,34 @@
         "all": 85
       }
     },
-    "Emberá-Wounaan": {
-      "2024": {
-        "Ley": 0,
-        "debate": 1,
-        "analisis": 0,
-        "sinAvance": 1,
-        "all": 2
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 13,
-        "analisis": 4,
-        "sinAvance": 2,
-        "all": 20
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 6,
-        "analisis": 4,
-        "sinAvance": 2,
-        "all": 12
-      },
-      "all": {
-        "Ley": 1,
-        "debate": 20,
-        "analisis": 8,
-        "sinAvance": 5,
-        "all": 34
-      }
-    },
-    "Ngöbe Buglé": {
+    "Los Santos": {
       "2024": {
         "Ley": 8,
-        "debate": 11,
-        "analisis": 6,
-        "sinAvance": 7,
-        "all": 32
-      },
-      "2025": {
-        "Ley": 2,
-        "debate": 17,
-        "analisis": 8,
+        "debate": 10,
+        "analisis": 1,
         "sinAvance": 2,
-        "all": 29
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 6,
-        "analisis": 3,
-        "sinAvance": 2,
-        "all": 11
-      },
-      "all": {
-        "Ley": 10,
-        "debate": 34,
-        "analisis": 17,
-        "sinAvance": 11,
-        "all": 72
-      }
-    },
-    "Coclé": {
-      "2024": {
-        "Ley": 11,
-        "debate": 12,
-        "analisis": 6,
-        "sinAvance": 6,
-        "all": 35
+        "all": 21
       },
       "2025": {
         "Ley": 3,
-        "debate": 34,
-        "analisis": 6,
-        "sinAvance": 5,
-        "all": 48
+        "debate": 16,
+        "analisis": 3,
+        "sinAvance": 2,
+        "all": 24
       },
       "2026": {
         "Ley": 0,
-        "debate": 9,
-        "analisis": 6,
+        "debate": 3,
+        "analisis": 1,
         "sinAvance": 0,
-        "all": 15
+        "all": 4
       },
       "all": {
-        "Ley": 14,
-        "debate": 55,
-        "analisis": 18,
-        "sinAvance": 11,
-        "all": 98
-      }
-    },
-    "Chiriquí": {
-      "2024": {
-        "Ley": 17,
-        "debate": 26,
-        "analisis": 11,
-        "sinAvance": 19,
-        "all": 73
-      },
-      "2025": {
-        "Ley": 8,
-        "debate": 58,
-        "analisis": 13,
-        "sinAvance": 15,
-        "all": 94
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 23,
-        "analisis": 9,
-        "sinAvance": 5,
-        "all": 38
-      },
-      "all": {
-        "Ley": 26,
-        "debate": 107,
-        "analisis": 33,
-        "sinAvance": 39,
-        "all": 205
+        "Ley": 11,
+        "debate": 29,
+        "analisis": 5,
+        "sinAvance": 4,
+        "all": 49
       }
     },
     "Guna Yala": {
@@ -7840,34 +7756,124 @@
         "all": 40
       }
     },
-    "Los Santos": {
+    "Ngöbe Buglé": {
       "2024": {
         "Ley": 8,
-        "debate": 10,
-        "analisis": 1,
-        "sinAvance": 2,
-        "all": 21
+        "debate": 11,
+        "analisis": 6,
+        "sinAvance": 7,
+        "all": 32
       },
       "2025": {
-        "Ley": 3,
-        "debate": 16,
-        "analisis": 3,
+        "Ley": 2,
+        "debate": 17,
+        "analisis": 8,
         "sinAvance": 2,
-        "all": 24
+        "all": 29
       },
       "2026": {
         "Ley": 0,
-        "debate": 3,
-        "analisis": 1,
-        "sinAvance": 0,
-        "all": 4
+        "debate": 6,
+        "analisis": 3,
+        "sinAvance": 2,
+        "all": 11
       },
       "all": {
+        "Ley": 10,
+        "debate": 34,
+        "analisis": 17,
+        "sinAvance": 11,
+        "all": 72
+      }
+    },
+    "Chiriquí": {
+      "2024": {
+        "Ley": 17,
+        "debate": 26,
+        "analisis": 11,
+        "sinAvance": 19,
+        "all": 73
+      },
+      "2025": {
+        "Ley": 8,
+        "debate": 58,
+        "analisis": 13,
+        "sinAvance": 15,
+        "all": 94
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 23,
+        "analisis": 9,
+        "sinAvance": 5,
+        "all": 38
+      },
+      "all": {
+        "Ley": 26,
+        "debate": 107,
+        "analisis": 33,
+        "sinAvance": 39,
+        "all": 205
+      }
+    },
+    "Emberá-Wounaan": {
+      "2024": {
+        "Ley": 0,
+        "debate": 1,
+        "analisis": 0,
+        "sinAvance": 1,
+        "all": 2
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 13,
+        "analisis": 4,
+        "sinAvance": 2,
+        "all": 20
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 6,
+        "analisis": 4,
+        "sinAvance": 2,
+        "all": 12
+      },
+      "all": {
+        "Ley": 1,
+        "debate": 20,
+        "analisis": 8,
+        "sinAvance": 5,
+        "all": 34
+      }
+    },
+    "Coclé": {
+      "2024": {
         "Ley": 11,
-        "debate": 29,
-        "analisis": 5,
-        "sinAvance": 4,
-        "all": 49
+        "debate": 12,
+        "analisis": 6,
+        "sinAvance": 6,
+        "all": 35
+      },
+      "2025": {
+        "Ley": 3,
+        "debate": 34,
+        "analisis": 6,
+        "sinAvance": 5,
+        "all": 48
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 9,
+        "analisis": 6,
+        "sinAvance": 0,
+        "all": 15
+      },
+      "all": {
+        "Ley": 14,
+        "debate": 55,
+        "analisis": 18,
+        "sinAvance": 11,
+        "all": 98
       }
     },
     "Bocas del Toro": {
