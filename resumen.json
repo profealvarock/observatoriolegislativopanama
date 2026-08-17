@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20260816_092956",
+  "fecha_extraccion": "20260817_094531",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
   "total_proyectos": 845,
@@ -7546,6 +7546,36 @@
     }
   },
   "por_provincia_filtros": {
+    "Colón": {
+      "2024": {
+        "Ley": 13,
+        "debate": 20,
+        "analisis": 7,
+        "sinAvance": 12,
+        "all": 52
+      },
+      "2025": {
+        "Ley": 4,
+        "debate": 44,
+        "analisis": 14,
+        "sinAvance": 8,
+        "all": 70
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 22,
+        "analisis": 15,
+        "sinAvance": 5,
+        "all": 43
+      },
+      "all": {
+        "Ley": 18,
+        "debate": 86,
+        "analisis": 36,
+        "sinAvance": 25,
+        "all": 165
+      }
+    },
     "Panamá Oeste": {
       "2024": {
         "Ley": 23,
@@ -7636,36 +7666,6 @@
         "all": 507
       }
     },
-    "Colón": {
-      "2024": {
-        "Ley": 13,
-        "debate": 20,
-        "analisis": 7,
-        "sinAvance": 12,
-        "all": 52
-      },
-      "2025": {
-        "Ley": 4,
-        "debate": 44,
-        "analisis": 14,
-        "sinAvance": 8,
-        "all": 70
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 22,
-        "analisis": 15,
-        "sinAvance": 5,
-        "all": 43
-      },
-      "all": {
-        "Ley": 18,
-        "debate": 86,
-        "analisis": 36,
-        "sinAvance": 25,
-        "all": 165
-      }
-    },
     "Herrera": {
       "2024": {
         "Ley": 11,
@@ -7694,96 +7694,6 @@
         "analisis": 17,
         "sinAvance": 12,
         "all": 85
-      }
-    },
-    "Chiriquí": {
-      "2024": {
-        "Ley": 17,
-        "debate": 26,
-        "analisis": 11,
-        "sinAvance": 19,
-        "all": 73
-      },
-      "2025": {
-        "Ley": 8,
-        "debate": 58,
-        "analisis": 13,
-        "sinAvance": 15,
-        "all": 94
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 23,
-        "analisis": 9,
-        "sinAvance": 5,
-        "all": 38
-      },
-      "all": {
-        "Ley": 26,
-        "debate": 107,
-        "analisis": 33,
-        "sinAvance": 39,
-        "all": 205
-      }
-    },
-    "Ngöbe Buglé": {
-      "2024": {
-        "Ley": 8,
-        "debate": 11,
-        "analisis": 6,
-        "sinAvance": 7,
-        "all": 32
-      },
-      "2025": {
-        "Ley": 2,
-        "debate": 17,
-        "analisis": 8,
-        "sinAvance": 2,
-        "all": 29
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 6,
-        "analisis": 3,
-        "sinAvance": 2,
-        "all": 11
-      },
-      "all": {
-        "Ley": 10,
-        "debate": 34,
-        "analisis": 17,
-        "sinAvance": 11,
-        "all": 72
-      }
-    },
-    "Emberá-Wounaan": {
-      "2024": {
-        "Ley": 0,
-        "debate": 1,
-        "analisis": 0,
-        "sinAvance": 1,
-        "all": 2
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 13,
-        "analisis": 4,
-        "sinAvance": 2,
-        "all": 20
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 6,
-        "analisis": 4,
-        "sinAvance": 2,
-        "all": 12
-      },
-      "all": {
-        "Ley": 1,
-        "debate": 20,
-        "analisis": 8,
-        "sinAvance": 5,
-        "all": 34
       }
     },
     "Coclé": {
@@ -7816,34 +7726,94 @@
         "all": 98
       }
     },
-    "Guna Yala": {
+    "Ngöbe Buglé": {
       "2024": {
-        "Ley": 2,
-        "debate": 6,
-        "analisis": 3,
-        "sinAvance": 1,
-        "all": 12
+        "Ley": 8,
+        "debate": 11,
+        "analisis": 6,
+        "sinAvance": 7,
+        "all": 32
       },
       "2025": {
-        "Ley": 0,
-        "debate": 11,
-        "analisis": 4,
+        "Ley": 2,
+        "debate": 17,
+        "analisis": 8,
         "sinAvance": 2,
-        "all": 17
+        "all": 29
       },
       "2026": {
         "Ley": 0,
-        "debate": 4,
-        "analisis": 5,
+        "debate": 6,
+        "analisis": 3,
         "sinAvance": 2,
         "all": 11
       },
       "all": {
-        "Ley": 2,
-        "debate": 21,
-        "analisis": 12,
+        "Ley": 10,
+        "debate": 34,
+        "analisis": 17,
+        "sinAvance": 11,
+        "all": 72
+      }
+    },
+    "Chiriquí": {
+      "2024": {
+        "Ley": 17,
+        "debate": 26,
+        "analisis": 11,
+        "sinAvance": 19,
+        "all": 73
+      },
+      "2025": {
+        "Ley": 8,
+        "debate": 58,
+        "analisis": 13,
+        "sinAvance": 15,
+        "all": 94
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 23,
+        "analisis": 9,
         "sinAvance": 5,
-        "all": 40
+        "all": 38
+      },
+      "all": {
+        "Ley": 26,
+        "debate": 107,
+        "analisis": 33,
+        "sinAvance": 39,
+        "all": 205
+      }
+    },
+    "Emberá-Wounaan": {
+      "2024": {
+        "Ley": 0,
+        "debate": 1,
+        "analisis": 0,
+        "sinAvance": 1,
+        "all": 2
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 13,
+        "analisis": 4,
+        "sinAvance": 2,
+        "all": 20
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 6,
+        "analisis": 4,
+        "sinAvance": 2,
+        "all": 12
+      },
+      "all": {
+        "Ley": 1,
+        "debate": 20,
+        "analisis": 8,
+        "sinAvance": 5,
+        "all": 34
       }
     },
     "Los Santos": {
@@ -7874,6 +7844,36 @@
         "analisis": 5,
         "sinAvance": 4,
         "all": 49
+      }
+    },
+    "Guna Yala": {
+      "2024": {
+        "Ley": 2,
+        "debate": 6,
+        "analisis": 3,
+        "sinAvance": 1,
+        "all": 12
+      },
+      "2025": {
+        "Ley": 0,
+        "debate": 11,
+        "analisis": 4,
+        "sinAvance": 2,
+        "all": 17
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 4,
+        "analisis": 5,
+        "sinAvance": 2,
+        "all": 11
+      },
+      "all": {
+        "Ley": 2,
+        "debate": 21,
+        "analisis": 12,
+        "sinAvance": 5,
+        "all": 40
       }
     },
     "Bocas del Toro": {
