@@ -1,14 +1,44 @@
 {
-  "fecha_extraccion": "20260819_093703",
+  "fecha_extraccion": "20260820_093738",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
-  "total_registros": 852,
+  "total_registros": 857,
   "datos": [
+    {
+      "fecha_presentacion": "17-08-2026",
+      "ficha": "8545",
+      "proyecto": "",
+      "anteproyecto": "137",
+      "titulo": "QUE RESALTA LOS VALORES Y APORTES DE LA ETNIA INDIA",
+      "etapa": "Preliminar",
+      "proponente": "PETER CHATLANI",
+      "pagina": 1
+    },
+    {
+      "fecha_presentacion": "17-08-2026",
+      "ficha": "8546",
+      "proyecto": "662",
+      "anteproyecto": "0",
+      "titulo": "QUE ORDENA EL CIERRE TOTAL DE LAS OPERACIONES DEL BANCO HIPOTECARIO NACIONAL",
+      "etapa": "Preliminar",
+      "proponente": "MINISTERIO DE VIVIENDA Y ORDENAMIENTO TERRITORIAL",
+      "pagina": 1
+    },
     {
       "fecha_presentacion": "17-08-2026",
       "ficha": "8547",
       "proyecto": "",
       "anteproyecto": "139",
       "titulo": "QUE ADICIONA UN PARÁGRAFO TRANSITORIO AL ARTÍCULO 2 DE LA LEY 350 DE 2022 (REFORMADO POR LA LEY 500 DE 2025) CON EL FIN DE ESTABLECER UN RÉGIMEN DE TRANSICIÓN QUE GARANTICE LA SEGURIDAD JURÍDICA Y EL DERECHO AL TRABAJO",
+      "etapa": "Preliminar",
+      "proponente": "H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN",
+      "pagina": 1
+    },
+    {
+      "fecha_presentacion": "17-08-2026",
+      "ficha": "8548",
+      "proyecto": "",
+      "anteproyecto": "138",
+      "titulo": "QUE DECLARA MONUMENTO HISTORICO NACIONAL EL SITIO ARQUEOLOGICO, RUINAS DE BIQUE, EN EL DISTRITO DE ARRAIJAN, PROVINCIA DE PANAMA OESTE Y CREA SU PATRONATO.",
       "etapa": "Preliminar",
       "proponente": "H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN",
       "pagina": 1
@@ -75,12 +105,32 @@
     },
     {
       "fecha_presentacion": "12-08-2026",
+      "ficha": "8539",
+      "proyecto": "",
+      "anteproyecto": "133",
+      "titulo": "QUE RECONOCE EL FESTIVAL INTERNACIONAL DE DEGUSTACION A BENEFICIO DE LA ASOCIACION NACIONAL CONTRA EL CANCER CAPITULO DE SANTIAGO EN LA PROVINCIA DE VERAGUAS, CREA SU PATRONATO Y DICTA OTRAS DISPOSICIONES",
+      "etapa": "Preliminar",
+      "proponente": "H.D JANINE PRADO CASTAÑO,H.D.S GUMERCINDA EDITH PÉREZ CEDEÑO DE POLO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D BETSERAI AYIZE RICHARDS,H.D.S ANA MARÍA POVEDA HERRERA,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D.S ARIEL ANÍBAL RÍOS ZAPATA,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D.S MAIQUELY DEL CARMEN AÑINO MEDINA DE BARRIOS,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D LILIA EMERITA BATISTA RODRIGUEZ",
+      "pagina": 1
+    },
+    {
+      "fecha_presentacion": "12-08-2026",
       "ficha": "8540",
       "proyecto": "",
       "anteproyecto": "135",
       "titulo": "QUE CREA EL PROGRAMA DE INTEGRACIÓN SOCIAL Y TERRITORIAL Y ESTABLECE EL RÉGIMEN JURÍDICO DEL SUBSIDIO PARA LA ADQUISICIÓN DE LA PRIMERA VIVIENDA DE INTERÉS SOCIAL Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D JORGE ISAAC BLOISE IGLESIAS,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA",
+      "pagina": 1
+    },
+    {
+      "fecha_presentacion": "12-08-2026",
+      "ficha": "8541",
+      "proyecto": "",
+      "anteproyecto": "134",
+      "titulo": "QUE ESTABLECE EL REGIMEN ESPECIAL DE EMERGENCIAS SISMICA Y CREA LA COMISION DE EMERGENCIA EN CASO DE DESASTRE SISMICO O DE OTRA NATURALEZA",
+      "etapa": "Preliminar",
+      "proponente": "H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN",
       "pagina": 1
     },
     {
@@ -161,7 +211,7 @@
       "titulo": "QUE RECUPERA LOS BIENES DE ORIGEN ILICITO VINCULADOS A DELITOS RELACIONADOS CON DROGAS",
       "etapa": "Preliminar",
       "proponente": "H.D JOSÉ ANTONIO PÉREZ BARBONI",
-      "pagina": 1
+      "pagina": 2
     },
     {
       "fecha_presentacion": "10-08-2026",
@@ -171,7 +221,7 @@
       "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 16 DE 2004 QUE DICTA DISPOSICIONES PARA LA PREVENCION Y TIPIFICACION DE LOS DELITOS CONTRA LA INTEGRIDAD Y LA LIBERTAD SEXUAL Y MODIFICA Y ADICIONA ARTICULOS A LOS CODIGOS PENAL Y JUDICIAL",
       "etapa": "Preliminar",
       "proponente": "H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D VÍCTOR DE JESÚS CASTILLO CORTEZ,H.D.S MERCEDES A. GALVEZ USEDA",
-      "pagina": 1
+      "pagina": 2
     },
     {
       "fecha_presentacion": "10-08-2026",
@@ -181,7 +231,7 @@
       "titulo": "QUE IMPULSA LA CONSTRUCCION DE VIVIENDAS DE INTERES SOCIAL EN ZONAS URBANAS CENTRICAS",
       "etapa": "Preliminar",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA",
-      "pagina": 1
+      "pagina": 2
     },
     {
       "fecha_presentacion": "06-08-2026",
@@ -191,7 +241,7 @@
       "titulo": "QUE ESTABLECE EL REGIMEN DE LOS FONDOS ESPECIALES INTERMUNICIPALES PARA EL DESARROLLO TERRITORIAL, ADICIONA UN ARTICULO A LA LEY 106 DE 8 DE OCTUBRE DE 1973 Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D.S LYDIA NORAYS CABALLERO CADASTRE",
-      "pagina": 1
+      "pagina": 2
     },
     {
       "fecha_presentacion": "06-08-2026",
@@ -201,7 +251,7 @@
       "titulo": "QUE DECLARA EL LAGO DE LOS ANDES DEL DISTRITO DE SAN MIGUELITO, SANTUARIO ECOLOGICO Y CULTURAL DE AVISTAMIENTO DE AVES Y PROTECCION DE LA BIODIVERSIDAD Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "KATHERINE HERNANDEZ",
-      "pagina": 1
+      "pagina": 2
     },
     {
       "fecha_presentacion": "06-08-2026",
@@ -326,10 +376,10 @@
     {
       "fecha_presentacion": "03-08-2026",
       "ficha": "8507",
-      "proyecto": "",
+      "proyecto": "671",
       "anteproyecto": "102",
       "titulo": "QUE CREA EL CONSULTORIO JURIDICO DE LA MIPYME Y LA DEFENSORIA DE OFICIO GRATUITA DE LA MICROEMPRESA, DENTRO DE LA AUTORIDAD DE LA MICRO, PEQUEÑA Y MEDIANA EMPRESA (AMPYME), Y DICTA OTRAS DISPOSICIONES.",
-      "etapa": "Preliminar",
+      "etapa": "Prohijado",
       "proponente": "H.D JULIO DE LA GUARDIA ARROCHA",
       "pagina": 2
     },
@@ -361,7 +411,7 @@
       "titulo": "QUE INSTITUYE LA FERIA AGROPECUARIA, ARTESANAL, TURÍSTICA Y FOLCLÓRICA DE SAN MARTÍN, CREA EL PATRONATO DE LA FERIA AGROPECUARIA, ARTESANAL, TURÍSTICA Y FOLCLÓRICA DE SAN MARTÍN Y DICTA OTRAS DISPOSICIONES.",
       "etapa": "Prohijado",
       "proponente": "H.D RAPHAEL BUCHANAN JOSEPH",
-      "pagina": 2
+      "pagina": 3
     },
     {
       "fecha_presentacion": "03-08-2026",
@@ -371,7 +421,7 @@
       "titulo": "QUE REGULAR LAS CONDICIONES LABORALES DE LOS PRESTADORES DE SERVICIOS DE SEGURIDAD PRIVADA Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D ROGELIO RICARDO REVELLO TEM",
-      "pagina": 2
+      "pagina": 3
     },
     {
       "fecha_presentacion": "03-08-2026",
@@ -381,7 +431,7 @@
       "titulo": "POR EL CUAL SE SUBROGA LEY NO. 10 DE 24 DE ENERO DE 1989, Y SE ADOPTAN NUEVAS MEDIDAS SOBRE PESOS Y DIMENSIONES DE LOS VEHICULOS DE CARGA QUE CIRCULAN POR LAS VIAS PUBLICAS",
       "etapa": "Preliminar",
       "proponente": "H.D ROGELIO RICARDO REVELLO TEM",
-      "pagina": 2
+      "pagina": 3
     },
     {
       "fecha_presentacion": "03-08-2026",
@@ -391,7 +441,7 @@
       "titulo": "QUE ESTABLECE MEDIDAS ESPECIALES PARA LA REMEDIACION, RESTAURACION ECOLOGICA, RECUPERACION AMBIENTAL Y MANEJO SOSTENIBLE DEL LAGO DE LOS ANDES, EN EL DISTRITO DE SAN MIGUELITO Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA",
-      "pagina": 2
+      "pagina": 3
     },
     {
       "fecha_presentacion": "03-08-2026",
@@ -401,7 +451,7 @@
       "titulo": "QUE ESTABLECE EL PROCEDIMIENTO DE EVALUACIÓN TARIFARIA PREVIA PARA LOS AUMENTOS DE LAS TARIFAS REGULADAS DEL SERVICIO PÚBLICO DE ELECTRICIDAD Y ADICIONA DISPOSICIONES A LA LEY 6 DE 3 DE FEBRERO DE 1997",
       "etapa": "Preliminar",
       "proponente": "H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ",
-      "pagina": 2
+      "pagina": 3
     },
     {
       "fecha_presentacion": "03-08-2026",
@@ -559,9 +609,9 @@
       "proyecto": "665",
       "anteproyecto": "91",
       "titulo": "QUE ESTABLECE FRANJAS DE SEGURIDAD O ZONAS DE AMORTIGUAMIENTO PARA LA APLICACIÓN DE AGROQUÍMICOS EN ÁREAS CRÍTICAS, A FIN DE PROTEGER LA SALUD HUMANA, LOS RECURSOS HÍDRICOS y EL AMBIENTE, Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ",
-      "pagina": 3
+      "pagina": 4
     },
     {
       "fecha_presentacion": "29-07-2026",
@@ -571,7 +621,7 @@
       "titulo": "QUE ADICIONA DISPOSICIONES A LA LEY 45 DE 31 DE OCTUBRE DE 2007, SOBRE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA, PARA ESTABLECER GARANTIAS FRENTE A MODIFICACIONES TARIFARIAS EN CONTRATOS DE ADHESION DE TRACTO SUCESIVO O PRESTACION CONTINUA.",
       "etapa": "Preliminar",
       "proponente": "H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG",
-      "pagina": 3
+      "pagina": 4
     },
     {
       "fecha_presentacion": "29-07-2026",
@@ -581,7 +631,7 @@
       "titulo": "QUE MODIFICA EL ARTICULO 2 DE LA LEY 93 DE 19 DE SEPTIEMBRE DE 2019, QUE CREA EL REGIMEN DE ASOCIACION PUBLICO-PRIVADA PARA EL DESARROLLO COMO INCENTIVO A LA INVERSION PRIVADA, AL DESARROLLO SOCIAL Y LA CREACION DE EMPLEOS.",
       "etapa": "Preliminar",
       "proponente": "H.D ALAIN ALBENIS CEDEÑO HERRERA",
-      "pagina": 3
+      "pagina": 4
     },
     {
       "fecha_presentacion": "29-07-2026",
@@ -591,7 +641,7 @@
       "titulo": "QUE MODIFICA LOS ARTICULOS 9 Y 10 DE LA LEY N°7 DE 25 DE FEBRERO DE 1975; POR MEDIO DEL CUAL SE CREAN DENTRO DE LA JURISDICCION ESPECIAL DE TRABAJO LAS JUNTAS DE CONCILIACION Y DECISION.",
       "etapa": "Prohijado",
       "proponente": "H.D RICARDO AGUSTÍN VIGIL LÓPEZ",
-      "pagina": 3
+      "pagina": 4
     },
     {
       "fecha_presentacion": "29-07-2026",
@@ -601,15 +651,15 @@
       "titulo": "QUE DECLARA EL DIA 22 DE SEPTIEMBRE DE CADA AÑO COMO DIA DE REFLEXION, DENOMINADO, DIA DE LA ESPIRITUALIDAD DE LA RELIGION MAMA TATA EN LA COMARCA NGABE-BUGLE Y SE RECONOCE SUS SIMBOLOS TERRITORIALES COMO SIMBOLO DE UNIDAD, COSMOVISION Y SABERES ANCESTRALES DEL PUEBLO NGABE- BUGLE Y SE DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D ROBERTO ARCHIBOLD CHUITO,H.D GERTRUDIS RODRÍGUEZ DE GRACIA,H.D ISAAC MOSQUERA RIVAS,H.D NIXSON ANDRADE RODRÍGUEZ",
-      "pagina": 3
+      "pagina": 4
     },
     {
       "fecha_presentacion": "28-07-2026",
       "ficha": "8484",
-      "proyecto": "",
+      "proyecto": "670",
       "anteproyecto": "82",
       "titulo": "QUE ESTABLECE LA COMPENSACION AUTOMATICA POR FALLAS PROLONGADAS EN LA PRESTACION DE LOS SERVICIOS PUBLICOS DOMICILIARIOS Y DICTA OTRAS DISPOSICIONES.",
-      "etapa": "Preliminar",
+      "etapa": "Prohijado",
       "proponente": "H.D JAIRO ARIEL SALAZAR RAMIREZ",
       "pagina": 4
     },
@@ -739,7 +789,7 @@
       "proyecto": "664",
       "anteproyecto": "76",
       "titulo": "QUE ESTABLECE EL REGIMEN JURIDICO PARA LA PROTECCION AMBIENTAL FRENTE A LOS PLAGUICIDAS ALTAMENTE PELIGROSOS, REGULA SU ELIMINACION PROGRESIVA Y LA GESTION AMBIENTALMENTE SEGURA DE SUS RESIDUOS Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
       "pagina": 4
     },
@@ -761,7 +811,7 @@
       "titulo": "QUE CREA EL PROGRAMA DE APROVECHAMIENTO COMUNITARIO VOLUNTARIO Y TEMPORAL DE TERRENOS SIN USO Y DICTA OTRAS DISPOSICIONES.",
       "etapa": "Preliminar",
       "proponente": "H.D GRACIELA HERNANDEZ",
-      "pagina": 4
+      "pagina": 5
     },
     {
       "fecha_presentacion": "21-07-2026",
@@ -771,7 +821,7 @@
       "titulo": "POR LA CUAL SE CREA EL SISTEMA NACIONAL DE ALERTAS PUBLICAS ANTE EMERGENCIAS Y DESASTRES 'PANAMA ALERTA', SE ESTABLECEN OBLIGACIONES PARA SU DIFUSION GRATUITA INTEROPERABLE, GEORREFERENCIADA Y MULTICANAL, Y SE DICTAN OTRAS DISPOSICIONES.",
       "etapa": "Preliminar",
       "proponente": "H.D JAMIS GASPAR ACOSTA GUERRA",
-      "pagina": 4
+      "pagina": 5
     },
     {
       "fecha_presentacion": "21-07-2026",
@@ -781,7 +831,7 @@
       "titulo": "QUE PROTEGE LA INTIMIDAD DE LAS VICTIMAS FRENTE A LA CAPTACION Y DIFUSION NO AUTORIZADA DE IMAGENES SENSIBLES, ADICIONA ARTICULOS AL CODIGO PENAL.",
       "etapa": "Preliminar",
       "proponente": "H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D JANINE PRADO CASTAÑO,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 4
+      "pagina": 5
     },
     {
       "fecha_presentacion": "21-07-2026",
@@ -791,7 +841,7 @@
       "titulo": "QUE ESTABLECE EL MARCO JURIDICO PARA EL RECONOCIMIENTO Y GARANTIA DEL DERECHO HUMANO AL AGUA POTABLE Y PROMUEVE LA PROTECCION SOSTENIBLE DE LOS RECURSOS HIDRICOS",
       "etapa": "Preliminar",
       "proponente": "H.D LENÍN ALBERTO ULATE RODRÍGUEZ",
-      "pagina": 4
+      "pagina": 5
     },
     {
       "fecha_presentacion": "21-07-2026",
@@ -801,7 +851,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 285 DE 15 DE FEBRERO DE 2022, QUE CREA EL PROGRAMA NACIONAL DE ACOMPAÑAMIENTO INTEGRAL PARA JOVENES EGRESADOS DEL SISTEMA DE PROTECCION Y ACOGIMIENTO Y EL REGISTRO NACIONAL DE JOVENES EGRESADOS DEL SISTEMA DE PROTECCIÓN Y ACOGIMIENTO. Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JANINE PRADO CASTAÑO,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 4
+      "pagina": 5
     },
     {
       "fecha_presentacion": "21-07-2026",
@@ -826,20 +876,20 @@
     {
       "fecha_presentacion": "21-07-2026",
       "ficha": "8467",
-      "proyecto": "",
+      "proyecto": "668",
       "anteproyecto": "60",
       "titulo": "QUE MODIFICA LA LEY 45 DE 31 DE OCTUBRE DE 2007, PARA REGULAR LOS ABONOS DESTINADOS A LA SEPARACION O RESERVA DE BIENES Y PROTEGER LOS DERECHOS ECONOMICOS DE LOS CONSUMIDORES",
-      "etapa": "Preliminar",
+      "etapa": "Prohijado",
       "proponente": "H.D ERNESTO CEDEÑO",
       "pagina": 5
     },
     {
       "fecha_presentacion": "21-07-2026",
       "ficha": "8468",
-      "proyecto": "",
+      "proyecto": "669",
       "anteproyecto": "61",
       "titulo": "QUE GARANTIZA A LAS FAMILIAS PANAMEÑAS LA OPORTUNIDAD PARA RECUPERAR SU PATRIMONIO CUANDO UNA VIVIENDA O INMUEBLE HIPOTECADOS SEA ADJUDICADO A UNA ENTIDAD BANCARIA",
-      "etapa": "Preliminar",
+      "etapa": "Prohijado",
       "proponente": "H.D ERNESTO CEDEÑO",
       "pagina": 5
     },
@@ -876,10 +926,10 @@
     {
       "fecha_presentacion": "16-07-2026",
       "ficha": "8456",
-      "proyecto": "",
+      "proyecto": "667",
       "anteproyecto": "56",
       "titulo": "POR LA CUAL SE GARANTIZA EL ACCESO A SEGUROS DE VIDA Y AL CREDITO BANCARIO PARA LAS PERSONAS CON DIABETES TIPO 1 Y SE PROHIBE TODA DISCRIMINACION POR RAZON DE CONDICION CRONICA DE SALUD EN LA CONTRATACION DE SEGUROS",
-      "etapa": "Preliminar",
+      "etapa": "Prohijado",
       "proponente": "H.D JOSE PEREZ BARBONI,H.D JANINE PRADO CASTAÑO",
       "pagina": 5
     },
@@ -906,10 +956,10 @@
     {
       "fecha_presentacion": "15-07-2026",
       "ficha": "8449",
-      "proyecto": "",
+      "proyecto": "666",
       "anteproyecto": "50",
       "titulo": "QUE ESTABLECE EL RÉGIMEN ESPECIAL DE PROTECCIÓN DEL CONSUMIDOR FINANCIEROS Y DICTA OTRAS DISPOSICIONES COMPLEMENTARIAS",
-      "etapa": "Preliminar",
+      "etapa": "Prohijado",
       "proponente": "H.D RAUL GILBERTO PINEDA VERGARA,H.D FLOR ISABEL BRENES MEDINA,H.D NIXSON ANDRADE RODRÍGUEZ,H.D JAIME EDGARDO VARGAS CENTELLA,H.D JAVIER FRANCISCO SUCRE MEJIA,H.D BENICIO ENACIO ROBINSON GRAJALES,H.D NESTOR ANTONIO GUARDIA JAEN,H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D CRISPIANO ADAMES NAVARRO",
       "pagina": 5
     },
@@ -961,7 +1011,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTÍCULOS AL TEXTO ÚNICO DEL CÓDIGO PENAL, PARA SANCIONAR CON CÁRCEL LA DEVOLUCIÓN ILÍCITA DE EMOLUMENTOS PÚBLICOS",
       "etapa": "Preliminar",
       "proponente": "H.D LUIS HENRIQUE DUKE WALKER,H.D JOSE PEREZ BARBONI,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D JANINE PRADO CASTAÑO,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 5
+      "pagina": 6
     },
     {
       "fecha_presentacion": "14-07-2026",
@@ -971,7 +1021,7 @@
       "titulo": "QUE CREA LA LEY DE SEGUNDA OPORTUNIDAD Y DERECHO AL OLVIDO PENAL, ESTABLECE MECANISMOS DE REINSERCION SOCIAL Y REGULA LA CANCELACION DE ANTECEDENTES Y REGISTROS POLICIALES.",
       "etapa": "Preliminar",
       "proponente": "H.D ISAAC MOSQUERA RIVAS,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D GERTRUDIS RODRÍGUEZ DE GRACIA,H.D JULIO DE LA GUARDIA ARROCHA,H.D MANUEL CHENG PEÑALBA,H.D FLOR ISABEL BRENES MEDINA,H.D TOMAS GABRIEL BENAVIDES AGUILAR,H.D ROBERTO ARCHIBOLD CHUITO,H.D.S MERCEDES A. GALVEZ USEDA,H.D NESTOR ANTONIO GUARDIA JAEN",
-      "pagina": 5
+      "pagina": 6
     },
     {
       "fecha_presentacion": "14-07-2026",
@@ -981,7 +1031,7 @@
       "titulo": "QUE ESTABLECE EL REGIMEN JURIDICO PARA LA OPERACION Y EL MANTENIMIENTO DE LAS PLANTAS DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR) EN LA REPUBLICA DE PANAMA",
       "etapa": "Prohijado",
       "proponente": "H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 5
+      "pagina": 6
     },
     {
       "fecha_presentacion": "13-07-2026",
@@ -991,7 +1041,7 @@
       "titulo": "QUE ACTUALIZA EL NUMERAL 30 DE ARTICULO DE 128 DE CODIGO DE TRABAJO DE LA REPUBLICA DE PANAMA",
       "etapa": "Primer Debate",
       "proponente": "Milcia Michelle Perez",
-      "pagina": 5
+      "pagina": 6
     },
     {
       "fecha_presentacion": "13-07-2026",
@@ -1001,7 +1051,7 @@
       "titulo": "QUE TIPIFICA EL DELITO DE CORRUPCION O FRAUDE EN EL DEPORTE Y REFORMA EL CODIGO PENAL DE LA REPUBLICA DE PANAMA",
       "etapa": "Preliminar",
       "proponente": "Roberto Brown",
-      "pagina": 5
+      "pagina": 6
     },
     {
       "fecha_presentacion": "13-07-2026",
@@ -1009,7 +1059,7 @@
       "proyecto": "654",
       "anteproyecto": "46",
       "titulo": "QUE REGULA LA PUBLICIDAD COMERCIAL DIFUNDIDA POR CREADORES DE CONTENIDO DIGITAL Y MODIFICA UN ARTICULO DE LA LEY 45 DE 31 DE OCTUBRE DE 2007",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D WALKIRIA A. CHANDLER D´ORCY",
       "pagina": 6
     },
@@ -1161,7 +1211,7 @@
       "titulo": "QUE ADICIONA PARRAFOS FINALES A LOS ARTICULOS 387 Y 387-A DEL CODIGO PENAL PARA SANCIONAR MODALIDADES DE AMENAZA E INTIMIDACION MEDIANTE LA UTILIZACION ILICITA DE DATOS PERSONALES CONTRA TESTIGOS, PERITOS, INTERPRETES Y TRADUCTORES",
       "etapa": "Preliminar",
       "proponente": "H.D.S MARGARETH JULIENE PIMENTEL DÍAZ,H.D.S GRETTEL DENISSE GARRIDO VERGARA DE QUIROZ,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 6
+      "pagina": 7
     },
     {
       "fecha_presentacion": "09-07-2026",
@@ -1171,7 +1221,7 @@
       "titulo": "QUE CREA EL PROGRAMA PARA LA PRODUCCION ALIMENTARIA EN LOS CENTROS PENITENCIARIOS Y PROMUEVE SU SOSTENIBILIDAD",
       "etapa": "Preliminar",
       "proponente": "H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ",
-      "pagina": 6
+      "pagina": 7
     },
     {
       "fecha_presentacion": "09-07-2026",
@@ -1181,7 +1231,7 @@
       "titulo": "QUE REGULA EL NOMBRAMIENTO EN LOS CARGOS DE DIRECTORES REGIONALES, DIRECTORES INSTITUCIONALES Y DIRECTORES MEDICOS EN HOSPITALES PUBLICOS DEL MINISTERIO DE SALUD, CENTROS DE SALUD Y AFINES DE LA CAJA DE SEGURO SOCIAL, MEDIATE CONCURSO PUBLICO DE MERITOS Y CREDENCIALES",
       "etapa": "Primer Debate",
       "proponente": "H.D JANINE PRADO CASTAÑO,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 6
+      "pagina": 7
     },
     {
       "fecha_presentacion": "09-07-2026",
@@ -1191,7 +1241,7 @@
       "titulo": "QUE MODIFICA EL DECRETO LEY 9 DE 26 DE FEBRERO DE 1998, POR LA CUAL SE REFORMA EL REGIMEN BANCARIO Y SE CREA LA SUPERINTENDENCIA DE BANCOS, ORDENADO SISTEMATICAMENTE MEDIANTE EL DECRETO EJECUTIVO 52 DE 30 DE ABRIL DE 2008",
       "etapa": "Prohijado",
       "proponente": "H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D JHONATHAN EDIR VEGA",
-      "pagina": 6
+      "pagina": 7
     },
     {
       "fecha_presentacion": "09-07-2026",
@@ -1201,7 +1251,7 @@
       "titulo": "QUE ESTABLECE MEDIDAS PARA PREVENIR, ATENDER Y ERRADICAR LA VIOLENCIA VICARIA EN LA REPUBLICA DE PANAMA",
       "etapa": "Preliminar",
       "proponente": "H.D JAMIS GASPAR ACOSTA GUERRA",
-      "pagina": 6
+      "pagina": 7
     },
     {
       "fecha_presentacion": "09-07-2026",
@@ -1361,7 +1411,7 @@
       "titulo": "QUE ADICIONA ARTICULOS AL CODIGO CIVIL PARA REGULAR EL TRATAMIENTO SUCESORIO DE LOS ACTIVOS DIGITALES",
       "etapa": "Preliminar",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 7
+      "pagina": 8
     },
     {
       "fecha_presentacion": "02-07-2026",
@@ -1371,7 +1421,7 @@
       "titulo": "POR LA CUAL SE ADOPTA LA LEY GENERAL ANTICORRUPCION, SE MODIFICA EL CODIGO PROCESAL PENAL Y SE DICTAN OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 7
+      "pagina": 8
     },
     {
       "fecha_presentacion": "02-07-2026",
@@ -1381,7 +1431,7 @@
       "titulo": "QUE ESTABLECE EL MECANISMO DE ENTREGA Y RETIRO DE MEDICAMENTOS EN LINEA EN HOSPITALES Y POLICENTROS PUBLICOS, CON OPCION DE RETIRO POR TERCEROS O SERVICIOS DE ENTREGA AUTORIZADOS POR EL ASEGURADO",
       "etapa": "Primer Debate",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 7
+      "pagina": 8
     },
     {
       "fecha_presentacion": "02-07-2026",
@@ -1391,7 +1441,7 @@
       "titulo": "QUE ADICIONA ARTICULOS A LA LEY 37 DE 2009, QUE DESCENTRALIZA LA ADMINISTRACION PUBLICA Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Preliminar",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 7
+      "pagina": 8
     },
     {
       "fecha_presentacion": "02-07-2026",
@@ -1401,7 +1451,7 @@
       "titulo": "QUE ADICIONA ARTICULOS AL CODIGO DE TRABAJO SOBRE EL DERECHO A LA DESCONEXION DIGITAL LABORAL",
       "etapa": "Primer Debate",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 7
+      "pagina": 8
     },
     {
       "fecha_presentacion": "02-07-2026",
@@ -1561,7 +1611,7 @@
       "titulo": "QUE REGULA LOS PABELLONES NACIONALES Y OFICIALES DE LA REPUBLICA DE PANAMA EN EL AMBITO INTERNACIONAL",
       "etapa": "Primer Debate",
       "proponente": "H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO",
-      "pagina": 8
+      "pagina": 9
     },
     {
       "fecha_presentacion": "21-04-2026",
@@ -1571,7 +1621,7 @@
       "titulo": "QUE RECONOCE EL FESTIVAL DEL BOLLO Y EL CHICHEME CHORRERANO",
       "etapa": "Segundo Debate",
       "proponente": "H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D ROGELIO RICARDO REVELLO TEM,H.D MANUEL CHENG PEÑALBA,H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN,H.D.S MERCEDES A. GALVEZ USEDA,H.D LILIA EMERITA BATISTA RODRIGUEZ",
-      "pagina": 8
+      "pagina": 9
     },
     {
       "fecha_presentacion": "21-04-2026",
@@ -1581,7 +1631,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 1 DE 19 DE ENERO DE 2018, QUE ADOPTA MEDIDAS PARA PROMOVER EL USO DE BOLSAS REUTILIZABLES EN ESTABLECIMIENTOS COMERCIALES",
       "etapa": "Primer Debate",
       "proponente": "H.D MARCOS ENRIQUE CASTILLERO BARAHONA",
-      "pagina": 8
+      "pagina": 9
     },
     {
       "fecha_presentacion": "20-04-2026",
@@ -1591,7 +1641,7 @@
       "titulo": "QUE CREA EL FESTIVAL NACIONAL DEL ACORDEON DORINDO CARDENAS Y SU PATRONATO",
       "etapa": "Segundo Debate",
       "proponente": "RAUL MONTENEGRO",
-      "pagina": 8
+      "pagina": 9
     },
     {
       "fecha_presentacion": "13-04-2026",
@@ -1601,7 +1651,7 @@
       "titulo": "QUE MODIFICA LA LEY 488 DEL 2025, DEL TEXTO UNICO DE LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, RELATIVOS AL PROGRAMA DE ALTO RENDIMIENTO DEPORTIVO Y DE MEDICINA APLICADA AL DEPORTE.",
       "etapa": "Segundo Debate",
       "proponente": "H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D.S LYDIA NORAYS CABALLERO CADASTRE ,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D TOMAS GABRIEL BENAVIDES AGUILAR,H.D MARCOS ENRIQUE CASTILLERO BARAHONA",
-      "pagina": 8
+      "pagina": 9
     },
     {
       "fecha_presentacion": "13-04-2026",
@@ -1761,7 +1811,7 @@
       "titulo": "QUE MODIFICA UNA DISPOSICION DEL CODIGO DE RECURSOS MINERALES Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D DANA D. CASTAÑEDA GUARDIA",
-      "pagina": 9
+      "pagina": 10
     },
     {
       "fecha_presentacion": "27-03-2026",
@@ -1771,7 +1821,7 @@
       "titulo": "QUE MODIFICA LA LEY 44 DE 2002 Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 9
+      "pagina": 10
     },
     {
       "fecha_presentacion": "27-03-2026",
@@ -1781,7 +1831,7 @@
       "titulo": "QUE OPTIMIZA LA VERIFICACION DE USO DE SUELO EN EL OTORGAMIENTO Y RENOVACION DE AVISOS DE OPERACION A TRAVES DE LA PLATAFORMA PANAMA EMPRENDE Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D GRACIELA HERNANDEZ,H.D JOSE PEREZ BARBONI,H.D ERNESTO CEDEÑO,H.D BETSERAI AYIZE RICHARDS",
-      "pagina": 9
+      "pagina": 10
     },
     {
       "fecha_presentacion": "27-03-2026",
@@ -1791,7 +1841,7 @@
       "titulo": "QUE MODIFICA LA LEY 82 DE 2013, QUE ADOPTA MEDIDAS DE PREVENCION CONTRA LA VIOLENCIA EN LAS MUJERES Y REFORMA EL CODIGO PENAL PARA TIPIFICAR EL FEMICIDIO Y SANCIONAR LOS HECHOS DE VIOLENCIA CONTRA LA MUJER",
       "etapa": "Retirado por proponente",
       "proponente": "H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR",
-      "pagina": 9
+      "pagina": 10
     },
     {
       "fecha_presentacion": "26-03-2026",
@@ -1799,9 +1849,9 @@
       "proyecto": "588",
       "anteproyecto": "419",
       "titulo": "QUE ESTABLECE LA GOBERNANZA ADAPTATIVA DE LA INTELIGENCIA ARTIFICIAL EN PANAMA",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D JORGE ISAAC BLOISE IGLESIAS,H.D ERNESTO CEDEÑO,H.D MANUEL CHENG PEÑALBA",
-      "pagina": 9
+      "pagina": 10
     },
     {
       "fecha_presentacion": "26-03-2026",
@@ -1890,7 +1940,7 @@
       "anteproyecto": "406",
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 304 DE 2022, SOBRE LA PROTECCION INTEGRAL DE LOS SISTEMAS DE ARRECIFES CORALINOS, ECOSISTEMAS Y ESPECIES ASOCIADOS",
       "etapa": "Objetado por Ejecutivo",
-      "proponente": "H.D BENICIO ENACIO ROBINSON GRAJALES",
+      "proponente": "H.D.S BENISIO ENISIO ROBINSON GONZÁLEZ",
       "pagina": 10
     },
     {
@@ -1961,7 +2011,7 @@
       "titulo": "QUE ESTABLECE CONDICIONES PARA EL INGRESO DE MENORES DE EDAD A ESTABLECIMIENTOS DE HOSPEDAJE Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D OLGA PAULETTE THOMAS HORLY",
-      "pagina": 10
+      "pagina": 11
     },
     {
       "fecha_presentacion": "11-03-2026",
@@ -1971,7 +2021,7 @@
       "titulo": "QUE ESTABLECE LA INFORMACION CALORICA EN LOS MENUS DE RESTAURANTES DE CADENA",
       "etapa": "Primer Debate",
       "proponente": "H.D ARIEL ULISES VALLARINO APARICIO",
-      "pagina": 10
+      "pagina": 11
     },
     {
       "fecha_presentacion": "11-03-2026",
@@ -1979,9 +2029,9 @@
       "proyecto": "560",
       "anteproyecto": "395",
       "titulo": "QUE CREA LA ORDEN NACIONAL DE HONOR FUTBOLiSTICO \"LUIS TEJADA\".",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D GRACIELA HERNANDEZ,H.D JOSE PEREZ BARBONI,H.D ERNESTO CEDEÑO,H.D BETSERAI AYIZE RICHARDS,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 10
+      "pagina": 11
     },
     {
       "fecha_presentacion": "11-03-2026",
@@ -1991,7 +2041,7 @@
       "titulo": "QUE ESTABLECE NORMAS DE TRANSPARENCIA Y EQUILIBRIO EN LOS CONTRATOS DE CRÉDITO DEL SISTEMA BANCARIO",
       "etapa": "Segundo Debate",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 10
+      "pagina": 11
     },
     {
       "fecha_presentacion": "11-03-2026",
@@ -2001,7 +2051,7 @@
       "titulo": "GENERAL CONTRA LA ESTAFA DIGITAL",
       "etapa": "Primer Debate",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA",
-      "pagina": 10
+      "pagina": 11
     },
     {
       "fecha_presentacion": "11-03-2026",
@@ -2129,7 +2179,7 @@
       "proyecto": "567",
       "anteproyecto": "383",
       "titulo": "QUE REGULA EL USO DE DRONES EN ACTIVIDADES AGROPECUARIAS, FORESTALES, PESQUERAS Y ACUICOLAS EN LA REPUBLICA DE PANAMA",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA",
       "pagina": 11
     },
@@ -2159,9 +2209,9 @@
       "proyecto": "546",
       "anteproyecto": "377",
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DE LA LEY 47 DE 1946, ORGANICA DE EDUCACION, SOBRE REUTILIZACION DE TEXTOS ESCOLARES Y PROTECCION AL CONSUMIDOR",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JAIRO ARIEL SALAZAR RAMIREZ",
-      "pagina": 11
+      "pagina": 12
     },
     {
       "fecha_presentacion": "02-03-2026",
@@ -2171,7 +2221,7 @@
       "titulo": "QUE MODIFICA LOS ARTICULOS N°1778, 1779 Y 1795 DEL CODIGO CIVIL Y EL ARTICULO N°290 DEL CODIGO PROCESAL CIVIL",
       "etapa": "Primer Debate",
       "proponente": "H.D RICARDO AGUSTÍN VIGIL LÓPEZ",
-      "pagina": 11
+      "pagina": 12
     },
     {
       "fecha_presentacion": "02-03-2026",
@@ -2179,9 +2229,9 @@
       "proyecto": "553",
       "anteproyecto": "379",
       "titulo": "QUE ADICIONA ARTICULOS A LA LEY 80 DE 2012, SOBRE INCENTIVOS PARA EL FOMENTO DE LA ACTIVIDAD TURISTICA Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D DANA D. CASTAÑEDA GUARDIA",
-      "pagina": 11
+      "pagina": 12
     },
     {
       "fecha_presentacion": "26-02-2026",
@@ -2191,7 +2241,7 @@
       "titulo": "QUE REGULA LA IMPORTACION Y PRODUCCION DE POLIESTIRENO EXPANDIBLE Y POLIESTIRENO EXTRUIDO BIODEGRADABLE PARA ALIMENTOS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Objetado por Ejecutivo",
       "proponente": "H.D CARLOS AGUSTIN AFU DECEREGA",
-      "pagina": 11
+      "pagina": 12
     },
     {
       "fecha_presentacion": "26-02-2026",
@@ -2201,7 +2251,7 @@
       "titulo": "POR EL CUAL SE DECLARA LA CASA BLANCA, ACTUAL SEDE DE LA ALIANZA FRANCESA, COMO PATRIMONIO CULTURAL DE LA NACION Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D OLGA PAULETTE THOMAS HORLY",
-      "pagina": 11
+      "pagina": 12
     },
     {
       "fecha_presentacion": "24-02-2026",
@@ -2361,7 +2411,7 @@
       "titulo": "QUE INSTITUYE EL FESTIVAL FOLCLORICO DE LA POLLERA VERAGÜENSE",
       "etapa": "Segundo Debate",
       "proponente": "H.D TOMAS GABRIEL BENAVIDES AGUILAR",
-      "pagina": 12
+      "pagina": 13
     },
     {
       "fecha_presentacion": "04-02-2026",
@@ -2371,7 +2421,7 @@
       "titulo": "QUE MODIFICA EL CODIGO PROCESAL PENAL",
       "etapa": "Primer Debate",
       "proponente": "H.D ARIANA MARISÍN COBA MARTÍNEZ",
-      "pagina": 12
+      "pagina": 13
     },
     {
       "fecha_presentacion": "04-02-2026",
@@ -2381,7 +2431,7 @@
       "titulo": "QUE CREA EL SISTEMA NACIONAL DE LABORATORIOS DE REFERENCIA AGRICOLA Y PECUARIA.",
       "etapa": "Primer Debate",
       "proponente": "H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D.S ARNULFO ANTONIO ARIAS OLIVARES",
-      "pagina": 12
+      "pagina": 13
     },
     {
       "fecha_presentacion": "03-02-2026",
@@ -2391,7 +2441,7 @@
       "titulo": "QUE CREA EL PATRONATO DE LA BIBLIOTECA NACIONAL ERNESTO J. CASTILLERO R",
       "etapa": "Retirado por proponente",
       "proponente": "H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 12
+      "pagina": 13
     },
     {
       "fecha_presentacion": "03-02-2026",
@@ -2401,7 +2451,7 @@
       "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 4 DE 17 DE MAYO DE 1994, POR LA CUAL SE ESTABLECE EL SISTEMA DE INTERESES PREFERENCIALES AL SECTOR AGROPECUARIO Y SE TOMAN OTRAS MEDIDAS",
       "etapa": "Segundo Debate",
       "proponente": "H.D ELIECER CASTRELLÓN BARRIOS",
-      "pagina": 12
+      "pagina": 13
     },
     {
       "fecha_presentacion": "02-02-2026",
@@ -2561,7 +2611,7 @@
       "titulo": "QUE ADOPTA MEDIDAS PARA SANCIONAR LOS DISPAROS AL AIRE",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D MANUEL CHENG PEÑALBA",
-      "pagina": 13
+      "pagina": 14
     },
     {
       "fecha_presentacion": "19-01-2026",
@@ -2571,7 +2621,7 @@
       "titulo": "QUE SANCIONA EL FRAUDE DE PATERNIDAD EN LA REPUBLICA DE PANAMA",
       "etapa": "Ley",
       "proponente": "H.D JAIRO ARIEL SALAZAR RAMIREZ",
-      "pagina": 13
+      "pagina": 14
     },
     {
       "fecha_presentacion": "15-01-2026",
@@ -2581,7 +2631,7 @@
       "titulo": "QUE ADICIONA EL CAPITULO XVIII DE LA TRANSFORMACION DIGITAL PORTUARIA Y DE LOS PUERTOS INTELIGENTES A LA LEY 56 DE 6 DE AGOSTO DE 2008, GENERAL DE PUERTOS DE PANAMA, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Negado",
       "proponente": "JOSEPH ISAZA",
-      "pagina": 13
+      "pagina": 14
     },
     {
       "fecha_presentacion": "13-01-2026",
@@ -2591,7 +2641,7 @@
       "titulo": "POR LA CUAL SE ADICIONA A LA LEY 25 DE 1995 UN CAPITULO SOBRE LA FUSION, ESCISIÓN Y REACTIVACION DE LAS FUNDACIONES DE INTERES PRIVADO, Y SE DICTAN OTRAS DISPOSICIONES",
       "etapa": "Negado",
       "proponente": "CELSO ARENAS",
-      "pagina": 13
+      "pagina": 14
     },
     {
       "fecha_presentacion": "13-01-2026",
@@ -2601,7 +2651,7 @@
       "titulo": "POR LA CUAL SE DECLARA MONUMENTO HISTORICO NACIONAL EL PUENTE SOBRE EL RÍO CHANGUINOLA, UBICADO EN LA PROVINCIA DE BOCAS DEL TORO, Y SE ESTABLECEN DISPOSICIONES PARA SU CONSERVACION, PROMOCION CULTURAL Y APROVECHAMIENTO EDUCATIVO Y TURISTICO",
       "etapa": "Segundo Debate",
       "proponente": "MAYNOR GUERRA",
-      "pagina": 13
+      "pagina": 14
     },
     {
       "fecha_presentacion": "13-01-2026",
@@ -2761,7 +2811,7 @@
       "titulo": "QUE MODIFICA LOS ARTICULOS 213 Y 214 DEL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL, RELATIVOS AL EXAMEN DE LA CUENTA GENERAL DEL TESORO, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Primer Debate",
       "proponente": "H.D EDUARDO ALEJANDRO GAITÁN BEITÍA",
-      "pagina": 14
+      "pagina": 15
     },
     {
       "fecha_presentacion": "13-01-2026",
@@ -2771,7 +2821,7 @@
       "titulo": "QUE ADICIONA UN CAPITULO NUEVO AL TITULO VII DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL, PARA REGULAR EL PROCEDIMIENTO DE LA MOCION DE CENSURA",
       "etapa": "Primer Debate",
       "proponente": "H.D EDUARDO ALEJANDRO GAITÁN BEITÍA",
-      "pagina": 14
+      "pagina": 15
     },
     {
       "fecha_presentacion": "08-01-2026",
@@ -2781,7 +2831,7 @@
       "titulo": "POR LA CUAL SE FORTALECE LA CONTRATACION PUBLICA EN LA REPUBLICA DE PANAMA Y SE CREA EL LISTADO PUBLICO DIGITAL DE PERSONAS CONDENADAS Y SANCIONADAS POR DELITOS CONTRA LA ADMINISTRACION PUBLICA",
       "etapa": "Segundo Debate",
       "proponente": "H.D LUIS HENRIQUE DUKE WALKER,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D BETSERAI AYIZE RICHARDS,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 14
+      "pagina": 15
     },
     {
       "fecha_presentacion": "08-01-2026",
@@ -2791,7 +2841,7 @@
       "titulo": "POR MEDIO DE LA CUAL SE REFORMA LA LEY 72 DE 2008, QUE ESTABLECE EL PROCEDIMIENTO ESPECIAL PARA LA ADJUDICACION DE LA PROPIEDAD COLECTIVA DE TIERRAS DE LOS PUEBLOS INDIGENAS QUE NO ESTAN DENTRO DE LAS COMARCAS Y SE ADOPTAN OTRAS DISPOSICIONES",
       "etapa": "Primer Debate",
       "proponente": "H.D ARQUESIO ARIAS FELIX",
-      "pagina": 14
+      "pagina": 15
     },
     {
       "fecha_presentacion": "07-01-2026",
@@ -2801,7 +2851,7 @@
       "titulo": "QUE ESTABLECE LA PONDERACION DEL VOTO EN LOS PROCESOS DE ELECCION DE AUTORIDADES DE LAS UNIVERSIDADES OFICIALES DE LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Archivado",
       "proponente": "H.D ERNESTO CEDEÑO ALVARADO",
-      "pagina": 14
+      "pagina": 15
     },
     {
       "fecha_presentacion": "06-01-2026",
@@ -2961,7 +3011,7 @@
       "titulo": "QUE GARANTIZA EL ACCESO EQUITATIVO Y A COSTOS ACCESIBLES A LOS SERVICIOS DE COPIADO, IMPRESIÓN, EMPASTADO DE TESIS, INFORMES Y TRABAJOS DE GRADUACIÓN EN LOS CENTROS DE ESTUDIOS SUPERIORES DE LA REPÚBLICA DE PANAMÁ\" Y SE DICTAN OTRAS DISPOSICIONES",
       "etapa": "Archivado",
       "proponente": "CECILIA SALDAÑA",
-      "pagina": 15
+      "pagina": 16
     },
     {
       "fecha_presentacion": "29-10-2025",
@@ -2969,9 +3019,9 @@
       "proyecto": "507",
       "anteproyecto": "285",
       "titulo": "QUE ESTABLECE LA PARTICIPACIOPN MUNICIPAL COMO APOYO OPERATIVO DE LA AUTORIDAD DE TRANSITO Y TRANSPORTE TERRESTRE EN LA GESTION DE MULTAS POR INFRACCIONES DE TRANSITO",
-      "etapa": "Primer Debate",
+      "etapa": "Negado",
       "proponente": "H.D.S GABRIEL ANDRÉS SOLÍS ARIAS,H.D ARIEL ULISES VALLARINO APARICIO,H.D ROGELIO RICARDO REVELLO TEM,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE LUIS HERRERA,H.D JULIO DE LA GUARDIA ARROCHA,H.D RONALD AMETH DE GRACIA MORENO,H.D RAPHAEL BUCHANAN JOSEPH,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D ROBERTO ARCHIBOLD CHUITO,H.D.S DOMINGA BEJERANO MITRE,H.D.S MERCEDES A. GALVEZ USEDA,H.D JAIME EDGARDO VARGAS CENTELLA,H.D ALAIN ALBENIS CEDEÑO HERRERA,H.D ARQUESIO ARIAS FELIX",
-      "pagina": 15
+      "pagina": 16
     },
     {
       "fecha_presentacion": "29-10-2025",
@@ -2981,7 +3031,7 @@
       "titulo": "QUE DECLARA LA PARTE BAJA, MEDIA Y ALTA DE LA CUENCA HIDROGRAFICA DEL RIO CRICAMOLA COMO AREA PROTEGIDA EN SU CATEGORIA DE RESERVA HIDROLOGICA Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D ROBERTO ARCHIBOLD CHUITO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D.S ALBERTO DAVID NAVARRO SÁNCHEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D YESICA ROMERO GARCÍA,H.D GERTRUDIS RODRÍGUEZ DE GRACIA,H.D JANINE PRADO CASTAÑO,H.D ISAAC MOSQUERA RIVAS,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D JULIO DE LA GUARDIA ARROCHA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D.S MARCO MAURICIO RANGEL VIDALES,H.D RAPHAEL BUCHANAN JOSEPH,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D NIXSON ANDRADE RODRÍGUEZ,H.D.S URANIS MARIELA MORENO S. DE MONTENEGRO,H.D JAIME EDGARDO VARGAS CENTELLA,H.D ALAIN ALBENIS CEDEÑO HERRERA,H.D ARQUESIO ARIAS FELIX",
-      "pagina": 15
+      "pagina": 16
     },
     {
       "fecha_presentacion": "29-10-2025",
@@ -2991,7 +3041,7 @@
       "titulo": "QUE ADICIONA UN CAPÍTULO A LA LEY 47 DE 1946, ORGÁNICA DE EDUCACIÓN, PARA LA PROTECCIÓN INTEGRAL DEL ESTUDIANTE EN ZONAS DE DIFÍCIL ACCESO Y ALTO RIESGO GEOGRÁFICO",
       "etapa": "Objetado por Ejecutivo",
       "proponente": "H.D RAPHAEL BUCHANAN JOSEPH,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D ROGELIO RICARDO REVELLO TEM,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D ISAAC MOSQUERA RIVAS,H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE LUIS HERRERA,H.D LUIS HENRIQUE DUKE WALKER,H.D RONALD AMETH DE GRACIA MORENO,H.D MANUEL CHENG PEÑALBA,H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN,H.D JAIME EDGARDO VARGAS CENTELLA",
-      "pagina": 15
+      "pagina": 16
     },
     {
       "fecha_presentacion": "29-10-2025",
@@ -3001,7 +3051,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTÍCULOS A LA LEY 57 DEL 5 DE OCTUBRE DE 1976 POR LA CUAL SE CREA UNA NOTARIA ESPECIAL, EN EL CIRCUITO NOTARIAL DE PANAMA QUE FUNCIONARA EN EL DISTRITO DE SAN MIGUELITO",
       "etapa": "Retirado por proponente",
       "proponente": "H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 15
+      "pagina": 16
     },
     {
       "fecha_presentacion": "29-10-2025",
@@ -3009,7 +3059,7 @@
       "proyecto": "471",
       "anteproyecto": "289",
       "titulo": "QUE ESTABLECE UN PROGRAMA DE EDUCACION SEGURA PARA COMUNIDADES RURALES DE DIFICIL ACCESO",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D DIDIANO PINILLA RÍOS,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ",
       "pagina": 16
     },
@@ -3129,7 +3179,7 @@
       "proyecto": "532",
       "anteproyecto": "274",
       "titulo": "QUE ESTABLECE EL PORCENTAJE DE RECLUTAMIENTO Y CONTRATACION LABORAL DE TRABAJADORES CALIFICADOS QUE RESIDAN FISICAMENTE EN LAS COMUNIDADES, CORREGIMIENTOS O DISTRITOS EN DONDE SE DESARROLLEN OBRAS DE INFRAESTRUCTURAS QUE SON FINANCIADAS POR EL ESTADO Y EJECUTADAS POR LAS EMPRESAS PRIVADAS",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D YESICA ROMERO GARCÍA",
       "pagina": 16
     },
@@ -3161,7 +3211,7 @@
       "titulo": "QUE ESTABLECE EL PATRONATO DEL HOSPITAL MULTIMODAL INTEGRADO DE LA PROVINCIA DE COLON",
       "etapa": "Primer Debate",
       "proponente": "H.D NELSON JACKSON PALMA,H.D ROGELIO RICARDO REVELLO TEM,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D VÍCTOR DE JESÚS CASTILLO CORTEZ,H.D JAIRO ARIEL SALAZAR RAMIREZ",
-      "pagina": 16
+      "pagina": 17
     },
     {
       "fecha_presentacion": "16-10-2025",
@@ -3171,7 +3221,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 52 DE 2017, LA CUAL ESTABLECE EL MARCO REGULATORIO PARA LA NOMENCLATURA Y NUMERACION URBANA Y RURAL EN LA REPÚBLICA DE PANAMA",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D EDUARDO ALEJANDRO GAITÁN BEITÍA",
-      "pagina": 16
+      "pagina": 17
     },
     {
       "fecha_presentacion": "15-10-2025",
@@ -3181,7 +3231,7 @@
       "titulo": "QUE ESTABLECE UN APOYO ECONOMICO POR PARTE DEL ESTADO A LAS ASOCIACIONES Y/O JUNTAS DE CARNAVAL LEGALMENTE RECONOCIDAS",
       "etapa": "Segundo Debate",
       "proponente": "H.D MANUEL COHEN SALERNO,H.D JHONATHAN EDIR VEGA,H.D EDUARDO ENRIQUE VÁSQUEZ GUTIÉRREZ,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D DIDIANO PINILLA RÍOS,H.D JOAN MANUEL GUEVARA RODRÍGUEZ,H.D RONALD AMETH DE GRACIA MORENO,H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA,H.D CARLOS AGUSTIN AFU DECEREGA,H.D DANA D. CASTAÑEDA GUARDIA,H.D MARCOS ENRIQUE CASTILLERO BARAHONA",
-      "pagina": 16
+      "pagina": 17
     },
     {
       "fecha_presentacion": "15-10-2025",
@@ -3191,7 +3241,7 @@
       "titulo": "QUE ESTABLECE EL MARCO REGULATORIO PARA LOS PROVEEDORES DE SERVICIOS DE ACTIVOS VIRTUALES EN LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Primer Debate",
       "proponente": "H.D ARIEL ULISES VALLARINO APARICIO",
-      "pagina": 16
+      "pagina": 17
     },
     {
       "fecha_presentacion": "15-10-2025",
@@ -3201,7 +3251,7 @@
       "titulo": "QUE REGULA LA ACTIVIDAD DE LA INDUSTRIA DE EXPORTACION DE RECICLAJE DE MATERIALES FERROSOS Y NO FERROSOS",
       "etapa": "Ley",
       "proponente": "H.D JAMIS GASPAR ACOSTA GUERRA",
-      "pagina": 16
+      "pagina": 17
     },
     {
       "fecha_presentacion": "15-10-2025",
@@ -3279,7 +3329,7 @@
       "proyecto": "464",
       "anteproyecto": "260",
       "titulo": "QUE ESTABLECE LA IMPLEMENTACION DE SEMAFOROS INCLUSIVOS PARA PERSONAS CON DISCAPACIDAD, CON TECNOLOGIA SONORA EN TODA LA REPUBLICA DE PANAMA",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JHONATHAN EDIR VEGA,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D JANINE PRADO CASTAÑO,H.D.S LUIS ENRIQUE BATISTA CASTILLO,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D LUIS EDUARDO CAMACHO CASTRO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D.S MERCEDES A. GALVEZ USEDA",
       "pagina": 17
     },
@@ -3361,7 +3411,7 @@
       "titulo": "QUE ADOPTA MEDIDAS PARA LA PROMOCION, RESALTO Y DESARROLLO INTEGRAL DE LA CULTURA INDIGENA GUNA Y LA ADOPCIÓN DEL DESFILE DE LAS MIL MOLAS, AL TERCER DOMINGO DE FEBRERO EN EL DISTRITO DE ARRAIJAN",
       "etapa": "Primer Debate",
       "proponente": "STEFANY PEÑALBA",
-      "pagina": 17
+      "pagina": 18
     },
     {
       "fecha_presentacion": "03-10-2025",
@@ -3371,7 +3421,7 @@
       "titulo": "QUE ESTABLECE LA OBLIGACION DE DIVULGAR EL PUNTAJE DE SEGURIDAD VEHICULAR EN LA PUBLICIDAD DE AUTOS NUEVOS Y USADOS COMERCIALIZADOS EN EL TERRITORIO NACIONAL",
       "etapa": "Primer Debate",
       "proponente": "ANGEL CUAN, JOSEPH ISAZA",
-      "pagina": 17
+      "pagina": 18
     },
     {
       "fecha_presentacion": "02-10-2025",
@@ -3381,7 +3431,7 @@
       "titulo": "POR MEDIO DEL CUAL SE MODIFICA Y ADICIONAN ARTICULOS A LA LEY 45 DE 2007, QUE DICTA NORMAS SOBRE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA",
       "etapa": "Primer Debate",
       "proponente": "H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA",
-      "pagina": 17
+      "pagina": 18
     },
     {
       "fecha_presentacion": "01-10-2025",
@@ -3391,7 +3441,7 @@
       "titulo": "QUE CREA LA JURISDICCION COACTIVA ESPECIAL PARA LA EJECUCION DE LAS RESOLUCIONES DE CARGOS DEL TRIBUNAL DE CUENTAS Y SE MODIFICAN OTRAS DISPOSICIONES",
       "etapa": "Primer Debate",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 17
+      "pagina": 18
     },
     {
       "fecha_presentacion": "30-09-2025",
@@ -3401,7 +3451,7 @@
       "titulo": "QUE HACE DE ACCESO PUBLICO LA LISTA DE PERSONAS QUE CONTRATAN CON EL ESTADO Y MODIFICA LA LEY 22 DE 2006",
       "etapa": "Negado",
       "proponente": "H.D JANINE PRADO CASTAÑO,H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 17
+      "pagina": 18
     },
     {
       "fecha_presentacion": "30-09-2025",
@@ -3561,7 +3611,7 @@
       "titulo": "QUE ESTABLECE CONTROL COMERCIAL DE ALIMENTOS SUSTITUTOS EN PANAMA",
       "etapa": "Archivado",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 18
+      "pagina": 19
     },
     {
       "fecha_presentacion": "17-09-2025",
@@ -3571,7 +3621,7 @@
       "titulo": "QUE REGULA EL USO DE TELEFONOS CELULARES EN TODAS LAS INSTITUCIONES OFICIALES Y PARTICULARES DE CENTROS DE EDUCACION BASICA, MEDIA Y PROMEDIA",
       "etapa": "Segundo Debate",
       "proponente": "VIRGILIO SOUSA",
-      "pagina": 18
+      "pagina": 19
     },
     {
       "fecha_presentacion": "17-09-2025",
@@ -3581,7 +3631,7 @@
       "titulo": "QUE SUBROGA LA LEY 9 DE 20 DE JUNIO DE 1994, QUE ESTABLECE Y REGULA LA CARRERA ADMINISTRATIVA",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "MINISTERIO DE LA PRESIDENCIA",
-      "pagina": 18
+      "pagina": 19
     },
     {
       "fecha_presentacion": "16-09-2025",
@@ -3591,7 +3641,7 @@
       "titulo": "POR LA CUAL EL MUNICIPIO RESPECTIVO ENAJENA A FAVOR DE LAS EMPRESAS DEDICADAS A PRESTAR EL SERVICIO DE GRÚAS TODOS AQUELLOS VEHÍCULOS QUE SE ENCUENTRAN EN SUS PATIOS DESATENDIDOS POR SUS PROPIETARIOS POR UN TÉRMINO MAYOR DE SEIS MESES",
       "etapa": "Negado",
       "proponente": "EMILSA ESPINOSA",
-      "pagina": 18
+      "pagina": 19
     },
     {
       "fecha_presentacion": "16-09-2025",
@@ -3601,7 +3651,7 @@
       "titulo": "QUE MODIFICA LA LEY 134 DE 31 DE DICIEMBRE DE 2013, PARA INCLUIR UN BENEFICIO ADICIONAL EN AROS Y LENTES CON PRESCRIPCION MEDICA",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "JOSEPH ISAZA",
-      "pagina": 18
+      "pagina": 19
     },
     {
       "fecha_presentacion": "16-09-2025",
@@ -3689,7 +3739,7 @@
       "proyecto": "561",
       "anteproyecto": "209",
       "titulo": "QUE ADICIONA UN NUMERAL AL ARTICULO 17 DE LA LEY 106 DE 1973 DEL REGIMEN MUNICIPAL",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN,H.D.S JUAN DOMINGO DÍAZ CONCEPCIÓN,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D ROGELIO RICARDO REVELLO TEM,H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D LUIS EDUARDO CAMACHO CASTRO,H.D NIXSON ANDRADE RODRÍGUEZ,H.D JAMIS GASPAR ACOSTA GUERRA,H.D.S SARA J. MAGALLON CAICEDO DE RUIZ,H.D.S BERTA NIDIA MORENO FLORES,H.D DANA D. CASTAÑEDA GUARDIA,H.D LILIA EMERITA BATISTA RODRIGUEZ",
       "pagina": 19
     },
@@ -3749,7 +3799,7 @@
       "proyecto": "415",
       "anteproyecto": "203",
       "titulo": "QUE ADICIONA DISPOSICIONES AL ARTICULO 47 DE LA LEY 285 DE 15 DE FEBRERO DE 2022 Y CREA EL SISTEMA DIGITAL UNIVERSAL DE CREDITOS ACADEMICOS (SDUCA)",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D ERNESTO CEDEÑO",
       "pagina": 19
     },
@@ -3761,7 +3811,7 @@
       "titulo": "QUE LIBERA LAS CONCESIONES DE TRANSPORTE PUBLICO TERRESTRE DE PASAJEROS.",
       "etapa": "Negado",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA",
-      "pagina": 19
+      "pagina": 20
     },
     {
       "fecha_presentacion": "08-09-2025",
@@ -3771,7 +3821,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA A LA LEY 83 DE 9 DE NOVIEMBRE DE 2012, QUE REGULA EL USO DE MEDIOS ELECTRONICOS PARA LOS TRAMITES GUBERNAMENTALES",
       "etapa": "Primer Debate",
       "proponente": "H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 19
+      "pagina": 20
     },
     {
       "fecha_presentacion": "08-09-2025",
@@ -3781,7 +3831,7 @@
       "titulo": "POR MEDIO DEL CUAL SE MODIFICA LA LEY 45 DEL 31 DE OCTUBRE DEL 2007 QUE SEÑALA LAS NORMAS DE PROTECCION AL CONSUMIDOR Y QUE NOS PERMITE EJERCER LA SIGUIENTE EXPOSICION DE MOTIVO",
       "etapa": "Retirado por proponente",
       "proponente": "H.D JAIRO ARIEL SALAZAR RAMIREZ,H.D MEDIN JIMÉNEZ PITTI,H.D ARQUESIO ARIAS FELIX",
-      "pagina": 19
+      "pagina": 20
     },
     {
       "fecha_presentacion": "08-09-2025",
@@ -3791,7 +3841,7 @@
       "titulo": "QUE REGULA LA SIEMBRA DE ESPECIES ARBOREAS BAJO TENDIDOS ELECTRICOS, ESTABLECE SANCIONES, ORDENA LA PLANIFICACION DE LA VEGETACION EN ESPACIOS PUBLICOS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Primer Debate",
       "proponente": "H.D ISAAC MOSQUERA RIVAS,H.D.S JUAN DOMINGO DÍAZ CONCEPCIÓN,H.D EDWIN ANTONIO VERGARA CASTILLO,H.D ROGELIO RICARDO REVELLO TEM,H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN,H.D LUIS EDUARDO CAMACHO CASTRO,H.D.S NICOLÁS ADAMES ARIAS,H.D TOMAS GABRIEL BENAVIDES AGUILAR,H.D.S MERCEDES A. GALVEZ USEDA,H.D JAIRO ARIEL SALAZAR RAMIREZ,H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D ARQUESIO ARIAS FELIX",
-      "pagina": 19
+      "pagina": 20
     },
     {
       "fecha_presentacion": "08-09-2025",
@@ -3801,7 +3851,7 @@
       "titulo": "QUE ESTABLECE LA OBLIGACION DE ELECTRIFICACION TOTAL EN LOS DISTRITOS DONDE SE UBICAN PROYECTOS HIDROELECTRICOS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D JHONATHAN EDIR VEGA,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D ROBERTO ARCHIBOLD CHUITO",
-      "pagina": 19
+      "pagina": 20
     },
     {
       "fecha_presentacion": "08-09-2025",
@@ -3961,7 +4011,7 @@
       "titulo": "QUE PROHIBE EL USO DE FONDOS PUBLICOS PARA EL PAGO DE SEGUROS PRIVADOS DE SALUD DE LOS FUNCIONARIOS PUBLICOS",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D LUIS HENRIQUE DUKE WALKER,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 20
+      "pagina": 21
     },
     {
       "fecha_presentacion": "01-09-2025",
@@ -3971,7 +4021,7 @@
       "titulo": "QUE PROHIBE LA INCLUSION EN EL PRESUPUESTO DE LAS INSTITUCIONES PUBLICAS LAS PARTIDAS DESTINADAS A SEGUROS PRIVADOS PARA SERVIDORES PUBLICOS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 20
+      "pagina": 21
     },
     {
       "fecha_presentacion": "28-08-2025",
@@ -3981,7 +4031,7 @@
       "titulo": "PROPUESTA DE LEY PARA LA PROMOCION DE LA CREACION ARTISTICA Y DIGITAL CON SOFTWARE LIBRE (CREA LIBRE PANAMA)",
       "etapa": "Archivado",
       "proponente": "RAMON ANTONIO MENDOZA DANGOND",
-      "pagina": 20
+      "pagina": 21
     },
     {
       "fecha_presentacion": "27-08-2025",
@@ -3991,7 +4041,7 @@
       "titulo": "QUE MODIFICA LA LEY 49 DEL 4 DE DICIEMBRE DE 1984, QUE DICTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
       "etapa": "Primer Debate",
       "proponente": "H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 20
+      "pagina": 21
     },
     {
       "fecha_presentacion": "27-08-2025",
@@ -4001,7 +4051,7 @@
       "titulo": "QUE CREA EL PATRONATO DEL HOSPITAL REGIONAL DE AZUERO ANITA MORENO EN LA PROVINCIA DE LOS SANTOS",
       "etapa": "Segundo Debate",
       "proponente": "H.D RONALD AMETH DE GRACIA MORENO",
-      "pagina": 20
+      "pagina": 21
     },
     {
       "fecha_presentacion": "27-08-2025",
@@ -4161,7 +4211,7 @@
       "titulo": "QUE ADICIONA ARTICULOS A LA LEY 45 DE 2007, QUE DICTA NORMAS SOBRE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA Y OTRA DISPOSICION",
       "etapa": "Segundo Debate",
       "proponente": "H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D JANINE PRADO CASTAÑO,H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 21
+      "pagina": 22
     },
     {
       "fecha_presentacion": "25-08-2025",
@@ -4171,7 +4221,7 @@
       "titulo": "QUE ADOPTA MEDIDAS PARA LA PREVENCION Y CONTROL DE LA LUDOPATIA EN PANAMA",
       "etapa": "Ley",
       "proponente": "H.D RAUL GILBERTO PINEDA VERGARA,H.D CRISPIANO ADAMES NAVARRO",
-      "pagina": 21
+      "pagina": 22
     },
     {
       "fecha_presentacion": "21-08-2025",
@@ -4181,7 +4231,7 @@
       "titulo": "QUE ADICIONA DISPOSICIONES AL CODIGO DE LA FAMILIA, RELATIVAS AL PROCEDIMIENTO SUMARIO DE LA TUTELA",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D.S ANA MARÍA POVEDA HERRERA,H.D.S ARIEL ANÍBAL RÍOS ZAPATA,H.D.S BOLIVAR ENRIQUE ESCALA VERGARA,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D.S ARNULFO ANTONIO ARIAS OLIVARES,H.D.S MARCO MAURICIO RANGEL VIDALES,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 21
+      "pagina": 22
     },
     {
       "fecha_presentacion": "21-08-2025",
@@ -4191,7 +4241,7 @@
       "titulo": "QUE DECLARA EL DIA INTERNACIONAL DEL SOBREVIVIENTE DE CANCER EN PANAMA, EL DIA 3 DE JUNIO DE CADA AÑO",
       "etapa": "Segundo Debate",
       "proponente": "IVIS BONILLA DE TORRES",
-      "pagina": 21
+      "pagina": 22
     },
     {
       "fecha_presentacion": "21-08-2025",
@@ -4201,7 +4251,7 @@
       "titulo": "QUE MODIFICA UN ARTICULO DE LA LEY 47 DE 1946, QUE APRUEBA EL TEXTO UNICO DE LA LE ORGANICA DE EDUCACION, QUE ESTABLECE LA EDAD DE INGRESO DE LOS MENORES EN EL PRIMER NIVEL DE ENSEÑANZA PARA LA ETAPA DE EDUCACION PREESCOLAR; MODIFICADA Y ADICIONADA POR LA EY 34 DE 6 DE JULIO DE 1995, POR LA LEY DEL 1 DE NOVIEMBRE DE 2002, POR LA LEY 60 DE 7 DE AGOSTO DE 2003 Y POR DECRETO EJECUTIVO No. 305 DE 30 DE ABRIL DE 2004",
       "etapa": "Archivado",
       "proponente": "JUDITH CASTILLO",
-      "pagina": 21
+      "pagina": 22
     },
     {
       "fecha_presentacion": "20-08-2025",
@@ -4361,7 +4411,7 @@
       "titulo": "QUE ESTABLECE LA IDENTIFICACION OBLIGATORIA DEL ORIGEN Y LA DIFERENCIACION DE PRODUCTOS ALIMENTICIOS ORIGINALES, SUCEDANEOS E IMITACIONES EN PANAMA",
       "etapa": "Ley",
       "proponente": "H.D RAUL GILBERTO PINEDA VERGARA,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D.S NAYELIS NOEMÍ GONZÁLEZ GONZÁLEZ,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 22
+      "pagina": 23
     },
     {
       "fecha_presentacion": "18-08-2025",
@@ -4371,7 +4421,7 @@
       "titulo": "QUE MODIFICA LA LEY 4 DE 2006, QUE REORGANIZA LA UNIVERIDAD AUTONOMA DE CHIRIQUI",
       "etapa": "Negado",
       "proponente": "H.D JHONATHAN EDIR VEGA,H.D CARLOS EDUARDO SALDAÑA LÓPEZ",
-      "pagina": 22
+      "pagina": 23
     },
     {
       "fecha_presentacion": "18-08-2025",
@@ -4381,7 +4431,7 @@
       "titulo": "POR LA CUAL SE SUBROGA LA LEY 70 DE 1975, QUE CREA EL INSTITUTO DE MERCADEO AGROPECUARIO Y SE DETERMINAN SUS FUNCIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D MEDIN JIMÉNEZ PITTI,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D ELIECER CASTRELLÓN BARRIOS,H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D CARLOS AGUSTIN AFU DECEREGA,H.D RAUL GILBERTO PINEDA VERGARA,H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D LILIA EMERITA BATISTA RODRIGUEZ",
-      "pagina": 22
+      "pagina": 23
     },
     {
       "fecha_presentacion": "18-08-2025",
@@ -4391,7 +4441,7 @@
       "titulo": "QUE ESTABLECE EL PROGRAMA NACIONAL DE EDUCACION EN VALORES, PREVENCION DE LA CORRUPCION, ETICA, CONCIENCIA AMBIENTAL, NO DISCRIMINACION Y PATRIOTISMO EN LA REPUBLICA DE PANAMA.",
       "etapa": "Segundo Debate",
       "proponente": "H.D JHONATHAN EDIR VEGA,H.D CARLOS EDUARDO SALDAÑA LÓPEZ",
-      "pagina": 22
+      "pagina": 23
     },
     {
       "fecha_presentacion": "18-08-2025",
@@ -4401,7 +4451,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 113 DE 18 DE NOVIEMBRE DE 2019, SOBRE ROTULACION Y COMERCIALIZACION DE PRODUCTOS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Archivado",
       "proponente": "H.D MEDIN JIMÉNEZ PITTI,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D.S NAYELIS NOEMÍ GONZÁLEZ GONZÁLEZ,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 22
+      "pagina": 23
     },
     {
       "fecha_presentacion": "18-08-2025",
@@ -4429,7 +4479,7 @@
       "proyecto": "350",
       "anteproyecto": "123",
       "titulo": "QUE ESTABLECE EL DERECHO AL OLVIDO ONCOLOGICO Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D JORGE ISAAC BLOISE IGLESIAS",
       "pagina": 23
     },
@@ -4489,7 +4539,7 @@
       "proyecto": "333",
       "anteproyecto": "118",
       "titulo": "QUE ELEVA A CATEGORIA INTERNACIONAL EL FESTIVAL FOLCLORICO DEL MANITO OCUEÑO",
-      "etapa": "Segundo Debate",
+      "etapa": "Suspendido",
       "proponente": "H.D MARCOS ENRIQUE CASTILLERO BARAHONA",
       "pagina": 23
     },
@@ -4561,7 +4611,7 @@
       "titulo": "LEY DE COORDINACION Y TRANSPARENCIA EN LOS COSTOS DE LA EDUCACION PARTICULAR",
       "etapa": "Archivado",
       "proponente": "ALEXIS GOMEZ",
-      "pagina": 23
+      "pagina": 24
     },
     {
       "fecha_presentacion": "11-08-2025",
@@ -4571,7 +4621,7 @@
       "titulo": "QUE ELIMINA LAS JUBILACIONES ESPECIALES",
       "etapa": "Primer Debate",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA",
-      "pagina": 23
+      "pagina": 24
     },
     {
       "fecha_presentacion": "07-08-2025",
@@ -4581,7 +4631,7 @@
       "titulo": "QUE ESTABLECE DISPOSICIONES PARA LA REGLAMENTACION OPORTUNA DE LAS LEYES Y MECANISMOS DE CONTROL SOBRE SU CUMPLIMIENTO",
       "etapa": "Archivado",
       "proponente": "H.D EDUARDO ALEJANDRO GAITÁN BEITÍA",
-      "pagina": 23
+      "pagina": 24
     },
     {
       "fecha_presentacion": "07-08-2025",
@@ -4591,7 +4641,7 @@
       "titulo": "QUE ADICIONA UN ARTÍCULO TRANSITORIO AL CÓDIGO FISCAL PARA AUTORIZAR LA ACUÑACIÓN DE MONEDAS CONMEMORATIVAS PARA LA ASOCIACIÓN PRO OBRAS DE BENEFICENCIA",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE ECONOMIA Y FINANZAS",
-      "pagina": 23
+      "pagina": 24
     },
     {
       "fecha_presentacion": "06-08-2025",
@@ -4601,7 +4651,7 @@
       "titulo": "QUE MODIFICA LA LEY 42 DEL 20 DE JUNIO DE 2011: QUE ESTABLECE LINEAMIENTOS PARA LA POLITICA NACIONAL SOBRE BIOCOMBUSTIBLES Y ENERGIA ELECTRICA A PARTIR DE BIOMASA EN EL TERRITORIO NACIONAL",
       "etapa": "Archivado",
       "proponente": "H.D ARQUESIO ARIAS FELIX",
-      "pagina": 23
+      "pagina": 24
     },
     {
       "fecha_presentacion": "06-08-2025",
@@ -4761,7 +4811,7 @@
       "titulo": "QUE MODIFICA LA LEY 468 DE 2025, QUE SUBROGA LA LEY 3 DE 1985 QUE ESTABLE UN REGIMEN DE INTERESES PREFERENCIALES EN CIERTOS PRESTAMOS HIPOTECARIOS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Retirado por proponente",
       "proponente": "H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D JOSE PEREZ BARBONI,H.D EDWIN ANTONIO VERGARA CASTILLO,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D JULIO DE LA GUARDIA ARROCHA,H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D JORGE ISAAC BLOISE IGLESIAS,H.D TOMAS GABRIEL BENAVIDES AGUILAR",
-      "pagina": 24
+      "pagina": 25
     },
     {
       "fecha_presentacion": "28-07-2025",
@@ -4771,7 +4821,7 @@
       "titulo": "QUE REGULA LAS ACTIVIDADES DE COBRANZA REALIZADAS POR LAS AGENCIAS DE COBRO Y ESTABLECE DISPOSICIONES PARA LA PROTECCION DEL DERECHO A LA INTIMIDAD DE LOS CONSUMIDORES",
       "etapa": "Objetado por Ejecutivo",
       "proponente": "H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D JANINE PRADO CASTAÑO,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 24
+      "pagina": 25
     },
     {
       "fecha_presentacion": "28-07-2025",
@@ -4781,7 +4831,7 @@
       "titulo": "QUE ESTABLECE UN SISTEMA DE REEMBOLSO POR BOTELLAS PLASTICAS TIPO PET, ENVASES DE ALUMINIO Y BOTELLAS DE VIDRIO NO RETORNABLES, E IMPLEMENTA MAQUINAS RECICLADORAS RVM EN EL METRO DE PANAMA Y OTROS ESPACIOS PUBLICOS, EN LA REPUBLICA DE PANAMA",
       "etapa": "Segundo Debate",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 24
+      "pagina": 25
     },
     {
       "fecha_presentacion": "28-07-2025",
@@ -4791,7 +4841,7 @@
       "titulo": "QUE PERMITE LA OPCION DE SUSTITUIR BEBIDAS AZUCARADAS POR AGUAS EN COMBOS DE COMIDAS RAPIDAS EN LA REPUBLICA DE PANAMA",
       "etapa": "Ley",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 24
+      "pagina": 25
     },
     {
       "fecha_presentacion": "28-07-2025",
@@ -4801,7 +4851,7 @@
       "titulo": "QUE ADICIONA ARTÍCULOS AL CÓDIGO PENAL",
       "etapa": "Objetado por Ejecutivo",
       "proponente": "H.D EDWIN ANTONIO VERGARA CASTILLO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D JHONATHAN EDIR VEGA,H.D EDUARDO ENRIQUE VÁSQUEZ GUTIÉRREZ,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D DIDIANO PINILLA RÍOS,H.D MEDIN JIMÉNEZ PITTI,H.D JULIO DE LA GUARDIA ARROCHA,H.D MANUEL COHEN SALERNO,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D ROBERTO ARCHIBOLD CHUITO,H.D CARLOS AGUSTIN AFU DECEREGA,H.D JAIME EDGARDO VARGAS CENTELLA",
-      "pagina": 24
+      "pagina": 25
     },
     {
       "fecha_presentacion": "28-07-2025",
@@ -4961,7 +5011,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL CODIGO PENAL RELACIONADOS CON LOS DELITOS CONTRA LA IDENTIDAD Y TRAFICO DE PERSONAS MENORES DE EDAD",
       "etapa": "Segundo Debate",
       "proponente": "H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D OLGA PAULETTE THOMAS HORLY,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 25
+      "pagina": 26
     },
     {
       "fecha_presentacion": "17-07-2025",
@@ -4971,7 +5021,7 @@
       "titulo": "QUE TRANSPARENTA Y COMUNICA EL USO DE LOS DIVIDENDOS ENTREGADOS POR EL CANAL DE PANAMÁ",
       "etapa": "Segundo Debate",
       "proponente": "H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 25
+      "pagina": 26
     },
     {
       "fecha_presentacion": "17-07-2025",
@@ -4981,7 +5031,7 @@
       "titulo": "LEY QUE REFUERZA LA RESPONSABILIDAD DE LOS HIJOS EN EL CUIDADO, PROTECCIÓN ASISTENCIA ALIMENTARIA DE SUS PADRES VULNERABLES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D MARCOS ENRIQUE CASTILLERO BARAHONA",
-      "pagina": 25
+      "pagina": 26
     },
     {
       "fecha_presentacion": "17-07-2025",
@@ -4991,7 +5041,7 @@
       "titulo": "QUE MODIFICA UN ARTÍCULO DE LA LEY 86 DE 2010, SOBRE EL PROGRAMA B/.120.00 A LOS 70, Y AMPLÍA LA COBERTURA DEL PROGRAMA A LOS ADULTOS MAYORES DE 65 AÑOS",
       "etapa": "Primer Debate",
       "proponente": "H.D DANA D. CASTAÑEDA GUARDIA,H.D GRACIELA HERNANDEZ,H.D ERNESTO CEDEÑO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D EDWIN ANTONIO VERGARA CASTILLO,H.D EDUARDO ENRIQUE VÁSQUEZ GUTIÉRREZ,H.D.S LUIS MIGUEL CHARRIS ÁBREGO,H.D BETSERAI AYIZE RICHARDS,H.D.S JUSTINO ANTONIO BANDA AGUIRRE,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS EDUARDO CAMACHO CASTRO,H.D RAPHAEL BUCHANAN JOSEPH,H.D TOMAS GABRIEL BENAVIDES AGUILAR",
-      "pagina": 25
+      "pagina": 26
     },
     {
       "fecha_presentacion": "15-07-2025",
@@ -5001,7 +5051,7 @@
       "titulo": "QUE CREA EL FESTIVAL NACIONAL DEL SOMBRERO BLANCO OCUEÑO Y SU RESPECTIVO PATRONATO",
       "etapa": "Archivado",
       "proponente": "LUIS MENCOMO",
-      "pagina": 25
+      "pagina": 26
     },
     {
       "fecha_presentacion": "15-07-2025",
@@ -5161,7 +5211,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL DECRETO LEY 3 DE 2008",
       "etapa": "Archivado",
       "proponente": "H.D ERNESTO CEDEÑO",
-      "pagina": 26
+      "pagina": 27
     },
     {
       "fecha_presentacion": "09-07-2025",
@@ -5171,7 +5221,7 @@
       "titulo": "QUE ESTABLECE MEDIDAS PARA PREVENIR Y SANCIONAR ESTAFAS MEDIANTE USO DE PAGINAS WEB",
       "etapa": "Objetado por Ejecutivo",
       "proponente": "H.D JAMIS GASPAR ACOSTA GUERRA",
-      "pagina": 26
+      "pagina": 27
     },
     {
       "fecha_presentacion": "09-07-2025",
@@ -5181,7 +5231,7 @@
       "titulo": "POR MEDIO DEL CUAL SE MODIFICA EL ARTICULO 2030 DEL LIBRO III DEL CODIGO JUDICIAL Y EL ARTICULO 191 DEL CODIGO PROCESAL PENAL",
       "etapa": "Negado",
       "proponente": "H.D JAMIS GASPAR ACOSTA GUERRA",
-      "pagina": 26
+      "pagina": 27
     },
     {
       "fecha_presentacion": "09-07-2025",
@@ -5191,7 +5241,7 @@
       "titulo": "QUE TIPIFICA EL DELITO DE EXHIBICIONISMO, LO INCORPORA AL CODIGO PENAL DE LA REPUBLICA DE PANAMA Y DICTA OTRA DISPOSICION",
       "etapa": "Retirado por proponente",
       "proponente": "H.D MANUEL CHENG PEÑALBA",
-      "pagina": 26
+      "pagina": 27
     },
     {
       "fecha_presentacion": "09-07-2025",
@@ -5201,7 +5251,7 @@
       "titulo": "QUE MODIFICA DOS ARTICULOS DE LA LEY N°33 DE 10 DE MAYO DE 2012 QUE CREA DOS DISTRITOS Y SEIS CORREGIMIENTOS EN LAS COMARCA NGABE BUGLÉ, POR LA CUAL SE CAMBIA EL NOMBRE DE LOS CORREGIMIENTOS VALLE BONITO Y ALTO BILINGÜE",
       "etapa": "Segundo Debate",
       "proponente": "H.D ROBERTO ARCHIBOLD CHUITO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D JULIO DE LA GUARDIA ARROCHA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D CARLOS AGUSTIN AFU DECEREGA",
-      "pagina": 26
+      "pagina": 27
     },
     {
       "fecha_presentacion": "09-07-2025",
@@ -5329,7 +5379,7 @@
       "proyecto": "373",
       "anteproyecto": "24",
       "titulo": "QUE CREA EL PROGRAMA EDUCATIVO PENITENCIARIO",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA",
       "pagina": 27
     },
@@ -5361,7 +5411,7 @@
       "titulo": "QUE ADOPTA MEDIDAS Y DECLARA DE INTERES NACIONAL GARANTIZAR EL SERVICIO ELECTRICO CONTINUO Y EFICAZ PARA PACIENTES ELECTRODEPENDIENTES",
       "etapa": "Primer Debate",
       "proponente": "H.D OLGA PAULETTE THOMAS HORLY,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 27
+      "pagina": 28
     },
     {
       "fecha_presentacion": "02-07-2025",
@@ -5371,7 +5421,7 @@
       "titulo": "QUE ESTABLECE EL USO DEL SISTEMA DE GEOLOCALIZACION NEONATAL EN TODOS LOS HOSPITALES PUBLICOS DEL PAIS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Archivado",
       "proponente": "JULIO CESAR GARCIA",
-      "pagina": 27
+      "pagina": 28
     },
     {
       "fecha_presentacion": "02-07-2025",
@@ -5381,7 +5431,7 @@
       "titulo": "QUE INCENTIVA EL RECICLAJE DE MATERIALES INORGANICOS A TODA LA POBLACION COMO OTRO MEDIO DE PAGO A LOS SERVICIOS PUBLICOS DOMICILIARIOS",
       "etapa": "Primer Debate",
       "proponente": "JULIO CESAR GARCIA",
-      "pagina": 27
+      "pagina": 28
     },
     {
       "fecha_presentacion": "02-07-2025",
@@ -5391,7 +5441,7 @@
       "titulo": "QUE RESALTA LOS VALORES Y APORTES DE LA ETNIA INDIA",
       "etapa": "Archivado",
       "proponente": "PATER CHATLANI CHANDIRAMANI",
-      "pagina": 27
+      "pagina": 28
     },
     {
       "fecha_presentacion": "02-07-2025",
@@ -5401,7 +5451,7 @@
       "titulo": "QUE REGULA EL USO DE LA INTELIGENCIA ARTIFICIAL EN PANAMA",
       "etapa": "Negado",
       "proponente": "H.D ERNESTO CEDEÑO ALVARADO",
-      "pagina": 27
+      "pagina": 28
     },
     {
       "fecha_presentacion": "02-07-2025",
@@ -5561,7 +5611,7 @@
       "titulo": "QUE CREA EL PATRONATO DE LA CIUDAD DE LAS ARTES",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE CULTURA",
-      "pagina": 28
+      "pagina": 29
     },
     {
       "fecha_presentacion": "21-04-2025",
@@ -5571,7 +5621,7 @@
       "titulo": "QUE CREA EL PATRONATO DEL CENTRO DE ARTE Y CULTURA DE COLON",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE CULTURA",
-      "pagina": 28
+      "pagina": 29
     },
     {
       "fecha_presentacion": "10-04-2025",
@@ -5581,7 +5631,7 @@
       "titulo": "POR EL CUAL SE APRUEBA LA CONVENCION DE LAS NACIONES UNIDAS SOBRE LOS EFECTOS INTERNACIONALES DE LAS VENTAS JUDICIALES DE BUQUES, ADOPTADA EN NUEVA YORK POR LA ASAMBLEA GENERAL DE LAS NACIONES UNIDAS EL 7 DE DICIEMBRE DE 2022 Y FIRMADA POR PANAMA EL 4 DE MARZO DE 2025",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE RELACIONES EXTERIORES",
-      "pagina": 28
+      "pagina": 29
     },
     {
       "fecha_presentacion": "10-04-2025",
@@ -5591,7 +5641,7 @@
       "titulo": "POR LA CUAL SE APRUEBA EL CONVENIO MARCO DE COOPERACIÓN ENTRE LA REPÚBLICA DE PANAMÁ Y LA REPÚBLICA DE GUATEMALA, HECHO EN LA CIUDAD DE GUATEMALA, A LOS DIECIOCHO DÍAS DEL MES DE DICIEMBRE DE DOS MIL VEINTICUATRO",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE RELACIONES EXTERIORES",
-      "pagina": 28
+      "pagina": 29
     },
     {
       "fecha_presentacion": "09-04-2025",
@@ -5599,9 +5649,9 @@
       "proyecto": "287",
       "anteproyecto": "366",
       "titulo": "QUE CREA LA RUTA DEL TRAPICHE EN REPUBLICA DE PANAMA",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D MEDIN JIMÉNEZ PITTI,H.D YESICA ROMERO GARCÍA,H.D JULIO DE LA GUARDIA ARROCHA",
-      "pagina": 28
+      "pagina": 29
     },
     {
       "fecha_presentacion": "09-04-2025",
@@ -5761,7 +5811,7 @@
       "titulo": "QUE CREA EL SISTEMA DE MATRICULA ESCOLAR DIGITAL EN LA REPUBLICA DE PANAMA",
       "etapa": "Segundo Debate",
       "proponente": "H.D LUIS HENRIQUE DUKE WALKER,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 29
+      "pagina": 30
     },
     {
       "fecha_presentacion": "19-03-2025",
@@ -5771,7 +5821,7 @@
       "titulo": "QUE MODIFICA EL ARTICULO 717 DEL CODIGO FISCAL DE LA REPUBLICA DE PANAMA.",
       "etapa": "Segundo Debate",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA",
-      "pagina": 29
+      "pagina": 30
     },
     {
       "fecha_presentacion": "19-03-2025",
@@ -5781,7 +5831,7 @@
       "titulo": "QUE MODIFICA EL ARTICULO 100 Y ADICIONA EL ARTICULO 100-A A LA LEY 41 DE 1998, GENERAL DE AMBIENTE",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA",
-      "pagina": 29
+      "pagina": 30
     },
     {
       "fecha_presentacion": "19-03-2025",
@@ -5791,7 +5841,7 @@
       "titulo": "QUE REGULA EL RECIPIENTE PLASTICO LIBRE DE BPA EN PANAMA",
       "etapa": "Negado",
       "proponente": "Luis Carlos Rodriguez",
-      "pagina": 29
+      "pagina": 30
     },
     {
       "fecha_presentacion": "18-03-2025",
@@ -5801,7 +5851,7 @@
       "titulo": "QUE PROHIBE EL USO, IMPORTACION Y COMERCIALIZACION DE SISTEMAS ELECTRONICOS DE ADMINISTRACION DE NICOTINA, CIGARRILLOS ELECTRONICOS, VAPORIZADORES, CALENTADORES DE TABACO Y OTROS DISPOSITIVOS SIMILARES, CON O SIN NICOTINA, EN LA REPUBLICA DE PANAMA",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D CRISPIANO ADAMES NAVARRO",
-      "pagina": 29
+      "pagina": 30
     },
     {
       "fecha_presentacion": "18-03-2025",
@@ -5961,7 +6011,7 @@
       "titulo": "POR LA CUAL SE APRUEBA EL CONVENIO IBEROAMERICANO DE COOPERACION SOBRE INVESTIGACION, ASEGURAMIENTO Y OBTENCION DE PRUEBA EN MATERIA DE CIBERDELINCUENCIA, HECHO EN MADRID, EL DIA 28 DE MAYO DEL 2014",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE RELACIONES EXTERIORES",
-      "pagina": 30
+      "pagina": 31
     },
     {
       "fecha_presentacion": "19-02-2025",
@@ -5971,7 +6021,7 @@
       "titulo": "QUE APRUEBA EL PROTOCOLO PARA ENMENDAR EL CONVENIO INTERNACIONAL PARA LA CONSERVACION DEL ATUN ATLANTICO, HECHO EN PALMA DE MALLORCA, ESPAÑA, EL 18 DE NOVIEMBRE DE 2019.",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE RELACIONES EXTERIORES",
-      "pagina": 30
+      "pagina": 31
     },
     {
       "fecha_presentacion": "10-02-2025",
@@ -5981,7 +6031,7 @@
       "titulo": "QUE MODIFICA LA LEY 290 DEL 24 DE MARZO DE 2022, QUE DECLARA PRIORIDAD NACIONAL EL FOMENTO Y EL DESARROLLO DEL TURISMO INDÍGENA SOSTENIBLE Y DICTA OTRAS DISPOSICIONES.",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D NIXSON ANDRADE RODRÍGUEZ",
-      "pagina": 30
+      "pagina": 31
     },
     {
       "fecha_presentacion": "10-02-2025",
@@ -5991,7 +6041,7 @@
       "titulo": "QUE MODIFICA LA LEY 6 DE 1 DE FEBRERO DE 2006, QUE REGLAMENTA EL ORDENAMIENTO TERRITORIAL PARA EL DESARROLLO URBANO Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 30
+      "pagina": 31
     },
     {
       "fecha_presentacion": "10-02-2025",
@@ -6001,7 +6051,7 @@
       "titulo": "QUE ADOPTA MEDIDAS PARA SUBSANAR Y RESPONSABILIZAR LOS PROCESOS DE CONSTRUCCION DE LAS PROMOTORAS Y CONSTRUCTORAS, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D GERTRUDIS RODRÍGUEZ DE GRACIA,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 30
+      "pagina": 31
     },
     {
       "fecha_presentacion": "04-02-2025",
@@ -6039,7 +6089,7 @@
       "proyecto": "234",
       "anteproyecto": "316",
       "titulo": "POR EL CUAL SE CREA EL PROGRAMA NACIONAL DE SEÑALIZACION VIAL EN OBRAS PUBLICAS EN LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D.S MARGARETH JULIENE PIMENTEL DÍAZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE LUIS HERRERA,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D ERNESTO CEDEÑO ALVARADO,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D JORGE ISAAC BLOISE IGLESIAS",
       "pagina": 31
     },
@@ -6069,7 +6119,7 @@
       "proyecto": "231",
       "anteproyecto": "305",
       "titulo": "QUE RECONOCE EL PAGO DE LOS APORTES REALIZADOS, POR EXTENSION DE JUBILACION, A LOS EDUCADORES JUBILADOS DE LAS PROMOCIONE DE 1972 Y 1973 CERTIFICADOS POR LA CAJA DE SEGURO SOCIAL",
-      "etapa": "Enviado al Ejecutivo",
+      "etapa": "Ley",
       "proponente": "H.D.S JUAN DOMINGO DÍAZ CONCEPCIÓN,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D EDWIN ANTONIO VERGARA CASTILLO,H.D ARIEL ULISES VALLARINO APARICIO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D YESICA ROMERO GARCÍA,H.D.S JOSÉ ANDRÉS GONZÁLEZ QUINZADA,H.D BETSERAI AYIZE RICHARDS,H.D DIDIANO PINILLA RÍOS,H.D.S JOANA YAMILETH CEDEÑO PINO DE ALGUERO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE LUIS HERRERA,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D OSMAN CAMILO GÓMEZ,H.D.S LUIS ENRIQUE BATISTA CASTILLO,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D ERNESTO CEDEÑO ALVARADO,H.D ELIECER CASTRELLÓN BARRIOS,H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D LUIS EDUARDO CAMACHO CASTRO,H.D RAPHAEL BUCHANAN JOSEPH,H.D FLOR ISABEL BRENES MEDINA,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D.S ROSALIA ELLIS SANTO,H.D.S URANIS MARIELA MORENO S. DE MONTENEGRO,H.D.S SARA J. MAGALLON CAICEDO DE RUIZ,H.D JAVIER FRANCISCO SUCRE MEJIA,H.D ALAIN ALBENIS CEDEÑO HERRERA,H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D LILIA EMERITA BATISTA RODRIGUEZ,H.D ARQUESIO ARIAS FELIX",
       "pagina": 31
     },
@@ -6161,7 +6211,7 @@
       "titulo": "QUE CREA EL PATRONATO DE LA FERIA INTERNACIONAL DE LA PARUMA y PUEBLOS ORIGINARIOS DE LA PROVINCIA DE DARIEN",
       "etapa": "Negado",
       "proponente": "ENOEL JIMENEZ",
-      "pagina": 31
+      "pagina": 32
     },
     {
       "fecha_presentacion": "15-01-2025",
@@ -6171,7 +6221,7 @@
       "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 14 DE 18 DE MAYO DE 2007, QUE ADOPTA EL CODIGO PENAL Y DE LA LEY 63 DE 28 DE AGOSTO DE 2008, QUE ADOPTA EL CODIGO PROCESAL PENAL",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D WALKIRIA A. CHANDLER D´ORCY,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D JORGE ISAAC BLOISE IGLESIAS,H.D ROBERTO ARCHIBOLD CHUITO",
-      "pagina": 31
+      "pagina": 32
     },
     {
       "fecha_presentacion": "15-01-2025",
@@ -6181,7 +6231,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 6 DE JUNIO DE 1987 SOBRE BENEFICIOS PARA LOS JUBILADOS, PENSIONADOS Y TERCERA EDAD Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D JAVIER FRANCISCO SUCRE MEJIA,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D.S JOSÉ ANDRÉS GONZÁLEZ QUINZADA,H.D BETSERAI AYIZE RICHARDS,H.D.S JOANA YAMILETH CEDEÑO PINO DE ALGUERO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D RAPHAEL BUCHANAN JOSEPH,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D.S SARA J. MAGALLON CAICEDO DE RUIZ,H.D.S MARCELINO ARENAS PEÑA,H.D JAIME EDGARDO VARGAS CENTELLA,H.D ARQUESIO ARIAS FELIX",
-      "pagina": 31
+      "pagina": 32
     },
     {
       "fecha_presentacion": "15-01-2025",
@@ -6191,7 +6241,7 @@
       "titulo": "QUE MODIFICA EL ARTICULO 61 DEL TEXTO UNICO DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D JANINE PRADO CASTAÑO,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D.S LYDIA NORAYS CABALLERO CADASTRE ,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 31
+      "pagina": 32
     },
     {
       "fecha_presentacion": "14-01-2025",
@@ -6201,7 +6251,7 @@
       "titulo": "QUE MODIFICA UN ARTICULO DEL CODIGO PROCESAL PENAL",
       "etapa": "Ley",
       "proponente": "H.D OLGA PAULETTE THOMAS HORLY,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 31
+      "pagina": 32
     },
     {
       "fecha_presentacion": "14-01-2025",
@@ -6361,7 +6411,7 @@
       "titulo": "QUE MODIFICA EL CODIGO PROCESAL PENAL Y TOMA MEDIDAS CONTRA TRATA DE PERSONAS, TRAFICO ILICITO DE DROGAS Y TRAFICO ILICITO DE MIGRANTES",
       "etapa": "Segundo Debate",
       "proponente": "H.D FRANCISCO JAVIER BREA TRISTÁN,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 32
+      "pagina": 33
     },
     {
       "fecha_presentacion": "28-10-2024",
@@ -6371,7 +6421,7 @@
       "titulo": "QUE MODIFICA LOS ARTICULOS 51 Y 56 DE LA LEY 23 DE 15 DE JULIO DE 1997, POR LA CUAL SE APRUEBA EL ACUERDO DE MARRAKECH, CONSTITUTIVO DE LA ORGANIZACION MUNDIAL DEL COMERCIO, EL PROTOCOLO DE ADHESION DE PANAMA A DICHO ACUERDO JUNTO CON SUS ANEXOS Y LISTA DE COMPROMISOS; SE ADECUA LA LEGISLACION INTERNA A LA NORMATIVA INTERNACIONAL Y SE DICTAN OTRAS DISPOSICIONES",
       "etapa": "Retirado por proponente",
       "proponente": "H.D RICARDO AGUSTÍN VIGIL LÓPEZ",
-      "pagina": 32
+      "pagina": 33
     },
     {
       "fecha_presentacion": "28-10-2024",
@@ -6381,7 +6431,7 @@
       "titulo": "QUE ESTABLECE LAS REGULACIONES TECNICAS PARA LA COMERCIALIZACION DE LA CARNE DE CERDO Y SUS DERIVADOS",
       "etapa": "Retirado por proponente",
       "proponente": "H.D RICARDO AGUSTÍN VIGIL LÓPEZ",
-      "pagina": 32
+      "pagina": 33
     },
     {
       "fecha_presentacion": "28-10-2024",
@@ -6391,7 +6441,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS LA LEY 42 DE 2012, GENERAL DE PENSION ALIMENTICIA Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D JANINE PRADO CASTAÑO,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 32
+      "pagina": 33
     },
     {
       "fecha_presentacion": "23-10-2024",
@@ -6401,7 +6451,7 @@
       "titulo": "EMPODERAMIENTO ECONOMICO DE LAS MUJERES INDIGENAS Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D FLOR ISABEL BRENES MEDINA",
-      "pagina": 32
+      "pagina": 33
     },
     {
       "fecha_presentacion": "23-10-2024",
@@ -6561,7 +6611,7 @@
       "titulo": "QUE SUBROGA LA LEY 50 DE 1995, QUE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
       "etapa": "Ley",
       "proponente": "H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR",
-      "pagina": 33
+      "pagina": 34
     },
     {
       "fecha_presentacion": "08-10-2024",
@@ -6571,7 +6621,7 @@
       "titulo": "QUE ADICIONA DISPOSICIONES AL CODIGO PENAL, RELATIVAS A LA PARALIZACION Y DETERIORO DE OBRAS PUBLICAS",
       "etapa": "Primer Debate",
       "proponente": "H.D ERNESTO CEDEÑO ALVARADO",
-      "pagina": 33
+      "pagina": 34
     },
     {
       "fecha_presentacion": "08-10-2024",
@@ -6581,7 +6631,7 @@
       "titulo": "QUE ESTABLECE Y REGULA LOS COMITES DE SALUD DE LAS COMUNIDADES Y DEROGA EL DECRETO DE GABINETE 401 DE 1970",
       "etapa": "Primer Debate",
       "proponente": "H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D EDWIN ANTONIO VERGARA CASTILLO,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D WALKIRIA A. CHANDLER D´ORCY,H.D ALAIN ALBENIS CEDEÑO HERRERA,H.D ARQUESIO ARIAS FELIX",
-      "pagina": 33
+      "pagina": 34
     },
     {
       "fecha_presentacion": "07-10-2024",
@@ -6591,7 +6641,7 @@
       "titulo": "QUE DICTA EL PRESUPUESTO GENERAL DEL ESTADO PARA LA VIGENCIA FISCAL DE 2025",
       "etapa": "Retirado por proponente",
       "proponente": "MINISTERIO DE ECONOMIA Y FINANZAS",
-      "pagina": 33
+      "pagina": 34
     },
     {
       "fecha_presentacion": "07-10-2024",
@@ -6601,7 +6651,7 @@
       "titulo": "QUE SUBROGA LA LEY 16 DE 2016, QUE INSTITUYE LA JUSTICIA COMUNITARIA DE PAZ, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE GOBIERNO",
-      "pagina": 33
+      "pagina": 34
     },
     {
       "fecha_presentacion": "07-10-2024",
@@ -6761,7 +6811,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DE LA LEY 28 DE 2014, QUE GARANTIZA LA PROTECCION SOCIAL A LA POBLACION QUE PADECE ENFERMEDADES RARAS, POCO FRECUENTES Y HUERFANAS",
       "etapa": "Primer Debate",
       "proponente": "H.D CRISPIANO ADAMES NAVARRO",
-      "pagina": 34
+      "pagina": 35
     },
     {
       "fecha_presentacion": "24-09-2024",
@@ -6771,7 +6821,7 @@
       "titulo": "QUE CREA EL PATRONATO DE LA FERIA INTERNACIONAL DE LAS FLORES DE CHICA",
       "etapa": "Retirado por proponente",
       "proponente": "H.D EDWIN ANTONIO VERGARA CASTILLO,H.D.S ELSA LILIA ESPINOZA ROSAS,H.D JHONATHAN EDIR VEGA,H.D EDUARDO ENRIQUE VÁSQUEZ GUTIÉRREZ,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YESICA ROMERO GARCÍA,H.D.S BENISIO ENISIO ROBINSON GONZÁLEZ,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D.S ARIEL ANÍBAL RÍOS ZAPATA,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D RONALD AMETH DE GRACIA MORENO,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN,H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA,H.D RAPHAEL BUCHANAN JOSEPH,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D ROBERTO ARCHIBOLD CHUITO,H.D.S SARA J. MAGALLON CAICEDO DE RUIZ,H.D NELSON JACKSON PALMA",
-      "pagina": 34
+      "pagina": 35
     },
     {
       "fecha_presentacion": "24-09-2024",
@@ -6781,7 +6831,7 @@
       "titulo": "QUE MODIFICA EL CODIGO PENAL",
       "etapa": "Negado",
       "proponente": "H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 34
+      "pagina": 35
     },
     {
       "fecha_presentacion": "23-09-2024",
@@ -6791,7 +6841,7 @@
       "titulo": "QUE DESPOLITIZA LAS FEDERACIONES DEPORTIVAS",
       "etapa": "Segundo Debate",
       "proponente": "H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 34
+      "pagina": 35
     },
     {
       "fecha_presentacion": "18-09-2024",
@@ -6801,7 +6851,7 @@
       "titulo": "QUE ADICIONA EL PROCEDIMIENTO DE DESIGNACIÓN A CARGOS PUBLICOS, REFORMA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D LUIS HENRIQUE DUKE WALKER,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 34
+      "pagina": 35
     },
     {
       "fecha_presentacion": "18-09-2024",
@@ -6961,7 +7011,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 47 DE 1946, ORGANICA DE EDUCACION, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Suspendido",
       "proponente": "H.D DANA D. CASTAÑEDA GUARDIA",
-      "pagina": 35
+      "pagina": 36
     },
     {
       "fecha_presentacion": "05-09-2024",
@@ -6971,7 +7021,7 @@
       "titulo": "POR EL CUAL SE ESTABLECE EL MARGEN BRUTO MAXIMO VENTA DE INSUMOS AGROPECUARIOS EN LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Primer Debate",
       "proponente": "H.D DANA D. CASTAÑEDA GUARDIA",
-      "pagina": 35
+      "pagina": 36
     },
     {
       "fecha_presentacion": "05-09-2024",
@@ -6981,7 +7031,7 @@
       "titulo": "POR LA CUAL SE APRUEBA EL TRATADO DE ASISTENCIA LEGAL MUTUA EN MATERIA PENAL ENTRE LA REPUBLICA DE PANAMA Y LA CONFEDERACION SUIZA, HECHO EN PANAMA EL DIA 3 DE MARZO DE 2023.",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE RELACIONES EXTERIORES",
-      "pagina": 35
+      "pagina": 36
     },
     {
       "fecha_presentacion": "05-09-2024",
@@ -6991,7 +7041,7 @@
       "titulo": "POR LA CUAL SE APRUEBA EL CONVENIO SOBRE ASISTENCIA LEGAL RECIPROCA EN MATERIA PENAL ENTRE EL GOBIERNO DE LA REPUBLICA DE PANAMA Y EL GOBIERNO DE LA REPUBLICA FRANCESA, HECHO EN PANAMA EL 11 DE JULIO DE 2023.",
       "etapa": "Ley",
       "proponente": "MINISTERIO DE RELACIONES EXTERIORES",
-      "pagina": 35
+      "pagina": 36
     },
     {
       "fecha_presentacion": "05-09-2024",
@@ -7001,7 +7051,7 @@
       "titulo": "CONSERVACION Y MANTENIMIENTO DE BIENES NACIONALES",
       "etapa": "Retirado por proponente",
       "proponente": "H.D WALKIRIA A. CHANDLER D´ORCY,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D JHONATHAN EDIR VEGA,H.D EDUARDO ENRIQUE VÁSQUEZ GUTIÉRREZ,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE LUIS HERRERA,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D ROBERTO ARCHIBOLD CHUITO",
-      "pagina": 35
+      "pagina": 36
     },
     {
       "fecha_presentacion": "05-09-2024",
@@ -7161,7 +7211,7 @@
       "titulo": "QUE MODIFICA LA LEY 276 DE 30 DE DICIEMBRE DE 2021, QUE REGULA LA GESTION INTEGRAL DE RESIDUOS SOLIDOS EN LA REPUBLICA DE PANAMA, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Primer Debate",
       "proponente": "H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D JHONATHAN EDIR VEGA,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D.S JUSTINO ANTONIO BANDA AGUIRRE,H.D LUIS HENRIQUE DUKE WALKER,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D ROBERTO ARCHIBOLD CHUITO,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 36
+      "pagina": 37
     },
     {
       "fecha_presentacion": "03-09-2024",
@@ -7171,7 +7221,7 @@
       "titulo": "QUE MODIFICA LA LEY 49 DEL 4 DE DICIEMBRE DE 1984, QUE DICTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D FRANCISCO JAVIER BREA TRISTÁN",
-      "pagina": 36
+      "pagina": 37
     },
     {
       "fecha_presentacion": "28-08-2024",
@@ -7181,7 +7231,7 @@
       "titulo": "QUE ESTABLECE EL MARCO LEGAL, LA PROMOCION Y DESARROLLO DE LA INTELIGENCIA ARTIFICIAL EN LA REPUBLICA DE PANAMA",
       "etapa": "Negado",
       "proponente": "H.D MANUEL CHENG PEÑALBA,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 36
+      "pagina": 37
     },
     {
       "fecha_presentacion": "28-08-2024",
@@ -7191,7 +7241,7 @@
       "titulo": "QUE MODIFICA EL TEXTO UNICO DE LA LEY 50 DE 1995, POR LA CUAL SE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR",
-      "pagina": 36
+      "pagina": 37
     },
     {
       "fecha_presentacion": "28-08-2024",
@@ -7201,7 +7251,7 @@
       "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 40 DE 1999, DEL REGIMEN ESPECIAL DE RESPONSABILIDAD PENAL PARA LA ADOLESCENCIA",
       "etapa": "Ley",
       "proponente": "H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D.S BOLIVAR ENRIQUE ESCALA VERGARA,H.D ROBERTO ARCHIBOLD CHUITO",
-      "pagina": 36
+      "pagina": 37
     },
     {
       "fecha_presentacion": "28-08-2024",
@@ -7361,7 +7411,7 @@
       "titulo": "QUE TRANSPARENTA LAS ACTAS Y OTROS ARCHIVOS DEL CONSEJO DE GABINETE",
       "etapa": "Suspendido",
       "proponente": "H.D LUIS HENRIQUE DUKE WALKER,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 37
+      "pagina": 38
     },
     {
       "fecha_presentacion": "20-08-2024",
@@ -7371,7 +7421,7 @@
       "titulo": "QUE MODIFICA Y ADICIONAN ARTICULOS A LA LEY 70 DE 2012 Y MODIFICA UN ARTICULO AL CODIGO PENAL Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Segundo Debate",
       "proponente": "H.D OLGA PAULETTE THOMAS HORLY,H.D.S JUAN DOMINGO DÍAZ CONCEPCIÓN,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D EDWIN ANTONIO VERGARA CASTILLO,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YESICA ROMERO GARCÍA,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D JANINE PRADO CASTAÑO,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D OSMAN CAMILO GÓMEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D RONALD AMETH DE GRACIA MORENO,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D LUIS EDUARDO CAMACHO CASTRO,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D ROBERTO ARCHIBOLD CHUITO,H.D JAMIS GASPAR ACOSTA GUERRA,H.D WALKIRIA A. CHANDLER D´ORCY,H.D.S ARIEL AUGUSTO ORTEGA DE LEON,H.D SERGIO RAFAEL GALVEZ EVERS,H.D ALAIN ALBENIS CEDEÑO HERRERA,H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D ARQUESIO ARIAS FELIX",
-      "pagina": 37
+      "pagina": 38
     },
     {
       "fecha_presentacion": "20-08-2024",
@@ -7381,7 +7431,7 @@
       "titulo": "QUE ESTABLECE PROTECCION INTEGRAL A LAS PERSONAS NATURALES QUE PRESENTAN DENUNCIAS Y SON TESTIGOS EN FALTAS ADMINISTRATIVAS Y EN MATERIA DE CORRUPCION",
       "etapa": "Negado",
       "proponente": "H.D JORGE ISAAC BLOISE IGLESIAS,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 37
+      "pagina": 38
     },
     {
       "fecha_presentacion": "20-08-2024",
@@ -7391,7 +7441,7 @@
       "titulo": "QUE MODIFICA EL CODIGO CIVIL, PARA ELIMINAR LOS TERMINOS PEYORATIVOS",
       "etapa": "Ley",
       "proponente": "H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D JORGE LUIS HERRERA,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D LUIS EDUARDO CAMACHO CASTRO,H.D.S MELVIN HAMET PÉREZ FERNÁNDEZ",
-      "pagina": 37
+      "pagina": 38
     },
     {
       "fecha_presentacion": "19-08-2024",
@@ -7401,7 +7451,7 @@
       "titulo": "QUE MODIFICA LA LEY 17 DE 2016 QUE ESTABLECE LA PROTECCION DE LOS CONOCIMIENTOS DE LA MEDICINA TRADICIONAL INDIGENA",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D NIXSON ANDRADE RODRÍGUEZ",
-      "pagina": 37
+      "pagina": 38
     },
     {
       "fecha_presentacion": "19-08-2024",
@@ -7561,7 +7611,7 @@
       "titulo": "QUE ESTABLECE LA PROTECCION DE LA INTEGRIDAD E INDEMNIDAD SEXUAL DE LAS PERSONAS MENORES DE EDAD Y MODIFICA EL CODIGO PENAL, EL CODIGO PROCESAL PENAL Y LA LEY 69 DE 2007",
       "etapa": "Segundo Debate",
       "proponente": "H.D JANINE PRADO CASTAÑO,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D.S BOLIVAR ENRIQUE ESCALA VERGARA,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 38
+      "pagina": 39
     },
     {
       "fecha_presentacion": "13-08-2024",
@@ -7571,7 +7621,7 @@
       "titulo": "QUE ESTABLECE EL PROGRAMA DE EDUCACION FISCAL EN LA REPUBLICA DE PANAMA",
       "etapa": "Segundo Debate",
       "proponente": "H.D CRISPIANO ADAMES NAVARRO",
-      "pagina": 38
+      "pagina": 39
     },
     {
       "fecha_presentacion": "13-08-2024",
@@ -7581,7 +7631,7 @@
       "titulo": "QUE ADICIONA UN CAPITULO A LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Ley",
       "proponente": "H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE LUIS HERRERA,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D ERNESTO CEDEÑO ALVARADO,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY,H.D LILIA EMERITA BATISTA RODRIGUEZ",
-      "pagina": 38
+      "pagina": 39
     },
     {
       "fecha_presentacion": "12-08-2024",
@@ -7591,7 +7641,7 @@
       "titulo": "QUE REFORMA LA LEY 79 DE 2011, SOBRE TRATA DE PERSONAS Y ACTIVIDADES CONEXAS, Y EL CÓDIGO PENAL, Y DICTA OTRAS DISPOSICIONES",
       "etapa": "Ley",
       "proponente": "H.D FRANCISCO JAVIER BREA TRISTÁN,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D EDWIN ANTONIO VERGARA CASTILLO,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D ARIEL ULISES VALLARINO APARICIO,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D.S BENISIO ENISIO ROBINSON GONZÁLEZ,H.D BETSERAI AYIZE RICHARDS,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE LUIS HERRERA,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D LUIS EDUARDO CAMACHO CASTRO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY,H.D DANA D. CASTAÑEDA GUARDIA,H.D ALAIN ALBENIS CEDEÑO HERRERA,H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D CRISPIANO ADAMES NAVARRO",
-      "pagina": 38
+      "pagina": 39
     },
     {
       "fecha_presentacion": "12-08-2024",
@@ -7601,7 +7651,7 @@
       "titulo": "QUE CREA LINEAMIENTOS PARA LA ATENCION PRIMARIA Y SECUNDARIA A TRAVES DE LOS SERVICIOS PSICOEDUCATIVO A ESTUDIANTES EN RIESGO SOCIAL",
       "etapa": "Segundo Debate",
       "proponente": "H.D.S BERTA NIDIA MORENO FLORES,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D OLGA PAULETTE THOMAS HORLY,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D GERTRUDIS RODRÍGUEZ DE GRACIA,H.D JANINE PRADO CASTAÑO,H.D JORGE LUIS HERRERA,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D NESTOR ANTONIO GUARDIA JAEN",
-      "pagina": 38
+      "pagina": 39
     },
     {
       "fecha_presentacion": "12-08-2024",
@@ -7761,7 +7811,7 @@
       "titulo": "QUE DEROGA LA LEY 16 DEL 17 DE JUNIO DE 2016, SOBRE JUSTICIA COMUNITARIA DE PAZ, CREA LA JURISDICCION ESPECIAL DE JUSTICIA COMUNITARIA DE PAZ, ESTABLECE NUEVAS NORMAS PARA SU APLICACION, REFORMA ARTICULOS DE OTRAS LEYES Y DICTA DISPOSICIONES SOBRE METODOS ALTERNOS DE RESOLUCION DE CONFLICTOS",
       "etapa": "Primer Debate",
       "proponente": "H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D GERTRUDIS RODRÍGUEZ DE GRACIA,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D JORGE LUIS HERRERA,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D LUIS HENRIQUE DUKE WALKER,H.D RONALD AMETH DE GRACIA MORENO,H.D MANUEL CHENG PEÑALBA,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D RAPHAEL BUCHANAN JOSEPH,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D ROBERTO ARCHIBOLD CHUITO",
-      "pagina": 39
+      "pagina": 40
     },
     {
       "fecha_presentacion": "31-07-2024",
@@ -7771,7 +7821,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 106 DE 1973, SOBRE REGIMEN MUNICIPAL",
       "etapa": "Negado",
       "proponente": "LUIS PINEDO, CANDY CHEN",
-      "pagina": 39
+      "pagina": 40
     },
     {
       "fecha_presentacion": "31-07-2024",
@@ -7781,7 +7831,7 @@
       "titulo": "QUE MODIFICA LA LEY 175 DE 2020, A FIN DE ASEGURAR LA PRESERVACION DE MONUMENTOS HISTORICOS ANTE SUCESOS ORIGINADOS POR CASO FORTUITO",
       "etapa": "Segundo Debate",
       "proponente": "H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D JHONATHAN EDIR VEGA,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D DIDIANO PINILLA RÍOS,H.D MEDIN JIMÉNEZ PITTI,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 39
+      "pagina": 40
     },
     {
       "fecha_presentacion": "31-07-2024",
@@ -7791,7 +7841,7 @@
       "titulo": "QUE INTEGRA A JOVENES PROFESIONALES EN EL MERCADO LABORAL",
       "etapa": "Primer Debate",
       "proponente": "H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D JHONATHAN EDIR VEGA,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D DIDIANO PINILLA RÍOS,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D VÍCTOR DE JESÚS CASTILLO CORTEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D LUIS EDUARDO CAMACHO CASTRO,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 39
+      "pagina": 40
     },
     {
       "fecha_presentacion": "31-07-2024",
@@ -7801,7 +7851,7 @@
       "titulo": "QUE ESTABLECE LA CINTA NORTEÑA COMO PATRIMONIO MUNICIPAL DEL MUNICIPIO DE PANAMA Y DEROGA LA LEY N.O 1 DE 7 DE ENERO DE 2016",
       "etapa": "Primer Debate",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 39
+      "pagina": 40
     },
     {
       "fecha_presentacion": "31-07-2024",
@@ -7961,7 +8011,7 @@
       "titulo": "QUE DICTA DISPOSICIONES SOBRE AMNISTIA, INDULTO, REBAJA DE PENA Y CONCESION DE LIBERTAD CONDICIONAL, MODIFICA EL CODIGO PENAL Y EL CODIGO PROCESAL PENAL",
       "etapa": "Archivado",
       "proponente": "H.D LUIS EDUARDO CAMACHO CASTRO",
-      "pagina": 40
+      "pagina": 41
     },
     {
       "fecha_presentacion": "25-07-2024",
@@ -7971,7 +8021,7 @@
       "titulo": "POR EL CUAL SE ESTABLECE EL REGIMEN JURIDICO DE LA REUTILIZACION DE LAS AGUAS DEPURADAS (CIRCULACION HIDRICA) COMO PARTE DE LA GESTION INTEGRADA DE CIRCULACION DE LOS RECURSOS HIDRICOS",
       "etapa": "Primer Debate",
       "proponente": "H.D MANUEL CHENG PEÑALBA,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D OLGA PAULETTE THOMAS HORLY,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D JORGE ISAAC BLOISE IGLESIAS",
-      "pagina": 40
+      "pagina": 41
     },
     {
       "fecha_presentacion": "25-07-2024",
@@ -7981,7 +8031,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO PENAL Y AL CODIGO PROCESAL PENAL",
       "etapa": "Ley",
       "proponente": "H.D OLGA PAULETTE THOMAS HORLY,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D JHONATHAN EDIR VEGA,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D DIDIANO PINILLA RÍOS,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D JULIO DE LA GUARDIA ARROCHA,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D MANUEL COHEN SALERNO,H.D ARIANA MARISÍN COBA MARTÍNEZ,H.D ORLANDO VLADIMIR CARRASQUILLA BONILLA,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D RAPHAEL BUCHANAN JOSEPH,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY,H.D RAUL GILBERTO PINEDA VERGARA,H.D ALAIN ALBENIS CEDEÑO HERRERA,H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D CRISPIANO ADAMES NAVARRO",
-      "pagina": 40
+      "pagina": 41
     },
     {
       "fecha_presentacion": "25-07-2024",
@@ -7991,7 +8041,7 @@
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 16 DE 17 DE JUNIO DE 2016, QUE INSTRUYE LA JUSTICIA COMUNITARIA DE PAZ Y DICTA DISPOSICIONES SOBRE MEDIACION Y CONCILIACION COMUNITARIA",
       "etapa": "Retirado por proponente",
       "proponente": "H.D JHONATHAN EDIR VEGA",
-      "pagina": 40
+      "pagina": 41
     },
     {
       "fecha_presentacion": "24-07-2024",
@@ -8001,7 +8051,7 @@
       "titulo": "DECLARACION DEL DIA NACIONAL DEL FUTBOLISTA EN PANAMA",
       "etapa": "Negado",
       "proponente": "H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA",
-      "pagina": 40
+      "pagina": 41
     },
     {
       "fecha_presentacion": "24-07-2024",
@@ -8161,7 +8211,7 @@
       "titulo": "QUE REFORMA LA LEY 105 DE 1973, QUE ORGANIZA LAS JUNTAS COMUNALES Y LA LEY 106 DE 1973, SOBRE REGIMEN MUNICIPAL Y DICTA OTRA DISPOSICION",
       "etapa": "Ley",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA",
-      "pagina": 41
+      "pagina": 42
     },
     {
       "fecha_presentacion": "11-07-2024",
@@ -8171,7 +8221,7 @@
       "titulo": "QUE MODIFICA EL CODIGO PENAL Y EL CODIGO PROCESAL PENAL EN MATERIA RELACIONADA CON EL DELITO DE HURTO PECUARIO",
       "etapa": "Ley",
       "proponente": "H.D RONALD AMETH DE GRACIA MORENO",
-      "pagina": 41
+      "pagina": 42
     },
     {
       "fecha_presentacion": "10-07-2024",
@@ -8181,7 +8231,7 @@
       "titulo": "QUE MODIFICA EL CODIGO PENAL",
       "etapa": "Retirado por proponente",
       "proponente": "H.D ALEXANDRA MARÍA BRENES SAMANIEGO",
-      "pagina": 41
+      "pagina": 42
     },
     {
       "fecha_presentacion": "10-07-2024",
@@ -8191,7 +8241,7 @@
       "titulo": "QUE ESTABLECE UN REGIMEN FISCAL Y LABORAL DE FOMENTO, PARA LA REUBICACION DE SUCURSALES EMPRESARIALES DEL OESTE, DESDE LA CIUDAD CAPITAL DE PANAMA HACIA PANAMA OESTE, PARA PROMOVER EL TRASLADO DE EMPLEOS Y SERVICIOS EN ESTA ZONA DEL PAIS.",
       "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR",
-      "pagina": 41
+      "pagina": 42
     },
     {
       "fecha_presentacion": "09-07-2024",
@@ -8201,7 +8251,7 @@
       "titulo": "QUE INTRODUCE A LA LEY 37 DE 2013, UN NUEVO INCENTIVO FISCAL, POR LA DONACION DE PANELES SOLARES A LOS SISTEMAS DE ACUEDUCTOS RURALES DE PANAMA, RECONOCIDOS POR EL MINISTERIO DE SALUD",
       "etapa": "Primer Debate",
       "proponente": "H.D CARLOS AGUSTIN AFU DECEREGA",
-      "pagina": 41
+      "pagina": 42
     },
     {
       "fecha_presentacion": "09-07-2024",
@@ -8361,7 +8411,7 @@
       "titulo": "QUE ESTABLECE Y GARANTIZA EL 1% DEL PIB EN CIENCIA, TECNOLOGIA, INNOVACION E INVESTIGACION PARA LA REPUBLICA DE PANAMA",
       "etapa": "Negado",
       "proponente": "H.D JORGE ISAAC BLOISE IGLESIAS,H.D ROBERTO JOSÉ FEDERICO ZÚÑIGA ALVARADO,H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D JHONATHAN EDIR VEGA,H.D JOSÉ LUIS VARELA RODRÍGUEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D CARLOS EDUARDO SALDAÑA LÓPEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JANINE PRADO CASTAÑO,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D MEDIN JIMÉNEZ PITTI,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D JORGE ALBERTO GONZÁLEZ LÓPEZ,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MANUEL CHENG PEÑALBA,H.D ERNESTO CEDEÑO ALVARADO,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 42
+      "pagina": 43
     },
     {
       "fecha_presentacion": "03-07-2024",
@@ -8371,7 +8421,7 @@
       "titulo": "QUE ESTABLECE LA PROMICION E IMPLEMENTACION DEL HIDROGENO VERDE COMO COMBUSTIBLE Y VECTOR ENERGETICO EN LA REPUBLICA DE PANAMA",
       "etapa": "Retirado por proponente",
       "proponente": "H.D CRISPIANO ADAMES NAVARRO",
-      "pagina": 42
+      "pagina": 43
     },
     {
       "fecha_presentacion": "03-07-2024",
@@ -8381,7 +8431,7 @@
       "titulo": "QUE MODIFICA LA LEY 1 DE 11 DE ENERO DE 1965 Y PROHIBE EL ACCESO A AUXILIOS ECONOMICOS A FUNCIONARIOS DE ALTO MANDO Y JURISDICCION, Y A SUS FAMILIARES CON PARENTESCO HASTA EL CUARTO GRADO DE CONSANGUINIDAD Y SEGUNDO DE AFINIDAD",
       "etapa": "Archivado",
       "proponente": "H.D MIGUEL ÁNGEL CAMPOS LIMA",
-      "pagina": 42
+      "pagina": 43
     },
     {
       "fecha_presentacion": "03-07-2024",
@@ -8391,7 +8441,7 @@
       "titulo": "QUE ESTABLECE LA RUTA TURISTICA \"CUATRO CARAS DE LA NATURALEZA\" COMO RUTA TURISTICA NACIONAL Y ESTABLECE MEDIDAS PARA SU DESARROLLO Y PROMOCION",
       "etapa": "Segundo Debate",
       "proponente": "H.D MARCOS ENRIQUE CASTILLERO BARAHONA,H.D JOSÉ ANTONIO PÉREZ BARBONI",
-      "pagina": 42
+      "pagina": 43
     },
     {
       "fecha_presentacion": "03-07-2024",
@@ -8401,7 +8451,7 @@
       "titulo": "QUE MODIFICA LOS ARTICULOS 1550 Y 1555 DEL CODIGO JUDICIAL",
       "etapa": "Archivado",
       "proponente": "H.D NEFTALÍ OMAR ZAMORA IBARRA,H.D RICARDO AGUSTÍN VIGIL LÓPEZ,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D OLGA PAULETTE THOMAS HORLY,H.D MANUEL ALBERTO SAMANIEGO RODRÍGUEZ,H.D YARELIS ANAYANSI RODRÍGUEZ BATISTA,H.D BETSERAI AYIZE RICHARDS,H.D JOSÉ ANTONIO PÉREZ BARBONI,H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ,H.D PATSY CRISTINA LEE RENTERÍA DE HUANG,H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO,H.D EDUARDO ALEJANDRO GAITÁN BEITÍA,H.D LUIS HENRIQUE DUKE WALKER,H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH,H.D MIGUEL ÁNGEL CAMPOS LIMA,H.D ALEXANDRA MARÍA BRENES SAMANIEGO,H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JORGE ISAAC BLOISE IGLESIAS,H.D WALKIRIA A. CHANDLER D´ORCY",
-      "pagina": 42
+      "pagina": 43
     },
     {
       "fecha_presentacion": "03-07-2024",
