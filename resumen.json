@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20260828_204601",
+  "fecha_extraccion": "20260829_141449",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
   "total_proyectos": 867,
@@ -7850,6 +7850,96 @@
         "all": 85
       }
     },
+    "Emberá-Wounaan": {
+      "2024": {
+        "Ley": 0,
+        "debate": 1,
+        "analisis": 0,
+        "sinAvance": 1,
+        "all": 2
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 13,
+        "analisis": 3,
+        "sinAvance": 4,
+        "all": 21
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 6,
+        "analisis": 1,
+        "sinAvance": 5,
+        "all": 12
+      },
+      "all": {
+        "Ley": 1,
+        "debate": 20,
+        "analisis": 4,
+        "sinAvance": 10,
+        "all": 35
+      }
+    },
+    "Coclé": {
+      "2024": {
+        "Ley": 11,
+        "debate": 12,
+        "analisis": 6,
+        "sinAvance": 6,
+        "all": 35
+      },
+      "2025": {
+        "Ley": 4,
+        "debate": 32,
+        "analisis": 6,
+        "sinAvance": 6,
+        "all": 48
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 9,
+        "analisis": 2,
+        "sinAvance": 4,
+        "all": 15
+      },
+      "all": {
+        "Ley": 15,
+        "debate": 53,
+        "analisis": 14,
+        "sinAvance": 16,
+        "all": 98
+      }
+    },
+    "Ngöbe Buglé": {
+      "2024": {
+        "Ley": 8,
+        "debate": 11,
+        "analisis": 6,
+        "sinAvance": 7,
+        "all": 32
+      },
+      "2025": {
+        "Ley": 2,
+        "debate": 16,
+        "analisis": 8,
+        "sinAvance": 3,
+        "all": 29
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 6,
+        "analisis": 1,
+        "sinAvance": 4,
+        "all": 11
+      },
+      "all": {
+        "Ley": 10,
+        "debate": 33,
+        "analisis": 15,
+        "sinAvance": 14,
+        "all": 72
+      }
+    },
     "Los Santos": {
       "2024": {
         "Ley": 8,
@@ -7908,96 +7998,6 @@
         "analisis": 9,
         "sinAvance": 9,
         "all": 40
-      }
-    },
-    "Coclé": {
-      "2024": {
-        "Ley": 11,
-        "debate": 12,
-        "analisis": 6,
-        "sinAvance": 6,
-        "all": 35
-      },
-      "2025": {
-        "Ley": 4,
-        "debate": 32,
-        "analisis": 6,
-        "sinAvance": 6,
-        "all": 48
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 9,
-        "analisis": 2,
-        "sinAvance": 4,
-        "all": 15
-      },
-      "all": {
-        "Ley": 15,
-        "debate": 53,
-        "analisis": 14,
-        "sinAvance": 16,
-        "all": 98
-      }
-    },
-    "Emberá-Wounaan": {
-      "2024": {
-        "Ley": 0,
-        "debate": 1,
-        "analisis": 0,
-        "sinAvance": 1,
-        "all": 2
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 13,
-        "analisis": 3,
-        "sinAvance": 4,
-        "all": 21
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 6,
-        "analisis": 1,
-        "sinAvance": 5,
-        "all": 12
-      },
-      "all": {
-        "Ley": 1,
-        "debate": 20,
-        "analisis": 4,
-        "sinAvance": 10,
-        "all": 35
-      }
-    },
-    "Ngöbe Buglé": {
-      "2024": {
-        "Ley": 8,
-        "debate": 11,
-        "analisis": 6,
-        "sinAvance": 7,
-        "all": 32
-      },
-      "2025": {
-        "Ley": 2,
-        "debate": 16,
-        "analisis": 8,
-        "sinAvance": 3,
-        "all": 29
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 6,
-        "analisis": 1,
-        "sinAvance": 4,
-        "all": 11
-      },
-      "all": {
-        "Ley": 10,
-        "debate": 33,
-        "analisis": 15,
-        "sinAvance": 14,
-        "all": 72
       }
     },
     "Bocas del Toro": {
