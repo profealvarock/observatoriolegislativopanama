@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20260829_141449",
+  "fecha_extraccion": "20260830_142016",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
   "total_proyectos": 867,
@@ -7850,34 +7850,34 @@
         "all": 85
       }
     },
-    "Emberá-Wounaan": {
+    "Guna Yala": {
       "2024": {
-        "Ley": 0,
-        "debate": 1,
-        "analisis": 0,
+        "Ley": 2,
+        "debate": 6,
+        "analisis": 3,
         "sinAvance": 1,
-        "all": 2
+        "all": 12
       },
       "2025": {
         "Ley": 1,
-        "debate": 13,
-        "analisis": 3,
-        "sinAvance": 4,
-        "all": 21
+        "debate": 9,
+        "analisis": 4,
+        "sinAvance": 3,
+        "all": 17
       },
       "2026": {
         "Ley": 0,
-        "debate": 6,
-        "analisis": 1,
+        "debate": 4,
+        "analisis": 2,
         "sinAvance": 5,
-        "all": 12
+        "all": 11
       },
       "all": {
-        "Ley": 1,
-        "debate": 20,
-        "analisis": 4,
-        "sinAvance": 10,
-        "all": 35
+        "Ley": 3,
+        "debate": 19,
+        "analisis": 9,
+        "sinAvance": 9,
+        "all": 40
       }
     },
     "Coclé": {
@@ -7940,6 +7940,36 @@
         "all": 72
       }
     },
+    "Emberá-Wounaan": {
+      "2024": {
+        "Ley": 0,
+        "debate": 1,
+        "analisis": 0,
+        "sinAvance": 1,
+        "all": 2
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 13,
+        "analisis": 3,
+        "sinAvance": 4,
+        "all": 21
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 6,
+        "analisis": 1,
+        "sinAvance": 5,
+        "all": 12
+      },
+      "all": {
+        "Ley": 1,
+        "debate": 20,
+        "analisis": 4,
+        "sinAvance": 10,
+        "all": 35
+      }
+    },
     "Los Santos": {
       "2024": {
         "Ley": 8,
@@ -7968,36 +7998,6 @@
         "analisis": 5,
         "sinAvance": 5,
         "all": 49
-      }
-    },
-    "Guna Yala": {
-      "2024": {
-        "Ley": 2,
-        "debate": 6,
-        "analisis": 3,
-        "sinAvance": 1,
-        "all": 12
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 9,
-        "analisis": 4,
-        "sinAvance": 3,
-        "all": 17
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 4,
-        "analisis": 2,
-        "sinAvance": 5,
-        "all": 11
-      },
-      "all": {
-        "Ley": 3,
-        "debate": 19,
-        "analisis": 9,
-        "sinAvance": 9,
-        "all": 40
       }
     },
     "Bocas del Toro": {
