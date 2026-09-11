@@ -12,10 +12,10 @@
       "planilla_valor": 28500.0,
       "asistencia_pleno": 4.0,
       "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
+      "viajes_ponderacion": 1.0,
       "declaracion_intereses": 1.0,
       "declaracion_patrimonio": 1.0,
-      "calificacion": null,
+      "calificacion": 2.2,
       "comisiones": [
         "🏛️ Asuntos Municipales | 🤝 Asuntos Indígenas | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
       ],
@@ -48,12 +48,12 @@
       "perfil_monitoreo": "https://espaciocivico.org/diputados/ariana-coba",
       "planilla_texto": "B/. 35,263",
       "planilla_valor": 35263.0,
-      "asistencia_pleno": 4.0,
+      "asistencia_pleno": 5.0,
       "asistencia_comisiones": 1.0,
       "viajes_ponderacion": 5.0,
       "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
+      "calificacion": 3.2,
       "comisiones": [
         "⚖️ Gobierno, Justicia y Asuntos Constitucionales | 💰 Presupuesto"
       ],
@@ -164,10 +164,10 @@
       "planilla_valor": 28900.0,
       "asistencia_pleno": 4.0,
       "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
+      "viajes_ponderacion": 5.0,
       "declaracion_intereses": 1.0,
       "declaracion_patrimonio": 1.0,
-      "calificacion": null,
+      "calificacion": 2.4,
       "comisiones": [
         "🏥 Trabajo, Salud y Desarrollo Social | 💰 Presupuesto"
       ],
@@ -259,10 +259,10 @@
       "planilla_valor": 6800.0,
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
+      "viajes_ponderacion": 1.0,
       "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
-      "calificacion": null,
+      "calificacion": 4.4,
       "comisiones": [
         "🤝 Asuntos Indígenas | 📊 Economía y Finanzas"
       ],
@@ -278,10 +278,10 @@
       "planilla_valor": 39625.0,
       "asistencia_pleno": 4.0,
       "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
+      "viajes_ponderacion": 1.0,
       "declaracion_intereses": 1.0,
       "declaracion_patrimonio": 1.0,
-      "calificacion": null,
+      "calificacion": 2.6,
       "comisiones": [
         "💰 Presupuesto"
       ],
@@ -979,12 +979,12 @@
       "perfil_monitoreo": "https://espaciocivico.org/diputados/orlando-carrasquilla",
       "planilla_texto": "B/. 15,150",
       "planilla_valor": 15150.0,
-      "asistencia_pleno": 4.0,
+      "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
       "viajes_ponderacion": 5.0,
       "declaracion_intereses": 1.0,
       "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
+      "calificacion": 3.0,
       "comisiones": [
         "🌳 Población, Ambiente y Desarrollo | 🌾 Asuntos Agropecuarios"
       ],
@@ -1342,7 +1342,7 @@
       "planilla_valor": 38100.0,
       "asistencia_pleno": null,
       "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
+      "viajes_ponderacion": 5.0,
       "declaracion_intereses": 1.0,
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
