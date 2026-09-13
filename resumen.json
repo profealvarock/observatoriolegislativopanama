@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20260912_124403",
+  "fecha_extraccion": "20260913_134308",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
   "total_proyectos": 897,
@@ -2576,7 +2576,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "proyectos": 17,
@@ -2717,7 +2717,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "José Andrés González",
-      "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
       "proyectos": 17,
@@ -4064,7 +4064,7 @@
       "circuito": "4-3",
       "provincia": "Chiriquí",
       "suplente": "Elsa Espinoza",
-      "foto": "https://espaciocivico.org/api/drive-image/1z8CwEOPCxvjQ9llva6ePMFkIzc55aPDp",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
       "slug": "ricardo-vigil-lopez",
       "proyectos": 12,
@@ -4836,7 +4836,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
       "proyectos": 10,
@@ -5027,7 +5027,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
       "proyectos": 9,
@@ -6143,7 +6143,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "proyectos": 5,
@@ -6209,7 +6209,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -6463,7 +6463,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "proyectos": 4,
@@ -6805,7 +6805,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "proyectos": 3,
@@ -7249,7 +7249,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "proyectos": 0,
@@ -7280,7 +7280,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Alejandro Salazar",
-      "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
       "proyectos": 0,
@@ -8052,34 +8052,34 @@
         "all": 86
       }
     },
-    "Los Santos": {
+    "Emberá-Wounaan": {
       "2024": {
-        "Ley": 9,
-        "debate": 9,
-        "analisis": 1,
-        "sinAvance": 2,
-        "all": 21
+        "Ley": 0,
+        "debate": 1,
+        "analisis": 0,
+        "sinAvance": 1,
+        "all": 2
       },
       "2025": {
-        "Ley": 3,
-        "debate": 15,
+        "Ley": 1,
+        "debate": 13,
         "analisis": 3,
-        "sinAvance": 3,
-        "all": 24
+        "sinAvance": 4,
+        "all": 21
       },
       "2026": {
         "Ley": 0,
-        "debate": 3,
+        "debate": 9,
         "analisis": 0,
-        "sinAvance": 1,
-        "all": 4
+        "sinAvance": 3,
+        "all": 12
       },
       "all": {
-        "Ley": 12,
-        "debate": 27,
-        "analisis": 4,
-        "sinAvance": 6,
-        "all": 49
+        "Ley": 1,
+        "debate": 23,
+        "analisis": 3,
+        "sinAvance": 8,
+        "all": 35
       }
     },
     "Guna Yala": {
@@ -8142,34 +8142,34 @@
         "all": 72
       }
     },
-    "Emberá-Wounaan": {
+    "Los Santos": {
       "2024": {
-        "Ley": 0,
-        "debate": 1,
-        "analisis": 0,
-        "sinAvance": 1,
-        "all": 2
+        "Ley": 9,
+        "debate": 9,
+        "analisis": 1,
+        "sinAvance": 2,
+        "all": 21
       },
       "2025": {
-        "Ley": 1,
-        "debate": 13,
+        "Ley": 3,
+        "debate": 15,
         "analisis": 3,
-        "sinAvance": 4,
-        "all": 21
+        "sinAvance": 3,
+        "all": 24
       },
       "2026": {
         "Ley": 0,
-        "debate": 9,
+        "debate": 3,
         "analisis": 0,
-        "sinAvance": 3,
-        "all": 12
+        "sinAvance": 1,
+        "all": 4
       },
       "all": {
-        "Ley": 1,
-        "debate": 23,
-        "analisis": 3,
-        "sinAvance": 8,
-        "all": 35
+        "Ley": 12,
+        "debate": 27,
+        "analisis": 4,
+        "sinAvance": 6,
+        "all": 49
       }
     },
     "Bocas del Toro": {
