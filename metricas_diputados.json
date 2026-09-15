@@ -1270,8 +1270,10 @@
       "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
-      "comisiones": [],
-      "comisiones_cantidad": 0
+      "comisiones": [
+        "🌎 Relaciones Exteriores | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 1
     },
     {
       "nombre": "Yamireliz Chong",
