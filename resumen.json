@@ -1,17 +1,17 @@
 {
-  "fecha_extraccion": "20260923_140821",
+  "fecha_extraccion": "20260924_140608",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
-  "total_proyectos": 912,
+  "total_proyectos": 913,
   "total_leyes": 110,
   "total_diputados": 71,
   "etapas": {
-    "Preliminar": 119,
+    "Preliminar": 120,
     "Negado": 60,
-    "Primer Debate": 191,
+    "Primer Debate": 189,
     "Segundo Debate": 164,
     "Prohijado": 5,
-    "Enviado a subcomisión para analisis": 100,
+    "Enviado a subcomisión para analisis": 102,
     "Ley": 110,
     "Retirado por proponente": 46,
     "Archivado": 65,
@@ -43,7 +43,7 @@
     "2026-04": 24,
     "2026-07": 104,
     "2026-08": 63,
-    "2026-09": 38
+    "2026-09": 39
   },
   "diputados": [
     {
@@ -712,12 +712,12 @@
       "co_patrocinios": 101,
       "etapas": {
         "Preliminar": 5,
-        "Primer Debate": 7,
+        "Primer Debate": 6,
+        "Enviado a subcomisión para analisis": 2,
         "Segundo Debate": 8,
         "Retirado por proponente": 2,
         "Negado": 2,
-        "Archivado": 2,
-        "Enviado a subcomisión para analisis": 1
+        "Archivado": 2
       },
       "leyes_detalle": [],
       "proyectos_detalle": [
@@ -749,7 +749,7 @@
           "ficha": "8464",
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 285 DE 15 DE FEBRERO DE 2022, QUE CREA EL PROGRAMA NACIONAL DE ACOMPAÑAMIENTO INTEGRAL PARA JOVENES EGRESADOS DEL SISTEMA DE PROTECCION Y ACOGIMIENTO Y EL REGISTRO NACIONAL DE JOVENES EGRESADOS DEL SISTEMA DE PROTECCIÓN Y ACOGIMIENTO. Y DICTA OTRAS DISPOSICIONES",
           "fecha": "21-07-2026",
-          "etapa": "Primer Debate"
+          "etapa": "Enviado a subcomisión para analisis"
         },
         {
           "ficha": "8417",
@@ -2436,7 +2436,7 @@
       "circuito": "8-4",
       "provincia": "Panamá",
       "suplente": "Herminia Thompson",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1ikvRFnKl6U2bMNySKm5amHNDKYppcskS",
       "perfil": "https://espaciocivico.org/diputados/roberto-zuniga",
       "slug": "roberto-zuniga",
       "proyectos": 17,
@@ -2596,16 +2596,16 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "proyectos": 17,
       "leyes": 0,
       "co_patrocinios": 83,
       "etapas": {
-        "Primer Debate": 7,
+        "Primer Debate": 6,
         "Preliminar": 2,
-        "Enviado a subcomisión para analisis": 6,
+        "Enviado a subcomisión para analisis": 7,
         "Segundo Debate": 1,
         "Retirado por proponente": 1
       },
@@ -2639,7 +2639,7 @@
           "ficha": "8434",
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO DE LA FAMILIA Y CREA LA PENSION COMPENSATORIA MATRIMONIAL",
           "fecha": "09-07-2026",
-          "etapa": "Primer Debate"
+          "etapa": "Enviado a subcomisión para analisis"
         },
         {
           "ficha": "8421",
@@ -2736,7 +2736,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "José Andrés González",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
       "proyectos": 17,
@@ -4212,7 +4212,7 @@
       "circuito": "4-3",
       "provincia": "Chiriquí",
       "suplente": "Elsa Espinoza",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1z8CwEOPCxvjQ9llva6ePMFkIzc55aPDp",
       "perfil": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
       "slug": "ricardo-vigil-lopez",
       "proyectos": 12,
@@ -4329,7 +4329,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
       "proyectos": 12,
@@ -5070,7 +5070,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
       "proyectos": 9,
@@ -6192,7 +6192,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "proyectos": 5,
@@ -6264,7 +6264,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -6579,7 +6579,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "proyectos": 4,
@@ -7311,7 +7311,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "proyectos": 0,
@@ -7342,7 +7342,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Alejandro Salazar",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
       "proyectos": 0,
@@ -7394,16 +7394,16 @@
       "leyes": 4
     },
     {
+      "nombre": "MINISTERIO DE COMERCIO E INDUSTRIAS",
+      "tipo": "ejecutivo",
+      "proyectos": 5,
+      "leyes": 3
+    },
+    {
       "nombre": "JOSEPH ISAZA",
       "tipo": "ciudadano",
       "proyectos": 4,
       "leyes": 0
-    },
-    {
-      "nombre": "MINISTERIO DE COMERCIO E INDUSTRIAS",
-      "tipo": "ejecutivo",
-      "proyectos": 4,
-      "leyes": 3
     },
     {
       "nombre": "MINISTERIO DEL CANAL",
@@ -7921,15 +7921,15 @@
       },
       "2026": {
         "Ley": 1,
-        "debate": 86,
-        "analisis": 86,
+        "debate": 84,
+        "analisis": 88,
         "sinAvance": 20,
         "all": 193
       },
       "all": {
         "Ley": 44,
-        "debate": 245,
-        "analisis": 144,
+        "debate": 243,
+        "analisis": 146,
         "sinAvance": 105,
         "all": 538
       }
@@ -7951,15 +7951,15 @@
       },
       "2026": {
         "Ley": 1,
-        "debate": 40,
-        "analisis": 27,
+        "debate": 38,
+        "analisis": 29,
         "sinAvance": 4,
         "all": 72
       },
       "all": {
         "Ley": 28,
-        "debate": 140,
-        "analisis": 56,
+        "debate": 138,
+        "analisis": 58,
         "sinAvance": 41,
         "all": 265
       }
@@ -8131,47 +8131,47 @@
       },
       "2026": {
         "Ley": 1,
-        "debate": 27,
-        "analisis": 15,
+        "debate": 26,
+        "analisis": 16,
         "sinAvance": 5,
         "all": 48
       },
       "all": {
         "Ley": 19,
-        "debate": 91,
-        "analisis": 35,
+        "debate": 90,
+        "analisis": 36,
         "sinAvance": 26,
         "all": 171
       }
     },
-    "Ngöbe Buglé": {
+    "Emberá-Wounaan": {
       "2024": {
-        "Ley": 9,
-        "debate": 10,
-        "analisis": 6,
-        "sinAvance": 7,
-        "all": 32
+        "Ley": 0,
+        "debate": 1,
+        "analisis": 0,
+        "sinAvance": 1,
+        "all": 2
       },
       "2025": {
-        "Ley": 2,
-        "debate": 16,
-        "analisis": 8,
-        "sinAvance": 3,
-        "all": 29
+        "Ley": 1,
+        "debate": 13,
+        "analisis": 3,
+        "sinAvance": 4,
+        "all": 21
       },
       "2026": {
         "Ley": 0,
-        "debate": 9,
+        "debate": 10,
         "analisis": 0,
         "sinAvance": 2,
-        "all": 11
+        "all": 12
       },
       "all": {
-        "Ley": 11,
-        "debate": 35,
-        "analisis": 14,
-        "sinAvance": 12,
-        "all": 72
+        "Ley": 1,
+        "debate": 24,
+        "analisis": 3,
+        "sinAvance": 7,
+        "all": 35
       }
     },
     "Guna Yala": {
@@ -8204,34 +8204,34 @@
         "all": 40
       }
     },
-    "Emberá-Wounaan": {
+    "Ngöbe Buglé": {
       "2024": {
-        "Ley": 0,
-        "debate": 1,
-        "analisis": 0,
-        "sinAvance": 1,
-        "all": 2
+        "Ley": 9,
+        "debate": 10,
+        "analisis": 6,
+        "sinAvance": 7,
+        "all": 32
       },
       "2025": {
-        "Ley": 1,
-        "debate": 13,
-        "analisis": 3,
-        "sinAvance": 4,
-        "all": 21
+        "Ley": 2,
+        "debate": 16,
+        "analisis": 8,
+        "sinAvance": 3,
+        "all": 29
       },
       "2026": {
         "Ley": 0,
-        "debate": 10,
+        "debate": 9,
         "analisis": 0,
         "sinAvance": 2,
-        "all": 12
+        "all": 11
       },
       "all": {
-        "Ley": 1,
-        "debate": 24,
-        "analisis": 3,
-        "sinAvance": 7,
-        "all": 35
+        "Ley": 11,
+        "debate": 35,
+        "analisis": 14,
+        "sinAvance": 12,
+        "all": 72
       }
     },
     "Bocas del Toro": {
