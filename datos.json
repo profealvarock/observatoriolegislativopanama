@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20260924_140608",
+  "fecha_extraccion": "20260925_142924",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "total_registros": 913,
   "datos": [
@@ -9,7 +9,7 @@
       "proyecto": "722",
       "anteproyecto": "0",
       "titulo": "QUE ESTABLECE EL MARCO JURIDICO PARA EL OTORGAMIENTO DE LA CALIFICACION DE LABORATORIO DE INTERES NACIONAL, DIRIGIDO A LAS ASOCIACIONES DE INTERES PUBLICO QUE SE DEDICAN A LA INVESTIGACION CIENTIFICA, EL DESARROLLO TECNOLOGICO Y LA INNOVACION",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "MINISTERIO DE LA PRESIDENCIA",
       "pagina": 1
     },
@@ -19,7 +19,7 @@
       "proyecto": "724",
       "anteproyecto": "0",
       "titulo": "QUE EMITE CONCEPTO FAVORABLE PARA LA SUSCRIPCIÓN DE LA ADENDA NO. AL CONTRATO APROBADO MEDIANTE EL DECRETO LEY NO. 6 DE 10 DE FEBRERO DE 1998, SUSCRITO ENTRE EL ESTADO Y LA FUNDACIÓN CIUDAD DEL SABER, PARA EL ESTABLECIMIENTO Y DESARROLLO DE LA CIUDAD DEL SABER",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "MINISTERIO DE LA PRESIDENCIA",
       "pagina": 1
     },
@@ -29,7 +29,7 @@
       "proyecto": "723",
       "anteproyecto": "0",
       "titulo": "QUE REORGANIZA EL SISTEMA NACIONAL DE INVESTIGACION (SNI)",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "MINISTERIO DE LA PRESIDENCIA",
       "pagina": 1
     },
@@ -96,20 +96,20 @@
     {
       "fecha_presentacion": "14-09-2026",
       "ficha": "8600",
-      "proyecto": "",
+      "proyecto": "725",
       "anteproyecto": "183",
       "titulo": "POR LA CUAL SE RECONOCE, PROTEGE Y DECLARA LA CASA DE QUINCHA COMO PATRIMONIO CULTURAL MATERIAL DE LA NACIÓN Y SE DICTAN OTRAS DISPOSICIONES",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "H.D CARLOS AGUSTIN AFU DECEREGA",
       "pagina": 1
     },
     {
       "fecha_presentacion": "14-09-2026",
       "ficha": "8602",
-      "proyecto": "0",
+      "proyecto": "726",
       "anteproyecto": "184",
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY NO 35 DE 6 DE JULIO DE 1995 POR LA CUAL SE ESTABLECE EL PROGRAMA DE DISTRIBUCION DEL VASO DE LECHE Y LA GALLETA NUTRICIONAL O CREMAS NUTRITIVAS ENRIQUECIDAS EN TODOS LOS CENTROS OFICIALES DE EDUCACION PREESCOLAR PRIMARIA DEL PAIS YA LA LEY NO 115 DE 5 DE DICIEMBRE DE 2019 QUE CREA EL PROGRAMA ESTUDIAR SIN HAMBRE Y MODIFICA LA LEY 35 DE 1995 SOBRE EL PROGRAMA DE DISTRIBUCION DEL VASO DE LECHE Y LA GALLETA NUTRICIONAL O CREMAS NUTRITIVAS ENRIQUECIDAS.",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "H.D RAUL GILBERTO PINEDA VERGARA,H.D MARCOS ENRIQUE CASTILLERO BARAHONA",
       "pagina": 1
     },
@@ -139,17 +139,17 @@
       "proyecto": "713",
       "anteproyecto": "0",
       "titulo": "QUE ESTABLECE INCENTIVOS PARA EL DESARROLLO TURISTICO",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "MINISTERIO DE COMERCIO E INDUSTRIAS",
       "pagina": 1
     },
     {
       "fecha_presentacion": "10-09-2026",
       "ficha": "8607",
-      "proyecto": "",
+      "proyecto": "729",
       "anteproyecto": "181",
       "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DE LA LEY 6 DE 3 DE FEBRERO DE 1997, QUE DICTA EL MARCO REGULATORIO E INSTITUCIONAL PARA LA PRESTACION DEL SERVICIO PUBLICO DEELECTRICIDAD",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "H.D YAMIRELIZ DAYMIRELKIS CHONG SMITH",
       "pagina": 1
     },
@@ -189,7 +189,7 @@
       "proyecto": "",
       "anteproyecto": "177",
       "titulo": "QUE ADICIONA ARTICULOS A LA LEY 47 DE 1946 ORGANICA DE EDUCACION PARA ESTABLECER UN MECANISMO ESPECIAL EXPEDITO Y OBLIGATORIO DE SUSTITUCION TEMPORAL DEL PERSONAL DOCENTE EN LOS CENTROS EDUCATIVOS OFICIALES Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Preliminar",
+      "etapa": "Negado",
       "proponente": "H.D PATSY CRISTINA LEE RENTERÍA DE HUANG",
       "pagina": 1
     },
@@ -409,7 +409,7 @@
       "proyecto": "700",
       "anteproyecto": "0",
       "titulo": "POR LA CUAL SE ESTABLECE UNA NUEVA CONFIGURACIÓN DE LOS CIRCUITOS ELECTORALES PARA LA ELECCIÓN DE DIPUTADOS A LA ASAMBLEA NACIONAL",
-      "etapa": "Segundo Debate",
+      "etapa": "Tercer Debate",
       "proponente": "TRIBUNAL ELECTORAL DE PANAMA",
       "pagina": 3
     },
@@ -476,10 +476,10 @@
     {
       "fecha_presentacion": "24-08-2026",
       "ficha": "8562",
-      "proyecto": "",
+      "proyecto": "728",
       "anteproyecto": "152",
       "titulo": "QUE ADICIONA NUMERALES AL ARTICULO 9 Y AL ARTICULO 10 DE LA LEY 187 DE 2 DE DICIEMBRE DE 2020 QUE REGULA LA REDUCCION Y EL REEMPLAZO PROGRESIVO DE LOS PLASTICOS DE UN SOLO USO",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "BRANDY MUÑOZ",
       "pagina": 3
     },
@@ -569,7 +569,7 @@
       "proyecto": "695",
       "anteproyecto": "137",
       "titulo": "QUE RESALTA LOS VALORES Y APORTES DE LA ETNIA INDIA",
-      "etapa": "Primer Debate",
+      "etapa": "Segundo Debate",
       "proponente": "PETER CHATLANI",
       "pagina": 3
     },
@@ -616,10 +616,10 @@
     {
       "fecha_presentacion": "17-08-2026",
       "ficha": "8550",
-      "proyecto": "",
+      "proyecto": "727",
       "anteproyecto": "145",
       "titulo": "POR LA CUAL SE CREAN LOS BOSQUES CORREGIMENTALES EN LA REPUBLICA DE PANAMA Y SE DICTAN OTRAS DISPOSICIONES",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "H.D FRANCISCO JAVIER BREA TRISTÁN,H.D JANINE PRADO CASTAÑO,H.D MIGUEL ÁNGEL CAMPOS LIMA",
       "pagina": 4
     },
@@ -4298,7 +4298,7 @@
       "ficha": "8103",
       "proyecto": "561",
       "anteproyecto": "209",
-      "titulo": "QUE ADICIONA UNA DISPOSCION 17 A LA LEY 106 DE 1973, SOBRE REGIMEN MUNICIPAL",
+      "titulo": "QUE ADICIONA UNA DISPOSICIÓN A LA LEY 106 DE 1973, SOBRE RÉGIMEN MUNICIPAL",
       "etapa": "Ley",
       "proponente": "H.D SHIRLEY DE LA ROSA CASTAÑEDAS VALENTÍN,H.D.S JUAN DOMINGO DÍAZ CONCEPCIÓN,H.D LENÍN ALBERTO ULATE RODRÍGUEZ,H.D ROGELIO RICARDO REVELLO TEM,H.D YUZAIDA ANDREA MARÍN NATERON DE AGUILAR,H.D LUIS EDUARDO CAMACHO CASTRO,H.D NIXSON ANDRADE RODRÍGUEZ,H.D JAMIS GASPAR ACOSTA GUERRA,H.D.S SARA J. MAGALLON CAICEDO DE RUIZ,H.D.S BERTA NIDIA MORENO FLORES,H.D DANA D. CASTAÑEDA GUARDIA,H.D LILIA EMERITA BATISTA RODRIGUEZ",
       "pagina": 22
