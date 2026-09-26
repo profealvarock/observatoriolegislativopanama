@@ -1,18 +1,18 @@
 {
-  "fecha_extraccion": "20260925_142924",
+  "fecha_extraccion": "20260926_134005",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
-  "total_proyectos": 913,
+  "total_proyectos": 914,
   "total_leyes": 110,
   "total_diputados": 71,
   "etapas": {
-    "Primer Debate": 197,
-    "Preliminar": 110,
+    "Preliminar": 111,
+    "Primer Debate": 196,
     "Negado": 61,
-    "Segundo Debate": 164,
-    "Tercer Debate": 3,
+    "Tercer Debate": 4,
     "Prohijado": 5,
     "Enviado a subcomisión para analisis": 102,
+    "Segundo Debate": 164,
     "Ley": 110,
     "Retirado por proponente": 46,
     "Archivado": 65,
@@ -43,7 +43,7 @@
     "2026-04": 24,
     "2026-07": 104,
     "2026-08": 63,
-    "2026-09": 39
+    "2026-09": 40
   },
   "diputados": [
     {
@@ -1253,7 +1253,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Ezequiel Cedeño",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1j-BLrnzwbewFubNVYPQmsx7XYPiQX_Wo",
       "perfil": "https://espaciocivico.org/diputados/patsy-lee-renteria",
       "slug": "patsy-lee-renteria",
       "proyectos": 21,
@@ -2736,7 +2736,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "José Andrés González",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
       "proyectos": 17,
@@ -3023,6 +3023,142 @@
       "comisiones_cantidad": 1
     },
     {
+      "nombre": "Dana Castañeda",
+      "partido": "Realizando Metas",
+      "circuito": "2-3",
+      "provincia": "Coclé",
+      "suplente": "Maiquely Añino",
+      "foto": "https://espaciocivico.org/api/drive-image/1YUtF-yJooFQNig4wD88dwxjilYEDA5__",
+      "perfil": "https://espaciocivico.org/diputados/dana-castaneda",
+      "slug": "dana-castaneda",
+      "proyectos": 16,
+      "leyes": 0,
+      "co_patrocinios": 18,
+      "etapas": {
+        "Preliminar": 4,
+        "Primer Debate": 5,
+        "Segundo Debate": 3,
+        "Enviado al Ejecutivo": 1,
+        "Tercer Debate": 1,
+        "Enviado a subcomisión para analisis": 1,
+        "Suspendido": 1
+      },
+      "leyes_detalle": [],
+      "proyectos_detalle": [
+        {
+          "ficha": "8615",
+          "titulo": "QUE GARANTIZA LA COBERTURA VITALICIA DE LAS POLIZAS DE SEGURO PRIVADO DE SALUD Y EL ACCESO DE LAS PERSONAS DE SESENTA (60) AÑOS O MAS, CON O SIN CONDICIONES PREEXISTENTES, A DICHOS SEGUROS",
+          "fecha": "24-09-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8575",
+          "titulo": "QUE VISIBILIZA EL DUELO GESTACIONAL DE LA MUJER SE ESTABLECEN DIRECTRICES GENERALES PARA SU ATENCION Y TRATAMIENTO ESPECIALIZADO POR PARTE DEL ESTADO Y SE DICTAN OTRAS DISPOSICIONES",
+          "fecha": "02-09-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8581",
+          "titulo": "QUE DECLARA AL DISTRITO DE NATÁ COMO DISTRITO HISTÓRICO, ARQUEOLÓGICO, TURÍSTICO, CULTURAL Y AGROPECUARIO DE LA REPÚBLICA DE PANAMÁ; DECLARA EL CERRO SAN CRISTÓBAL COMO RESERVA NATURAL INALIENABLE Y DICTA OTRAS DISPOSICIONES.",
+          "fecha": "02-09-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8504",
+          "titulo": "QUE ESTABLECE EL PLAN NACIONAL PARA LA PREVENCION, DETECCION TEMPRANA, ATENCION INTEGRAL, TRATAMIENTO, REHABILITACION, CUIDADOS PALIATIVOS, VIGILANCIA E INVESTIGACION DEL CANCER EN LA REPUBLICA DE PANAMA",
+          "fecha": "30-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8450",
+          "titulo": "QUE MODIFICA EL CODIGO PENAL EN MATERIA DE DELITOS CONTRA EL HONOR DE LA PERSONA NATURAL",
+          "fecha": "15-07-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8355",
+          "titulo": "QUE MODIFICA UNA DISPOSICION DEL CODIGO DE RECURSOS MINERALES Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "27-03-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8304",
+          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 80 DE 2012, SOBRE INCENTIVOS PARA EL FOMENTO DE LA ACTIVIDAD TURISTICA Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "02-03-2026",
+          "etapa": "Enviado al Ejecutivo"
+        },
+        {
+          "ficha": "8134",
+          "titulo": "QUE MODIFICA LA LEY 58 DE 1998, QUE ESTABLECE LA DIVISION POLITICO ADMINISTRATIVA DE LAS PROVINCIAS DE COCLE, HERRERA, LOS SANTOS Y VERAGUAS",
+          "fecha": "23-09-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8080",
+          "titulo": "QUE ADICIONA UN ARTICULO A LA LEY 32 DE 2013, QUE CREA LA AUTORIDAD DE PASAPORTES DE PANAMA",
+          "fecha": "03-09-2025",
+          "etapa": "Tercer Debate"
+        },
+        {
+          "ficha": "7975",
+          "titulo": "QUE MODIFICA UN ARTICULO DE LA LEY 37 DE 2009, QUE DESCENTRALIZA LA ADMINISTRACION PUBLICA",
+          "fecha": "30-07-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7944",
+          "titulo": "QUE MODIFICA UN ARTÍCULO DE LA LEY 86 DE 2010, SOBRE EL PROGRAMA B/.120.00 A LOS 70, Y AMPLÍA LA COBERTURA DEL PROGRAMA A LOS ADULTOS MAYORES DE 65 AÑOS",
+          "fecha": "17-07-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7853",
+          "titulo": "QUE REFORMA ARTICULOS DEL TEXTO UNICO DE LA LEY 49 DE 1984 \"QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
+          "fecha": "22-04-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7601",
+          "titulo": "QUE CREA EL PROGRAMA NACIONAL DE PREVENCION DE LA SALUD Y LA ATENCION PRIMARIA DE LA REPUBLICA DE PANAMA, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "05-09-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7603",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 47 DE 1946, ORGANICA DE EDUCACION, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "05-09-2024",
+          "etapa": "Suspendido"
+        },
+        {
+          "ficha": "7604",
+          "titulo": "POR EL CUAL SE ESTABLECE EL MARGEN BRUTO MAXIMO VENTA DE INSUMOS AGROPECUARIOS EN LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "05-09-2024",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7538",
+          "titulo": "QUE MODIFICA LA LEY 3 DE 1985, QUE ESTABLECE UN REGIMEN DE INTERESES PREFERENCIALES EN CIERTOS PRESTAMOS HIPOTECARIOS, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "14-08-2024",
+          "etapa": "Segundo Debate"
+        }
+      ],
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/dana-castaneda",
+      "planilla_texto": "B/. 120,675",
+      "planilla_valor": 120675.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "🌾 Asuntos Agropecuarios | 🎓 Educación, Cultura y Deporte | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 1
+    },
+    {
       "nombre": "Luis Duke",
       "partido": "Coalición Vamos",
       "circuito": "8-2",
@@ -3163,136 +3299,6 @@
       "calificacion": 5.0,
       "comisiones": [
         "🏥 Trabajo, Salud y Desarrollo Social | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 1
-    },
-    {
-      "nombre": "Dana Castañeda",
-      "partido": "Realizando Metas",
-      "circuito": "2-3",
-      "provincia": "Coclé",
-      "suplente": "Maiquely Añino",
-      "foto": "https://espaciocivico.org/api/drive-image/1YUtF-yJooFQNig4wD88dwxjilYEDA5__",
-      "perfil": "https://espaciocivico.org/diputados/dana-castaneda",
-      "slug": "dana-castaneda",
-      "proyectos": 15,
-      "leyes": 0,
-      "co_patrocinios": 18,
-      "etapas": {
-        "Preliminar": 3,
-        "Primer Debate": 5,
-        "Segundo Debate": 3,
-        "Enviado al Ejecutivo": 1,
-        "Tercer Debate": 1,
-        "Enviado a subcomisión para analisis": 1,
-        "Suspendido": 1
-      },
-      "leyes_detalle": [],
-      "proyectos_detalle": [
-        {
-          "ficha": "8575",
-          "titulo": "QUE VISIBILIZA EL DUELO GESTACIONAL DE LA MUJER SE ESTABLECEN DIRECTRICES GENERALES PARA SU ATENCION Y TRATAMIENTO ESPECIALIZADO POR PARTE DEL ESTADO Y SE DICTAN OTRAS DISPOSICIONES",
-          "fecha": "02-09-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8581",
-          "titulo": "QUE DECLARA AL DISTRITO DE NATÁ COMO DISTRITO HISTÓRICO, ARQUEOLÓGICO, TURÍSTICO, CULTURAL Y AGROPECUARIO DE LA REPÚBLICA DE PANAMÁ; DECLARA EL CERRO SAN CRISTÓBAL COMO RESERVA NATURAL INALIENABLE Y DICTA OTRAS DISPOSICIONES.",
-          "fecha": "02-09-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8504",
-          "titulo": "QUE ESTABLECE EL PLAN NACIONAL PARA LA PREVENCION, DETECCION TEMPRANA, ATENCION INTEGRAL, TRATAMIENTO, REHABILITACION, CUIDADOS PALIATIVOS, VIGILANCIA E INVESTIGACION DEL CANCER EN LA REPUBLICA DE PANAMA",
-          "fecha": "30-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8450",
-          "titulo": "QUE MODIFICA EL CODIGO PENAL EN MATERIA DE DELITOS CONTRA EL HONOR DE LA PERSONA NATURAL",
-          "fecha": "15-07-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8355",
-          "titulo": "QUE MODIFICA UNA DISPOSICION DEL CODIGO DE RECURSOS MINERALES Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "27-03-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8304",
-          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 80 DE 2012, SOBRE INCENTIVOS PARA EL FOMENTO DE LA ACTIVIDAD TURISTICA Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "02-03-2026",
-          "etapa": "Enviado al Ejecutivo"
-        },
-        {
-          "ficha": "8134",
-          "titulo": "QUE MODIFICA LA LEY 58 DE 1998, QUE ESTABLECE LA DIVISION POLITICO ADMINISTRATIVA DE LAS PROVINCIAS DE COCLE, HERRERA, LOS SANTOS Y VERAGUAS",
-          "fecha": "23-09-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8080",
-          "titulo": "QUE ADICIONA UN ARTICULO A LA LEY 32 DE 2013, QUE CREA LA AUTORIDAD DE PASAPORTES DE PANAMA",
-          "fecha": "03-09-2025",
-          "etapa": "Tercer Debate"
-        },
-        {
-          "ficha": "7975",
-          "titulo": "QUE MODIFICA UN ARTICULO DE LA LEY 37 DE 2009, QUE DESCENTRALIZA LA ADMINISTRACION PUBLICA",
-          "fecha": "30-07-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7944",
-          "titulo": "QUE MODIFICA UN ARTÍCULO DE LA LEY 86 DE 2010, SOBRE EL PROGRAMA B/.120.00 A LOS 70, Y AMPLÍA LA COBERTURA DEL PROGRAMA A LOS ADULTOS MAYORES DE 65 AÑOS",
-          "fecha": "17-07-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7853",
-          "titulo": "QUE REFORMA ARTICULOS DEL TEXTO UNICO DE LA LEY 49 DE 1984 \"QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
-          "fecha": "22-04-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7601",
-          "titulo": "QUE CREA EL PROGRAMA NACIONAL DE PREVENCION DE LA SALUD Y LA ATENCION PRIMARIA DE LA REPUBLICA DE PANAMA, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "05-09-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7603",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 47 DE 1946, ORGANICA DE EDUCACION, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "05-09-2024",
-          "etapa": "Suspendido"
-        },
-        {
-          "ficha": "7604",
-          "titulo": "POR EL CUAL SE ESTABLECE EL MARGEN BRUTO MAXIMO VENTA DE INSUMOS AGROPECUARIOS EN LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "05-09-2024",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7538",
-          "titulo": "QUE MODIFICA LA LEY 3 DE 1985, QUE ESTABLECE UN REGIMEN DE INTERESES PREFERENCIALES EN CIERTOS PRESTAMOS HIPOTECARIOS, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "14-08-2024",
-          "etapa": "Segundo Debate"
-        }
-      ],
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/dana-castaneda",
-      "planilla_texto": "B/. 120,675",
-      "planilla_valor": 120675.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "🌾 Asuntos Agropecuarios | 🎓 Educación, Cultura y Deporte | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
       "comisiones_cantidad": 1
     },
@@ -4662,7 +4668,8 @@
       "leyes": 0,
       "co_patrocinios": 7,
       "etapas": {
-        "Primer Debate": 3,
+        "Primer Debate": 2,
+        "Segundo Debate": 1,
         "Preliminar": 1,
         "Negado": 1,
         "Archivado": 1,
@@ -4682,7 +4689,7 @@
           "ficha": "8516",
           "titulo": "QUE INCENTIVA LA RECEPCION DE LOS CERTIFICADOS DE PAGO NEGOCIABLES POR INTERES POR MORA (CEPANIM) POR PARTE DEL COMERCIO, LA INDUSTRIA E INSTITUCIONES PUBLICAS, MODIFICA EL CODIGO FISCAL Y DICTA OTRAS DISPOSICIONES",
           "fecha": "04-08-2026",
-          "etapa": "Primer Debate"
+          "etapa": "Segundo Debate"
         },
         {
           "ficha": "8419",
@@ -4864,7 +4871,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Edilberto Guerrero",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1srtYX5JwXU2jT8wpfL8pJo8V0ChK0JIT",
       "perfil": "https://espaciocivico.org/diputados/paulette-thomas",
       "slug": "paulette-thomas",
       "proyectos": 10,
@@ -5069,7 +5076,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
       "proyectos": 9,
@@ -5693,7 +5700,7 @@
       "circuito": "2-2",
       "provincia": "Coclé",
       "suplente": "Marcos \"Lobo\" Rangel",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1itKncJ8nnZcyx2Cd4svAOKrmnpsCuR5p",
       "perfil": "https://espaciocivico.org/diputados/orlando-carrasquilla",
       "slug": "orlando-carrasquilla",
       "proyectos": 6,
@@ -6118,7 +6125,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Lalo' Antonio",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1l64FLwc0g2vmPoSlnMbRWcIzT0BBthgE",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
       "proyectos": 5,
@@ -6263,7 +6270,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -6577,7 +6584,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "proyectos": 4,
@@ -6811,7 +6818,7 @@
       "circuito": "8-6",
       "provincia": "Panamá",
       "suplente": "Claudina Herrera Rodríguez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1rO4y1MfZdU8mIGaHWRLWgTInVJm2YjFk",
       "perfil": "https://espaciocivico.org/diputados/raphael-buchanan",
       "slug": "raphael-buchanan",
       "proyectos": 3,
@@ -6865,7 +6872,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "proyectos": 3,
@@ -7145,7 +7152,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "Juan Domingo Diaz",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1r48XhZKnIroDhPfkJ9szoDiRF6Eyunyo",
       "perfil": "https://espaciocivico.org/diputados/omar-ortega",
       "slug": "omar-ortega",
       "proyectos": 1,
@@ -7800,7 +7807,7 @@
     },
     "Realizando Metas": {
       "diputados": 14,
-      "proyectos": 180,
+      "proyectos": 181,
       "leyes": 26
     },
     "Partido Panameñista": {
@@ -7867,7 +7874,7 @@
     },
     "Coclé": {
       "diputados": 5,
-      "proyectos": 105,
+      "proyectos": 106,
       "leyes": 17
     },
     "Herrera": {
@@ -7902,6 +7909,36 @@
     }
   },
   "por_provincia_filtros": {
+    "Coclé": {
+      "2024": {
+        "Ley": 12,
+        "debate": 12,
+        "analisis": 6,
+        "sinAvance": 6,
+        "all": 36
+      },
+      "2025": {
+        "Ley": 5,
+        "debate": 31,
+        "analisis": 6,
+        "sinAvance": 6,
+        "all": 48
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 14,
+        "analisis": 8,
+        "sinAvance": 0,
+        "all": 22
+      },
+      "all": {
+        "Ley": 17,
+        "debate": 57,
+        "analisis": 20,
+        "sinAvance": 12,
+        "all": 106
+      }
+    },
     "Panamá": {
       "2024": {
         "Ley": 25,
@@ -7960,36 +7997,6 @@
         "analisis": 57,
         "sinAvance": 41,
         "all": 265
-      }
-    },
-    "Coclé": {
-      "2024": {
-        "Ley": 12,
-        "debate": 12,
-        "analisis": 6,
-        "sinAvance": 6,
-        "all": 36
-      },
-      "2025": {
-        "Ley": 5,
-        "debate": 31,
-        "analisis": 6,
-        "sinAvance": 6,
-        "all": 48
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 14,
-        "analisis": 7,
-        "sinAvance": 0,
-        "all": 21
-      },
-      "all": {
-        "Ley": 17,
-        "debate": 57,
-        "analisis": 19,
-        "sinAvance": 12,
-        "all": 105
       }
     },
     "Panamá Oeste": {
@@ -8142,36 +8149,6 @@
         "all": 171
       }
     },
-    "Guna Yala": {
-      "2024": {
-        "Ley": 3,
-        "debate": 5,
-        "analisis": 3,
-        "sinAvance": 1,
-        "all": 12
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 9,
-        "analisis": 4,
-        "sinAvance": 3,
-        "all": 17
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 7,
-        "analisis": 2,
-        "sinAvance": 2,
-        "all": 11
-      },
-      "all": {
-        "Ley": 4,
-        "debate": 21,
-        "analisis": 9,
-        "sinAvance": 6,
-        "all": 40
-      }
-    },
     "Emberá-Wounaan": {
       "2024": {
         "Ley": 0,
@@ -8200,6 +8177,36 @@
         "analisis": 3,
         "sinAvance": 7,
         "all": 35
+      }
+    },
+    "Guna Yala": {
+      "2024": {
+        "Ley": 3,
+        "debate": 5,
+        "analisis": 3,
+        "sinAvance": 1,
+        "all": 12
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 9,
+        "analisis": 4,
+        "sinAvance": 3,
+        "all": 17
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 7,
+        "analisis": 2,
+        "sinAvance": 2,
+        "all": 11
+      },
+      "all": {
+        "Ley": 4,
+        "debate": 21,
+        "analisis": 9,
+        "sinAvance": 6,
+        "all": 40
       }
     },
     "Ngöbe Buglé": {
