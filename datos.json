@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20260927_143635",
+  "fecha_extraccion": "20260928_172822",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "total_registros": 914,
   "datos": [
@@ -10,7 +10,7 @@
       "anteproyecto": "190",
       "titulo": "QUE GARANTIZA LA COBERTURA VITALICIA DE LAS POLIZAS DE SEGURO PRIVADO DE SALUD Y EL ACCESO DE LAS PERSONAS DE SESENTA (60) AÑOS O MAS, CON O SIN CONDICIONES PREEXISTENTES, A DICHOS SEGUROS",
       "etapa": "Preliminar",
-      "proponente": "H.D DANA D. CASTAÑEDA GUARDIA",
+      "proponente": "H.D DANA D. CASTAÑEDA GUARDIA,H.D ERNESTO CEDEÑO",
       "pagina": 1
     },
     {
@@ -49,7 +49,7 @@
       "proyecto": "719",
       "anteproyecto": "0",
       "titulo": "QUE MODIFICA LA LEY 93 DE 19 DE SEPTIEMBRE DE 2019, QUE CREA EL REGIMEN DE ASOCIACION PUBLICO PRIVADA PARA EL DESARROLLO COMO INCENTIVO A LA INVERSION PRIVADA, AL DESARROLLO SOCIAL Y A LA CREACION DE EMPLEOS",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "MINISTERIO DE LA PRESIDENCIA",
       "pagina": 1
     },
@@ -89,7 +89,7 @@
       "proyecto": "717",
       "anteproyecto": "0",
       "titulo": "POR LA CUAL SE MODIFICA LA LEY 456 DE 15 DE NOVIEMBRE DE 2024, QUE DECLARA PATRIMONIO CULTURAL PANAMEÑO LA RUTA COLONIAL TRANSÍSTMICA DE PANAMÁ, Y SE DICTAN OTRAS DISPOSICIONES PARA ARMONIZAR LA GESTIÓN CULTURAL Y AMBIENTAL DE LA RUTA COLONIAL TRANSÍSTMICA Y LAS RUINAS DE LA CAPILLA DE LA PALANGANA O CAPILLA DE CÁRDENAS",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "MINISTERIO DE CULTURA",
       "pagina": 1
     },
@@ -339,7 +339,7 @@
       "proyecto": "718",
       "anteproyecto": "161",
       "titulo": "CREA EL PROGRAMA QUE OTORGA INCENTIVO AL RETIRO LABORAR VOLUNTARIO PARA LOS SERVIDORES PUBLICOS Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Primer Debate",
+      "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D JAVIER FRANCISCO SUCRE MEJIA",
       "pagina": 2
     },
@@ -429,7 +429,7 @@
       "proyecto": "711",
       "anteproyecto": "159",
       "titulo": "QUE ESTABLECE LA POLITICA NACIONAL PARA EL RELEVO GENERACIONAL Y RETIRO VOLUNTARIO EN EL SERVICIO PUBLICO",
-      "etapa": "Primer Debate",
+      "etapa": "Enviado a subcomisión para analisis",
       "proponente": "H.D AUGUSTO EFRAÍN PALACIOS MUÑOZ",
       "pagina": 3
     },
@@ -459,7 +459,7 @@
       "proyecto": "715",
       "anteproyecto": "156",
       "titulo": "QUE ESTABLECE MEDIDAS PARA LA HABILITACION DE ACCESOS A AUTOPISTAS CORREDORES Y VIAS RAPIDAS",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D GRACIELA HERNANDEZ",
       "pagina": 3
     },
@@ -749,7 +749,7 @@
       "proyecto": "714",
       "anteproyecto": "132",
       "titulo": "QUE MODIFICA LA LEY 22 DE 29 DE JULIO DE 1991 MODERNIZA EL FONDO DE AHORRO HABITACIONAL FONDHABI CREA EL PROGRAMA MI PRIMERA VIVIENDA Y DICTA OTRAS DISPOSICIONES",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D RAUL GILBERTO PINEDA VERGARA",
       "pagina": 4
     },
@@ -849,7 +849,7 @@
       "proyecto": "716",
       "anteproyecto": "114",
       "titulo": "QUE CREA EL PROGRAMA NACIONAL DE LOTES SERVIDOS DE INTERES SOCIAL Y DICTA OTRAS DISPOSICIONES.",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D GRACIELA MERCEDES HERNÁNDEZ LACAYO",
       "pagina": 5
     },
@@ -909,7 +909,7 @@
       "proyecto": "721",
       "anteproyecto": "118",
       "titulo": "LEY QUE ADICIONA EL ARTICULO 124-A AL TEXTO UNICO DE LA LEY 22 DE 27 DE JUNIO DE 2006, QUE REGULA LA CONTRATACION PUBLICA, ORDENADO POR LA LEY 153 DE 2020.",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D MARCOS ENRIQUE CASTILLERO BARAHONA",
       "pagina": 5
     },
@@ -1649,7 +1649,7 @@
       "proyecto": "720",
       "anteproyecto": "47",
       "titulo": "QUE REGULA EL SERVICIO DE ESTACIONAMIENTOS PUBLICOS PAGADOS",
-      "etapa": "Prohijado",
+      "etapa": "Primer Debate",
       "proponente": "H.D JORGE ISAAC BLOISE IGLESIAS",
       "pagina": 9
     },
