@@ -1,12 +1,12 @@
 {
-  "fecha_extraccion": "20260928_172822",
+  "fecha_extraccion": "20260929_153000",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
-  "total_proyectos": 914,
+  "total_proyectos": 915,
   "total_leyes": 110,
   "total_diputados": 71,
   "etapas": {
-    "Preliminar": 109,
+    "Preliminar": 110,
     "Primer Debate": 201,
     "Negado": 61,
     "Tercer Debate": 4,
@@ -42,7 +42,7 @@
     "2026-04": 24,
     "2026-07": 104,
     "2026-08": 63,
-    "2026-09": 40
+    "2026-09": 41
   },
   "diputados": [
     {
@@ -1250,7 +1250,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Ezequiel Cedeño",
-      "foto": "https://espaciocivico.org/api/drive-image/1j-BLrnzwbewFubNVYPQmsx7XYPiQX_Wo",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/patsy-lee-renteria",
       "slug": "patsy-lee-renteria",
       "proyectos": 21,
@@ -2592,7 +2592,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "proyectos": 17,
@@ -4976,6 +4976,111 @@
       "comisiones_cantidad": 1
     },
     {
+      "nombre": "Yuzaida Marín",
+      "partido": "Realizando Metas",
+      "circuito": "13-4",
+      "provincia": "Panamá Oeste",
+      "suplente": "Abdiel Núñez",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
+      "slug": "yuzaida-marin",
+      "proyectos": 10,
+      "leyes": 1,
+      "co_patrocinios": 31,
+      "etapas": {
+        "Preliminar": 2,
+        "Segundo Debate": 2,
+        "Retirado por proponente": 1,
+        "Primer Debate": 2,
+        "Ley": 1,
+        "Enviado a subcomisión para analisis": 2
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "7686",
+          "titulo": "QUE SUBROGA LA LEY 50 DE 1995, QUE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
+          "fecha": "09-10-2024"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8617",
+          "titulo": "QUE RECONOCE EL FESTIVAL CULTURAL Y FOLCLORICO 10 DE NOVIEMBRE DEL DISTRITO DE LA CHORRERA Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "28-09-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8534",
+          "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 16 DE 2004 QUE DICTA DISPOSICIONES PARA LA PREVENCION Y TIPIFICACION DE LOS DELITOS CONTRA LA INTEGRIDAD Y LA LIBERTAD SEXUAL Y MODIFICA Y ADICIONA ARTICULOS A LOS CODIGOS PENAL Y JUDICIAL",
+          "fecha": "10-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8383",
+          "titulo": "QUE RECONOCE EL FESTIVAL DEL BOLLO Y EL CHICHEME CHORRERANO",
+          "fecha": "21-04-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8358",
+          "titulo": "QUE MODIFICA LA LEY 82 DE 2013, QUE ADOPTA MEDIDAS DE PREVENCION CONTRA LA VIOLENCIA EN LAS MUJERES Y REFORMA EL CODIGO PENAL PARA TIPIFICAR EL FEMICIDIO Y SANCIONAR LOS HECHOS DE VIOLENCIA CONTRA LA MUJER",
+          "fecha": "27-03-2026",
+          "etapa": "Retirado por proponente"
+        },
+        {
+          "ficha": "8176",
+          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 364 DE 6 DE FEBRERO DE 2023, \"QUE DESARROLLA EL DERECHO HUMANO A LA SALUD MENTAL Y GARANTIZA SU COBERTURA NACIONAL\", Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "20-10-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8164",
+          "titulo": "QUE ESTABLECE LA FIGURA DEL EDUCADOR PROTECTOR EN CASO DE DENUNCIAS DE ABUSOS DE ABUSOS DE NIÑOS, NIÑAS Y ADOLESCENTES, EN EL ENTORNO ESCOLAR.",
+          "fecha": "14-10-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7686",
+          "titulo": "QUE SUBROGA LA LEY 50 DE 1995, QUE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
+          "fecha": "09-10-2024",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7582",
+          "titulo": "QUE MODIFICA EL TEXTO UNICO DE LA LEY 50 DE 1995, POR LA CUAL SE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
+          "fecha": "28-08-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7568",
+          "titulo": "QUE CREA EL PATRONATO DEL HOSPITAL NICOLAS A. SOLANO",
+          "fecha": "27-08-2024",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7440",
+          "titulo": "QUE ESTABLECE UN REGIMEN FISCAL Y LABORAL DE FOMENTO, PARA LA REUBICACION DE SUCURSALES EMPRESARIALES DEL OESTE, DESDE LA CIUDAD CAPITAL DE PANAMA HACIA PANAMA OESTE, PARA PROMOVER EL TRASLADO DE EMPLEOS Y SERVICIOS EN ESTA ZONA DEL PAIS.",
+          "fecha": "10-07-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        }
+      ],
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yuzaida-marin",
+      "planilla_texto": "B/. 38,100",
+      "planilla_valor": 38100.0,
+      "asistencia_pleno": null,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🎓 Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 1
+    },
+    {
       "nombre": "Isaac Mosquera",
       "partido": "Movimiento Liberal Republicano Nacionalista",
       "circuito": "5-1",
@@ -5063,105 +5168,6 @@
       "calificacion": 2.4,
       "comisiones": [
         "📊 Economía y Finanzas | 💰 Presupuesto"
-      ],
-      "comisiones_cantidad": 1
-    },
-    {
-      "nombre": "Yuzaida Marín",
-      "partido": "Realizando Metas",
-      "circuito": "13-4",
-      "provincia": "Panamá Oeste",
-      "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
-      "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
-      "slug": "yuzaida-marin",
-      "proyectos": 9,
-      "leyes": 1,
-      "co_patrocinios": 31,
-      "etapas": {
-        "Preliminar": 1,
-        "Segundo Debate": 2,
-        "Retirado por proponente": 1,
-        "Primer Debate": 2,
-        "Ley": 1,
-        "Enviado a subcomisión para analisis": 2
-      },
-      "leyes_detalle": [
-        {
-          "ficha": "7686",
-          "titulo": "QUE SUBROGA LA LEY 50 DE 1995, QUE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
-          "fecha": "09-10-2024"
-        }
-      ],
-      "proyectos_detalle": [
-        {
-          "ficha": "8534",
-          "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 16 DE 2004 QUE DICTA DISPOSICIONES PARA LA PREVENCION Y TIPIFICACION DE LOS DELITOS CONTRA LA INTEGRIDAD Y LA LIBERTAD SEXUAL Y MODIFICA Y ADICIONA ARTICULOS A LOS CODIGOS PENAL Y JUDICIAL",
-          "fecha": "10-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8383",
-          "titulo": "QUE RECONOCE EL FESTIVAL DEL BOLLO Y EL CHICHEME CHORRERANO",
-          "fecha": "21-04-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8358",
-          "titulo": "QUE MODIFICA LA LEY 82 DE 2013, QUE ADOPTA MEDIDAS DE PREVENCION CONTRA LA VIOLENCIA EN LAS MUJERES Y REFORMA EL CODIGO PENAL PARA TIPIFICAR EL FEMICIDIO Y SANCIONAR LOS HECHOS DE VIOLENCIA CONTRA LA MUJER",
-          "fecha": "27-03-2026",
-          "etapa": "Retirado por proponente"
-        },
-        {
-          "ficha": "8176",
-          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 364 DE 6 DE FEBRERO DE 2023, \"QUE DESARROLLA EL DERECHO HUMANO A LA SALUD MENTAL Y GARANTIZA SU COBERTURA NACIONAL\", Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "20-10-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8164",
-          "titulo": "QUE ESTABLECE LA FIGURA DEL EDUCADOR PROTECTOR EN CASO DE DENUNCIAS DE ABUSOS DE ABUSOS DE NIÑOS, NIÑAS Y ADOLESCENTES, EN EL ENTORNO ESCOLAR.",
-          "fecha": "14-10-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7686",
-          "titulo": "QUE SUBROGA LA LEY 50 DE 1995, QUE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
-          "fecha": "09-10-2024",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7582",
-          "titulo": "QUE MODIFICA EL TEXTO UNICO DE LA LEY 50 DE 1995, POR LA CUAL SE PROTEGE Y FOMENTA LA LACTANCIA MATERNA",
-          "fecha": "28-08-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7568",
-          "titulo": "QUE CREA EL PATRONATO DEL HOSPITAL NICOLAS A. SOLANO",
-          "fecha": "27-08-2024",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7440",
-          "titulo": "QUE ESTABLECE UN REGIMEN FISCAL Y LABORAL DE FOMENTO, PARA LA REUBICACION DE SUCURSALES EMPRESARIALES DEL OESTE, DESDE LA CIUDAD CAPITAL DE PANAMA HACIA PANAMA OESTE, PARA PROMOVER EL TRASLADO DE EMPLEOS Y SERVICIOS EN ESTA ZONA DEL PAIS.",
-          "fecha": "10-07-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        }
-      ],
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yuzaida-marin",
-      "planilla_texto": "B/. 38,100",
-      "planilla_valor": 38100.0,
-      "asistencia_pleno": null,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🎓 Educación, Cultura y Deporte"
       ],
       "comisiones_cantidad": 1
     },
@@ -6048,7 +6054,7 @@
       "circuito": "12-1",
       "provincia": "Ngöbe Buglé",
       "suplente": "Rosalia \"Beligo\" Ellis",
-      "foto": "https://espaciocivico.org/api/drive-image/1vnUYdZM57guE55fT821CJpq0NZyXINko",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/roberto-archibold",
       "slug": "roberto-archibold",
       "proyectos": 5,
@@ -6194,7 +6200,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "proyectos": 5,
@@ -6266,7 +6272,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -6580,7 +6586,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "proyectos": 4,
@@ -6814,7 +6820,7 @@
       "circuito": "8-6",
       "provincia": "Panamá",
       "suplente": "Claudina Herrera Rodríguez",
-      "foto": "https://espaciocivico.org/api/drive-image/1rO4y1MfZdU8mIGaHWRLWgTInVJm2YjFk",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/raphael-buchanan",
       "slug": "raphael-buchanan",
       "proyectos": 3,
@@ -6868,7 +6874,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "proyectos": 3,
@@ -7148,7 +7154,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "Juan Domingo Diaz",
-      "foto": "https://espaciocivico.org/api/drive-image/1r48XhZKnIroDhPfkJ9szoDiRF6Eyunyo",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/omar-ortega",
       "slug": "omar-ortega",
       "proyectos": 1,
@@ -7803,7 +7809,7 @@
     },
     "Realizando Metas": {
       "diputados": 14,
-      "proyectos": 181,
+      "proyectos": 182,
       "leyes": 26
     },
     "Partido Panameñista": {
@@ -7850,7 +7856,7 @@
     },
     "Panamá Oeste": {
       "diputados": 8,
-      "proyectos": 290,
+      "proyectos": 291,
       "leyes": 36
     },
     "Veraguas": {
@@ -7905,34 +7911,34 @@
     }
   },
   "por_provincia_filtros": {
-    "Coclé": {
+    "Panamá Oeste": {
       "2024": {
-        "Ley": 12,
-        "debate": 12,
-        "analisis": 6,
-        "sinAvance": 6,
-        "all": 36
+        "Ley": 24,
+        "debate": 34,
+        "analisis": 17,
+        "sinAvance": 20,
+        "all": 95
       },
       "2025": {
-        "Ley": 5,
-        "debate": 31,
-        "analisis": 6,
-        "sinAvance": 6,
-        "all": 48
+        "Ley": 11,
+        "debate": 70,
+        "analisis": 18,
+        "sinAvance": 16,
+        "all": 115
       },
       "2026": {
-        "Ley": 0,
-        "debate": 14,
-        "analisis": 8,
-        "sinAvance": 0,
-        "all": 22
+        "Ley": 1,
+        "debate": 43,
+        "analisis": 32,
+        "sinAvance": 5,
+        "all": 81
       },
       "all": {
-        "Ley": 17,
-        "debate": 57,
-        "analisis": 20,
-        "sinAvance": 12,
-        "all": 106
+        "Ley": 36,
+        "debate": 147,
+        "analisis": 67,
+        "sinAvance": 41,
+        "all": 291
       }
     },
     "Panamá": {
@@ -7965,6 +7971,36 @@
         "all": 539
       }
     },
+    "Coclé": {
+      "2024": {
+        "Ley": 12,
+        "debate": 12,
+        "analisis": 6,
+        "sinAvance": 6,
+        "all": 36
+      },
+      "2025": {
+        "Ley": 5,
+        "debate": 31,
+        "analisis": 6,
+        "sinAvance": 6,
+        "all": 48
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 14,
+        "analisis": 8,
+        "sinAvance": 0,
+        "all": 22
+      },
+      "all": {
+        "Ley": 17,
+        "debate": 57,
+        "analisis": 20,
+        "sinAvance": 12,
+        "all": 106
+      }
+    },
     "Veraguas": {
       "2024": {
         "Ley": 19,
@@ -7993,36 +8029,6 @@
         "analisis": 57,
         "sinAvance": 41,
         "all": 265
-      }
-    },
-    "Panamá Oeste": {
-      "2024": {
-        "Ley": 24,
-        "debate": 34,
-        "analisis": 17,
-        "sinAvance": 20,
-        "all": 95
-      },
-      "2025": {
-        "Ley": 11,
-        "debate": 70,
-        "analisis": 18,
-        "sinAvance": 16,
-        "all": 115
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 43,
-        "analisis": 31,
-        "sinAvance": 5,
-        "all": 80
-      },
-      "all": {
-        "Ley": 36,
-        "debate": 147,
-        "analisis": 66,
-        "sinAvance": 41,
-        "all": 290
       }
     },
     "Los Santos": {
@@ -8145,6 +8151,36 @@
         "all": 171
       }
     },
+    "Guna Yala": {
+      "2024": {
+        "Ley": 3,
+        "debate": 5,
+        "analisis": 3,
+        "sinAvance": 1,
+        "all": 12
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 9,
+        "analisis": 4,
+        "sinAvance": 3,
+        "all": 17
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 7,
+        "analisis": 2,
+        "sinAvance": 2,
+        "all": 11
+      },
+      "all": {
+        "Ley": 4,
+        "debate": 21,
+        "analisis": 9,
+        "sinAvance": 6,
+        "all": 40
+      }
+    },
     "Ngöbe Buglé": {
       "2024": {
         "Ley": 9,
@@ -8203,36 +8239,6 @@
         "analisis": 3,
         "sinAvance": 7,
         "all": 35
-      }
-    },
-    "Guna Yala": {
-      "2024": {
-        "Ley": 3,
-        "debate": 5,
-        "analisis": 3,
-        "sinAvance": 1,
-        "all": 12
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 9,
-        "analisis": 4,
-        "sinAvance": 3,
-        "all": 17
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 7,
-        "analisis": 2,
-        "sinAvance": 2,
-        "all": 11
-      },
-      "all": {
-        "Ley": 4,
-        "debate": 21,
-        "analisis": 9,
-        "sinAvance": 6,
-        "all": 40
       }
     },
     "Bocas del Toro": {
