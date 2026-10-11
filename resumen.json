@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20261010_150653",
+  "fecha_extraccion": "20261011_152605",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
   "total_proyectos": 931,
@@ -4354,7 +4354,7 @@
       "circuito": "4-3",
       "provincia": "Chiriquí",
       "suplente": "Elsa Espinoza",
-      "foto": "https://espaciocivico.org/api/drive-image/1z8CwEOPCxvjQ9llva6ePMFkIzc55aPDp",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
       "slug": "ricardo-vigil-lopez",
       "proyectos": 12,
@@ -5985,7 +5985,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Lalo' Antonio",
-      "foto": "https://espaciocivico.org/api/drive-image/1l64FLwc0g2vmPoSlnMbRWcIzT0BBthgE",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
       "proyectos": 6,
@@ -6132,7 +6132,7 @@
       "circuito": "3-2",
       "provincia": "Colón",
       "suplente": "Eugenio \"Geño\" Delgado",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1-caeFl-l2dBL8JomvWN4eEXp24MsKp-M",
       "perfil": "https://espaciocivico.org/diputados/nelson-jackson",
       "slug": "nelson-jackson",
       "proyectos": 5,
@@ -6198,7 +6198,7 @@
       "circuito": "12-1",
       "provincia": "Ngöbe Buglé",
       "suplente": "Rosalia \"Beligo\" Ellis",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1vnUYdZM57guE55fT821CJpq0NZyXINko",
       "perfil": "https://espaciocivico.org/diputados/roberto-archibold",
       "slug": "roberto-archibold",
       "proyectos": 5,
@@ -6270,7 +6270,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "proyectos": 5,
@@ -6342,7 +6342,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -6843,7 +6843,7 @@
       "circuito": "4-2",
       "provincia": "Chiriquí",
       "suplente": "César Santamaría Cedeño",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1LAA0ShaiF-UX6WCoBEqYywiMeHZW3Ea5",
       "perfil": "https://espaciocivico.org/diputados/osman-camilo-gomez",
       "slug": "osman-camilo-gomez",
       "proyectos": 3,
@@ -7064,7 +7064,7 @@
       "circuito": "2-1",
       "provincia": "Coclé",
       "suplente": "Berta Moreno Flores",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1mEYs5Tn6v2av2cU3GVmyIbt3Y37c78ak",
       "perfil": "https://espaciocivico.org/diputados/nestor-guardia",
       "slug": "nestor-guardia",
       "proyectos": 2,
@@ -7364,7 +7364,7 @@
       "circuito": "12-2",
       "provincia": "Ngöbe Buglé",
       "suplente": "Dominga Bejerano Mitre",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1iQ6etwoF70tDfhYBkhDhcpoJdDm_H6og",
       "perfil": "https://espaciocivico.org/diputados/nixon-andrade",
       "slug": "nixon-andrade",
       "proyectos": 0,
@@ -7395,7 +7395,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "proyectos": 0,
@@ -8120,36 +8120,6 @@
         "all": 297
       }
     },
-    "Colón": {
-      "2024": {
-        "Ley": 13,
-        "debate": 21,
-        "analisis": 7,
-        "sinAvance": 12,
-        "all": 53
-      },
-      "2025": {
-        "Ley": 7,
-        "debate": 40,
-        "analisis": 14,
-        "sinAvance": 9,
-        "all": 70
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 27,
-        "analisis": 15,
-        "sinAvance": 6,
-        "all": 49
-      },
-      "all": {
-        "Ley": 21,
-        "debate": 88,
-        "analisis": 36,
-        "sinAvance": 27,
-        "all": 172
-      }
-    },
     "Chiriquí": {
       "2024": {
         "Ley": 18,
@@ -8178,6 +8148,36 @@
         "analisis": 45,
         "sinAvance": 41,
         "all": 221
+      }
+    },
+    "Colón": {
+      "2024": {
+        "Ley": 13,
+        "debate": 21,
+        "analisis": 7,
+        "sinAvance": 12,
+        "all": 53
+      },
+      "2025": {
+        "Ley": 7,
+        "debate": 40,
+        "analisis": 14,
+        "sinAvance": 9,
+        "all": 70
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 27,
+        "analisis": 15,
+        "sinAvance": 6,
+        "all": 49
+      },
+      "all": {
+        "Ley": 21,
+        "debate": 88,
+        "analisis": 36,
+        "sinAvance": 27,
+        "all": 172
       }
     },
     "Veraguas": {
@@ -8270,36 +8270,6 @@
         "all": 35
       }
     },
-    "Ngöbe Buglé": {
-      "2024": {
-        "Ley": 9,
-        "debate": 11,
-        "analisis": 5,
-        "sinAvance": 7,
-        "all": 32
-      },
-      "2025": {
-        "Ley": 2,
-        "debate": 16,
-        "analisis": 8,
-        "sinAvance": 3,
-        "all": 29
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 8,
-        "analisis": 1,
-        "sinAvance": 2,
-        "all": 11
-      },
-      "all": {
-        "Ley": 11,
-        "debate": 35,
-        "analisis": 14,
-        "sinAvance": 12,
-        "all": 72
-      }
-    },
     "Guna Yala": {
       "2024": {
         "Ley": 3,
@@ -8328,6 +8298,36 @@
         "analisis": 10,
         "sinAvance": 6,
         "all": 40
+      }
+    },
+    "Ngöbe Buglé": {
+      "2024": {
+        "Ley": 9,
+        "debate": 11,
+        "analisis": 5,
+        "sinAvance": 7,
+        "all": 32
+      },
+      "2025": {
+        "Ley": 2,
+        "debate": 16,
+        "analisis": 8,
+        "sinAvance": 3,
+        "all": 29
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 8,
+        "analisis": 1,
+        "sinAvance": 2,
+        "all": 11
+      },
+      "all": {
+        "Ley": 11,
+        "debate": 35,
+        "analisis": 14,
+        "sinAvance": 12,
+        "all": 72
       }
     },
     "Bocas del Toro": {
