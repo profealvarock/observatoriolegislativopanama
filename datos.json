@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20261013_164744",
+  "fecha_extraccion": "20261014_142418",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "total_registros": 931,
   "datos": [
@@ -346,10 +346,10 @@
     {
       "fecha_presentacion": "09-09-2026",
       "ficha": "8596",
-      "proyecto": "",
+      "proyecto": "743",
       "anteproyecto": "178",
       "titulo": "QUE DECLARA AREA PROTEGIDA UNA ZONA BOSCOSA DEL CORREGIMIENTO DE ANCON QUE COLINDA CON EL AREA DE VILLA DE LAS FUENTES EN EL CORREGIMIENTO DE BETANIA",
-      "etapa": "Preliminar",
+      "etapa": "Primer Debate",
       "proponente": "H.D JOSE PEREZ BARBONI",
       "pagina": 2
     },
