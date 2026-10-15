@@ -1,19 +1,19 @@
 {
-  "fecha_extraccion": "20261014_142418",
+  "fecha_extraccion": "20261015_140156",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
-  "total_proyectos": 931,
+  "total_proyectos": 934,
   "total_leyes": 114,
   "total_diputados": 71,
   "etapas": {
-    "Preliminar": 111,
+    "Preliminar": 114,
     "Primer Debate": 209,
     "Segundo Debate": 165,
-    "Archivado": 67,
     "Negado": 61,
+    "Archivado": 67,
     "Enviado a subcomisión para analisis": 102,
-    "Ley": 114,
     "Retirado por proponente": 48,
+    "Ley": 114,
     "Enviado al Ejecutivo": 9,
     "Tercer Debate": 3,
     "Objetado por Ejecutivo": 31,
@@ -43,7 +43,7 @@
     "2026-07": 104,
     "2026-08": 63,
     "2026-09": 49,
-    "2026-10": 8
+    "2026-10": 11
   },
   "diputados": [
     {
@@ -822,12 +822,6 @@
           "etapa": "Segundo Debate"
         },
         {
-          "ficha": "7923",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
-          "fecha": "10-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
           "ficha": "7924",
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 41 DE 20 DE JULIO DE 2004, QUE CREA UN REGIMEN ESPECIAL PARA EL ESTABLECIMIENTO DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO, Y UNA ENTIDAD AUTONOMA DEL ESTADO, DENOMINADA AGENCIA DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO",
           "fecha": "10-07-2025",
@@ -844,6 +838,12 @@
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 90 DEL 7 DE NOVIEMBRE DE 2013, QUE AUTORIZA LA CREACION DE EMPRESA MERCADOS NACIONALES DE LA CADENA DE FRIO, S.A. Y ESTABLECE SU MARCO REGULATORIO",
           "fecha": "10-07-2025",
           "etapa": "Archivado"
+        },
+        {
+          "ficha": "7923",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
+          "fecha": "10-07-2025",
+          "etapa": "Segundo Debate"
         },
         {
           "ficha": "7889",
@@ -1258,11 +1258,11 @@
       "foto": "https://espaciocivico.org/api/drive-image/1j-BLrnzwbewFubNVYPQmsx7XYPiQX_Wo",
       "perfil": "https://espaciocivico.org/diputados/patsy-lee-renteria",
       "slug": "patsy-lee-renteria",
-      "proyectos": 21,
+      "proyectos": 22,
       "leyes": 2,
       "co_patrocinios": 90,
       "etapas": {
-        "Preliminar": 3,
+        "Preliminar": 4,
         "Archivado": 2,
         "Primer Debate": 9,
         "Segundo Debate": 4,
@@ -1282,6 +1282,12 @@
         }
       ],
       "proyectos_detalle": [
+        {
+          "ficha": "8636",
+          "titulo": "QUE ESTABLECE EL REGIMEN GENERAL DE PRESTAMOS INTERINSTITUCIONALES DE SERVIDORES PUBLICOS Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "08-10-2026",
+          "etapa": "Preliminar"
+        },
         {
           "ficha": "8597",
           "titulo": "QUE ESTABLECE MEDIDAS PARA LA PROTECCION Y SEGURIDAD DEL PERSONAL DOCENTE, DIRECTIVO Y ADMINISTRATIVO DE LOS CENTROS EDUCATIVOS Y DICTA OTRAS DISPOSICIONES",
@@ -2600,7 +2606,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "proyectos": 17,
@@ -2740,7 +2746,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "José Andrés González",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
       "proyectos": 17,
@@ -2837,16 +2843,16 @@
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "7462",
-          "titulo": "DECLARACION DEL DIA NACIONAL DEL FUTBOLISTA EN PANAMA",
-          "fecha": "24-07-2024",
-          "etapa": "Negado"
-        },
-        {
           "ficha": "7463",
           "titulo": "LEY INTEGRAL DE LA INDUSTRIA DE LOS DEPORTES ELECTRONICOS (ESPORTS)",
           "fecha": "24-07-2024",
           "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7462",
+          "titulo": "DECLARACION DEL DIA NACIONAL DEL FUTBOLISTA EN PANAMA",
+          "fecha": "24-07-2024",
+          "etapa": "Negado"
         },
         {
           "ficha": "7461",
@@ -3765,8 +3771,14 @@
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8427",
-          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
+          "ficha": "8429",
+          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8430",
+          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "09-07-2026",
           "etapa": "Preliminar"
         },
@@ -3777,14 +3789,8 @@
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8429",
-          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8430",
-          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
+          "ficha": "8427",
+          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
           "fecha": "09-07-2026",
           "etapa": "Preliminar"
         },
@@ -3853,7 +3859,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
       "proyectos": 14,
@@ -4109,10 +4115,11 @@
       "foto": "https://espaciocivico.org/api/drive-image/1Y3Ain4tNLQHmbw3eqealTt79AESfx0Fc",
       "perfil": "https://espaciocivico.org/diputados/francisco-brea",
       "slug": "francisco-brea",
-      "proyectos": 12,
+      "proyectos": 13,
       "leyes": 3,
       "co_patrocinios": 53,
       "etapas": {
+        "Preliminar": 1,
         "Enviado a subcomisión para analisis": 3,
         "Primer Debate": 2,
         "Segundo Debate": 3,
@@ -4137,6 +4144,12 @@
         }
       ],
       "proyectos_detalle": [
+        {
+          "ficha": "8635",
+          "titulo": "QUE ADICIONA UN ARTICULO A LA LEY 61 DE 2009, PARA FACILITAR EL ACCESO A SOLUCIONES HABITACIONALES DE INTERES SOCIAL Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "13-10-2026",
+          "etapa": "Preliminar"
+        },
         {
           "ficha": "8550",
           "titulo": "POR LA CUAL SE CREAN LOS BOSQUES CORREGIMENTALES EN LA REPUBLICA DE PANAMA Y SE DICTAN OTRAS DISPOSICIONES",
@@ -4223,6 +4236,119 @@
       "calificacion": 4.6,
       "comisiones": [
         "📊 Economía y Finanzas | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 1
+    },
+    {
+      "nombre": "Javier Sucre",
+      "partido": "Partido Revolucionario Democrático",
+      "circuito": "8-4",
+      "provincia": "Panamá",
+      "suplente": "Gabriel Andrés Solís Arias",
+      "foto": "https://espaciocivico.org/api/drive-image/1LB7AtgJouF02ReNKM7673o67C4mlFsbU",
+      "perfil": "https://espaciocivico.org/diputados/javier-sucre",
+      "slug": "javier-sucre",
+      "proyectos": 12,
+      "leyes": 0,
+      "co_patrocinios": 7,
+      "etapas": {
+        "Preliminar": 3,
+        "Enviado a subcomisión para analisis": 3,
+        "Segundo Debate": 1,
+        "Negado": 1,
+        "Archivado": 1,
+        "Objetado por Ejecutivo": 1,
+        "Primer Debate": 1,
+        "Retirado por proponente": 1
+      },
+      "leyes_detalle": [],
+      "proyectos_detalle": [
+        {
+          "ficha": "8637",
+          "titulo": "QUE MODIFICA DISPOSICIONES DE LA LEY 37 DE 2009, QUE DESCENTRALIZA LA ADMINISTRACION PUBLICA, PARA FACILITAR LA ATENCION DE EMERGENCIAS CATASTROFICAS Y LA RECONSTRUCCION TRAS EL TERREMOTO EN PANAMA",
+          "fecha": "13-10-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8630",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 6 DE 1987, SOBRE BENEFICIOS A LOS JUBILADOS, PENSIONADOS Y TERCERA EDAD, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "06-10-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8580",
+          "titulo": "CREA EL PROGRAMA QUE OTORGA INCENTIVO AL RETIRO LABORAR VOLUNTARIO PARA LOS SERVIDORES PUBLICOS Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "02-09-2026",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "8516",
+          "titulo": "QUE INCENTIVA LA RECEPCION DE LOS CERTIFICADOS DE PAGO NEGOCIABLES POR INTERES POR MORA (CEPANIM) POR PARTE DEL COMERCIO, LA INDUSTRIA E INSTITUCIONES PUBLICAS, MODIFICA EL CODIGO FISCAL Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "04-08-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8419",
+          "titulo": "QUE NORMA EL PORCENTAJE MAXIMO DE LA TASA DE DESCUENTO APLICABLE AL VALOR NOMINAL DE LOS CERTIFICADOS DE PAGO NEGOCIABLE DE LA SEGUNDA PARTIDA DEL DECIMO TERCER MES (CEP ADEM) Y CERTIFICADO DE PAGO NEGOCIABLE POR EL INTERES POR MORA (CEPANIM) Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "07-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8028",
+          "titulo": "QUE ESTABLECE LA SUSTITUCION ESCALONADA DEL POLIESTIRENO EXPANDIDO (EPS) EN ENVASES ALIMENTICIOS, VASOS, PLATOS Y EMPAQUES DE UN SOLO USO",
+          "fecha": "19-08-2025",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "8031",
+          "titulo": "QUE REFORMA LA LEY 37 DE 2009, QUE DESCENTRALIZA LA ADMINISTRACION PUBLICA, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "19-08-2025",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "7750",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 6 DE 1987 SOBRE BENEFICIOS A LOS JUBILADOS, PENSIONADOS Y TERCERA EDAD Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "15-01-2025",
+          "etapa": "Objetado por Ejecutivo"
+        },
+        {
+          "ficha": "7611",
+          "titulo": "QUE CREA EL PROGRAMA DE ACELERACION A LA MICRO Y PEQUEÑA EMPRESA Y MODIFICA UN ARTICULO DE LA LEY 8 DEL 2000, DE LA AUTORIDAD DE LA MICRO, PEQUEÑA Y MEDIANA EMPRESA",
+          "fecha": "05-09-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7574",
+          "titulo": "QUE REGLAMENTA LA PROFESION DE ADMINISTRADOR PUBLICO EN LA REPUBLICA DE PANAMA",
+          "fecha": "27-08-2024",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7528",
+          "titulo": "QUE IMPLEMENTA LA UTILIZACION DE ENERGIA RENOVABLE EN EL SECTOR PUBLICO EN LA REPUBLICA DE PANAMA",
+          "fecha": "12-08-2024",
+          "etapa": "Retirado por proponente"
+        },
+        {
+          "ficha": "7500",
+          "titulo": "QUE MODIFICA ARTICULOS DEL DECRETO GABINETE 224 DE 16 DE JULIO DE 1969, ORGANICO DE LA LOTERÍA NACIONAL DE BENEFICENCIA",
+          "fecha": "31-07-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        }
+      ],
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/javier-sucre",
+      "planilla_texto": "B/. 65,045",
+      "planilla_valor": 65045.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "🌳 Población, Ambiente y Desarrollo | 💰 Presupuesto"
       ],
       "comisiones_cantidad": 1
     },
@@ -4472,7 +4598,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
       "proyectos": 12,
@@ -4494,13 +4620,13 @@
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "8584",
+          "ficha": "8598",
           "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "02-09-2026",
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8598",
+          "ficha": "8584",
           "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "02-09-2026",
           "etapa": "Preliminar"
@@ -4573,113 +4699,6 @@
       "calificacion": 4.8,
       "comisiones": [
         "🏭 Comercio y Asuntos Económicos | 💰 Presupuesto"
-      ],
-      "comisiones_cantidad": 1
-    },
-    {
-      "nombre": "Javier Sucre",
-      "partido": "Partido Revolucionario Democrático",
-      "circuito": "8-4",
-      "provincia": "Panamá",
-      "suplente": "Gabriel Andrés Solís Arias",
-      "foto": "https://espaciocivico.org/api/drive-image/1LB7AtgJouF02ReNKM7673o67C4mlFsbU",
-      "perfil": "https://espaciocivico.org/diputados/javier-sucre",
-      "slug": "javier-sucre",
-      "proyectos": 11,
-      "leyes": 0,
-      "co_patrocinios": 7,
-      "etapas": {
-        "Preliminar": 2,
-        "Enviado a subcomisión para analisis": 3,
-        "Segundo Debate": 1,
-        "Negado": 1,
-        "Archivado": 1,
-        "Objetado por Ejecutivo": 1,
-        "Primer Debate": 1,
-        "Retirado por proponente": 1
-      },
-      "leyes_detalle": [],
-      "proyectos_detalle": [
-        {
-          "ficha": "8630",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 6 DE 1987, SOBRE BENEFICIOS A LOS JUBILADOS, PENSIONADOS Y TERCERA EDAD, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "06-10-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8580",
-          "titulo": "CREA EL PROGRAMA QUE OTORGA INCENTIVO AL RETIRO LABORAR VOLUNTARIO PARA LOS SERVIDORES PUBLICOS Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "02-09-2026",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "8516",
-          "titulo": "QUE INCENTIVA LA RECEPCION DE LOS CERTIFICADOS DE PAGO NEGOCIABLES POR INTERES POR MORA (CEPANIM) POR PARTE DEL COMERCIO, LA INDUSTRIA E INSTITUCIONES PUBLICAS, MODIFICA EL CODIGO FISCAL Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "04-08-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8419",
-          "titulo": "QUE NORMA EL PORCENTAJE MAXIMO DE LA TASA DE DESCUENTO APLICABLE AL VALOR NOMINAL DE LOS CERTIFICADOS DE PAGO NEGOCIABLE DE LA SEGUNDA PARTIDA DEL DECIMO TERCER MES (CEP ADEM) Y CERTIFICADO DE PAGO NEGOCIABLE POR EL INTERES POR MORA (CEPANIM) Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "07-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8028",
-          "titulo": "QUE ESTABLECE LA SUSTITUCION ESCALONADA DEL POLIESTIRENO EXPANDIDO (EPS) EN ENVASES ALIMENTICIOS, VASOS, PLATOS Y EMPAQUES DE UN SOLO USO",
-          "fecha": "19-08-2025",
-          "etapa": "Negado"
-        },
-        {
-          "ficha": "8031",
-          "titulo": "QUE REFORMA LA LEY 37 DE 2009, QUE DESCENTRALIZA LA ADMINISTRACION PUBLICA, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "19-08-2025",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7750",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 6 DE 1987 SOBRE BENEFICIOS A LOS JUBILADOS, PENSIONADOS Y TERCERA EDAD Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "15-01-2025",
-          "etapa": "Objetado por Ejecutivo"
-        },
-        {
-          "ficha": "7611",
-          "titulo": "QUE CREA EL PROGRAMA DE ACELERACION A LA MICRO Y PEQUEÑA EMPRESA Y MODIFICA UN ARTICULO DE LA LEY 8 DEL 2000, DE LA AUTORIDAD DE LA MICRO, PEQUEÑA Y MEDIANA EMPRESA",
-          "fecha": "05-09-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7574",
-          "titulo": "QUE REGLAMENTA LA PROFESION DE ADMINISTRADOR PUBLICO EN LA REPUBLICA DE PANAMA",
-          "fecha": "27-08-2024",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7528",
-          "titulo": "QUE IMPLEMENTA LA UTILIZACION DE ENERGIA RENOVABLE EN EL SECTOR PUBLICO EN LA REPUBLICA DE PANAMA",
-          "fecha": "12-08-2024",
-          "etapa": "Retirado por proponente"
-        },
-        {
-          "ficha": "7500",
-          "titulo": "QUE MODIFICA ARTICULOS DEL DECRETO GABINETE 224 DE 16 DE JULIO DE 1969, ORGANICO DE LA LOTERÍA NACIONAL DE BENEFICENCIA",
-          "fecha": "31-07-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        }
-      ],
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/javier-sucre",
-      "planilla_texto": "B/. 65,045",
-      "planilla_valor": 65045.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo | 💰 Presupuesto"
       ],
       "comisiones_cantidad": 1
     },
@@ -6198,7 +6217,7 @@
       "circuito": "12-1",
       "provincia": "Ngöbe Buglé",
       "suplente": "Rosalia \"Beligo\" Ellis",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1vnUYdZM57guE55fT821CJpq0NZyXINko",
       "perfil": "https://espaciocivico.org/diputados/roberto-archibold",
       "slug": "roberto-archibold",
       "proyectos": 5,
@@ -6270,7 +6289,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "proyectos": 5,
@@ -6342,7 +6361,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -6716,7 +6735,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "proyectos": 4,
@@ -6951,7 +6970,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "proyectos": 3,
@@ -7395,7 +7414,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "proyectos": 0,
@@ -7426,7 +7445,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Alejandro Salazar",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
       "proyectos": 0,
@@ -7868,13 +7887,13 @@
       "leyes": 0
     },
     {
-      "nombre": "IVAN ALVAREZ",
+      "nombre": "ANGELA JIMENEZ",
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
     },
     {
-      "nombre": "ANGELA JIMENEZ",
+      "nombre": "IVAN ALVAREZ",
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
@@ -7903,17 +7922,17 @@
     },
     "Partido Panameñista": {
       "diputados": 8,
-      "proyectos": 179,
+      "proyectos": 180,
       "leyes": 27
     },
     "Partido Revolucionario Democrático": {
       "diputados": 13,
-      "proyectos": 153,
+      "proyectos": 154,
       "leyes": 16
     },
     "Partido Popular": {
       "diputados": 2,
-      "proyectos": 119,
+      "proyectos": 120,
       "leyes": 19
     },
     "Cambio Democrático": {
@@ -7940,17 +7959,17 @@
   "por_provincia": {
     "Panamá": {
       "diputados": 25,
-      "proyectos": 543,
+      "proyectos": 544,
       "leyes": 46
     },
     "Panamá Oeste": {
       "diputados": 8,
-      "proyectos": 297,
+      "proyectos": 298,
       "leyes": 38
     },
     "Veraguas": {
       "diputados": 5,
-      "proyectos": 268,
+      "proyectos": 269,
       "leyes": 30
     },
     "Chiriquí": {
@@ -8018,16 +8037,46 @@
       "2026": {
         "Ley": 1,
         "debate": 94,
-        "analisis": 86,
+        "analisis": 87,
         "sinAvance": 17,
-        "all": 198
+        "all": 199
       },
       "all": {
         "Ley": 46,
         "debate": 253,
-        "analisis": 140,
+        "analisis": 141,
         "sinAvance": 104,
-        "all": 543
+        "all": 544
+      }
+    },
+    "Veraguas": {
+      "2024": {
+        "Ley": 19,
+        "debate": 34,
+        "analisis": 11,
+        "sinAvance": 20,
+        "all": 84
+      },
+      "2025": {
+        "Ley": 10,
+        "debate": 66,
+        "analisis": 17,
+        "sinAvance": 17,
+        "all": 110
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 39,
+        "analisis": 30,
+        "sinAvance": 5,
+        "all": 75
+      },
+      "all": {
+        "Ley": 30,
+        "debate": 139,
+        "analisis": 58,
+        "sinAvance": 42,
+        "all": 269
       }
     },
     "Herrera": {
@@ -8060,6 +8109,36 @@
         "all": 88
       }
     },
+    "Panamá Oeste": {
+      "2024": {
+        "Ley": 24,
+        "debate": 35,
+        "analisis": 16,
+        "sinAvance": 20,
+        "all": 95
+      },
+      "2025": {
+        "Ley": 13,
+        "debate": 67,
+        "analisis": 18,
+        "sinAvance": 17,
+        "all": 115
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 47,
+        "analisis": 33,
+        "sinAvance": 7,
+        "all": 88
+      },
+      "all": {
+        "Ley": 38,
+        "debate": 149,
+        "analisis": 67,
+        "sinAvance": 44,
+        "all": 298
+      }
+    },
     "Coclé": {
       "2024": {
         "Ley": 12,
@@ -8088,66 +8167,6 @@
         "analisis": 19,
         "sinAvance": 14,
         "all": 108
-      }
-    },
-    "Panamá Oeste": {
-      "2024": {
-        "Ley": 24,
-        "debate": 35,
-        "analisis": 16,
-        "sinAvance": 20,
-        "all": 95
-      },
-      "2025": {
-        "Ley": 13,
-        "debate": 67,
-        "analisis": 18,
-        "sinAvance": 17,
-        "all": 115
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 47,
-        "analisis": 32,
-        "sinAvance": 7,
-        "all": 87
-      },
-      "all": {
-        "Ley": 38,
-        "debate": 149,
-        "analisis": 66,
-        "sinAvance": 44,
-        "all": 297
-      }
-    },
-    "Chiriquí": {
-      "2024": {
-        "Ley": 18,
-        "debate": 27,
-        "analisis": 10,
-        "sinAvance": 19,
-        "all": 74
-      },
-      "2025": {
-        "Ley": 12,
-        "debate": 51,
-        "analisis": 15,
-        "sinAvance": 16,
-        "all": 94
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 26,
-        "analisis": 20,
-        "sinAvance": 6,
-        "all": 53
-      },
-      "all": {
-        "Ley": 31,
-        "debate": 104,
-        "analisis": 45,
-        "sinAvance": 41,
-        "all": 221
       }
     },
     "Colón": {
@@ -8180,34 +8199,34 @@
         "all": 172
       }
     },
-    "Veraguas": {
+    "Chiriquí": {
       "2024": {
-        "Ley": 19,
-        "debate": 34,
-        "analisis": 11,
-        "sinAvance": 20,
-        "all": 84
+        "Ley": 18,
+        "debate": 27,
+        "analisis": 10,
+        "sinAvance": 19,
+        "all": 74
       },
       "2025": {
-        "Ley": 10,
-        "debate": 66,
-        "analisis": 17,
-        "sinAvance": 17,
-        "all": 110
+        "Ley": 12,
+        "debate": 51,
+        "analisis": 15,
+        "sinAvance": 16,
+        "all": 94
       },
       "2026": {
         "Ley": 1,
-        "debate": 39,
-        "analisis": 29,
-        "sinAvance": 5,
-        "all": 74
+        "debate": 26,
+        "analisis": 20,
+        "sinAvance": 6,
+        "all": 53
       },
       "all": {
-        "Ley": 30,
-        "debate": 139,
-        "analisis": 57,
-        "sinAvance": 42,
-        "all": 268
+        "Ley": 31,
+        "debate": 104,
+        "analisis": 45,
+        "sinAvance": 41,
+        "all": 221
       }
     },
     "Los Santos": {
@@ -8238,6 +8257,36 @@
         "analisis": 5,
         "sinAvance": 5,
         "all": 51
+      }
+    },
+    "Guna Yala": {
+      "2024": {
+        "Ley": 3,
+        "debate": 5,
+        "analisis": 3,
+        "sinAvance": 1,
+        "all": 12
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 8,
+        "analisis": 5,
+        "sinAvance": 3,
+        "all": 17
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 7,
+        "analisis": 2,
+        "sinAvance": 2,
+        "all": 11
+      },
+      "all": {
+        "Ley": 4,
+        "debate": 20,
+        "analisis": 10,
+        "sinAvance": 6,
+        "all": 40
       }
     },
     "Emberá-Wounaan": {
@@ -8298,36 +8347,6 @@
         "analisis": 14,
         "sinAvance": 12,
         "all": 72
-      }
-    },
-    "Guna Yala": {
-      "2024": {
-        "Ley": 3,
-        "debate": 5,
-        "analisis": 3,
-        "sinAvance": 1,
-        "all": 12
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 8,
-        "analisis": 5,
-        "sinAvance": 3,
-        "all": 17
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 7,
-        "analisis": 2,
-        "sinAvance": 2,
-        "all": 11
-      },
-      "all": {
-        "Ley": 4,
-        "debate": 20,
-        "analisis": 10,
-        "sinAvance": 6,
-        "all": 40
       }
     },
     "Bocas del Toro": {
