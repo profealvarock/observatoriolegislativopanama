@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20261015_140156",
+  "fecha_extraccion": "20261016_134843",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
   "total_proyectos": 934,
@@ -9,11 +9,11 @@
     "Preliminar": 114,
     "Primer Debate": 209,
     "Segundo Debate": 165,
-    "Negado": 61,
     "Archivado": 67,
+    "Negado": 61,
     "Enviado a subcomisión para analisis": 102,
-    "Retirado por proponente": 48,
     "Ley": 114,
+    "Retirado por proponente": 48,
     "Enviado al Ejecutivo": 9,
     "Tercer Debate": 3,
     "Objetado por Ejecutivo": 31,
@@ -822,6 +822,12 @@
           "etapa": "Segundo Debate"
         },
         {
+          "ficha": "7923",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
+          "fecha": "10-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
           "ficha": "7924",
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 41 DE 20 DE JULIO DE 2004, QUE CREA UN REGIMEN ESPECIAL PARA EL ESTABLECIMIENTO DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO, Y UNA ENTIDAD AUTONOMA DEL ESTADO, DENOMINADA AGENCIA DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO",
           "fecha": "10-07-2025",
@@ -838,12 +844,6 @@
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 90 DEL 7 DE NOVIEMBRE DE 2013, QUE AUTORIZA LA CREACION DE EMPRESA MERCADOS NACIONALES DE LA CADENA DE FRIO, S.A. Y ESTABLECE SU MARCO REGULATORIO",
           "fecha": "10-07-2025",
           "etapa": "Archivado"
-        },
-        {
-          "ficha": "7923",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
-          "fecha": "10-07-2025",
-          "etapa": "Segundo Debate"
         },
         {
           "ficha": "7889",
@@ -2843,16 +2843,16 @@
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "7463",
-          "titulo": "LEY INTEGRAL DE LA INDUSTRIA DE LOS DEPORTES ELECTRONICOS (ESPORTS)",
-          "fecha": "24-07-2024",
-          "etapa": "Segundo Debate"
-        },
-        {
           "ficha": "7462",
           "titulo": "DECLARACION DEL DIA NACIONAL DEL FUTBOLISTA EN PANAMA",
           "fecha": "24-07-2024",
           "etapa": "Negado"
+        },
+        {
+          "ficha": "7463",
+          "titulo": "LEY INTEGRAL DE LA INDUSTRIA DE LOS DEPORTES ELECTRONICOS (ESPORTS)",
+          "fecha": "24-07-2024",
+          "etapa": "Segundo Debate"
         },
         {
           "ficha": "7461",
@@ -3771,14 +3771,8 @@
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8429",
-          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8430",
-          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
+          "ficha": "8427",
+          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
           "fecha": "09-07-2026",
           "etapa": "Preliminar"
         },
@@ -3789,8 +3783,14 @@
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8427",
-          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
+          "ficha": "8429",
+          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8430",
+          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "09-07-2026",
           "etapa": "Preliminar"
         },
@@ -4620,13 +4620,13 @@
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "8598",
+          "ficha": "8584",
           "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "02-09-2026",
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8584",
+          "ficha": "8598",
           "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "02-09-2026",
           "etapa": "Preliminar"
@@ -7887,13 +7887,13 @@
       "leyes": 0
     },
     {
-      "nombre": "ANGELA JIMENEZ",
+      "nombre": "IVAN ALVAREZ",
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
     },
     {
-      "nombre": "IVAN ALVAREZ",
+      "nombre": "ANGELA JIMENEZ",
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
@@ -8019,36 +8019,6 @@
     }
   },
   "por_provincia_filtros": {
-    "Panamá": {
-      "2024": {
-        "Ley": 25,
-        "debate": 50,
-        "analisis": 24,
-        "sinAvance": 37,
-        "all": 136
-      },
-      "2025": {
-        "Ley": 20,
-        "debate": 109,
-        "analisis": 30,
-        "sinAvance": 50,
-        "all": 209
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 94,
-        "analisis": 87,
-        "sinAvance": 17,
-        "all": 199
-      },
-      "all": {
-        "Ley": 46,
-        "debate": 253,
-        "analisis": 141,
-        "sinAvance": 104,
-        "all": 544
-      }
-    },
     "Veraguas": {
       "2024": {
         "Ley": 19,
@@ -8077,6 +8047,36 @@
         "analisis": 58,
         "sinAvance": 42,
         "all": 269
+      }
+    },
+    "Panamá": {
+      "2024": {
+        "Ley": 25,
+        "debate": 50,
+        "analisis": 24,
+        "sinAvance": 37,
+        "all": 136
+      },
+      "2025": {
+        "Ley": 20,
+        "debate": 109,
+        "analisis": 30,
+        "sinAvance": 50,
+        "all": 209
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 94,
+        "analisis": 87,
+        "sinAvance": 17,
+        "all": 199
+      },
+      "all": {
+        "Ley": 46,
+        "debate": 253,
+        "analisis": 141,
+        "sinAvance": 104,
+        "all": 544
       }
     },
     "Herrera": {
@@ -8259,36 +8259,6 @@
         "all": 51
       }
     },
-    "Guna Yala": {
-      "2024": {
-        "Ley": 3,
-        "debate": 5,
-        "analisis": 3,
-        "sinAvance": 1,
-        "all": 12
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 8,
-        "analisis": 5,
-        "sinAvance": 3,
-        "all": 17
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 7,
-        "analisis": 2,
-        "sinAvance": 2,
-        "all": 11
-      },
-      "all": {
-        "Ley": 4,
-        "debate": 20,
-        "analisis": 10,
-        "sinAvance": 6,
-        "all": 40
-      }
-    },
     "Emberá-Wounaan": {
       "2024": {
         "Ley": 0,
@@ -8347,6 +8317,36 @@
         "analisis": 14,
         "sinAvance": 12,
         "all": 72
+      }
+    },
+    "Guna Yala": {
+      "2024": {
+        "Ley": 3,
+        "debate": 5,
+        "analisis": 3,
+        "sinAvance": 1,
+        "all": 12
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 8,
+        "analisis": 5,
+        "sinAvance": 3,
+        "all": 17
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 7,
+        "analisis": 2,
+        "sinAvance": 2,
+        "all": 11
+      },
+      "all": {
+        "Ley": 4,
+        "debate": 20,
+        "analisis": 10,
+        "sinAvance": 6,
+        "all": 40
       }
     },
     "Bocas del Toro": {
