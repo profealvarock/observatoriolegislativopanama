@@ -1,19 +1,19 @@
 {
-  "fecha_extraccion": "20261016_134843",
+  "fecha_extraccion": "20261017_124648",
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
-  "total_proyectos": 934,
+  "total_proyectos": 937,
   "total_leyes": 114,
   "total_diputados": 71,
   "etapas": {
-    "Preliminar": 114,
+    "Preliminar": 117,
     "Primer Debate": 209,
     "Segundo Debate": 165,
-    "Archivado": 67,
     "Negado": 61,
+    "Archivado": 67,
     "Enviado a subcomisión para analisis": 102,
-    "Ley": 114,
     "Retirado por proponente": 48,
+    "Ley": 114,
     "Enviado al Ejecutivo": 9,
     "Tercer Debate": 3,
     "Objetado por Ejecutivo": 31,
@@ -43,7 +43,7 @@
     "2026-07": 104,
     "2026-08": 63,
     "2026-09": 49,
-    "2026-10": 11
+    "2026-10": 14
   },
   "diputados": [
     {
@@ -822,12 +822,6 @@
           "etapa": "Segundo Debate"
         },
         {
-          "ficha": "7923",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
-          "fecha": "10-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
           "ficha": "7924",
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 41 DE 20 DE JULIO DE 2004, QUE CREA UN REGIMEN ESPECIAL PARA EL ESTABLECIMIENTO DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO, Y UNA ENTIDAD AUTONOMA DEL ESTADO, DENOMINADA AGENCIA DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO",
           "fecha": "10-07-2025",
@@ -844,6 +838,12 @@
           "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 90 DEL 7 DE NOVIEMBRE DE 2013, QUE AUTORIZA LA CREACION DE EMPRESA MERCADOS NACIONALES DE LA CADENA DE FRIO, S.A. Y ESTABLECE SU MARCO REGULATORIO",
           "fecha": "10-07-2025",
           "etapa": "Archivado"
+        },
+        {
+          "ficha": "7923",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
+          "fecha": "10-07-2025",
+          "etapa": "Segundo Debate"
         },
         {
           "ficha": "7889",
@@ -907,11 +907,11 @@
       "foto": "https://espaciocivico.org/api/drive-image/1g1lq6mRDeY-qB6I9C0QLC7mTQyBikJlv",
       "perfil": "https://espaciocivico.org/diputados/graciela-hernandez",
       "slug": "graciela-hernandez",
-      "proyectos": 22,
+      "proyectos": 24,
       "leyes": 1,
       "co_patrocinios": 59,
       "etapas": {
-        "Preliminar": 5,
+        "Preliminar": 7,
         "Primer Debate": 6,
         "Enviado a subcomisión para analisis": 2,
         "Enviado al Ejecutivo": 2,
@@ -928,6 +928,18 @@
         }
       ],
       "proyectos_detalle": [
+        {
+          "ficha": "8638",
+          "titulo": "QUE FACILITA LA CONSTRUCCION DE VIVIENDAS PERMANENTES PARA COMUNIDADES DAMNIFICADAS POR DESASTRES NATURALES",
+          "fecha": "14-10-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8639",
+          "titulo": "QUE ESTABLECE LA TRANSPARENCIA Y RENDICION PUBLICA DE CUENTAS DURANTE LOS ESTADOS DE EMERGENCIA NACIONAL",
+          "fecha": "14-10-2026",
+          "etapa": "Preliminar"
+        },
         {
           "ficha": "8605",
           "titulo": "QUE EXONERA A LAS ORGANIZACIONES DE BASE COMUNITARIA (OBC) RECONOCIDAS POR EL MINISTERIO DE AMBIENTE DEL PAGO DE DERECHOS DE REGISTRO, DERECHOS NOTARIALES E IMPUESTO DE TIMBRE.",
@@ -2606,7 +2618,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "proyectos": 17,
@@ -2746,7 +2758,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "José Andrés González",
-      "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
       "proyectos": 17,
@@ -2843,16 +2855,16 @@
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "7462",
-          "titulo": "DECLARACION DEL DIA NACIONAL DEL FUTBOLISTA EN PANAMA",
-          "fecha": "24-07-2024",
-          "etapa": "Negado"
-        },
-        {
           "ficha": "7463",
           "titulo": "LEY INTEGRAL DE LA INDUSTRIA DE LOS DEPORTES ELECTRONICOS (ESPORTS)",
           "fecha": "24-07-2024",
           "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7462",
+          "titulo": "DECLARACION DEL DIA NACIONAL DEL FUTBOLISTA EN PANAMA",
+          "fecha": "24-07-2024",
+          "etapa": "Negado"
         },
         {
           "ficha": "7461",
@@ -3771,8 +3783,14 @@
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8427",
-          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
+          "ficha": "8429",
+          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8430",
+          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "09-07-2026",
           "etapa": "Preliminar"
         },
@@ -3783,14 +3801,8 @@
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8429",
-          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8430",
-          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
+          "ficha": "8427",
+          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
           "fecha": "09-07-2026",
           "etapa": "Preliminar"
         },
@@ -3859,7 +3871,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
       "proyectos": 14,
@@ -4598,7 +4610,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
       "proyectos": 12,
@@ -4620,13 +4632,13 @@
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "8584",
+          "ficha": "8598",
           "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "02-09-2026",
           "etapa": "Preliminar"
         },
         {
-          "ficha": "8598",
+          "ficha": "8584",
           "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
           "fecha": "02-09-2026",
           "etapa": "Preliminar"
@@ -6004,7 +6016,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Lalo' Antonio",
-      "foto": "https://espaciocivico.org/api/drive-image/1l64FLwc0g2vmPoSlnMbRWcIzT0BBthgE",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
       "proyectos": 6,
@@ -6075,6 +6087,84 @@
       "calificacion": 2.0,
       "comisiones": [
         "🚇 Comunicación y Transporte | 💰 Presupuesto"
+      ],
+      "comisiones_cantidad": 1
+    },
+    {
+      "nombre": "Shirley Castañedas",
+      "partido": "Realizando Metas",
+      "circuito": "13-1",
+      "provincia": "Panamá Oeste",
+      "suplente": "Ricardo Valencia",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
+      "slug": "shirley-castanedas",
+      "proyectos": 6,
+      "leyes": 1,
+      "co_patrocinios": 17,
+      "etapas": {
+        "Preliminar": 3,
+        "Primer Debate": 2,
+        "Ley": 1
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "8103",
+          "titulo": "QUE ADICIONA UNA DISPOSICIÓN A LA LEY 106 DE 1973, SOBRE RÉGIMEN MUNICIPAL",
+          "fecha": "10-09-2025"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8640",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO PROCESAL PENAL",
+          "fecha": "15-10-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8547",
+          "titulo": "QUE ADICIONA UN PARAGRAFO TRANSITORIO AL ARTICULO 2 DE LA LEY 350 DE 2022 (REFORMADO POR LA LEY 500 DE 2025) CON EL FIN DE ESTABLECER UN REGIMEN DE TRANSICION QUE GARANTICE LA SEGURIDAD JURIDICA Y EL DERECHO AL TRABAJO",
+          "fecha": "17-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8548",
+          "titulo": "QUE DECLARA MONUMENTO HISTORICO NACIONAL EL SITIO ARQUEOLOGICO, RUINAS DE BIQUE, EN EL DISTRITO DE ARRAIJAN, PROVINCIA DE PANAMA OESTE Y CREA SU PATRONATO.",
+          "fecha": "17-08-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8541",
+          "titulo": "QUE ESTABLECE EL REGIMEN ESPECIAL DE EMERGENCIAS SISMICA Y CREA LA COMISION DE EMERGENCIA EN CASO DE DESASTRE SISMICO O DE OTRA NATURALEZA",
+          "fecha": "12-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8506",
+          "titulo": "POR LA CUAL SE ESTABLECEN LOS DERECHOS DE LOS USUARIOS DEL TRANSPORTE PUBLICO DE PASAJEROS Y SELECTIVO, Y SE DICTAN OTRAS DISPOSICIONES",
+          "fecha": "30-07-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8103",
+          "titulo": "QUE ADICIONA UNA DISPOSICIÓN A LA LEY 106 DE 1973, SOBRE RÉGIMEN MUNICIPAL",
+          "fecha": "10-09-2025",
+          "etapa": "Ley"
+        }
+      ],
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/shirley-castanedas",
+      "planilla_texto": "B/. 36,900",
+      "planilla_valor": 36900.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "🌳 Población, Ambiente y Desarrollo"
       ],
       "comisiones_cantidad": 1
     },
@@ -6284,84 +6374,12 @@
       "comisiones_cantidad": 1
     },
     {
-      "nombre": "Shirley Castañedas",
-      "partido": "Realizando Metas",
-      "circuito": "13-1",
-      "provincia": "Panamá Oeste",
-      "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
-      "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
-      "slug": "shirley-castanedas",
-      "proyectos": 5,
-      "leyes": 1,
-      "co_patrocinios": 17,
-      "etapas": {
-        "Preliminar": 2,
-        "Primer Debate": 2,
-        "Ley": 1
-      },
-      "leyes_detalle": [
-        {
-          "ficha": "8103",
-          "titulo": "QUE ADICIONA UNA DISPOSICIÓN A LA LEY 106 DE 1973, SOBRE RÉGIMEN MUNICIPAL",
-          "fecha": "10-09-2025"
-        }
-      ],
-      "proyectos_detalle": [
-        {
-          "ficha": "8547",
-          "titulo": "QUE ADICIONA UN PARAGRAFO TRANSITORIO AL ARTICULO 2 DE LA LEY 350 DE 2022 (REFORMADO POR LA LEY 500 DE 2025) CON EL FIN DE ESTABLECER UN REGIMEN DE TRANSICION QUE GARANTICE LA SEGURIDAD JURIDICA Y EL DERECHO AL TRABAJO",
-          "fecha": "17-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8548",
-          "titulo": "QUE DECLARA MONUMENTO HISTORICO NACIONAL EL SITIO ARQUEOLOGICO, RUINAS DE BIQUE, EN EL DISTRITO DE ARRAIJAN, PROVINCIA DE PANAMA OESTE Y CREA SU PATRONATO.",
-          "fecha": "17-08-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8541",
-          "titulo": "QUE ESTABLECE EL REGIMEN ESPECIAL DE EMERGENCIAS SISMICA Y CREA LA COMISION DE EMERGENCIA EN CASO DE DESASTRE SISMICO O DE OTRA NATURALEZA",
-          "fecha": "12-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8506",
-          "titulo": "POR LA CUAL SE ESTABLECEN LOS DERECHOS DE LOS USUARIOS DEL TRANSPORTE PUBLICO DE PASAJEROS Y SELECTIVO, Y SE DICTAN OTRAS DISPOSICIONES",
-          "fecha": "30-07-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8103",
-          "titulo": "QUE ADICIONA UNA DISPOSICIÓN A LA LEY 106 DE 1973, SOBRE RÉGIMEN MUNICIPAL",
-          "fecha": "10-09-2025",
-          "etapa": "Ley"
-        }
-      ],
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/shirley-castanedas",
-      "planilla_texto": "B/. 36,900",
-      "planilla_valor": 36900.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo"
-      ],
-      "comisiones_cantidad": 1
-    },
-    {
       "nombre": "Tomas Benavides",
       "partido": "Realizando Metas",
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -6735,7 +6753,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "proyectos": 4,
@@ -6970,7 +6988,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "proyectos": 3,
@@ -7414,7 +7432,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "proyectos": 0,
@@ -7445,7 +7463,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Alejandro Salazar",
-      "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
       "proyectos": 0,
@@ -7887,13 +7905,13 @@
       "leyes": 0
     },
     {
-      "nombre": "IVAN ALVAREZ",
+      "nombre": "ANGELA JIMENEZ",
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
     },
     {
-      "nombre": "ANGELA JIMENEZ",
+      "nombre": "IVAN ALVAREZ",
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
@@ -7907,7 +7925,7 @@
     },
     "Movimiento Otro Camino": {
       "diputados": 3,
-      "proyectos": 216,
+      "proyectos": 218,
       "leyes": 24
     },
     "Libre Postulación": {
@@ -7917,7 +7935,7 @@
     },
     "Realizando Metas": {
       "diputados": 14,
-      "proyectos": 188,
+      "proyectos": 189,
       "leyes": 27
     },
     "Partido Panameñista": {
@@ -7959,12 +7977,12 @@
   "por_provincia": {
     "Panamá": {
       "diputados": 25,
-      "proyectos": 544,
+      "proyectos": 546,
       "leyes": 46
     },
     "Panamá Oeste": {
       "diputados": 8,
-      "proyectos": 298,
+      "proyectos": 299,
       "leyes": 38
     },
     "Veraguas": {
@@ -8019,6 +8037,66 @@
     }
   },
   "por_provincia_filtros": {
+    "Panamá Oeste": {
+      "2024": {
+        "Ley": 24,
+        "debate": 35,
+        "analisis": 16,
+        "sinAvance": 20,
+        "all": 95
+      },
+      "2025": {
+        "Ley": 13,
+        "debate": 67,
+        "analisis": 18,
+        "sinAvance": 17,
+        "all": 115
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 47,
+        "analisis": 34,
+        "sinAvance": 7,
+        "all": 89
+      },
+      "all": {
+        "Ley": 38,
+        "debate": 149,
+        "analisis": 68,
+        "sinAvance": 44,
+        "all": 299
+      }
+    },
+    "Panamá": {
+      "2024": {
+        "Ley": 25,
+        "debate": 50,
+        "analisis": 24,
+        "sinAvance": 37,
+        "all": 136
+      },
+      "2025": {
+        "Ley": 20,
+        "debate": 109,
+        "analisis": 30,
+        "sinAvance": 50,
+        "all": 209
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 94,
+        "analisis": 89,
+        "sinAvance": 17,
+        "all": 201
+      },
+      "all": {
+        "Ley": 46,
+        "debate": 253,
+        "analisis": 143,
+        "sinAvance": 104,
+        "all": 546
+      }
+    },
     "Veraguas": {
       "2024": {
         "Ley": 19,
@@ -8047,36 +8125,6 @@
         "analisis": 58,
         "sinAvance": 42,
         "all": 269
-      }
-    },
-    "Panamá": {
-      "2024": {
-        "Ley": 25,
-        "debate": 50,
-        "analisis": 24,
-        "sinAvance": 37,
-        "all": 136
-      },
-      "2025": {
-        "Ley": 20,
-        "debate": 109,
-        "analisis": 30,
-        "sinAvance": 50,
-        "all": 209
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 94,
-        "analisis": 87,
-        "sinAvance": 17,
-        "all": 199
-      },
-      "all": {
-        "Ley": 46,
-        "debate": 253,
-        "analisis": 141,
-        "sinAvance": 104,
-        "all": 544
       }
     },
     "Herrera": {
@@ -8109,36 +8157,6 @@
         "all": 88
       }
     },
-    "Panamá Oeste": {
-      "2024": {
-        "Ley": 24,
-        "debate": 35,
-        "analisis": 16,
-        "sinAvance": 20,
-        "all": 95
-      },
-      "2025": {
-        "Ley": 13,
-        "debate": 67,
-        "analisis": 18,
-        "sinAvance": 17,
-        "all": 115
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 47,
-        "analisis": 33,
-        "sinAvance": 7,
-        "all": 88
-      },
-      "all": {
-        "Ley": 38,
-        "debate": 149,
-        "analisis": 67,
-        "sinAvance": 44,
-        "all": 298
-      }
-    },
     "Coclé": {
       "2024": {
         "Ley": 12,
@@ -8167,36 +8185,6 @@
         "analisis": 19,
         "sinAvance": 14,
         "all": 108
-      }
-    },
-    "Colón": {
-      "2024": {
-        "Ley": 13,
-        "debate": 21,
-        "analisis": 7,
-        "sinAvance": 12,
-        "all": 53
-      },
-      "2025": {
-        "Ley": 7,
-        "debate": 40,
-        "analisis": 14,
-        "sinAvance": 9,
-        "all": 70
-      },
-      "2026": {
-        "Ley": 1,
-        "debate": 27,
-        "analisis": 15,
-        "sinAvance": 6,
-        "all": 49
-      },
-      "all": {
-        "Ley": 21,
-        "debate": 88,
-        "analisis": 36,
-        "sinAvance": 27,
-        "all": 172
       }
     },
     "Chiriquí": {
@@ -8229,6 +8217,36 @@
         "all": 221
       }
     },
+    "Colón": {
+      "2024": {
+        "Ley": 13,
+        "debate": 21,
+        "analisis": 7,
+        "sinAvance": 12,
+        "all": 53
+      },
+      "2025": {
+        "Ley": 7,
+        "debate": 40,
+        "analisis": 14,
+        "sinAvance": 9,
+        "all": 70
+      },
+      "2026": {
+        "Ley": 1,
+        "debate": 27,
+        "analisis": 15,
+        "sinAvance": 6,
+        "all": 49
+      },
+      "all": {
+        "Ley": 21,
+        "debate": 88,
+        "analisis": 36,
+        "sinAvance": 27,
+        "all": 172
+      }
+    },
     "Los Santos": {
       "2024": {
         "Ley": 9,
@@ -8259,36 +8277,6 @@
         "all": 51
       }
     },
-    "Emberá-Wounaan": {
-      "2024": {
-        "Ley": 0,
-        "debate": 1,
-        "analisis": 0,
-        "sinAvance": 1,
-        "all": 2
-      },
-      "2025": {
-        "Ley": 1,
-        "debate": 12,
-        "analisis": 4,
-        "sinAvance": 4,
-        "all": 21
-      },
-      "2026": {
-        "Ley": 0,
-        "debate": 9,
-        "analisis": 1,
-        "sinAvance": 2,
-        "all": 12
-      },
-      "all": {
-        "Ley": 1,
-        "debate": 22,
-        "analisis": 5,
-        "sinAvance": 7,
-        "all": 35
-      }
-    },
     "Ngöbe Buglé": {
       "2024": {
         "Ley": 9,
@@ -8317,6 +8305,36 @@
         "analisis": 14,
         "sinAvance": 12,
         "all": 72
+      }
+    },
+    "Emberá-Wounaan": {
+      "2024": {
+        "Ley": 0,
+        "debate": 1,
+        "analisis": 0,
+        "sinAvance": 1,
+        "all": 2
+      },
+      "2025": {
+        "Ley": 1,
+        "debate": 12,
+        "analisis": 4,
+        "sinAvance": 4,
+        "all": 21
+      },
+      "2026": {
+        "Ley": 0,
+        "debate": 9,
+        "analisis": 1,
+        "sinAvance": 2,
+        "all": 12
+      },
+      "all": {
+        "Ley": 1,
+        "debate": 22,
+        "analisis": 5,
+        "sinAvance": 7,
+        "all": 35
       }
     },
     "Guna Yala": {
