@@ -612,6 +612,37 @@ def _leer_json(ruta):
     except Exception:
         return None
 
+# Campos por diputado que se guardan cada día en historico.json (en este orden), para que el
+# sitio pueda graficar tendencias. Formato compacto: {slug: [planilla, pleno, ...]}.
+CAMPOS_HISTORICO = [
+    ('planilla', 'planilla_valor'), ('pleno', 'asistencia_pleno'),
+    ('comisiones', 'asistencia_comisiones'), ('calificacion', 'calificacion'),
+    ('proyectos', 'proyectos'), ('leyes', 'leyes'),
+]
+CAMPOS_METRICAS = {'planilla', 'pleno', 'comisiones', 'calificacion'}
+
+def actualizar_historico(resumen, respaldos, ruta='historico.json'):
+    """Agrega (o reemplaza) la foto del día de extracción en historico.json."""
+    hist = _leer_json(ruta) or {}
+    ts = resumen.get('fecha_extraccion', '')
+    fecha = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
+    # Si Espacio Cívico no respondió, las métricas son las de un día anterior: no se registran.
+    metricas_frescas = 'metricas' not in (respaldos or [])
+    dips = {}
+    for d in resumen.get('diputados', []):
+        if not d.get('slug'):
+            continue
+        dips[d['slug']] = [d.get(k) if (metricas_frescas or c not in CAMPOS_METRICAS) else None
+                           for c, k in CAMPOS_HISTORICO]
+    foto = {'fecha': fecha, 'total_proyectos': resumen.get('total_proyectos'),
+            'total_leyes': resumen.get('total_leyes'), 'diputados': dips}
+    snaps = [s for s in hist.get('snapshots', []) if s.get('fecha') != fecha] + [foto]
+    snaps.sort(key=lambda s: s['fecha'])
+    with open(ruta, 'w', encoding='utf-8') as f:
+        json.dump({'campos': [c for c, _ in CAMPOS_HISTORICO], 'snapshots': snaps},
+                  f, ensure_ascii=False, separators=(',', ':'))
+    print(f"  historico.json: {len(snaps)} fotos (última {fecha})")
+
 def solo_resumen():
     """Regenera resumen.json a partir de los JSON ya guardados (sin navegador)."""
     raw = _leer_json('datos.json') or {}
@@ -677,6 +708,10 @@ def main():
     resumen = generar_resumen(datos, dips, ts, metricas, RESPALDOS)
     with open("resumen.json", "w", encoding="utf-8") as f:
         json.dump(resumen, f, ensure_ascii=False, indent=2)
+    try:
+        actualizar_historico(resumen, RESPALDOS)
+    except Exception as e:
+        print(f"  ADVERTENCIA: no se pudo actualizar historico.json: {e}")
 
     print(f"\n{'='*55}")
     print(f" COMPLETADO")

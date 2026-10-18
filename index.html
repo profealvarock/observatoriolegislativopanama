@@ -331,7 +331,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .comm-list{display:flex;flex-direction:column;gap:8px}
 .comm-item{padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;font-size:.85rem;line-height:1.35}
 .mini-bars{display:flex;flex-direction:column;gap:9px}
-.mini-row{display:grid;grid-template-columns:80px 1fr 34px;align-items:center;gap:8px;font-family:var(--fm);font-size:.68rem}
+.mini-row{display:grid;grid-template-columns:80px 1fr minmax(34px,auto);align-items:center;gap:8px;font-family:var(--fm);font-size:.68rem}
 .mini-track{height:7px;background:var(--border);border-radius:999px;overflow:hidden}
 .mini-fill{height:100%;border-radius:999px;background:var(--acc3)}
 .monitor-src{font-family:var(--fm);font-size:.65rem;color:var(--muted);margin-top:10px}
@@ -410,6 +410,63 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   /* Fix #8: hide secondary costo columns */
   .costo-col-sm{display:none}
 }
+/* DESCARGAS */
+.dl-btn{display:inline-flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:7px 12px;font-family:var(--fm);font-size:.7rem;cursor:pointer;white-space:nowrap;transition:border-color .15s,color .15s,background .15s}
+.dl-btn:hover{border-color:var(--acc3);color:var(--acc3)}
+.dl-btn:disabled{opacity:.5;cursor:wait}
+.datos-abiertos{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.datos-abiertos-note{font-family:var(--fm);font-size:.66rem;color:var(--muted);line-height:1.6;margin-top:12px}
+.datos-abiertos-note a{color:var(--acc)}
+
+/* COMPARADOR */
+.cmp-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:var(--gap)}
+.cmp-box>summary{list-style:none;cursor:pointer;padding:14px 18px;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);display:flex;align-items:center;gap:8px}
+.cmp-box>summary::-webkit-details-marker{display:none}
+.cmp-box>summary::after{content:'▾';margin-left:auto;transition:transform .2s}
+.cmp-box[open]>summary::after{transform:rotate(180deg)}
+.cmp-box>summary:hover{color:var(--text)}
+.cmp-body{padding:0 18px 18px}
+.cmp-selects{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.cmp-select{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 10px;color:var(--text);font-family:var(--fm);font-size:.75rem}
+.cmp-select:focus{outline:none;border-color:var(--acc)}
+.cmp-tbl{width:100%;border-collapse:collapse;min-width:0;font-family:var(--fm);font-size:.75rem}
+.cmp-tbl th,.cmp-tbl td{padding:9px 10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+.cmp-tbl thead th{position:static;cursor:default;font-size:.72rem;text-transform:none;letter-spacing:0;color:var(--text);background:none}
+.cmp-tbl tbody th{color:var(--muted);font-weight:500;font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;width:1%}
+.cmp-tbl tbody tr:nth-child(even){background:none}
+.cmp-best{color:var(--acc3);font-weight:700}
+.cmp-empty{font-family:var(--fm);font-size:.72rem;color:var(--muted);padding:8px 0}
+.cmp-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px;flex-wrap:wrap}
+
+/* MODAL: enlace directo */
+.modal-actions{display:flex;gap:6px;flex-shrink:0}
+.modal-link{background:none;border:1px solid var(--border);color:var(--acc);cursor:pointer;font-family:var(--fm);font-size:.72rem;padding:5px 10px;border-radius:6px;transition:all .15s;display:none}
+.modal-link.show{display:inline-block}
+.modal-link:hover{border-color:var(--acc)}
+.hist-wrap{position:relative;height:260px;margin-top:12px}
+.hist-note{font-family:var(--fm);font-size:.68rem;color:var(--muted);line-height:1.6}
+
+@media(max-width:640px){
+  .cmp-selects{grid-template-columns:1fr}
+  /* Comparador: la etiqueta de cada fila va arriba, a lo ancho, y los valores en columnas */
+  .cmp-tbl thead tr,.cmp-tbl tbody tr{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr))}
+  .cmp-tbl thead th:first-child{display:none}
+  .cmp-tbl th,.cmp-tbl td{padding:6px;overflow-wrap:anywhere}
+  .cmp-tbl tbody th{grid-column:1/-1;width:auto;border-bottom:none;padding:10px 6px 0;white-space:normal}
+  .modal-header{flex-wrap:wrap}
+  /* Tablas como tarjetas apiladas: cada celda muestra su título (data-label) */
+  .tbl-cards table,.monitor-table.tbl-cards table{min-width:0}
+  .tbl-cards thead{display:none}
+  .tbl-cards tbody tr{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;padding:14px 12px}
+  .tbl-cards tbody td{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:0;border:none;text-align:left!important;white-space:normal}
+  .tbl-cards tbody td[data-label]::before{content:attr(data-label);font-family:var(--fm);font-size:.56rem;font-weight:400;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+  .tbl-cards tbody td.td-main{grid-column:1/-1}
+  .tbl-cards tbody td.costo-col-sm,.tbl-cards tbody td.col-md{display:flex}
+  .tbl-cards tbody td.td-hide-card{display:none}
+  .tbl-cards .costo-bar-wrap{width:100%}
+  .tbl-cards .costo-rank-inline{display:inline}
+}
+.costo-rank-inline{display:none}
 /* Pantallas táctiles: sin efectos de "levantar" tarjetas al tocar */
 @media(hover:none){
   .kpi:hover,.dep-card:hover,.partido-card:hover{transform:none;box-shadow:none}
@@ -571,6 +628,18 @@ tr:hover .dep-avatar{border-color:var(--acc)}
       <span id="map-legend-max">máx.</span>
     </div>
   </div>
+  <div class="card" style="margin-bottom:var(--gap)">
+    <div class="card-title" style="--ct:var(--acc3)">Datos abiertos — descargar en CSV</div>
+    <div class="datos-abiertos">
+      <button class="dl-btn" onclick="exportProyectos(this)">⬇ Proyectos de ley</button>
+      <button class="dl-btn" onclick="exportDiputados(this,true)">⬇ Producción por diputado</button>
+      <button class="dl-btn" onclick="exportMonitoreo(this,true)">⬇ Monitoreo (planilla y asistencia)</button>
+      <button class="dl-btn" onclick="exportCostosDiputados(this)">⬇ Costo por diputado</button>
+      <button class="dl-btn" onclick="exportCostosProyectos(this)">⬇ Costo por proyecto</button>
+      <button class="dl-btn" onclick="exportHistorico(this)">⬇ Histórico diario</button>
+    </div>
+    <p class="datos-abiertos-note">Los archivos se abren en Excel, Google Sheets o LibreOffice. También están los JSON originales: <a href="datos.json" target="_blank" rel="noopener">datos.json</a> · <a href="resumen.json" target="_blank" rel="noopener">resumen.json</a> · <a href="historico.json" target="_blank" rel="noopener">historico.json</a>. Fuentes: sistemas.asamblea.gob.pa y espaciocivico.org.</p>
+  </div>
 </div>
 
 <!-- TAB DIPUTADOS -->
@@ -579,6 +648,20 @@ tr:hover .dep-avatar{border-color:var(--acc)}
     <span id="dep-tl-text"></span>
     <button onclick="clearMonthFilter()" style="margin-left:auto;background:none;border:1px solid rgba(245,158,11,.4);color:var(--acc2);font-family:var(--fm);font-size:.65rem;border-radius:4px;padding:2px 8px;cursor:pointer">✕ Limpiar</button>
   </div>
+  <details class="cmp-box" id="cmp-box">
+    <summary>⚖ Comparar diputados</summary>
+    <div class="cmp-body">
+      <div class="cmp-selects">
+        <select class="cmp-select" id="cmp-s0" onchange="onCompararChange()" aria-label="Diputado 1"></select>
+        <select class="cmp-select" id="cmp-s1" onchange="onCompararChange()" aria-label="Diputado 2"></select>
+        <select class="cmp-select" id="cmp-s2" onchange="onCompararChange()" aria-label="Diputado 3"></select>
+      </div>
+      <div class="tbl-scroll" id="cmp-result"><div class="cmp-empty">Elige al menos dos diputados para compararlos.</div></div>
+      <div class="cmp-actions">
+        <button class="dl-btn" id="cmp-copy" onclick="copyLink(this)" style="display:none">🔗 Copiar enlace de la comparación</button>
+      </div>
+    </div>
+  </details>
   <div class="sec-hdr">
     <div class="sec-title">Producción por diputado</div>
     <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
@@ -591,6 +674,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
         <button class="vt-btn active" id="vt-table" onclick="setView('table')">☰ Tabla</button>
         <button class="vt-btn" id="vt-grid" onclick="setView('grid')">⊞ Tarjetas</button>
       </div>
+      <button class="dl-btn" onclick="exportDiputados(this)" title="Descarga la lista con los filtros aplicados">⬇ CSV</button>
     </div>
   </div>
   <div class="filter-bar">
@@ -641,11 +725,19 @@ tr:hover .dep-avatar{border-color:var(--acc)}
       <p class="monitor-note" style="margin-top:16px">Los valores de asistencia y calificación usan escala 1-5. La planilla corresponde al monto acumulado publicado por Espacio Cívico.</p>
     </div>
   </div>
+  <div class="card" style="margin-bottom:var(--gap)">
+    <div class="card-title" style="--ct:var(--acc)">Evolución en el tiempo</div>
+    <div id="monitor-hist-note" class="hist-note">Cargando historial…</div>
+    <div class="hist-wrap" id="monitor-hist-wrap" style="display:none"><canvas id="c-monitor-hist"></canvas></div>
+  </div>
   <div class="sec-hdr">
     <div class="sec-title">Monitoreo por diputado</div>
-    <input type="text" class="search-box" id="monitor-search" placeholder="Buscar diputado..." oninput="renderMonitorTable()">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <input type="text" class="search-box" id="monitor-search" placeholder="Buscar diputado..." oninput="renderMonitorTable()">
+      <button class="dl-btn" onclick="exportMonitoreo(this)">⬇ CSV</button>
+    </div>
   </div>
-  <div class="tbl-wrap monitor-table">
+  <div class="tbl-wrap monitor-table tbl-cards">
     <div class="tbl-scroll">
       <table>
         <thead>
@@ -719,9 +811,10 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <div class="sec-hdr" style="margin-bottom:calc(var(--gap)*.6)">
     <div class="sec-title">Top 30 proyectos — mayor costo estimado</div>
     <span style="font-family:var(--fm);font-size:.65rem;color:var(--muted)">Suma del costo proporcional de cada diputado asociado al proyecto</span>
+    <button class="dl-btn" onclick="exportCostosProyectos(this)" title="Incluye todos los proyectos, no solo el top 30">⬇ CSV (todos)</button>
   </div>
   <div class="card" style="margin-bottom:var(--gap)">
-    <div class="costo-tbl-wrap">
+    <div class="costo-tbl-wrap tbl-cards">
       <table class="costo-tbl">
         <thead>
           <tr>
@@ -742,9 +835,10 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <div class="sec-hdr" style="margin-bottom:calc(var(--gap)*.6)">
     <div class="sec-title" style="--ct:var(--acc5)">Costo acumulado por diputado</div>
     <span style="font-family:var(--fm);font-size:.65rem;color:var(--muted)">Planilla (Espacio Cívico) + salario fijo USD 7,000 × meses cerrados</span>
+    <button class="dl-btn" onclick="exportCostosDiputados(this)">⬇ CSV</button>
   </div>
   <div class="card" style="margin-bottom:var(--gap)">
-    <div class="costo-tbl-wrap">
+    <div class="costo-tbl-wrap tbl-cards">
       <table class="costo-tbl">
         <thead>
           <tr>
@@ -790,11 +884,15 @@ tr:hover .dep-avatar{border-color:var(--acc)}
         <div class="modal-title" id="modal-title"></div>
         <div class="modal-sub" id="modal-sub"></div>
       </div>
-      <button class="modal-close" onclick="closeModal()">✕ Cerrar</button>
+      <div class="modal-actions">
+        <button class="modal-link" id="modal-link" onclick="copyLink(this)" title="Copiar enlace directo a esta ficha">🔗 Enlace</button>
+        <button class="modal-close" onclick="closeModal()">✕ Cerrar</button>
+      </div>
     </div>
     <div class="modal-tabs" id="modal-tabs">
       <button class="modal-tab active" id="mtab-todos" onclick="switchModalTab('todos')">Todos los proyectos</button>
       <button class="modal-tab" id="mtab-leyes" onclick="switchModalTab('leyes')">Leyes aprobadas</button>
+      <button class="modal-tab" id="mtab-hist" onclick="switchModalTab('hist')">Evolución</button>
     </div>
     <div class="modal-body" id="modal-body"></div>
   </div>
@@ -875,6 +973,31 @@ window.matchMedia?.('(prefers-color-scheme: light)').addEventListener?.('change'
   if(!saved) setTheme(e.matches ? 'light' : 'dark', false);
 });
 
+// ── UTILIDADES ────────────────────────────────────
+// Todo texto que viene de las fuentes externas (títulos, nombres, URLs) se escapa antes de
+// insertarlo como HTML, para que un carácter raro no rompa la página ni ejecute código.
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? esc(u) : '#';
+// Un solo formato numérico para todo el sitio (1,234,567), sin depender del idioma del navegador.
+const fmtNum = v => Math.round(Number(v) || 0).toLocaleString('es-PA');
+const slugify = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const depSlug = d => d.slug || slugify(d.nombre);
+
+const MOBILE_BP = 640;
+const isMobile = () => window.innerWidth <= MOBILE_BP;
+// Un gráfico puede definir chart.$responsive(mobile) para ajustar leyenda o fuentes; se vuelve
+// a aplicar cuando la pantalla cruza el breakpoint (p. ej. al girar el teléfono).
+let _wasMobile = isMobile(), _resizeT = null;
+window.addEventListener('resize', ()=>{
+  clearTimeout(_resizeT);
+  _resizeT = setTimeout(()=>{
+    const m = isMobile();
+    if(m === _wasMobile) return;
+    _wasMobile = m;
+    Object.values(ChartBase.instances).forEach(c=>{ c.$responsive?.(m); c.update('none'); });
+  }, 150);
+});
+
 let D = null, DATOS_RAW = [], filtered = [], sortedDeps = [], monitorSorted = [], sortCol = 'proyectos', sortDir = 'desc', page = 1, metrica = 'proyectos';
 let viewMode = 'table', selectedParties = new Set(), selectedProvinces = new Set();
 let monitorSortCol = 'planilla_valor', monitorSortDir = 'desc', monitorInited = false;
@@ -945,11 +1068,14 @@ function showLeyes(idx){
   const leyes = dep.leyes_detalle || [];
   const todos = dep.proyectos_detalle || [];
   const hasTodos = todos.length > 0;
-  document.getElementById('modal-tabs').style.display = hasTodos ? '' : 'none';
+  document.getElementById('modal-tabs').style.display = '';
+  document.getElementById('mtab-todos').style.display = hasTodos ? '' : 'none';
   document.getElementById('modal-sub').textContent = hasTodos
     ? `${todos.length} proyecto${todos.length>1?'s':''} · ${leyes.length} ley${leyes.length>1?'es':''}`
     : `${leyes.length} ley${leyes.length>1?'es':''} aprobada${leyes.length>1?'s':''}`;
   switchModalTab(hasTodos ? 'todos' : 'leyes');
+  document.getElementById('modal-link').classList.add('show');
+  setHash('diputado='+depSlug(dep));
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow='hidden';
   setTimeout(()=>document.querySelector('#modal-overlay .modal-close')?.focus(),60);
@@ -962,8 +1088,10 @@ function showComisiones(idx){
   document.getElementById('modal-title').textContent = dep.nombre;
   document.getElementById('modal-sub').textContent = `${coms.length} comisión${coms.length===1?'':'es'} registrada${coms.length===1?'':'s'}`;
   document.getElementById('modal-tabs').style.display = 'none';
+  document.getElementById('modal-link').classList.remove('show');
+  destroyModalChart();
   document.getElementById('modal-body').innerHTML = coms.length
-    ? `<div class="comm-list">${coms.map(c=>`<div class="comm-item">${c}</div>`).join('')}</div>`
+    ? `<div class="comm-list">${coms.map(c=>`<div class="comm-item">${esc(c)}</div>`).join('')}</div>`
     : '<div class="gs-empty">Sin comisiones registradas en la fuente</div>';
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow='hidden';
@@ -972,41 +1100,50 @@ function showComisiones(idx){
 function switchModalTab(tab){
   document.getElementById('mtab-todos').classList.toggle('active', tab==='todos');
   document.getElementById('mtab-leyes').classList.toggle('active', tab==='leyes');
+  document.getElementById('mtab-hist').classList.toggle('active', tab==='hist');
   const dep = _modalDep;
   if(!dep) return;
+  destroyModalChart();
+  const body = document.getElementById('modal-body');
   if(tab==='todos'){
     const items = dep.proyectos_detalle || dep.leyes_detalle || [];
-    document.getElementById('modal-body').innerHTML = items.length
+    body.innerHTML = items.length
       ? items.map(l=>`
         <div class="ley-item">
-          <div class="ley-num">Ficha<br>${l.ficha}</div>
+          <div class="ley-num">Ficha<br>${esc(l.ficha)}</div>
           <div class="ley-info">
-            <div class="ley-titulo">${l.titulo||'Sin título registrado'}</div>
+            <div class="ley-titulo">${esc(l.titulo||'Sin título registrado')}</div>
             <div class="ley-meta">
-              <span>📅 ${l.fecha}</span>
-              ${l.etapa?`<span class="badge ${etapaClass(l.etapa)}" style="padding:1px 7px">${l.etapa}</span>`:''}
+              <span>📅 ${esc(l.fecha)}</span>
+              ${l.etapa?`<span class="badge ${etapaClass(l.etapa)}" style="padding:1px 7px">${esc(l.etapa)}</span>`:''}
             </div>
           </div>
         </div>`).join('')
       : '<div class="gs-empty">Sin proyectos registrados</div>';
-  } else {
+  } else if(tab==='leyes'){
     const leyes = dep.leyes_detalle || [];
-    document.getElementById('modal-body').innerHTML = leyes.length
+    body.innerHTML = leyes.length
       ? leyes.map(l=>`
         <div class="ley-item">
-          <div class="ley-num">Ficha<br>${l.ficha}</div>
+          <div class="ley-num">Ficha<br>${esc(l.ficha)}</div>
           <div class="ley-info">
-            <div class="ley-titulo">${l.titulo||'Sin título registrado'}</div>
-            <div class="ley-meta"><span>📅 ${l.fecha}</span></div>
+            <div class="ley-titulo">${esc(l.titulo||'Sin título registrado')}</div>
+            <div class="ley-meta"><span>📅 ${esc(l.fecha)}</span></div>
           </div>
         </div>`).join('')
       : '<div class="gs-empty">Sin leyes aprobadas como proponente principal</div>';
+  } else {
+    renderModalHist(dep);
   }
 }
 function closeModal(e){
   if(e&&e.target!==document.getElementById('modal-overlay'))return;
-  document.getElementById('modal-overlay').classList.remove('open');
+  const overlay=document.getElementById('modal-overlay');
+  if(!overlay.classList.contains('open')) return;
+  overlay.classList.remove('open');
   document.body.style.overflow='';
+  destroyModalChart();
+  if(location.hash.startsWith('#diputado=')) setHash('diputados');
 }
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'){ closeModal(); gsClose(); return; }
@@ -1045,16 +1182,17 @@ function gsInput(val){
     const parties=Object.keys(D.por_partido||{}).filter(p=>p.toLowerCase().includes(ql)).slice(0,3);
     const otros=(D.otros_proponentes||[]).filter(o=>o.nombre.toLowerCase().includes(ql)).slice(0,3);
     if(!deps.length&&!parties.length&&!otros.length){
-      drop.innerHTML=`<div class="gs-empty">Sin resultados para "${val}"</div>`;
+      drop.innerHTML=`<div class="gs-empty">Sin resultados para "${esc(val)}"</div>`;
       drop.classList.add('open');return;
     }
-    const re=new RegExp('('+val.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
-    const hl=t=>t.replace(re,'<mark>$1</mark>');
+    // Se escapa el texto primero y luego se resalta la coincidencia (también escapada)
+    const re=new RegExp('('+esc(val).replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+    const hl=t=>esc(t).replace(re,'<mark>$1</mark>');
     let html='';
     if(deps.length){
       html+='<div class="gs-group">Diputados</div>';
-      html+=deps.map(d=>`<div class="gs-item" onclick="gsGo('dep','${d.nombre.replace(/'/g,"\\'")}')">
-        ${d.foto?`<img class="gs-avatar" src="${d.foto}" onerror="this.style.display='none'">`:''}<div><div class="gs-name">${hl(d.nombre)}</div><div class="gs-sub">${d.partido||''} · ${d.provincia||''}</div></div></div>`).join('');
+      html+=deps.map(d=>`<div class="gs-item" data-name="${esc(d.nombre)}" onclick="gsGo('dep',this.dataset.name)">
+        ${d.foto?`<img class="gs-avatar" src="${safeUrl(d.foto)}" alt="" onerror="this.style.display='none'">`:''}<div><div class="gs-name">${hl(d.nombre)}</div><div class="gs-sub">${esc(d.partido||'')} · ${esc(d.provincia||'')}</div></div></div>`).join('');
     }
     if(parties.length){
       html+='<div class="gs-group">Partidos</div>';
@@ -1062,7 +1200,7 @@ function gsInput(val){
     }
     if(otros.length){
       html+='<div class="gs-group">Otros Proponentes</div>';
-      html+=otros.map(o=>`<div class="gs-item" onclick="gsGo('proponente','')"><div><div class="gs-name">${hl(o.nombre)}</div><div class="gs-sub">${o.proyectos} proyecto${o.proyectos>1?'s':''}</div></div></div>`).join('');
+      html+=otros.map(o=>`<div class="gs-item" onclick="gsGo('proponente','')"><div><div class="gs-name">${hl(o.nombre)}</div><div class="gs-sub">${fmtNum(o.proyectos)} proyecto${o.proyectos>1?'s':''}</div></div></div>`).join('');
     }
     drop.innerHTML=html;drop.classList.add('open');
   },180);
@@ -1109,7 +1247,7 @@ function etapaClass(e){
 
 function countUp(el, target, delay=0){
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    setTimeout(()=>{el.textContent=Math.round(target).toLocaleString();},delay);
+    setTimeout(()=>{el.textContent=fmtNum(target);},delay);
     return;
   }
   const dur=window.innerWidth<640?450:900;
@@ -1118,7 +1256,7 @@ function countUp(el, target, delay=0){
     const tick=now=>{
       const t=Math.min((now-start)/dur,1);
       const ease=1-Math.pow(1-t,3);
-      el.textContent=Math.round(target*ease).toLocaleString();
+      el.textContent=fmtNum(target*ease);
       if(t<1)requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
@@ -1126,11 +1264,15 @@ function countUp(el, target, delay=0){
 }
 
 // ── TABS ──────────────────────────────────────────
+const TABS=['general','diputados','monitoreo','partidos','proponentes','costos'];
 function showTab(name){
-  const names=['general','diputados','monitoreo','partidos','proponentes','costos'];
-  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',names[i]===name));
+  if(!TABS.includes(name)) name='general';
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',TABS[i]===name));
   document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
+  // La pestaña queda en la URL (#costos, #monitoreo…) para poder compartirla
+  const h=location.hash.slice(1);
+  if(!(name==='diputados'&&/^(diputado|comparar)=/.test(h))) setHash(name==='general'?'':name);
   if(!D) return;
   if(name==='general'&&!tabInited.general){try{renderGeneral();}catch(e){console.error('General:',e)}tabInited.general=true}
   if(name==='diputados'){try{initTable();}catch(e){console.error('Table:',e)}}
@@ -1138,6 +1280,41 @@ function showTab(name){
   if(name==='partidos'&&!tabInited.partidos){try{renderPartidos();}catch(e){console.error('Partidos:',e)}tabInited.partidos=true}
   if(name==='proponentes'&&!tabInited.proponentes){try{renderProponentes();}catch(e){console.error('Proponentes:',e)}tabInited.proponentes=true}
   if(name==='costos'&&!tabInited.costos){loadDatosRawAndRender();tabInited.costos=true;}
+}
+
+// ── ENLACES DIRECTOS ──────────────────────────────
+// #costos · #diputado=<slug> · #comparar=<slug>,<slug>[,<slug>]
+function setHash(h){
+  if(location.hash.slice(1)===h) return;
+  history.replaceState(null,'',h ? '#'+h : location.pathname+location.search);
+}
+function routeFromHash(){
+  if(!D) return;
+  const h=decodeURIComponent(location.hash.slice(1));
+  if(h.startsWith('diputado=')) return openDiputado(h.slice(9));
+  closeModal();
+  if(h.startsWith('comparar=')) return openComparar(h.slice(9).split(',').filter(Boolean));
+  showTab(h);
+}
+window.addEventListener('hashchange', routeFromHash);
+
+function openDiputado(slug){
+  const dep=(D.diputados||[]).find(d=>depSlug(d)===slug);
+  showTab('diputados');
+  if(!dep) return;
+  const s=document.getElementById('search');
+  if(s) s.value=dep.nombre;
+  buildFiltered(); page=1;
+  viewMode==='grid' ? renderGrid() : renderTable();
+  const idx=sortedDeps.findIndex(d=>d.nombre===dep.nombre);
+  if(idx>=0) showLeyes(idx);
+}
+
+async function copyLink(btn){
+  const url=location.href, orig=btn.textContent;
+  try{ await navigator.clipboard.writeText(url); btn.textContent='✓ Copiado'; }
+  catch(e){ window.prompt('Copia este enlace:', url); }
+  setTimeout(()=>{ btn.textContent=orig; },1600);
 }
 
 // ── LOAD ──────────────────────────────────────────
@@ -1149,7 +1326,7 @@ async function loadData(){
     raw=await res.json();
   }catch(e){
     console.error('Fetch error:',e);
-    document.getElementById('kpi-totals').innerHTML=`<div class="loader" style="grid-column:1/-1">⚠️ Error cargando datos: ${e.message}</div>`;
+    document.getElementById('kpi-totals').innerHTML=`<div class="loader" style="grid-column:1/-1">⚠️ Error cargando datos: ${esc(e.message)}</div>`;
     return;
   }
 
@@ -1163,12 +1340,14 @@ async function loadData(){
   const yearBox=document.getElementById('map-year-chips');
   Object.keys(Object.values(D.por_provincia_filtros||{})[0]||{}).filter(y=>y!=='all').sort().forEach(y=>{
     yearBox.insertAdjacentHTML('beforeend',
-      `<button class="map-chip" data-mftype="year" data-mfval="${y}" onclick="setMapFilter('year','${y}')">${y}</button>`);
+      `<button class="map-chip" data-mftype="year" data-mfval="${esc(y)}" onclick="setMapFilter('year',this.dataset.mfval)">${esc(y)}</button>`);
   });
 
   try{ renderKPI(); }catch(e){ console.error('KPI error:',e); }
   try{ renderGeneral(); tabInited.general=true; }catch(e){ console.error('General error:',e); }
   try{ initTable(); }catch(e){ console.error('Table error:',e); }
+  try{ initComparar(); }catch(e){ console.error('Comparar error:',e); }
+  routeFromHash();
 }
 
 // Aviso si los datos tienen más de 3 días o alguna fuente usó datos de respaldo
@@ -1269,8 +1448,8 @@ function renderGeneral(){
   const labels=tlKeys.map(k=>{const[y,m]=k.split('-');return`${months[+m-1]} ${y.slice(2)}`});
   const maxTl=Math.max(...tlVals,1);
 
-  const isMobileTl = window.innerWidth < 640;
-  new Chart(document.getElementById('c-timeline'),{
+  const isMobileTl = isMobile();
+  const tlChart = new Chart(document.getElementById('c-timeline'),{
     type:'bar',
     data:{labels,datasets:[{data:tlVals,
       backgroundColor:tlVals.map((v,i)=>i===tlVals.length-1?'#f59e0b':`rgba(59,130,246,${.35+.6*v/maxTl})`),
@@ -1289,10 +1468,14 @@ function renderGeneral(){
         setMonthFilter(key, lbl);
       }}
   });
+  tlChart.$responsive = m=>{
+    const t=tlChart.config.options.scales.x.ticks;
+    t.font.size=m?9:10; t.maxTicksLimit=m?7:undefined;
+  };
 
   const entries=Object.entries(D.etapas).sort((a,b)=>b[1]-a[1]);
-  const isMobileDonut=window.innerWidth<=640;
-  new Chart(document.getElementById('c-donut'),{
+  const isMobileDonut=isMobile();
+  const donutChart = new Chart(document.getElementById('c-donut'),{
     type:'doughnut',
     data:{labels:entries.map(e=>e[0]),datasets:[{data:entries.map(e=>e[1]),
       backgroundColor:entries.map(e=>EC[e[0]]||'#64748b'),borderWidth:2,borderColor:'#0e1623',hoverOffset:8}]},
@@ -1301,6 +1484,10 @@ function renderGeneral(){
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
           callbacks:{label:ctx=>` ${ctx.label}: ${ctx.raw} (${((ctx.raw/D.total_proyectos)*100).toFixed(1)}%)`}}}}
   });
+  donutChart.$responsive = m=>{
+    const l=donutChart.config.options.plugins.legend;
+    l.position=m?'bottom':'right'; l.labels.font.size=m?9:10; l.labels.padding=m?5:8;
+  };
 
   const order=['Preliminar','Enviado a subcomisión para analisis','Primer Debate','Segundo Debate','Tercer Debate','Enviado al Ejecutivo','Objetado por Ejecutivo','Ley','Negado','Archivado','Retirado por proponente'];
   const fCol={'Preliminar':'#3b82f6','Enviado a subcomisión para analisis':'#60a5fa','Primer Debate':'#f59e0b','Segundo Debate':'#fb923c','Tercer Debate':'#f97316','Enviado al Ejecutivo':'#a78bfa','Objetado por Ejecutivo':'#f472b6','Ley':'#10b981','Negado':'#ef4444','Archivado':'#64748b','Retirado por proponente':'#94a3b8'};
@@ -1326,7 +1513,7 @@ function renderGeneral(){
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
           callbacks:{title:ctx=>top[ctx[0].dataIndex].nombre,label:ctx=>` ${ctx.dataset.label}: ${ctx.raw}`}}},
       scales:{x:{grid:{display:false},ticks:{color:'#5a7499',font:{family:'DM Mono',size:9},maxRotation:40,
-        callback:function(val){const l=this.getLabelForValue(val);return window.innerWidth<640&&l&&l.length>9?l.slice(0,8)+'…':l}}},
+        callback:function(val){const l=this.getLabelForValue(val);return isMobile()&&l&&l.length>9?l.slice(0,8)+'…':l}}},
         y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}}}}
   });
 }
@@ -1358,7 +1545,7 @@ function renderPartidos(){
     const c=PC[l]||'#64748b';
     const ef=v.proyectos>0?((v.leyes/v.proyectos)*100).toFixed(1):0;
     return`<div class="partido-card" style="--pc:${c}">
-      <div class="partido-name">${l}</div>
+      <div class="partido-name">${esc(l)}</div>
       <div class="p-stats-grid">
         <div class="p-stat"><div class="p-stat-v">${v.diputados}</div><div class="p-stat-l">Diputados</div></div>
         <div class="p-stat"><div class="p-stat-v">${v.proyectos}</div><div class="p-stat-l">Proyectos</div></div>
@@ -1415,7 +1602,7 @@ function renderProponentes(){
         <div class="prop-item">
           <div class="prop-rank">${i+1}</div>
           <div class="prop-info">
-            <div class="prop-name" title="${o.nombre}">${o.nombre}</div>
+            <div class="prop-name" title="${esc(o.nombre)}">${esc(o.nombre)}</div>
             <div class="prop-bar-track"><div class="prop-bar-fill" style="width:${Math.round(o.proyectos/max*100)}%;background:${color}"></div></div>
           </div>
           <div class="prop-nums">
@@ -1512,7 +1699,7 @@ function renderMap(){
     // Guardar contenido en data-attribute para que handlers táctiles lo lean siempre actualizado
     const filtroLabel = mapEtapaFilter!=='all'?`<br><span style="color:var(--acc2);font-size:.65rem">${MAP_ETAPA_LABELS[mapEtapaFilter]||''}</span>`:'';
     const yearLabel   = mapYearFilter!=='all'?` · ${mapYearFilter}`:'';
-    el.dataset.tipHtml = `<b style="color:var(--text)">${prov}</b>${yearLabel}<br>
+    el.dataset.tipHtml = `<b style="color:var(--text)">${esc(prov)}</b>${esc(yearLabel)}<br>
       <span style="color:var(--acc)">${data.proyectos||0} proyectos</span> &nbsp;
       <span style="color:var(--acc3)">${data.leyes||0} leyes</span><br>
       <span style="color:var(--muted)">${data.diputados||0} diputados</span>${filtroLabel}`;
@@ -1560,7 +1747,7 @@ function renderMap(){
 // ── CHIPS & VIEW ──────────────────────────────────
 // MONITOREO
 function fmtMoney(v){
-  return Number.isFinite(Number(v)) ? 'B/. ' + Math.round(Number(v)).toLocaleString() : '—';
+  return v!=null && v!=='' && Number.isFinite(Number(v)) ? 'B/. ' + fmtNum(v) : '—';
 }
 function fmtScore(v){
   return Number.isFinite(Number(v)) ? Number(v).toFixed(1).replace('.0','') : '—';
@@ -1594,6 +1781,7 @@ function initMonitor(){
   renderMonitorSummary();
   try{ renderMonitorChart(); }catch(e){ console.error('Monitor chart:',e); }
   renderMonitorTable();
+  renderMonitorHist();
 }
 function renderMonitorSummary(){
   const items=monitorData();
@@ -1618,11 +1806,11 @@ function renderMonitorSummary(){
   document.getElementById('monitor-insights').innerHTML=[
     {l:'Pleno',v:avg(items,'asistencia_pleno'),max:5,c:'#3b82f6',t:`Promedio ${fmtScore(avg(items,'asistencia_pleno'))}/5`},
     {l:'Comis.',v:avg(items,'asistencia_comisiones'),max:5,c:'#10b981',t:`Promedio ${fmtScore(avg(items,'asistencia_comisiones'))}/5`},
-    {l:'Planilla',v:highSpend?.planilla_valor||0,max:maxPlanilla,c:'#f59e0b',t:`Mayor: ${highSpend?.nombre||'—'}`},
+    {l:'Planilla',v:highSpend?.planilla_valor||0,max:maxPlanilla,c:'#f59e0b',t:`Mayor: ${highSpend?.nombre||'—'}`,money:true},
     {l:'Alertas',v:lowPleno,max:items.length||1,c:'#ef4444',t:`${lowPleno} con pleno bajo 3/5`},
   ].map(x=>`<div class="mini-row">
-      <span>${x.l}</span><div class="mini-track"><div class="mini-fill" style="width:${Math.max(4,Math.round((x.v/x.max)*100))}%;background:${x.c}"></div></div><span>${Number.isFinite(x.v)?Math.round(x.v):0}</span>
-      <div style="grid-column:1/-1;color:var(--muted);font-size:.65rem">${x.t}${topScore&&x.l==='Comis.'?` · Mejor calificación: ${topScore.nombre}`:''}</div>
+      <span>${x.l}</span><div class="mini-track"><div class="mini-fill" style="width:${Math.max(4,Math.round((x.v/x.max)*100))}%;background:${x.c}"></div></div><span>${x.money?fmtMoney(x.v):(Number.isFinite(x.v)?Math.round(x.v):0)}</span>
+      <div style="grid-column:1/-1;color:var(--muted);font-size:.65rem">${esc(x.t)}${topScore&&x.l==='Comis.'?` · Mejor calificación: ${esc(topScore.nombre)}`:''}</div>
     </div>`).join('');
 }
 function renderMonitorChart(){
@@ -1638,7 +1826,7 @@ function renderMonitorChart(){
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10}}},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{label:ctx=>ctx.dataset.label==='Planilla'?` ${fmtMoney(ctx.raw)}`:` ${ctx.raw}/5`}}},
       scales:{x:{ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}},grid:{display:false}},
-        y:{beginAtZero:true,ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},callback:v=>'B/. '+Number(v).toLocaleString()},grid:{color:'rgba(255,255,255,.03)'}},
+        y:{beginAtZero:true,ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},callback:v=>'B/. '+fmtNum(v)},grid:{color:'rgba(255,255,255,.03)'}},
         y1:{position:'right',min:0,max:5,ticks:{color:'#10b981',font:{family:'DM Mono',size:10}},grid:{drawOnChartArea:false}}}}
   });
 }
@@ -1652,15 +1840,15 @@ function renderMonitorTable(){
   monitorSorted=sorted;
   document.getElementById('monitor-tbody').innerHTML=sorted.map((d,i)=>{
     const pc=PC[d.partido]||'#64748b';
-    const fotoEl=d.foto?`<img class="dep-avatar" src="${d.foto}" alt="${d.nombre}" onerror="this.style.display='none'">`:`<div class="dep-avatar"></div>`;
+    const fotoEl=d.foto?`<img class="dep-avatar" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`:`<div class="dep-avatar"></div>`;
     return`<tr>
-      <td><div class="dep-cell">${fotoEl}<div><div class="dep-name">${d.nombre}</div><div class="dep-sub" style="color:${pc}">${d.partido||'—'} · ${d.circuito||''}</div></div></div></td>
-      <td class="money-cell">${fmtMoney(d.planilla_valor)}</td>
-      <td class="num"><span class="score-pill ${scoreClass(d.asistencia_pleno)}">${fmtScore(d.asistencia_pleno)}</span></td>
-      <td class="num"><span class="score-pill ${scoreClass(d.asistencia_comisiones)}">${fmtScore(d.asistencia_comisiones)}</span></td>
-      <td class="num"><button class="comm-btn" onclick="showComisiones(${i})">${d.comisiones_cantidad||0}</button></td>
-      <td class="num"><span class="score-pill ${scoreClass(d.calificacion)}">${fmtScore(d.calificacion)}</span></td>
-      <td class="col-md" style="font-family:var(--fm);font-size:.75rem;color:var(--muted)">${d.provincia||'—'}</td>
+      <td class="td-main"><div class="dep-cell">${fotoEl}<div><div class="dep-name">${esc(d.nombre)}</div><div class="dep-sub" style="color:${pc}">${esc(d.partido||'—')} · ${esc(d.circuito||'')}</div></div></div></td>
+      <td class="money-cell" data-label="Planilla">${fmtMoney(d.planilla_valor)}</td>
+      <td class="num" data-label="Pleno"><span class="score-pill ${scoreClass(d.asistencia_pleno)}">${fmtScore(d.asistencia_pleno)}</span></td>
+      <td class="num" data-label="Comisiones"><span class="score-pill ${scoreClass(d.asistencia_comisiones)}">${fmtScore(d.asistencia_comisiones)}</span></td>
+      <td class="num" data-label="Participa en"><button class="comm-btn" onclick="showComisiones(${i})">${d.comisiones_cantidad||0}</button></td>
+      <td class="num" data-label="Calificación"><span class="score-pill ${scoreClass(d.calificacion)}">${fmtScore(d.calificacion)}</span></td>
+      <td class="col-md" data-label="Provincia" style="font-family:var(--fm);font-size:.75rem;color:var(--muted)">${esc(d.provincia||'—')}</td>
     </tr>`;
   }).join('');
 }
@@ -1674,10 +1862,10 @@ function buildChips(){
   const cvEl=document.getElementById('chip-provincias');
   if(!cpEl||!cvEl)return;
   cpEl.innerHTML=`<span class="chip-lbl">Partido</span>`+
-    parties.map(p=>`<button class="chip${selectedParties.has(p)?' active':''}" style="--cc:${PC[p]||'#64748b'}" onclick="toggleChip('party','${p.replace(/'/g,"\\'")}')"><span class="chip-dot"></span>${p.replace(/^(Partido|Movimiento)\s/,'')}</button>`).join('')+
+    parties.map(p=>`<button class="chip${selectedParties.has(p)?' active':''}" style="--cc:${PC[p]||'#64748b'}" data-val="${esc(p)}" onclick="toggleChip('party',this.dataset.val)"><span class="chip-dot"></span>${esc(p.replace(/^(Partido|Movimiento)\s/,''))}</button>`).join('')+
     `<button class="filter-clear${hasFilter?' visible':''}" onclick="clearFilters()">✕ Limpiar</button>`;
   cvEl.innerHTML=`<span class="chip-lbl">Provincia</span>`+
-    provinces.map(p=>`<button class="chip${selectedProvinces.has(p)?' active':''}" style="--cc:var(--acc2)" onclick="toggleChip('prov','${p.replace(/'/g,"\\'")}')"><span class="chip-dot"></span>${p}</button>`).join('');
+    provinces.map(p=>`<button class="chip${selectedProvinces.has(p)?' active':''}" style="--cc:var(--acc2)" data-val="${esc(p)}" onclick="toggleChip('prov',this.dataset.val)"><span class="chip-dot"></span>${esc(p)}</button>`).join('');
 }
 function toggleChip(type,val){
   if(type==='party'){if(selectedParties.has(val))selectedParties.delete(val);else selectedParties.add(val);}
@@ -1715,14 +1903,14 @@ function renderGrid(){
     const bwCosp=Math.round((d.co_patrocinios||0)/maxCosp*100);
     const leyes=(d.leyes_detalle||[]).length;
     const fotoEl=d.foto
-      ?`<a href="${d.perfil||'#'}" target="_blank" rel="noopener"><img class="dep-card-photo" src="${d.foto}" alt="${d.nombre}" onerror="this.outerHTML='<div class=dep-card-photo-placeholder>👤</div>'"></a>`
+      ?`<a href="${safeUrl(d.perfil)}" target="_blank" rel="noopener"><img class="dep-card-photo" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.outerHTML='<div class=dep-card-photo-placeholder>👤</div>'"></a>`
       :`<div class="dep-card-photo-placeholder">👤</div>`;
     return`<div class="dep-card fade-in" style="animation-delay:${Math.min(i,20)*.03}s">
       <div class="dep-card-top">${fotoEl}<div class="dep-card-rank">#${i+1}</div></div>
       <div class="dep-card-body">
-        <div class="dep-card-name">${d.nombre}</div>
-        <div class="dep-card-party" style="color:${pc}">${d.partido||'—'}</div>
-        <div class="dep-card-prov">${d.provincia||'—'}</div>
+        <div class="dep-card-name">${esc(d.nombre)}</div>
+        <div class="dep-card-party" style="color:${pc}">${esc(d.partido||'—')}</div>
+        <div class="dep-card-prov">${esc(d.provincia||'—')}</div>
         <div class="dep-card-bars">
           <div class="dbar-row"><div class="dbar-lbl c-blue" data-tip="Propuestos">P</div><div class="dbar-wrap"><div class="dbar-fill" style="width:${bwProp}%;background:var(--acc)"></div></div><div class="dbar-val c-blue">${d.proyectos||0}</div></div>
           <div class="dbar-row"><div class="dbar-lbl c-purple" data-tip="Co-patrocinios">C</div><div class="dbar-wrap"><div class="dbar-fill" style="width:${bwCosp}%;background:var(--acc5)"></div></div><div class="dbar-val c-purple">${d.co_patrocinios||0}</div></div>
@@ -1805,16 +1993,16 @@ function renderTable(){
     const bwProp=Math.round((d.proyectos||0)/maxProp*100);
     const bwCosp=Math.round((d.co_patrocinios||0)/maxCosp*100);
     const fotoEl=d.foto
-      ?`<a href="${d.perfil||'#'}" target="_blank" rel="noopener" style="text-decoration:none"><img class="dep-avatar" src="${d.foto}" alt="${d.nombre}" onerror="this.outerHTML='<div class=dep-avatar style=display:flex;align-items:center;justify-content:center;font-size:14px>👤</div>'"></a>`
+      ?`<a href="${safeUrl(d.perfil)}" target="_blank" rel="noopener" style="text-decoration:none"><img class="dep-avatar" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.outerHTML='<div class=dep-avatar style=display:flex;align-items:center;justify-content:center;font-size:14px>👤</div>'"></a>`
       :`<div class="dep-avatar" style="display:flex;align-items:center;justify-content:center;font-size:14px">👤</div>`;
     return`<tr>
       <td class="rank">${rank}</td>
       <td><div class="dep-cell">${fotoEl}<div>
-        <div class="dep-name">${d.nombre}</div>
-        ${d.partido?`<div class="dep-sub" style="color:${pc}">${d.partido}</div>`:''}
+        <div class="dep-name">${esc(d.nombre)}</div>
+        ${d.partido?`<div class="dep-sub" style="color:${pc}">${esc(d.partido)}</div>`:''}
       </div></div></td>
-      <td class="col-md"><span class="badge" style="background:${pc}22;color:${pc}">${d.partido||'—'}</span></td>
-      <td class="col-sm" style="font-family:var(--fm);font-size:.75rem;color:var(--muted)">${d.provincia||'—'}</td>
+      <td class="col-md"><span class="badge" style="background:${pc}22;color:${pc}">${esc(d.partido||'—')}</span></td>
+      <td class="col-sm" style="font-family:var(--fm);font-size:.75rem;color:var(--muted)">${esc(d.provincia||'—')}</td>
       <td class="num">
         <div class="dual-bar">
           <div class="dbar-row">
@@ -1831,7 +2019,7 @@ function renderTable(){
       </td>
       <td class="num c-purple col-md">${d.co_patrocinios||0}</td>
       <td class="num c-green col-md">${(d.proyectos||0)>0?`<span class="leyes-btn" onclick="showLeyes(${(page-1)*PAGE+i})">${d.leyes||0}</span>`:(d.leyes||0)}</td>
-      <td class="col-sm"><span class="badge ${etapaClass(topEt)}">${topEt}</span></td>
+      <td class="col-sm"><span class="badge ${etapaClass(topEt)}">${esc(topEt)}</span></td>
     </tr>`;
   }).join('');
 
@@ -1857,18 +2045,35 @@ function goPage(p){
 }
 
 // ── CARGA DIFERIDA DE DATOS.JSON ─────────────────
+// datos.json (~500 KB) solo se descarga cuando alguien lo necesita: pestaña Costos,
+// comparador o descargas CSV. Las llamadas simultáneas comparten la misma descarga.
+let _datosRawPromise = null, COSTOS = null;
+function ensureDatosRaw(){
+  if(DATOS_RAW.length) return Promise.resolve(DATOS_RAW);
+  if(!_datosRawPromise){
+    _datosRawPromise = fetch('datos.json?t='+Date.now())
+      .then(res=>{ if(!res.ok) throw new Error('HTTP '+res.status); return res.json(); })
+      .then(json=>{ DATOS_RAW=json.datos||[]; return DATOS_RAW; })
+      .catch(e=>{ _datosRawPromise=null; throw e; });
+  }
+  return _datosRawPromise;
+}
+async function ensureCostos(){
+  await ensureDatosRaw();
+  if(!COSTOS) COSTOS=calcCostos();
+  return COSTOS;
+}
+
 async function loadDatosRawAndRender(){
   if(!DATOS_RAW.length){
     document.getElementById('costo-kpi-grid').innerHTML=
       '<div class="loader" style="grid-column:1/-1"><div class="spinner"></div> Cargando datos de proyectos…</div>';
     try{
-      const res=await fetch('datos.json?t='+Date.now());
-      if(!res.ok) throw new Error('HTTP '+res.status);
-      const json=await res.json();
-      DATOS_RAW=json.datos||[];
+      await ensureDatosRaw();
     }catch(e){
       document.getElementById('costo-kpi-grid').innerHTML=
-        `<div class="loader" style="grid-column:1/-1">⚠️ Error cargando datos.json: ${e.message}</div>`;
+        `<div class="loader" style="grid-column:1/-1">⚠️ Error cargando datos.json: ${esc(e.message)}</div>`;
+      tabInited.costos=false;
       return;
     }
   }
@@ -1966,7 +2171,7 @@ function calcCostos(){
     totalCost += costoAcumulado;
     const totalProy = Object.values(byYear).reduce((s,v)=>s+v.proyectos,0);
     dipCosts.push({
-      nombre:d.nombre, partido:d.partido, foto:d.foto,
+      nombre:d.nombre, slug:depSlug(d), partido:d.partido, foto:d.foto,
       planilla, salarioAcumulado, costoAcumulado,
       totalMeses, totalProy,
       costoPorProy: totalProy>0 ? costoAcumulado/totalProy : 0,
@@ -2011,14 +2216,14 @@ function calcCostos(){
 }
 
 function renderCostos(){
-  const C = calcCostos();
+  const C = COSTOS || (COSTOS = calcCostos());
   if(!C){
     document.getElementById('costo-kpi-grid').innerHTML='<div class="loader" style="grid-column:1/-1">Sin datos disponibles. Asegúrate de que datos.json esté generado.</div>';
     return;
   }
   const {dipCosts, proyectos, byYearTotals, etapaCosts, totalCost, avgCosto, years} = C;
 
-  const fmtUSD  = v=>'B/. '+Math.round(v).toLocaleString('es-PA');
+  const fmtUSD  = v=>'B/. '+fmtNum(v);
   const fmtUSDk = v=>'B/. '+Math.round(v/1000)+'K';
   const last = getLastClosedMonth();
   const meses_es=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
@@ -2034,7 +2239,7 @@ function renderCostos(){
   ].map((k,i)=>`
     <div class="kpi fade-in" style="--kc:${k.c};animation-delay:${i*.08}s">
       <div class="kpi-label">${k.l}</div>
-      <div class="kpi-value" style="${k.txt?`font-size:1rem;line-height:1.3;color:${k.c}`:'font-family:var(--fm);color:var(--acc3)'}">${k.v}</div>
+      <div class="kpi-value" style="${k.txt?`font-size:1rem;line-height:1.3;color:${k.c}`:'font-family:var(--fm);color:var(--acc3)'}">${esc(k.v)}</div>
       <div class="kpi-sub" style="font-family:var(--fm)">${k.s}</div>
     </div>`).join('');
 
@@ -2062,16 +2267,16 @@ function renderCostos(){
     const vsCol=p.costo>=avgCosto?'#10b981':'#5a7499';
     const dipCount=p.diputados;
     return`<tr>
-      <td class="costo-rank">${i+1}</td>
-      <td style="max-width:300px">
-        <div style="font-size:.78rem;font-weight:600;line-height:1.4">${p.titulo}</div>
-        <div style="font-family:var(--fm);font-size:.62rem;color:var(--muted);margin-top:2px">Ficha ${p.ficha}</div>
+      <td class="costo-rank td-hide-card">${i+1}</td>
+      <td class="td-main" style="max-width:300px">
+        <div style="font-size:.78rem;font-weight:600;line-height:1.4"><span class="costo-rank-inline" style="color:var(--muted)">${i+1}. </span>${esc(p.titulo)}</div>
+        <div style="font-family:var(--fm);font-size:.62rem;color:var(--muted);margin-top:2px">Ficha ${esc(p.ficha)}</div>
       </td>
-      <td class="costo-col-sm" style="font-family:var(--fm);font-size:.72rem">${p.year}</td>
-      <td><span class="badge ${etapaClass(p.etapa)}" style="font-size:.6rem">${p.etapa}</span></td>
-      <td class="costo-col-sm" style="font-family:var(--fm);font-size:.75rem;text-align:center">${dipCount}</td>
-      <td class="money" style="font-size:.82rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(p.costo)}</td>
-      <td class="costo-col-sm">
+      <td class="costo-col-sm" data-label="Año" style="font-family:var(--fm);font-size:.72rem">${p.year}</td>
+      <td data-label="Etapa"><span class="badge ${etapaClass(p.etapa||'')}" style="font-size:.6rem">${esc(p.etapa)}</span></td>
+      <td class="costo-col-sm" data-label="Diputados" style="font-family:var(--fm);font-size:.75rem;text-align:center">${dipCount}</td>
+      <td class="money" data-label="Costo estimado" style="font-size:.82rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(p.costo)}</td>
+      <td class="costo-col-sm" data-label="Vs promedio">
         <div class="costo-bar-wrap"><div class="costo-bar-fill" style="width:${pct}%"></div></div>
         <div style="font-family:var(--fm);font-size:.6rem;color:${vsCol};margin-top:3px">${vsAvg>0?'+':''}${vsAvg}% vs prom.</div>
       </td>
@@ -2083,25 +2288,25 @@ function renderCostos(){
   document.getElementById('costo-dip-tbody').innerHTML=dipCosts.map((d,i)=>{
     const pc=PC[d.partido]||'#64748b';
     const fotoEl=d.foto
-      ?`<img class="dep-avatar" src="${d.foto}" alt="${d.nombre}" onerror="this.style.display='none'">`
+      ?`<img class="dep-avatar" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`
       :`<div class="dep-avatar"></div>`;
     const pct=Math.round(d.costoAcumulado/maxDipCosto*100);
     return`<tr>
-      <td class="costo-rank">${i+1}</td>
-      <td><div class="dep-cell">${fotoEl}<div>
-        <div class="dep-name">${d.nombre}</div>
-        <div class="dep-sub" style="color:${pc}">${d.partido||'—'}</div>
+      <td class="costo-rank td-hide-card">${i+1}</td>
+      <td class="td-main"><div class="dep-cell">${fotoEl}<div>
+        <div class="dep-name">${esc(d.nombre)}</div>
+        <div class="dep-sub" style="color:${pc}">${esc(d.partido||'—')}</div>
       </div></div></td>
-      <td class="money-sm" style="text-align:right">${d.planilla>0?fmtUSD(d.planilla):'—'}</td>
-      <td class="costo-col-sm" style="font-family:var(--fm);font-size:.72rem;text-align:right;color:var(--muted)">B/. 7,000</td>
-      <td class="money" style="font-size:.78rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(d.salarioAcumulado)}</td>
-      <td class="costo-col-sm" style="font-family:var(--fm);font-size:.75rem;text-align:center">${d.totalMeses}</td>
-      <td>
+      <td class="money-sm" data-label="Planilla" style="text-align:right">${d.planilla>0?fmtUSD(d.planilla):'—'}</td>
+      <td class="costo-col-sm td-hide-card" style="font-family:var(--fm);font-size:.72rem;text-align:right;color:var(--muted)">B/. ${fmtNum(SALARIO_FIJO)}</td>
+      <td class="money" data-label="Salario acumulado" style="font-size:.78rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(d.salarioAcumulado)}</td>
+      <td class="costo-col-sm" data-label="Meses" style="font-family:var(--fm);font-size:.75rem;text-align:center">${d.totalMeses}</td>
+      <td data-label="Costo acumulado">
         <div class="money" style="font-size:.8rem;font-weight:700;white-space:nowrap">${fmtUSD(d.costoAcumulado)}</div>
         <div class="costo-bar-wrap" style="margin-top:4px"><div class="costo-bar-fill" style="width:${pct}%"></div></div>
       </td>
-      <td class="costo-col-sm" style="font-family:var(--fm);font-size:.78rem;text-align:center">${d.totalProy}</td>
-      <td class="money-sm" style="text-align:right;white-space:nowrap">${d.totalProy>0?fmtUSD(d.costoPorProy):'—'}</td>
+      <td class="costo-col-sm" data-label="Participaciones" style="font-family:var(--fm);font-size:.78rem;text-align:center">${d.totalProy}</td>
+      <td class="money-sm" data-label="Costo / proyecto" style="text-align:right;white-space:nowrap">${d.totalProy>0?fmtUSD(d.costoPorProy):'—'}</td>
     </tr>`;
   }).join('');
 
@@ -2120,13 +2325,282 @@ function renderCostos(){
       options:{responsive:true,maintainAspectRatio:false,
         plugins:{legend:{display:false},
           tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
-            callbacks:{label:ctx=>` B/. ${Math.round(ctx.raw).toLocaleString('es-PA')}`}}},
+            callbacks:{label:ctx=>` B/. ${fmtNum(ctx.raw)}`}}},
         scales:{
           x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},maxRotation:35,
-            callback:function(val){const l=this.getLabelForValue(val);return window.innerWidth<640&&l&&l.length>11?l.slice(0,10)+'…':l}}},
+            callback:function(val){const l=this.getLabelForValue(val);return isMobile()&&l&&l.length>11?l.slice(0,10)+'…':l}}},
           y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},
             callback:v=>'B/. '+Math.round(v/1000)+'K'}}}},
     });
+  }
+}
+
+// ── DESCARGAS CSV ─────────────────────────────────
+function fechaArchivo(){
+  const m=((D&&D.fecha_extraccion)||'').match(/^(\d{4})(\d{2})(\d{2})/);
+  return m ? `${m[1]}-${m[2]}-${m[3]}` : new Date().toISOString().slice(0,10);
+}
+// columnas: [[título, fila=>valor], …]. Se antepone BOM para que Excel respete las tildes.
+function downloadCSV(nombre, columnas, filas){
+  const cel=v=>{
+    if(v==null) return '';
+    const s=String(v);
+    return /[",\r\n]/.test(s) ? '"'+s.replace(/"/g,'""')+'"' : s;
+  };
+  const lineas=[columnas.map(c=>cel(c[0])).join(',')]
+    .concat(filas.map(f=>columnas.map(c=>cel(c[1](f))).join(',')));
+  const blob=new Blob(['﻿'+lineas.join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`observatorio_${nombre}_${fechaArchivo()}.csv`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
+// Ejecuta una descarga mostrando estado en el botón (algunas requieren bajar datos.json)
+async function withBtn(btn, fn){
+  if(!D) return;
+  const orig=btn?.innerHTML;
+  if(btn){ btn.disabled=true; btn.innerHTML='⏳ Preparando…'; }
+  try{ await fn(); }
+  catch(e){ console.error('Descarga:',e); alert('No se pudo generar el archivo: '+e.message); }
+  finally{ if(btn){ btn.disabled=false; btn.innerHTML=orig; } }
+}
+const num1=v=>v==null||v===''||!Number.isFinite(Number(v)) ? '' : Number(v);
+const round2=v=>Math.round((Number(v)||0)*100)/100;
+
+function exportDiputados(btn, todos=false){
+  withBtn(btn, ()=>{
+    // Desde la pestaña: lo que se ve (filtros y orden). Desde "Datos abiertos": todos.
+    const filas = todos
+      ? (D.diputados||[]).map(d=>({...d,efectividad:d.proyectos>0?+((d.leyes/d.proyectos)*100).toFixed(1):0,
+          topEtapa:Object.entries(d.etapas||{}).sort((a,b)=>b[1]-a[1])[0]?.[0]||''}))
+      : (sortedDeps.length ? sortedDeps : filtered);
+    downloadCSV('diputados', [
+      ['Diputado',d=>d.nombre], ['Partido',d=>d.partido], ['Provincia',d=>d.provincia], ['Circuito',d=>d.circuito],
+      ['Proyectos propuestos',d=>d.proyectos||0], ['Co-patrocinios',d=>d.co_patrocinios||0], ['Leyes',d=>d.leyes||0],
+      ['Efectividad (%)',d=>d.efectividad], ['Etapa más frecuente',d=>d.topEtapa], ['Suplente',d=>d.suplente],
+      ['Perfil',d=>d.perfil],
+    ], filas);
+  });
+}
+
+function exportMonitoreo(btn, todos=false){
+  withBtn(btn, ()=>{
+    const filas = (!todos && monitorSorted.length) ? monitorSorted : monitorData();
+    downloadCSV('monitoreo', [
+      ['Diputado',d=>d.nombre], ['Partido',d=>d.partido], ['Circuito',d=>d.circuito], ['Provincia',d=>d.provincia],
+      ['Planilla acumulada (B/.)',d=>num1(d.planilla_valor)], ['Asistencia pleno (1-5)',d=>num1(d.asistencia_pleno)],
+      ['Asistencia comisiones (1-5)',d=>num1(d.asistencia_comisiones)], ['Calificación (1-5)',d=>num1(d.calificacion)],
+      ['Nº comisiones',d=>d.comisiones_cantidad||0], ['Comisiones',d=>(d.comisiones||[]).join(' | ')],
+      ['Perfil Espacio Cívico',d=>d.perfil_monitoreo],
+    ], filas);
+  });
+}
+
+function exportCostosDiputados(btn){
+  withBtn(btn, async ()=>{
+    const C=await ensureCostos();
+    downloadCSV('costo_por_diputado', [
+      ['Diputado',d=>d.nombre], ['Partido',d=>d.partido],
+      ['Planilla Espacio Cívico (B/.)',d=>round2(d.planilla)], ['Meses cerrados',d=>d.totalMeses],
+      ['Salario acumulado (B/.)',d=>round2(d.salarioAcumulado)], ['Costo acumulado (B/.)',d=>round2(d.costoAcumulado)],
+      ...C.years.map(y=>[`Costo ${y} (B/.)`,d=>round2(d.byYear[y]?.costoAnual)]),
+      ['Participaciones en proyectos',d=>d.totalProy], ['Costo por proyecto (B/.)',d=>d.totalProy>0?round2(d.costoPorProy):''],
+    ], C.dipCosts);
+  });
+}
+
+function exportCostosProyectos(btn){
+  withBtn(btn, async ()=>{
+    const C=await ensureCostos();
+    downloadCSV('costo_por_proyecto', [
+      ['Ficha',p=>p.ficha], ['Título',p=>p.titulo], ['Año',p=>p.year], ['Etapa',p=>p.etapa],
+      ['Diputados participantes',p=>p.diputados], ['Costo estimado (B/.)',p=>round2(p.costo)],
+    ], C.proyectos);
+  });
+}
+
+function exportProyectos(btn){
+  withBtn(btn, async ()=>{
+    const datos=await ensureDatosRaw();
+    downloadCSV('proyectos', [
+      ['Ficha',r=>r.ficha], ['Fecha de presentación',r=>r.fecha_presentacion], ['Título',r=>r.titulo],
+      ['Etapa',r=>r.etapa], ['Proponente(s)',r=>r.proponente], ['Nº proyecto',r=>r.proyecto], ['Nº anteproyecto',r=>r.anteproyecto],
+    ], datos);
+  });
+}
+
+function exportHistorico(btn){
+  withBtn(btn, async ()=>{
+    const H=await ensureHist();
+    if(!H) throw new Error('el historial aún no está disponible');
+    const nombres=Object.fromEntries((D.diputados||[]).map(d=>[depSlug(d),d.nombre]));
+    const filas=[];
+    H.snapshots.forEach(s=>Object.entries(s.diputados||{}).forEach(([slug,v])=>filas.push({fecha:s.fecha,slug,v})));
+    const idx=k=>H.campos.indexOf(k);
+    downloadCSV('historico', [
+      ['Fecha',f=>f.fecha], ['Diputado',f=>nombres[f.slug]||f.slug],
+      ['Planilla acumulada (B/.)',f=>num1(f.v[idx('planilla')])], ['Asistencia pleno',f=>num1(f.v[idx('pleno')])],
+      ['Asistencia comisiones',f=>num1(f.v[idx('comisiones')])], ['Calificación',f=>num1(f.v[idx('calificacion')])],
+      ['Proyectos propuestos',f=>num1(f.v[idx('proyectos')])], ['Leyes',f=>num1(f.v[idx('leyes')])],
+    ], filas);
+  });
+}
+
+// ── HISTORIAL (historico.json: una foto diaria que guarda el scraper) ──
+let _histPromise=null, _modalChart=null;
+function ensureHist(){
+  if(!_histPromise){
+    _histPromise=fetch('historico.json?t='+Date.now())
+      .then(r=>r.ok?r.json():null)
+      .then(h=>h&&Array.isArray(h.snapshots)?h:null)
+      .catch(()=>null);
+  }
+  return _histPromise;
+}
+function histSerie(H, slug, campo){
+  const i=H.campos.indexOf(campo);
+  return H.snapshots.map(s=>{ const v=s.diputados?.[slug]?.[i]; return v==null?null:Number(v); });
+}
+const fmtFecha=f=>{ const [y,m,d]=String(f).split('-'); return `${d}/${m}/${y.slice(2)}`; };
+const histAxis={grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}};
+const histTooltip={backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1};
+
+async function renderMonitorHist(){
+  const note=document.getElementById('monitor-hist-note'), wrap=document.getElementById('monitor-hist-wrap');
+  const H=await ensureHist();
+  // Solo las fechas con métricas de Espacio Cívico (las fotos antiguas solo tienen totales)
+  const iPl=H?H.campos.indexOf('planilla'):-1, iCal=H?H.campos.indexOf('calificacion'):-1, iPle=H?H.campos.indexOf('pleno'):-1;
+  const snaps=(H?.snapshots||[]).filter(s=>Object.values(s.diputados||{}).some(v=>v[iPl]!=null));
+  if(snaps.length<2){
+    note.textContent=snaps.length
+      ? `El historial empezó el ${fmtFecha(snaps[0].fecha)}. Las tendencias aparecerán cuando haya al menos dos mediciones.`
+      : 'Todavía no hay historial disponible.';
+    return;
+  }
+  const media=(s,i)=>{ const v=Object.values(s.diputados).map(x=>x[i]).filter(x=>x!=null); return v.length?v.reduce((a,b)=>a+Number(b),0)/v.length:null; };
+  note.textContent=`${snaps.length} mediciones entre ${fmtFecha(snaps[0].fecha)} y ${fmtFecha(snaps[snaps.length-1].fecha)}. Planilla acumulada total (área) y promedios en escala 1-5 (líneas).`;
+  wrap.style.display='';
+  new Chart(document.getElementById('c-monitor-hist'),{
+    type:'line',
+    data:{labels:snaps.map(s=>fmtFecha(s.fecha)),datasets:[
+      {label:'Planilla total',type:'line',data:snaps.map(s=>Object.values(s.diputados).reduce((a,v)=>a+(Number(v[iPl])||0),0)),borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.18)',fill:true,pointRadius:0,tension:.2,yAxisID:'y'},
+      {label:'Prom. calificación',type:'line',data:snaps.map(s=>media(s,iCal)),borderColor:'#a78bfa',backgroundColor:'#a78bfa',pointRadius:snaps.length>40?0:2,tension:.25,yAxisID:'y1'},
+      {label:'Prom. pleno',type:'line',data:snaps.map(s=>media(s,iPle)),borderColor:'#3b82f6',backgroundColor:'#3b82f6',pointRadius:snaps.length>40?0:2,tension:.25,yAxisID:'y1'},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+      plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10},boxWidth:10}},
+        tooltip:{...histTooltip,callbacks:{label:c=>c.dataset.yAxisID==='y'?` ${c.dataset.label}: B/. ${fmtNum(c.raw)}`:` ${c.dataset.label}: ${c.raw==null?'—':c.raw.toFixed(2)}`}}},
+      scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:8,maxRotation:0}},
+        y:{...histAxis,beginAtZero:true,ticks:{...histAxis.ticks,callback:v=>'B/. '+fmtNum(v/1000)+'K'}},
+        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}}}}
+  });
+}
+
+function destroyModalChart(){ if(_modalChart){ _modalChart.destroy(); _modalChart=null; } }
+async function renderModalHist(dep){
+  const body=document.getElementById('modal-body');
+  body.innerHTML='<div class="gs-empty">Cargando historial…</div>';
+  const H=await ensureHist();
+  if(_modalDep!==dep || !document.getElementById('mtab-hist').classList.contains('active')) return;
+  const slug=depSlug(dep);
+  const idx=H?H.snapshots.map((s,i)=>s.diputados?.[slug]?i:-1).filter(i=>i>=0):[];
+  if(idx.length<2){
+    body.innerHTML='<div class="gs-empty">Aún no hay suficientes mediciones para mostrar la evolución de este diputado.</div>';
+    return;
+  }
+  // Solo métricas de Espacio Cívico: el conteo histórico de proyectos por diputado no es
+  // comparable entre fechas porque la asociación proponente ↔ diputado cambió en el scraper.
+  const iPl=H.campos.indexOf('planilla');
+  const idxM=idx.filter(i=>H.snapshots[i].diputados[slug][iPl]!=null);
+  if(idxM.length<2){
+    body.innerHTML='<div class="gs-empty">Aún no hay suficientes mediciones de Espacio Cívico para este diputado.</div>';
+    return;
+  }
+  const pick=arr=>idxM.map(i=>arr[i]);
+  const plan=pick(histSerie(H,slug,'planilla')), cal=pick(histSerie(H,slug,'calificacion')), ple=pick(histSerie(H,slug,'pleno'));
+  const first=v=>v.find(x=>x!=null), last=v=>[...v].reverse().find(x=>x!=null);
+  const delta=(v,fmt)=>{ const a=first(v), b=last(v); if(a==null||b==null) return '—'; const d=b-a; return d===0?'sin cambios':(d>0?'+':'−')+fmt(Math.abs(d)); };
+  body.innerHTML=`<p class="hist-note" style="margin-top:12px">${idxM.length} mediciones · ${fmtFecha(H.snapshots[idxM[0]].fecha)} – ${fmtFecha(H.snapshots[idxM[idxM.length-1]].fecha)}<br>
+    Planilla: <b style="color:var(--acc2)">${delta(plan,v=>'B/. '+fmtNum(v))}</b> · Calificación: <b style="color:var(--acc5)">${delta(cal,v=>v.toFixed(1))}</b> · Pleno: <b style="color:var(--acc)">${delta(ple,v=>v.toFixed(1))}</b></p>
+    <div class="hist-wrap"><canvas id="c-modal-hist"></canvas></div>`;
+  _modalChart=new Chart(document.getElementById('c-modal-hist'),{
+    type:'line',
+    data:{labels:pick(H.snapshots.map(s=>fmtFecha(s.fecha))),datasets:[
+      {label:'Planilla',data:plan,borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.15)',fill:true,pointRadius:0,tension:.2,yAxisID:'y',spanGaps:true},
+      {label:'Calificación',data:cal,borderColor:'#a78bfa',backgroundColor:'#a78bfa',pointRadius:0,stepped:true,yAxisID:'y1',spanGaps:true},
+      {label:'Pleno',data:ple,borderColor:'#3b82f6',backgroundColor:'#3b82f6',pointRadius:0,stepped:true,yAxisID:'y1',spanGaps:true},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+      plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10},boxWidth:10}},
+        tooltip:{...histTooltip,callbacks:{label:c=>c.dataset.yAxisID==='y'?` Planilla: B/. ${fmtNum(c.raw)}`:` ${c.dataset.label}: ${c.raw??'—'}/5`}}},
+      scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:6,maxRotation:0}},
+        y:{...histAxis,beginAtZero:true,ticks:{...histAxis.ticks,callback:v=>fmtNum(v/1000)+'K'}},
+        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}}}}
+  });
+}
+
+// ── COMPARADOR ────────────────────────────────────
+const CMP_IDS=['cmp-s0','cmp-s1','cmp-s2'];
+let _cmpToken=0;
+function initComparar(){
+  const deps=[...(D.diputados||[])].sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'));
+  const opts='<option value="">— Elegir diputado —</option>'+deps.map(d=>`<option value="${esc(depSlug(d))}">${esc(d.nombre)}</option>`).join('');
+  CMP_IDS.forEach(id=>{ document.getElementById(id).innerHTML=opts; });
+}
+function openComparar(slugs){
+  showTab('diputados');
+  CMP_IDS.forEach((id,i)=>{ document.getElementById(id).value=slugs[i]||''; });
+  const box=document.getElementById('cmp-box');
+  box.open=true;
+  renderComparar();
+  setTimeout(()=>box.scrollIntoView({behavior:'smooth',block:'start'}),80);
+}
+function onCompararChange(){
+  const slugs=CMP_IDS.map(id=>document.getElementById(id).value).filter(Boolean);
+  setHash(slugs.length ? 'comparar='+slugs.join(',') : 'diputados');
+  renderComparar();
+}
+async function renderComparar(){
+  const token=++_cmpToken;
+  const slugs=[...new Set(CMP_IDS.map(id=>document.getElementById(id).value).filter(Boolean))];
+  const out=document.getElementById('cmp-result');
+  document.getElementById('cmp-copy').style.display=slugs.length>=2?'':'none';
+  if(slugs.length<2){ out.innerHTML='<div class="cmp-empty">Elige al menos dos diputados para compararlos.</div>'; return; }
+  const deps=slugs.map(s=>(D.diputados||[]).find(d=>depSlug(d)===s)).filter(Boolean);
+  const draw=costos=>{
+    const cost=d=>costos?.dipCosts.find(c=>c.slug===depSlug(d));
+    // [etiqueta, valor numérico, texto, mejor ('max' | 'min' | null)]
+    const filas=[
+      ['Partido',null,d=>esc(d.partido||'—')],
+      ['Provincia · circuito',null,d=>esc([d.provincia,d.circuito].filter(Boolean).join(' · ')||'—')],
+      ['Proyectos propuestos',d=>d.proyectos||0,d=>fmtNum(d.proyectos),'max'],
+      ['Co-patrocinios',d=>d.co_patrocinios||0,d=>fmtNum(d.co_patrocinios),'max'],
+      ['Leyes aprobadas',d=>d.leyes||0,d=>fmtNum(d.leyes),'max'],
+      ['Efectividad (→ ley)',d=>d.proyectos>0?d.leyes/d.proyectos:0,d=>d.proyectos>0?((d.leyes/d.proyectos)*100).toFixed(1)+'%':'—','max'],
+      ['Asistencia pleno',d=>Number(d.asistencia_pleno),d=>fmtScore(d.asistencia_pleno)+' / 5','max'],
+      ['Asistencia comisiones',d=>Number(d.asistencia_comisiones),d=>fmtScore(d.asistencia_comisiones)+' / 5','max'],
+      ['Calificación Espacio Cívico',d=>Number(d.calificacion),d=>fmtScore(d.calificacion)+' / 5','max'],
+      ['Comisiones',d=>d.comisiones_cantidad||0,d=>fmtNum(d.comisiones_cantidad),null],
+      ['Planilla acumulada',d=>Number(d.planilla_valor),d=>fmtMoney(d.planilla_valor),'min'],
+      ['Costo acumulado',d=>cost(d)?.costoAcumulado,d=>costos?(cost(d)?'B/. '+fmtNum(cost(d).costoAcumulado):'—'):'…','min'],
+      ['Costo por proyecto',d=>cost(d)?.totalProy>0?cost(d).costoPorProy:NaN,d=>costos?(cost(d)?.totalProy>0?'B/. '+fmtNum(cost(d).costoPorProy):'—'):'…','min'],
+    ];
+    out.innerHTML=`<table class="cmp-tbl" style="--n:${deps.length}">
+      <thead><tr><th></th>${deps.map(d=>`<th><a href="#diputado=${esc(depSlug(d))}" style="color:inherit">${esc(d.nombre)}</a></th>`).join('')}</tr></thead>
+      <tbody>${filas.map(([lbl,val,txt,best])=>{
+        let ganador=null;
+        if(best&&val){
+          const vals=deps.map(d=>val(d)).filter(Number.isFinite);
+          if(vals.length===deps.length && new Set(vals).size>1) ganador=best==='max'?Math.max(...vals):Math.min(...vals);
+        }
+        return `<tr><th>${lbl}</th>${deps.map(d=>`<td class="${ganador!=null&&val(d)===ganador?'cmp-best':''}">${txt(d)}</td>`).join('')}</tr>`;
+      }).join('')}</tbody></table>
+      <p class="hist-note" style="margin-top:8px">En verde, el mejor valor de cada fila (menor costo, mayor producción o asistencia).</p>`;
+  };
+  draw(COSTOS);
+  if(!COSTOS){
+    try{ const c=await ensureCostos(); if(token===_cmpToken) draw(c); }catch(e){ console.error('Comparar costos:',e); }
   }
 }
 

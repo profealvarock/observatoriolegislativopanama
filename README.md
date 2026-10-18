@@ -16,6 +16,13 @@ Desplegado en Netlify: [https://observatoriolegistalivopa.netlify.app](https://o
 | **Otros proponentes** | Órgano Ejecutivo, iniciativa ciudadana y comisiones de la Asamblea |
 | **Costo Legislativo** | Estimación proporcional del costo por proyecto y por diputado (jul 2024 – presente) |
 
+Además:
+- **Enlaces directos**: la URL refleja lo que se ve y se puede compartir — `#costos`, `#monitoreo`, `#diputado=<slug>` (abre la ficha) o `#comparar=<slug>,<slug>[,<slug>]`.
+- **Comparador**: hasta 3 diputados lado a lado (producción, asistencia, planilla y costo), en la pestaña Diputados.
+- **Evolución en el tiempo**: gráfico de tendencias en Monitoreo y pestaña "Evolución" en la ficha de cada diputado, a partir de `historico.json`.
+- **Datos abiertos**: descargas en CSV (proyectos, diputados, monitoreo, costos e histórico) desde la pestaña General y junto a cada tabla.
+- **Modo claro/oscuro** y diseño adaptado a celular y tablet.
+
 ## 🗂️ Estructura
 ```
 observatoriolegislativopanama/
@@ -26,6 +33,7 @@ observatoriolegislativopanama/
 ├── datos.json              # Proyectos crudos con proponentes (auto-generado)
 ├── diputados.json          # Perfil y foto de los 71 diputados (auto-generado)
 ├── metricas_diputados.json # Planilla, asistencia, calificación (auto-generado)
+├── historico.json          # Una foto diaria por diputado para graficar tendencias (auto-generado)
 ├── panama-map.svg          # Mapa base de Panamá
 ├── netlify.toml            # Configuración Netlify
 └── .github/workflows/
@@ -79,11 +87,16 @@ python scraper.py --solo-resumen
 ## 🔄 Flujo de actualización automática
 1. GitHub Actions ejecuta `scraper.py` cada día a las 4 AM Panamá
 2. El scraper extrae proyectos de `sistemas.asamblea.gob.pa` y perfiles de `espaciocivico.org`
-3. Genera `resumen.json`, `datos.json`, `diputados.json` y `metricas_diputados.json`
+3. Genera `resumen.json`, `datos.json`, `diputados.json` y `metricas_diputados.json`, y agrega la foto del día a `historico.json`
 4. Hace commit automático al repositorio
 5. Netlify detecta el nuevo commit y redespliega el sitio automáticamente
 
 Si una fuente falla (o trae muchos menos registros que la vez anterior), el scraper conserva el archivo guardado de esa fuente, lo registra en `respaldos` dentro de `resumen.json` y el dashboard muestra un aviso. El aviso también aparece si los datos tienen más de 3 días.
+
+### Histórico (`historico.json`)
+Formato compacto: `{"campos": ["planilla","pleno","comisiones","calificacion","proyectos","leyes"], "snapshots": [{"fecha": "2026-10-17", "total_proyectos": …, "total_leyes": …, "diputados": {"<slug>": [valores en el orden de campos]}}]}`. Hay una foto por día (si el scraper corre dos veces, se queda la última). Si Espacio Cívico no respondió ese día, las métricas de esa foto quedan en `null` para no repetir datos viejos como si fueran nuevos.
+
+El histórico se reconstruyó inicialmente desde las versiones de `resumen.json` guardadas en git (métricas disponibles desde el 25-may-2026). El conteo de `proyectos`/`leyes` por diputado anterior a octubre 2026 no es comparable con el actual porque cambió la forma de relacionar proponentes con diputados; por eso el sitio solo grafica las métricas de Espacio Cívico.
 
 ## 🔗 Relación proponente ↔ diputado
 La Asamblea registra a los proponentes con su nombre completo (`H.D JORGE ISAAC BLOISE IGLESIAS`, `H.D.S ...` para suplentes) y Espacio Cívico con el nombre corto. `scraper.py` (`EmparejadorDiputados`) los relaciona así:
