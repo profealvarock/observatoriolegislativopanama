@@ -530,6 +530,68 @@ def _prod_vacio():
     return {'proyectos':0,'leyes':0,'co_patrocinios':0,'proyectos_suplente':0,'etapas':{},
             'leyes_detalle':[],'proyectos_detalle':[],'participaciones':[]}
 
+# ─────────────────────────────────────────────
+# ÍNDICE DE EFECTIVIDAD LEGISLATIVA
+# ─────────────────────────────────────────────
+# El % crudo de proyectos que llegan a ley engaña por dos razones:
+#  1) Antigüedad: un proyecto presentado hace dos meses casi nunca es ley todavía, así que
+#     quien propuso mucho recientemente parece "inefectivo". Se corrige comparando cada
+#     diputado con las leyes que ESPERARÍAMOS según el semestre en que presentó cada proyecto
+#     (tasa de la Cámara en ese semestre).
+#  2) Muestras pequeñas: 1 ley de 3 proyectos (33 %) no prueba nada. Se suaviza hacia el
+#     promedio sumando SUAVIZADO_LEYES leyes "virtuales" a observadas y esperadas.
+# Índice = (leyes + k) / (esperadas + k) × 100 → 100 = promedio de la Cámara.
+# Se calcula por separado como autor y como co-patrocinador, cada uno con su propia tasa base
+# (co-patrocinar proyectos con muchas firmas tiene una tasa de éxito distinta).
+SUAVIZADO_LEYES = 1.5
+EVIDENCIA_MINIMA = 1.0   # leyes esperadas por debajo de esto → evidencia baja
+
+def _semestre(fecha):
+    p = (fecha or '').split('-')
+    return f"{p[2]}-S{1 if int(p[1]) <= 6 else 2}" if len(p) == 3 else ''
+
+def calcular_efectividad(prod, datos):
+    por_ficha = {r['ficha']: r for r in datos}
+    es_ley = lambda f: por_ficha.get(f, {}).get('etapa') == 'Ley'
+    sem = lambda f: _semestre(por_ficha.get(f, {}).get('fecha_presentacion'))
+
+    roles = {}
+    for nombre, p in prod.items():
+        autor = [x['ficha'] for x in p['proyectos_detalle']]
+        set_autor = set(autor)
+        roles[nombre] = {'autor': autor, 'copat': [f for f in p['participaciones'] if f not in set_autor]}
+
+    def tasas(rol):
+        t = defaultdict(lambda: [0, 0])
+        for r in roles.values():
+            for f in r[rol]:
+                t[sem(f)][1] += 1
+                t[sem(f)][0] += es_ley(f)
+        return {s: (l / n if n else 0) for s, (l, n) in t.items()}
+
+    base = {'autor': tasas('autor'), 'copat': tasas('copat')}
+    k = SUAVIZADO_LEYES
+    res = {}
+    for nombre, r in roles.items():
+        item = {}
+        for rol in ('autor', 'copat'):
+            fichas = r[rol]
+            leyes = sum(es_ley(f) for f in fichas)
+            esperadas = sum(base[rol].get(sem(f), 0) for f in fichas)
+            item[rol] = {
+                'proyectos': len(fichas), 'leyes': leyes,
+                'tasa': round(100 * leyes / len(fichas), 1) if fichas else None,
+                'esperadas': round(esperadas, 2),
+                'indice': round(100 * (leyes + k) / (esperadas + k)) if fichas else None,
+                'evidencia': 'alta' if esperadas >= 2 * EVIDENCIA_MINIMA else ('media' if esperadas >= EVIDENCIA_MINIMA else 'baja'),
+            }
+        res[nombre] = item
+    meta = {
+        'suavizado_leyes': k, 'evidencia_minima': EVIDENCIA_MINIMA,
+        'tasa_base': {rol: {s: round(100 * v, 1) for s, v in sorted(t.items())} for rol, t in base.items()},
+    }
+    return res, meta
+
 def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
     dips = [{**d, 'partido': limpiar_partido(d.get('partido'))} for d in dips]
     emp = EmparejadorDiputados(dips)
@@ -600,10 +662,14 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
                 if es_ley: o['leyes'] += 1
         firmantes[r['ficha']] = [emp.por_nombre[k] for k in vistos]
 
+    efectividad, efectividad_meta = calcular_efectividad(prod, datos)
+
     # Enriquecer diputados
     diputados_enriq = []
     for d in dips:
         p = prod.get(d['nombre']) or _prod_vacio()
+        ef = efectividad.get(d['nombre'])
+        p = {**p, 'leyes_copatrocinio': ef['copat']['leyes'] if ef else 0, 'efectividad_ley': ef}
         m = (metricas or {}).get(d.get('slug')) or (metricas or {}).get(slug_from_href(d.get('perfil', ''))) or {}
         m = {k:v for k,v in m.items() if k not in ('nombre','partido_monitoreo')}
         if 'comisiones' in m:   # también corrige datos guardados con el formato anterior
@@ -699,6 +765,7 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
         'por_partido': pp_final,
         'por_provincia': pv_final,
         'por_provincia_filtros': pv_filtros_final,
+        'efectividad_meta': efectividad_meta,
         'proponentes_sin_match': [{'nombre': k, 'firmas': v}
                                   for k, v in sorted(sin_match.items(), key=lambda x: -x[1])],
     }

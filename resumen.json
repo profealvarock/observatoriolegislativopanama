@@ -589,7 +589,26 @@
         "7406",
         "7403",
         "7411"
-      ]
+      ],
+      "leyes_copatrocinio": 6,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 62,
+          "leyes": 3,
+          "tasa": 4.8,
+          "esperadas": 4.18,
+          "indice": 79,
+          "evidencia": "alta"
+        },
+        "copat": {
+          "proyectos": 49,
+          "leyes": 6,
+          "tasa": 12.2,
+          "esperadas": 6.88,
+          "indice": 90,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Jorge Bloise Iglesias",
@@ -976,7 +995,26 @@
         "7410",
         "7403",
         "7411"
-      ]
+      ],
+      "leyes_copatrocinio": 22,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 29,
+          "leyes": 1,
+          "tasa": 3.4,
+          "esperadas": 2.63,
+          "indice": 61,
+          "evidencia": "alta"
+        },
+        "copat": {
+          "proyectos": 134,
+          "leyes": 22,
+          "tasa": 16.4,
+          "esperadas": 23.14,
+          "indice": 95,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Alexandra Brenes",
@@ -1310,7 +1348,26 @@
         "7404",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 8,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 27,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.89,
+          "indice": 44,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 101,
+          "leyes": 8,
+          "tasa": 7.9,
+          "esperadas": 15.15,
+          "indice": 57,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Lenin Alberto Ulate",
@@ -1683,7 +1740,26 @@
         "7404",
         "7405",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 19,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 27,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.77,
+          "indice": 46,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 139,
+          "leyes": 19,
+          "tasa": 13.7,
+          "esperadas": 20.92,
+          "indice": 91,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Graciela Hernández",
@@ -1977,7 +2053,26 @@
         "7405",
         "7403",
         "7411"
-      ]
+      ],
+      "leyes_copatrocinio": 10,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 25,
+          "leyes": 2,
+          "tasa": 8.0,
+          "esperadas": 1.53,
+          "indice": 116,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 63,
+          "leyes": 10,
+          "tasa": 15.9,
+          "esperadas": 11.67,
+          "indice": 87,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Neftalí Zamora",
@@ -2269,7 +2364,26 @@
         "7405",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 12,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 23,
+          "leyes": 1,
+          "tasa": 4.3,
+          "esperadas": 1.54,
+          "indice": 82,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 81,
+          "leyes": 12,
+          "tasa": 14.8,
+          "esperadas": 14.08,
+          "indice": 87,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Patsy Lee Rentería",
@@ -2567,7 +2681,26 @@
         "7404",
         "7405",
         "7411"
-      ]
+      ],
+      "leyes_copatrocinio": 15,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 22,
+          "leyes": 2,
+          "tasa": 9.1,
+          "esperadas": 1.38,
+          "indice": 121,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 90,
+          "leyes": 15,
+          "tasa": 16.7,
+          "esperadas": 13.52,
+          "indice": 110,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Eduardo Gaitán",
@@ -2854,7 +2987,26 @@
         "7404",
         "7405",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 16,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 20,
+          "leyes": 1,
+          "tasa": 5.0,
+          "esperadas": 1.25,
+          "indice": 91,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 99,
+          "leyes": 16,
+          "tasa": 16.2,
+          "esperadas": 15.83,
+          "indice": 101,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "José Pérez Barboni",
@@ -3166,7 +3318,26 @@
         "7406",
         "7403",
         "7411"
-      ]
+      ],
+      "leyes_copatrocinio": 14,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 20,
+          "leyes": 4,
+          "tasa": 20.0,
+          "esperadas": 2.12,
+          "indice": 152,
+          "evidencia": "alta"
+        },
+        "copat": {
+          "proyectos": 105,
+          "leyes": 14,
+          "tasa": 13.3,
+          "esperadas": 18.4,
+          "indice": 78,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Manuel Cheng",
@@ -3454,7 +3625,26 @@
         "7404",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 15,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 20,
+          "leyes": 4,
+          "tasa": 20.0,
+          "esperadas": 2.0,
+          "indice": 157,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 82,
+          "leyes": 15,
+          "tasa": 18.3,
+          "esperadas": 14.71,
+          "indice": 102,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Janine Prado",
@@ -3786,7 +3976,26 @@
         "7405",
         "7411",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 18,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 19,
+          "leyes": 1,
+          "tasa": 5.3,
+          "esperadas": 1.9,
+          "indice": 74,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 148,
+          "leyes": 18,
+          "tasa": 12.2,
+          "esperadas": 20.94,
+          "indice": 87,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Marcos Castillero",
@@ -4006,7 +4215,26 @@
         "7425",
         "7419",
         "7408"
-      ]
+      ],
+      "leyes_copatrocinio": 3,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 19,
+          "leyes": 2,
+          "tasa": 10.5,
+          "esperadas": 2.7,
+          "indice": 83,
+          "evidencia": "alta"
+        },
+        "copat": {
+          "proyectos": 31,
+          "leyes": 3,
+          "tasa": 9.7,
+          "esperadas": 4.19,
+          "indice": 79,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Jhonatan Vega",
@@ -4263,7 +4491,26 @@
         "7405",
         "7410",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 13,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 18,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.4,
+          "indice": 52,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 86,
+          "leyes": 13,
+          "tasa": 15.1,
+          "esperadas": 13.24,
+          "indice": 98,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Javier Sucre",
@@ -4439,7 +4686,26 @@
         "7528",
         "7500",
         "7425"
-      ]
+      ],
+      "leyes_copatrocinio": 3,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 17,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.69,
+          "indice": 47,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 12,
+          "leyes": 3,
+          "tasa": 25.0,
+          "esperadas": 1.72,
+          "indice": 140,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Luis Duke",
@@ -4730,7 +4996,26 @@
         "7412",
         "7404",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 11,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 17,
+          "leyes": 1,
+          "tasa": 5.9,
+          "esperadas": 1.88,
+          "indice": 74,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 120,
+          "leyes": 11,
+          "tasa": 9.2,
+          "esperadas": 17.8,
+          "indice": 65,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Roberto Zuñiga",
@@ -5034,7 +5319,26 @@
         "7405",
         "7410",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 21,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 17,
+          "leyes": 3,
+          "tasa": 17.6,
+          "esperadas": 1.73,
+          "indice": 139,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 124,
+          "leyes": 21,
+          "tasa": 16.9,
+          "esperadas": 19.51,
+          "indice": 107,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Walkiria Chandler",
@@ -5280,7 +5584,26 @@
         "7405",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 14,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 17,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.55,
+          "indice": 49,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 85,
+          "leyes": 14,
+          "tasa": 16.5,
+          "esperadas": 15.88,
+          "indice": 89,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Yarelis Rodríguez",
@@ -5560,7 +5883,26 @@
         "7405",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 21,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 17,
+          "leyes": 1,
+          "tasa": 5.9,
+          "esperadas": 1.72,
+          "indice": 78,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 110,
+          "leyes": 21,
+          "tasa": 19.1,
+          "esperadas": 18.13,
+          "indice": 115,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Crispiano Adames",
@@ -5734,7 +6076,26 @@
         "7430",
         "7416",
         "8048"
-      ]
+      ],
+      "leyes_copatrocinio": 4,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 16,
+          "leyes": 1,
+          "tasa": 6.2,
+          "esperadas": 2.04,
+          "indice": 71,
+          "evidencia": "alta"
+        },
+        "copat": {
+          "proyectos": 12,
+          "leyes": 4,
+          "tasa": 33.3,
+          "esperadas": 1.91,
+          "indice": 162,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Dana Castañeda",
@@ -5920,7 +6281,26 @@
         "7538",
         "7525",
         "7412"
-      ]
+      ],
+      "leyes_copatrocinio": 6,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 16,
+          "leyes": 1,
+          "tasa": 6.2,
+          "esperadas": 1.31,
+          "indice": 89,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 22,
+          "leyes": 6,
+          "tasa": 27.3,
+          "esperadas": 2.34,
+          "indice": 195,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Carlos Saldaña",
@@ -6153,7 +6533,26 @@
         "7406",
         "7410",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 12,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 15,
+          "leyes": 1,
+          "tasa": 6.7,
+          "esperadas": 1.14,
+          "indice": 95,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 77,
+          "leyes": 12,
+          "tasa": 15.6,
+          "esperadas": 15.2,
+          "indice": 81,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Jairo Salazar",
@@ -6321,7 +6720,26 @@
         "7750",
         "7657",
         "7576"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 15,
+          "leyes": 1,
+          "tasa": 6.7,
+          "esperadas": 0.99,
+          "indice": 100,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 14,
+          "leyes": 2,
+          "tasa": 14.3,
+          "esperadas": 1.45,
+          "indice": 119,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Jorge González",
@@ -6590,7 +7008,26 @@
         "7405",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 16,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 15,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.07,
+          "indice": 58,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 123,
+          "leyes": 16,
+          "tasa": 13.0,
+          "esperadas": 18.97,
+          "indice": 85,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Luis Camacho Castro",
@@ -6783,7 +7220,26 @@
         "7503",
         "7431",
         "7414"
-      ]
+      ],
+      "leyes_copatrocinio": 5,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 15,
+          "leyes": 2,
+          "tasa": 13.3,
+          "esperadas": 1.72,
+          "indice": 109,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 32,
+          "leyes": 5,
+          "tasa": 15.6,
+          "esperadas": 4.43,
+          "indice": 110,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Jamis Acosta",
@@ -6950,7 +7406,26 @@
         "7538",
         "7539",
         "8011"
-      ]
+      ],
+      "leyes_copatrocinio": 3,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 14,
+          "leyes": 2,
+          "tasa": 14.3,
+          "esperadas": 1.37,
+          "indice": 122,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 12,
+          "leyes": 3,
+          "tasa": 25.0,
+          "esperadas": 1.31,
+          "indice": 160,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Medin Jiménez Pitti",
@@ -7150,7 +7625,26 @@
         "7424",
         "7415",
         "7406"
-      ]
+      ],
+      "leyes_copatrocinio": 8,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 14,
+          "leyes": 1,
+          "tasa": 7.1,
+          "esperadas": 1.26,
+          "indice": 91,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 50,
+          "leyes": 8,
+          "tasa": 16.0,
+          "esperadas": 7.32,
+          "indice": 108,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Yuzaida Marín",
@@ -7329,7 +7823,26 @@
         "8397",
         "7440",
         "7424"
-      ]
+      ],
+      "leyes_copatrocinio": 6,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 14,
+          "leyes": 1,
+          "tasa": 7.1,
+          "esperadas": 0.95,
+          "indice": 102,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 32,
+          "leyes": 6,
+          "tasa": 18.8,
+          "esperadas": 3.84,
+          "indice": 141,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Francisco Brea",
@@ -7544,7 +8057,26 @@
         "7415",
         "7420",
         "7412"
-      ]
+      ],
+      "leyes_copatrocinio": 8,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 13,
+          "leyes": 3,
+          "tasa": 23.1,
+          "esperadas": 1.05,
+          "indice": 177,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 65,
+          "leyes": 8,
+          "tasa": 12.3,
+          "esperadas": 10.6,
+          "indice": 78,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Raúl Pineda",
@@ -7694,7 +8226,26 @@
         "7693",
         "7471",
         "7465"
-      ]
+      ],
+      "leyes_copatrocinio": 3,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 12,
+          "leyes": 2,
+          "tasa": 16.7,
+          "esperadas": 0.57,
+          "indice": 169,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 10,
+          "leyes": 3,
+          "tasa": 30.0,
+          "esperadas": 1.33,
+          "indice": 159,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Ricardo Vigil López",
@@ -7882,7 +8433,26 @@
         "7412",
         "7406",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 12,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 12,
+          "leyes": 1,
+          "tasa": 8.3,
+          "esperadas": 1.19,
+          "indice": 93,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 54,
+          "leyes": 12,
+          "tasa": 22.2,
+          "esperadas": 10.01,
+          "indice": 117,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Yamireliz Chong",
@@ -8123,7 +8693,26 @@
         "7404",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 16,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 12,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.78,
+          "indice": 66,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 115,
+          "leyes": 16,
+          "tasa": 13.9,
+          "esperadas": 16.81,
+          "indice": 96,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Augusto Palacios",
@@ -8332,7 +8921,26 @@
         "7406",
         "7410",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 12,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 10,
+          "leyes": 2,
+          "tasa": 20.0,
+          "esperadas": 0.81,
+          "indice": 151,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 85,
+          "leyes": 12,
+          "tasa": 14.1,
+          "esperadas": 13.06,
+          "indice": 93,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Miguel Ángel Campos",
@@ -8660,7 +9268,26 @@
         "7406",
         "7410",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 24,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 10,
+          "leyes": 2,
+          "tasa": 20.0,
+          "esperadas": 1.13,
+          "indice": 133,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 205,
+          "leyes": 24,
+          "tasa": 11.7,
+          "esperadas": 27.05,
+          "indice": 89,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Paulette Thomas",
@@ -8876,7 +9503,26 @@
         "7405",
         "7410",
         "7411"
-      ]
+      ],
+      "leyes_copatrocinio": 14,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 10,
+          "leyes": 3,
+          "tasa": 30.0,
+          "esperadas": 0.99,
+          "indice": 181,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 88,
+          "leyes": 14,
+          "tasa": 15.9,
+          "esperadas": 14.65,
+          "indice": 96,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Isaac Mosquera",
@@ -8998,7 +9644,26 @@
         "7760",
         "7701",
         "7541"
-      ]
+      ],
+      "leyes_copatrocinio": 1,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 9,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.45,
+          "indice": 77,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 18,
+          "leyes": 1,
+          "tasa": 5.6,
+          "esperadas": 1.84,
+          "indice": 75,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Ariana Coba",
@@ -9170,7 +9835,26 @@
         "7421",
         "7405",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 13,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 8,
+          "leyes": 2,
+          "tasa": 25.0,
+          "esperadas": 0.95,
+          "indice": 143,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 64,
+          "leyes": 13,
+          "tasa": 20.3,
+          "esperadas": 10.06,
+          "indice": 125,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Lilia Batista",
@@ -9294,7 +9978,26 @@
         "7510",
         "7456",
         "7775"
-      ]
+      ],
+      "leyes_copatrocinio": 4,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 8,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.83,
+          "indice": 64,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 26,
+          "leyes": 4,
+          "tasa": 15.4,
+          "esperadas": 2.87,
+          "indice": 126,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Ariel Vallarino",
@@ -9416,7 +10119,26 @@
         "7525",
         "7437",
         "7424"
-      ]
+      ],
+      "leyes_copatrocinio": 6,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 7,
+          "leyes": 1,
+          "tasa": 14.3,
+          "esperadas": 0.78,
+          "indice": 110,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 24,
+          "leyes": 6,
+          "tasa": 25.0,
+          "esperadas": 3.15,
+          "indice": 161,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Betserai Richards",
@@ -9606,7 +10328,26 @@
         "7412",
         "7404",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 12,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 7,
+          "leyes": 1,
+          "tasa": 14.3,
+          "esperadas": 0.65,
+          "indice": 116,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 93,
+          "leyes": 12,
+          "tasa": 12.9,
+          "esperadas": 14.64,
+          "indice": 84,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Manuel Samaniego",
@@ -9803,7 +10544,26 @@
         "7404",
         "7406",
         "7410"
-      ]
+      ],
+      "leyes_copatrocinio": 19,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 7,
+          "leyes": 1,
+          "tasa": 14.3,
+          "esperadas": 0.8,
+          "indice": 109,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 101,
+          "leyes": 19,
+          "tasa": 18.8,
+          "esperadas": 19.2,
+          "indice": 99,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Alaín Cedeño",
@@ -9906,7 +10666,26 @@
         "7525",
         "7471",
         "7461"
-      ]
+      ],
+      "leyes_copatrocinio": 4,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 6,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.27,
+          "indice": 85,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 20,
+          "leyes": 4,
+          "tasa": 20.0,
+          "esperadas": 3.37,
+          "indice": 113,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Jorge Herrera",
@@ -10046,7 +10825,26 @@
         "7421",
         "7412",
         "7406"
-      ]
+      ],
+      "leyes_copatrocinio": 11,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 6,
+          "leyes": 2,
+          "tasa": 33.3,
+          "esperadas": 0.89,
+          "indice": 147,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 46,
+          "leyes": 11,
+          "tasa": 23.9,
+          "esperadas": 8.39,
+          "indice": 126,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Julio de la Guardia",
@@ -10165,7 +10963,26 @@
         "8011",
         "8397",
         "7471"
-      ]
+      ],
+      "leyes_copatrocinio": 5,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 6,
+          "leyes": 1,
+          "tasa": 16.7,
+          "esperadas": 0.54,
+          "indice": 123,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 29,
+          "leyes": 5,
+          "tasa": 17.2,
+          "esperadas": 3.12,
+          "indice": 141,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Néstor Guardia",
@@ -10264,7 +11081,26 @@
         "7527",
         "7488",
         "8163"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 6,
+          "leyes": 1,
+          "tasa": 16.7,
+          "esperadas": 0.74,
+          "indice": 111,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 11,
+          "leyes": 2,
+          "tasa": 18.2,
+          "esperadas": 0.95,
+          "indice": 143,
+          "evidencia": "baja"
+        }
+      }
     },
     {
       "nombre": "Orlando Carrasquilla",
@@ -10388,7 +11224,26 @@
         "8397",
         "7471",
         "7424"
-      ]
+      ],
+      "leyes_copatrocinio": 7,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 6,
+          "leyes": 1,
+          "tasa": 16.7,
+          "esperadas": 0.39,
+          "indice": 132,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 33,
+          "leyes": 7,
+          "tasa": 21.2,
+          "esperadas": 5.03,
+          "indice": 130,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Rogelio Revello",
@@ -10497,7 +11352,26 @@
         "7590",
         "7576",
         "7538"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 6,
+          "leyes": 1,
+          "tasa": 16.7,
+          "esperadas": 0.36,
+          "indice": 135,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 19,
+          "leyes": 2,
+          "tasa": 10.5,
+          "esperadas": 2.15,
+          "indice": 96,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Shirley Castañedas",
@@ -10603,7 +11477,26 @@
         "7693",
         "7657",
         "7622"
-      ]
+      ],
+      "leyes_copatrocinio": 0,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 6,
+          "leyes": 1,
+          "tasa": 16.7,
+          "esperadas": 0.09,
+          "indice": 157,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 19,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.92,
+          "indice": 44,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Arquesio Arias",
@@ -10703,7 +11596,26 @@
         "7521",
         "8384",
         "7475"
-      ]
+      ],
+      "leyes_copatrocinio": 3,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 5,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.57,
+          "indice": 73,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 24,
+          "leyes": 3,
+          "tasa": 12.5,
+          "esperadas": 3.62,
+          "indice": 88,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Jose Luis Varela",
@@ -10821,7 +11733,26 @@
         "7406",
         "7776",
         "7413"
-      ]
+      ],
+      "leyes_copatrocinio": 9,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 5,
+          "leyes": 1,
+          "tasa": 20.0,
+          "esperadas": 0.48,
+          "indice": 126,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 36,
+          "leyes": 9,
+          "tasa": 25.0,
+          "esperadas": 6.44,
+          "indice": 132,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Nelson Jackson",
@@ -10906,7 +11837,26 @@
         "7576",
         "7538",
         "7529"
-      ]
+      ],
+      "leyes_copatrocinio": 1,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 5,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.57,
+          "indice": 73,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 11,
+          "leyes": 1,
+          "tasa": 9.1,
+          "esperadas": 1.98,
+          "indice": 72,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Omar Ortega",
@@ -10999,7 +11949,26 @@
         "7693",
         "7622",
         "7554"
-      ]
+      ],
+      "leyes_copatrocinio": 1,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 5,
+          "leyes": 1,
+          "tasa": 20.0,
+          "esperadas": 0.54,
+          "indice": 123,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 11,
+          "leyes": 1,
+          "tasa": 9.1,
+          "esperadas": 1.41,
+          "indice": 86,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Roberto Archibold",
@@ -11135,7 +12104,26 @@
         "7436",
         "7424",
         "7421"
-      ]
+      ],
+      "leyes_copatrocinio": 11,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 5,
+          "leyes": 1,
+          "tasa": 20.0,
+          "esperadas": 0.44,
+          "indice": 129,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 55,
+          "leyes": 11,
+          "tasa": 20.0,
+          "esperadas": 9.17,
+          "indice": 117,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Tomas Benavides",
@@ -11227,7 +12215,26 @@
         "8011",
         "7491",
         "7437"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 5,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.24,
+          "indice": 86,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 17,
+          "leyes": 2,
+          "tasa": 11.8,
+          "esperadas": 2.14,
+          "indice": 96,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Carlos Afú",
@@ -11316,7 +12323,26 @@
         "7573",
         "7435",
         "7423"
-      ]
+      ],
+      "leyes_copatrocinio": 5,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 4,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.3,
+          "indice": 83,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 21,
+          "leyes": 5,
+          "tasa": 23.8,
+          "esperadas": 2.66,
+          "indice": 156,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Edwin Vergara",
@@ -11424,7 +12450,26 @@
         "7424",
         "7412",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 9,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 4,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.39,
+          "indice": 79,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 39,
+          "leyes": 9,
+          "tasa": 23.1,
+          "esperadas": 6.74,
+          "indice": 127,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Gertrudis Rodríguez",
@@ -11523,7 +12568,26 @@
         "7453",
         "7424",
         "7412"
-      ]
+      ],
+      "leyes_copatrocinio": 4,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 4,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.48,
+          "indice": 76,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 31,
+          "leyes": 4,
+          "tasa": 12.9,
+          "esperadas": 4.7,
+          "indice": 89,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Manuel Cohen",
@@ -11606,7 +12670,26 @@
         "7471",
         "7423",
         "7776"
-      ]
+      ],
+      "leyes_copatrocinio": 7,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 4,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.36,
+          "indice": 81,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 15,
+          "leyes": 7,
+          "tasa": 46.7,
+          "esperadas": 2.05,
+          "indice": 239,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Nixon Andrade",
@@ -11687,7 +12770,26 @@
         "7760",
         "7574",
         "7545"
-      ]
+      ],
+      "leyes_copatrocinio": 1,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 4,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.36,
+          "indice": 81,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 13,
+          "leyes": 1,
+          "tasa": 7.7,
+          "esperadas": 0.98,
+          "indice": 101,
+          "evidencia": "baja"
+        }
+      }
     },
     {
       "nombre": "Ronald de Gracia",
@@ -11799,7 +12901,26 @@
         "8397",
         "7441",
         "7424"
-      ]
+      ],
+      "leyes_copatrocinio": 12,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 4,
+          "leyes": 1,
+          "tasa": 25.0,
+          "esperadas": 0.53,
+          "indice": 123,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 37,
+          "leyes": 12,
+          "tasa": 32.4,
+          "esperadas": 6.06,
+          "indice": 179,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Yesica Romero",
@@ -11896,7 +13017,26 @@
         "7554",
         "7548",
         "7412"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 4,
+          "leyes": 1,
+          "tasa": 25.0,
+          "esperadas": 0.21,
+          "indice": 146,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 22,
+          "leyes": 2,
+          "tasa": 9.1,
+          "esperadas": 3.58,
+          "indice": 69,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Benicio Robinson",
@@ -11968,7 +13108,26 @@
         "7574",
         "7525",
         "7424"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 3,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.3,
+          "indice": 83,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 9,
+          "leyes": 2,
+          "tasa": 22.2,
+          "esperadas": 1.49,
+          "indice": 117,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Didiano Pinilla",
@@ -12076,7 +13235,26 @@
         "8397",
         "7471",
         "7424"
-      ]
+      ],
+      "leyes_copatrocinio": 9,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 3,
+          "leyes": 1,
+          "tasa": 33.3,
+          "esperadas": 0.18,
+          "indice": 149,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 40,
+          "leyes": 9,
+          "tasa": 22.5,
+          "esperadas": 6.18,
+          "indice": 137,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Flor Brenes",
@@ -12164,7 +13342,26 @@
         "7674",
         "8098",
         "7574"
-      ]
+      ],
+      "leyes_copatrocinio": 1,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 3,
+          "leyes": 1,
+          "tasa": 33.3,
+          "esperadas": 0.53,
+          "indice": 123,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 21,
+          "leyes": 1,
+          "tasa": 4.8,
+          "esperadas": 2.12,
+          "indice": 69,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Osman Camilo Gómez",
@@ -12238,7 +13435,26 @@
         "7642",
         "8053",
         "7554"
-      ]
+      ],
+      "leyes_copatrocinio": 3,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 3,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.18,
+          "indice": 89,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 13,
+          "leyes": 3,
+          "tasa": 23.1,
+          "esperadas": 1.58,
+          "indice": 146,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Raphael Buchanan",
@@ -12321,7 +13537,26 @@
         "7453",
         "7450",
         "7437"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 3,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.12,
+          "indice": 92,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 22,
+          "leyes": 2,
+          "tasa": 9.1,
+          "esperadas": 3.86,
+          "indice": 65,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Eduardo Vásquez",
@@ -12390,7 +13625,26 @@
         "7510",
         "8397",
         "7412"
-      ]
+      ],
+      "leyes_copatrocinio": 6,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 1,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.09,
+          "indice": 94,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 25,
+          "leyes": 6,
+          "tasa": 24.0,
+          "esperadas": 4.72,
+          "indice": 121,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Eliécer Castrellón",
@@ -12447,7 +13701,26 @@
         "7529",
         "7531",
         "7510"
-      ]
+      ],
+      "leyes_copatrocinio": 3,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 1,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.03,
+          "indice": 98,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 12,
+          "leyes": 3,
+          "tasa": 25.0,
+          "esperadas": 1.99,
+          "indice": 129,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Joan Guevara",
@@ -12505,7 +13778,26 @@
         "7622",
         "7597",
         "7421"
-      ]
+      ],
+      "leyes_copatrocinio": 2,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 1,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.09,
+          "indice": 94,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 14,
+          "leyes": 2,
+          "tasa": 14.3,
+          "esperadas": 2.04,
+          "indice": 99,
+          "evidencia": "alta"
+        }
+      }
     },
     {
       "nombre": "Sergio Gálvez",
@@ -12571,7 +13863,26 @@
         "7642",
         "7554",
         "7510"
-      ]
+      ],
+      "leyes_copatrocinio": 0,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 1,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 0.03,
+          "indice": 98,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 20,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.54,
+          "indice": 49,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Jaime Vargas",
@@ -12620,7 +13931,26 @@
         "7843",
         "7760",
         "7750"
-      ]
+      ],
+      "leyes_copatrocinio": 0,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 0,
+          "leyes": 0,
+          "tasa": null,
+          "esperadas": 0,
+          "indice": null,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 15,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.16,
+          "indice": 56,
+          "evidencia": "media"
+        }
+      }
     },
     {
       "nombre": "Victor Castillo",
@@ -12675,7 +14005,26 @@
         "8384",
         "7497",
         "8397"
-      ]
+      ],
+      "leyes_copatrocinio": 1,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 0,
+          "leyes": 0,
+          "tasa": null,
+          "esperadas": 0,
+          "indice": null,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 21,
+          "leyes": 1,
+          "tasa": 4.8,
+          "esperadas": 3.12,
+          "indice": 54,
+          "evidencia": "alta"
+        }
+      }
     }
   ],
   "otros_proponentes": [
@@ -13630,6 +14979,26 @@
         "analisis": 3,
         "sinAvance": 2,
         "all": 8
+      }
+    }
+  },
+  "efectividad_meta": {
+    "suavizado_leyes": 1.5,
+    "evidencia_minima": 1.0,
+    "tasa_base": {
+      "autor": {
+        "2024-S2": 17.7,
+        "2025-S1": 18.0,
+        "2025-S2": 8.9,
+        "2026-S1": 3.3,
+        "2026-S2": 0.0
+      },
+      "copat": {
+        "2024-S2": 25.6,
+        "2025-S1": 18.9,
+        "2025-S2": 8.1,
+        "2026-S1": 1.0,
+        "2026-S2": 0.0
       }
     }
   },

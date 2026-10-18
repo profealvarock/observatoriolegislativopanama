@@ -129,6 +129,14 @@ La Asamblea registra a los proponentes con su nombre completo (`H.D JORGE ISAAC 
 
 En `resumen.json`, cada diputado incluye `proyectos` (como proponente principal), `co_patrocinios`, `proyectos_suplente` (cuántos de sus proyectos firmó su suplente) y `participaciones` (fichas en que participó con cualquier rol). La pestaña de costos usa esas `participaciones`, de modo que todas las pestañas usan la misma relación.
 
+## 📈 Índice de efectividad legislativa
+Mide la capacidad de convertir proyectos en leyes (`calcular_efectividad` en `scraper.py`; se guarda en `efectividad_ley` de cada diputado y `efectividad_meta` en `resumen.json`).
+- **Tasas crudas**: autor → ley = leyes ÷ proyectos como autor principal; co-patrocinio → ley = co-patrocinados que son ley ÷ co-patrocinados.
+- **Problema 1, antigüedad**: de los proyectos de jul–dic 2024 llegó a ley ~18%; de los de 2026, ~1–3%. Se corrige con **leyes esperadas** = Σ tasa de la Cámara en el semestre de cada proyecto.
+- **Problema 2, muestras pequeñas**: la mitad de los diputados tiene ≤ 8 proyectos como autor. Se suaviza sumando `SUAVIZADO_LEYES` (1.5) a observadas y esperadas.
+- **Índice** = (leyes + 1.5) ÷ (esperadas + 1.5) × 100 → 100 = promedio. ▲ ≥ 120 · ● 81–119 · ▼ ≤ 80. Si se esperaba < 1 ley, se marca **"pocos datos"** y al ordenar va después de los casos con evidencia.
+- Se calcula aparte como autor y como co-patrocinador, cada uno con su propia tasa base (co-patrocinar tiene una tasa de éxito mayor: ~16% vs ~9%).
+
 ## 💰 Metodología — Costo Legislativo
 El módulo de costo estima el gasto proporcional por proyecto:
 - **Costo acumulado por diputado** = saldo de planilla publicado por Espacio Cívico + USD 7,000 (salario fijo) × meses cerrados desde julio 2024 (p. ej. con datos de octubre 2026: hasta septiembre 2026 = 27 meses)

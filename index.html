@@ -469,6 +469,34 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .cmp-empty{font-family:var(--fm);font-size:.72rem;color:var(--muted);padding:8px 0}
 .cmp-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px;flex-wrap:wrap}
 
+/* EFECTIVIDAD LEGISLATIVA */
+.ief-tasa{font-family:var(--fm);font-weight:600;color:var(--text)}
+.ief-sub{font-family:var(--fm);font-size:.62rem;color:var(--muted);font-weight:400}
+.ief-tasa-nd{color:var(--muted)}
+.ief{display:inline-flex;flex-direction:column;align-items:flex-end;gap:1px;cursor:help}
+.ief-val{font-family:var(--fm);font-weight:700;font-size:.85rem;white-space:nowrap}
+.ief-lbl{font-family:var(--fm);font-size:.58rem;white-space:nowrap}
+.ief-alto .ief-val,.ief-alto .ief-lbl{color:var(--st-ley)}
+.ief-bajo .ief-val,.ief-bajo .ief-lbl{color:var(--st-neg)}
+.ief-medio .ief-val{color:var(--text)}
+.ief-medio .ief-lbl,.ief-poca .ief-lbl{color:var(--muted)}
+.ief-poca .ief-val{color:var(--muted);font-weight:500}
+@media(min-width:769px){#tbl{min-width:900px}}
+#tbl .badge{white-space:normal;line-height:1.3}
+/* En celular la tabla se ajusta al ancho para que el índice se vea sin desplazar */
+@media(max-width:640px){
+  #tbl{min-width:0}
+  #tbl .dep-avatar,#tbl .rank{display:none}
+  #tbl .dual-bar{min-width:96px}
+  #tbl .dbar-wrap{min-width:40px}
+  #tbl td,#tbl th{padding-left:8px;padding-right:8px}
+  /* Solo ícono + número; la etiqueta completa está en la leyenda y en el título emergente */
+  #tbl .ief-lbl,.dep-card-ief .ief-lbl{display:none}
+}
+.cmp-tbl .ief{align-items:flex-start}
+.dep-card-ief{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;padding-top:6px;border-top:1px dashed var(--border)}
+.dep-card-ief>span{font-family:var(--fm);font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
 /* AVISO DE DATOS */
 .data-banner{display:flex;align-items:flex-start;gap:10px;margin-bottom:var(--gap);padding:12px 16px;border-radius:10px;border:1px solid rgba(245,158,11,.35);background:rgba(245,158,11,.08);color:var(--text);font-family:var(--fm);font-size:.74rem;line-height:1.55}
 .data-banner[hidden]{display:none}
@@ -780,6 +808,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
     <div class="chips-row" id="chip-provincias"></div>
   </div>
   <div style="display:flex;gap:16px;margin-bottom:12px;font-family:var(--fm);font-size:.72rem;color:var(--muted);flex-wrap:wrap">
+    <span>Efectividad: 100 = promedio de la Cámara, ajustado por la antigüedad de los proyectos · <span style="color:var(--st-ley)">▲ sobre</span> · ● en · <span style="color:var(--st-neg)">▼ bajo</span> el promedio · · pocos datos · <a href="#metodologia" style="color:var(--acc)">cómo se calcula</a></span>
     <span><span style="display:inline-block;width:10px;height:10px;background:var(--acc);border-radius:2px;margin-right:4px"></span>P = Propuestos — autor principal del proyecto</span>
     <span><span style="display:inline-block;width:10px;height:10px;background:var(--acc5);border-radius:2px;margin-right:4px"></span>C = Co-patrocinios — firmante en proyectos de otros</span>
   </div>
@@ -793,8 +822,10 @@ tr:hover .dep-avatar{border-color:var(--acc)}
             <th data-col="partido" class="col-md">Partido <span class="si">↕</span></th>
             <th data-col="provincia" class="col-sm">Provincia <span class="si">↕</span></th>
             <th data-col="proyectos" class="sorted" id="th-main">Propuestos <span class="si">↓</span></th>
-            <th data-col="co_patrocinios" class="col-md">Co-patrocinios <span class="si">↕</span></th>
             <th data-col="leyes" class="col-md">Leyes <span class="si">↕</span></th>
+            <th data-col="tasaAutor" class="col-md" title="Porcentaje de los proyectos que propuso como autor principal que ya son ley">Autor → ley <span class="si">↕</span></th>
+            <th data-col="tasaCopat" class="col-md" title="Porcentaje de los proyectos que co-patrocinó que ya son ley">Co-patr. → ley <span class="si">↕</span></th>
+            <th data-col="indiceAutor" title="Leyes logradas como autor frente a las esperadas por la antigüedad de sus proyectos. 100 = promedio de la Cámara">Efectividad <span class="si">↕</span></th>
             <th class="col-sm">Etapa frecuente</th>
           </tr>
         </thead>
@@ -999,21 +1030,35 @@ tr:hover .dep-avatar{border-color:var(--acc)}
         <dt>Proyecto propuesto</dt><dd>El diputado es el <strong>autor principal</strong>: el primer firmante en la lista de proponentes.</dd>
         <dt>Co-patrocinio</dt><dd>El diputado firma un proyecto cuyo autor principal es otra persona.</dd>
         <dt>Participación</dt><dd>Cualquiera de las dos anteriores. Un diputado cuenta una sola vez por proyecto, aunque firmen él y su suplente.</dd>
-        <dt>Ley aprobada</dt><dd>Proyecto en etapa "Ley". Se atribuye solo a su autor principal.</dd>
-        <dt>Efectividad</dt><dd>Leyes aprobadas ÷ proyectos propuestos.</dd>
+        <dt>Ley aprobada</dt><dd>Proyecto en etapa "Ley". En los totales del diputado se atribuye solo a su autor principal.</dd>
+        <dt>Autor → ley</dt><dd>Leyes ÷ proyectos que propuso como autor principal.</dd>
+        <dt>Co-patr. → ley</dt><dd>Proyectos co-patrocinados que ya son ley ÷ proyectos co-patrocinados.</dd>
         <dt>Partidos y provincias</dt><dd>Cada proyecto cuenta <strong>una vez</strong>, para el partido y la provincia de su autor principal, así los totales cuadran. "Participa en" cuenta los proyectos en que firmó al menos un diputado del grupo.</dd>
         <dt>Suplentes</dt><dd>Lo que firma un suplente (<code>H.D.S</code>) se suma al diputado principal al que suple, según el registro de suplencias de Espacio Cívico.</dd>
       </dl>
     </section>
 
     <section class="met-card">
-      <h3>3. Cómo se relacionan los nombres</h3>
+      <h3>3. Índice de efectividad legislativa</h3>
+      <p>Mide la capacidad de convertir proyectos en leyes. El porcentaje directo (leyes ÷ proyectos) engaña por dos razones, y el índice corrige ambas:</p>
+      <ul>
+        <li><strong>Antigüedad.</strong> Un proyecto presentado hace pocos meses casi nunca es ley todavía. Por eso cada diputado se compara con las leyes que <em>se esperarían</em> según el semestre en que presentó cada proyecto (la tasa de la Cámara en ese semestre).</li>
+        <li><strong>Pocos datos.</strong> 1 ley de 3 proyectos (33%) no prueba nada. Se suman <span id="met-ief-k">1.5</span> leyes "virtuales" a las logradas y a las esperadas, lo que acerca al promedio los casos con poca información.</li>
+      </ul>
+      <div class="met-formula">Índice = (leyes + <span id="met-ief-k2">1.5</span>) ÷ (leyes esperadas + <span id="met-ief-k3">1.5</span>) × 100</div>
+      <p><strong>100 = promedio de la Cámara.</strong> ▲ 120 o más: sobre el promedio · ● entre 81 y 119: en el promedio · ▼ 80 o menos: bajo el promedio. Si se esperaba menos de 1 ley (proyectos pocos o muy recientes), se muestra como <strong>"pocos datos"</strong> en lugar de calificar.</p>
+      <p>Se calcula aparte como <strong>autor</strong> y como <strong>co-patrocinador</strong>, cada uno con su propia tasa base: sumarse a proyectos con muchas firmas tiene una tasa de éxito distinta a sacar adelante uno propio. El índice principal de la tabla es el de autor.</p>
+      <div id="met-ief-tasas"></div>
+    </section>
+
+    <section class="met-card">
+      <h3>4. Cómo se relacionan los nombres</h3>
       <p>La Asamblea escribe el nombre completo ("H.D JORGE ISAAC BLOISE IGLESIAS") y Espacio Cívico el nombre corto ("Jorge Bloise Iglesias"). Se comparan <strong>palabras completas</strong>, sin tildes ni apodos, tolerando pequeñas diferencias de ortografía (Jhonatan / Jhonathan). Cuando un nombre podría corresponder a más de un diputado, <strong>no se asigna</strong>: es preferible dejar una firma fuera que atribuirla mal.</p>
       <p>Las comisiones de la Asamblea se reconocen por su nombre oficial, aunque contenga comas.</p>
     </section>
 
     <section class="met-card">
-      <h3>4. Costo legislativo</h3>
+      <h3>5. Costo legislativo</h3>
       <div class="met-formula" id="met-formula">Costo acumulado = planilla publicada + B/. 7,000 × meses cerrados</div>
       <ul>
         <li><strong>Planilla</strong>: saldo acumulado publicado por Espacio Cívico, tal cual.</li>
@@ -1025,12 +1070,12 @@ tr:hover .dep-avatar{border-color:var(--acc)}
     </section>
 
     <section class="met-card">
-      <h3>5. Historial</h3>
+      <h3>6. Historial</h3>
       <p id="met-hist">Cada día se guarda una foto de las métricas de cada diputado en <code>historico.json</code>, para graficar tendencias en Monitoreo y en la ficha de cada diputado.</p>
     </section>
 
     <section class="met-card met-limites">
-      <h3>6. Limitaciones conocidas</h3>
+      <h3>7. Limitaciones conocidas</h3>
       <ul id="met-limites">
         <li>La <strong>planilla</strong> de Espacio Cívico se actualiza con poca frecuencia: puede pasar meses sin cambiar.</li>
         <li>El conteo histórico de <strong>proyectos por diputado anterior a octubre de 2026</strong> no es comparable con el actual, porque cambió la forma de relacionar nombres; por eso la evolución solo muestra métricas de Espacio Cívico.</li>
@@ -1040,7 +1085,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
     </section>
 
     <section class="met-card">
-      <h3>7. Datos abiertos</h3>
+      <h3>8. Datos abiertos</h3>
       <p>Todos los datos se pueden descargar en CSV desde la pestaña <a href="#general">General</a> o junto a cada tabla, y los archivos originales están disponibles: <a href="resumen.json" target="_blank" rel="noopener">resumen.json</a>, <a href="datos.json" target="_blank" rel="noopener">datos.json</a> e <a href="historico.json" target="_blank" rel="noopener">historico.json</a>. Puedes reutilizarlos citando la fuente.</p>
     </section>
   </div>
@@ -1636,6 +1681,16 @@ function renderMetodologia(){
   document.getElementById('met-formula').innerHTML=
     `Costo acumulado = planilla publicada + B/. ${fmtNum(SALARIO_FIJO)} × ${meses} meses<br>`+
     `<span style="font-weight:400;color:var(--muted)">julio 2024 – ${mesesEs[last.month-1]} ${last.year} (meses cerrados a la fecha de extracción)</span>`;
+  const em=D.efectividad_meta;
+  if(em){
+    ['met-ief-k','met-ief-k2','met-ief-k3'].forEach(id=>{ document.getElementById(id).textContent=String(em.suavizado_leyes); });
+    const sems=Object.keys(em.tasa_base.autor||{}).sort();
+    const fmtSem=s=>{ const [y,h]=s.split('-'); return (h==='S1'?'ene–jun ':'jul–dic ')+y; };
+    document.getElementById('met-ief-tasas').innerHTML=sems.length?`
+      <p style="margin-top:10px"><strong>Tasa base de la Cámara</strong> (proyectos de ese semestre que ya son ley):</p>
+      <table class="cmp-tbl" style="margin-top:6px"><thead><tr><th>Semestre</th><th>Como autor</th><th>Como co-patrocinador</th></tr></thead>
+      <tbody>${sems.map(s=>`<tr><td>${esc(fmtSem(s))}</td><td>${em.tasa_base.autor[s]}%</td><td>${em.tasa_base.copat?.[s]??'—'}%</td></tr>`).join('')}</tbody></table>`:'';
+  }
   const lim=document.getElementById('met-limites');
   lim.querySelectorAll('[data-dinamico]').forEach(li=>li.remove());
   if(sinMatch.length){
@@ -2200,6 +2255,7 @@ function renderGrid(){
           <div class="dbar-row"><div class="dbar-lbl c-blue" data-tip="Propuestos">P</div><div class="dbar-wrap"><div class="dbar-fill" style="width:${bwProp}%;background:var(--acc)"></div></div><div class="dbar-val c-blue">${d.proyectos||0}</div></div>
           <div class="dbar-row"><div class="dbar-lbl c-purple" data-tip="Co-patrocinios">C</div><div class="dbar-wrap"><div class="dbar-fill" style="width:${bwCosp}%;background:var(--acc5)"></div></div><div class="dbar-val c-purple">${d.co_patrocinios||0}</div></div>
         </div>
+        ${d.efectividad_ley?.autor?.proyectos?`<div class="dep-card-ief"><span>Efectividad</span>${celdaIndice(d.efectividad_ley)}</div>`:''}
         ${leyes>0?`<div class="dep-card-leyes" onclick="showLeyes(${i})"><span class="badge etapa-ley">${leyes} ley${leyes>1?'es':''}</span></div>`:''}
       </div>
     </div>`;
@@ -2224,7 +2280,11 @@ function buildFiltered(){
   filtered=(D&&D.diputados||[]).map(d=>{
     const ef=d.proyectos>0?+((d.leyes/d.proyectos)*100).toFixed(1):0;
     const topEtapa=Object.entries(d.etapas||{}).sort((a,b)=>b[1]-a[1])[0]?.[0]||'-';
-    return{...d,efectividad:ef,topEtapa};
+    const e=d.efectividad_ley||{};
+    return{...d,efectividad:ef,topEtapa,
+      tasaAutor:e.autor?.tasa??-1, tasaCopat:e.copat?.tasa??-1,
+      // Al ordenar, los índices con "pocos datos" van después de los que tienen evidencia suficiente
+      indiceAutor:e.autor?.indice==null ? -99999 : e.autor.indice-(e.autor.evidencia==='baja'?10000:0)};
   }).filter(d=>{
     if(q&&!d.nombre.toLowerCase().includes(q)&&!(d.partido||'').toLowerCase().includes(q)&&!(d.provincia||'').toLowerCase().includes(q))return false;
     if(selectedParties.size>0&&!selectedParties.has(d.partido))return false;
@@ -2257,6 +2317,32 @@ function initTable(){
     });
   });
   renderTable();
+}
+
+// ── EFECTIVIDAD LEGISLATIVA (calculada en scraper.py: calcular_efectividad) ──
+// Índice = (leyes + k) / (esperadas + k) × 100. Las esperadas salen de la tasa de la Cámara en el
+// semestre de cada proyecto, así no se castiga a quien propuso recientemente.
+const IEF_ALTO=120, IEF_BAJO=80;
+function nivelIndice(r){
+  if(!r||r.indice==null) return {cls:'ief-nd',txt:'sin proyectos',icono:''};
+  if(r.evidencia==='baja') return {cls:'ief-poca',txt:'pocos datos',icono:'·'};
+  if(r.indice>=IEF_ALTO) return {cls:'ief-alto',txt:'sobre el promedio',icono:'▲'};
+  if(r.indice<=IEF_BAJO) return {cls:'ief-bajo',txt:'bajo el promedio',icono:'▼'};
+  return {cls:'ief-medio',txt:'en el promedio',icono:'●'};
+}
+function celdaTasa(r){
+  if(!r||!r.proyectos) return '<span class="ief-tasa-nd">—</span>';
+  return `<div class="ief-tasa">${r.tasa.toLocaleString('es-PA')}%</div><div class="ief-sub">${r.leyes} de ${r.proyectos}</div>`;
+}
+function tituloIndice(e){
+  const f=(r,rol)=>r&&r.proyectos?`${rol}: ${r.leyes} leyes de ${r.proyectos} proyectos; se esperaban ${r.esperadas.toLocaleString('es-PA')} por su antigüedad → índice ${r.indice}`:`${rol}: sin proyectos`;
+  return esc(f(e?.autor,'Como autor')+'\n'+f(e?.copat,'Como co-patrocinador')+'\n100 = promedio de la Cámara');
+}
+function celdaIndice(e){ return celdaIndiceRol(e,'autor'); }
+function celdaIndiceRol(e,rol){
+  const r=e?.[rol], n=nivelIndice(r);
+  if(!r||r.indice==null) return '<span class="ief-tasa-nd">—</span>';
+  return `<div class="ief ${n.cls}" title="${tituloIndice(e)}"><span class="ief-val">${n.icono} ${r.indice}</span><span class="ief-lbl">${n.txt}</span></div>`;
 }
 
 function renderTable(){
@@ -2302,8 +2388,10 @@ function renderTable(){
           </div>
         </div>
       </td>
-      <td class="num c-purple col-md">${d.co_patrocinios||0}</td>
       <td class="num c-green col-md">${(d.proyectos||0)>0?`<span class="leyes-btn" onclick="showLeyes(${(page-1)*PAGE+i})">${d.leyes||0}</span>`:(d.leyes||0)}</td>
+      <td class="num col-md">${celdaTasa(d.efectividad_ley?.autor)}</td>
+      <td class="num col-md">${celdaTasa(d.efectividad_ley?.copat)}</td>
+      <td class="num">${celdaIndice(d.efectividad_ley)}</td>
       <td class="col-sm"><span class="badge ${etapaClass(topEt)}">${esc(topEt)}</span></td>
     </tr>`;
   }).join('');
@@ -2663,7 +2751,11 @@ function exportDiputados(btn, todos=false){
     downloadCSV('diputados', [
       ['Diputado',d=>d.nombre], ['Partido',d=>d.partido], ['Provincia',d=>d.provincia], ['Circuito',d=>d.circuito],
       ['Proyectos propuestos',d=>d.proyectos||0], ['Co-patrocinios',d=>d.co_patrocinios||0], ['Leyes',d=>d.leyes||0],
-      ['Efectividad (%)',d=>d.efectividad], ['Etapa más frecuente',d=>d.topEtapa], ['Suplente',d=>d.suplente],
+      ['Autor → ley (%)',d=>d.efectividad_ley?.autor?.tasa], ['Leyes esperadas como autor',d=>d.efectividad_ley?.autor?.esperadas],
+      ['Índice de efectividad autor (100 = promedio)',d=>d.efectividad_ley?.autor?.indice], ['Evidencia autor',d=>d.efectividad_ley?.autor?.evidencia],
+      ['Leyes como co-patrocinador',d=>d.leyes_copatrocinio], ['Co-patrocinio → ley (%)',d=>d.efectividad_ley?.copat?.tasa],
+      ['Índice de efectividad co-patrocinio (100 = promedio)',d=>d.efectividad_ley?.copat?.indice],
+      ['Etapa más frecuente',d=>d.topEtapa], ['Suplente',d=>d.suplente],
       ['Perfil',d=>d.perfil],
     ], filas);
   });
@@ -2862,7 +2954,10 @@ async function renderComparar(){
       ['Proyectos propuestos',d=>d.proyectos||0,d=>fmtNum(d.proyectos),'max'],
       ['Co-patrocinios',d=>d.co_patrocinios||0,d=>fmtNum(d.co_patrocinios),'max'],
       ['Leyes aprobadas',d=>d.leyes||0,d=>fmtNum(d.leyes),'max'],
-      ['Efectividad (→ ley)',d=>d.proyectos>0?d.leyes/d.proyectos:0,d=>d.proyectos>0?((d.leyes/d.proyectos)*100).toFixed(1)+'%':'—','max'],
+      ['Autor → ley',d=>d.efectividad_ley?.autor?.tasa??NaN,d=>celdaTasa(d.efectividad_ley?.autor),'max'],
+      ['Co-patrocinio → ley',d=>d.efectividad_ley?.copat?.tasa??NaN,d=>celdaTasa(d.efectividad_ley?.copat),'max'],
+      ['Índice de efectividad (autor)',d=>d.efectividad_ley?.autor?.indice??NaN,d=>celdaIndiceRol(d.efectividad_ley,'autor'),'max'],
+      ['Índice de efectividad (co-patrocinio)',d=>d.efectividad_ley?.copat?.indice??NaN,d=>celdaIndiceRol(d.efectividad_ley,'copat'),'max'],
       ['Asistencia pleno',d=>Number(d.asistencia_pleno),d=>fmtScore(d.asistencia_pleno)+' / 5','max'],
       ['Asistencia comisiones',d=>Number(d.asistencia_comisiones),d=>fmtScore(d.asistencia_comisiones)+' / 5','max'],
       ['Calificación Espacio Cívico',d=>Number(d.calificacion),d=>fmtScore(d.calificacion)+' / 5','max'],
