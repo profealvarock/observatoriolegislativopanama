@@ -3,7 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080c14">
 <title>Asamblea Nacional · Observatorio Legislativo</title>
+<script>
+// Aplica el tema antes de pintar la página (evita el parpadeo). Preferencia guardada > sistema.
+(function(){
+  var t=null;
+  try{ t=localStorage.getItem('theme'); }catch(e){}
+  if(t!=='light'&&t!=='dark') t=(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';
+  document.documentElement.setAttribute('data-theme',t);
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -14,7 +24,19 @@
   --text:#e2e8f0; --muted:#5a7499;
   --fd:'Syne',sans-serif; --fm:'DM Mono',monospace;
   --px:clamp(16px,4vw,40px); --r:14px; --gap:clamp(12px,2vw,24px);
+  --tint:rgba(255,255,255,.015); --track:rgba(255,255,255,.08); --shadow:rgba(0,0,0,.3);
+  color-scheme:dark;
 }
+:root[data-theme="light"]{
+  --bg:#f4f6fa; --surface:#ffffff; --surface2:#eef2f7; --border:#d8e0ea;
+  --acc:#2563eb; --acc2:#d97706; --acc3:#059669; --acc4:#dc2626; --acc5:#7c3aed;
+  --text:#0f172a; --muted:#5b6e88;
+  --tint:rgba(15,23,42,.025); --track:rgba(15,23,42,.08); --shadow:rgba(15,23,42,.12);
+  color-scheme:light;
+}
+[data-theme="light"] .etapa-arch{color:#475569}
+[data-theme="light"] .panama-map-base{filter:saturate(.2) contrast(1.02) brightness(1.05)}
+[data-theme="light"] .modal-overlay{background:rgba(15,23,42,.45)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
 body{background:var(--bg);color:var(--text);font-family:var(--fd);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -29,6 +51,13 @@ h1{font-size:clamp(1.1rem,3.5vw,2rem);font-weight:800;letter-spacing:-.03em;line
 h1 span{color:var(--acc)}
 .header-meta{font-family:var(--fm);font-size:clamp(.65rem,1.5vw,.75rem);color:var(--muted);text-align:right;line-height:1.7}
 #last-update{color:var(--acc3)}
+.header-right{display:flex;align-items:flex-end;gap:14px}
+.theme-toggle{width:40px;height:40px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:1.05rem;cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
+.theme-toggle:hover{border-color:var(--acc);transform:rotate(-12deg)}
+.theme-toggle:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.theme-toggle .tt-moon{display:none}
+[data-theme="light"] .theme-toggle .tt-sun{display:none}
+[data-theme="light"] .theme-toggle .tt-moon{display:inline}
 
 /* TABS */
 .tabs-wrap{position:relative;margin-bottom:calc(var(--gap)*1.5)}.tabs-wrap::after{content:'';position:absolute;top:0;right:0;bottom:1px;width:52px;background:linear-gradient(to right,transparent,var(--bg));pointer-events:none;z-index:2}
@@ -49,7 +78,7 @@ h1 span{color:var(--acc)}
 .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:clamp(16px,2.5vw,26px);position:relative;overflow:hidden;transition:transform .2s,border-color .3s,box-shadow .3s}
 .kpi:hover{transform:translateY(-3px);border-color:var(--kc,var(--acc));box-shadow:0 8px 32px rgba(0,0,0,.3)}
 .kpi-pct{display:flex;align-items:center;gap:6px;margin-top:10px}
-.kpi-pct-track{flex:1;height:3px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden}
+.kpi-pct-track{flex:1;height:3px;background:var(--track);border-radius:2px;overflow:hidden}
 .kpi-pct-fill{height:100%;border-radius:2px;background:var(--kc,var(--acc));transition:width .8s cubic-bezier(.4,0,.2,1)}
 .kpi-pct-lbl{font-family:var(--fm);font-size:.6rem;color:var(--muted);min-width:32px;text-align:right}
 .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--kc,var(--acc)),transparent)}
@@ -95,7 +124,7 @@ thead th .si{margin-left:4px;opacity:.4}
 thead th.sorted .si{opacity:1}
 tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
 tbody tr:last-child{border-bottom:none}
-tbody tr:nth-child(even){background:rgba(255,255,255,.01)}
+tbody tr:nth-child(even){background:var(--tint)}
 tbody tr:hover{background:rgba(59,130,246,.06)}
 tbody td{padding:10px clamp(10px,1.8vw,16px);font-size:clamp(.78rem,1.4vw,.87rem)}
 .rank{font-family:var(--fm);font-size:.7rem;color:var(--muted);width:32px}
@@ -170,7 +199,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .etapa-neg{background:rgba(239,68,68,.15);color:#ef4444}
 .etapa-otro{background:rgba(139,92,246,.15);color:#a78bfa}
 [data-tip]{position:relative;cursor:default}
-[data-tip]:hover::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#1e2d42;border:1px solid var(--border);color:var(--text);font-family:var(--fm);font-size:.68rem;padding:5px 10px;border-radius:6px;white-space:nowrap;z-index:100;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+[data-tip]:hover::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:var(--fm);font-size:.68rem;padding:5px 10px;border-radius:6px;white-space:nowrap;z-index:100;pointer-events:none;box-shadow:0 4px 12px var(--shadow)}
 
 /* MODAL LEYES */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .2s}
@@ -323,9 +352,9 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .costo-tbl-wrap{overflow-x:auto}
 .costo-tbl{width:100%;border-collapse:collapse;font-family:var(--fm);font-size:.75rem}
 .costo-tbl thead th{padding:10px 14px;text-align:left;color:var(--muted);font-weight:500;font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--border);white-space:nowrap}
-.costo-tbl tbody td{padding:10px 14px;border-bottom:1px solid rgba(26,41,64,.5);vertical-align:middle}
+.costo-tbl tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:middle}
 .costo-tbl tbody tr:last-child td{border-bottom:none}
-.costo-tbl tbody tr:hover{background:rgba(255,255,255,.02)}
+.costo-tbl tbody tr:hover{background:var(--tint)}
 .costo-rank{font-weight:700;color:var(--muted);width:36px;text-align:center}
 .costo-bar-wrap{height:5px;background:var(--border);border-radius:3px;overflow:hidden;min-width:80px}
 .costo-bar-fill{height:100%;border-radius:3px;background:var(--acc3)}
@@ -348,14 +377,42 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   .mt-btn{padding:9px 14px}
   .vt-btn{padding:9px 12px}
   /* Fix #9: compact header */
-  header{padding:14px 0 10px;gap:10px}
+  header{padding:14px 0 10px;gap:10px;flex-wrap:nowrap;align-items:center}
   .header-meta{font-size:.6rem;line-height:1.5}
+  .header-right{align-items:center;gap:10px}
+  .theme-toggle{width:38px;height:38px}
+  /* Inputs a 16px: evita el zoom automático de iOS al enfocarlos */
+  .gs-input,.search-box{font-size:16px}
+  /* Modal como hoja inferior a pantalla completa */
+  .modal-overlay{padding:0;align-items:flex-end}
+  .modal{max-width:none;max-height:92vh;border-radius:var(--r) var(--r) 0 0}
+  .modal-header{padding:16px 16px 12px}
+  .modal-body{padding:6px 16px 20px}
+  .modal-tabs{padding:0 8px;overflow-x:auto;scrollbar-width:none}
+  .modal-tab{white-space:nowrap}
+  .ley-item{gap:10px}
+  .ley-meta{flex-wrap:wrap;gap:6px}
+  [data-tip]:hover::after{white-space:normal;width:max-content;max-width:220px}
+  .metodologia-box{padding:16px}
+  .costo-tbl thead th,.costo-tbl tbody td{padding:8px 10px}
+  .costo-year-card{padding:16px}
 }
 @media(max-width:480px){
+  .dep-grid{grid-template-columns:repeat(2,1fr)}
+  .dep-card-top{height:96px}
+  .dep-card-photo,.dep-card-photo-placeholder{width:66px;height:66px}
+  .partido-grid{grid-template-columns:1fr}
+  /* Montos largos (B/. 16,227,379): una tarjeta por fila para que no se corten */
+  .monitor-summary,.costo-kpi-grid{grid-template-columns:1fr}
+  .kpi-value{overflow-wrap:anywhere}
   /* Fix #9: hide header meta on very small screens */
   .header-meta{display:none}
   /* Fix #8: hide secondary costo columns */
   .costo-col-sm{display:none}
+}
+/* Pantallas táctiles: sin efectos de "levantar" tarjetas al tocar */
+@media(hover:none){
+  .kpi:hover,.dep-card:hover,.partido-card:hover{transform:none;box-shadow:none}
 }
 </style>
 </head>
@@ -369,11 +426,16 @@ tr:hover .dep-avatar{border-color:var(--acc)}
       <h1>Asamblea Nacional<br><span>Observatorio Legislativo</span></h1>
     </div>
   </div>
-  <div class="header-meta">
-    República de Panamá<br>
-    Actualizado: <span id="last-update">cargando…</span><br>
-    <span id="data-warning" style="display:none;color:#f59e0b;font-size:.75em"></span>
-    <span style="font-size:.65em">sistemas.asamblea.gob.pa</span>
+  <div class="header-right">
+    <div class="header-meta">
+      República de Panamá<br>
+      Actualizado: <span id="last-update">cargando…</span><br>
+      <span id="data-warning" style="display:none;color:#f59e0b;font-size:.75em"></span>
+      <span style="font-size:.65em">sistemas.asamblea.gob.pa</span>
+    </div>
+    <button type="button" class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar entre modo claro y oscuro">
+      <span class="tt-sun" aria-hidden="true">☀️</span><span class="tt-moon" aria-hidden="true">🌙</span>
+    </button>
   </div>
 </header>
 
@@ -744,6 +806,75 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 </footer>
 
 <script>
+// ── TEMA CLARO / OSCURO ───────────────────────────
+// Los gráficos usan colores fijos en sus opciones; al cambiar de tema se traducen con este
+// mapa [oscuro, claro]. Solo se tocan las opciones (y el borde de los datasets), no los
+// colores de datos, para que partidos y etapas conserven su color.
+const THEME_COLORS = [
+  ['#0e1623','#ffffff'], ['#1a2940','#d8e0ea'], ['#5a7499','#5b6e88'], ['#94a3b8','#334155'],
+  ['rgba(255,255,255,.03)','rgba(15,23,42,.07)'],
+];
+const ChartBase = Chart;
+
+function currentTheme(){
+  return document.documentElement.getAttribute('data-theme')==='light' ? 'light' : 'dark';
+}
+
+function remapColors(obj, from, to, seen=new Set()){
+  if(!obj || typeof obj!=='object' || seen.has(obj)) return;
+  seen.add(obj);
+  for(const k of Object.keys(obj)){
+    const v=obj[k];
+    if(typeof v==='string'){ const i=from.indexOf(v); if(i>=0) obj[k]=to[i]; }
+    else if(v && typeof v==='object' && !Array.isArray(v)) remapColors(v, from, to, seen);
+  }
+}
+
+function themeChartConfig(cfg, theme){
+  const dark=THEME_COLORS.map(c=>c[0]), light=THEME_COLORS.map(c=>c[1]);
+  const [from,to] = theme==='light' ? [dark,light] : [light,dark];
+  remapColors(cfg.options, from, to);
+  (cfg.data?.datasets||[]).forEach(ds=>{
+    const i=from.indexOf(ds.borderColor);
+    if(i>=0) ds.borderColor=to[i];
+  });
+}
+
+function applyChartDefaults(theme){
+  const light = theme==='light';
+  ChartBase.defaults.color = light ? '#334155' : '#94a3b8';
+  ChartBase.defaults.borderColor = light ? 'rgba(15,23,42,.08)' : 'rgba(255,255,255,.08)';
+  ChartBase.defaults.plugins.tooltip.titleColor = light ? '#0f172a' : '#ffffff';
+  ChartBase.defaults.plugins.tooltip.bodyColor = light ? '#334155' : '#ffffff';
+}
+
+// Todo gráfico nuevo nace con los colores del tema activo.
+Chart = class extends ChartBase {
+  constructor(item, cfg){ if(cfg) themeChartConfig(cfg, currentTheme()); super(item, cfg); }
+};
+
+function setTheme(theme, persist=true){
+  const prev=currentTheme();
+  document.documentElement.setAttribute('data-theme', theme);
+  if(persist){ try{ localStorage.setItem('theme', theme); }catch(e){} }
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme==='light' ? '#f4f6fa' : '#080c14');
+  const btn=document.getElementById('theme-toggle');
+  if(btn) btn.setAttribute('aria-label', theme==='light' ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro');
+  applyChartDefaults(theme);
+  if(prev!==theme){
+    Object.values(ChartBase.instances).forEach(c=>{ themeChartConfig(c.config, theme); c.update('none'); });
+  }
+}
+
+function toggleTheme(){ setTheme(currentTheme()==='light' ? 'dark' : 'light'); }
+
+setTheme(currentTheme(), false);
+// Si el usuario nunca eligió tema, seguir los cambios del sistema.
+window.matchMedia?.('(prefers-color-scheme: light)').addEventListener?.('change', e=>{
+  let saved=null; try{ saved=localStorage.getItem('theme'); }catch(_){}
+  if(!saved) setTheme(e.matches ? 'light' : 'dark', false);
+});
+
 let D = null, DATOS_RAW = [], filtered = [], sortedDeps = [], monitorSorted = [], sortCol = 'proyectos', sortDir = 'desc', page = 1, metrica = 'proyectos';
 let viewMode = 'table', selectedParties = new Set(), selectedProvinces = new Set();
 let monitorSortCol = 'planilla_valor', monitorSortDir = 'desc', monitorInited = false;
