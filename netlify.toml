@@ -4,8 +4,17 @@
 [[headers]]
   for = "/*.json"
   [headers.values]
-    Cache-Control = "no-cache, must-revalidate"
+    # Los datos cambian una vez al día. Netlify no permite revalidar (su ETag comprimido
+    # nunca devuelve 304), así que se guardan 10 minutos en el navegador para no volver
+    # a descargarlos en cada recarga.
+    Cache-Control = "public, max-age=600, must-revalidate"
     Access-Control-Allow-Origin = "*"
+
+# Imágenes del sitio (logo, íconos): cambian muy poco, se guardan una semana en el navegador
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
 
 [[headers]]
   for = "/*"

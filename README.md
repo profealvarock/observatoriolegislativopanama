@@ -15,6 +15,7 @@ Desplegado en Netlify: [https://observatoriolegistalivopa.netlify.app](https://o
 | **Partidos** | Proyectos y leyes por partido político |
 | **Otros proponentes** | Órgano Ejecutivo, iniciativa ciudadana y comisiones de la Asamblea |
 | **Costo Legislativo** | Estimación proporcional del costo por proyecto y por diputado (jul 2024 – presente) |
+| **Metodología** | Fuentes, qué cuenta cada número, fórmula del costo, historial y limitaciones conocidas (con datos actualizados) |
 
 Además:
 - **Enlaces directos**: la URL refleja lo que se ve y se puede compartir — `#costos`, `#monitoreo`, `#diputado=<slug>` (abre la ficha) o `#comparar=<slug>,<slug>[,<slug>]`.
@@ -94,7 +95,9 @@ python scraper.py --solo-resumen
 4. Hace commit automático al repositorio
 5. Netlify detecta el nuevo commit y redespliega el sitio automáticamente
 
-Si una fuente falla (o trae muchos menos registros que la vez anterior), el scraper conserva el archivo guardado de esa fuente, lo registra en `respaldos` dentro de `resumen.json` y el dashboard muestra un aviso. El aviso también aparece si los datos tienen más de 3 días.
+Si una fuente falla (o trae muchos menos registros que la vez anterior), el scraper conserva el archivo guardado de esa fuente, lo registra en `respaldos` dentro de `resumen.json` y el dashboard muestra un aviso. El aviso (una franja bajo el encabezado) también aparece si los datos tienen 2 o más días sin actualizarse, y se vuelve rojo a partir de 7 días.
+
+**Caché.** Netlify comprime los JSON con brotli (`resumen.json` y `datos.json` pesan ~65 KB al descargarse; `historico.json` ~9 KB). Como su ETag comprimido nunca devuelve 304, `netlify.toml` permite guardar los JSON 10 minutos en el navegador; las imágenes de `img/`, una semana.
 
 ### Histórico (`historico.json`)
 Formato compacto: `{"campos": ["planilla","pleno","comisiones","calificacion","proyectos","leyes"], "snapshots": [{"fecha": "2026-10-17", "total_proyectos": …, "total_leyes": …, "diputados": {"<slug>": [valores en el orden de campos]}}]}`. Hay una foto por día (si el scraper corre dos veces, se queda la última). Si Espacio Cívico no respondió ese día, las métricas de esa foto quedan en `null` para no repetir datos viejos como si fueran nuevos.

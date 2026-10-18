@@ -27,6 +27,9 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="dns-prefetch" href="https://espaciocivico.org">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
@@ -453,6 +456,41 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .cmp-empty{font-family:var(--fm);font-size:.72rem;color:var(--muted);padding:8px 0}
 .cmp-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px;flex-wrap:wrap}
 
+/* AVISO DE DATOS */
+.data-banner{display:flex;align-items:flex-start;gap:10px;margin-bottom:var(--gap);padding:12px 16px;border-radius:10px;border:1px solid rgba(245,158,11,.35);background:rgba(245,158,11,.08);color:var(--text);font-family:var(--fm);font-size:.74rem;line-height:1.55}
+.data-banner[hidden]{display:none}
+.data-banner.grave{border-color:rgba(239,68,68,.4);background:rgba(239,68,68,.08)}
+.data-banner-ico{font-size:1rem;line-height:1.2}
+.data-banner a{color:var(--acc);font-weight:700;white-space:nowrap}
+
+/* METODOLOGÍA */
+.met-intro{max-width:860px;margin-bottom:var(--gap)}
+.met-intro h2{font-size:clamp(1.2rem,2.6vw,1.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+.met-intro p{font-family:var(--fm);font-size:.76rem;color:var(--muted);line-height:1.8}
+.met-estado{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.met-chip{font-family:var(--fm);font-size:.68rem;padding:5px 10px;border-radius:20px;border:1px solid var(--border);background:var(--surface);color:var(--text)}
+.met-chip b{color:var(--acc3)}
+.met-chip.warn b{color:var(--acc2)}
+.met-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--gap);align-items:start}
+.met-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:clamp(16px,2.5vw,24px)}
+.met-card h3{font-size:.9rem;font-weight:700;margin-bottom:12px;color:var(--text)}
+.met-card p,.met-card li,.met-card dd{font-family:var(--fm);font-size:.72rem;color:var(--muted);line-height:1.75}
+.met-card p+p{margin-top:8px}
+.met-card ul{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.met-card strong{color:var(--text)}
+.met-card a{color:var(--acc)}
+.met-card code{font-family:var(--fm);font-size:.68rem;background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:0 4px;color:var(--text)}
+.met-card dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px}
+.met-card dt{font-family:var(--fm);font-size:.7rem;font-weight:700;color:var(--text)}
+.met-formula{font-family:var(--fm);font-size:.78rem;font-weight:700;color:var(--acc3);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:12px;line-height:1.6}
+.met-nota{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border)}
+.met-limites{border-color:rgba(245,158,11,.3)}
+@media(max-width:768px){
+  .met-grid{grid-template-columns:1fr}
+  .met-card dl{grid-template-columns:1fr}
+  .met-card dd{margin-bottom:6px}
+}
+
 /* AUTORÍA */
 .autoria{margin-top:calc(var(--gap)*1.5);background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:clamp(18px,3vw,28px);display:flex;align-items:center;gap:clamp(16px,3vw,28px);flex-wrap:wrap;position:relative;overflow:hidden}
 .autoria::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--acc),var(--acc5),transparent)}
@@ -532,7 +570,6 @@ tr:hover .dep-avatar{border-color:var(--acc)}
     <div class="header-meta">
       República de Panamá<br>
       Actualizado: <span id="last-update">cargando…</span><br>
-      <span id="data-warning" style="display:none;color:#f59e0b;font-size:.75em"></span>
       <span style="font-size:.65em">sistemas.asamblea.gob.pa</span>
     </div>
     <button type="button" class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar entre modo claro y oscuro">
@@ -540,6 +577,8 @@ tr:hover .dep-avatar{border-color:var(--acc)}
     </button>
   </div>
 </header>
+
+<div class="data-banner" id="data-banner" role="status" hidden></div>
 
 <div class="kpi-totals" id="kpi-totals">
   <div class="loader" style="grid-column:1/-1"><div class="spinner"></div> Cargando…</div>
@@ -569,6 +608,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <button class="tab" onclick="showTab('partidos')">🏛 Partidos</button>
   <button class="tab" onclick="showTab('proponentes')">🏢 Otros proponentes</button>
   <button class="tab" onclick="showTab('costos')">💰 Costo Legislativo</button>
+  <button class="tab" onclick="showTab('metodologia')">📘 Metodología</button>
 </div>
 </div>
 
@@ -915,9 +955,82 @@ tr:hover .dep-avatar{border-color:var(--acc)}
     <div class="metodologia-title">Advertencia metodológica</div>
     <div class="metodologia-body">
       Este dashboard presenta una <strong>estimación proporcional del costo legislativo</strong>, no un costo contable exacto. El costo acumulado de cada diputado es el <strong>saldo de planilla publicado por Espacio Cívico</strong> más un salario fijo de <strong>USD 7,000 multiplicado por cada mes cerrado</strong> desde julio de 2024 hasta el último mes cerrado a la fecha de extracción de los datos. Para el desglose anual, la planilla se prorratea según los meses de cada año, y el costo de cada año se divide entre la cantidad de proyectos en que participó el diputado (como proponente o co-proponente) en ese mismo año. El costo estimado de cada proyecto es la suma de la porción proporcional asignada por cada diputado asociado. El periodo de análisis inicia en <strong>julio de 2024</strong>. Los diputados sin planilla registrada aportan únicamente el salario fijo. <strong>Los proyectos firmados por diputados suplentes se contabilizan bajo el diputado principal</strong> al que suplen, utilizando el registro de suplencias de espaciocivico.org. El resultado es una aproximación analítica útil para comparación y seguimiento del gasto legislativo, no para fines contables.
+      <div style="margin-top:10px"><a href="#metodologia" style="color:var(--acc);font-weight:700">Ver la metodología completa y las limitaciones conocidas →</a></div>
     </div>
   </div>
 
+</div>
+
+<!-- TAB METODOLOGÍA -->
+<div id="tab-metodologia" class="tab-content">
+  <div class="met-intro">
+    <h2>Cómo se construyen estos datos</h2>
+    <p>Este observatorio reúne datos públicos y los cruza para responder preguntas simples: quién propone qué, cuánto avanza y cuánto cuesta. Aquí se explica de dónde sale cada número, qué decisiones se tomaron al calcularlo y qué limitaciones tiene. Si encuentras un error, escríbeme por cualquiera de las redes al pie de la página.</p>
+    <div class="met-estado" id="met-estado"></div>
+  </div>
+
+  <div class="met-grid">
+    <section class="met-card">
+      <h3>1. Fuentes y actualización</h3>
+      <ul>
+        <li><strong>Proyectos de ley</strong>: <a href="https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo" target="_blank" rel="noopener">Seguimiento Legislativo de la Asamblea Nacional</a> — ficha, fecha de presentación, título, etapa y lista de proponentes.</li>
+        <li><strong>Diputados</strong>: <a href="https://espaciocivico.org/diputados" target="_blank" rel="noopener">espaciocivico.org/diputados</a> — nombre, foto, partido, circuito y suplente.</li>
+        <li><strong>Monitoreo</strong>: <a href="https://espaciocivico.org/buscador/diputados-monitoreo" target="_blank" rel="noopener">Espacio Cívico</a> — planilla, asistencia a pleno y comisiones, calificación y comisiones a las que pertenece.</li>
+        <li>Un proceso automático recoge los datos <strong>cada día a las 4:00 a. m. (hora de Panamá)</strong>. Si una fuente falla o trae muchos menos registros que el día anterior, se conservan los últimos datos buenos y el sitio muestra un aviso.</li>
+      </ul>
+    </section>
+
+    <section class="met-card">
+      <h3>2. Qué cuenta cada número</h3>
+      <dl>
+        <dt>Proyecto propuesto</dt><dd>El diputado es el <strong>autor principal</strong>: el primer firmante en la lista de proponentes.</dd>
+        <dt>Co-patrocinio</dt><dd>El diputado firma un proyecto cuyo autor principal es otra persona.</dd>
+        <dt>Participación</dt><dd>Cualquiera de las dos anteriores. Un diputado cuenta una sola vez por proyecto, aunque firmen él y su suplente.</dd>
+        <dt>Ley aprobada</dt><dd>Proyecto en etapa "Ley". Se atribuye solo a su autor principal.</dd>
+        <dt>Efectividad</dt><dd>Leyes aprobadas ÷ proyectos propuestos.</dd>
+        <dt>Partidos y provincias</dt><dd>Cada proyecto cuenta <strong>una vez</strong>, para el partido y la provincia de su autor principal, así los totales cuadran. "Participa en" cuenta los proyectos en que firmó al menos un diputado del grupo.</dd>
+        <dt>Suplentes</dt><dd>Lo que firma un suplente (<code>H.D.S</code>) se suma al diputado principal al que suple, según el registro de suplencias de Espacio Cívico.</dd>
+      </dl>
+    </section>
+
+    <section class="met-card">
+      <h3>3. Cómo se relacionan los nombres</h3>
+      <p>La Asamblea escribe el nombre completo ("H.D JORGE ISAAC BLOISE IGLESIAS") y Espacio Cívico el nombre corto ("Jorge Bloise Iglesias"). Se comparan <strong>palabras completas</strong>, sin tildes ni apodos, tolerando pequeñas diferencias de ortografía (Jhonatan / Jhonathan). Cuando un nombre podría corresponder a más de un diputado, <strong>no se asigna</strong>: es preferible dejar una firma fuera que atribuirla mal.</p>
+      <p>Las comisiones de la Asamblea se reconocen por su nombre oficial, aunque contenga comas.</p>
+    </section>
+
+    <section class="met-card">
+      <h3>4. Costo legislativo</h3>
+      <div class="met-formula" id="met-formula">Costo acumulado = planilla publicada + B/. 7,000 × meses cerrados</div>
+      <ul>
+        <li><strong>Planilla</strong>: saldo acumulado publicado por Espacio Cívico, tal cual.</li>
+        <li><strong>Salario fijo</strong>: B/. 7,000 por cada mes cerrado desde julio de 2024 hasta el último mes completo antes de la fecha de extracción.</li>
+        <li><strong>Por año</strong>: la planilla se reparte según los meses de cada año.</li>
+        <li><strong>Por proyecto</strong>: el costo anual de cada diputado se divide entre los proyectos en que participó ese año; el costo de un proyecto es la suma de las porciones de sus firmantes.</li>
+      </ul>
+      <p class="met-nota">Es una <strong>estimación proporcional</strong> para comparar, no un costo contable: no incluye personal de apoyo, viáticos ni gastos de funcionamiento, y supone que el tiempo de cada diputado se reparte por igual entre sus proyectos.</p>
+    </section>
+
+    <section class="met-card">
+      <h3>5. Historial</h3>
+      <p id="met-hist">Cada día se guarda una foto de las métricas de cada diputado en <code>historico.json</code>, para graficar tendencias en Monitoreo y en la ficha de cada diputado.</p>
+    </section>
+
+    <section class="met-card met-limites">
+      <h3>6. Limitaciones conocidas</h3>
+      <ul id="met-limites">
+        <li>La <strong>planilla</strong> de Espacio Cívico se actualiza con poca frecuencia: puede pasar meses sin cambiar.</li>
+        <li>El conteo histórico de <strong>proyectos por diputado anterior a octubre de 2026</strong> no es comparable con el actual, porque cambió la forma de relacionar nombres; por eso la evolución solo muestra métricas de Espacio Cívico.</li>
+        <li>El total de proyectos publicado por la Asamblea a veces <strong>baja</strong> de un día a otro (registros que se retiran o reclasifican). El observatorio refleja lo que la fuente publica.</li>
+        <li>El primer firmante se toma como autor principal porque la fuente no indica el rol de cada firmante.</li>
+      </ul>
+    </section>
+
+    <section class="met-card">
+      <h3>7. Datos abiertos</h3>
+      <p>Todos los datos se pueden descargar en CSV desde la pestaña <a href="#general">General</a> o junto a cada tabla, y los archivos originales están disponibles: <a href="resumen.json" target="_blank" rel="noopener">resumen.json</a>, <a href="datos.json" target="_blank" rel="noopener">datos.json</a> e <a href="historico.json" target="_blank" rel="noopener">historico.json</a>. Puedes reutilizarlos citando la fuente.</p>
+    </section>
+  </div>
 </div>
 
 <!-- AUTORÍA -->
@@ -1341,7 +1454,7 @@ function countUp(el, target, delay=0){
 }
 
 // ── TABS ──────────────────────────────────────────
-const TABS=['general','diputados','monitoreo','partidos','proponentes','costos'];
+const TABS=['general','diputados','monitoreo','partidos','proponentes','costos','metodologia'];
 function showTab(name){
   if(!TABS.includes(name)) name='general';
   document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',TABS[i]===name));
@@ -1357,6 +1470,7 @@ function showTab(name){
   if(name==='partidos'&&!tabInited.partidos){try{renderPartidos();}catch(e){console.error('Partidos:',e)}tabInited.partidos=true}
   if(name==='proponentes'&&!tabInited.proponentes){try{renderProponentes();}catch(e){console.error('Proponentes:',e)}tabInited.proponentes=true}
   if(name==='costos'&&!tabInited.costos){loadDatosRawAndRender();tabInited.costos=true;}
+  if(name==='metodologia'){try{renderMetodologia();}catch(e){console.error('Metodología:',e)}}
 }
 
 // ── ENLACES DIRECTOS ──────────────────────────────
@@ -1398,7 +1512,7 @@ async function copyLink(btn){
 async function loadData(){
   let raw;
   try{
-    const res=await fetch('resumen.json?t='+Date.now());
+    const res=await fetch('resumen.json');
     if(!res.ok)throw new Error('HTTP '+res.status);
     raw=await res.json();
   }catch(e){
@@ -1429,15 +1543,56 @@ async function loadData(){
 
 // Aviso si los datos tienen más de 3 días o alguna fuente usó datos de respaldo
 const NOMBRES_RESPALDO={proyectos:'proyectos (Asamblea)',diputados:'perfiles de diputados',metricas:'monitoreo de Espacio Cívico'};
+// La extracción corre a diario: 2+ días sin datos nuevos ya indica que algo falló.
+const DIAS_AVISO=2, DIAS_GRAVE=7;
+function diasSinActualizar(){
+  return Math.floor((Date.now()-getFechaCorte().getTime())/86400000);
+}
+function fmtFechaCorte(){
+  return getFechaCorte().toLocaleDateString('es-PA',{day:'numeric',month:'long',year:'numeric'});
+}
 function renderAvisoDatos(){
-  const el=document.getElementById('data-warning');
+  const el=document.getElementById('data-banner');
   const avisos=[];
-  const dias=Math.floor((Date.now()-getFechaCorte().getTime())/86400000);
-  if(dias>3) avisos.push(`Los datos tienen ${dias} días sin actualizarse`);
+  const dias=diasSinActualizar();
+  if(dias>=DIAS_AVISO) avisos.push(`Los datos tienen <strong>${dias} días</strong> sin actualizarse (última extracción: ${esc(fmtFechaCorte())}). Las cifras pueden no reflejar cambios recientes.`);
   const resp=(D.respaldos||[]).map(r=>NOMBRES_RESPALDO[r]||r);
-  if(resp.length) avisos.push(`Última extracción sin datos frescos de: ${resp.join(', ')}`);
-  el.textContent=avisos.length?'⚠️ '+avisos.join(' · '):'';
-  el.style.display=avisos.length?'block':'none';
+  if(resp.length) avisos.push(`En la última actualización no se pudo obtener información nueva de <strong>${esc(resp.join(', '))}</strong>; se muestran los últimos datos disponibles.`);
+  el.hidden=!avisos.length;
+  el.classList.toggle('grave', dias>=DIAS_GRAVE);
+  el.innerHTML=avisos.length
+    ? `<span class="data-banner-ico" aria-hidden="true">⚠️</span><div>${avisos.join('<br>')} <a href="#metodologia">Más información</a></div>`
+    : '';
+}
+
+function renderMetodologia(){
+  if(!D) return;
+  const dias=diasSinActualizar(), resp=(D.respaldos||[]).map(r=>NOMBRES_RESPALDO[r]||r);
+  const last=getLastClosedMonth(), meses=getTotalMonths();
+  const mesesEs=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const sinMatch=D.proponentes_sin_match||[];
+  document.getElementById('met-estado').innerHTML=[
+    `<span class="met-chip${dias>=DIAS_AVISO?' warn':''}">Última extracción: <b>${esc(fmtFechaCorte())}</b></span>`,
+    `<span class="met-chip">Proyectos: <b>${fmtNum(D.total_proyectos)}</b></span>`,
+    `<span class="met-chip">Diputados: <b>${fmtNum(D.total_diputados)}</b></span>`,
+    `<span class="met-chip${resp.length?' warn':''}">Fuentes: <b>${resp.length?'respaldo en '+esc(resp.join(', ')):'todas al día'}</b></span>`,
+  ].join('');
+  document.getElementById('met-formula').innerHTML=
+    `Costo acumulado = planilla publicada + B/. ${fmtNum(SALARIO_FIJO)} × ${meses} meses<br>`+
+    `<span style="font-weight:400;color:var(--muted)">julio 2024 – ${mesesEs[last.month-1]} ${last.year} (meses cerrados a la fecha de extracción)</span>`;
+  const lim=document.getElementById('met-limites');
+  lim.querySelectorAll('[data-dinamico]').forEach(li=>li.remove());
+  if(sinMatch.length){
+    const total=sinMatch.reduce((s,x)=>s+x.firmas,0);
+    lim.insertAdjacentHTML('afterbegin',`<li data-dinamico><strong>${total} firma${total===1?'':'s'} de diputados no se asignaron</strong> porque el nombre no coincide con certeza con ningún diputado o suplente publicado: ${sinMatch.map(x=>esc(x.nombre.replace(/^H\.D\.?S?\s+/i,''))).join(', ')}.</li>`);
+  }
+  ensureHist().then(H=>{
+    if(!H) return;
+    const iPl=H.campos.indexOf('planilla');
+    const conMet=H.snapshots.filter(s=>Object.values(s.diputados||{}).some(v=>v[iPl]!=null));
+    if(conMet.length) document.getElementById('met-hist').innerHTML=
+      `Cada día se guarda una foto de las métricas de cada diputado en <code>historico.json</code>. Hay <strong>${conMet.length} mediciones</strong> desde el ${esc(fmtFecha(conMet[0].fecha))}; se usan para las tendencias de Monitoreo y la pestaña "Evolución" de cada ficha. Si un día Espacio Cívico no responde, esa foto queda sin métricas para no repetir datos viejos como nuevos.`;
+  });
 }
 
 function processRaw(raw){
@@ -1921,7 +2076,7 @@ function renderMonitorTable(){
   monitorSorted=sorted;
   document.getElementById('monitor-tbody').innerHTML=sorted.map((d,i)=>{
     const pc=PC[d.partido]||'#64748b';
-    const fotoEl=d.foto?`<img class="dep-avatar" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`:`<div class="dep-avatar"></div>`;
+    const fotoEl=d.foto?`<img class="dep-avatar" loading="lazy" decoding="async" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`:`<div class="dep-avatar"></div>`;
     return`<tr>
       <td class="td-main"><div class="dep-cell">${fotoEl}<div><div class="dep-name">${esc(d.nombre)}</div><div class="dep-sub" style="color:${pc}">${esc(d.partido||'—')} · ${esc(d.circuito||'')}</div></div></div></td>
       <td class="money-cell" data-label="Planilla">${fmtMoney(d.planilla_valor)}</td>
@@ -1984,7 +2139,7 @@ function renderGrid(){
     const bwCosp=Math.round((d.co_patrocinios||0)/maxCosp*100);
     const leyes=(d.leyes_detalle||[]).length;
     const fotoEl=d.foto
-      ?`<a href="${safeUrl(d.perfil)}" target="_blank" rel="noopener"><img class="dep-card-photo" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.outerHTML='<div class=dep-card-photo-placeholder>👤</div>'"></a>`
+      ?`<a href="${safeUrl(d.perfil)}" target="_blank" rel="noopener"><img class="dep-card-photo" loading="lazy" decoding="async" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.outerHTML='<div class=dep-card-photo-placeholder>👤</div>'"></a>`
       :`<div class="dep-card-photo-placeholder">👤</div>`;
     return`<div class="dep-card fade-in" style="animation-delay:${Math.min(i,20)*.03}s">
       <div class="dep-card-top">${fotoEl}<div class="dep-card-rank">#${i+1}</div></div>
@@ -2074,7 +2229,7 @@ function renderTable(){
     const bwProp=Math.round((d.proyectos||0)/maxProp*100);
     const bwCosp=Math.round((d.co_patrocinios||0)/maxCosp*100);
     const fotoEl=d.foto
-      ?`<a href="${safeUrl(d.perfil)}" target="_blank" rel="noopener" style="text-decoration:none"><img class="dep-avatar" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.outerHTML='<div class=dep-avatar style=display:flex;align-items:center;justify-content:center;font-size:14px>👤</div>'"></a>`
+      ?`<a href="${safeUrl(d.perfil)}" target="_blank" rel="noopener" style="text-decoration:none"><img class="dep-avatar" loading="lazy" decoding="async" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.outerHTML='<div class=dep-avatar style=display:flex;align-items:center;justify-content:center;font-size:14px>👤</div>'"></a>`
       :`<div class="dep-avatar" style="display:flex;align-items:center;justify-content:center;font-size:14px">👤</div>`;
     return`<tr>
       <td class="rank">${rank}</td>
@@ -2132,7 +2287,7 @@ let _datosRawPromise = null, COSTOS = null;
 function ensureDatosRaw(){
   if(DATOS_RAW.length) return Promise.resolve(DATOS_RAW);
   if(!_datosRawPromise){
-    _datosRawPromise = fetch('datos.json?t='+Date.now())
+    _datosRawPromise = fetch('datos.json')
       .then(res=>{ if(!res.ok) throw new Error('HTTP '+res.status); return res.json(); })
       .then(json=>{ DATOS_RAW=json.datos||[]; return DATOS_RAW; })
       .catch(e=>{ _datosRawPromise=null; throw e; });
@@ -2369,7 +2524,7 @@ function renderCostos(){
   document.getElementById('costo-dip-tbody').innerHTML=dipCosts.map((d,i)=>{
     const pc=PC[d.partido]||'#64748b';
     const fotoEl=d.foto
-      ?`<img class="dep-avatar" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`
+      ?`<img class="dep-avatar" loading="lazy" decoding="async" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`
       :`<div class="dep-avatar"></div>`;
     const pct=Math.round(d.costoAcumulado/maxDipCosto*100);
     return`<tr>
@@ -2532,7 +2687,7 @@ function exportHistorico(btn){
 let _histPromise=null, _modalChart=null;
 function ensureHist(){
   if(!_histPromise){
-    _histPromise=fetch('historico.json?t='+Date.now())
+    _histPromise=fetch('historico.json')
       .then(r=>r.ok?r.json():null)
       .then(h=>h&&Array.isArray(h.snapshots)?h:null)
       .catch(()=>null);
