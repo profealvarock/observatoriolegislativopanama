@@ -97,8 +97,8 @@ En `resumen.json`, cada diputado incluye `proyectos` (como proponente principal)
 
 ## 💰 Metodología — Costo Legislativo
 El módulo de costo estima el gasto proporcional por proyecto:
-- **Planilla mensual** = planilla publicada por Espacio Cívico ÷ 9 (es un acumulado de 9 meses; constante `MESES_PLANILLA` en `index.html`)
-- **Costo mensual por diputado** = planilla mensual + USD 7,000 (salario fijo)
+- **Costo acumulado por diputado** = saldo de planilla publicado por Espacio Cívico + USD 7,000 (salario fijo) × meses cerrados desde julio 2024 (p. ej. con datos de octubre 2026: hasta septiembre 2026 = 27 meses)
+- En el desglose anual la planilla se prorratea según los meses de cada año
 - **Periodo de análisis**: julio 2024 – último mes cerrado a la **fecha de extracción** de los datos (no la fecha de hoy, para que el costo no crezca si los datos dejan de actualizarse)
 - **Distribución**: costo anual ÷ proyectos en que participó ese año
 - Los proyectos de **diputados suplentes** se contabilizan bajo el titular al que suplen

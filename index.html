@@ -679,7 +679,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 
   <div class="sec-hdr" style="margin-bottom:calc(var(--gap)*.6)">
     <div class="sec-title" style="--ct:var(--acc5)">Costo acumulado por diputado</div>
-    <span style="font-family:var(--fm);font-size:.65rem;color:var(--muted)">Planilla mensual + salario fijo USD 7,000 × meses activos</span>
+    <span style="font-family:var(--fm);font-size:.65rem;color:var(--muted)">Planilla (Espacio Cívico) + salario fijo USD 7,000 × meses cerrados</span>
   </div>
   <div class="card" style="margin-bottom:var(--gap)">
     <div class="costo-tbl-wrap">
@@ -688,9 +688,9 @@ tr:hover .dep-avatar{border-color:var(--acc)}
           <tr>
             <th>#</th>
             <th>Diputado</th>
-            <th style="text-align:right">Planilla mensual</th>
+            <th style="text-align:right">Planilla</th>
             <th class="costo-col-sm" style="text-align:right">Salario fijo</th>
-            <th style="text-align:right">Costo mensual</th>
+            <th style="text-align:right">Salario acumulado</th>
             <th class="costo-col-sm" style="text-align:center">Meses</th>
             <th>Costo acumulado</th>
             <th class="costo-col-sm" style="text-align:center" title="Proyectos en que participó como proponente o co-proponente (incluye los firmados por su suplente)">Participaciones</th>
@@ -712,7 +712,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <div class="metodologia-box">
     <div class="metodologia-title">Advertencia metodológica</div>
     <div class="metodologia-body">
-      Este dashboard presenta una <strong>estimación proporcional del costo legislativo</strong>, no un costo contable exacto. El valor de planilla publicado por Espacio Cívico representa el acumulado de 9 meses, por lo que se divide entre 9 para obtener la <strong>planilla mensual</strong>. El costo mensual de cada diputado es la planilla mensual más un salario fijo de <strong>USD 7,000</strong>. Ese costo se multiplica por los meses activos en cada año (desde julio de 2024 hasta el último mes cerrado a la fecha de extracción de los datos) y se divide entre la cantidad de proyectos en que participó el diputado (como proponente o co-proponente) en ese mismo año. El costo estimado de cada proyecto es la suma de la porción proporcional asignada por cada diputado asociado. El periodo de análisis inicia en <strong>julio de 2024</strong>. Los diputados sin planilla registrada aportan únicamente el salario fijo. <strong>Los proyectos firmados por diputados suplentes se contabilizan bajo el diputado principal</strong> al que suplen, utilizando el registro de suplencias de espaciocivico.org. El resultado es una aproximación analítica útil para comparación y seguimiento del gasto legislativo, no para fines contables.
+      Este dashboard presenta una <strong>estimación proporcional del costo legislativo</strong>, no un costo contable exacto. El costo acumulado de cada diputado es el <strong>saldo de planilla publicado por Espacio Cívico</strong> más un salario fijo de <strong>USD 7,000 multiplicado por cada mes cerrado</strong> desde julio de 2024 hasta el último mes cerrado a la fecha de extracción de los datos. Para el desglose anual, la planilla se prorratea según los meses de cada año, y el costo de cada año se divide entre la cantidad de proyectos en que participó el diputado (como proponente o co-proponente) en ese mismo año. El costo estimado de cada proyecto es la suma de la porción proporcional asignada por cada diputado asociado. El periodo de análisis inicia en <strong>julio de 2024</strong>. Los diputados sin planilla registrada aportan únicamente el salario fijo. <strong>Los proyectos firmados por diputados suplentes se contabilizan bajo el diputado principal</strong> al que suplen, utilizando el registro de suplencias de espaciocivico.org. El resultado es una aproximación analítica útil para comparación y seguimiento del gasto legislativo, no para fines contables.
     </div>
   </div>
 
@@ -1746,7 +1746,6 @@ async function loadDatosRawAndRender(){
 
 // ── COSTOS ────────────────────────────────────────
 const SALARIO_FIJO = 7000;
-const MESES_PLANILLA = 9;   // la planilla de Espacio Cívico es el acumulado de 9 meses
 const PERIODO_INICIO = {year:2024, month:7};
 
 // Fecha de corte = fecha de extracción de los datos (no la fecha de hoy), para que el
@@ -1810,9 +1809,12 @@ function calcCostos(){
   const dipCosts = [];
   let totalCost = 0;
 
+  // Gasto acumulado = saldo de planilla publicado por Espacio Cívico + salario fijo × meses cerrados.
+  // Para repartirlo por año, la planilla se prorratea según los meses de cada año.
+  const totalMeses = getTotalMonths();
   dips.forEach(d=>{
-    const planilla = (Number(d.planilla_valor)||0) / MESES_PLANILLA;
-    const costoMensual = planilla + SALARIO_FIJO;
+    const planilla = Number(d.planilla_valor)||0;
+    const salarioAcumulado = SALARIO_FIJO * totalMeses;
     const byYear = {};
     let costoAcumulado = 0;
 
@@ -1821,7 +1823,7 @@ function calcCostos(){
       if(!meses) return;
       const fichas = partMap[d.nombre]?.[y] || new Set();
       const proyCount = fichas.size;
-      const costoAnual = costoMensual * meses;
+      const costoAnual = planilla * meses / totalMeses + SALARIO_FIJO * meses;
       const costoPorProy = proyCount>0 ? costoAnual/proyCount : 0;
       costoAcumulado += costoAnual;
       byYear[y] = {meses, proyectos:proyCount, costoAnual, costoPorProy};
@@ -1834,8 +1836,8 @@ function calcCostos(){
     const totalProy = Object.values(byYear).reduce((s,v)=>s+v.proyectos,0);
     dipCosts.push({
       nombre:d.nombre, partido:d.partido, foto:d.foto,
-      planilla, costoMensual, costoAcumulado,
-      totalMeses:getTotalMonths(), totalProy,
+      planilla, salarioAcumulado, costoAcumulado,
+      totalMeses, totalProy,
       costoPorProy: totalProy>0 ? costoAcumulado/totalProy : 0,
       byYear,
     });
@@ -1961,7 +1963,7 @@ function renderCostos(){
       </div></div></td>
       <td class="money-sm" style="text-align:right">${d.planilla>0?fmtUSD(d.planilla):'—'}</td>
       <td class="costo-col-sm" style="font-family:var(--fm);font-size:.72rem;text-align:right;color:var(--muted)">B/. 7,000</td>
-      <td class="money" style="font-size:.78rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(d.costoMensual)}</td>
+      <td class="money" style="font-size:.78rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(d.salarioAcumulado)}</td>
       <td class="costo-col-sm" style="font-family:var(--fm);font-size:.75rem;text-align:center">${d.totalMeses}</td>
       <td>
         <div class="money" style="font-size:.8rem;font-weight:700;white-space:nowrap">${fmtUSD(d.costoAcumulado)}</div>
