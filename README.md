@@ -24,7 +24,7 @@ Además:
 - **Modo claro/oscuro** y diseño adaptado a celular y tablet.
 
 ## ✍️ Autoría
-Creado por **@profealvarock** — [TikTok](https://www.tiktok.com/@profealvarock) · [LinkedIn](https://www.linkedin.com/in/profealvarock) · [Instagram](https://www.instagram.com/profealvarock) · [Facebook](https://www.facebook.com/profealvarock) · [X](https://x.com/profealvarock) · [Bluesky](https://bsky.app/profile/profealvarock.bsky.social) · [YouTube](https://www.youtube.com/@profealvarock)
+Creado por **@profealvarock** — [Portafolio](https://profealvarock.vercel.app/) · [TikTok](https://www.tiktok.com/@profealvarock) · [LinkedIn](https://www.linkedin.com/in/profealvarock) · [Instagram](https://www.instagram.com/profealvarock) · [Facebook](https://www.facebook.com/profealvarock) · [X](https://x.com/profealvarock) · [Bluesky](https://bsky.app/profile/profealvarock.bsky.social) · [YouTube](https://www.youtube.com/@profealvarock)
 
 ## 🗂️ Estructura
 ```
