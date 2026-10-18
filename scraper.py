@@ -531,6 +531,64 @@ def _prod_vacio():
             'leyes_detalle':[],'proyectos_detalle':[],'participaciones':[]}
 
 # ─────────────────────────────────────────────
+# TEMAS DE LOS PROYECTOS
+# ─────────────────────────────────────────────
+# Clasificación por palabras clave en el título (sin tildes, en mayúsculas). Un proyecto puede
+# tener varios temas; si no coincide con ninguno queda en "Otros". Las expresiones buscan el
+# inicio de palabra (\b), así "EDUCA" cubre EDUCACION, EDUCATIVO, EDUCADORES…
+TEMAS = [
+    ('Conmemoraciones y festivales', [r'\bDECLARA (EL |LA |LOS |LAS )?(DIA|SEMANA|MES|ANO)\b', r'\bDIA NACIONAL\b',
+        r'\bFESTIVAL', r'\bPATRONATO', r'\bFERIA\b', r'\bCONMEMORA', r'\bHIJ[OA]S? MERITORI', r'\bDENOMINA\b']),
+    ('Tratados y relaciones exteriores', [r'\b(CONVENIO|TRATADO|CONVENCION|PROTOCOLO)\b', r'\bAPRUEBA\b.*\bACUERDO\b',
+        r'\bRELACIONES EXTERIORES\b', r'\bDIPLOMATIC']),
+    ('Salud', [r'\bSALUD', r'\bMEDIC', r'\bHOSPITAL', r'\bENFERMEDAD', r'\bCANCER', r'\bSANITARI', r'\bPACIENTE',
+        r'\bVACUN', r'\bNUTRIC', r'\bDIABET', r'\bMENTAL\b', r'\bFARMAC', r'\bODONTOLOG', r'\bSANGRE', r'\bTRANSFUSION']),
+    ('Seguridad social y pensiones', [r'\bJUBILA', r'\bPENSION', r'\bCAJA DE SEGURO SOCIAL', r'\bSEGURIDAD SOCIAL',
+        r'\bINVALIDEZ', r'\b120 A LOS 65']),
+    ('Educación', [r'\bEDUCA', r'\bESCOLAR', r'\bESCUELA', r'\bUNIVERSI', r'\bESTUDIANT', r'\bDOCENTE', r'\bBECA',
+        r'\bENSENANZA', r'\bALFABETIZ', r'\bFORMACION\b', r'\bIFARHU', r'\bCAPACITACION']),
+    ('Justicia y seguridad', [r'\bPENAL\b', r'\bDELITO', r'\bPOLICI', r'\bCARCEL', r'\bPENITENCIARI', r'\bVIOLENCIA',
+        r'\bCRIMEN', r'\bCRIMINAL', r'\bPROCESAL', r'\bJUDICIAL', r'\bSEGURIDAD (CIUDADANA|PUBLICA)', r'\bARMAS\b',
+        r'\bDROGA', r'\bJUSTICIA', r'\bFEMICIDIO', r'\bVICTIMA']),
+    ('Economía, finanzas e impuestos', [r'\bIMPUEST', r'\bTRIBUT', r'\bFISCAL', r'\bPRESUPUEST', r'\bBANC', r'\bFINANCI',
+        r'\bCREDITO', r'\bINVERSION', r'\bECONOMI', r'\bADUAN', r'\bCOMERCI', r'\bCONSUMIDOR', r'\bEMPRESA',
+        r'\bMIPYME', r'\bPRESTAMO', r'\bDEUDA', r'\bFACTURACION', r'\bLOTERIA', r'\bALQUILER', r'\bGASTOS?\b']),
+    ('Trabajo y empleo', [r'\bTRABAJ', r'\bLABORAL', r'\bEMPLEO', r'\bSALARI', r'\bSERVIDORES PUBLICOS',
+        r'\bCARRERA ADMINISTRATIVA']),
+    ('Ambiente y energía', [r'\bAMBIENT', r'\bAGUA\b', r'\bHIDRIC', r'\bBOSQUE', r'\bAREAS? PROTEGIDA', r'\bCLIMA',
+        r'\bRESIDUO', r'\bRECICL', r'\bMINER', r'\bENERGI', r'\bELECTRIC', r'\bBIODIVERSIDAD', r'\bFAUNA',
+        r'\bMANGLAR', r'\bCONTAMINA', r'\bSOSTENIBL', r'\bPLASTIC', r'\bAGUAS\b', r'\bPOLIESTIRENO', r'\bENVASES']),
+    ('Agro y pesca', [r'\bAGROPECUARI', r'\bAGRICOL', r'\bAGRO', r'\bPRODUCTOR', r'\bGANAD', r'\bPESCA', r'\bACUICOL',
+        r'\bALIMENTARI', r'\bCAFE\b', r'\bARROZ', r'\bTIERRAS\b', r'\bBANANER']),
+    ('Infraestructura, transporte y vivienda', [r'\bTRANSPORT', r'\bVIAL', r'\bCARRETER', r'\bINFRAESTRUCTURA',
+        r'\bTRANSITO', r'\bPUERTO', r'\bAEROPUERT', r'\bVIVIENDA', r'\bHABITACIONAL', r'\bURBAN',
+        r'\bORDENAMIENTO TERRITORIAL', r'\bOBRAS? PUBLICAS', r'\bVEHICUL', r'\bSERVICIOS PUBLICOS']),
+    ('Cultura, deporte y turismo', [r'\bCULTUR', r'\bDEPORT', r'\bPATRIMONIO', r'\bARTE\b', r'\bARTIST', r'\bARTESAN',
+        r'\bFOLCLOR', r'\bMUSEO', r'\bTURIS', r'\bMUSICA']),
+    ('Niñez, familia e inclusión', [r'\bNINE?Z', r'\bNIN[OA]S?\b', r'\bADOLESCEN', r'\bJUVENTUD', r'\bJOVEN',
+        r'\bFAMILIA', r'\bMUJER', r'\bGENERO\b', r'\bDISCAPACI', r'\bADULTOS? MAYOR', r'\bPOBREZA', r'\bINDIGENA',
+        r'\bAFRODESCEN', r'\bIGUALDAD', r'\bINCLUSION', r'\bETNIA']),
+    ('Estado, gobierno y transparencia', [r'\bASAMBLEA', r'\bREGLAMENTO ORGANICO', r'\bELECTORAL', r'\bCONSTITUC',
+        r'\bMUNICIP', r'\bDESCENTRALIZ', r'\bADMINISTRACION PUBLICA', r'\bTRANSPARENCIA', r'\bCORREGIMIENTO',
+        r'\bDISTRITO\b', r'\bCONTRATACION', r'\bCONTRALORIA', r'\bCORRUPCION', r'\bCOMARCA', r'\bRENDICION DE CUENTAS',
+        r'\bPARTIDOS? POLITICO', r'\bGABINETE', r'\bSECTOR PUBLICO', r'\bAUTORIDADES DEL ESTADO', r'\bREGLAMENTACION', r'\bPASAPORTE', r'\bPOLITICO ADMINISTRATIVA', r'\bMIGRA']),
+    ('Tecnología y datos', [r'\bDIGITAL', r'\bTECNOLOG', r'\bINNOVAC', r'\bCIBER', r'\bINTERNET', r'\bDATOS PERSONALES',
+        r'\bINTELIGENCIA ARTIFICIAL', r'\bTELECOMUNICA', r'\bELECTRONIC']),
+]
+TEMA_OTROS = 'Otros'
+_TEMAS_RE = [(nombre, [re.compile(p) for p in pats]) for nombre, pats in TEMAS]
+
+def _sin_tildes(s):
+    s = unicodedata.normalize('NFD', (s or '').upper())
+    return ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+
+def clasificar_temas(titulo):
+    t = _sin_tildes(titulo)
+    temas = [nombre for nombre, pats in _TEMAS_RE if any(p.search(t) for p in pats)]
+    return temas or [TEMA_OTROS]
+
+
+# ─────────────────────────────────────────────
 # ÍNDICE DE EFECTIVIDAD LEGISLATIVA
 # ─────────────────────────────────────────────
 # El % crudo de proyectos que llegan a ley engaña por dos razones:
@@ -664,12 +722,27 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
 
     efectividad, efectividad_meta = calcular_efectividad(prod, datos)
 
+    # Temas: por proyecto (índices de la lista `temas` para que el JSON sea compacto),
+    # totales por tema y los temas que más trabaja cada diputado como autor.
+    nombres_temas = [n for n, _ in TEMAS] + [TEMA_OTROS]
+    temas_ficha = {r['ficha']: clasificar_temas(r['titulo'] or r['anteproyecto'] or r['proyecto']) for r in datos}
+    por_tema = {n: {'proyectos': 0, 'leyes': 0} for n in nombres_temas}
+    for r in datos:
+        for t in temas_ficha[r['ficha']]:
+            por_tema[t]['proyectos'] += 1
+            por_tema[t]['leyes'] += r['etapa'] == 'Ley'
+
     # Enriquecer diputados
     diputados_enriq = []
     for d in dips:
         p = prod.get(d['nombre']) or _prod_vacio()
         ef = efectividad.get(d['nombre'])
-        p = {**p, 'leyes_copatrocinio': ef['copat']['leyes'] if ef else 0, 'efectividad_ley': ef}
+        temas_dip = defaultdict(int)
+        for x in p['proyectos_detalle']:
+            for t in temas_ficha.get(x['ficha'], []):
+                if t != TEMA_OTROS: temas_dip[t] += 1
+        p = {**p, 'leyes_copatrocinio': ef['copat']['leyes'] if ef else 0, 'efectividad_ley': ef,
+             'temas_autor': dict(sorted(temas_dip.items(), key=lambda kv: (-kv[1], kv[0]))[:5])}
         m = (metricas or {}).get(d.get('slug')) or (metricas or {}).get(slug_from_href(d.get('perfil', ''))) or {}
         m = {k:v for k,v in m.items() if k not in ('nombre','partido_monitoreo')}
         if 'comisiones' in m:   # también corrige datos guardados con el formato anterior
@@ -766,6 +839,9 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
         'por_provincia': pv_final,
         'por_provincia_filtros': pv_filtros_final,
         'efectividad_meta': efectividad_meta,
+        'temas': nombres_temas,
+        'por_tema': por_tema,
+        'temas_por_ficha': {f: [nombres_temas.index(t) for t in ts] for f, ts in temas_ficha.items()},
         'proponentes_sin_match': [{'nombre': k, 'firmas': v}
                                   for k, v in sorted(sin_match.items(), key=lambda x: -x[1])],
     }
@@ -812,6 +888,115 @@ def actualizar_historico(resumen, respaldos, ruta='historico.json'):
                   f, ensure_ascii=False, separators=(',', ':'))
     print(f"  historico.json: {len(snaps)} fotos (última {fecha})")
 
+# ─────────────────────────────────────────────
+# PÁGINAS PARA COMPARTIR (una por diputado)
+# ─────────────────────────────────────────────
+# El sitio es una sola página: un enlace #diputado=... siempre mostraría la vista previa genérica.
+# Estas páginas estáticas llevan título, descripción y cifras de cada diputado (lo que leen
+# WhatsApp, X, Facebook y Google) y redirigen a las personas a la ficha completa del sitio.
+SITE_URL = 'https://observatoriolegistalivopa.netlify.app'
+CARPETA_DIPUTADOS = 'diputado'
+
+def _fmt_num(v):
+    return f"{int(round(v)):,}" if isinstance(v, (int, float)) else '—'
+
+def _pagina_diputado(d, fecha):
+    from html import escape as e
+    slug = d['slug']
+    url = f"{SITE_URL}/{CARPETA_DIPUTADOS}/{slug}/"
+    destino = f"/#diputado={slug}"
+    ef = (d.get('efectividad_ley') or {}).get('autor') or {}
+    indice = ef.get('indice')
+    lectura = ('pocos datos' if ef.get('evidencia') == 'baja' else
+               'sobre el promedio' if (indice or 0) >= 120 else
+               'bajo el promedio' if indice is not None and indice <= 80 else 'en el promedio')
+    lugar = ' · '.join(x for x in (d.get('provincia'), d.get('circuito')) if x)
+    partes = [f"{d.get('proyectos', 0)} proyectos propuestos", f"{d.get('leyes', 0)} leyes",
+              f"{d.get('co_patrocinios', 0)} co-patrocinios"]
+    if indice is not None:
+        partes.append(f"efectividad {indice} ({lectura}; 100 = promedio)")
+    if d.get('asistencia_pleno') is not None:
+        partes.append(f"asistencia al pleno {d['asistencia_pleno']:g}/5")
+    descripcion = f"{d.get('partido') or 'Diputado'} · {lugar}. " + ', '.join(partes) + '.'
+    temas = ', '.join(list((d.get('temas_autor') or {}).keys())[:3])
+    filas = [
+        ('Proyectos propuestos', d.get('proyectos', 0)), ('Co-patrocinios', d.get('co_patrocinios', 0)),
+        ('Leyes aprobadas', d.get('leyes', 0)),
+        ('Índice de efectividad', f"{indice} · {lectura}" if indice is not None else '—'),
+        ('Asistencia al pleno', f"{d['asistencia_pleno']:g} / 5" if d.get('asistencia_pleno') is not None else '—'),
+        ('Planilla (Espacio Cívico)', f"B/. {_fmt_num(d.get('planilla_valor'))}" if d.get('planilla_valor') is not None else '—'),
+    ]
+    persona = {'@context': 'https://schema.org', '@type': 'Person', 'name': d['nombre'],
+               'jobTitle': 'Diputado de la Asamblea Nacional de Panamá', 'url': url}
+    if d.get('partido'): persona['affiliation'] = {'@type': 'Organization', 'name': d['partido']}
+    return f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{e(d['nombre'])} — Observatorio Legislativo</title>
+<meta name="description" content="{e(descripcion)}">
+<link rel="canonical" href="{url}">
+<link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="{url}">
+<meta property="og:title" content="{e(d['nombre'])} — Observatorio Legislativo">
+<meta property="og:description" content="{e(descripcion)}">
+<meta property="og:image" content="{SITE_URL}/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@profealvarock">
+<script type="application/ld+json">{json.dumps(persona, ensure_ascii=False)}</script>
+<style>
+body{{margin:0;background:#080c14;color:#e2e8f0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;justify-content:center;padding:32px 16px}}
+main{{max-width:560px;width:100%}} a{{color:#60a5fa}} h1{{margin:.2em 0 .1em;font-size:1.7rem}}
+.sub{{color:#7a8fb0;margin:0 0 18px}} table{{width:100%;border-collapse:collapse;margin:12px 0 18px}}
+td{{padding:8px 0;border-bottom:1px solid #1a2940}} td+td{{text-align:right;font-weight:600}}
+.btn{{display:inline-block;background:#2563eb;color:#fff;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}}
+.pie{{color:#7a8fb0;font-size:.8rem;margin-top:22px}}
+</style>
+</head>
+<body>
+<main>
+  <a href="/"><img src="/img/logo.svg" alt="Observatorio Legislativo" width="44" height="44"></a>
+  <h1>{e(d['nombre'])}</h1>
+  <p class="sub">{e(d.get('partido') or '')} · {e(lugar)}</p>
+  <table>{''.join(f'<tr><td>{e(k)}</td><td>{e(str(v))}</td></tr>' for k, v in filas)}</table>
+  {f'<p>Temas que más propone: {e(temas)}.</p>' if temas else ''}
+  <a class="btn" href="{destino}">Ver la ficha completa en el observatorio →</a>
+  <p class="pie">Datos al {e(fecha)} · Fuentes: Asamblea Nacional y Espacio Cívico · Observatorio Legislativo por @profealvarock</p>
+</main>
+<script>location.replace({json.dumps(destino)});</script>
+</body>
+</html>
+"""
+
+def generar_paginas_diputados(resumen):
+    import os, shutil
+    ts = resumen.get('fecha_extraccion', '')
+    fecha = f"{ts[6:8]}/{ts[4:6]}/{ts[:4]}" if len(ts) >= 8 else ''
+    os.makedirs(CARPETA_DIPUTADOS, exist_ok=True)
+    slugs = set()
+    for d in resumen.get('diputados', []):
+        if not d.get('slug'): continue
+        slugs.add(d['slug'])
+        carpeta = os.path.join(CARPETA_DIPUTADOS, d['slug'])
+        os.makedirs(carpeta, exist_ok=True)
+        with open(os.path.join(carpeta, 'index.html'), 'w', encoding='utf-8') as f:
+            f.write(_pagina_diputado(d, fecha))
+    # Quitar páginas de diputados que ya no están
+    for nombre in os.listdir(CARPETA_DIPUTADOS):
+        if nombre not in slugs and os.path.isdir(os.path.join(CARPETA_DIPUTADOS, nombre)):
+            shutil.rmtree(os.path.join(CARPETA_DIPUTADOS, nombre))
+    hoy = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}" if len(ts) >= 8 else ''
+    urls = [f"{SITE_URL}/"] + [f"{SITE_URL}/{CARPETA_DIPUTADOS}/{s}/" for s in sorted(slugs)]
+    with open('sitemap.xml', 'w', encoding='utf-8') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        f.writelines(f"  <url><loc>{u}</loc><lastmod>{hoy}</lastmod></url>\n" for u in urls)
+        f.write('</urlset>\n')
+    print(f"  Páginas para compartir: {len(slugs)} diputados + sitemap.xml")
+
 def solo_resumen():
     """Regenera resumen.json a partir de los JSON ya guardados (sin navegador)."""
     raw = _leer_json('datos.json') or {}
@@ -823,6 +1008,7 @@ def solo_resumen():
     resumen = generar_resumen(datos, dips, ts, metricas, (_leer_json('resumen.json') or {}).get('respaldos'))
     with open("resumen.json", "w", encoding="utf-8") as f:
         json.dump(resumen, f, ensure_ascii=False, indent=2)
+    generar_paginas_diputados(resumen)
     print(f"resumen.json regenerado: {len(datos)} proyectos, {len(dips)} diputados (extracción {ts})")
 
 def main():
@@ -881,6 +1067,10 @@ def main():
         actualizar_historico(resumen, RESPALDOS)
     except Exception as e:
         print(f"  ADVERTENCIA: no se pudo actualizar historico.json: {e}")
+    try:
+        generar_paginas_diputados(resumen)
+    except Exception as e:
+        print(f"  ADVERTENCIA: no se pudieron generar las páginas de diputados: {e}")
 
     print(f"\n{'='*55}")
     print(f" COMPLETADO")

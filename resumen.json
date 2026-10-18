@@ -56,6 +56,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1PcyW_d-3bt3tmy--LTGi-0b29Aqpimax",
       "perfil": "https://espaciocivico.org/diputados/ernesto-cedeno",
       "slug": "ernesto-cedeno",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ernesto-cedeno",
+      "planilla_texto": "B/. 12,000",
+      "planilla_valor": 12000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 62,
       "leyes": 3,
       "co_patrocinios": 49,
@@ -594,21 +609,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ernesto-cedeno",
-      "planilla_texto": "B/. 12,000",
-      "planilla_valor": 12000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 15,
+        "Estado, gobierno y transparencia": 8,
+        "Justicia y seguridad": 7,
+        "Salud": 7,
+        "Tecnología y datos": 7
+      }
     },
     {
       "nombre": "Jorge Bloise Iglesias",
@@ -619,6 +626,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1LtL0bmfKWnmQ-JRnFNMQrLKBz-jYqzWL",
       "perfil": "https://espaciocivico.org/diputados/jorge-bloise-iglesias",
       "slug": "jorge-bloise-iglesias",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-bloise-iglesias",
+      "planilla_texto": "B/. 7,000",
+      "planilla_valor": 7000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 29,
       "leyes": 1,
       "co_patrocinios": 134,
@@ -999,22 +1022,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-bloise-iglesias",
-      "planilla_texto": "B/. 7,000",
-      "planilla_valor": 7000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Educación, Cultura y Deporte"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 9,
+        "Economía, finanzas e impuestos": 6,
+        "Cultura, deporte y turismo": 3,
+        "Infraestructura, transporte y vivienda": 2,
+        "Salud": 2
+      }
     },
     {
       "nombre": "Alexandra Brenes",
@@ -1025,6 +1039,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1WXR4HeE_hvLDjR9igLCi33w6Rah2EpoJ",
       "perfil": "https://espaciocivico.org/diputados/alexandra-brenes",
       "slug": "alexandra-brenes",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/alexandra-brenes",
+      "planilla_texto": "B/. 15,150",
+      "planilla_valor": 15150.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 27,
       "leyes": 0,
       "co_patrocinios": 101,
@@ -1352,22 +1382,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/alexandra-brenes",
-      "planilla_texto": "B/. 15,150",
-      "planilla_valor": 15150.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 8,
+        "Justicia y seguridad": 7,
+        "Economía, finanzas e impuestos": 5,
+        "Ambiente y energía": 3,
+        "Educación": 3
+      }
     },
     {
       "nombre": "Lenin Alberto Ulate",
@@ -1378,6 +1399,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1BdKRjt5UcRwHzIvD3c0SqnP6Wi71SP4l",
       "perfil": "https://espaciocivico.org/diputados/lenin-alberto-ulate",
       "slug": "lenin-alberto-ulate",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/lenin-alberto-ulate",
+      "planilla_texto": "B/. 10,300",
+      "planilla_valor": 10300.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 27,
       "leyes": 0,
       "co_patrocinios": 139,
@@ -1744,22 +1781,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/lenin-alberto-ulate",
-      "planilla_texto": "B/. 10,300",
-      "planilla_valor": 10300.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Ambiente y energía": 8,
+        "Justicia y seguridad": 5,
+        "Economía, finanzas e impuestos": 3,
+        "Cultura, deporte y turismo": 2,
+        "Estado, gobierno y transparencia": 2
+      }
     },
     {
       "nombre": "Graciela Hernández",
@@ -1770,6 +1798,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1g1lq6mRDeY-qB6I9C0QLC7mTQyBikJlv",
       "perfil": "https://espaciocivico.org/diputados/graciela-hernandez",
       "slug": "graciela-hernandez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/graciela-hernandez",
+      "planilla_texto": "B/. 22,650",
+      "planilla_valor": 22650.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 25,
       "leyes": 2,
       "co_patrocinios": 63,
@@ -2057,22 +2101,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/graciela-hernandez",
-      "planilla_texto": "B/. 22,650",
-      "planilla_valor": 22650.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 5,
+        "Economía, finanzas e impuestos": 4,
+        "Educación": 4,
+        "Ambiente y energía": 3,
+        "Cultura, deporte y turismo": 2
+      }
     },
     {
       "nombre": "Neftalí Zamora",
@@ -2083,6 +2118,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1geqBMqEZSodIQSn8rP4Yw-jf2toM09XZ",
       "perfil": "https://espaciocivico.org/diputados/neftali-zamora",
       "slug": "neftali-zamora",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/neftali-zamora",
+      "planilla_texto": "B/. 14,000",
+      "planilla_valor": 14000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 23,
       "leyes": 1,
       "co_patrocinios": 81,
@@ -2368,22 +2419,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/neftali-zamora",
-      "planilla_texto": "B/. 14,000",
-      "planilla_valor": 14000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 3,
+        "Estado, gobierno y transparencia": 3,
+        "Cultura, deporte y turismo": 2,
+        "Infraestructura, transporte y vivienda": 2,
+        "Ambiente y energía": 1
+      }
     },
     {
       "nombre": "Patsy Lee Rentería",
@@ -2394,6 +2436,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1j-BLrnzwbewFubNVYPQmsx7XYPiQX_Wo",
       "perfil": "https://espaciocivico.org/diputados/patsy-lee-renteria",
       "slug": "patsy-lee-renteria",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/patsy-lee-renteria",
+      "planilla_texto": "B/. 15,600",
+      "planilla_valor": 15600.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Educación, Cultura y Deporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 22,
       "leyes": 2,
       "co_patrocinios": 90,
@@ -2685,22 +2743,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/patsy-lee-renteria",
-      "planilla_texto": "B/. 15,600",
-      "planilla_valor": 15600.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Educación, Cultura y Deporte",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 5,
+        "Justicia y seguridad": 4,
+        "Cultura, deporte y turismo": 3,
+        "Estado, gobierno y transparencia": 3,
+        "Agro y pesca": 2
+      }
     },
     {
       "nombre": "Eduardo Gaitán",
@@ -2711,6 +2760,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/17WCuRHtbey41aSWf1GaRGCKKBFzQurwG",
       "perfil": "https://espaciocivico.org/diputados/eduardo-gaitan",
       "slug": "eduardo-gaitan",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-gaitan",
+      "planilla_texto": "B/. 6,800",
+      "planilla_valor": 6800.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.4,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 20,
       "leyes": 1,
       "co_patrocinios": 99,
@@ -2991,22 +3056,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-gaitan",
-      "planilla_texto": "B/. 6,800",
-      "planilla_valor": 6800.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.4,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Economía y Finanzas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 7,
+        "Estado, gobierno y transparencia": 6,
+        "Justicia y seguridad": 4,
+        "Ambiente y energía": 2,
+        "Infraestructura, transporte y vivienda": 2
+      }
     },
     {
       "nombre": "José Pérez Barboni",
@@ -3017,6 +3073,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1jdQaEAFfkqKtIVahwrTSz0AuFmYjhrde",
       "perfil": "https://espaciocivico.org/diputados/jose-perez-barboni",
       "slug": "jose-perez-barboni",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-perez-barboni",
+      "planilla_texto": "B/. 14,500",
+      "planilla_valor": 14500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 20,
       "leyes": 4,
       "co_patrocinios": 105,
@@ -3322,22 +3394,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-perez-barboni",
-      "planilla_texto": "B/. 14,500",
-      "planilla_valor": 14500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 7,
+        "Economía, finanzas e impuestos": 5,
+        "Estado, gobierno y transparencia": 5,
+        "Cultura, deporte y turismo": 2,
+        "Ambiente y energía": 1
+      }
     },
     {
       "nombre": "Manuel Cheng",
@@ -3348,6 +3411,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1AstNu8E1UOdc0gfC5_BdULrlKMnzOEJP",
       "perfil": "https://espaciocivico.org/diputados/manuel-cheng",
       "slug": "manuel-cheng",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cheng",
+      "planilla_texto": "B/. 25,750",
+      "planilla_valor": 25750.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.4,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 20,
       "leyes": 4,
       "co_patrocinios": 82,
@@ -3629,22 +3708,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cheng",
-      "planilla_texto": "B/. 25,750",
-      "planilla_valor": 25750.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.4,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Economía y Finanzas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 4,
+        "Ambiente y energía": 3,
+        "Infraestructura, transporte y vivienda": 3,
+        "Justicia y seguridad": 3,
+        "Niñez, familia e inclusión": 2
+      }
     },
     {
       "nombre": "Janine Prado",
@@ -3655,6 +3725,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1M6i3K-1YCPExJixXNfk58EXAPV9nTCwP",
       "perfil": "https://espaciocivico.org/diputados/janine-prado",
       "slug": "janine-prado",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/janine-prado",
+      "planilla_texto": "B/. 6,750",
+      "planilla_valor": 6750.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 19,
       "leyes": 1,
       "co_patrocinios": 148,
@@ -3980,22 +4066,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/janine-prado",
-      "planilla_texto": "B/. 6,750",
-      "planilla_valor": 6750.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Trabajo, Salud y Desarrollo Social"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 4,
+        "Salud": 3,
+        "Conmemoraciones y festivales": 2,
+        "Economía, finanzas e impuestos": 2,
+        "Estado, gobierno y transparencia": 2
+      }
     },
     {
       "nombre": "Marcos Castillero",
@@ -4006,6 +4083,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1dJMS71bHvC3LW-KcddiP3oQ888jxlEXY",
       "perfil": "https://espaciocivico.org/diputados/marcos-castillero",
       "slug": "marcos-castillero",
+      "provincia_monitoreo": "Herrera",
+      "circuito_monitoreo": "6-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/marcos-castillero",
+      "planilla_texto": "B/. 226,282",
+      "planilla_valor": 226282.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 19,
       "leyes": 2,
       "co_patrocinios": 31,
@@ -4219,22 +4312,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Herrera",
-      "circuito_monitoreo": "6-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/marcos-castillero",
-      "planilla_texto": "B/. 226,282",
-      "planilla_valor": 226282.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Agro y pesca": 3,
+        "Cultura, deporte y turismo": 3,
+        "Ambiente y energía": 2,
+        "Economía, finanzas e impuestos": 2,
+        "Salud": 2
+      }
     },
     {
       "nombre": "Jhonatan Vega",
@@ -4245,6 +4329,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1exdJAhIJALNkVQUztGavYDoydyiHAkEI",
       "perfil": "https://espaciocivico.org/diputados/jhonatan-vega",
       "slug": "jhonatan-vega",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jhonatan-vega",
+      "planilla_texto": "B/. 13,500",
+      "planilla_valor": 13500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 18,
       "leyes": 0,
       "co_patrocinios": 86,
@@ -4495,22 +4595,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jhonatan-vega",
-      "planilla_texto": "B/. 13,500",
-      "planilla_valor": 13500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 4,
+        "Estado, gobierno y transparencia": 4,
+        "Economía, finanzas e impuestos": 2,
+        "Justicia y seguridad": 2,
+        "Ambiente y energía": 1
+      }
     },
     {
       "nombre": "Javier Sucre",
@@ -4521,6 +4612,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1LB7AtgJouF02ReNKM7673o67C4mlFsbU",
       "perfil": "https://espaciocivico.org/diputados/javier-sucre",
       "slug": "javier-sucre",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/javier-sucre",
+      "planilla_texto": "B/. 65,045",
+      "planilla_valor": 65045.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 0,
       "co_patrocinios": 12,
@@ -4690,22 +4797,13 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/javier-sucre",
-      "planilla_texto": "B/. 65,045",
-      "planilla_valor": 65045.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 5,
+        "Estado, gobierno y transparencia": 5,
+        "Ambiente y energía": 3,
+        "Seguridad social y pensiones": 2,
+        "Infraestructura, transporte y vivienda": 1
+      }
     },
     {
       "nombre": "Luis Duke",
@@ -4716,6 +4814,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1qu3Y5QOuHgVHbvCgM4IVvPcL7pj-as8G",
       "perfil": "https://espaciocivico.org/diputados/luis-duke",
       "slug": "luis-duke",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-duke",
+      "planilla_texto": "B/. 35,600",
+      "planilla_valor": 35600.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 1,
       "co_patrocinios": 120,
@@ -5000,22 +5114,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-duke",
-      "planilla_texto": "B/. 35,600",
-      "planilla_valor": 35600.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 8,
+        "Justicia y seguridad": 4,
+        "Ambiente y energía": 3,
+        "Economía, finanzas e impuestos": 3,
+        "Tecnología y datos": 3
+      }
     },
     {
       "nombre": "Roberto Zuñiga",
@@ -5026,6 +5131,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1ikvRFnKl6U2bMNySKm5amHNDKYppcskS",
       "perfil": "https://espaciocivico.org/diputados/roberto-zuniga",
       "slug": "roberto-zuniga",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-zuniga",
+      "planilla_texto": "B/. 13,700",
+      "planilla_valor": 13700.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 3,
       "co_patrocinios": 124,
@@ -5323,22 +5444,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-zuniga",
-      "planilla_texto": "B/. 13,700",
-      "planilla_valor": 13700.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Trabajo, Salud y Desarrollo Social"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Cultura, deporte y turismo": 4,
+        "Estado, gobierno y transparencia": 3,
+        "Justicia y seguridad": 3,
+        "Salud": 2,
+        "Ambiente y energía": 1
+      }
     },
     {
       "nombre": "Walkiria Chandler",
@@ -5349,6 +5461,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/walkiria-chandler",
+      "planilla_texto": "B/. 12,500",
+      "planilla_valor": 12500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 0,
       "co_patrocinios": 85,
@@ -5588,22 +5716,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/walkiria-chandler",
-      "planilla_texto": "B/. 12,500",
-      "planilla_valor": 12500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 5,
+        "Economía, finanzas e impuestos": 3,
+        "Tecnología y datos": 3,
+        "Estado, gobierno y transparencia": 2,
+        "Ambiente y energía": 1
+      }
     },
     {
       "nombre": "Yarelis Rodríguez",
@@ -5614,6 +5733,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yarelis-rodriguez",
+      "planilla_texto": "B/. 17,000",
+      "planilla_valor": 17000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Población, Ambiente y Desarrollo"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 1,
       "co_patrocinios": 110,
@@ -5887,22 +6022,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yarelis-rodriguez",
-      "planilla_texto": "B/. 17,000",
-      "planilla_valor": 17000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Población, Ambiente y Desarrollo"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 7,
+        "Ambiente y energía": 2,
+        "Estado, gobierno y transparencia": 2,
+        "Salud": 2,
+        "Tecnología y datos": 2
+      }
     },
     {
       "nombre": "Crispiano Adames",
@@ -5913,6 +6039,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1kagY9g5K04dcwJrwgKS5PZ800xi-Exkw",
       "perfil": "https://espaciocivico.org/diputados/crispiano-adames",
       "slug": "crispiano-adames",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/crispiano-adames",
+      "planilla_texto": "B/. 122,850",
+      "planilla_valor": 122850.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 16,
       "leyes": 1,
       "co_patrocinios": 12,
@@ -6080,22 +6222,13 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/crispiano-adames",
-      "planilla_texto": "B/. 122,850",
-      "planilla_valor": 122850.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Comercio y Asuntos Económicos"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Salud": 5,
+        "Economía, finanzas e impuestos": 3,
+        "Educación": 3,
+        "Estado, gobierno y transparencia": 2,
+        "Ambiente y energía": 1
+      }
     },
     {
       "nombre": "Dana Castañeda",
@@ -6106,6 +6239,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/1YUtF-yJooFQNig4wD88dwxjilYEDA5__",
       "perfil": "https://espaciocivico.org/diputados/dana-castaneda",
       "slug": "dana-castaneda",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/dana-castaneda",
+      "planilla_texto": "B/. 120,675",
+      "planilla_valor": 120675.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Educación, Cultura y Deporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 16,
       "leyes": 1,
       "co_patrocinios": 22,
@@ -6284,23 +6434,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/dana-castaneda",
-      "planilla_texto": "B/. 120,675",
-      "planilla_valor": 120675.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Educación, Cultura y Deporte",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 3
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 5,
+        "Salud": 3,
+        "Agro y pesca": 2,
+        "Cultura, deporte y turismo": 2,
+        "Niñez, familia e inclusión": 2
+      }
     },
     {
       "nombre": "Carlos Saldaña",
@@ -6311,6 +6451,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/18m7F6P_TB9lBbgQDViHVpfOz7elwLnDK",
       "perfil": "https://espaciocivico.org/diputados/carlos-saldana",
       "slug": "carlos-saldana",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-saldana",
+      "planilla_texto": "B/. 16,750",
+      "planilla_valor": 16750.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.8,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 15,
       "leyes": 1,
       "co_patrocinios": 77,
@@ -6537,22 +6693,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-saldana",
-      "planilla_texto": "B/. 16,750",
-      "planilla_valor": 16750.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.8,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Economía y Finanzas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Agro y pesca": 3,
+        "Economía, finanzas e impuestos": 3,
+        "Justicia y seguridad": 3,
+        "Ambiente y energía": 2,
+        "Conmemoraciones y festivales": 2
+      }
     },
     {
       "nombre": "Jairo Salazar",
@@ -6563,6 +6710,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1urCE70K7_QPFh6hzfx8trAmUBVeHZxRj",
       "perfil": "https://espaciocivico.org/diputados/jairo-salazar",
       "slug": "jairo-salazar",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jairo-salazar",
+      "planilla_texto": "B/. 75,375",
+      "planilla_valor": 75375.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 15,
       "leyes": 1,
       "co_patrocinios": 14,
@@ -6724,22 +6887,13 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jairo-salazar",
-      "planilla_texto": "B/. 75,375",
-      "planilla_valor": 75375.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Educación, Cultura y Deporte"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 4,
+        "Justicia y seguridad": 4,
+        "Educación": 2,
+        "Infraestructura, transporte y vivienda": 2,
+        "Seguridad social y pensiones": 2
+      }
     },
     {
       "nombre": "Jorge González",
@@ -6750,6 +6904,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1M5jz4Dz0AgT_nZJg5qoqI4-O3zY0podR",
       "perfil": "https://espaciocivico.org/diputados/jorge-gonzalez",
       "slug": "jorge-gonzalez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-gonzalez",
+      "planilla_texto": "B/. 13,400",
+      "planilla_valor": 13400.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 15,
       "leyes": 0,
       "co_patrocinios": 123,
@@ -7013,21 +7182,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-gonzalez",
-      "planilla_texto": "B/. 13,400",
-      "planilla_valor": 13400.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comercio y Asuntos Económicos"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Justicia y seguridad": 4,
+        "Niñez, familia e inclusión": 3,
+        "Economía, finanzas e impuestos": 2,
+        "Estado, gobierno y transparencia": 2,
+        "Educación": 1
+      }
     },
     {
       "nombre": "Luis Camacho Castro",
@@ -7038,6 +7199,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1IepU3c-QMYJreqNIGzZ0EhWT0ZAYi_Kh",
       "perfil": "https://espaciocivico.org/diputados/luis-camacho-castro",
       "slug": "luis-camacho-castro",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-camacho-castro",
+      "planilla_texto": "B/. 24,450",
+      "planilla_valor": 24450.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 15,
       "leyes": 2,
       "co_patrocinios": 32,
@@ -7224,22 +7401,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-camacho-castro",
-      "planilla_texto": "B/. 24,450",
-      "planilla_valor": 24450.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 6,
+        "Economía, finanzas e impuestos": 4,
+        "Estado, gobierno y transparencia": 4,
+        "Salud": 2,
+        "Trabajo y empleo": 2
+      }
     },
     {
       "nombre": "Jamis Acosta",
@@ -7250,6 +7418,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/1AJ3xto-Z0RPTQfL6y_E7R2gc5DDTu5OE",
       "perfil": "https://espaciocivico.org/diputados/jamis-acosta",
       "slug": "jamis-acosta",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jamis-acosta",
+      "planilla_texto": "B/. 17,550",
+      "planilla_valor": 17550.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Comercio y Asuntos Económicos",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 14,
       "leyes": 2,
       "co_patrocinios": 12,
@@ -7409,23 +7594,11 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jamis-acosta",
-      "planilla_texto": "B/. 17,550",
-      "planilla_valor": 17550.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Comercio y Asuntos Económicos",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 3
+      "temas_autor": {
+        "Justicia y seguridad": 5,
+        "Ambiente y energía": 2,
+        "Infraestructura, transporte y vivienda": 1
+      }
     },
     {
       "nombre": "Medin Jiménez Pitti",
@@ -7436,6 +7609,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1bzczX1uQsA7ZObR9g3aMyrVZqhphKSfd",
       "perfil": "https://espaciocivico.org/diputados/medin-jimenez-pitti",
       "slug": "medin-jimenez-pitti",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/medin-jimenez-pitti",
+      "planilla_texto": "B/. 23,200",
+      "planilla_valor": 23200.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 14,
       "leyes": 1,
       "co_patrocinios": 50,
@@ -7629,22 +7818,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/medin-jimenez-pitti",
-      "planilla_texto": "B/. 23,200",
-      "planilla_valor": 23200.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 8,
+        "Agro y pesca": 3,
+        "Estado, gobierno y transparencia": 3,
+        "Justicia y seguridad": 2,
+        "Tecnología y datos": 2
+      }
     },
     {
       "nombre": "Yuzaida Marín",
@@ -7655,6 +7835,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yuzaida-marin",
+      "planilla_texto": "B/. 38,100",
+      "planilla_valor": 38100.0,
+      "asistencia_pleno": null,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 14,
       "leyes": 1,
       "co_patrocinios": 32,
@@ -7827,22 +8023,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yuzaida-marin",
-      "planilla_texto": "B/. 38,100",
-      "planilla_valor": 38100.0,
-      "asistencia_pleno": null,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Educación, Cultura y Deporte"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 5,
+        "Niñez, familia e inclusión": 4,
+        "Conmemoraciones y festivales": 3,
+        "Justicia y seguridad": 3,
+        "Salud": 3
+      }
     },
     {
       "nombre": "Francisco Brea",
@@ -7853,6 +8040,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1Y3Ain4tNLQHmbw3eqealTt79AESfx0Fc",
       "perfil": "https://espaciocivico.org/diputados/francisco-brea",
       "slug": "francisco-brea",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/francisco-brea",
+      "planilla_texto": "B/. 28,050",
+      "planilla_valor": 28050.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.6,
+      "comisiones": [
+        "Economía y Finanzas",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 13,
       "leyes": 3,
       "co_patrocinios": 65,
@@ -8061,22 +8264,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/francisco-brea",
-      "planilla_texto": "B/. 28,050",
-      "planilla_valor": 28050.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.6,
-      "comisiones": [
-        "Economía y Finanzas",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Ambiente y energía": 4,
+        "Estado, gobierno y transparencia": 4,
+        "Agro y pesca": 3,
+        "Justicia y seguridad": 2,
+        "Niñez, familia e inclusión": 2
+      }
     },
     {
       "nombre": "Raúl Pineda",
@@ -8087,6 +8281,24 @@
       "foto": "https://espaciocivico.org/api/drive-image/1NUJpKCIyY7uNj23WAfPSnnuvcuYySFVY",
       "perfil": "https://espaciocivico.org/diputados/raul-pineda",
       "slug": "raul-pineda",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/raul-pineda",
+      "planilla_texto": "B/. 81,600",
+      "planilla_valor": 81600.0,
+      "asistencia_pleno": 3.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Economía y Finanzas",
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 4,
       "proyectos": 12,
       "leyes": 2,
       "co_patrocinios": 10,
@@ -8228,24 +8440,13 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/raul-pineda",
-      "planilla_texto": "B/. 81,600",
-      "planilla_valor": 81600.0,
-      "asistencia_pleno": 3.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Economía y Finanzas",
-        "Gobierno, Justicia y Asuntos Constitucionales",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 4
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 3,
+        "Infraestructura, transporte y vivienda": 3,
+        "Salud": 2,
+        "Educación": 1,
+        "Estado, gobierno y transparencia": 1
+      }
     },
     {
       "nombre": "Ricardo Vigil López",
@@ -8256,6 +8457,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1z8CwEOPCxvjQ9llva6ePMFkIzc55aPDp",
       "perfil": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
       "slug": "ricardo-vigil-lopez",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
+      "planilla_texto": "B/. 27,025",
+      "planilla_valor": 27025.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 2.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 12,
       "leyes": 1,
       "co_patrocinios": 54,
@@ -8437,22 +8654,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
-      "planilla_texto": "B/. 27,025",
-      "planilla_valor": 27025.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 2.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 4,
+        "Infraestructura, transporte y vivienda": 3,
+        "Ambiente y energía": 2,
+        "Economía, finanzas e impuestos": 2,
+        "Trabajo y empleo": 2
+      }
     },
     {
       "nombre": "Yamireliz Chong",
@@ -8463,6 +8671,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yamireliz-chong",
+      "planilla_texto": "B/. 9,100",
+      "planilla_valor": 9100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.8,
+      "comisiones": [
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 12,
       "leyes": 0,
       "co_patrocinios": 115,
@@ -8697,22 +8921,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yamireliz-chong",
-      "planilla_texto": "B/. 9,100",
-      "planilla_valor": 9100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.8,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 3,
+        "Justicia y seguridad": 3,
+        "Infraestructura, transporte y vivienda": 2,
+        "Ambiente y energía": 1,
+        "Estado, gobierno y transparencia": 1
+      }
     },
     {
       "nombre": "Augusto Palacios",
@@ -8723,6 +8938,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1OJ0lDLxr_BjudXegLPngp0DdVsaL9RlX",
       "perfil": "https://espaciocivico.org/diputados/augusto-palacios",
       "slug": "augusto-palacios",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/augusto-palacios",
+      "planilla_texto": "B/. 20,500",
+      "planilla_valor": 20500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.6,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 10,
       "leyes": 2,
       "co_patrocinios": 85,
@@ -8925,22 +9156,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/augusto-palacios",
-      "planilla_texto": "B/. 20,500",
-      "planilla_valor": 20500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.6,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 3,
+        "Justicia y seguridad": 3,
+        "Estado, gobierno y transparencia": 2,
+        "Agro y pesca": 1,
+        "Cultura, deporte y turismo": 1
+      }
     },
     {
       "nombre": "Miguel Ángel Campos",
@@ -8951,6 +9173,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1hcMWMaf8IEKqoOgsfK81PBJDFKmT3BZl",
       "perfil": "https://espaciocivico.org/diputados/miguel-angel-campos",
       "slug": "miguel-angel-campos",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/miguel-angel-campos",
+      "planilla_texto": "B/. 11,300",
+      "planilla_valor": 11300.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Relaciones Exteriores"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 10,
       "leyes": 2,
       "co_patrocinios": 205,
@@ -9272,22 +9510,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/miguel-angel-campos",
-      "planilla_texto": "B/. 11,300",
-      "planilla_valor": 11300.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Relaciones Exteriores"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Cultura, deporte y turismo": 4,
+        "Economía, finanzas e impuestos": 4,
+        "Salud": 3,
+        "Ambiente y energía": 1,
+        "Justicia y seguridad": 1
+      }
     },
     {
       "nombre": "Paulette Thomas",
@@ -9298,6 +9527,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1srtYX5JwXU2jT8wpfL8pJo8V0ChK0JIT",
       "perfil": "https://espaciocivico.org/diputados/paulette-thomas",
       "slug": "paulette-thomas",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/paulette-thomas",
+      "planilla_texto": "B/. 16,500",
+      "planilla_valor": 16500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 10,
       "leyes": 3,
       "co_patrocinios": 88,
@@ -9507,22 +9752,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/paulette-thomas",
-      "planilla_texto": "B/. 16,500",
-      "planilla_valor": 16500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Educación, Cultura y Deporte"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 4,
+        "Niñez, familia e inclusión": 3,
+        "Salud": 2,
+        "Ambiente y energía": 1,
+        "Conmemoraciones y festivales": 1
+      }
     },
     {
       "nombre": "Isaac Mosquera",
@@ -9533,6 +9769,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1sHTH7XpmzCdJcpXpGG5SMD09l4_NpL3x",
       "perfil": "https://espaciocivico.org/diputados/isaac-mosquera",
       "slug": "isaac-mosquera",
+      "provincia_monitoreo": "Emberá-Wounaan",
+      "circuito_monitoreo": "5-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/isaac-mosquera",
+      "planilla_texto": "B/. 33,550",
+      "planilla_valor": 33550.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Economía y Finanzas",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 9,
       "leyes": 0,
       "co_patrocinios": 18,
@@ -9648,22 +9900,13 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Emberá-Wounaan",
-      "circuito_monitoreo": "5-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/isaac-mosquera",
-      "planilla_texto": "B/. 33,550",
-      "planilla_valor": 33550.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Economía y Finanzas",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 2,
+        "Justicia y seguridad": 2,
+        "Agro y pesca": 1,
+        "Ambiente y energía": 1,
+        "Estado, gobierno y transparencia": 1
+      }
     },
     {
       "nombre": "Ariana Coba",
@@ -9674,6 +9917,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1N1vttXu2eUdjezNaCqfFi15VqOghcB1Y",
       "perfil": "https://espaciocivico.org/diputados/ariana-coba",
       "slug": "ariana-coba",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariana-coba",
+      "planilla_texto": "B/. 35,263",
+      "planilla_valor": 35263.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 1.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.2,
+      "comisiones": [
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 8,
       "leyes": 2,
       "co_patrocinios": 64,
@@ -9839,22 +10098,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariana-coba",
-      "planilla_texto": "B/. 35,263",
-      "planilla_valor": 35263.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 1.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.2,
-      "comisiones": [
-        "Gobierno, Justicia y Asuntos Constitucionales",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Justicia y seguridad": 3,
+        "Niñez, familia e inclusión": 2,
+        "Economía, finanzas e impuestos": 1,
+        "Tecnología y datos": 1,
+        "Trabajo y empleo": 1
+      }
     },
     {
       "nombre": "Lilia Batista",
@@ -9865,6 +10115,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1qbJMf2FNxBUDSKzOE1zQOy3imsGfHBC2",
       "perfil": "https://espaciocivico.org/diputados/lilia-batista",
       "slug": "lilia-batista",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/lilia-batista",
+      "planilla_texto": "B/. 39,050",
+      "planilla_valor": 39050.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 8,
       "leyes": 0,
       "co_patrocinios": 26,
@@ -9983,21 +10248,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/lilia-batista",
-      "planilla_texto": "B/. 39,050",
-      "planilla_valor": 39050.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Educación, Cultura y Deporte"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Salud": 3,
+        "Educación": 2,
+        "Agro y pesca": 1,
+        "Conmemoraciones y festivales": 1,
+        "Cultura, deporte y turismo": 1
+      }
     },
     {
       "nombre": "Ariel Vallarino",
@@ -10008,6 +10265,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/16MpaO-gztotezPMdr19ma3iaoLb3_7pN",
       "perfil": "https://espaciocivico.org/diputados/ariel-vallarino",
       "slug": "ariel-vallarino",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariel-vallarino",
+      "planilla_texto": "B/. 36,625",
+      "planilla_valor": 36625.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Infraestructura Pública y Asuntos del Canal",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 7,
       "leyes": 1,
       "co_patrocinios": 24,
@@ -10122,23 +10396,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariel-vallarino",
-      "planilla_texto": "B/. 36,625",
-      "planilla_valor": 36625.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Infraestructura Pública y Asuntos del Canal",
-        "Comercio y Asuntos Económicos"
-      ],
-      "comisiones_cantidad": 3
+      "temas_autor": {
+        "Agro y pesca": 1,
+        "Educación": 1,
+        "Estado, gobierno y transparencia": 1,
+        "Niñez, familia e inclusión": 1,
+        "Salud": 1
+      }
     },
     {
       "nombre": "Betserai Richards",
@@ -10149,6 +10413,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1_NgnTX1kUZG382WzQ9bnG1DT2HCFzoaQ",
       "perfil": "https://espaciocivico.org/diputados/betserai-richards",
       "slug": "betserai-richards",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/betserai-richards",
+      "planilla_texto": "B/. 23,100",
+      "planilla_valor": 23100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 7,
       "leyes": 1,
       "co_patrocinios": 93,
@@ -10332,22 +10612,12 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/betserai-richards",
-      "planilla_texto": "B/. 23,100",
-      "planilla_valor": 23100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Educación, Cultura y Deporte"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 2,
+        "Estado, gobierno y transparencia": 2,
+        "Economía, finanzas e impuestos": 1,
+        "Salud": 1
+      }
     },
     {
       "nombre": "Manuel Samaniego",
@@ -10358,6 +10628,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1byzCstXS-vDLyOOH7mopVd8hq2HCT2NI",
       "perfil": "https://espaciocivico.org/diputados/manuel-samaniego",
       "slug": "manuel-samaniego",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-samaniego",
+      "planilla_texto": "B/. 15,750",
+      "planilla_valor": 15750.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 3.4,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 7,
       "leyes": 1,
       "co_patrocinios": 101,
@@ -10548,22 +10834,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-samaniego",
-      "planilla_texto": "B/. 15,750",
-      "planilla_valor": 15750.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 3.4,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Economía y Finanzas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Ambiente y energía": 3,
+        "Infraestructura, transporte y vivienda": 2,
+        "Agro y pesca": 1,
+        "Economía, finanzas e impuestos": 1,
+        "Estado, gobierno y transparencia": 1
+      }
     },
     {
       "nombre": "Alaín Cedeño",
@@ -10574,6 +10851,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/1ejkmXtc_y8DF9zRay0yZso7zN9fj72w_",
       "perfil": "https://espaciocivico.org/diputados/alain-cedeno",
       "slug": "alain-cedeno",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/alain-cedeno",
+      "planilla_texto": "B/. 28,500",
+      "planilla_valor": 28500.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.2,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Asuntos Indígenas",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 6,
       "leyes": 0,
       "co_patrocinios": 20,
@@ -10669,23 +10963,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/alain-cedeno",
-      "planilla_texto": "B/. 28,500",
-      "planilla_valor": 28500.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.2,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Asuntos Indígenas",
-        "Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 3
+      "temas_autor": {
+        "Ambiente y energía": 2,
+        "Economía, finanzas e impuestos": 1,
+        "Infraestructura, transporte y vivienda": 1,
+        "Salud": 1,
+        "Tecnología y datos": 1
+      }
     },
     {
       "nombre": "Jorge Herrera",
@@ -10696,6 +10980,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1fXApB5ybl0wk1oGyJBrEojNOvmqiSJv8",
       "perfil": "https://espaciocivico.org/diputados/jorge-herrera",
       "slug": "jorge-herrera",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-herrera",
+      "planilla_texto": "B/. 35,100",
+      "planilla_valor": 35100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 4.0,
+      "comisiones": [
+        "Asuntos Municipales"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 6,
       "leyes": 2,
       "co_patrocinios": 46,
@@ -10830,21 +11129,12 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-herrera",
-      "planilla_texto": "B/. 35,100",
-      "planilla_valor": 35100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 4.0,
-      "comisiones": [
-        "Asuntos Municipales"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Justicia y seguridad": 2,
+        "Economía, finanzas e impuestos": 1,
+        "Educación": 1,
+        "Estado, gobierno y transparencia": 1
+      }
     },
     {
       "nombre": "Julio de la Guardia",
@@ -10855,6 +11145,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1yMOQxvs9m2DgBGTJoJBImggEYxIPh1ZY",
       "perfil": "https://espaciocivico.org/diputados/julio-de-la-guardia",
       "slug": "julio-de-la-guardia",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/julio-de-la-guardia",
+      "planilla_texto": "B/. 34,420",
+      "planilla_valor": 34420.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Comercio y Asuntos Económicos",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 29,
@@ -10967,22 +11273,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/julio-de-la-guardia",
-      "planilla_texto": "B/. 34,420",
-      "planilla_valor": 34420.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 3,
+        "Ambiente y energía": 1,
+        "Conmemoraciones y festivales": 1,
+        "Cultura, deporte y turismo": 1,
+        "Niñez, familia e inclusión": 1
+      }
     },
     {
       "nombre": "Néstor Guardia",
@@ -10993,6 +11290,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1mEYs5Tn6v2av2cU3GVmyIbt3Y37c78ak",
       "perfil": "https://espaciocivico.org/diputados/nestor-guardia",
       "slug": "nestor-guardia",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/nestor-guardia",
+      "planilla_texto": "B/. 73,800",
+      "planilla_valor": 73800.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 11,
@@ -11085,22 +11398,12 @@
           "evidencia": "baja"
         }
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/nestor-guardia",
-      "planilla_texto": "B/. 73,800",
-      "planilla_valor": 73800.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Comercio y Asuntos Económicos"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 2,
+        "Infraestructura, transporte y vivienda": 1,
+        "Niñez, familia e inclusión": 1,
+        "Salud": 1
+      }
     },
     {
       "nombre": "Orlando Carrasquilla",
@@ -11111,6 +11414,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1itKncJ8nnZcyx2Cd4svAOKrmnpsCuR5p",
       "perfil": "https://espaciocivico.org/diputados/orlando-carrasquilla",
       "slug": "orlando-carrasquilla",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/orlando-carrasquilla",
+      "planilla_texto": "B/. 15,150",
+      "planilla_valor": 15150.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Asuntos Agropecuarios"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 33,
@@ -11228,22 +11547,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/orlando-carrasquilla",
-      "planilla_texto": "B/. 15,150",
-      "planilla_valor": 15150.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Asuntos Agropecuarios"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 2,
+        "Justicia y seguridad": 2,
+        "Agro y pesca": 1,
+        "Ambiente y energía": 1,
+        "Educación": 1
+      }
     },
     {
       "nombre": "Rogelio Revello",
@@ -11254,6 +11564,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1l64FLwc0g2vmPoSlnMbRWcIzT0BBthgE",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/rogelio-revello",
+      "planilla_texto": "B/. 31,700",
+      "planilla_valor": 31700.0,
+      "asistencia_pleno": 3.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 2.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.0,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 19,
@@ -11356,22 +11682,11 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/rogelio-revello",
-      "planilla_texto": "B/. 31,700",
-      "planilla_valor": 31700.0,
-      "asistencia_pleno": 3.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 2.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.0,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Infraestructura, transporte y vivienda": 3,
+        "Salud": 1,
+        "Trabajo y empleo": 1
+      }
     },
     {
       "nombre": "Shirley Castañedas",
@@ -11382,6 +11697,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/shirley-castanedas",
+      "planilla_texto": "B/. 36,900",
+      "planilla_valor": 36900.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 19,
@@ -11482,21 +11812,13 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/shirley-castanedas",
-      "planilla_texto": "B/. 36,900",
-      "planilla_valor": 36900.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 2,
+        "Infraestructura, transporte y vivienda": 2,
+        "Conmemoraciones y festivales": 1,
+        "Justicia y seguridad": 1,
+        "Trabajo y empleo": 1
+      }
     },
     {
       "nombre": "Arquesio Arias",
@@ -11507,6 +11829,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1-10fdUoO7YYJH1hu8gfWXGXeZS1oh3Z5",
       "perfil": "https://espaciocivico.org/diputados/arquesio-arias",
       "slug": "arquesio-arias",
+      "provincia_monitoreo": "Guna Yala",
+      "circuito_monitoreo": "10-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/arquesio-arias",
+      "planilla_texto": "B/. 30,800",
+      "planilla_valor": 30800.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 0,
       "co_patrocinios": 24,
@@ -11600,22 +11938,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Guna Yala",
-      "circuito_monitoreo": "10-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/arquesio-arias",
-      "planilla_texto": "B/. 30,800",
-      "planilla_valor": 30800.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Trabajo, Salud y Desarrollo Social"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Ambiente y energía": 2,
+        "Niñez, familia e inclusión": 2,
+        "Agro y pesca": 1,
+        "Estado, gobierno y transparencia": 1,
+        "Justicia y seguridad": 1
+      }
     },
     {
       "nombre": "Jose Luis Varela",
@@ -11626,6 +11955,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/18pzGwderXg6WRuXTtF_l87RIvgphHFKO",
       "perfil": "https://espaciocivico.org/diputados/jose-luis-varela",
       "slug": "jose-luis-varela",
+      "provincia_monitoreo": "Herrera",
+      "circuito_monitoreo": "6-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-luis-varela",
+      "planilla_texto": "B/. 41,725",
+      "planilla_valor": 41725.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 1,
       "co_patrocinios": 36,
@@ -11737,22 +12082,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Herrera",
-      "circuito_monitoreo": "6-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-luis-varela",
-      "planilla_texto": "B/. 41,725",
-      "planilla_valor": 41725.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Comercio y Asuntos Económicos"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Conmemoraciones y festivales": 2,
+        "Estado, gobierno y transparencia": 2,
+        "Economía, finanzas e impuestos": 1,
+        "Infraestructura, transporte y vivienda": 1,
+        "Justicia y seguridad": 1
+      }
     },
     {
       "nombre": "Nelson Jackson",
@@ -11763,6 +12099,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1-caeFl-l2dBL8JomvWN4eEXp24MsKp-M",
       "perfil": "https://espaciocivico.org/diputados/nelson-jackson",
       "slug": "nelson-jackson",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/nelson-jackson",
+      "planilla_texto": "B/. 90,575",
+      "planilla_valor": 90575.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 5,
       "leyes": 0,
       "co_patrocinios": 11,
@@ -11842,21 +12193,11 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/nelson-jackson",
-      "planilla_texto": "B/. 90,575",
-      "planilla_valor": 90575.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Conmemoraciones y festivales": 3,
+        "Salud": 2,
+        "Seguridad social y pensiones": 1
+      }
     },
     {
       "nombre": "Omar Ortega",
@@ -11867,6 +12208,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1r48XhZKnIroDhPfkJ9szoDiRF6Eyunyo",
       "perfil": "https://espaciocivico.org/diputados/omar-ortega",
       "slug": "omar-ortega",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/omar-ortega",
+      "planilla_texto": "B/. 51,825",
+      "planilla_valor": 51825.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Asuntos Indígenas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 1,
       "co_patrocinios": 11,
@@ -11953,22 +12310,12 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/omar-ortega",
-      "planilla_texto": "B/. 51,825",
-      "planilla_valor": 51825.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Asuntos Indígenas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 2,
+        "Educación": 1,
+        "Infraestructura, transporte y vivienda": 1,
+        "Seguridad social y pensiones": 1
+      }
     },
     {
       "nombre": "Roberto Archibold",
@@ -11979,6 +12326,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1vnUYdZM57guE55fT821CJpq0NZyXINko",
       "perfil": "https://espaciocivico.org/diputados/roberto-archibold",
       "slug": "roberto-archibold",
+      "provincia_monitoreo": "Ngöbe Buglé",
+      "circuito_monitoreo": "12-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-archibold",
+      "planilla_texto": "B/. 29,700",
+      "planilla_valor": 29700.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.2,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Asuntos Indígenas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 1,
       "co_patrocinios": 55,
@@ -12108,22 +12471,11 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Ngöbe Buglé",
-      "circuito_monitoreo": "12-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-archibold",
-      "planilla_texto": "B/. 29,700",
-      "planilla_valor": 29700.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.2,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Asuntos Indígenas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 3,
+        "Conmemoraciones y festivales": 2,
+        "Ambiente y energía": 1
+      }
     },
     {
       "nombre": "Tomas Benavides",
@@ -12134,6 +12486,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/tomas-benavides",
+      "planilla_texto": "B/. 36,900",
+      "planilla_valor": 36900.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Asuntos Agropecuarios"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 5,
       "leyes": 0,
       "co_patrocinios": 17,
@@ -12220,21 +12587,11 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/tomas-benavides",
-      "planilla_texto": "B/. 36,900",
-      "planilla_valor": 36900.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Asuntos Agropecuarios"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Conmemoraciones y festivales": 1,
+        "Cultura, deporte y turismo": 1,
+        "Justicia y seguridad": 1
+      }
     },
     {
       "nombre": "Carlos Afú",
@@ -12245,6 +12602,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1nFZ08mVklRAT7rAYk8Rfwd6xM4dyFm39",
       "perfil": "https://espaciocivico.org/diputados/carlos-afu",
       "slug": "carlos-afu",
+      "provincia_monitoreo": "Los Santos",
+      "circuito_monitoreo": "7-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-afu",
+      "planilla_texto": "B/. 28,900",
+      "planilla_valor": 28900.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 21,
@@ -12327,22 +12700,12 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Los Santos",
-      "circuito_monitoreo": "7-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-afu",
-      "planilla_texto": "B/. 28,900",
-      "planilla_valor": 28900.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 2,
+        "Salud": 2,
+        "Ambiente y energía": 1,
+        "Cultura, deporte y turismo": 1
+      }
     },
     {
       "nombre": "Edwin Vergara",
@@ -12353,6 +12716,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1gvykBXFM35oqR6RvltPLAQuUB4LV08C9",
       "perfil": "https://espaciocivico.org/diputados/edwin-vergara",
       "slug": "edwin-vergara",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/edwin-vergara",
+      "planilla_texto": "B/. 26,650",
+      "planilla_valor": 26650.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 39,
@@ -12454,22 +12833,11 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/edwin-vergara",
-      "planilla_texto": "B/. 26,650",
-      "planilla_valor": 26650.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Trabajo, Salud y Desarrollo Social"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Conmemoraciones y festivales": 1,
+        "Justicia y seguridad": 1,
+        "Tratados y relaciones exteriores": 1
+      }
     },
     {
       "nombre": "Gertrudis Rodríguez",
@@ -12480,6 +12848,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1n3SFVXjEaAjceYAyFNWQpdHLngauAlGj",
       "perfil": "https://espaciocivico.org/diputados/gertrudis-rodriguez",
       "slug": "gertrudis-rodriguez",
+      "provincia_monitoreo": "Ngöbe Buglé",
+      "circuito_monitoreo": "12-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/gertrudis-rodriguez",
+      "planilla_texto": "B/. 30,350",
+      "planilla_valor": 30350.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 31,
@@ -12572,22 +12956,11 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Ngöbe Buglé",
-      "circuito_monitoreo": "12-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/gertrudis-rodriguez",
-      "planilla_texto": "B/. 30,350",
-      "planilla_valor": 30350.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Educación, Cultura y Deporte"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 2,
+        "Estado, gobierno y transparencia": 1,
+        "Niñez, familia e inclusión": 1
+      }
     },
     {
       "nombre": "Manuel Cohen",
@@ -12598,6 +12971,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1JmvtLrYr4g1bf5A0PPI68FOuLwuvHq70",
       "perfil": "https://espaciocivico.org/diputados/manuel-cohen",
       "slug": "manuel-cohen",
+      "provincia_monitoreo": "Herrera",
+      "circuito_monitoreo": "6-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cohen",
+      "planilla_texto": "B/. 27,100",
+      "planilla_valor": 27100.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 15,
@@ -12674,22 +13063,12 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Herrera",
-      "circuito_monitoreo": "6-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cohen",
-      "planilla_texto": "B/. 27,100",
-      "planilla_valor": 27100.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Economía, finanzas e impuestos": 2,
+        "Conmemoraciones y festivales": 1,
+        "Cultura, deporte y turismo": 1,
+        "Justicia y seguridad": 1
+      }
     },
     {
       "nombre": "Nixon Andrade",
@@ -12700,6 +13079,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1iQ6etwoF70tDfhYBkhDhcpoJdDm_H6og",
       "perfil": "https://espaciocivico.org/diputados/nixon-andrade",
       "slug": "nixon-andrade",
+      "provincia_monitoreo": "Ngöbe Buglé",
+      "circuito_monitoreo": "12-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/nixon-andrade",
+      "planilla_texto": "B/. 38,025",
+      "planilla_valor": 38025.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 2.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.2,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 13,
@@ -12774,22 +13169,13 @@
           "evidencia": "baja"
         }
       },
-      "provincia_monitoreo": "Ngöbe Buglé",
-      "circuito_monitoreo": "12-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/nixon-andrade",
-      "planilla_texto": "B/. 38,025",
-      "planilla_valor": 38025.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 2.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.2,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Niñez, familia e inclusión": 4,
+        "Ambiente y energía": 1,
+        "Cultura, deporte y turismo": 1,
+        "Estado, gobierno y transparencia": 1,
+        "Justicia y seguridad": 1
+      }
     },
     {
       "nombre": "Ronald de Gracia",
@@ -12800,6 +13186,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
+      "provincia_monitoreo": "Los Santos",
+      "circuito_monitoreo": "7-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ronald-de-gracia",
+      "planilla_texto": "B/. 39,725",
+      "planilla_valor": 39725.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 1,
       "co_patrocinios": 37,
@@ -12905,22 +13307,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Los Santos",
-      "circuito_monitoreo": "7-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ronald-de-gracia",
-      "planilla_texto": "B/. 39,725",
-      "planilla_valor": 39725.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Trabajo, Salud y Desarrollo Social"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Salud": 2,
+        "Conmemoraciones y festivales": 1,
+        "Infraestructura, transporte y vivienda": 1,
+        "Justicia y seguridad": 1,
+        "Tecnología y datos": 1
+      }
     },
     {
       "nombre": "Yesica Romero",
@@ -12931,6 +13324,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
+      "provincia_monitoreo": "Bocas del Toro",
+      "circuito_monitoreo": "1-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yesica-romero",
+      "planilla_texto": "B/. 61,000",
+      "planilla_valor": 61000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 4.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 1,
       "co_patrocinios": 22,
@@ -13021,22 +13430,11 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Bocas del Toro",
-      "circuito_monitoreo": "1-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yesica-romero",
-      "planilla_texto": "B/. 61,000",
-      "planilla_valor": 61000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 4.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 2,
+        "Agro y pesca": 1,
+        "Infraestructura, transporte y vivienda": 1
+      }
     },
     {
       "nombre": "Benicio Robinson",
@@ -13047,6 +13445,24 @@
       "foto": "https://espaciocivico.org/api/drive-image/1YkmbwhY4rvz3SJkKGOT9JGYkBaIaEDKd",
       "perfil": "https://espaciocivico.org/diputados/benicio-robinson",
       "slug": "benicio-robinson",
+      "provincia_monitoreo": "Bocas del Toro",
+      "circuito_monitoreo": "1-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/benicio-robinson",
+      "planilla_texto": "B/. 261,225",
+      "planilla_valor": 261225.0,
+      "asistencia_pleno": 3.0,
+      "asistencia_comisiones": 2.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 1.9,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Presupuesto",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 4,
       "proyectos": 3,
       "leyes": 0,
       "co_patrocinios": 9,
@@ -13110,24 +13526,11 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Bocas del Toro",
-      "circuito_monitoreo": "1-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/benicio-robinson",
-      "planilla_texto": "B/. 261,225",
-      "planilla_valor": 261225.0,
-      "asistencia_pleno": 3.0,
-      "asistencia_comisiones": 2.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 1.9,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Gobierno, Justicia y Asuntos Constitucionales",
-        "Presupuesto",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 4
+      "temas_autor": {
+        "Conmemoraciones y festivales": 1,
+        "Cultura, deporte y turismo": 1,
+        "Economía, finanzas e impuestos": 1
+      }
     },
     {
       "nombre": "Didiano Pinilla",
@@ -13138,6 +13541,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/14wzAlv4EIuVds7NUTbD352PEIOGOrbuJ",
       "perfil": "https://espaciocivico.org/diputados/didiano-pinilla",
       "slug": "didiano-pinilla",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/didiano-pinilla",
+      "planilla_texto": "B/. 34,100",
+      "planilla_valor": 34100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 3,
       "leyes": 1,
       "co_patrocinios": 40,
@@ -13238,23 +13658,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/didiano-pinilla",
-      "planilla_texto": "B/. 34,100",
-      "planilla_valor": 34100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Infraestructura Pública y Asuntos del Canal"
-      ],
-      "comisiones_cantidad": 3
+      "temas_autor": {
+        "Ambiente y energía": 1,
+        "Economía, finanzas e impuestos": 1,
+        "Educación": 1,
+        "Infraestructura, transporte y vivienda": 1,
+        "Niñez, familia e inclusión": 1
+      }
     },
     {
       "nombre": "Flor Brenes",
@@ -13265,6 +13675,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1mbe0i9QpCMwmMUKZXge-donWz_O0_tiz",
       "perfil": "https://espaciocivico.org/diputados/flor-brenes",
       "slug": "flor-brenes",
+      "provincia_monitoreo": "Guna Yala",
+      "circuito_monitoreo": "10-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/flor-brenes",
+      "planilla_texto": "B/. 19,950",
+      "planilla_valor": 19950.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Asuntos Indígenas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 3,
       "leyes": 1,
       "co_patrocinios": 21,
@@ -13346,22 +13772,11 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Guna Yala",
-      "circuito_monitoreo": "10-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/flor-brenes",
-      "planilla_texto": "B/. 19,950",
-      "planilla_valor": 19950.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Asuntos Indígenas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 2,
+        "Economía, finanzas e impuestos": 1,
+        "Niñez, familia e inclusión": 1
+      }
     },
     {
       "nombre": "Osman Camilo Gómez",
@@ -13372,6 +13787,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1LAA0ShaiF-UX6WCoBEqYywiMeHZW3Ea5",
       "perfil": "https://espaciocivico.org/diputados/osman-camilo-gomez",
       "slug": "osman-camilo-gomez",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/osman-camilo-gomez",
+      "planilla_texto": "B/. 30,600",
+      "planilla_valor": 30600.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 3,
       "leyes": 0,
       "co_patrocinios": 13,
@@ -13439,22 +13870,11 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/osman-camilo-gomez",
-      "planilla_texto": "B/. 30,600",
-      "planilla_valor": 30600.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Agro y pesca": 1,
+        "Educación": 1,
+        "Estado, gobierno y transparencia": 1
+      }
     },
     {
       "nombre": "Raphael Buchanan",
@@ -13465,6 +13885,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1rO4y1MfZdU8mIGaHWRLWgTInVJm2YjFk",
       "perfil": "https://espaciocivico.org/diputados/raphael-buchanan",
       "slug": "raphael-buchanan",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/raphael-buchanan",
+      "planilla_texto": "B/. 8,749",
+      "planilla_valor": 8749.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 3,
       "leyes": 0,
       "co_patrocinios": 22,
@@ -13541,22 +13977,13 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/raphael-buchanan",
-      "planilla_texto": "B/. 8,749",
-      "planilla_valor": 8749.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Economía y Finanzas"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Educación": 2,
+        "Agro y pesca": 1,
+        "Conmemoraciones y festivales": 1,
+        "Cultura, deporte y turismo": 1,
+        "Niñez, familia e inclusión": 1
+      }
     },
     {
       "nombre": "Eduardo Vásquez",
@@ -13567,6 +13994,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1fpZyjYKi18u5FC4zQcX5KU2FvXGl0vwj",
       "perfil": "https://espaciocivico.org/diputados/eduardo-vasquez",
       "slug": "eduardo-vasquez",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-vasquez",
+      "planilla_texto": "B/. 39,625",
+      "planilla_valor": 39625.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 25,
@@ -13630,21 +14072,7 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-vasquez",
-      "planilla_texto": "B/. 39,625",
-      "planilla_valor": 39625.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {}
     },
     {
       "nombre": "Eliécer Castrellón",
@@ -13655,6 +14083,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1I4jkM_zL4TaOzHnUr7BbqTWPwsA-BI8j",
       "perfil": "https://espaciocivico.org/diputados/eliecer-castrellon",
       "slug": "eliecer-castrellon",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/eliecer-castrellon",
+      "planilla_texto": "B/. 19,400",
+      "planilla_valor": 19400.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 1.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 12,
@@ -13705,22 +14149,9 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/eliecer-castrellon",
-      "planilla_texto": "B/. 19,400",
-      "planilla_valor": 19400.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 1.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
-      ],
-      "comisiones_cantidad": 2
+      "temas_autor": {
+        "Agro y pesca": 1
+      }
     },
     {
       "nombre": "Joan Guevara",
@@ -13731,6 +14162,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1KCDn2U3PCmuWkL90_1qTp_-yo4xT-B_c",
       "perfil": "https://espaciocivico.org/diputados/joan-guevara",
       "slug": "joan-guevara",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/joan-guevara",
+      "planilla_texto": "B/. 31,625",
+      "planilla_valor": 31625.0,
+      "asistencia_pleno": null,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Relaciones Exteriores"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 14,
@@ -13783,21 +14229,10 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/joan-guevara",
-      "planilla_texto": "B/. 31,625",
-      "planilla_valor": 31625.0,
-      "asistencia_pleno": null,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Relaciones Exteriores"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {
+        "Estado, gobierno y transparencia": 1,
+        "Infraestructura, transporte y vivienda": 1
+      }
     },
     {
       "nombre": "Sergio Gálvez",
@@ -13808,6 +14243,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/sergio-galvez",
+      "planilla_texto": "B/. 33,850",
+      "planilla_valor": 33850.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Asuntos Indígenas",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 20,
@@ -13866,23 +14318,9 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/sergio-galvez",
-      "planilla_texto": "B/. 33,850",
-      "planilla_valor": 33850.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Asuntos Indígenas",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 3
+      "temas_autor": {
+        "Seguridad social y pensiones": 1
+      }
     },
     {
       "nombre": "Jaime Vargas",
@@ -13893,6 +14331,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1DnFyBBJ_iNfp3giNLzmv5WjFdHoGwFpZ",
       "perfil": "https://espaciocivico.org/diputados/jaime-vargas",
       "slug": "jaime-vargas",
+      "provincia_monitoreo": "Emberá-Wounaan",
+      "circuito_monitoreo": "5-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jaime-vargas",
+      "planilla_texto": "B/. 164,120",
+      "planilla_valor": 164120.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 1.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.0,
+      "comisiones": [
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 0,
       "leyes": 0,
       "co_patrocinios": 15,
@@ -13936,21 +14389,7 @@
           "evidencia": "media"
         }
       },
-      "provincia_monitoreo": "Emberá-Wounaan",
-      "circuito_monitoreo": "5-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jaime-vargas",
-      "planilla_texto": "B/. 164,120",
-      "planilla_valor": 164120.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 1.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.0,
-      "comisiones": [
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {}
     },
     {
       "nombre": "Victor Castillo",
@@ -13961,6 +14400,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/victor-castillo",
+      "planilla_texto": "B/. 12,400",
+      "planilla_valor": 12400.0,
+      "asistencia_pleno": 2.0,
+      "asistencia_comisiones": 2.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 1.7,
+      "comisiones": [
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 0,
       "leyes": 0,
       "co_patrocinios": 21,
@@ -14010,21 +14464,7 @@
           "evidencia": "alta"
         }
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/victor-castillo",
-      "planilla_texto": "B/. 12,400",
-      "planilla_valor": 12400.0,
-      "asistencia_pleno": 2.0,
-      "asistencia_comisiones": 2.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 1.7,
-      "comisiones": [
-        "Economía y Finanzas"
-      ],
-      "comisiones_cantidad": 1
+      "temas_autor": {}
     }
   ],
   "otros_proponentes": [
@@ -15001,6 +15441,3218 @@
         "2026-S2": 0.0
       }
     }
+  },
+  "temas": [
+    "Conmemoraciones y festivales",
+    "Tratados y relaciones exteriores",
+    "Salud",
+    "Seguridad social y pensiones",
+    "Educación",
+    "Justicia y seguridad",
+    "Economía, finanzas e impuestos",
+    "Trabajo y empleo",
+    "Ambiente y energía",
+    "Agro y pesca",
+    "Infraestructura, transporte y vivienda",
+    "Cultura, deporte y turismo",
+    "Niñez, familia e inclusión",
+    "Estado, gobierno y transparencia",
+    "Tecnología y datos",
+    "Otros"
+  ],
+  "por_tema": {
+    "Conmemoraciones y festivales": {
+      "proyectos": 44,
+      "leyes": 7
+    },
+    "Tratados y relaciones exteriores": {
+      "proyectos": 32,
+      "leyes": 21
+    },
+    "Salud": {
+      "proyectos": 70,
+      "leyes": 5
+    },
+    "Seguridad social y pensiones": {
+      "proyectos": 25,
+      "leyes": 3
+    },
+    "Educación": {
+      "proyectos": 80,
+      "leyes": 4
+    },
+    "Justicia y seguridad": {
+      "proyectos": 143,
+      "leyes": 20
+    },
+    "Economía, finanzas e impuestos": {
+      "proyectos": 162,
+      "leyes": 27
+    },
+    "Trabajo y empleo": {
+      "proyectos": 45,
+      "leyes": 3
+    },
+    "Ambiente y energía": {
+      "proyectos": 76,
+      "leyes": 6
+    },
+    "Agro y pesca": {
+      "proyectos": 36,
+      "leyes": 4
+    },
+    "Infraestructura, transporte y vivienda": {
+      "proyectos": 68,
+      "leyes": 5
+    },
+    "Cultura, deporte y turismo": {
+      "proyectos": 60,
+      "leyes": 9
+    },
+    "Niñez, familia e inclusión": {
+      "proyectos": 55,
+      "leyes": 4
+    },
+    "Estado, gobierno y transparencia": {
+      "proyectos": 140,
+      "leyes": 7
+    },
+    "Tecnología y datos": {
+      "proyectos": 51,
+      "leyes": 4
+    },
+    "Otros": {
+      "proyectos": 165,
+      "leyes": 19
+    }
+  },
+  "temas_por_ficha": {
+    "8640": [
+      5
+    ],
+    "8638": [
+      10
+    ],
+    "8639": [
+      13
+    ],
+    "8637": [
+      13
+    ],
+    "8635": [
+      10
+    ],
+    "8633": [
+      8,
+      10,
+      14
+    ],
+    "8634": [
+      0,
+      11
+    ],
+    "8636": [
+      6,
+      7
+    ],
+    "8630": [
+      3
+    ],
+    "8629": [
+      6
+    ],
+    "8631": [
+      6,
+      13
+    ],
+    "8626": [
+      13
+    ],
+    "8628": [
+      3
+    ],
+    "8625": [
+      10
+    ],
+    "8621": [
+      1
+    ],
+    "8622": [
+      1
+    ],
+    "8623": [
+      1,
+      5
+    ],
+    "8624": [
+      4,
+      11,
+      13
+    ],
+    "8616": [
+      4,
+      5,
+      12
+    ],
+    "8617": [
+      0,
+      11,
+      13
+    ],
+    "8618": [
+      4
+    ],
+    "8619": [
+      2,
+      4,
+      12
+    ],
+    "8620": [
+      4,
+      11,
+      14
+    ],
+    "8615": [
+      2
+    ],
+    "8612": [
+      14
+    ],
+    "8613": [
+      15
+    ],
+    "8614": [
+      15
+    ],
+    "8609": [
+      2,
+      4
+    ],
+    "8608": [
+      6,
+      7
+    ],
+    "8610": [
+      0,
+      2
+    ],
+    "8606": [
+      8,
+      11
+    ],
+    "8605": [
+      6,
+      8
+    ],
+    "8599": [
+      2
+    ],
+    "8602": [
+      2,
+      4
+    ],
+    "8600": [
+      11
+    ],
+    "8611": [
+      11
+    ],
+    "8603": [
+      5
+    ],
+    "8604": [
+      8
+    ],
+    "8607": [
+      15
+    ],
+    "8595": [
+      2
+    ],
+    "8597": [
+      4
+    ],
+    "8596": [
+      8,
+      13
+    ],
+    "8590": [
+      15
+    ],
+    "8594": [
+      8
+    ],
+    "8592": [
+      15
+    ],
+    "8591": [
+      14
+    ],
+    "8593": [
+      3,
+      13
+    ],
+    "8589": [
+      4
+    ],
+    "8586": [
+      15
+    ],
+    "8588": [
+      2,
+      6
+    ],
+    "8587": [
+      9
+    ],
+    "8575": [
+      12
+    ],
+    "8581": [
+      9,
+      11,
+      13
+    ],
+    "8580": [
+      7
+    ],
+    "8598": [
+      5
+    ],
+    "8578": [
+      6
+    ],
+    "8577": [
+      6,
+      13
+    ],
+    "8576": [
+      15
+    ],
+    "8584": [
+      5
+    ],
+    "8582": [
+      13
+    ],
+    "8585": [
+      15
+    ],
+    "8579": [
+      5,
+      7
+    ],
+    "8583": [
+      15
+    ],
+    "8572": [
+      13
+    ],
+    "8573": [
+      13
+    ],
+    "8574": [
+      15
+    ],
+    "8568": [
+      6
+    ],
+    "8571": [
+      6
+    ],
+    "8567": [
+      4,
+      6,
+      10
+    ],
+    "8566": [
+      15
+    ],
+    "8565": [
+      4
+    ],
+    "8564": [
+      6,
+      7
+    ],
+    "8563": [
+      5
+    ],
+    "8562": [
+      8
+    ],
+    "8561": [
+      10,
+      14
+    ],
+    "8560": [
+      14
+    ],
+    "8558": [
+      15
+    ],
+    "8559": [
+      15
+    ],
+    "8557": [
+      3
+    ],
+    "8556": [
+      4,
+      13
+    ],
+    "8551": [
+      5,
+      13
+    ],
+    "8546": [
+      6
+    ],
+    "8550": [
+      8
+    ],
+    "8554": [
+      8,
+      13
+    ],
+    "8549": [
+      5,
+      13
+    ],
+    "8547": [
+      7,
+      10
+    ],
+    "8548": [
+      0,
+      13
+    ],
+    "8552": [
+      5
+    ],
+    "8553": [
+      7
+    ],
+    "8545": [
+      12
+    ],
+    "8539": [
+      0,
+      2
+    ],
+    "8543": [
+      6
+    ],
+    "8540": [
+      10
+    ],
+    "8542": [
+      8,
+      13
+    ],
+    "8541": [
+      15
+    ],
+    "8538": [
+      10
+    ],
+    "8537": [
+      15
+    ],
+    "8536": [
+      6,
+      10
+    ],
+    "8531": [
+      2
+    ],
+    "8534": [
+      5
+    ],
+    "8532": [
+      5
+    ],
+    "8533": [
+      5
+    ],
+    "8535": [
+      10
+    ],
+    "8530": [
+      2
+    ],
+    "8527": [
+      15
+    ],
+    "8529": [
+      5
+    ],
+    "8528": [
+      8,
+      11,
+      13
+    ],
+    "8523": [
+      6
+    ],
+    "8526": [
+      13
+    ],
+    "8519": [
+      15
+    ],
+    "8520": [
+      5,
+      11,
+      13
+    ],
+    "8522": [
+      4
+    ],
+    "8525": [
+      5
+    ],
+    "8524": [
+      5
+    ],
+    "8516": [
+      6
+    ],
+    "8518": [
+      5
+    ],
+    "8517": [
+      15
+    ],
+    "8508": [
+      5
+    ],
+    "8515": [
+      2
+    ],
+    "8510": [
+      0,
+      9,
+      11
+    ],
+    "8509": [
+      6,
+      10
+    ],
+    "8507": [
+      6
+    ],
+    "8511": [
+      7
+    ],
+    "8512": [
+      10
+    ],
+    "8513": [
+      8,
+      13
+    ],
+    "8514": [
+      8
+    ],
+    "8504": [
+      2
+    ],
+    "8503": [
+      5
+    ],
+    "8502": [
+      7,
+      12
+    ],
+    "8505": [
+      5,
+      12,
+      13
+    ],
+    "8501": [
+      6
+    ],
+    "8506": [
+      10
+    ],
+    "8495": [
+      8
+    ],
+    "8498": [
+      6,
+      7
+    ],
+    "8486": [
+      6
+    ],
+    "8500": [
+      0,
+      13
+    ],
+    "8489": [
+      11
+    ],
+    "8490": [
+      11
+    ],
+    "8496": [
+      2,
+      8,
+      9
+    ],
+    "8492": [
+      2
+    ],
+    "8493": [
+      13
+    ],
+    "8497": [
+      6
+    ],
+    "8499": [
+      7
+    ],
+    "8488": [
+      15
+    ],
+    "8487": [
+      4,
+      5
+    ],
+    "8484": [
+      10
+    ],
+    "8485": [
+      10
+    ],
+    "8481": [
+      1
+    ],
+    "8482": [
+      13
+    ],
+    "8480": [
+      8,
+      10,
+      12
+    ],
+    "8477": [
+      10
+    ],
+    "8476": [
+      6
+    ],
+    "8479": [
+      8
+    ],
+    "8475": [
+      6
+    ],
+    "8483": [
+      13
+    ],
+    "8473": [
+      8,
+      13
+    ],
+    "8474": [
+      8,
+      10
+    ],
+    "8471": [
+      15
+    ],
+    "8478": [
+      13
+    ],
+    "8472": [
+      10,
+      13
+    ],
+    "8461": [
+      15
+    ],
+    "8462": [
+      5
+    ],
+    "8464": [
+      12
+    ],
+    "8465": [
+      8
+    ],
+    "8466": [
+      5
+    ],
+    "8463": [
+      8
+    ],
+    "8470": [
+      15
+    ],
+    "8467": [
+      6
+    ],
+    "8468": [
+      6,
+      10,
+      11,
+      12
+    ],
+    "8469": [
+      15
+    ],
+    "8460": [
+      15
+    ],
+    "8458": [
+      5
+    ],
+    "8457": [
+      13
+    ],
+    "8456": [
+      2,
+      6,
+      13
+    ],
+    "8455": [
+      10
+    ],
+    "8449": [
+      6
+    ],
+    "8450": [
+      5
+    ],
+    "8453": [
+      5
+    ],
+    "8454": [
+      5
+    ],
+    "8451": [
+      15
+    ],
+    "8452": [
+      5
+    ],
+    "8447": [
+      5
+    ],
+    "8448": [
+      8
+    ],
+    "8443": [
+      6,
+      14
+    ],
+    "8444": [
+      5,
+      6
+    ],
+    "8445": [
+      15
+    ],
+    "8446": [
+      15
+    ],
+    "8441": [
+      7
+    ],
+    "8442": [
+      5,
+      11,
+      13
+    ],
+    "8434": [
+      3,
+      12
+    ],
+    "8439": [
+      5
+    ],
+    "8433": [
+      10
+    ],
+    "8437": [
+      2,
+      3
+    ],
+    "8424": [
+      5,
+      12
+    ],
+    "8426": [
+      5
+    ],
+    "8429": [
+      5,
+      14
+    ],
+    "8430": [
+      2
+    ],
+    "8431": [
+      5,
+      14
+    ],
+    "8435": [
+      5,
+      14
+    ],
+    "8432": [
+      6,
+      7
+    ],
+    "8428": [
+      5
+    ],
+    "8427": [
+      15
+    ],
+    "8440": [
+      6,
+      8,
+      10
+    ],
+    "8436": [
+      5,
+      9
+    ],
+    "8425": [
+      15
+    ],
+    "8438": [
+      6
+    ],
+    "8423": [
+      5,
+      6,
+      12
+    ],
+    "8419": [
+      15
+    ],
+    "8421": [
+      15
+    ],
+    "8417": [
+      5,
+      11,
+      13
+    ],
+    "8420": [
+      2,
+      7,
+      12
+    ],
+    "8418": [
+      15
+    ],
+    "8422": [
+      8,
+      13
+    ],
+    "8416": [
+      6
+    ],
+    "8415": [
+      3,
+      9
+    ],
+    "8414": [
+      5,
+      13
+    ],
+    "8402": [
+      2,
+      3
+    ],
+    "8403": [
+      2
+    ],
+    "8404": [
+      5
+    ],
+    "8400": [
+      7
+    ],
+    "8401": [
+      15
+    ],
+    "8413": [
+      3,
+      5
+    ],
+    "8405": [
+      14
+    ],
+    "8406": [
+      5
+    ],
+    "8407": [
+      2
+    ],
+    "8408": [
+      13
+    ],
+    "8409": [
+      7,
+      14
+    ],
+    "8410": [
+      4,
+      13
+    ],
+    "8411": [
+      2
+    ],
+    "8412": [
+      2
+    ],
+    "8398": [
+      6
+    ],
+    "8399": [
+      15
+    ],
+    "8394": [
+      15
+    ],
+    "8395": [
+      6
+    ],
+    "8391": [
+      1
+    ],
+    "8392": [
+      1
+    ],
+    "8390": [
+      4
+    ],
+    "8388": [
+      4,
+      12
+    ],
+    "8389": [
+      0,
+      13
+    ],
+    "8383": [
+      0
+    ],
+    "8385": [
+      6
+    ],
+    "8381": [
+      5,
+      12
+    ],
+    "8382": [
+      15
+    ],
+    "8380": [
+      0
+    ],
+    "8373": [
+      2,
+      11
+    ],
+    "8375": [
+      15
+    ],
+    "8372": [
+      5,
+      8
+    ],
+    "8377": [
+      13
+    ],
+    "8365": [
+      0
+    ],
+    "8368": [
+      7,
+      10
+    ],
+    "8364": [
+      12
+    ],
+    "8367": [
+      11
+    ],
+    "8369": [
+      0,
+      11
+    ],
+    "8363": [
+      5
+    ],
+    "8362": [
+      4
+    ],
+    "8361": [
+      15
+    ],
+    "8359": [
+      4
+    ],
+    "8360": [
+      2,
+      12
+    ],
+    "8355": [
+      8
+    ],
+    "8356": [
+      15
+    ],
+    "8358": [
+      5,
+      12
+    ],
+    "8357": [
+      6
+    ],
+    "8354": [
+      15
+    ],
+    "8353": [
+      6
+    ],
+    "8351": [
+      15
+    ],
+    "8349": [
+      14
+    ],
+    "8350": [
+      13
+    ],
+    "8347": [
+      15
+    ],
+    "8345": [
+      10
+    ],
+    "8344": [
+      15
+    ],
+    "8341": [
+      5
+    ],
+    "8335": [
+      9,
+      12
+    ],
+    "8337": [
+      15
+    ],
+    "8334": [
+      6,
+      13
+    ],
+    "8570": [
+      15
+    ],
+    "8338": [
+      10,
+      13
+    ],
+    "8333": [
+      15
+    ],
+    "8328": [
+      1
+    ],
+    "8330": [
+      1,
+      14
+    ],
+    "8331": [
+      15
+    ],
+    "8329": [
+      13,
+      14
+    ],
+    "8324": [
+      15
+    ],
+    "8323": [
+      15
+    ],
+    "8326": [
+      14
+    ],
+    "8327": [
+      15
+    ],
+    "8325": [
+      6,
+      13
+    ],
+    "8319": [
+      4,
+      5,
+      6
+    ],
+    "8320": [
+      5
+    ],
+    "8317": [
+      14
+    ],
+    "8321": [
+      10,
+      13
+    ],
+    "8314": [
+      5
+    ],
+    "8313": [
+      6,
+      14
+    ],
+    "8312": [
+      5
+    ],
+    "8310": [
+      6,
+      9
+    ],
+    "8311": [
+      8
+    ],
+    "8309": [
+      6
+    ],
+    "8307": [
+      2
+    ],
+    "8308": [
+      9
+    ],
+    "8302": [
+      4
+    ],
+    "8304": [
+      11
+    ],
+    "8300": [
+      8
+    ],
+    "8301": [
+      15
+    ],
+    "8303": [
+      5
+    ],
+    "8298": [
+      8
+    ],
+    "8299": [
+      11
+    ],
+    "8296": [
+      8
+    ],
+    "8295": [
+      5
+    ],
+    "8293": [
+      2
+    ],
+    "8291": [
+      11
+    ],
+    "8292": [
+      15
+    ],
+    "8287": [
+      13
+    ],
+    "8288": [
+      4,
+      8,
+      10
+    ],
+    "8286": [
+      11
+    ],
+    "8285": [
+      14
+    ],
+    "8280": [
+      4,
+      12
+    ],
+    "8281": [
+      5
+    ],
+    "8284": [
+      0
+    ],
+    "8283": [
+      5
+    ],
+    "8282": [
+      6
+    ],
+    "8279": [
+      7
+    ],
+    "8275": [
+      0,
+      11
+    ],
+    "8276": [
+      5
+    ],
+    "8277": [
+      9
+    ],
+    "8272": [
+      0
+    ],
+    "8273": [
+      9
+    ],
+    "8267": [
+      3
+    ],
+    "8266": [
+      10
+    ],
+    "8269": [
+      6
+    ],
+    "8271": [
+      10
+    ],
+    "8268": [
+      15
+    ],
+    "8270": [
+      5
+    ],
+    "8256": [
+      15
+    ],
+    "8257": [
+      15
+    ],
+    "8262": [
+      15
+    ],
+    "8259": [
+      14
+    ],
+    "8263": [
+      15
+    ],
+    "8261": [
+      15
+    ],
+    "8255": [
+      15
+    ],
+    "8251": [
+      10,
+      13
+    ],
+    "8254": [
+      8,
+      13
+    ],
+    "8249": [
+      15
+    ],
+    "8248": [
+      15
+    ],
+    "8247": [
+      10,
+      14
+    ],
+    "8230": [
+      15
+    ],
+    "8224": [
+      15
+    ],
+    "8227": [
+      6
+    ],
+    "8242": [
+      5
+    ],
+    "8229": [
+      4
+    ],
+    "8231": [
+      6
+    ],
+    "8234": [
+      6,
+      14
+    ],
+    "8235": [
+      6,
+      14
+    ],
+    "8237": [
+      5
+    ],
+    "8238": [
+      6
+    ],
+    "8239": [
+      15
+    ],
+    "8241": [
+      6,
+      13
+    ],
+    "8243": [
+      6,
+      13
+    ],
+    "8244": [
+      5
+    ],
+    "8245": [
+      13
+    ],
+    "8246": [
+      13
+    ],
+    "8236": [
+      15
+    ],
+    "8228": [
+      6,
+      14
+    ],
+    "8225": [
+      4,
+      11
+    ],
+    "8223": [
+      9,
+      12,
+      13
+    ],
+    "8222": [
+      5,
+      13,
+      14
+    ],
+    "8221": [
+      4
+    ],
+    "8219": [
+      15
+    ],
+    "8220": [
+      4,
+      9
+    ],
+    "8218": [
+      6,
+      13
+    ],
+    "8217": [
+      0
+    ],
+    "8216": [
+      11
+    ],
+    "8213": [
+      11,
+      13
+    ],
+    "8215": [
+      5,
+      10
+    ],
+    "8214": [
+      5,
+      12
+    ],
+    "8212": [
+      8
+    ],
+    "8207": [
+      15
+    ],
+    "8201": [
+      4
+    ],
+    "8203": [
+      0,
+      4,
+      12
+    ],
+    "8205": [
+      15
+    ],
+    "8206": [
+      13
+    ],
+    "8200": [
+      5
+    ],
+    "8210": [
+      7
+    ],
+    "8195": [
+      10,
+      13
+    ],
+    "8196": [
+      8
+    ],
+    "8197": [
+      4
+    ],
+    "8198": [
+      13
+    ],
+    "8199": [
+      4
+    ],
+    "8191": [
+      2,
+      6,
+      12
+    ],
+    "8192": [
+      9
+    ],
+    "8193": [
+      12
+    ],
+    "8188": [
+      15
+    ],
+    "8189": [
+      15
+    ],
+    "8184": [
+      6,
+      8
+    ],
+    "8183": [
+      5
+    ],
+    "8182": [
+      7
+    ],
+    "8186": [
+      5,
+      14
+    ],
+    "8180": [
+      0,
+      2
+    ],
+    "8175": [
+      10,
+      13
+    ],
+    "8176": [
+      2
+    ],
+    "8177": [
+      10,
+      13
+    ],
+    "8178": [
+      15
+    ],
+    "8179": [
+      8
+    ],
+    "8174": [
+      10
+    ],
+    "8169": [
+      6
+    ],
+    "8172": [
+      1,
+      6
+    ],
+    "8173": [
+      1,
+      6,
+      13
+    ],
+    "8171": [
+      8
+    ],
+    "8170": [
+      15
+    ],
+    "8165": [
+      13
+    ],
+    "8164": [
+      4,
+      12
+    ],
+    "8168": [
+      8
+    ],
+    "8166": [
+      4
+    ],
+    "8167": [
+      9
+    ],
+    "8161": [
+      12,
+      14
+    ],
+    "8160": [
+      5
+    ],
+    "8152": [
+      15
+    ],
+    "8150": [
+      5
+    ],
+    "8156": [
+      11
+    ],
+    "8151": [
+      6
+    ],
+    "8153": [
+      15
+    ],
+    "8155": [
+      9
+    ],
+    "8147": [
+      11,
+      12,
+      13
+    ],
+    "8148": [
+      6,
+      10
+    ],
+    "8149": [
+      6
+    ],
+    "8145": [
+      15
+    ],
+    "8142": [
+      15
+    ],
+    "8144": [
+      3,
+      7
+    ],
+    "8143": [
+      15
+    ],
+    "8141": [
+      6
+    ],
+    "8139": [
+      6
+    ],
+    "8135": [
+      8,
+      9,
+      13
+    ],
+    "8136": [
+      15
+    ],
+    "8134": [
+      13
+    ],
+    "8131": [
+      6
+    ],
+    "8132": [
+      6
+    ],
+    "8129": [
+      10
+    ],
+    "8130": [
+      15
+    ],
+    "8125": [
+      15
+    ],
+    "8126": [
+      13
+    ],
+    "8124": [
+      2
+    ],
+    "8127": [
+      7
+    ],
+    "8123": [
+      4
+    ],
+    "8120": [
+      6,
+      14
+    ],
+    "8121": [
+      6
+    ],
+    "8114": [
+      6,
+      10,
+      13
+    ],
+    "8117": [
+      2
+    ],
+    "8118": [
+      10
+    ],
+    "8112": [
+      6
+    ],
+    "8110": [
+      0,
+      5
+    ],
+    "8108": [
+      6,
+      10,
+      13
+    ],
+    "8107": [
+      6
+    ],
+    "8109": [
+      5,
+      7,
+      13
+    ],
+    "8103": [
+      13
+    ],
+    "8104": [
+      9
+    ],
+    "8101": [
+      10
+    ],
+    "8102": [
+      8
+    ],
+    "8105": [
+      15
+    ],
+    "8099": [
+      2
+    ],
+    "8097": [
+      4
+    ],
+    "8096": [
+      15
+    ],
+    "8100": [
+      6,
+      14
+    ],
+    "8092": [
+      6
+    ],
+    "8093": [
+      8
+    ],
+    "8091": [
+      14
+    ],
+    "8094": [
+      15
+    ],
+    "8088": [
+      10
+    ],
+    "8095": [
+      12,
+      14
+    ],
+    "8085": [
+      6,
+      12
+    ],
+    "8080": [
+      13
+    ],
+    "8084": [
+      4
+    ],
+    "8083": [
+      3,
+      6,
+      14
+    ],
+    "8077": [
+      15
+    ],
+    "8078": [
+      2,
+      5
+    ],
+    "8079": [
+      6
+    ],
+    "8081": [
+      6
+    ],
+    "8082": [
+      8
+    ],
+    "8074": [
+      7,
+      13
+    ],
+    "8070": [
+      7,
+      12
+    ],
+    "8069": [
+      0
+    ],
+    "8071": [
+      4,
+      6
+    ],
+    "8075": [
+      2
+    ],
+    "8073": [
+      15
+    ],
+    "8076": [
+      6,
+      7,
+      12
+    ],
+    "8068": [
+      11,
+      14
+    ],
+    "8062": [
+      6,
+      7
+    ],
+    "8061": [
+      2,
+      6
+    ],
+    "8063": [
+      8
+    ],
+    "8059": [
+      13
+    ],
+    "8064": [
+      5
+    ],
+    "8060": [
+      0,
+      2
+    ],
+    "8052": [
+      8
+    ],
+    "8055": [
+      8
+    ],
+    "8058": [
+      6,
+      8,
+      14
+    ],
+    "8056": [
+      4,
+      13
+    ],
+    "8521": [
+      2,
+      4,
+      12
+    ],
+    "8051": [
+      15
+    ],
+    "8042": [
+      6
+    ],
+    "8043": [
+      15
+    ],
+    "8041": [
+      4
+    ],
+    "8050": [
+      6
+    ],
+    "8047": [
+      9
+    ],
+    "8044": [
+      6
+    ],
+    "8046": [
+      15
+    ],
+    "8037": [
+      12
+    ],
+    "8038": [
+      0,
+      2
+    ],
+    "8040": [
+      4
+    ],
+    "8036": [
+      6
+    ],
+    "8034": [
+      6,
+      11
+    ],
+    "8033": [
+      6
+    ],
+    "8035": [
+      15
+    ],
+    "8027": [
+      4
+    ],
+    "8032": [
+      2
+    ],
+    "8028": [
+      8
+    ],
+    "8029": [
+      0,
+      11
+    ],
+    "8031": [
+      13
+    ],
+    "8030": [
+      11
+    ],
+    "8026": [
+      13
+    ],
+    "8022": [
+      9
+    ],
+    "8020": [
+      15
+    ],
+    "8014": [
+      5
+    ],
+    "8025": [
+      15
+    ],
+    "8024": [
+      6
+    ],
+    "8019": [
+      4,
+      12
+    ],
+    "8017": [
+      6,
+      8
+    ],
+    "8016": [
+      4,
+      13
+    ],
+    "8021": [
+      15
+    ],
+    "8023": [
+      4,
+      8,
+      13
+    ],
+    "8013": [
+      13
+    ],
+    "8009": [
+      15
+    ],
+    "8007": [
+      15
+    ],
+    "8008": [
+      15
+    ],
+    "8010": [
+      13
+    ],
+    "8012": [
+      13
+    ],
+    "8006": [
+      6
+    ],
+    "7999": [
+      15
+    ],
+    "8000": [
+      15
+    ],
+    "7996": [
+      0,
+      11
+    ],
+    "8002": [
+      4
+    ],
+    "7998": [
+      5,
+      13
+    ],
+    "7997": [
+      10
+    ],
+    "8005": [
+      3
+    ],
+    "8001": [
+      5
+    ],
+    "8004": [
+      4,
+      13
+    ],
+    "7994": [
+      0,
+      6,
+      10
+    ],
+    "7993": [
+      13
+    ],
+    "7987": [
+      8
+    ],
+    "7995": [
+      13
+    ],
+    "7992": [
+      2,
+      4
+    ],
+    "7990": [
+      4,
+      13
+    ],
+    "7989": [
+      6
+    ],
+    "7991": [
+      8
+    ],
+    "7986": [
+      15
+    ],
+    "7983": [
+      8
+    ],
+    "7984": [
+      2
+    ],
+    "7981": [
+      13
+    ],
+    "7976": [
+      11
+    ],
+    "7977": [
+      3,
+      6,
+      12
+    ],
+    "7978": [
+      11
+    ],
+    "7975": [
+      13
+    ],
+    "7974": [
+      4
+    ],
+    "7973": [
+      6
+    ],
+    "7971": [
+      5
+    ],
+    "7967": [
+      6
+    ],
+    "7968": [
+      6
+    ],
+    "7972": [
+      6
+    ],
+    "7969": [
+      8
+    ],
+    "7970": [
+      8
+    ],
+    "7961": [
+      0
+    ],
+    "7965": [
+      5
+    ],
+    "7966": [
+      5,
+      13
+    ],
+    "7953": [
+      15
+    ],
+    "7959": [
+      7
+    ],
+    "7958": [
+      2
+    ],
+    "7955": [
+      15
+    ],
+    "7956": [
+      2
+    ],
+    "7945": [
+      8
+    ],
+    "7948": [
+      15
+    ],
+    "7949": [
+      15
+    ],
+    "7952": [
+      0
+    ],
+    "7943": [
+      9
+    ],
+    "7944": [
+      12
+    ],
+    "7942": [
+      15
+    ],
+    "7940": [
+      5
+    ],
+    "7939": [
+      6,
+      10
+    ],
+    "7937": [
+      10
+    ],
+    "7936": [
+      15
+    ],
+    "7933": [
+      15
+    ],
+    "7932": [
+      0
+    ],
+    "8278": [
+      9
+    ],
+    "7929": [
+      14
+    ],
+    "8491": [
+      15
+    ],
+    "7924": [
+      6
+    ],
+    "7925": [
+      13
+    ],
+    "7926": [
+      6
+    ],
+    "7920": [
+      6
+    ],
+    "7921": [
+      15
+    ],
+    "7922": [
+      2,
+      12
+    ],
+    "7923": [
+      4,
+      6,
+      7
+    ],
+    "7928": [
+      1
+    ],
+    "7918": [
+      13
+    ],
+    "7913": [
+      5
+    ],
+    "7915": [
+      15
+    ],
+    "7916": [
+      5
+    ],
+    "7912": [
+      6,
+      11
+    ],
+    "7919": [
+      15
+    ],
+    "7917": [
+      5
+    ],
+    "7914": [
+      15
+    ],
+    "7907": [
+      9
+    ],
+    "7906": [
+      3,
+      5
+    ],
+    "7909": [
+      15
+    ],
+    "7910": [
+      6,
+      12
+    ],
+    "7908": [
+      15
+    ],
+    "7911": [
+      7
+    ],
+    "7899": [
+      6,
+      10
+    ],
+    "7898": [
+      5
+    ],
+    "7900": [
+      6,
+      9,
+      11
+    ],
+    "7903": [
+      4,
+      5
+    ],
+    "7901": [
+      15
+    ],
+    "7902": [
+      15
+    ],
+    "7877": [
+      5
+    ],
+    "7887": [
+      15
+    ],
+    "7889": [
+      5
+    ],
+    "7891": [
+      7
+    ],
+    "7879": [
+      2,
+      8
+    ],
+    "7885": [
+      8,
+      10
+    ],
+    "7883": [
+      14
+    ],
+    "7886": [
+      15
+    ],
+    "7888": [
+      15
+    ],
+    "7895": [
+      4
+    ],
+    "7896": [
+      13
+    ],
+    "7878": [
+      4,
+      12
+    ],
+    "7893": [
+      0
+    ],
+    "7880": [
+      2
+    ],
+    "7881": [
+      8,
+      10
+    ],
+    "7882": [
+      12
+    ],
+    "7884": [
+      15
+    ],
+    "7872": [
+      6,
+      7,
+      9
+    ],
+    "7868": [
+      6
+    ],
+    "7854": [
+      13
+    ],
+    "7855": [
+      13
+    ],
+    "7853": [
+      13
+    ],
+    "7851": [
+      0
+    ],
+    "7852": [
+      0,
+      11
+    ],
+    "7844": [
+      1,
+      5,
+      13
+    ],
+    "7845": [
+      1
+    ],
+    "7843": [
+      5
+    ],
+    "7842": [
+      15
+    ],
+    "7840": [
+      6,
+      11
+    ],
+    "7838": [
+      6,
+      10
+    ],
+    "7837": [
+      15
+    ],
+    "7832": [
+      6
+    ],
+    "7831": [
+      5,
+      6
+    ],
+    "7830": [
+      5
+    ],
+    "7826": [
+      7,
+      8
+    ],
+    "7829": [
+      6,
+      13
+    ],
+    "7825": [
+      15
+    ],
+    "7827": [
+      5
+    ],
+    "7821": [
+      6,
+      14
+    ],
+    "7823": [
+      5
+    ],
+    "7820": [
+      15
+    ],
+    "7824": [
+      4,
+      14
+    ],
+    "7822": [
+      15
+    ],
+    "7811": [
+      6
+    ],
+    "7812": [
+      8
+    ],
+    "7813": [
+      8
+    ],
+    "7810": [
+      6,
+      14
+    ],
+    "8396": [
+      5
+    ],
+    "7801": [
+      15
+    ],
+    "7802": [
+      4
+    ],
+    "7804": [
+      4
+    ],
+    "7805": [
+      15
+    ],
+    "7808": [
+      6,
+      13
+    ],
+    "7800": [
+      2
+    ],
+    "7798": [
+      15
+    ],
+    "7796": [
+      1,
+      6,
+      9
+    ],
+    "7797": [
+      1,
+      6
+    ],
+    "7795": [
+      6
+    ],
+    "7789": [
+      1,
+      6
+    ],
+    "7790": [
+      1
+    ],
+    "7791": [
+      1,
+      14
+    ],
+    "7792": [
+      1,
+      5
+    ],
+    "7793": [
+      1,
+      14
+    ],
+    "7794": [
+      1
+    ],
+    "7787": [
+      15
+    ],
+    "7785": [
+      8,
+      11,
+      12
+    ],
+    "7786": [
+      10
+    ],
+    "7783": [
+      4,
+      13
+    ],
+    "7782": [
+      3
+    ],
+    "7777": [
+      4
+    ],
+    "7779": [
+      10
+    ],
+    "7768": [
+      0,
+      11
+    ],
+    "7767": [
+      15
+    ],
+    "8371": [
+      3,
+      4
+    ],
+    "7764": [
+      15
+    ],
+    "7760": [
+      6
+    ],
+    "7757": [
+      8,
+      10
+    ],
+    "7759": [
+      3
+    ],
+    "7756": [
+      2
+    ],
+    "7754": [
+      12
+    ],
+    "8569": [
+      15
+    ],
+    "7753": [
+      4
+    ],
+    "7752": [
+      0
+    ],
+    "7750": [
+      3
+    ],
+    "7748": [
+      5
+    ],
+    "7751": [
+      13
+    ],
+    "7742": [
+      5
+    ],
+    "7740": [
+      5
+    ],
+    "7745": [
+      10
+    ],
+    "7743": [
+      2,
+      7
+    ],
+    "7747": [
+      15
+    ],
+    "7738": [
+      13,
+      14
+    ],
+    "7736": [
+      3
+    ],
+    "7734": [
+      15
+    ],
+    "7733": [
+      2,
+      4
+    ],
+    "7735": [
+      6,
+      10,
+      13
+    ],
+    "8158": [
+      15
+    ],
+    "7729": [
+      6
+    ],
+    "7731": [
+      0,
+      9,
+      13
+    ],
+    "7728": [
+      5
+    ],
+    "7724": [
+      10
+    ],
+    "7720": [
+      3
+    ],
+    "7717": [
+      5,
+      13
+    ],
+    "7714": [
+      3
+    ],
+    "7711": [
+      1,
+      6
+    ],
+    "7712": [
+      6
+    ],
+    "7708": [
+      6,
+      12
+    ],
+    "8159": [
+      15
+    ],
+    "7705": [
+      11
+    ],
+    "7704": [
+      11
+    ],
+    "7702": [
+      2
+    ],
+    "7701": [
+      4
+    ],
+    "7699": [
+      15
+    ],
+    "7698": [
+      1
+    ],
+    "7696": [
+      6
+    ],
+    "7700": [
+      13
+    ],
+    "7693": [
+      5
+    ],
+    "7694": [
+      4,
+      11
+    ],
+    "7692": [
+      15
+    ],
+    "7689": [
+      6
+    ],
+    "7691": [
+      6
+    ],
+    "7695": [
+      6,
+      7,
+      13
+    ],
+    "7686": [
+      15
+    ],
+    "7684": [
+      2,
+      13
+    ],
+    "7683": [
+      5,
+      10
+    ],
+    "7682": [
+      8
+    ],
+    "7680": [
+      1,
+      6,
+      9
+    ],
+    "7675": [
+      6
+    ],
+    "7678": [
+      5
+    ],
+    "7677": [
+      9,
+      14
+    ],
+    "7674": [
+      3
+    ],
+    "8253": [
+      7
+    ],
+    "7669": [
+      4,
+      14
+    ],
+    "8250": [
+      0
+    ],
+    "7662": [
+      5,
+      6,
+      13
+    ],
+    "7659": [
+      5,
+      9
+    ],
+    "7650": [
+      5
+    ],
+    "7656": [
+      2
+    ],
+    "7655": [
+      12
+    ],
+    "7657": [
+      0
+    ],
+    "7653": [
+      15
+    ],
+    "7652": [
+      15
+    ],
+    "7654": [
+      11
+    ],
+    "7658": [
+      5
+    ],
+    "7649": [
+      15
+    ],
+    "7647": [
+      11
+    ],
+    "7642": [
+      8
+    ],
+    "7644": [
+      11
+    ],
+    "7641": [
+      13
+    ],
+    "7645": [
+      5
+    ],
+    "7638": [
+      4
+    ],
+    "7636": [
+      15
+    ],
+    "7634": [
+      7,
+      13
+    ],
+    "7635": [
+      2,
+      14
+    ],
+    "8053": [
+      5
+    ],
+    "7627": [
+      15
+    ],
+    "7622": [
+      12
+    ],
+    "7625": [
+      6,
+      7,
+      9
+    ],
+    "7623": [
+      11
+    ],
+    "7624": [
+      15
+    ],
+    "7611": [
+      6
+    ],
+    "7601": [
+      2
+    ],
+    "7603": [
+      4
+    ],
+    "7604": [
+      9
+    ],
+    "7607": [
+      15
+    ],
+    "7602": [
+      1
+    ],
+    "7605": [
+      1,
+      5
+    ],
+    "7606": [
+      1,
+      5
+    ],
+    "7608": [
+      1
+    ],
+    "7612": [
+      1
+    ],
+    "7613": [
+      1
+    ],
+    "7614": [
+      1
+    ],
+    "7619": [
+      1,
+      8
+    ],
+    "7616": [
+      5
+    ],
+    "7848": [
+      5,
+      14
+    ],
+    "7618": [
+      5,
+      6
+    ],
+    "8098": [
+      13
+    ],
+    "7609": [
+      10,
+      13
+    ],
+    "8265": [
+      15
+    ],
+    "7596": [
+      10,
+      13
+    ],
+    "7590": [
+      3
+    ],
+    "7597": [
+      8
+    ],
+    "7595": [
+      12
+    ],
+    "7598": [
+      13
+    ],
+    "7583": [
+      5,
+      12
+    ],
+    "7581": [
+      14
+    ],
+    "7585": [
+      0,
+      2
+    ],
+    "7582": [
+      15
+    ],
+    "7574": [
+      15
+    ],
+    "7578": [
+      15
+    ],
+    "7576": [
+      0,
+      2
+    ],
+    "7573": [
+      13
+    ],
+    "7571": [
+      15
+    ],
+    "7577": [
+      14
+    ],
+    "7570": [
+      5
+    ],
+    "7567": [
+      12
+    ],
+    "7568": [
+      0,
+      2
+    ],
+    "7566": [
+      11
+    ],
+    "7563": [
+      2,
+      4,
+      8
+    ],
+    "7558": [
+      4,
+      11
+    ],
+    "7560": [
+      13
+    ],
+    "7554": [
+      5
+    ],
+    "7555": [
+      13
+    ],
+    "7550": [
+      5
+    ],
+    "7551": [
+      13
+    ],
+    "8057": [
+      15
+    ],
+    "7546": [
+      4
+    ],
+    "7547": [
+      15
+    ],
+    "7545": [
+      2,
+      12
+    ],
+    "7548": [
+      10
+    ],
+    "7544": [
+      11
+    ],
+    "7538": [
+      6
+    ],
+    "7542": [
+      10
+    ],
+    "7543": [
+      11
+    ],
+    "7539": [
+      15
+    ],
+    "7540": [
+      4
+    ],
+    "7541": [
+      15
+    ],
+    "7537": [
+      4,
+      6
+    ],
+    "8194": [
+      11
+    ],
+    "7529": [
+      8
+    ],
+    "7533": [
+      15
+    ],
+    "7536": [
+      5
+    ],
+    "7531": [
+      10
+    ],
+    "7535": [
+      5
+    ],
+    "7532": [
+      6
+    ],
+    "7525": [
+      5
+    ],
+    "7527": [
+      4
+    ],
+    "7528": [
+      8,
+      13
+    ],
+    "7521": [
+      5,
+      12
+    ],
+    "8384": [
+      0
+    ],
+    "7519": [
+      0
+    ],
+    "8011": [
+      2,
+      11
+    ],
+    "8289": [
+      8,
+      10
+    ],
+    "7516": [
+      5
+    ],
+    "7513": [
+      5
+    ],
+    "7510": [
+      4
+    ],
+    "7512": [
+      9
+    ],
+    "7506": [
+      6
+    ],
+    "7508": [
+      6
+    ],
+    "7509": [
+      13
+    ],
+    "7511": [
+      15
+    ],
+    "7507": [
+      0
+    ],
+    "7502": [
+      5
+    ],
+    "7500": [
+      6,
+      13
+    ],
+    "7496": [
+      15
+    ],
+    "7497": [
+      7,
+      12
+    ],
+    "7501": [
+      6
+    ],
+    "7495": [
+      13
+    ],
+    "7499": [
+      5
+    ],
+    "7498": [
+      11,
+      13
+    ],
+    "7493": [
+      8
+    ],
+    "7488": [
+      12
+    ],
+    "7486": [
+      5,
+      6
+    ],
+    "7487": [
+      11
+    ],
+    "7489": [
+      4,
+      6
+    ],
+    "7491": [
+      15
+    ],
+    "8397": [
+      15
+    ],
+    "7484": [
+      0,
+      13
+    ],
+    "7479": [
+      15
+    ],
+    "7490": [
+      13
+    ],
+    "7477": [
+      6,
+      7
+    ],
+    "7475": [
+      2
+    ],
+    "7503": [
+      5
+    ],
+    "7471": [
+      5
+    ],
+    "7470": [
+      8
+    ],
+    "7472": [
+      5
+    ],
+    "7467": [
+      2
+    ],
+    "7465": [
+      6
+    ],
+    "7463": [
+      11,
+      14
+    ],
+    "7462": [
+      0
+    ],
+    "7461": [
+      10
+    ],
+    "8163": [
+      10
+    ],
+    "7456": [
+      15
+    ],
+    "7775": [
+      2,
+      4
+    ],
+    "8146": [
+      6,
+      8
+    ],
+    "7453": [
+      5
+    ],
+    "7450": [
+      3,
+      7,
+      11
+    ],
+    "7452": [
+      5,
+      9
+    ],
+    "7454": [
+      5,
+      9
+    ],
+    "7449": [
+      13
+    ],
+    "7447": [
+      15
+    ],
+    "7445": [
+      4
+    ],
+    "8339": [
+      13
+    ],
+    "7441": [
+      5
+    ],
+    "7439": [
+      5
+    ],
+    "7440": [
+      6,
+      7
+    ],
+    "7437": [
+      2
+    ],
+    "7435": [
+      2,
+      6
+    ],
+    "7436": [
+      13
+    ],
+    "7438": [
+      13
+    ],
+    "7430": [
+      13
+    ],
+    "8252": [
+      8
+    ],
+    "7431": [
+      5,
+      6
+    ],
+    "7428": [
+      4
+    ],
+    "7433": [
+      7
+    ],
+    "7432": [
+      5,
+      14
+    ],
+    "7425": [
+      9
+    ],
+    "7423": [
+      12
+    ],
+    "7424": [
+      15
+    ],
+    "7421": [
+      15
+    ],
+    "7422": [
+      13
+    ],
+    "7416": [
+      15
+    ],
+    "7419": [
+      11
+    ],
+    "7415": [
+      14
+    ],
+    "7420": [
+      5
+    ],
+    "8366": [
+      2
+    ],
+    "7414": [
+      13
+    ],
+    "7417": [
+      6,
+      12
+    ],
+    "8048": [
+      2,
+      6
+    ],
+    "7408": [
+      6,
+      8
+    ],
+    "7412": [
+      13
+    ],
+    "7404": [
+      4
+    ],
+    "7405": [
+      7
+    ],
+    "7406": [
+      15
+    ],
+    "7410": [
+      13
+    ],
+    "7403": [
+      4,
+      13
+    ],
+    "7411": [
+      13
+    ],
+    "7776": [
+      6,
+      7
+    ],
+    "7413": [
+      13
+    ]
   },
   "proponentes_sin_match": [
     {

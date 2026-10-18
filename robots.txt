@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://observatoriolegistalivopa.netlify.app/sitemap.xml

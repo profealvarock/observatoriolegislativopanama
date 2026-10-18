@@ -11,6 +11,7 @@ Desplegado en Netlify: [https://observatoriolegistalivopa.netlify.app](https://o
 |---------|-----------|
 | **General** | Timeline de actividad por mes, donut de etapas, embudo legislativo, top 20 diputados, mapa por provincia |
 | **Diputados** | Tabla y tarjetas con producción por diputado (filtrable por partido, provincia y mes) |
+| **Proyectos** | Buscador de los proyectos de ley (título, ficha o proponente), filtros por etapa, año y tema, y gráfico de proyectos por tema |
 | **Monitoreo** | Planilla, asistencia a pleno y comisiones, calificación de desempeño |
 | **Partidos** | Proyectos y leyes por partido político |
 | **Otros proponentes** | Órgano Ejecutivo, iniciativa ciudadana y comisiones de la Asamblea |
@@ -23,6 +24,8 @@ Además:
 - **Evolución en el tiempo**: gráfico de tendencias en Monitoreo y pestaña "Evolución" en la ficha de cada diputado, a partir de `historico.json`.
 - **Datos abiertos**: descargas en CSV (proyectos, diputados, monitoreo, costos e histórico) desde la pestaña General y junto a cada tabla.
 - **Modo claro/oscuro** y diseño adaptado a celular y tablet.
+- **Páginas para compartir**: `diputado/<slug>/` (generadas por el scraper) tienen título, descripción y cifras propias para la vista previa en WhatsApp, X, Facebook y Google, y llevan a la ficha completa. El botón "Compartir" de cada ficha usa estas páginas. Hay `sitemap.xml` y `robots.txt` para buscadores.
+- **Accesibilidad**: pestañas con roles ARIA y navegación con flechas, Inicio y Fin; ficha como diálogo; cada gráfico con descripción y una tabla plegable "Ver datos del gráfico"; enlace "Saltar al contenido".
 
 ## 🎨 Color
 Reglas para mantener la paleta coherente:
@@ -31,6 +34,7 @@ Reglas para mantener la paleta coherente:
 - **Etapas** (`ETAPA_COLOR` en `index.html`): las que siguen en trámite van en una escala de azules que avanza con el proceso (validada como rampa ordinal en cada tema); Enviado al Ejecutivo = índigo; objetado = naranja; ley = verde; negado = rojo; archivado, retirado o suspendido = gris.
 - **Dinero**: montos en tinta neutra y ámbar (`--costo`) como único acento de gasto.
 - **Contraste**: textos de al menos 4.5:1 en ambos temas.
+- **Un solo eje por gráfico**: medidas de escala distinta (planilla en B/. y calificación 1–5) van en gráficos separados, nunca con dos ejes verticales.
 
 ## ✍️ Autoría
 Creado por **@profealvarock** — [Portafolio](https://profealvarock.vercel.app/) · [TikTok](https://www.tiktok.com/@profealvarock) · [LinkedIn](https://www.linkedin.com/in/profealvarock) · [Instagram](https://www.instagram.com/profealvarock) · [Facebook](https://www.facebook.com/profealvarock) · [X](https://x.com/profealvarock) · [Bluesky](https://bsky.app/profile/profealvarock.bsky.social) · [YouTube](https://www.youtube.com/@profealvarock)
@@ -46,6 +50,9 @@ observatoriolegislativopanama/
 ├── diputados.json          # Perfil y foto de los 71 diputados (auto-generado)
 ├── metricas_diputados.json # Planilla, asistencia, calificación (auto-generado)
 ├── historico.json          # Una foto diaria por diputado para graficar tendencias (auto-generado)
+├── diputado/<slug>/        # Página para compartir de cada diputado (auto-generado)
+├── sitemap.xml             # Mapa del sitio para buscadores (auto-generado)
+├── robots.txt
 ├── panama-map.svg          # Mapa base de Panamá
 ├── netlify.toml            # Configuración Netlify
 └── .github/workflows/
@@ -128,6 +135,9 @@ La Asamblea registra a los proponentes con su nombre completo (`H.D JORGE ISAAC 
 **Comisiones de cada diputado.** Espacio Cívico las publica en una sola línea separada por `|`; el scraper las separa y quita los emojis, así `comisiones_cantidad` refleja el número real.
 
 En `resumen.json`, cada diputado incluye `proyectos` (como proponente principal), `co_patrocinios`, `proyectos_suplente` (cuántos de sus proyectos firmó su suplente) y `participaciones` (fichas en que participó con cualquier rol). La pestaña de costos usa esas `participaciones`, de modo que todas las pestañas usan la misma relación.
+
+## 🏷️ Temas
+`clasificar_temas` (en `scraper.py`) asigna a cada proyecto uno o más de 15 temas según palabras clave del título (lista `TEMAS`); si no coincide ninguno queda en "Otros" (~18 %, sobre todo títulos tipo "Que modifica la Ley 15 de 1995"). En `resumen.json`: `temas` (nombres), `temas_por_ficha` (índices por proyecto), `por_tema` (proyectos y leyes) y `temas_autor` en cada diputado. Para mejorar la clasificación basta con agregar palabras a `TEMAS`.
 
 ## 📈 Índice de efectividad legislativa
 Mide la capacidad de convertir proyectos en leyes (`calcular_efectividad` en `scraper.py`; se guarda en `efectividad_ley` de cada diputado y `efectividad_meta` en `resumen.json`).

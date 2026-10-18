@@ -469,6 +469,50 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .cmp-empty{font-family:var(--fm);font-size:.72rem;color:var(--muted);padding:8px 0}
 .cmp-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px;flex-wrap:wrap}
 
+/* GRÁFICOS SEPARADOS (sin doble eje) */
+.chart-sub{font-family:var(--fm);font-size:.66rem;color:var(--muted);margin:6px 0 4px}
+.hist-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);margin-top:8px}
+.hist-2 .hist-wrap{margin-top:0;height:220px}
+.hist-wrap-sm{height:170px;margin-top:0}
+@media(max-width:768px){.hist-2{grid-template-columns:1fr}}
+
+/* TABLA DE DATOS BAJO CADA GRÁFICO (accesibilidad) */
+.chart-tabla{margin-top:8px;font-family:var(--fm);font-size:.66rem}
+.chart-tabla>summary{cursor:pointer;color:var(--muted);display:inline-block;padding:2px 0}
+.chart-tabla>summary:hover{color:var(--acc)}
+.chart-tabla-scroll{max-height:260px;overflow:auto;margin-top:6px;border:1px solid var(--border);border-radius:8px}
+.chart-tabla table{min-width:0;width:100%;font-size:.68rem}
+.chart-tabla th,.chart-tabla td{padding:5px 10px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;position:static;cursor:default}
+.chart-tabla td:not(:first-child),.chart-tabla th:not(:first-child){text-align:right}
+
+/* PROYECTOS */
+.proy-filtros{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:8px;margin-bottom:10px}
+.proy-filtros .proy-q{width:100%}
+.proy-resumen{font-family:var(--fm);font-size:.72rem;color:var(--muted);margin-bottom:10px}
+.proy-resumen b{color:var(--text)}
+.proy-lista{display:flex;flex-direction:column;gap:8px}
+.proy-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.proy-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-family:var(--fm);font-size:.66rem;color:var(--muted);margin-bottom:6px}
+.proy-titulo{font-size:.84rem;font-weight:600;line-height:1.45;margin-bottom:8px}
+.proy-titulo mark{background:color-mix(in srgb,var(--acc) 25%,transparent);color:inherit;border-radius:2px}
+.proy-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-family:var(--fm);font-size:.68rem;color:var(--muted)}
+.proy-meta a{color:var(--acc);text-decoration:none;font-weight:600}
+.proy-meta a:hover{text-decoration:underline}
+.tema-chip{display:inline-block;padding:1px 8px;border-radius:20px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-family:var(--fm);font-size:.62rem;cursor:pointer}
+.tema-chip:hover{border-color:var(--acc);color:var(--acc)}
+.proy-firmas>summary{cursor:pointer;color:var(--muted)}
+.proy-firmas>summary:hover{color:var(--acc)}
+.proy-firmas p{margin-top:6px;line-height:1.6;white-space:normal}
+.proy-mas{display:flex;justify-content:center;margin:14px 0 30px}
+@media(max-width:768px){.proy-filtros{grid-template-columns:1fr 1fr}.proy-filtros .proy-q{grid-column:1/-1}}
+
+/* ACCESIBILIDAD */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.chart-tabla th[scope="row"]{font-weight:400;text-align:left;color:var(--text);background:none;text-transform:none;letter-spacing:0;font-size:.68rem}
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:2000;background:var(--acc);color:#fff;padding:8px 14px;border-radius:8px;font-family:var(--fm);font-size:.8rem}
+.skip-link:focus{left:16px}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+
 /* EFECTIVIDAD LEGISLATIVA */
 .ief-tasa{font-family:var(--fm);font-weight:600;color:var(--text)}
 .ief-sub{font-family:var(--fm);font-size:.62rem;color:var(--muted);font-weight:400}
@@ -596,6 +640,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#contenido" onclick="event.preventDefault();document.querySelector('.tab-content.active')?.focus()">Saltar al contenido</a>
 <div class="wrap">
 
 <header>
@@ -642,9 +687,10 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 </div>
 
 <div class="tabs-wrap">
-<div class="tabs">
+<div class="tabs" role="tablist" aria-label="Secciones del observatorio">
   <button class="tab active" onclick="showTab('general')">📊 General</button>
   <button class="tab" onclick="showTab('diputados')">👤 Diputados</button>
+  <button class="tab" onclick="showTab('proyectos')">📄 Proyectos</button>
   <button class="tab" onclick="showTab('monitoreo')">📋 Monitoreo</button>
   <button class="tab" onclick="showTab('partidos')">🏛 Partidos</button>
   <button class="tab" onclick="showTab('proponentes')">🏢 Otros proponentes</button>
@@ -837,6 +883,42 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <div class="dep-grid" id="dep-grid" style="display:none"></div>
 </div>
 
+<!-- TAB PROYECTOS -->
+<div id="tab-proyectos" class="tab-content">
+  <div class="grid2" style="margin-bottom:var(--gap)">
+    <div class="card wide">
+      <div class="card-title" style="--ct:var(--acc)">Proyectos por tema</div>
+      <p class="monitor-note" style="margin:-8px 0 12px">Clasificados por palabras clave del título; un proyecto puede tener varios temas. Toca una barra para filtrar.</p>
+      <div class="ch xtall"><canvas id="c-temas"></canvas></div>
+    </div>
+  </div>
+  <div class="sec-hdr">
+    <div class="sec-title" style="--ct:var(--acc)">Buscar proyectos de ley</div>
+    <button class="dl-btn" onclick="exportProyectosFiltrados(this)" title="Descarga los proyectos con los filtros aplicados">⬇ CSV</button>
+  </div>
+  <div class="proy-filtros" role="search">
+    <input type="search" class="search-box proy-q" id="proy-q" placeholder="Título, número de ficha o proponente…" aria-label="Buscar por título, ficha o proponente" oninput="filtrarProyectos()">
+    <select class="cmp-select" id="proy-etapa" aria-label="Etapa" onchange="filtrarProyectos()">
+      <option value="">Todas las etapas</option>
+      <option value="analisis">En análisis</option>
+      <option value="debate">En debate</option>
+      <option value="ejecutivo">Ante el Ejecutivo</option>
+      <option value="ley">Ley</option>
+      <option value="sin">Sin avance</option>
+    </select>
+    <select class="cmp-select" id="proy-anio" aria-label="Año de presentación" onchange="filtrarProyectos()"><option value="">Todos los años</option></select>
+    <select class="cmp-select" id="proy-tema" aria-label="Tema" onchange="filtrarProyectos()"><option value="">Todos los temas</option></select>
+    <select class="cmp-select" id="proy-orden" aria-label="Orden" onchange="filtrarProyectos()">
+      <option value="reciente">Más recientes</option>
+      <option value="antiguo">Más antiguos</option>
+      <option value="firmas">Más firmantes</option>
+    </select>
+  </div>
+  <div class="proy-resumen" id="proy-resumen" aria-live="polite"></div>
+  <div class="proy-lista" id="proy-lista"><div class="loader"><div class="spinner"></div> Cargando proyectos…</div></div>
+  <div class="proy-mas"><button class="dl-btn" id="proy-mas" onclick="masProyectos()" style="display:none">Mostrar más</button></div>
+</div>
+
 <!-- TAB MONITOREO -->
 <div id="tab-monitoreo" class="tab-content">
   <div class="monitor-summary" id="monitor-summary">
@@ -844,8 +926,11 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   </div>
   <div class="monitor-grid">
     <div class="card">
-      <div class="card-title" style="--ct:var(--acc2)">Costo de planilla vs calificación</div>
-      <div class="ch tall"><canvas id="c-monitor-planilla"></canvas></div>
+      <div class="card-title" style="--ct:var(--acc2)">Planilla y calificación — 18 diputados con mayor planilla</div>
+      <p class="chart-sub">Planilla acumulada (B/.)</p>
+      <div class="ch"><canvas id="c-monitor-planilla"></canvas></div>
+      <p class="chart-sub">Calificación de Espacio Cívico (1–5), mismos diputados y mismo orden</p>
+      <div class="ch"><canvas id="c-monitor-calif"></canvas></div>
       <div class="monitor-src">Fuente: Espacio Cívico, monitoreo de planilla acumulada y asistencia.</div>
     </div>
     <div class="card">
@@ -857,7 +942,12 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <div class="card" style="margin-bottom:var(--gap)">
     <div class="card-title" style="--ct:var(--acc)">Evolución en el tiempo</div>
     <div id="monitor-hist-note" class="hist-note">Cargando historial…</div>
-    <div class="hist-wrap" id="monitor-hist-wrap" style="display:none"><canvas id="c-monitor-hist"></canvas></div>
+    <div id="monitor-hist-wrap" style="display:none">
+      <div class="hist-2">
+        <div><p class="chart-sub">Planilla total acumulada (B/.)</p><div class="hist-wrap"><canvas id="c-monitor-hist"></canvas></div></div>
+        <div><p class="chart-sub">Promedios de la Cámara (escala 1–5)</p><div class="hist-wrap"><canvas id="c-monitor-hist2"></canvas></div></div>
+      </div>
+    </div>
   </div>
   <div class="sec-hdr">
     <div class="sec-title">Monitoreo por diputado</div>
@@ -1034,6 +1124,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
         <dt>Autor → ley</dt><dd>Leyes ÷ proyectos que propuso como autor principal.</dd>
         <dt>Co-patr. → ley</dt><dd>Proyectos co-patrocinados que ya son ley ÷ proyectos co-patrocinados.</dd>
         <dt>Partidos y provincias</dt><dd>Cada proyecto cuenta <strong>una vez</strong>, para el partido y la provincia de su autor principal, así los totales cuadran. "Participa en" cuenta los proyectos en que firmó al menos un diputado del grupo.</dd>
+        <dt>Tema</dt><dd>Se asigna por palabras clave del título (15 temas, por ejemplo "Salud", "Tratados y relaciones exteriores" o "Conmemoraciones y festivales"). Un proyecto puede tener varios; si ninguna coincide queda en "Otros".</dd>
         <dt>Suplentes</dt><dd>Lo que firma un suplente (<code>H.D.S</code>) se suma al diputado principal al que suple, según el registro de suplencias de Espacio Cívico.</dd>
       </dl>
     </section>
@@ -1081,6 +1172,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
         <li>El conteo histórico de <strong>proyectos por diputado anterior a octubre de 2026</strong> no es comparable con el actual, porque cambió la forma de relacionar nombres; por eso la evolución solo muestra métricas de Espacio Cívico.</li>
         <li>El total de proyectos publicado por la Asamblea a veces <strong>baja</strong> de un día a otro (registros que se retiran o reclasifican). El observatorio refleja lo que la fuente publica.</li>
         <li>El primer firmante se toma como autor principal porque la fuente no indica el rol de cada firmante.</li>
+        <li>Los <strong>temas</strong> salen solo del título: cerca de 1 de cada 5 proyectos queda en "Otros" porque su título solo dice qué ley modifica (por ejemplo "Que modifica la Ley 15 de 1995"), y algunos pueden caer en un tema por una palabra que no es central.</li>
       </ul>
     </section>
 
@@ -1125,14 +1217,14 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 
 <!-- MODAL PROYECTOS -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
-  <div class="modal" onclick="event.stopPropagation()">
+  <div class="modal" onclick="event.stopPropagation()" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-header">
       <div>
         <div class="modal-title" id="modal-title"></div>
         <div class="modal-sub" id="modal-sub"></div>
       </div>
       <div class="modal-actions">
-        <button class="modal-link" id="modal-link" onclick="copyLink(this)" title="Copiar enlace directo a esta ficha">🔗 Enlace</button>
+        <button class="modal-link" id="modal-link" onclick="compartirFicha(this)" title="Compartir la ficha de este diputado">🔗 Compartir</button>
         <button class="modal-close" onclick="closeModal()">✕ Cerrar</button>
       </div>
     </div>
@@ -1228,8 +1320,34 @@ function applyChartDefaults(theme){
 
 // Todo gráfico nuevo nace con los colores del tema activo.
 Chart = class extends ChartBase {
-  constructor(item, cfg){ if(cfg) themeChartConfig(cfg, currentTheme(), true); super(item, cfg); }
+  constructor(item, cfg){
+    if(cfg) themeChartConfig(cfg, currentTheme(), true);
+    super(item, cfg);
+    try{ agregarTablaDatos(this); }catch(e){ console.error('Tabla del gráfico:', e); }
+  }
 };
+
+// Cada gráfico lleva una descripción para lectores de pantalla y, debajo, una tabla plegable con
+// sus datos: así la información nunca depende solo de ver el gráfico.
+function agregarTablaDatos(chart){
+  const canvas=chart.canvas;
+  if(!canvas || canvas.dataset.sinTabla!==undefined) return;
+  const cont=canvas.closest('.ch, .hist-wrap')||canvas.parentElement;
+  const sub=cont.previousElementSibling?.classList?.contains('chart-sub') ? cont.previousElementSibling.textContent : '';
+  const titulo=(sub || cont.closest('.card')?.querySelector('.card-title')?.textContent || 'Gráfico').trim();
+  canvas.setAttribute('role','img');
+  canvas.setAttribute('aria-label',`${titulo}. Los datos están en la tabla "Ver datos del gráfico", debajo.`);
+  const labels=chart.data.labels||[], ds=chart.data.datasets||[];
+  const fmt=v=>v==null||Number.isNaN(v) ? '—' : Number.isInteger(v) ? fmtNum(v) : Number(v).toLocaleString('es-PA',{maximumFractionDigits:2});
+  const cab=ds.length===1 ? [ds[0].label||'Valor'] : ds.map(d=>d.label||'');
+  const filas=labels.map((l,i)=>`<tr><th scope="row">${esc(Array.isArray(l)?l.join(' '):l)}</th>${ds.map(d=>`<td>${fmt(d.data[i])}</td>`).join('')}</tr>`).join('');
+  let det=cont.nextElementSibling;
+  if(!det || !det.classList.contains('chart-tabla')){ det=document.createElement('details'); det.className='chart-tabla'; cont.after(det); }
+  det.innerHTML=`<summary>Ver datos del gráfico</summary><div class="chart-tabla-scroll"><table>
+    <caption class="sr-only">${esc(titulo)}</caption>
+    <thead><tr><th scope="col">Categoría</th>${cab.map(c=>`<th scope="col">${esc(c)}</th>`).join('')}</tr></thead>
+    <tbody>${filas}</tbody></table></div>`;
+}
 
 function setTheme(theme, persist=true){
   const prev=currentTheme();
@@ -1354,6 +1472,8 @@ function showLeyes(idx){
   document.getElementById('modal-sub').textContent = hasTodos
     ? `${todos.length} proyecto${todos.length>1?'s':''} · ${leyes.length} ley${leyes.length>1?'es':''}`
     : `${leyes.length} ley${leyes.length>1?'es':''} aprobada${leyes.length>1?'s':''}`;
+  const temasDep=Object.keys(dep.temas_autor||{}).slice(0,3);
+  if(temasDep.length) document.getElementById('modal-sub').textContent += ` · Temas: ${temasDep.join(', ')}`;
   switchModalTab(hasTodos ? 'todos' : 'leyes');
   document.getElementById('modal-link').classList.add('show');
   setHash('diputado='+depSlug(dep));
@@ -1555,15 +1675,38 @@ function countUp(el, target, delay=0){
 }
 
 // ── TABS ──────────────────────────────────────────
-const TABS=['general','diputados','monitoreo','partidos','proponentes','costos','metodologia'];
+const TABS=['general','diputados','proyectos','monitoreo','partidos','proponentes','costos','metodologia'];
+
+// Pestañas accesibles: roles ARIA y navegación con flechas, Inicio y Fin (patrón WAI-ARIA)
+(function initTabsA11y(){
+  const btns=[...document.querySelectorAll('.tabs .tab')];
+  btns.forEach((b,i)=>{
+    const name=TABS[i], panel=document.getElementById('tab-'+name);
+    b.id='tabbtn-'+name; b.setAttribute('role','tab'); b.setAttribute('aria-controls','tab-'+name);
+    b.setAttribute('aria-selected',b.classList.contains('active')?'true':'false');
+    b.tabIndex=b.classList.contains('active')?0:-1;
+    if(panel){ panel.setAttribute('role','tabpanel'); panel.setAttribute('aria-labelledby','tabbtn-'+name); panel.tabIndex=-1; }
+    b.addEventListener('keydown',e=>{
+      const k={ArrowRight:1,ArrowLeft:-1,Home:'ini',End:'fin'}[e.key];
+      if(k===undefined) return;
+      e.preventDefault();
+      const j=k==='ini'?0:k==='fin'?btns.length-1:(i+k+btns.length)%btns.length;
+      showTab(TABS[j]); btns[j].focus();
+    });
+  });
+})();
+
 function showTab(name){
   if(!TABS.includes(name)) name='general';
-  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',TABS[i]===name));
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    const on=TABS[i]===name;
+    t.classList.toggle('active',on); t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1;
+  });
   document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
   // La pestaña queda en la URL (#costos, #monitoreo…) para poder compartirla
   const h=location.hash.slice(1);
-  if(!(name==='diputados'&&/^(diputado|comparar)=/.test(h))) setHash(name==='general'?'':name);
+  if(!((name==='diputados'&&/^(diputado|comparar)=/.test(h))||(name==='proyectos'&&/^proyecto=/.test(h)))) setHash(name==='general'?'':name);
   if(!D) return;
   if(name==='general'&&!tabInited.general){try{renderGeneral();}catch(e){console.error('General:',e)}tabInited.general=true}
   if(name==='diputados'){try{initTable();}catch(e){console.error('Table:',e)}}
@@ -1572,6 +1715,7 @@ function showTab(name){
   if(name==='proponentes'&&!tabInited.proponentes){try{renderProponentes();}catch(e){console.error('Proponentes:',e)}tabInited.proponentes=true}
   if(name==='costos'&&!tabInited.costos){loadDatosRawAndRender();tabInited.costos=true;}
   if(name==='metodologia'){try{renderMetodologia();}catch(e){console.error('Metodología:',e)}}
+  if(name==='proyectos'){initProyectos();}
 }
 
 // ── ENLACES DIRECTOS ──────────────────────────────
@@ -1586,6 +1730,11 @@ function routeFromHash(){
   if(h.startsWith('diputado=')) return openDiputado(h.slice(9));
   closeModal();
   if(h.startsWith('comparar=')) return openComparar(h.slice(9).split(',').filter(Boolean));
+  if(h.startsWith('proyecto=')){
+    showTab('proyectos');
+    const q=document.getElementById('proy-q'); if(q) q.value=h.slice(9);
+    return initProyectos();
+  }
   showTab(h);
 }
 window.addEventListener('hashchange', routeFromHash);
@@ -1602,8 +1751,8 @@ function openDiputado(slug){
   if(idx>=0) showLeyes(idx);
 }
 
-async function copyLink(btn){
-  const url=location.href, orig=btn.textContent;
+async function copyLink(btn, url=location.href){
+  const orig=btn.textContent;
   try{ await navigator.clipboard.writeText(url); btn.textContent='✓ Copiado'; }
   catch(e){ window.prompt('Copia este enlace:', url); }
   setTimeout(()=>{ btn.textContent=orig; },1600);
@@ -2155,20 +2304,22 @@ function renderMonitorSummary(){
 }
 function renderMonitorChart(){
   const top=[...monitorData()].sort((a,b)=>(b.planilla_valor||0)-(a.planilla_valor||0)).slice(0,18);
-  const ctx=document.getElementById('c-monitor-planilla');
+  const ctx=document.getElementById('c-monitor-planilla'), ctx2=document.getElementById('c-monitor-calif');
   if(!ctx) return;
-  new Chart(ctx,{
-    type:'bar',
-    data:{labels:top.map(d=>d.nombre.split(' ').slice(-2).join(' ')),datasets:[
-      {label:'Planilla',data:top.map(d=>d.planilla_valor||0),backgroundColor:'rgba(245,158,11,.75)',borderRadius:4,yAxisID:'y'},
-      {label:'Calificación',data:top.map(d=>d.calificacion||0),type:'line',borderColor:'#a78bfa',backgroundColor:'#a78bfa',tension:.25,yAxisID:'y1'}
-    ]},
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10}}},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{label:ctx=>ctx.dataset.label==='Planilla'?` ${fmtMoney(ctx.raw)}`:` ${ctx.raw}/5`}}},
-      scales:{x:{ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}},grid:{display:false}},
-        y:{beginAtZero:true,ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>'B/. '+fmtNum(v)},grid:{color:'rgba(255,255,255,.03)'}},
-        y1:{position:'right',min:0,max:5,ticks:{color:'#a78bfa',font:{family:'DM Mono',size:10}},grid:{drawOnChartArea:false}}}}
-  });
+  // Dos gráficos con el mismo eje X (mismos diputados, mismo orden) en vez de uno con dos
+  // escalas verticales: comparar alturas de escalas distintas induce a conclusiones falsas.
+  const labels=top.map(d=>d.nombre.split(' ').slice(-2).join(' '));
+  const base=(fmt,max)=>({responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
+      callbacks:{title:c=>top[c[0].dataIndex].nombre,label:c=>' '+fmt(c.raw)}}},
+    scales:{x:{ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:9},maxRotation:50},grid:{display:false}},
+      y:{beginAtZero:true,max,ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.03)'}}}});
+  new Chart(ctx,{type:'bar',
+    data:{labels,datasets:[{label:'Planilla acumulada',data:top.map(d=>d.planilla_valor||0),backgroundColor:'rgba(245,158,11,.8)',borderRadius:4}]},
+    options:base(v=>'B/. '+fmtNum(v))});
+  if(ctx2) new Chart(ctx2,{type:'bar',
+    data:{labels,datasets:[{label:'Calificación (1–5)',data:top.map(d=>d.calificacion??null),backgroundColor:'rgba(167,139,250,.85)',borderRadius:4}]},
+    options:base(v=>v==null?'—':Number(v).toFixed(1)+' / 5',5)});
 }
 function renderMonitorTable(){
   const q=(document.getElementById('monitor-search')||{value:''}).value.toLowerCase();
@@ -2802,7 +2953,8 @@ function exportProyectos(btn){
     const datos=await ensureDatosRaw();
     downloadCSV('proyectos', [
       ['Ficha',r=>r.ficha], ['Fecha de presentación',r=>r.fecha_presentacion], ['Título',r=>r.titulo],
-      ['Etapa',r=>r.etapa], ['Proponente(s)',r=>r.proponente], ['Nº proyecto',r=>r.proyecto], ['Nº anteproyecto',r=>r.anteproyecto],
+      ['Etapa',r=>r.etapa], ['Temas',r=>(D.temas_por_ficha?.[r.ficha]||[]).map(i=>D.temas[i]).join(' | ')],
+      ['Proponente(s)',r=>r.proponente], ['Nº proyecto',r=>r.proyecto], ['Nº anteproyecto',r=>r.anteproyecto],
     ], datos);
   });
 }
@@ -2856,25 +3008,32 @@ async function renderMonitorHist(){
     return;
   }
   const media=(s,i)=>{ const v=Object.values(s.diputados).map(x=>x[i]).filter(x=>x!=null); return v.length?v.reduce((a,b)=>a+Number(b),0)/v.length:null; };
-  note.textContent=`${snaps.length} mediciones entre ${fmtFecha(snaps[0].fecha)} y ${fmtFecha(snaps[snaps.length-1].fecha)}. Planilla acumulada total (área) y promedios en escala 1-5 (líneas).`;
+  note.textContent=`${snaps.length} mediciones entre ${fmtFecha(snaps[0].fecha)} y ${fmtFecha(snaps[snaps.length-1].fecha)}: planilla total de la Cámara y promedios de calificación y asistencia (escala 1–5), cada uno en su propio gráfico.`;
   wrap.style.display='';
-  new Chart(document.getElementById('c-monitor-hist'),{
-    type:'line',
-    data:{labels:snaps.map(s=>fmtFecha(s.fecha)),datasets:[
-      {label:'Planilla total',type:'line',data:snaps.map(s=>Object.values(s.diputados).reduce((a,v)=>a+(Number(v[iPl])||0),0)),borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.18)',fill:true,pointRadius:0,tension:.2,yAxisID:'y'},
-      {label:'Prom. calificación',type:'line',data:snaps.map(s=>media(s,iCal)),borderColor:'#a78bfa',backgroundColor:'#a78bfa',pointRadius:snaps.length>40?0:2,tension:.25,yAxisID:'y1'},
-      {label:'Prom. pleno',type:'line',data:snaps.map(s=>media(s,iPle)),borderColor:'#3b82f6',backgroundColor:'#3b82f6',pointRadius:snaps.length>40?0:2,tension:.25,yAxisID:'y1'},
-    ]},
-    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
-      plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10},boxWidth:10}},
-        tooltip:{...histTooltip,callbacks:{label:c=>c.dataset.yAxisID==='y'?` ${c.dataset.label}: B/. ${fmtNum(c.raw)}`:` ${c.dataset.label}: ${c.raw==null?'—':c.raw.toFixed(2)}`}}},
-      scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:8,maxRotation:0}},
-        y:{...histAxis,beginAtZero:true,ticks:{...histAxis.ticks,callback:v=>'B/. '+fmtNum(v/1000)+'K'}},
-        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}}}
-  });
+  const labels=snaps.map(s=>fmtFecha(s.fecha));
+  lineaSimple(document.getElementById('c-monitor-hist'),labels,[
+    {label:'Planilla total',data:snaps.map(s=>Object.values(s.diputados).reduce((a,v)=>a+(Number(v[iPl])||0),0)),borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.18)',fill:true},
+  ],{fmt:v=>'B/. '+fmtNum(v),eje:v=>'B/. '+fmtNum(v/1000)+'K'});
+  lineaSimple(document.getElementById('c-monitor-hist2'),labels,[
+    {label:'Prom. calificación',data:snaps.map(s=>media(s,iCal)),borderColor:'#a78bfa',backgroundColor:'#a78bfa'},
+    {label:'Prom. asistencia al pleno',data:snaps.map(s=>media(s,iPle)),borderColor:'#3b82f6',backgroundColor:'#3b82f6'},
+  ],{fmt:v=>v==null?'—':v.toFixed(2)+' / 5',max:5});
 }
 
-function destroyModalChart(){ if(_modalChart){ _modalChart.destroy(); _modalChart=null; } }
+// Gráfico de líneas con una sola escala vertical (las series de distinta escala van en
+// gráficos separados, nunca con dos ejes).
+function lineaSimple(canvas, labels, datasets, {fmt, eje, max, escalonado=false, maxTicks=8}={}){
+  if(!canvas) return null;
+  return new Chart(canvas,{type:'line',
+    data:{labels,datasets:datasets.map(d=>({pointRadius:0,tension:escalonado?0:.2,stepped:escalonado,spanGaps:true,...d}))},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+      plugins:{legend:{display:datasets.length>1,labels:{color:'#94a3b8',font:{family:'DM Mono',size:10},boxWidth:10}},
+        tooltip:{...histTooltip,callbacks:{label:c=>` ${c.dataset.label}: ${fmt(c.raw)}`}}},
+      scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:maxTicks,maxRotation:0}},
+        y:{...histAxis,beginAtZero:true,max,ticks:{...histAxis.ticks,callback:v=>(eje||fmt)(v)}}}}});
+}
+
+function destroyModalChart(){ [].concat(_modalChart||[]).forEach(c=>c&&c.destroy()); _modalChart=null; }
 async function renderModalHist(dep){
   const body=document.getElementById('modal-body');
   body.innerHTML='<div class="gs-empty">Cargando historial…</div>';
@@ -2900,21 +3059,161 @@ async function renderModalHist(dep){
   const delta=(v,fmt)=>{ const a=first(v), b=last(v); if(a==null||b==null) return '—'; const d=b-a; return d===0?'sin cambios':(d>0?'+':'−')+fmt(Math.abs(d)); };
   body.innerHTML=`<p class="hist-note" style="margin-top:12px">${idxM.length} mediciones · ${fmtFecha(H.snapshots[idxM[0]].fecha)} – ${fmtFecha(H.snapshots[idxM[idxM.length-1]].fecha)}<br>
     Planilla: <b style="color:var(--acc2)">${delta(plan,v=>'B/. '+fmtNum(v))}</b> · Calificación: <b style="color:var(--acc5)">${delta(cal,v=>v.toFixed(1))}</b> · Pleno: <b style="color:var(--acc)">${delta(ple,v=>v.toFixed(1))}</b></p>
-    <div class="hist-wrap"><canvas id="c-modal-hist"></canvas></div>`;
-  _modalChart=new Chart(document.getElementById('c-modal-hist'),{
-    type:'line',
-    data:{labels:pick(H.snapshots.map(s=>fmtFecha(s.fecha))),datasets:[
-      {label:'Planilla',data:plan,borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.15)',fill:true,pointRadius:0,tension:.2,yAxisID:'y',spanGaps:true},
-      {label:'Calificación',data:cal,borderColor:'#a78bfa',backgroundColor:'#a78bfa',pointRadius:0,stepped:true,yAxisID:'y1',spanGaps:true},
-      {label:'Pleno',data:ple,borderColor:'#3b82f6',backgroundColor:'#3b82f6',pointRadius:0,stepped:true,yAxisID:'y1',spanGaps:true},
-    ]},
-    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
-      plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10},boxWidth:10}},
-        tooltip:{...histTooltip,callbacks:{label:c=>c.dataset.yAxisID==='y'?` Planilla: B/. ${fmtNum(c.raw)}`:` ${c.dataset.label}: ${c.raw??'—'}/5`}}},
-      scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:6,maxRotation:0}},
-        y:{...histAxis,beginAtZero:true,ticks:{...histAxis.ticks,callback:v=>fmtNum(v/1000)+'K'}},
-        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}}}
+    <p class="chart-sub">Planilla acumulada (B/.)</p>
+    <div class="hist-wrap hist-wrap-sm"><canvas id="c-modal-hist"></canvas></div>
+    <p class="chart-sub">Calificación y asistencia al pleno (escala 1–5)</p>
+    <div class="hist-wrap hist-wrap-sm"><canvas id="c-modal-hist2"></canvas></div>`;
+  const labels=pick(H.snapshots.map(s=>fmtFecha(s.fecha)));
+  _modalChart=[
+    lineaSimple(document.getElementById('c-modal-hist'),labels,
+      [{label:'Planilla',data:plan,borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.15)',fill:true}],
+      {fmt:v=>'B/. '+fmtNum(v),eje:v=>fmtNum(v/1000)+'K',maxTicks:6}),
+    lineaSimple(document.getElementById('c-modal-hist2'),labels,[
+      {label:'Calificación',data:cal,borderColor:'#a78bfa',backgroundColor:'#a78bfa'},
+      {label:'Asistencia al pleno',data:ple,borderColor:'#3b82f6',backgroundColor:'#3b82f6'},
+    ],{fmt:v=>v==null?'—':v+' / 5',max:5,escalonado:true,maxTicks:6}),
+  ];
+}
+
+// ── PROYECTOS ─────────────────────────────────────
+const GRUPO_ETAPA={
+  analisis:['Preliminar','Enviado a subcomisión para analisis'],
+  debate:['Primer Debate','Segundo Debate','Tercer Debate'],
+  ejecutivo:['Enviado al Ejecutivo','Objetado por Ejecutivo','Segundo Debate(Objetado)','Tercer Debate(Objetado)'],
+  ley:['Ley'],
+  sin:['Archivado','Negado','Retirado por proponente','Suspendido'],
+};
+const PROY_PAGINA=20;
+let PROY=[], proyFiltrados=[], proyMostrados=0, _proyListo=null, _proyT=null;
+const sinTildes=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const fechaOrden=f=>{ const [d,m,y]=String(f||'').split('-'); return y ? +(y+m+d) : 0; };
+
+// Expresión que encuentra una palabra con o sin tildes (para resaltar coincidencias)
+function reSinTildes(w){
+  const cls={a:'[aáàä]',e:'[eéèë]',i:'[iíìï]',o:'[oóòö]',u:'[uúùü]',n:'[nñ]'};
+  return w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/[aeioun]/g,c=>cls[c]);
+}
+
+function prepararProyectos(){
+  if(!_proyListo){
+    _proyListo=ensureDatosRaw().then(()=>{
+      const autorPorFicha={};
+      (D.diputados||[]).forEach(d=>(d.proyectos_detalle||[]).forEach(p=>{ autorPorFicha[p.ficha]=d; }));
+      const temas=D.temas||[], tpf=D.temas_por_ficha||{};
+      PROY=DATOS_RAW.map(r=>{
+        const firmantes=String(r.proponente||'').split(',').map(s=>s.trim()).filter(Boolean);
+        return {...r, _temas:(tpf[r.ficha]||[]).map(i=>temas[i]).filter(Boolean), _autor:autorPorFicha[r.ficha]||null,
+          _primero:(firmantes[0]||'').replace(/^H\.D\.?S?\s+/i,''), _firmantes:firmantes,
+          _orden:fechaOrden(r.fecha_presentacion), _busca:sinTildes(`${r.titulo} ${r.ficha} ${r.proponente}`)};
+      });
+      const anios=[...new Set(PROY.map(p=>String(p.fecha_presentacion||'').split('-')[2]).filter(Boolean))].sort().reverse();
+      document.getElementById('proy-anio').insertAdjacentHTML('beforeend',anios.map(a=>`<option>${esc(a)}</option>`).join(''));
+      document.getElementById('proy-tema').insertAdjacentHTML('beforeend',temas.map(t=>`<option>${esc(t)}</option>`).join(''));
+      renderTemasChart();
+    }).catch(e=>{ _proyListo=null; throw e; });
+  }
+  return _proyListo;
+}
+
+async function initProyectos(){
+  if(!D) return;
+  try{ await prepararProyectos(); }
+  catch(e){ document.getElementById('proy-lista').innerHTML=`<div class="loader">⚠️ No se pudieron cargar los proyectos: ${esc(e.message)}</div>`; return; }
+  aplicarFiltroProyectos();
+}
+
+function filtrarProyectos(){ clearTimeout(_proyT); _proyT=setTimeout(aplicarFiltroProyectos,120); }
+
+function aplicarFiltroProyectos(){
+  if(!PROY.length) return;
+  const val=id=>document.getElementById(id).value;
+  const palabras=sinTildes(val('proy-q').trim()).split(/\s+/).filter(Boolean);
+  const grupo=val('proy-etapa') ? new Set(GRUPO_ETAPA[val('proy-etapa')]) : null;
+  const anio=val('proy-anio'), tema=val('proy-tema'), orden=val('proy-orden');
+  proyFiltrados=PROY.filter(p=>(!grupo||grupo.has(p.etapa)) && (!anio||String(p.fecha_presentacion).endsWith('-'+anio))
+    && (!tema||p._temas.includes(tema)) && palabras.every(w=>p._busca.includes(w)));
+  const cmp={reciente:(a,b)=>b._orden-a._orden||b.ficha-a.ficha, antiguo:(a,b)=>a._orden-b._orden||a.ficha-b.ficha,
+    firmas:(a,b)=>b._firmantes.length-a._firmantes.length||b._orden-a._orden}[orden];
+  proyFiltrados.sort(cmp);
+  const leyes=proyFiltrados.filter(p=>p.etapa==='Ley').length, n=proyFiltrados.length;
+  document.getElementById('proy-resumen').innerHTML = n
+    ? `<b>${fmtNum(n)}</b> proyecto${n===1?'':'s'} · <b>${fmtNum(leyes)}</b> ley${leyes===1?'':'es'} (${(100*leyes/n).toFixed(1)}%)`
+    : 'Ningún proyecto coincide con la búsqueda.';
+  proyMostrados=0;
+  document.getElementById('proy-lista').innerHTML='';
+  masProyectos();
+}
+
+function masProyectos(){
+  const palabras=sinTildes(document.getElementById('proy-q').value.trim()).split(/\s+/).filter(w=>w.length>1);
+  const re=palabras.length ? new RegExp('('+palabras.map(reSinTildes).join('|')+')','gi') : null;
+  const hl=t=>re ? esc(t).replace(re,'<mark>$1</mark>') : esc(t);
+  const lote=proyFiltrados.slice(proyMostrados, proyMostrados+PROY_PAGINA);
+  document.getElementById('proy-lista').insertAdjacentHTML('beforeend', lote.map(p=>{
+    const autor=p._autor
+      ? `<a href="#diputado=${esc(depSlug(p._autor))}">${esc(p._autor.nombre)}</a>`
+      : esc(p._primero||'—');
+    const temas=p._temas.filter(t=>t!=='Otros').map(t=>`<button type="button" class="tema-chip" data-tema="${esc(t)}" onclick="filtrarTema(this.dataset.tema)">${esc(t)}</button>`).join(' ');
+    return `<article class="proy-item">
+      <div class="proy-top"><span>Ficha ${esc(p.ficha)}</span><span>📅 ${esc(p.fecha_presentacion)}</span>
+        <span class="badge ${etapaClass(p.etapa)}">${esc(p.etapa)}</span>
+        <a href="#proyecto=${esc(p.ficha)}" title="Enlace directo a este proyecto" style="color:var(--muted);text-decoration:none">🔗</a></div>
+      <div class="proy-titulo">${hl(p.titulo||p.anteproyecto||'Sin título registrado')}</div>
+      <div class="proy-meta"><span>Autor principal: ${autor}</span>${temas?`<span>${temas}</span>`:''}
+        ${p._firmantes.length>1?`<details class="proy-firmas"><summary>${p._firmantes.length} firmantes</summary><p>${esc(p._firmantes.join(' · '))}</p></details>`:''}</div>
+    </article>`;
+  }).join(''));
+  proyMostrados+=lote.length;
+  const btn=document.getElementById('proy-mas');
+  btn.style.display=proyMostrados<proyFiltrados.length?'':'none';
+  btn.textContent=`Mostrar más (${fmtNum(proyFiltrados.length-proyMostrados)} restantes)`;
+}
+
+function filtrarTema(t){
+  const sel=document.getElementById('proy-tema');
+  sel.value=t; aplicarFiltroProyectos();
+  document.querySelector('.proy-filtros').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function renderTemasChart(){
+  const pt=D.por_tema||{}, canvas=document.getElementById('c-temas');
+  if(!canvas || !Object.keys(pt).length) return;
+  const temas=Object.keys(pt).filter(t=>pt[t].proyectos>0).sort((a,b)=>t2(a,b));
+  function t2(a,b){ return (a==='Otros')-(b==='Otros') || pt[b].proyectos-pt[a].proyectos; }
+  new Chart(canvas,{type:'bar',
+    data:{labels:temas,datasets:[{label:'Proyectos',data:temas.map(t=>pt[t].proyectos),backgroundColor:'#3b82f6',borderRadius:4,borderSkipped:false,barThickness:16}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      onClick:(e,els)=>{ if(els.length) filtrarTema(temas[els[0].index]); },
+      onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
+      plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
+        callbacks:{label:c=>{ const v=pt[temas[c.dataIndex]]; return ` ${v.proyectos} proyectos · ${v.leyes} leyes (${(100*v.leyes/v.proyectos).toFixed(0)}%)`; }}}},
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+}
+
+function exportProyectosFiltrados(btn){
+  withBtn(btn, async ()=>{
+    await prepararProyectos();
+    if(!proyFiltrados.length) aplicarFiltroProyectos();
+    downloadCSV('proyectos_filtrados', [
+      ['Ficha',p=>p.ficha], ['Fecha de presentación',p=>p.fecha_presentacion], ['Título',p=>p.titulo], ['Etapa',p=>p.etapa],
+      ['Temas',p=>p._temas.join(' | ')], ['Autor principal',p=>p._autor?.nombre||p._primero], ['Nº firmantes',p=>p._firmantes.length],
+      ['Proponentes',p=>p.proponente],
+    ], proyFiltrados);
   });
+}
+
+// ── COMPARTIR FICHA ───────────────────────────────
+// Comparte la página estática del diputado (diputado/<slug>/), que tiene vista previa propia.
+async function compartirFicha(btn){
+  const dep=_modalDep;
+  if(!dep) return copyLink(btn);
+  const url=`${location.origin}/diputado/${depSlug(dep)}/`;
+  if(navigator.share && isMobile()){
+    try{ await navigator.share({title:`${dep.nombre} — Observatorio Legislativo`, url}); return; }
+    catch(e){ if(e.name==='AbortError') return; }
+  }
+  copyLink(btn, url);
 }
 
 // ── COMPARADOR ────────────────────────────────────
@@ -2961,6 +3260,7 @@ async function renderComparar(){
       ['Asistencia pleno',d=>Number(d.asistencia_pleno),d=>fmtScore(d.asistencia_pleno)+' / 5','max'],
       ['Asistencia comisiones',d=>Number(d.asistencia_comisiones),d=>fmtScore(d.asistencia_comisiones)+' / 5','max'],
       ['Calificación Espacio Cívico',d=>Number(d.calificacion),d=>fmtScore(d.calificacion)+' / 5','max'],
+      ['Temas que más propone',null,d=>esc(Object.keys(d.temas_autor||{}).slice(0,3).join(', ')||'—')],
       ['Comisiones',d=>d.comisiones_cantidad||0,d=>fmtNum(d.comisiones_cantidad),null],
       ['Planilla acumulada',d=>Number(d.planilla_valor),d=>fmtMoney(d.planilla_valor),'min'],
       ['Costo acumulado',d=>cost(d)?.costoAcumulado,d=>costos?(cost(d)?'B/. '+fmtNum(cost(d).costoAcumulado):'—'):'…','min'],
