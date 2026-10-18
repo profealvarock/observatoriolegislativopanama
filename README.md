@@ -43,7 +43,7 @@ observatoriolegislativopanama/
 
 ### 1. Clonar y subir a GitHub
 ```bash
-git clone https://github.com/alvarovergaravargas/observatoriolegislativopanama.git
+git clone https://github.com/profealvarock/observatoriolegislativopanama.git
 cd observatoriolegislativopanama
 # O para un fork nuevo:
 git remote set-url origin https://github.com/TU-USUARIO/TU-REPO.git
