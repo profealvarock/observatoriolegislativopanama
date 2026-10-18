@@ -24,9 +24,11 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.2,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 🤝 Asuntos Indígenas | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
+        "Asuntos Municipales",
+        "Asuntos Indígenas",
+        "Gobierno, Justicia y Asuntos Constitucionales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 3
     },
     {
       "nombre": "Alexandra Brenes",
@@ -49,9 +51,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Gobierno, Justicia y Asuntos Constitucionales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Ariana Coba",
@@ -74,9 +77,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.2,
       "comisiones": [
-        "⚖️ Gobierno, Justicia y Asuntos Constitucionales | 💰 Presupuesto"
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Ariel Vallarino",
@@ -99,9 +103,11 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.8,
       "comisiones": [
-        "🌎 Relaciones Exteriores | 🏗️ Infraestructura Pública y Asuntos del Canal | 🏭 Comercio y Asuntos Económicos"
+        "Relaciones Exteriores",
+        "Infraestructura Pública y Asuntos del Canal",
+        "Comercio y Asuntos Económicos"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 3
     },
     {
       "nombre": "Arquesio Arias",
@@ -124,9 +130,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.8,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo | 🏥 Trabajo, Salud y Desarrollo Social"
+        "Población, Ambiente y Desarrollo",
+        "Trabajo, Salud y Desarrollo Social"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Augusto Palacios",
@@ -149,9 +156,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.6,
       "comisiones": [
-        "🚇 Comunicación y Transporte | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Comunicación y Transporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Benicio Robinson",
@@ -174,9 +182,12 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 1.9,
       "comisiones": [
-        "🚇 Comunicación y Transporte | ⚖️ Gobierno, Justicia y Asuntos Constitucionales | 💰 Presupuesto | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Comunicación y Transporte",
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Presupuesto",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 4
     },
     {
       "nombre": "Betserai Richards",
@@ -199,9 +210,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "🏥 Trabajo, Salud y Desarrollo Social | 🎓 Educación, Cultura y Deporte"
+        "Trabajo, Salud y Desarrollo Social",
+        "Educación, Cultura y Deporte"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Carlos Afú",
@@ -224,9 +236,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🏥 Trabajo, Salud y Desarrollo Social | 💰 Presupuesto"
+        "Trabajo, Salud y Desarrollo Social",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Carlos Saldaña",
@@ -249,9 +262,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.8,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 📊 Economía y Finanzas"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Economía y Finanzas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Crispiano Adames",
@@ -274,9 +288,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🏥 Trabajo, Salud y Desarrollo Social | 🏭 Comercio y Asuntos Económicos"
+        "Trabajo, Salud y Desarrollo Social",
+        "Comercio y Asuntos Económicos"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Dana Castañeda",
@@ -299,9 +314,11 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.8,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios | 🎓 Educación, Cultura y Deporte | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Asuntos Agropecuarios",
+        "Educación, Cultura y Deporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 3
     },
     {
       "nombre": "Didiano Pinilla",
@@ -324,9 +341,11 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🚇 Comunicación y Transporte | 👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Comunicación y Transporte",
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 3
     },
     {
       "nombre": "Eduardo Gaitán",
@@ -349,9 +368,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.4,
       "comisiones": [
-        "🤝 Asuntos Indígenas | 📊 Economía y Finanzas"
+        "Asuntos Indígenas",
+        "Economía y Finanzas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Eduardo Vásquez",
@@ -374,7 +394,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.6,
       "comisiones": [
-        "💰 Presupuesto"
+        "Presupuesto"
       ],
       "comisiones_cantidad": 1
     },
@@ -399,9 +419,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios | 🏥 Trabajo, Salud y Desarrollo Social"
+        "Asuntos Agropecuarios",
+        "Trabajo, Salud y Desarrollo Social"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Eliécer Castrellón",
@@ -424,9 +445,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Asuntos Agropecuarios",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Ernesto Cedeño",
@@ -449,7 +471,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.0,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo"
+        "Población, Ambiente y Desarrollo"
       ],
       "comisiones_cantidad": 1
     },
@@ -474,9 +496,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.8,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🤝 Asuntos Indígenas"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Asuntos Indígenas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Francisco Brea",
@@ -499,9 +522,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.6,
       "comisiones": [
-        "📊 Economía y Finanzas | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Economía y Finanzas",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Gertrudis Rodríguez",
@@ -524,9 +548,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🤝 Asuntos Indígenas | 🎓 Educación, Cultura y Deporte"
+        "Asuntos Indígenas",
+        "Educación, Cultura y Deporte"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Graciela Hernández",
@@ -549,9 +574,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Asuntos Municipales",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Isaac Mosquera",
@@ -574,9 +600,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "📊 Economía y Finanzas | 💰 Presupuesto"
+        "Economía y Finanzas",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Jaime Vargas",
@@ -599,7 +626,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.0,
       "comisiones": [
-        "💰 Presupuesto"
+        "Presupuesto"
       ],
       "comisiones_cantidad": 1
     },
@@ -624,9 +651,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 🎓 Educación, Cultura y Deporte"
+        "Asuntos Municipales",
+        "Educación, Cultura y Deporte"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Jamis Acosta",
@@ -649,9 +677,11 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🌎 Relaciones Exteriores | 🏭 Comercio y Asuntos Económicos | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Relaciones Exteriores",
+        "Comercio y Asuntos Económicos",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 3
     },
     {
       "nombre": "Janine Prado",
@@ -674,9 +704,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios | 🏥 Trabajo, Salud y Desarrollo Social"
+        "Asuntos Agropecuarios",
+        "Trabajo, Salud y Desarrollo Social"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Javier Sucre",
@@ -699,9 +730,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo | 💰 Presupuesto"
+        "Población, Ambiente y Desarrollo",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Jhonatan Vega",
@@ -724,9 +756,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios | 💰 Presupuesto"
+        "Asuntos Agropecuarios",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Joan Guevara",
@@ -749,7 +782,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🌎 Relaciones Exteriores"
+        "Relaciones Exteriores"
       ],
       "comisiones_cantidad": 1
     },
@@ -774,9 +807,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🤝 Asuntos Indígenas | 🎓 Educación, Cultura y Deporte"
+        "Asuntos Indígenas",
+        "Educación, Cultura y Deporte"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Jorge González",
@@ -799,7 +833,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🏭 Comercio y Asuntos Económicos"
+        "Comercio y Asuntos Económicos"
       ],
       "comisiones_cantidad": 1
     },
@@ -824,7 +858,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 4.0,
       "comisiones": [
-        "🏛️ Asuntos Municipales"
+        "Asuntos Municipales"
       ],
       "comisiones_cantidad": 1
     },
@@ -849,9 +883,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.8,
       "comisiones": [
-        "🌎 Relaciones Exteriores | 🏭 Comercio y Asuntos Económicos"
+        "Relaciones Exteriores",
+        "Comercio y Asuntos Económicos"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "José Pérez Barboni",
@@ -874,9 +909,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🏭 Comercio y Asuntos Económicos | 💰 Presupuesto"
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Julio de la Guardia",
@@ -899,9 +935,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.6,
       "comisiones": [
-        "🏭 Comercio y Asuntos Económicos | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
+        "Comercio y Asuntos Económicos",
+        "Gobierno, Justicia y Asuntos Constitucionales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Lenin Alberto Ulate",
@@ -924,9 +961,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Población, Ambiente y Desarrollo",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Lilia Batista",
@@ -949,7 +987,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.0,
       "comisiones": [
-        "🎓 Educación, Cultura y Deporte"
+        "Educación, Cultura y Deporte"
       ],
       "comisiones_cantidad": 1
     },
@@ -974,9 +1012,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.0,
       "comisiones": [
-        "🚇 Comunicación y Transporte | 💰 Presupuesto"
+        "Comunicación y Transporte",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Luis Duke",
@@ -999,9 +1038,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "🏥 Trabajo, Salud y Desarrollo Social | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
+        "Trabajo, Salud y Desarrollo Social",
+        "Gobierno, Justicia y Asuntos Constitucionales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Manuel Cheng",
@@ -1024,9 +1064,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.4,
       "comisiones": [
-        "🚇 Comunicación y Transporte | 📊 Economía y Finanzas"
+        "Comunicación y Transporte",
+        "Economía y Finanzas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Manuel Cohen",
@@ -1049,9 +1090,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🤝 Asuntos Indígenas | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Asuntos Indígenas",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Manuel Samaniego",
@@ -1074,9 +1116,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 3.4,
       "comisiones": [
-        "🌎 Relaciones Exteriores | 📊 Economía y Finanzas"
+        "Relaciones Exteriores",
+        "Economía y Finanzas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Marcos Castillero",
@@ -1099,9 +1142,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.8,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Medin Jiménez Pitti",
@@ -1124,9 +1168,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Asuntos Agropecuarios",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Miguel Ángel Campos",
@@ -1149,9 +1194,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🚇 Comunicación y Transporte | 🌎 Relaciones Exteriores"
+        "Comunicación y Transporte",
+        "Relaciones Exteriores"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Neftalí Zamora",
@@ -1174,9 +1220,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Asuntos Municipales",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Nelson Jackson",
@@ -1199,7 +1246,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "💰 Presupuesto"
+        "Presupuesto"
       ],
       "comisiones_cantidad": 1
     },
@@ -1224,9 +1271,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🚇 Comunicación y Transporte | 🏭 Comercio y Asuntos Económicos"
+        "Comunicación y Transporte",
+        "Comercio y Asuntos Económicos"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Nixon Andrade",
@@ -1249,9 +1297,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.2,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🏗️ Infraestructura Pública y Asuntos del Canal"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Omar Ortega",
@@ -1274,9 +1323,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.0,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 🤝 Asuntos Indígenas"
+        "Asuntos Municipales",
+        "Asuntos Indígenas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Orlando Carrasquilla",
@@ -1299,9 +1349,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 3.0,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo | 🌾 Asuntos Agropecuarios"
+        "Población, Ambiente y Desarrollo",
+        "Asuntos Agropecuarios"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Osman Camilo Gómez",
@@ -1324,9 +1375,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🚇 Comunicación y Transporte | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
+        "Comunicación y Transporte",
+        "Gobierno, Justicia y Asuntos Constitucionales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Patsy Lee Rentería",
@@ -1349,9 +1401,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🎓 Educación, Cultura y Deporte | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Educación, Cultura y Deporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Paulette Thomas",
@@ -1374,9 +1427,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🎓 Educación, Cultura y Deporte"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Educación, Cultura y Deporte"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Raphael Buchanan",
@@ -1399,9 +1453,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.6,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios | 📊 Economía y Finanzas"
+        "Asuntos Agropecuarios",
+        "Economía y Finanzas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Raúl Pineda",
@@ -1424,9 +1479,12 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🌎 Relaciones Exteriores | 📊 Economía y Finanzas | ⚖️ Gobierno, Justicia y Asuntos Constitucionales | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Relaciones Exteriores",
+        "Economía y Finanzas",
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 4
     },
     {
       "nombre": "Ricardo Vigil López",
@@ -1449,9 +1507,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 💰 Presupuesto"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Roberto Archibold",
@@ -1474,9 +1533,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.2,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo | 🤝 Asuntos Indígenas"
+        "Población, Ambiente y Desarrollo",
+        "Asuntos Indígenas"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Roberto Zuñiga",
@@ -1499,9 +1559,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "🌎 Relaciones Exteriores | 🏥 Trabajo, Salud y Desarrollo Social"
+        "Relaciones Exteriores",
+        "Trabajo, Salud y Desarrollo Social"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Rogelio Revello",
@@ -1509,7 +1570,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Lalo' Antonio",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1l64FLwc0g2vmPoSlnMbRWcIzT0BBthgE",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
       "provincia_monitoreo": "Colón",
@@ -1524,9 +1585,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.0,
       "comisiones": [
-        "🚇 Comunicación y Transporte | 💰 Presupuesto"
+        "Comunicación y Transporte",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Ronald de Gracia",
@@ -1534,7 +1596,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "provincia_monitoreo": "Los Santos",
@@ -1549,9 +1611,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.4,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo | 🏥 Trabajo, Salud y Desarrollo Social"
+        "Población, Ambiente y Desarrollo",
+        "Trabajo, Salud y Desarrollo Social"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Sergio Gálvez",
@@ -1559,7 +1622,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "provincia_monitoreo": "Panamá",
@@ -1574,9 +1637,11 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 🤝 Asuntos Indígenas | 💰 Presupuesto"
+        "Asuntos Municipales",
+        "Asuntos Indígenas",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 3
     },
     {
       "nombre": "Shirley Castañedas",
@@ -1584,7 +1649,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "provincia_monitoreo": "Panamá Oeste",
@@ -1599,7 +1664,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.6,
       "comisiones": [
-        "🌳 Población, Ambiente y Desarrollo"
+        "Población, Ambiente y Desarrollo"
       ],
       "comisiones_cantidad": 1
     },
@@ -1609,7 +1674,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "provincia_monitoreo": "Veraguas",
@@ -1624,7 +1689,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.6,
       "comisiones": [
-        "🌾 Asuntos Agropecuarios"
+        "Asuntos Agropecuarios"
       ],
       "comisiones_cantidad": 1
     },
@@ -1634,7 +1699,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Alejandro Salazar",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
       "provincia_monitoreo": "Colón",
@@ -1649,7 +1714,7 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 1.7,
       "comisiones": [
-        "📊 Economía y Finanzas"
+        "Economía y Finanzas"
       ],
       "comisiones_cantidad": 1
     },
@@ -1659,7 +1724,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "provincia_monitoreo": "Panamá",
@@ -1674,9 +1739,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 5.0,
       "comisiones": [
-        "🌎 Relaciones Exteriores | ⚖️ Gobierno, Justicia y Asuntos Constitucionales"
+        "Relaciones Exteriores",
+        "Gobierno, Justicia y Asuntos Constitucionales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Yamireliz Chong",
@@ -1684,7 +1750,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
       "provincia_monitoreo": "Colón",
@@ -1699,9 +1765,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": 4.8,
       "comisiones": [
-        "🏭 Comercio y Asuntos Económicos | 💰 Presupuesto"
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Yarelis Rodríguez",
@@ -1709,7 +1776,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "José Andrés González",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
       "provincia_monitoreo": "Panamá",
@@ -1724,9 +1791,10 @@
       "declaracion_patrimonio": 5.0,
       "calificacion": null,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 🌳 Población, Ambiente y Desarrollo"
+        "Asuntos Municipales",
+        "Población, Ambiente y Desarrollo"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Yesica Romero",
@@ -1734,7 +1802,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "provincia_monitoreo": "Bocas del Toro",
@@ -1749,9 +1817,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": 2.8,
       "comisiones": [
-        "🏛️ Asuntos Municipales | 📜 Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+        "Asuntos Municipales",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     },
     {
       "nombre": "Yuzaida Marín",
@@ -1759,7 +1828,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
       "provincia_monitoreo": "Panamá Oeste",
@@ -1774,9 +1843,10 @@
       "declaracion_patrimonio": 1.0,
       "calificacion": null,
       "comisiones": [
-        "👨‍👩‍👧 Mujer, la Niñez, la Juventud y la Familia | 🎓 Educación, Cultura y Deporte"
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Educación, Cultura y Deporte"
       ],
-      "comisiones_cantidad": 1
+      "comisiones_cantidad": 2
     }
   ]
 }
