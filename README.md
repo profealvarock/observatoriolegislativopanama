@@ -24,6 +24,14 @@ Además:
 - **Datos abiertos**: descargas en CSV (proyectos, diputados, monitoreo, costos e histórico) desde la pestaña General y junto a cada tabla.
 - **Modo claro/oscuro** y diseño adaptado a celular y tablet.
 
+## 🎨 Color
+Reglas para mantener la paleta coherente:
+- **Azul** = marca e información (confianza, institucionalidad; el azul de la bandera).
+- **Partidos sin color propio**: todos se muestran igual y se identifican por su nombre, para que ninguno quede asociado a la marca ni a los colores de éxito o alerta.
+- **Etapas** (`ETAPA_COLOR` en `index.html`): las que siguen en trámite van en una escala de azules que avanza con el proceso (validada como rampa ordinal en cada tema); Enviado al Ejecutivo = índigo; objetado = naranja; ley = verde; negado = rojo; archivado, retirado o suspendido = gris.
+- **Dinero**: montos en tinta neutra y ámbar (`--costo`) como único acento de gasto.
+- **Contraste**: textos de al menos 4.5:1 en ambos temas.
+
 ## ✍️ Autoría
 Creado por **@profealvarock** — [Portafolio](https://profealvarock.vercel.app/) · [TikTok](https://www.tiktok.com/@profealvarock) · [LinkedIn](https://www.linkedin.com/in/profealvarock) · [Instagram](https://www.instagram.com/profealvarock) · [Facebook](https://www.facebook.com/profealvarock) · [X](https://x.com/profealvarock) · [Bluesky](https://bsky.app/profile/profealvarock.bsky.social) · [YouTube](https://www.youtube.com/@profealvarock)
 

@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#080c14">
 <meta name="author" content="profealvarock">
 <meta name="description" content="Observatorio ciudadano de la Asamblea Nacional de Panamá: proyectos de ley, diputados, asistencia, planilla y costo legislativo, actualizado a diario.">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -13,8 +14,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Observatorio Legislativo · Asamblea Nacional de Panamá">
 <meta property="og:description" content="Proyectos de ley, diputados, asistencia, planilla y costo legislativo, actualizado a diario. Por @profealvarock.">
-<meta property="og:image" content="https://observatoriolegistalivopa.netlify.app/img/perfil-512.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://observatoriolegistalivopa.netlify.app/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Observatorio Legislativo — Asamblea Nacional de Panamá">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@profealvarock">
 <title>Asamblea Nacional · Observatorio Legislativo</title>
 <script>
@@ -36,20 +40,28 @@
 :root {
   --bg:#080c14; --surface:#0e1623; --surface2:#131d2e; --border:#1a2940;
   --acc:#3b82f6; --acc2:#f59e0b; --acc3:#10b981; --acc4:#ef4444; --acc5:#a78bfa;
-  --text:#e2e8f0; --muted:#5a7499;
+  --text:#e2e8f0; --muted:#7a8fb0;
   --fd:'Syne',sans-serif; --fm:'DM Mono',monospace;
   --px:clamp(16px,4vw,40px); --r:14px; --gap:clamp(12px,2vw,24px);
   --tint:rgba(255,255,255,.015); --track:rgba(255,255,255,.08); --shadow:rgba(0,0,0,.3);
+  /* Etapas: en camino = azules (más luminoso cuanto más avanza), Ejecutivo = índigo,
+     objetado = naranja, ley = verde, negado = rojo, sin avance = gris */
+  --st-analisis:#93c5fd; --st-debate:#60a5fa; --st-ejec:#a5b4fc; --st-obj:#fdba74;
+  --st-ley:#34d399; --st-neg:#f87171; --st-sin:#94a3b8;
+  /* Costo y dinero: el ámbar es el acento de "gasto"; los montos van en tinta neutra */
+  --costo:#f59e0b;
   color-scheme:dark;
 }
 :root[data-theme="light"]{
   --bg:#f4f6fa; --surface:#ffffff; --surface2:#eef2f7; --border:#d8e0ea;
-  --acc:#2563eb; --acc2:#d97706; --acc3:#059669; --acc4:#dc2626; --acc5:#7c3aed;
+  --acc:#2563eb; --acc2:#b45309; --acc3:#047857; --acc4:#b91c1c; --acc5:#7c3aed;
   --text:#0f172a; --muted:#5b6e88;
   --tint:rgba(15,23,42,.025); --track:rgba(15,23,42,.08); --shadow:rgba(15,23,42,.12);
+  --st-analisis:#2563eb; --st-debate:#1e40af; --st-ejec:#4338ca; --st-obj:#c2410c;
+  --st-ley:#047857; --st-neg:#b91c1c; --st-sin:#475569;
+  --costo:#b45309;
   color-scheme:light;
 }
-[data-theme="light"] .etapa-arch{color:#475569}
 [data-theme="light"] .panama-map-base{filter:saturate(.2) contrast(1.02) brightness(1.05)}
 [data-theme="light"] .modal-overlay{background:rgba(15,23,42,.45)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -61,9 +73,9 @@ body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(
 /* HEADER */
 header{padding:clamp(24px,4vw,48px) 0 clamp(20px,3vw,32px);border-bottom:1px solid var(--border);margin-bottom:var(--gap);display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px}
 .logo-area{display:flex;align-items:center;gap:14px}
-.logo-icon{width:clamp(44px,5.5vw,58px);height:clamp(44px,5.5vw,58px);background:#fff;border-radius:50%;display:block;overflow:hidden;box-shadow:0 0 28px rgba(59,130,246,.35),0 0 0 2px var(--acc);flex-shrink:0;transition:transform .2s,box-shadow .2s}
-.logo-icon img{width:100%;height:100%;object-fit:cover;display:block}
-.logo-icon:hover{transform:scale(1.06) rotate(-3deg);box-shadow:0 0 36px rgba(59,130,246,.5),0 0 0 2px var(--acc)}
+.logo-icon{width:clamp(44px,5.5vw,58px);height:clamp(44px,5.5vw,58px);border-radius:24%;display:block;flex-shrink:0;box-shadow:0 0 32px rgba(59,130,246,.35);transition:transform .2s,box-shadow .2s}
+.logo-icon img{width:100%;height:100%;display:block}
+.logo-icon:hover{transform:translateY(-2px);box-shadow:0 0 40px rgba(59,130,246,.5)}
 .logo-icon:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
 h1{font-size:clamp(1.1rem,3.5vw,2rem);font-weight:800;letter-spacing:-.03em;line-height:1.15}
 h1 span{color:var(--acc)}
@@ -209,13 +221,14 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .fade-in{animation:fadeIn .4s ease both}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.etapa-ley{background:rgba(16,185,129,.15);color:#10b981}
-.etapa-pre{background:rgba(59,130,246,.15);color:#3b82f6}
-.etapa-d1{background:rgba(245,158,11,.15);color:#f59e0b}
-.etapa-d2{background:rgba(251,146,60,.15);color:#fb923c}
-.etapa-arch{background:rgba(100,116,139,.15);color:#94a3b8}
-.etapa-neg{background:rgba(239,68,68,.15);color:#ef4444}
-.etapa-otro{background:rgba(139,92,246,.15);color:#a78bfa}
+.etapa-pre{--st:var(--st-analisis)}
+.etapa-deb{--st:var(--st-debate)}
+.etapa-ejec{--st:var(--st-ejec)}
+.etapa-obj{--st:var(--st-obj)}
+.etapa-ley{--st:var(--st-ley)}
+.etapa-neg{--st:var(--st-neg)}
+.etapa-arch,.etapa-otro{--st:var(--st-sin)}
+[class*="etapa-"].badge{background:color-mix(in srgb,var(--st) 15%,transparent);color:var(--st)}
 [data-tip]{position:relative;cursor:default}
 [data-tip]:hover::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:var(--fm);font-size:.68rem;padding:5px 10px;border-radius:6px;white-space:nowrap;z-index:100;pointer-events:none;box-shadow:0 4px 12px var(--shadow)}
 
@@ -343,7 +356,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .score-good{background:rgba(16,185,129,.15);color:#10b981}
 .score-mid{background:rgba(245,158,11,.15);color:#f59e0b}
 .score-low{background:rgba(239,68,68,.15);color:#ef4444}
-.money-cell{font-family:var(--fm);font-weight:700;color:var(--acc2);white-space:nowrap}
+.money-cell{font-family:var(--fm);font-weight:700;color:var(--text);white-space:nowrap}
 .comm-btn{border:none;background:rgba(59,130,246,.12);color:var(--acc);font-family:var(--fm);font-size:.72rem;font-weight:700;border-radius:20px;padding:4px 9px;cursor:pointer;transition:background .15s,color .15s}
 .comm-btn:hover{background:var(--acc);color:#fff}
 .comm-list{display:flex;flex-direction:column;gap:8px}
@@ -359,14 +372,14 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .costo-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);margin-bottom:calc(var(--gap)*1.5)}
 .costo-year-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);margin-bottom:var(--gap)}
 .costo-year-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--r);padding:20px;position:relative;overflow:hidden}
-.costo-year-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--acc3),transparent)}
+.costo-year-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--costo),transparent)}
 .costo-year-title{font-family:var(--fm);font-size:.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
-.costo-year-total{font-size:1.5rem;font-weight:800;color:var(--acc3);margin-bottom:4px}
+.costo-year-total{font-size:1.5rem;font-weight:800;color:var(--text);margin-bottom:4px}
 .costo-year-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
 .costo-year-stat-val{font-family:var(--fm);font-size:.82rem;font-weight:600;color:var(--text)}
 .costo-year-stat-lbl{font-family:var(--fm);font-size:.6rem;color:var(--muted);margin-top:2px}
-.money{color:var(--acc3);font-family:var(--fm)}
-.money-sm{color:var(--acc3);font-family:var(--fm);font-size:.75rem}
+.money{color:var(--text);font-family:var(--fm)}
+.money-sm{color:var(--text);font-family:var(--fm);font-size:.75rem}
 .costo-tbl-wrap{overflow-x:auto}
 .costo-tbl{width:100%;border-collapse:collapse;font-family:var(--fm);font-size:.75rem}
 .costo-tbl thead th{padding:10px 14px;text-align:left;color:var(--muted);font-weight:500;font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--border);white-space:nowrap}
@@ -375,7 +388,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .costo-tbl tbody tr:hover{background:var(--tint)}
 .costo-rank{font-weight:700;color:var(--muted);width:36px;text-align:center}
 .costo-bar-wrap{height:5px;background:var(--border);border-radius:3px;overflow:hidden;min-width:80px}
-.costo-bar-fill{height:100%;border-radius:3px;background:var(--acc3)}
+.costo-bar-fill{height:100%;border-radius:3px;background:var(--costo)}
 .metodologia-box{background:linear-gradient(135deg,rgba(59,130,246,.05),rgba(167,139,250,.03));border:1px solid rgba(59,130,246,.18);border-radius:var(--r);padding:24px;margin-top:var(--gap)}
 .metodologia-title{font-size:.85rem;font-weight:700;color:var(--acc);margin-bottom:10px}
 .metodologia-body{font-family:var(--fm);font-size:.7rem;color:var(--muted);line-height:1.9}
@@ -559,8 +572,8 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 
 <header>
   <div class="logo-area">
-    <a class="logo-icon" href="https://profealvarock.vercel.app/" target="_blank" rel="noopener" title="Portafolio de @profealvarock">
-      <img src="img/perfil-256.webp" alt="Logo de profealvarock" width="52" height="52">
+    <a class="logo-icon" href="#" title="Inicio del Observatorio Legislativo">
+      <img src="img/logo.svg" alt="Observatorio Legislativo" width="52" height="52">
     </a>
     <div>
       <h1>Asamblea Nacional<br><span>Observatorio Legislativo</span></h1>
@@ -680,18 +693,18 @@ tr:hover .dep-avatar{border-color:var(--acc)}
         <circle class="prov-shape" id="pmap-Guna_Yala" cx="982" cy="174" r="18"/>
         <circle class="prov-shape" id="pmap-Darien" cx="1035" cy="424" r="18"/>
         <!-- Labels -->
-        <text x="88" y="72" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Bocas</text>
-        <text x="55" y="185" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Chiriquí</text>
-        <text x="200" y="155" font-family="DM Mono" font-size="8" fill="#5a7499" text-anchor="middle" pointer-events="none">Ngäbe-Buglé</text>
-        <text x="338" y="145" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Veraguas</text>
-        <text x="438" y="95" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Coclé</text>
-        <text x="290" y="295" font-family="DM Mono" font-size="8" fill="#5a7499" text-anchor="middle" pointer-events="none">Herrera</text>
-        <text x="390" y="290" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Los Santos</text>
-        <text x="532" y="75" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Colón</text>
-        <text x="510" y="200" font-family="DM Mono" font-size="8" fill="#5a7499" text-anchor="middle" pointer-events="none">Pmá. Oeste</text>
-        <text x="630" y="155" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Panamá</text>
-        <text x="648" y="38" font-family="DM Mono" font-size="8" fill="#5a7499" text-anchor="middle" pointer-events="none">Guna Yala</text>
-        <text x="762" y="185" font-family="DM Mono" font-size="9" fill="#5a7499" text-anchor="middle" pointer-events="none">Darién</text>
+        <text x="88" y="72" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Bocas</text>
+        <text x="55" y="185" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Chiriquí</text>
+        <text x="200" y="155" font-family="DM Mono" font-size="8" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Ngäbe-Buglé</text>
+        <text x="338" y="145" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Veraguas</text>
+        <text x="438" y="95" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Coclé</text>
+        <text x="290" y="295" font-family="DM Mono" font-size="8" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Herrera</text>
+        <text x="390" y="290" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Los Santos</text>
+        <text x="532" y="75" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Colón</text>
+        <text x="510" y="200" font-family="DM Mono" font-size="8" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Pmá. Oeste</text>
+        <text x="630" y="155" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Panamá</text>
+        <text x="648" y="38" font-family="DM Mono" font-size="8" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Guna Yala</text>
+        <text x="762" y="185" font-family="DM Mono" font-size="9" fill="#7a8fb0" text-anchor="middle" pointer-events="none">Darién</text>
         <text class="map-label" x="150" y="158">Bocas</text><text class="map-value" id="pmap-value-Bocas_del_Toro" x="150" y="210"></text>
         <text class="map-label" x="180" y="298">Chiriqui</text><text class="map-value" id="pmap-value-Chiriqui" x="180" y="350"></text>
         <text class="map-label" x="325" y="271">Ngabe-Bugle</text><text class="map-value" id="pmap-value-Ngabe_Bugle" x="325" y="323"></text>
@@ -1098,10 +1111,35 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 // mapa [oscuro, claro]. Solo se tocan las opciones (y el borde de los datasets), no los
 // colores de datos, para que partidos y etapas conserven su color.
 const THEME_COLORS = [
-  ['#0e1623','#ffffff'], ['#1a2940','#d8e0ea'], ['#5a7499','#5b6e88'], ['#94a3b8','#334155'],
+  ['#0e1623','#ffffff'], ['#1a2940','#d8e0ea'], ['#7a8fb0','#5b6e88'], ['#94a3b8','#334155'],
   ['rgba(255,255,255,.03)','rgba(15,23,42,.07)'],
 ];
 const ChartBase = Chart;
+
+// Colores de etapa legislativa [modo oscuro, modo claro]. Las etapas en trámite usan una escala
+// de un solo tono (validada como rampa ordinal en cada modo); en oscuro se invierte para que lo
+// más avanzado sea lo más luminoso. El desenlace usa colores de estado: ley = verde,
+// negado = rojo, objetado = naranja, sin avance = grises.
+const ETAPA_COLOR = {
+  'Preliminar':                          ['#184f95','#86b6ef'],
+  'Enviado a subcomisión para analisis': ['#256abf','#5598e7'],
+  'Primer Debate':                       ['#3987e5','#2a78d6'],
+  'Segundo Debate':                      ['#6da7ec','#1c5cab'],
+  'Tercer Debate':                       ['#9ec5f4','#104281'],
+  'Enviado al Ejecutivo':                ['#a5b4fc','#4f46e5'],
+  'Objetado por Ejecutivo':              ['#fdba74','#ea580c'],
+  'Segundo Debate(Objetado)':            ['#fb923c','#c2410c'],
+  'Tercer Debate(Objetado)':             ['#f97316','#9a3412'],
+  'Ley':                                 ['#10b981','#059669'],
+  'Negado':                              ['#ef4444','#dc2626'],
+  'Archivado':                           ['#94a3b8','#64748b'],
+  'Retirado por proponente':             ['#64748b','#94a3b8'],
+  'Suspendido':                          ['#cbd5e1','#475569'],
+};
+const ETAPA_OTRA = ['#a1a1aa','#71717a'];
+// Los gráficos se construyen con el color oscuro; themeChartConfig lo traduce al tema activo.
+const etapaColor = (e, theme='dark') => (ETAPA_COLOR[e]||ETAPA_OTRA)[theme==='light'?1:0];
+const ETAPA_PARES = [...Object.values(ETAPA_COLOR), ETAPA_OTRA];
 
 function currentTheme(){
   return document.documentElement.getAttribute('data-theme')==='light' ? 'light' : 'dark';
@@ -1117,13 +1155,21 @@ function remapColors(obj, from, to, seen=new Set()){
   }
 }
 
-function themeChartConfig(cfg, theme){
+// inicial = el gráfico se está creando: sus datos vienen en colores oscuros (canónicos).
+function themeChartConfig(cfg, theme, inicial=false){
   const dark=THEME_COLORS.map(c=>c[0]), light=THEME_COLORS.map(c=>c[1]);
   const [from,to] = theme==='light' ? [dark,light] : [light,dark];
   remapColors(cfg.options, from, to);
+  const [eFrom,eTo] = theme==='light' ? [ETAPA_PARES.map(p=>p[0]),ETAPA_PARES.map(p=>p[1])]
+                                      : [ETAPA_PARES.map(p=>p[1]),ETAPA_PARES.map(p=>p[0])];
+  const etapa=v=>{ const i=eFrom.indexOf(v); return i>=0?eTo[i]:v; };
   (cfg.data?.datasets||[]).forEach(ds=>{
     const i=from.indexOf(ds.borderColor);
     if(i>=0) ds.borderColor=to[i];
+    // Colores de etapa en los datos (cada valor se traduce una sola vez)
+    if(ds.$etapas && !(inicial && theme==='dark')){
+      ds.backgroundColor = Array.isArray(ds.backgroundColor) ? ds.backgroundColor.map(etapa) : etapa(ds.backgroundColor);
+    }
   });
 }
 
@@ -1137,7 +1183,7 @@ function applyChartDefaults(theme){
 
 // Todo gráfico nuevo nace con los colores del tema activo.
 Chart = class extends ChartBase {
-  constructor(item, cfg){ if(cfg) themeChartConfig(cfg, currentTheme()); super(item, cfg); }
+  constructor(item, cfg){ if(cfg) themeChartConfig(cfg, currentTheme(), true); super(item, cfg); }
 };
 
 function setTheme(theme, persist=true){
@@ -1150,6 +1196,7 @@ function setTheme(theme, persist=true){
   applyChartDefaults(theme);
   if(prev!==theme){
     Object.values(ChartBase.instances).forEach(c=>{ themeChartConfig(c.config, theme); c.update('none'); });
+    if(typeof D!=='undefined' && D && document.getElementById('funnel')?.childElementCount) renderFunnel();
   }
 }
 
@@ -1408,30 +1455,39 @@ document.addEventListener('click',e=>{
   if(wrap&&!wrap.contains(e.target))gsClose();
 });
 
-const EC = {
-  'Ley':'#10b981','Preliminar':'#3b82f6','Primer Debate':'#f59e0b',
-  'Segundo Debate':'#fb923c','Tercer Debate':'#f97316',
-  'Enviado al Ejecutivo':'#a78bfa','Enviado a subcomisión para analisis':'#60a5fa',
-  'Archivado':'#64748b','Negado':'#ef4444','Retirado por proponente':'#94a3b8',
-  'Suspendido':'#fbbf24','Objetado por Ejecutivo':'#f472b6',
-  'Segundo Debate(Objetado)':'#fb7185','Tercer Debate(Objetado)':'#f43f5e'
-};
-const PC = {
-  'Coalición Vamos':'#3b82f6','Realizando Metas':'#f59e0b',
-  'Partido Revolucionario Democrático':'#ef4444','Partido Panameñista':'#10b981',
-  'Cambio Democrático':'#a78bfa','Movimiento Otro Camino':'#fb923c',
-  'Partido Popular':'#60a5fa','Partido Alianza':'#f472b6',
-  'Seguimos':'#34d399','Libre Postulación | Seguimos':'#34d399','Libre Postulación':'#22d3ee',
-  'Movimiento Liberal Republicano Nacionalista':'#94a3b8'
-};
+const ORDEN_ETAPAS=Object.keys(ETAPA_COLOR);
+const ordenEtapa=e=>{ const i=ORDEN_ETAPAS.indexOf(e); return i<0?99:i; };
+
+// Texto legible sobre una barra de color (tinta oscura sobre colores claros)
+function tintaSobre(hex){
+  const n=parseInt(hex.slice(1),16), r=(n>>16)&255, g=(n>>8)&255, b=n&255;
+  return (0.2126*r+0.7152*g+0.0722*b)/255 > 0.6 ? '#0b1220' : '#ffffff';
+}
+
+function renderFunnel(){
+  const order=['Preliminar','Enviado a subcomisión para analisis','Primer Debate','Segundo Debate','Tercer Debate','Enviado al Ejecutivo','Objetado por Ejecutivo','Ley','Negado','Archivado','Retirado por proponente'];
+  const theme=currentTheme();
+  document.getElementById('funnel').innerHTML=order.map(e=>{
+    const n=D.etapas[e]||0;if(!n)return'';
+    const pct=(n/D.total_proyectos*100).toFixed(0);
+    const lbl=e.length>26?e.slice(0,24)+'…':e;
+    const col=etapaColor(e,theme);
+    return`<div class="f-row"><div class="f-lbl" title="${esc(e)}">${esc(lbl)}</div><div class="f-wrap"><div class="f-bar" style="width:${Math.max(pct,3)}%;background:${col};color:${tintaSobre(col)}">${n}</div></div></div>`;
+  }).join('');
+}
+
+// Los partidos no tienen color propio: el observatorio los trata a todos igual (identidad por
+// nombre), y así ninguno queda asociado al color de la marca ni a los de éxito o alerta.
 
 function etapaClass(e){
+  e=e||'';
   if(e==='Ley')return 'etapa-ley';
-  if(e==='Preliminar')return 'etapa-pre';
-  if(e.includes('Primer'))return 'etapa-d1';
-  if(e.includes('Segundo'))return 'etapa-d2';
-  if(e.includes('Archivado')||e.includes('Retirado'))return 'etapa-arch';
-  if(e.includes('Negado'))return 'etapa-neg';
+  if(e==='Negado')return 'etapa-neg';
+  if(e.includes('Objetado'))return 'etapa-obj';
+  if(e.includes('Ejecutivo'))return 'etapa-ejec';
+  if(e.includes('Debate'))return 'etapa-deb';
+  if(e==='Preliminar'||e.includes('subcomisión'))return 'etapa-pre';
+  if(e.includes('Archivado')||e.includes('Retirado')||e.includes('Suspendido'))return 'etapa-arch';
   return 'etapa-otro';
 }
 
@@ -1625,8 +1681,8 @@ function renderKPI(){
 
   // Fila superior: totales globales (no son subconjuntos entre sí)
   const totals=[
-    {l:'Total proyectos',v:total,s:'Desde jul 2024',c:'#3b82f6'},
-    {l:'Diputados activos',v:D.total_diputados,s:'Asamblea Nacional',c:'#f59e0b'},
+    {l:'Total proyectos',v:total,s:'Desde jul 2024',c:'var(--acc)'},
+    {l:'Diputados activos',v:D.total_diputados,s:'Asamblea Nacional',c:'var(--acc5)'},
   ];
   document.getElementById('kpi-totals').innerHTML=totals.map((c,i)=>`
     <div class="kpi fade-in" style="--kc:${c.c};animation-delay:${i*.08}s">
@@ -1651,12 +1707,12 @@ function renderKPI(){
   if(sumEl){sumEl.textContent=`${sumaGrupos} de ${total} proyectos`;}
 
   const cards=[
-    {l:'En análisis',v:enAnalisis,s:'Preliminar · subcomisión',c:'#3b82f6'},
-    {l:'En debate',v:enDebate,s:'1°, 2° y 3er debate',c:'#f59e0b'},
-    {l:'Ante el Ejecutivo',v:anteEjec,s:'Enviado · objetado',c:'#a78bfa'},
-    {l:'Leyes aprobadas',v:D.total_leyes,s:`${tasa}% tasa de aprobación`,c:'#10b981'},
-    {l:'Sin avance',v:sinAvance,s:'Arch. · negados · retirados',c:'#ef4444'},
-    ...(otrosV>0?[{l:'Otros estados',v:otrosV,s:'Etapas no clasificadas',c:'#64748b'}]:[]),
+    {l:'En análisis',v:enAnalisis,s:'Preliminar · subcomisión',c:'var(--st-analisis)'},
+    {l:'En debate',v:enDebate,s:'1°, 2° y 3er debate',c:'var(--st-debate)'},
+    {l:'Ante el Ejecutivo',v:anteEjec,s:'Enviado · objetado',c:'var(--st-ejec)'},
+    {l:'Leyes aprobadas',v:D.total_leyes,s:`${tasa}% tasa de aprobación`,c:'var(--st-ley)'},
+    {l:'Sin avance',v:sinAvance,s:'Arch. · negados · retirados',c:'var(--st-sin)'},
+    ...(otrosV>0?[{l:'Otros estados',v:otrosV,s:'Etapas no clasificadas',c:'var(--muted)'}]:[]),
   ];
   document.getElementById('kpi-grid').innerHTML=cards.map((c,i)=>{
     const pct=total>0?(c.v/total*100).toFixed(1):0;
@@ -1690,8 +1746,8 @@ function renderGeneral(){
       plugins:{legend:{display:false},
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
           callbacks:{label:ctx=>` ${ctx.raw} proyectos — clic para filtrar`}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:isMobileTl?9:10},maxRotation:45,maxTicksLimit:isMobileTl?7:undefined}},
-        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:isMobileTl?9:10},maxRotation:45,maxTicksLimit:isMobileTl?7:undefined}},
+        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}},
       onClick:(evt,els)=>{
         if(!els.length)return;
         const idx=els[0].index;
@@ -1705,12 +1761,13 @@ function renderGeneral(){
     t.font.size=m?9:10; t.maxTicksLimit=m?7:undefined;
   };
 
-  const entries=Object.entries(D.etapas).sort((a,b)=>b[1]-a[1]);
+  // En el orden del trámite (no por tamaño), para que la escala de color se lea como avance
+  const entries=Object.entries(D.etapas).sort((a,b)=>ordenEtapa(a[0])-ordenEtapa(b[0]));
   const isMobileDonut=isMobile();
   const donutChart = new Chart(document.getElementById('c-donut'),{
     type:'doughnut',
-    data:{labels:entries.map(e=>e[0]),datasets:[{data:entries.map(e=>e[1]),
-      backgroundColor:entries.map(e=>EC[e[0]]||'#64748b'),borderWidth:2,borderColor:'#0e1623',hoverOffset:8}]},
+    data:{labels:entries.map(e=>e[0]),datasets:[{data:entries.map(e=>e[1]),$etapas:true,
+      backgroundColor:entries.map(e=>etapaColor(e[0])),borderWidth:2,borderColor:'#0e1623',hoverOffset:8}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'68%',
       plugins:{legend:{position:isMobileDonut?'bottom':'right',labels:{color:'#94a3b8',font:{family:'DM Mono',size:isMobileDonut?9:10},padding:isMobileDonut?5:8,boxWidth:10}},
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
@@ -1721,14 +1778,7 @@ function renderGeneral(){
     l.position=m?'bottom':'right'; l.labels.font.size=m?9:10; l.labels.padding=m?5:8;
   };
 
-  const order=['Preliminar','Enviado a subcomisión para analisis','Primer Debate','Segundo Debate','Tercer Debate','Enviado al Ejecutivo','Objetado por Ejecutivo','Ley','Negado','Archivado','Retirado por proponente'];
-  const fCol={'Preliminar':'#3b82f6','Enviado a subcomisión para analisis':'#60a5fa','Primer Debate':'#f59e0b','Segundo Debate':'#fb923c','Tercer Debate':'#f97316','Enviado al Ejecutivo':'#a78bfa','Objetado por Ejecutivo':'#f472b6','Ley':'#10b981','Negado':'#ef4444','Archivado':'#64748b','Retirado por proponente':'#94a3b8'};
-  document.getElementById('funnel').innerHTML=order.map(e=>{
-    const n=D.etapas[e]||0;if(!n)return'';
-    const pct=(n/D.total_proyectos*100).toFixed(0);
-    const lbl=e.length>26?e.slice(0,24)+'…':e;
-    return`<div class="f-row"><div class="f-lbl" title="${e}">${lbl}</div><div class="f-wrap"><div class="f-bar" style="width:${Math.max(pct,3)}%;background:${fCol[e]||'#64748b'}">${n}</div></div></div>`;
-  }).join('');
+  renderFunnel();
 
   try{ renderMap(); }catch(e){ console.error('Map:',e); }
 
@@ -1744,9 +1794,9 @@ function renderGeneral(){
       plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:11}}},
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
           callbacks:{title:ctx=>top[ctx[0].dataIndex].nombre,label:ctx=>` ${ctx.dataset.label}: ${ctx.raw}`}}},
-      scales:{x:{grid:{display:false},ticks:{color:'#5a7499',font:{family:'DM Mono',size:9},maxRotation:40,
+      scales:{x:{grid:{display:false},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:9},maxRotation:40,
         callback:function(val){const l=this.getLabelForValue(val);return isMobile()&&l&&l.length>9?l.slice(0,8)+'…':l}}},
-        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}}}}
+        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}}}
   });
 }
 
@@ -1755,28 +1805,27 @@ function renderPartidos(){
   const pp=D&&D.por_partido;if(!pp||!Object.keys(pp).length){document.getElementById('partido-cards').innerHTML='<p style="font-family:var(--fm);color:var(--muted);padding:20px">Sin datos de partidos.</p>';return;}
   const entries=Object.entries(pp).sort((a,b)=>(b[1].proyectos||0)-(a[1].proyectos||0));
   const labels=entries.map(e=>e[0]);
-  const colors=labels.map(l=>PC[l]||'#64748b');
   const dataProp=entries.map(e=>Number(e[1].proyectos)||0);
   const dataLeyes=entries.map(e=>Number(e[1].leyes)||0);
 
-  const mkChart=(id,data,cb)=>{
+  // Todos los partidos en el mismo color: cada barra ya lleva el nombre del partido
+  const mkChart=(id,data,cb,color,etapas=false)=>{
     new Chart(document.getElementById(id),{
       type:'bar',
-      data:{labels,datasets:[{data,backgroundColor:colors.map(c=>c+'cc'),borderRadius:5,borderSkipped:false,barThickness:18}]},
+      data:{labels,datasets:[{data,backgroundColor:color,$etapas:etapas,borderRadius:5,borderSkipped:false,barThickness:18}]},
       options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
         plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{label:ctx=>cb(ctx.raw)}}},
-        scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},precision:0}},
+        scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}},
           y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}
     });
   };
-  mkChart('c-pp-prop',dataProp,v=>` ${v} proyectos`);
-  mkChart('c-pp-leyes',dataLeyes,v=>` ${v} leyes`);
+  mkChart('c-pp-prop',dataProp,v=>` ${v} proyectos`,'#3b82f6');
+  mkChart('c-pp-leyes',dataLeyes,v=>` ${v} leyes`,etapaColor('Ley'),true);
 
   const maxProp=Math.max(...dataProp,1), maxLeyes=Math.max(...dataLeyes,1);
   document.getElementById('partido-cards').innerHTML=entries.map(([l,v])=>{
-    const c=PC[l]||'#64748b';
     const ef=v.proyectos>0?((v.leyes/v.proyectos)*100).toFixed(1):0;
-    return`<div class="partido-card" style="--pc:${c}">
+    return`<div class="partido-card" style="--pc:var(--acc)">
       <div class="partido-name">${esc(l)}</div>
       <div class="p-stats-grid">
         <div class="p-stat"><div class="p-stat-v">${v.diputados}</div><div class="p-stat-l">Diputados</div></div>
@@ -1786,12 +1835,12 @@ function renderPartidos(){
       <div class="p-dual">
         <div class="p-dual-row">
           <div class="p-dual-lbl">Proyectos</div>
-          <div class="p-dual-wrap"><div class="p-dual-bar" style="width:${Math.round(v.proyectos/maxProp*100)}%;background:${c}"></div></div>
+          <div class="p-dual-wrap"><div class="p-dual-bar" style="width:${Math.round(v.proyectos/maxProp*100)}%;background:var(--acc)"></div></div>
           <div class="p-dual-val">${v.proyectos}</div>
         </div>
         <div class="p-dual-row">
           <div class="p-dual-lbl">Leyes</div>
-          <div class="p-dual-wrap"><div class="p-dual-bar" style="width:${Math.round(v.leyes/maxLeyes*100)}%;background:${c}88"></div></div>
+          <div class="p-dual-wrap"><div class="p-dual-bar" style="width:${Math.round(v.leyes/maxLeyes*100)}%;background:var(--st-ley)"></div></div>
           <div class="p-dual-val">${v.leyes}</div>
         </div>
         ${v.participaciones!=null?`<div class="p-dual-row">
@@ -1799,8 +1848,8 @@ function renderPartidos(){
           <div style="font-family:var(--fm);font-size:.72rem;color:var(--text);margin-left:auto">${fmtNum(v.participaciones)} proyectos</div>
         </div>`:''}
         <div class="p-dual-row" style="margin-top:2px">
-          <div class="p-dual-lbl" style="color:var(--acc3)">Efectividad</div>
-          <div style="font-family:var(--fm);font-size:.72rem;color:var(--acc3);margin-left:auto">${ef}% → ley</div>
+          <div class="p-dual-lbl" style="color:var(--st-ley)">Efectividad</div>
+          <div style="font-family:var(--fm);font-size:.72rem;color:var(--st-ley);margin-left:auto">${ef}% → ley</div>
         </div>
       </div>
     </div>`;
@@ -1818,10 +1867,10 @@ function renderProponentes(){
   const totCiLeyes=ciudadano.reduce((s,o)=>s+o.leyes,0);
 
   const sumCards=[
-    {l:'Proyectos del Ejecutivo',v:totEjProy,s:`${ejecutivo.length} ministerios e instituciones`,c:'#a78bfa'},
-    {l:'Leyes del Ejecutivo',v:totEjLeyes,s:`${totEjProy>0?((totEjLeyes/totEjProy)*100).toFixed(0):0}% tasa de aprobación`,c:'#10b981'},
-    {l:'Iniciativa ciudadana',v:totCiProy,s:`${ciudadano.length} proponentes individuales`,c:'#f59e0b'},
-    {l:'Leyes ciudadanas',v:totCiLeyes,s:`${totCiProy>0?((totCiLeyes/totCiProy)*100).toFixed(0):0}% tasa de aprobación`,c:'#10b981'},
+    {l:'Proyectos del Ejecutivo',v:totEjProy,s:`${ejecutivo.length} ministerios e instituciones`,c:'var(--st-ejec)'},
+    {l:'Leyes del Ejecutivo',v:totEjLeyes,s:`${totEjProy>0?((totEjLeyes/totEjProy)*100).toFixed(0):0}% tasa de aprobación`,c:'var(--st-ley)'},
+    {l:'Iniciativa ciudadana',v:totCiProy,s:`${ciudadano.length} proponentes individuales`,c:'var(--acc)'},
+    {l:'Leyes ciudadanas',v:totCiLeyes,s:`${totCiProy>0?((totCiLeyes/totCiProy)*100).toFixed(0):0}% tasa de aprobación`,c:'var(--st-ley)'},
   ];
   document.getElementById('prop-summary').innerHTML=sumCards.map((c,i)=>`
     <div class="kpi fade-in" style="--kc:${c.c};animation-delay:${i*.08}s">
@@ -1848,9 +1897,9 @@ function renderProponentes(){
         </div>`).join('')
       :'<div class="loader" style="height:80px;font-size:.75rem">Sin datos</div>';
   }
-  renderList('prop-ejecutivo',ejecutivo,'#a78bfa');
-  renderList('prop-ciudadano',ciudadano,'#f59e0b');
-  renderList('prop-comision',otros.filter(o=>o.tipo==='comision'),'#10b981');
+  renderList('prop-ejecutivo',ejecutivo,'var(--st-ejec)');
+  renderList('prop-ciudadano',ciudadano,'var(--acc)');
+  renderList('prop-comision',otros.filter(o=>o.tipo==='comision'),'var(--acc5)');
 }
 
 // ── MONTH FILTER (timeline click) ─────────────────
@@ -2023,10 +2072,10 @@ function renderMonitorSummary(){
   const items=monitorData();
   const totalPlanilla=items.reduce((s,d)=>s+(Number(d.planilla_valor)||0),0);
   const cards=[
-    {l:'Planilla acumulada',v:Math.round(totalPlanilla),s:`${items.length} diputados monitoreados`,c:'#f59e0b',money:true},
-    {l:'Prom. pleno',v:avg(items,'asistencia_pleno'),s:'Escala 1-5',c:'#3b82f6'},
-    {l:'Prom. comisiones',v:avg(items,'asistencia_comisiones'),s:'Escala 1-5',c:'#10b981'},
-    {l:'Prom. calificación',v:avg(items,'calificacion'),s:'Desempeño ponderado',c:'#a78bfa'},
+    {l:'Planilla acumulada',v:Math.round(totalPlanilla),s:`${items.length} diputados monitoreados`,c:'var(--costo)',money:true},
+    {l:'Prom. pleno',v:avg(items,'asistencia_pleno'),s:'Escala 1-5',c:'var(--acc)'},
+    {l:'Prom. comisiones',v:avg(items,'asistencia_comisiones'),s:'Escala 1-5',c:'var(--acc)'},
+    {l:'Prom. calificación',v:avg(items,'calificacion'),s:'Desempeño ponderado',c:'var(--acc5)'},
   ];
   document.getElementById('monitor-summary').innerHTML=cards.map((c,i)=>`
     <div class="kpi fade-in" style="--kc:${c.c};animation-delay:${i*.08}s">
@@ -2040,10 +2089,10 @@ function renderMonitorSummary(){
   const topScore=[...items].sort((a,b)=>(b.calificacion||0)-(a.calificacion||0))[0];
   const maxPlanilla=Math.max(...items.map(d=>Number(d.planilla_valor)||0),1);
   document.getElementById('monitor-insights').innerHTML=[
-    {l:'Pleno',v:avg(items,'asistencia_pleno'),max:5,c:'#3b82f6',t:`Promedio ${fmtScore(avg(items,'asistencia_pleno'))}/5`},
-    {l:'Comis.',v:avg(items,'asistencia_comisiones'),max:5,c:'#10b981',t:`Promedio ${fmtScore(avg(items,'asistencia_comisiones'))}/5`},
-    {l:'Planilla',v:highSpend?.planilla_valor||0,max:maxPlanilla,c:'#f59e0b',t:`Mayor: ${highSpend?.nombre||'—'}`,money:true},
-    {l:'Alertas',v:lowPleno,max:items.length||1,c:'#ef4444',t:`${lowPleno} con pleno bajo 3/5`},
+    {l:'Pleno',v:avg(items,'asistencia_pleno'),max:5,c:'var(--acc)',t:`Promedio ${fmtScore(avg(items,'asistencia_pleno'))}/5`},
+    {l:'Comis.',v:avg(items,'asistencia_comisiones'),max:5,c:'var(--acc)',t:`Promedio ${fmtScore(avg(items,'asistencia_comisiones'))}/5`},
+    {l:'Planilla',v:highSpend?.planilla_valor||0,max:maxPlanilla,c:'var(--costo)',t:`Mayor: ${highSpend?.nombre||'—'}`,money:true},
+    {l:'Alertas',v:lowPleno,max:items.length||1,c:'var(--st-neg)',t:`${lowPleno} con pleno bajo 3/5`},
   ].map(x=>`<div class="mini-row">
       <span>${x.l}</span><div class="mini-track"><div class="mini-fill" style="width:${Math.max(4,Math.round((x.v/x.max)*100))}%;background:${x.c}"></div></div><span>${x.money?fmtMoney(x.v):(Number.isFinite(x.v)?Math.round(x.v):0)}</span>
       <div style="grid-column:1/-1;color:var(--muted);font-size:.65rem">${esc(x.t)}${topScore&&x.l==='Comis.'?` · Mejor calificación: ${esc(topScore.nombre)}`:''}</div>
@@ -2057,13 +2106,13 @@ function renderMonitorChart(){
     type:'bar',
     data:{labels:top.map(d=>d.nombre.split(' ').slice(-2).join(' ')),datasets:[
       {label:'Planilla',data:top.map(d=>d.planilla_valor||0),backgroundColor:'rgba(245,158,11,.75)',borderRadius:4,yAxisID:'y'},
-      {label:'Calificación',data:top.map(d=>d.calificacion||0),type:'line',borderColor:'#10b981',backgroundColor:'#10b981',tension:.25,yAxisID:'y1'}
+      {label:'Calificación',data:top.map(d=>d.calificacion||0),type:'line',borderColor:'#a78bfa',backgroundColor:'#a78bfa',tension:.25,yAxisID:'y1'}
     ]},
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10}}},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{label:ctx=>ctx.dataset.label==='Planilla'?` ${fmtMoney(ctx.raw)}`:` ${ctx.raw}/5`}}},
-      scales:{x:{ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}},grid:{display:false}},
-        y:{beginAtZero:true,ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},callback:v=>'B/. '+fmtNum(v)},grid:{color:'rgba(255,255,255,.03)'}},
-        y1:{position:'right',min:0,max:5,ticks:{color:'#10b981',font:{family:'DM Mono',size:10}},grid:{drawOnChartArea:false}}}}
+      scales:{x:{ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}},grid:{display:false}},
+        y:{beginAtZero:true,ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>'B/. '+fmtNum(v)},grid:{color:'rgba(255,255,255,.03)'}},
+        y1:{position:'right',min:0,max:5,ticks:{color:'#a78bfa',font:{family:'DM Mono',size:10}},grid:{drawOnChartArea:false}}}}
   });
 }
 function renderMonitorTable(){
@@ -2075,7 +2124,7 @@ function renderMonitorTable(){
   });
   monitorSorted=sorted;
   document.getElementById('monitor-tbody').innerHTML=sorted.map((d,i)=>{
-    const pc=PC[d.partido]||'#64748b';
+    const pc='var(--muted)';  // partido en tinta neutra (sin color por partido)
     const fotoEl=d.foto?`<img class="dep-avatar" loading="lazy" decoding="async" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`:`<div class="dep-avatar"></div>`;
     return`<tr>
       <td class="td-main"><div class="dep-cell">${fotoEl}<div><div class="dep-name">${esc(d.nombre)}</div><div class="dep-sub" style="color:${pc}">${esc(d.partido||'—')} · ${esc(d.circuito||'')}</div></div></div></td>
@@ -2098,7 +2147,7 @@ function buildChips(){
   const cvEl=document.getElementById('chip-provincias');
   if(!cpEl||!cvEl)return;
   cpEl.innerHTML=`<span class="chip-lbl">Partido</span>`+
-    parties.map(p=>`<button class="chip${selectedParties.has(p)?' active':''}" style="--cc:${PC[p]||'#64748b'}" data-val="${esc(p)}" onclick="toggleChip('party',this.dataset.val)"><span class="chip-dot"></span>${esc(p.replace(/^(Partido|Movimiento)\s/,''))}</button>`).join('')+
+    parties.map(p=>`<button class="chip${selectedParties.has(p)?' active':''}" style="--cc:var(--acc)" data-val="${esc(p)}" onclick="toggleChip('party',this.dataset.val)"><span class="chip-dot"></span>${esc(p.replace(/^(Partido|Movimiento)\s/,''))}</button>`).join('')+
     `<button class="filter-clear${hasFilter?' visible':''}" onclick="clearFilters()">✕ Limpiar</button>`;
   cvEl.innerHTML=`<span class="chip-lbl">Provincia</span>`+
     provinces.map(p=>`<button class="chip${selectedProvinces.has(p)?' active':''}" style="--cc:var(--acc2)" data-val="${esc(p)}" onclick="toggleChip('prov',this.dataset.val)"><span class="chip-dot"></span>${esc(p)}</button>`).join('');
@@ -2134,7 +2183,7 @@ function renderGrid(){
   const maxProp=Math.max(...sorted.map(d=>d.proyectos||0),1);
   const maxCosp=Math.max(...sorted.map(d=>d.co_patrocinios||0),1);
   document.getElementById('dep-grid').innerHTML=sorted.map((d,i)=>{
-    const pc=PC[d.partido]||'#64748b';
+    const pc='var(--muted)';  // partido en tinta neutra (sin color por partido)
     const bwProp=Math.round((d.proyectos||0)/maxProp*100);
     const bwCosp=Math.round((d.co_patrocinios||0)/maxCosp*100);
     const leyes=(d.leyes_detalle||[]).length;
@@ -2224,7 +2273,7 @@ function renderTable(){
 
   document.getElementById('tbody').innerHTML=slice.map((d,i)=>{
     const rank=(page-1)*PAGE+i+1;
-    const pc=PC[d.partido]||'#64748b';
+    const pc='var(--muted)';  // partido en tinta neutra (sin color por partido)
     const topEt=d.topEtapa||'-';
     const bwProp=Math.round((d.proyectos||0)/maxProp*100);
     const bwCosp=Math.round((d.co_patrocinios||0)/maxCosp*100);
@@ -2237,7 +2286,7 @@ function renderTable(){
         <div class="dep-name">${esc(d.nombre)}</div>
         ${d.partido?`<div class="dep-sub" style="color:${pc}">${esc(d.partido)}</div>`:''}
       </div></div></td>
-      <td class="col-md"><span class="badge" style="background:${pc}22;color:${pc}">${esc(d.partido||'—')}</span></td>
+      <td class="col-md"><span class="badge" style="background:var(--surface2);color:var(--text);border:1px solid var(--border)">${esc(d.partido||'—')}</span></td>
       <td class="col-sm" style="font-family:var(--fm);font-size:.75rem;color:var(--muted)">${esc(d.provincia||'—')}</td>
       <td class="num">
         <div class="dual-bar">
@@ -2468,14 +2517,14 @@ function renderCostos(){
 
   // KPI cards
   document.getElementById('costo-kpi-grid').innerHTML=[
-    {l:'Costo legislativo total',v:fmtUSD(totalCost),s:`Jul 2024 — ${meses_es[last.month-1]} ${last.year}`,c:'#10b981'},
-    {l:'Costo promedio por proyecto',v:fmtUSD(avgCosto),s:`${proyectos.length} proyectos con participación`,c:'#3b82f6'},
-    {l:'Diputado mayor costo',v:topDip?.nombre||'—',s:topDip?fmtUSD(topDip.costoAcumulado):'',c:'#f59e0b',txt:true},
-    {l:'Proyecto mayor costo',v:topProy?(topProy.titulo.length>52?topProy.titulo.slice(0,50)+'…':topProy.titulo):'—',s:topProy?fmtUSD(topProy.costo):'',c:'#a78bfa',txt:true},
+    {l:'Costo legislativo total',v:fmtUSD(totalCost),s:`Jul 2024 — ${meses_es[last.month-1]} ${last.year}`,c:'var(--costo)'},
+    {l:'Costo promedio por proyecto',v:fmtUSD(avgCosto),s:`${proyectos.length} proyectos con participación`,c:'var(--costo)'},
+    {l:'Diputado mayor costo',v:topDip?.nombre||'—',s:topDip?fmtUSD(topDip.costoAcumulado):'',c:'var(--text)',txt:true},
+    {l:'Proyecto mayor costo',v:topProy?(topProy.titulo.length>52?topProy.titulo.slice(0,50)+'…':topProy.titulo):'—',s:topProy?fmtUSD(topProy.costo):'',c:'var(--text)',txt:true},
   ].map((k,i)=>`
     <div class="kpi fade-in" style="--kc:${k.c};animation-delay:${i*.08}s">
       <div class="kpi-label">${k.l}</div>
-      <div class="kpi-value" style="${k.txt?`font-size:1rem;line-height:1.3;color:${k.c}`:'font-family:var(--fm);color:var(--acc3)'}">${esc(k.v)}</div>
+      <div class="kpi-value" style="${k.txt?`font-size:1rem;line-height:1.3;color:${k.c}`:'font-family:var(--fm);color:var(--text);font-size:clamp(1.2rem,1.9vw,1.8rem);letter-spacing:-.03em;white-space:nowrap'}">${esc(k.v)}</div>
       <div class="kpi-sub" style="font-family:var(--fm)">${k.s}</div>
     </div>`).join('');
 
@@ -2500,7 +2549,7 @@ function renderCostos(){
   document.getElementById('costo-proy-tbody').innerHTML=proyectos.slice(0,30).map((p,i)=>{
     const pct=Math.round(p.costo/maxCosto*100);
     const vsAvg=avgCosto>0?((p.costo/avgCosto-1)*100).toFixed(0):0;
-    const vsCol=p.costo>=avgCosto?'#10b981':'#5a7499';
+    const vsCol=p.costo>=avgCosto?'var(--costo)':'var(--muted)';
     const dipCount=p.diputados;
     return`<tr>
       <td class="costo-rank td-hide-card">${i+1}</td>
@@ -2522,7 +2571,7 @@ function renderCostos(){
   // Tabla diputados
   const maxDipCosto=dipCosts[0]?.costoAcumulado||1;
   document.getElementById('costo-dip-tbody').innerHTML=dipCosts.map((d,i)=>{
-    const pc=PC[d.partido]||'#64748b';
+    const pc='var(--muted)';  // partido en tinta neutra (sin color por partido)
     const fotoEl=d.foto
       ?`<img class="dep-avatar" loading="lazy" decoding="async" src="${safeUrl(d.foto)}" alt="${esc(d.nombre)}" onerror="this.style.display='none'">`
       :`<div class="dep-avatar"></div>`;
@@ -2555,7 +2604,7 @@ function renderCostos(){
       data:{
         labels:etapaEntries.map(e=>e[0]),
         datasets:[{data:etapaEntries.map(e=>e[1]),
-          backgroundColor:etapaEntries.map(e=>(EC[e[0]]||'#64748b')+'bb'),
+          backgroundColor:etapaEntries.map(e=>etapaColor(e[0])),$etapas:true,
           borderRadius:5,borderSkipped:false}],
       },
       options:{responsive:true,maintainAspectRatio:false,
@@ -2563,9 +2612,9 @@ function renderCostos(){
           tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
             callbacks:{label:ctx=>` B/. ${fmtNum(ctx.raw)}`}}},
         scales:{
-          x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},maxRotation:35,
+          x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},maxRotation:35,
             callback:function(val){const l=this.getLabelForValue(val);return isMobile()&&l&&l.length>11?l.slice(0,10)+'…':l}}},
-          y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10},
+          y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},
             callback:v=>'B/. '+Math.round(v/1000)+'K'}}}},
     });
   }
@@ -2699,7 +2748,7 @@ function histSerie(H, slug, campo){
   return H.snapshots.map(s=>{ const v=s.diputados?.[slug]?.[i]; return v==null?null:Number(v); });
 }
 const fmtFecha=f=>{ const [y,m,d]=String(f).split('-'); return `${d}/${m}/${y.slice(2)}`; };
-const histAxis={grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}};
+const histAxis={grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}};
 const histTooltip={backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1};
 
 async function renderMonitorHist(){
@@ -2729,7 +2778,7 @@ async function renderMonitorHist(){
         tooltip:{...histTooltip,callbacks:{label:c=>c.dataset.yAxisID==='y'?` ${c.dataset.label}: B/. ${fmtNum(c.raw)}`:` ${c.dataset.label}: ${c.raw==null?'—':c.raw.toFixed(2)}`}}},
       scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:8,maxRotation:0}},
         y:{...histAxis,beginAtZero:true,ticks:{...histAxis.ticks,callback:v=>'B/. '+fmtNum(v/1000)+'K'}},
-        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}}}}
+        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}}}
   });
 }
 
@@ -2772,7 +2821,7 @@ async function renderModalHist(dep){
         tooltip:{...histTooltip,callbacks:{label:c=>c.dataset.yAxisID==='y'?` Planilla: B/. ${fmtNum(c.raw)}`:` ${c.dataset.label}: ${c.raw??'—'}/5`}}},
       scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:6,maxRotation:0}},
         y:{...histAxis,beginAtZero:true,ticks:{...histAxis.ticks,callback:v=>fmtNum(v/1000)+'K'}},
-        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#5a7499',font:{family:'DM Mono',size:10}}}}}
+        y1:{position:'right',min:0,max:5,grid:{drawOnChartArea:false},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}}}
   });
 }
 
