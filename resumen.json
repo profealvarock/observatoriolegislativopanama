@@ -56,6 +56,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1PcyW_d-3bt3tmy--LTGi-0b29Aqpimax",
       "perfil": "https://espaciocivico.org/diputados/ernesto-cedeno",
       "slug": "ernesto-cedeno",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ernesto-cedeno",
+      "planilla_texto": "B/. 12,000",
+      "planilla_valor": 12000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 62,
       "leyes": 3,
       "co_patrocinios": 49,
@@ -601,21 +616,40 @@
         "Salud": 7,
         "Tecnología y datos": 7
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ernesto-cedeno",
-      "planilla_texto": "B/. 12,000",
-      "planilla_valor": 12000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo"
+      "aliados": [
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 42
+        },
+        {
+          "nombre": "Graciela Hernández",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 38
+        },
+        {
+          "nombre": "Betserai Richards",
+          "partido": "Libre Postulación | Seguimos",
+          "proyectos": 31
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 28
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 28
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 26
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 89.6,
+      "transversalidad_esperada": 97.1
     },
     {
       "nombre": "Jorge Bloise Iglesias",
@@ -626,6 +660,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1LtL0bmfKWnmQ-JRnFNMQrLKBz-jYqzWL",
       "perfil": "https://espaciocivico.org/diputados/jorge-bloise-iglesias",
       "slug": "jorge-bloise-iglesias",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-bloise-iglesias",
+      "planilla_texto": "B/. 7,000",
+      "planilla_valor": 7000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 29,
       "leyes": 1,
       "co_patrocinios": 134,
@@ -1013,22 +1063,40 @@
         "Infraestructura, transporte y vivienda": 2,
         "Salud": 2
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-bloise-iglesias",
-      "planilla_texto": "B/. 7,000",
-      "planilla_valor": 7000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Educación, Cultura y Deporte"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 121
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 101
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 95
+        },
+        {
+          "nombre": "Yamireliz Chong",
+          "partido": "Coalición Vamos",
+          "proyectos": 84
+        },
+        {
+          "nombre": "Yarelis Rodríguez",
+          "partido": "Coalición Vamos",
+          "proyectos": 84
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 49.3,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Alexandra Brenes",
@@ -1039,6 +1107,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1WXR4HeE_hvLDjR9igLCi33w6Rah2EpoJ",
       "perfil": "https://espaciocivico.org/diputados/alexandra-brenes",
       "slug": "alexandra-brenes",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/alexandra-brenes",
+      "planilla_texto": "B/. 15,150",
+      "planilla_valor": 15150.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 27,
       "leyes": 0,
       "co_patrocinios": 101,
@@ -1373,22 +1457,40 @@
         "Ambiente y energía": 3,
         "Educación": 3
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/alexandra-brenes",
-      "planilla_texto": "B/. 15,150",
-      "planilla_valor": 15150.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Gobierno, Justicia y Asuntos Constitucionales"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 103
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 93
+        },
+        {
+          "nombre": "Yamireliz Chong",
+          "partido": "Coalición Vamos",
+          "proyectos": 87
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 85
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 75
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 42.0,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Lenin Alberto Ulate",
@@ -1399,6 +1501,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1BdKRjt5UcRwHzIvD3c0SqnP6Wi71SP4l",
       "perfil": "https://espaciocivico.org/diputados/lenin-alberto-ulate",
       "slug": "lenin-alberto-ulate",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/lenin-alberto-ulate",
+      "planilla_texto": "B/. 10,300",
+      "planilla_valor": 10300.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 27,
       "leyes": 0,
       "co_patrocinios": 139,
@@ -1772,22 +1890,40 @@
         "Cultura, deporte y turismo": 2,
         "Estado, gobierno y transparencia": 2
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/lenin-alberto-ulate",
-      "planilla_texto": "B/. 10,300",
-      "planilla_valor": 10300.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 130
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 105
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 103
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 102
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 97
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 95
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 46.5,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Graciela Hernández",
@@ -1798,6 +1934,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1g1lq6mRDeY-qB6I9C0QLC7mTQyBikJlv",
       "perfil": "https://espaciocivico.org/diputados/graciela-hernandez",
       "slug": "graciela-hernandez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/graciela-hernandez",
+      "planilla_texto": "B/. 22,650",
+      "planilla_valor": 22650.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 25,
       "leyes": 2,
       "co_patrocinios": 63,
@@ -2092,22 +2244,40 @@
         "Ambiente y energía": 3,
         "Cultura, deporte y turismo": 2
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/graciela-hernandez",
-      "planilla_texto": "B/. 22,650",
-      "planilla_valor": 22650.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 58
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 47
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 46
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 44
+        },
+        {
+          "nombre": "Betserai Richards",
+          "partido": "Libre Postulación | Seguimos",
+          "proyectos": 43
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 39
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 92.0,
+      "transversalidad_esperada": 97.1
     },
     {
       "nombre": "Neftalí Zamora",
@@ -2118,6 +2288,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1geqBMqEZSodIQSn8rP4Yw-jf2toM09XZ",
       "perfil": "https://espaciocivico.org/diputados/neftali-zamora",
       "slug": "neftali-zamora",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/neftali-zamora",
+      "planilla_texto": "B/. 14,000",
+      "planilla_valor": 14000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 23,
       "leyes": 1,
       "co_patrocinios": 81,
@@ -2410,22 +2596,40 @@
         "Infraestructura, transporte y vivienda": 2,
         "Ambiente y energía": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/neftali-zamora",
-      "planilla_texto": "B/. 14,000",
-      "planilla_valor": 14000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 72
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 59
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 57
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 57
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 56
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 55
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 91.1,
+      "transversalidad_esperada": 95.7
     },
     {
       "nombre": "Patsy Lee Rentería",
@@ -2436,6 +2640,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1j-BLrnzwbewFubNVYPQmsx7XYPiQX_Wo",
       "perfil": "https://espaciocivico.org/diputados/patsy-lee-renteria",
       "slug": "patsy-lee-renteria",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/patsy-lee-renteria",
+      "planilla_texto": "B/. 15,600",
+      "planilla_valor": 15600.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Educación, Cultura y Deporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 22,
       "leyes": 2,
       "co_patrocinios": 90,
@@ -2734,22 +2954,40 @@
         "Estado, gobierno y transparencia": 3,
         "Agro y pesca": 2
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/patsy-lee-renteria",
-      "planilla_texto": "B/. 15,600",
-      "planilla_valor": 15600.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Educación, Cultura y Deporte",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 76
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 70
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 66
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 64
+        },
+        {
+          "nombre": "Eduardo Gaitán",
+          "partido": "Coalición Vamos",
+          "proyectos": 62
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 62
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 99.7,
+      "transversalidad_esperada": 98.6
     },
     {
       "nombre": "Eduardo Gaitán",
@@ -2760,6 +2998,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/17WCuRHtbey41aSWf1GaRGCKKBFzQurwG",
       "perfil": "https://espaciocivico.org/diputados/eduardo-gaitan",
       "slug": "eduardo-gaitan",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-gaitan",
+      "planilla_texto": "B/. 6,800",
+      "planilla_valor": 6800.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.4,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 20,
       "leyes": 1,
       "co_patrocinios": 99,
@@ -3047,22 +3301,40 @@
         "Ambiente y energía": 2,
         "Infraestructura, transporte y vivienda": 2
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-gaitan",
-      "planilla_texto": "B/. 6,800",
-      "planilla_valor": 6800.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.4,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Economía y Finanzas"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 86
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 84
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 74
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 72
+        },
+        {
+          "nombre": "Alexandra Brenes",
+          "partido": "Coalición Vamos",
+          "proyectos": 68
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 68
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 45.2,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "José Pérez Barboni",
@@ -3073,6 +3345,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1jdQaEAFfkqKtIVahwrTSz0AuFmYjhrde",
       "perfil": "https://espaciocivico.org/diputados/jose-perez-barboni",
       "slug": "jose-perez-barboni",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-perez-barboni",
+      "planilla_texto": "B/. 14,500",
+      "planilla_valor": 14500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 20,
       "leyes": 4,
       "co_patrocinios": 105,
@@ -3385,22 +3673,40 @@
         "Cultura, deporte y turismo": 2,
         "Ambiente y energía": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-perez-barboni",
-      "planilla_texto": "B/. 14,500",
-      "planilla_valor": 14500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 86
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 80
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 69
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 68
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 66
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 65
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 94.3,
+      "transversalidad_esperada": 97.1
     },
     {
       "nombre": "Manuel Cheng",
@@ -3411,6 +3717,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1AstNu8E1UOdc0gfC5_BdULrlKMnzOEJP",
       "perfil": "https://espaciocivico.org/diputados/manuel-cheng",
       "slug": "manuel-cheng",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cheng",
+      "planilla_texto": "B/. 25,750",
+      "planilla_valor": 25750.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.4,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 20,
       "leyes": 4,
       "co_patrocinios": 82,
@@ -3699,22 +4021,40 @@
         "Justicia y seguridad": 3,
         "Niñez, familia e inclusión": 2
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cheng",
-      "planilla_texto": "B/. 25,750",
-      "planilla_valor": 25750.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.4,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Economía y Finanzas"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 62
+        },
+        {
+          "nombre": "Yarelis Rodríguez",
+          "partido": "Coalición Vamos",
+          "proyectos": 59
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 58
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 52
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 50
+        },
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 49
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 91.7,
+      "transversalidad_esperada": 95.7
     },
     {
       "nombre": "Janine Prado",
@@ -3725,6 +4065,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1M6i3K-1YCPExJixXNfk58EXAPV9nTCwP",
       "perfil": "https://espaciocivico.org/diputados/janine-prado",
       "slug": "janine-prado",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/janine-prado",
+      "planilla_texto": "B/. 6,750",
+      "planilla_valor": 6750.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 19,
       "leyes": 1,
       "co_patrocinios": 148,
@@ -4057,22 +4413,40 @@
         "Economía, finanzas e impuestos": 2,
         "Estado, gobierno y transparencia": 2
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/janine-prado",
-      "planilla_texto": "B/. 6,750",
-      "planilla_valor": 6750.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Trabajo, Salud y Desarrollo Social"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 143
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 103
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 101
+        },
+        {
+          "nombre": "Yamireliz Chong",
+          "partido": "Coalición Vamos",
+          "proyectos": 98
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 96
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 94
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 45.8,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Marcos Castillero",
@@ -4083,6 +4457,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1dJMS71bHvC3LW-KcddiP3oQ888jxlEXY",
       "perfil": "https://espaciocivico.org/diputados/marcos-castillero",
       "slug": "marcos-castillero",
+      "provincia_monitoreo": "Herrera",
+      "circuito_monitoreo": "6-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/marcos-castillero",
+      "planilla_texto": "B/. 226,282",
+      "planilla_valor": 226282.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 19,
       "leyes": 2,
       "co_patrocinios": 31,
@@ -4303,22 +4693,40 @@
         "Economía, finanzas e impuestos": 2,
         "Salud": 2
       },
-      "provincia_monitoreo": "Herrera",
-      "circuito_monitoreo": "6-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/marcos-castillero",
-      "planilla_texto": "B/. 226,282",
-      "planilla_valor": 226282.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 17
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Patsy Lee Rentería",
+          "partido": "Partido Popular",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Walkiria Chandler",
+          "partido": "Coalición Vamos",
+          "proyectos": 15
+        },
+        {
+          "nombre": "Betserai Richards",
+          "partido": "Libre Postulación | Seguimos",
+          "proyectos": 14
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 87.6,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Jhonatan Vega",
@@ -4329,6 +4737,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1exdJAhIJALNkVQUztGavYDoydyiHAkEI",
       "perfil": "https://espaciocivico.org/diputados/jhonatan-vega",
       "slug": "jhonatan-vega",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jhonatan-vega",
+      "planilla_texto": "B/. 13,500",
+      "planilla_valor": 13500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 18,
       "leyes": 0,
       "co_patrocinios": 86,
@@ -4586,22 +5010,40 @@
         "Justicia y seguridad": 2,
         "Ambiente y energía": 1
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jhonatan-vega",
-      "planilla_texto": "B/. 13,500",
-      "planilla_valor": 13500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 76
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 70
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 63
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 62
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 56
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 55
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 49.7,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Javier Sucre",
@@ -4612,6 +5054,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1LB7AtgJouF02ReNKM7673o67C4mlFsbU",
       "perfil": "https://espaciocivico.org/diputados/javier-sucre",
       "slug": "javier-sucre",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/javier-sucre",
+      "planilla_texto": "B/. 65,045",
+      "planilla_valor": 65045.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 0,
       "co_patrocinios": 12,
@@ -4788,22 +5246,40 @@
         "Seguridad social y pensiones": 2,
         "Infraestructura, transporte y vivienda": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/javier-sucre",
-      "planilla_texto": "B/. 65,045",
-      "planilla_valor": 65045.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Flor Brenes",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Raphael Buchanan",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Jaime Vargas",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 6
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 74.3,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Luis Duke",
@@ -4814,6 +5290,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1qu3Y5QOuHgVHbvCgM4IVvPcL7pj-as8G",
       "perfil": "https://espaciocivico.org/diputados/luis-duke",
       "slug": "luis-duke",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-duke",
+      "planilla_texto": "B/. 35,600",
+      "planilla_valor": 35600.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 1,
       "co_patrocinios": 120,
@@ -5105,22 +5597,40 @@
         "Economía, finanzas e impuestos": 3,
         "Tecnología y datos": 3
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-duke",
-      "planilla_texto": "B/. 35,600",
-      "planilla_valor": 35600.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Gobierno, Justicia y Asuntos Constitucionales"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 115
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 97
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 96
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 86
+        },
+        {
+          "nombre": "Alexandra Brenes",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 81
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 47.1,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Roberto Zuñiga",
@@ -5131,6 +5641,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1ikvRFnKl6U2bMNySKm5amHNDKYppcskS",
       "perfil": "https://espaciocivico.org/diputados/roberto-zuniga",
       "slug": "roberto-zuniga",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-zuniga",
+      "planilla_texto": "B/. 13,700",
+      "planilla_valor": 13700.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 3,
       "co_patrocinios": 124,
@@ -5435,22 +5961,40 @@
         "Salud": 2,
         "Ambiente y energía": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-zuniga",
-      "planilla_texto": "B/. 13,700",
-      "planilla_valor": 13700.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Trabajo, Salud y Desarrollo Social"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 116
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 105
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 94
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 86
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 48.8,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Walkiria Chandler",
@@ -5461,6 +6005,22 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/walkiria-chandler",
+      "planilla_texto": "B/. 12,500",
+      "planilla_valor": 12500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 0,
       "co_patrocinios": 85,
@@ -5707,22 +6267,40 @@
         "Estado, gobierno y transparencia": 2,
         "Ambiente y energía": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/walkiria-chandler",
-      "planilla_texto": "B/. 12,500",
-      "planilla_valor": 12500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Gobierno, Justicia y Asuntos Constitucionales"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 81
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 71
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 69
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 68
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 65
+        },
+        {
+          "nombre": "Alexandra Brenes",
+          "partido": "Coalición Vamos",
+          "proyectos": 64
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 47.8,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Yarelis Rodríguez",
@@ -5733,6 +6311,22 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yarelis-rodriguez",
+      "planilla_texto": "B/. 17,000",
+      "planilla_valor": 17000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Población, Ambiente y Desarrollo"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 17,
       "leyes": 1,
       "co_patrocinios": 110,
@@ -6013,22 +6607,40 @@
         "Salud": 2,
         "Tecnología y datos": 2
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yarelis-rodriguez",
-      "planilla_texto": "B/. 17,000",
-      "planilla_valor": 17000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Población, Ambiente y Desarrollo"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 98
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 84
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 82
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 74
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 74
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 73
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 48.6,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Crispiano Adames",
@@ -6039,6 +6651,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1kagY9g5K04dcwJrwgKS5PZ800xi-Exkw",
       "perfil": "https://espaciocivico.org/diputados/crispiano-adames",
       "slug": "crispiano-adames",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/crispiano-adames",
+      "planilla_texto": "B/. 122,850",
+      "planilla_valor": 122850.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 16,
       "leyes": 1,
       "co_patrocinios": 12,
@@ -6213,22 +6841,40 @@
         "Estado, gobierno y transparencia": 2,
         "Ambiente y energía": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/crispiano-adames",
-      "planilla_texto": "B/. 122,850",
-      "planilla_valor": 122850.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Comercio y Asuntos Económicos"
+      "aliados": [
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Walkiria Chandler",
+          "partido": "Coalición Vamos",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 87.5,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Dana Castañeda",
@@ -6239,6 +6885,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/1YUtF-yJooFQNig4wD88dwxjilYEDA5__",
       "perfil": "https://espaciocivico.org/diputados/dana-castaneda",
       "slug": "dana-castaneda",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/dana-castaneda",
+      "planilla_texto": "B/. 120,675",
+      "planilla_valor": 120675.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Educación, Cultura y Deporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 16,
       "leyes": 1,
       "co_patrocinios": 22,
@@ -6424,23 +7087,40 @@
         "Cultura, deporte y turismo": 2,
         "Niñez, familia e inclusión": 2
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/dana-castaneda",
-      "planilla_texto": "B/. 120,675",
-      "planilla_valor": 120675.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Educación, Cultura y Deporte",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Lilia Batista",
+          "partido": "Realizando Metas",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Didiano Pinilla",
+          "partido": "Cambio Democrático",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Eduardo Vásquez",
+          "partido": "Cambio Democrático",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 10
+        }
       ],
-      "comisiones_cantidad": 3
+      "transversalidad": 80.7,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Carlos Saldaña",
@@ -6451,6 +7131,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/18m7F6P_TB9lBbgQDViHVpfOz7elwLnDK",
       "perfil": "https://espaciocivico.org/diputados/carlos-saldana",
       "slug": "carlos-saldana",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-saldana",
+      "planilla_texto": "B/. 16,750",
+      "planilla_valor": 16750.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.8,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 15,
       "leyes": 1,
       "co_patrocinios": 77,
@@ -6684,22 +7380,40 @@
         "Ambiente y energía": 2,
         "Conmemoraciones y festivales": 2
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-saldana",
-      "planilla_texto": "B/. 16,750",
-      "planilla_valor": 16750.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.8,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Economía y Finanzas"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 64
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 59
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 56
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 56
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 56
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 55
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 91.0,
+      "transversalidad_esperada": 95.7
     },
     {
       "nombre": "Jairo Salazar",
@@ -6710,6 +7424,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1urCE70K7_QPFh6hzfx8trAmUBVeHZxRj",
       "perfil": "https://espaciocivico.org/diputados/jairo-salazar",
       "slug": "jairo-salazar",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jairo-salazar",
+      "planilla_texto": "B/. 75,375",
+      "planilla_valor": 75375.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 15,
       "leyes": 1,
       "co_patrocinios": 14,
@@ -6878,22 +7608,40 @@
         "Infraestructura, transporte y vivienda": 2,
         "Seguridad social y pensiones": 2
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jairo-salazar",
-      "planilla_texto": "B/. 75,375",
-      "planilla_valor": 75375.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Educación, Cultura y Deporte"
+      "aliados": [
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Rogelio Revello",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Shirley Castañedas",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Lilia Batista",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Nelson Jackson",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 79.6,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Jorge González",
@@ -6904,6 +7652,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1M5jz4Dz0AgT_nZJg5qoqI4-O3zY0podR",
       "perfil": "https://espaciocivico.org/diputados/jorge-gonzalez",
       "slug": "jorge-gonzalez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-gonzalez",
+      "planilla_texto": "B/. 13,400",
+      "planilla_valor": 13400.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 15,
       "leyes": 0,
       "co_patrocinios": 123,
@@ -7174,21 +7937,40 @@
         "Estado, gobierno y transparencia": 2,
         "Educación": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-gonzalez",
-      "planilla_texto": "B/. 13,400",
-      "planilla_valor": 13400.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comercio y Asuntos Económicos"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 108
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 102
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 81
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 80
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 78
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 47.1,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Luis Camacho Castro",
@@ -7199,6 +7981,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1IepU3c-QMYJreqNIGzZ0EhWT0ZAYi_Kh",
       "perfil": "https://espaciocivico.org/diputados/luis-camacho-castro",
       "slug": "luis-camacho-castro",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-camacho-castro",
+      "planilla_texto": "B/. 24,450",
+      "planilla_valor": 24450.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 15,
       "leyes": 2,
       "co_patrocinios": 32,
@@ -7392,22 +8190,40 @@
         "Salud": 2,
         "Trabajo y empleo": 2
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/luis-camacho-castro",
-      "planilla_texto": "B/. 24,450",
-      "planilla_valor": 24450.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Betserai Richards",
+          "partido": "Libre Postulación | Seguimos",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 12
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 80.0,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Jamis Acosta",
@@ -7418,6 +8234,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/1AJ3xto-Z0RPTQfL6y_E7R2gc5DDTu5OE",
       "perfil": "https://espaciocivico.org/diputados/jamis-acosta",
       "slug": "jamis-acosta",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jamis-acosta",
+      "planilla_texto": "B/. 17,550",
+      "planilla_valor": 17550.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Comercio y Asuntos Económicos",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 14,
       "leyes": 2,
       "co_patrocinios": 12,
@@ -7582,23 +8415,40 @@
         "Ambiente y energía": 2,
         "Infraestructura, transporte y vivienda": 1
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jamis-acosta",
-      "planilla_texto": "B/. 17,550",
-      "planilla_valor": 17550.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Comercio y Asuntos Económicos",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Manuel Cheng",
+          "partido": "Libre Postulación",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Dana Castañeda",
+          "partido": "Realizando Metas",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Graciela Hernández",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 6
+        }
       ],
-      "comisiones_cantidad": 3
+      "transversalidad": 79.9,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Medin Jiménez Pitti",
@@ -7609,6 +8459,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1bzczX1uQsA7ZObR9g3aMyrVZqhphKSfd",
       "perfil": "https://espaciocivico.org/diputados/medin-jimenez-pitti",
       "slug": "medin-jimenez-pitti",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/medin-jimenez-pitti",
+      "planilla_texto": "B/. 23,200",
+      "planilla_valor": 23200.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 14,
       "leyes": 1,
       "co_patrocinios": 50,
@@ -7809,22 +8675,40 @@
         "Justicia y seguridad": 2,
         "Tecnología y datos": 2
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/medin-jimenez-pitti",
-      "planilla_texto": "B/. 23,200",
-      "planilla_valor": 23200.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 32
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 30
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 29
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 28
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 28
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 28
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 84.3,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Yuzaida Marín",
@@ -7835,6 +8719,22 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yuzaida-marin",
+      "planilla_texto": "B/. 38,100",
+      "planilla_valor": 38100.0,
+      "asistencia_pleno": null,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 14,
       "leyes": 1,
       "co_patrocinios": 32,
@@ -8014,22 +8914,40 @@
         "Justicia y seguridad": 3,
         "Salud": 3
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yuzaida-marin",
-      "planilla_texto": "B/. 38,100",
-      "planilla_valor": 38100.0,
-      "asistencia_pleno": null,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Educación, Cultura y Deporte"
+      "aliados": [
+        {
+          "nombre": "Patsy Lee Rentería",
+          "partido": "Partido Popular",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Ronald de Gracia",
+          "partido": "Realizando Metas",
+          "proyectos": 15
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Yamireliz Chong",
+          "partido": "Coalición Vamos",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 13
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 79.2,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Francisco Brea",
@@ -8040,6 +8958,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1Y3Ain4tNLQHmbw3eqealTt79AESfx0Fc",
       "perfil": "https://espaciocivico.org/diputados/francisco-brea",
       "slug": "francisco-brea",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/francisco-brea",
+      "planilla_texto": "B/. 28,050",
+      "planilla_valor": 28050.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.6,
+      "comisiones": [
+        "Economía y Finanzas",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 13,
       "leyes": 3,
       "co_patrocinios": 65,
@@ -8255,22 +9189,40 @@
         "Justicia y seguridad": 2,
         "Niñez, familia e inclusión": 2
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/francisco-brea",
-      "planilla_texto": "B/. 28,050",
-      "planilla_valor": 28050.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.6,
-      "comisiones": [
-        "Economía y Finanzas",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 54
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 52
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 42
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 41
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 40
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 40
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 85.5,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Raúl Pineda",
@@ -8281,6 +9233,24 @@
       "foto": "https://espaciocivico.org/api/drive-image/1NUJpKCIyY7uNj23WAfPSnnuvcuYySFVY",
       "perfil": "https://espaciocivico.org/diputados/raul-pineda",
       "slug": "raul-pineda",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/raul-pineda",
+      "planilla_texto": "B/. 81,600",
+      "planilla_valor": 81600.0,
+      "asistencia_pleno": 3.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Economía y Finanzas",
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 4,
       "proyectos": 12,
       "leyes": 2,
       "co_patrocinios": 10,
@@ -8429,24 +9399,40 @@
         "Educación": 1,
         "Estado, gobierno y transparencia": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/raul-pineda",
-      "planilla_texto": "B/. 81,600",
-      "planilla_valor": 81600.0,
-      "asistencia_pleno": 3.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Economía y Finanzas",
-        "Gobierno, Justicia y Asuntos Constitucionales",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 6
+        }
       ],
-      "comisiones_cantidad": 4
+      "transversalidad": 78.2,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Ricardo Vigil López",
@@ -8457,6 +9443,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1z8CwEOPCxvjQ9llva6ePMFkIzc55aPDp",
       "perfil": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
       "slug": "ricardo-vigil-lopez",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
+      "planilla_texto": "B/. 27,025",
+      "planilla_valor": 27025.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 2.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 12,
       "leyes": 1,
       "co_patrocinios": 54,
@@ -8645,22 +9647,40 @@
         "Economía, finanzas e impuestos": 2,
         "Trabajo y empleo": 2
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ricardo-vigil-lopez",
-      "planilla_texto": "B/. 27,025",
-      "planilla_valor": 27025.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 2.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 37
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 37
+        },
+        {
+          "nombre": "Carlos Saldaña",
+          "partido": "Libre Postulación",
+          "proyectos": 36
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 36
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 34
+        },
+        {
+          "nombre": "Augusto Palacios",
+          "partido": "Coalición Vamos",
+          "proyectos": 31
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 84.6,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Yamireliz Chong",
@@ -8671,6 +9691,22 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yamireliz-chong",
+      "planilla_texto": "B/. 9,100",
+      "planilla_valor": 9100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.8,
+      "comisiones": [
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 12,
       "leyes": 0,
       "co_patrocinios": 115,
@@ -8912,22 +9948,40 @@
         "Ambiente y energía": 1,
         "Estado, gobierno y transparencia": 1
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yamireliz-chong",
-      "planilla_texto": "B/. 9,100",
-      "planilla_valor": 9100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.8,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 107
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 98
+        },
+        {
+          "nombre": "Alexandra Brenes",
+          "partido": "Coalición Vamos",
+          "proyectos": 87
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 87
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 84
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 81
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 45.0,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Augusto Palacios",
@@ -8938,6 +9992,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1OJ0lDLxr_BjudXegLPngp0DdVsaL9RlX",
       "perfil": "https://espaciocivico.org/diputados/augusto-palacios",
       "slug": "augusto-palacios",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/augusto-palacios",
+      "planilla_texto": "B/. 20,500",
+      "planilla_valor": 20500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 4.6,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 10,
       "leyes": 2,
       "co_patrocinios": 85,
@@ -9147,22 +10217,40 @@
         "Agro y pesca": 1,
         "Cultura, deporte y turismo": 1
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/augusto-palacios",
-      "planilla_texto": "B/. 20,500",
-      "planilla_valor": 20500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.6,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 76
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 71
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 70
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 61
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 60
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 59
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 49.0,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Miguel Ángel Campos",
@@ -9173,6 +10261,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1hcMWMaf8IEKqoOgsfK81PBJDFKmT3BZl",
       "perfil": "https://espaciocivico.org/diputados/miguel-angel-campos",
       "slug": "miguel-angel-campos",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/miguel-angel-campos",
+      "planilla_texto": "B/. 11,300",
+      "planilla_valor": 11300.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Relaciones Exteriores"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 10,
       "leyes": 2,
       "co_patrocinios": 205,
@@ -9501,22 +10605,40 @@
         "Ambiente y energía": 1,
         "Justicia y seguridad": 1
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/miguel-angel-campos",
-      "planilla_texto": "B/. 11,300",
-      "planilla_valor": 11300.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Relaciones Exteriores"
+      "aliados": [
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 143
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 130
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 121
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 116
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 115
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 108
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 46.1,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Paulette Thomas",
@@ -9527,6 +10649,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1srtYX5JwXU2jT8wpfL8pJo8V0ChK0JIT",
       "perfil": "https://espaciocivico.org/diputados/paulette-thomas",
       "slug": "paulette-thomas",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/paulette-thomas",
+      "planilla_texto": "B/. 16,500",
+      "planilla_valor": 16500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 10,
       "leyes": 3,
       "co_patrocinios": 88,
@@ -9743,22 +10881,40 @@
         "Ambiente y energía": 1,
         "Conmemoraciones y festivales": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/paulette-thomas",
-      "planilla_texto": "B/. 16,500",
-      "planilla_valor": 16500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Educación, Cultura y Deporte"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 80
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 72
+        },
+        {
+          "nombre": "Yarelis Rodríguez",
+          "partido": "Coalición Vamos",
+          "proyectos": 67
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 66
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 62
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 58
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 48.9,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Isaac Mosquera",
@@ -9769,6 +10925,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1sHTH7XpmzCdJcpXpGG5SMD09l4_NpL3x",
       "perfil": "https://espaciocivico.org/diputados/isaac-mosquera",
       "slug": "isaac-mosquera",
+      "provincia_monitoreo": "Emberá-Wounaan",
+      "circuito_monitoreo": "5-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/isaac-mosquera",
+      "planilla_texto": "B/. 33,550",
+      "planilla_valor": 33550.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Economía y Finanzas",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 9,
       "leyes": 0,
       "co_patrocinios": 18,
@@ -9891,22 +11063,40 @@
         "Ambiente y energía": 1,
         "Estado, gobierno y transparencia": 1
       },
-      "provincia_monitoreo": "Emberá-Wounaan",
-      "circuito_monitoreo": "5-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/isaac-mosquera",
-      "planilla_texto": "B/. 33,550",
-      "planilla_valor": 33550.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Economía y Finanzas",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Shirley Castañedas",
+          "partido": "Realizando Metas",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Flor Brenes",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Gertrudis Rodríguez",
+          "partido": "Cambio Democrático",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 10
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 100.0,
+      "transversalidad_esperada": 100.0
     },
     {
       "nombre": "Ariana Coba",
@@ -9917,6 +11107,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1N1vttXu2eUdjezNaCqfFi15VqOghcB1Y",
       "perfil": "https://espaciocivico.org/diputados/ariana-coba",
       "slug": "ariana-coba",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariana-coba",
+      "planilla_texto": "B/. 35,263",
+      "planilla_valor": 35263.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 1.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.2,
+      "comisiones": [
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 8,
       "leyes": 2,
       "co_patrocinios": 64,
@@ -10089,22 +11295,40 @@
         "Tecnología y datos": 1,
         "Trabajo y empleo": 1
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariana-coba",
-      "planilla_texto": "B/. 35,263",
-      "planilla_valor": 35263.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 1.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.2,
-      "comisiones": [
-        "Gobierno, Justicia y Asuntos Constitucionales",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 50
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 45
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 45
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 42
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 42
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 40
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 84.5,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Lilia Batista",
@@ -10115,6 +11339,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1qbJMf2FNxBUDSKzOE1zQOy3imsGfHBC2",
       "perfil": "https://espaciocivico.org/diputados/lilia-batista",
       "slug": "lilia-batista",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/lilia-batista",
+      "planilla_texto": "B/. 39,050",
+      "planilla_valor": 39050.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 8,
       "leyes": 0,
       "co_patrocinios": 26,
@@ -10240,21 +11479,40 @@
         "Conmemoraciones y festivales": 1,
         "Cultura, deporte y turismo": 1
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/lilia-batista",
-      "planilla_texto": "B/. 39,050",
-      "planilla_valor": 39050.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Educación, Cultura y Deporte"
+      "aliados": [
+        {
+          "nombre": "Dana Castañeda",
+          "partido": "Realizando Metas",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Yuzaida Marín",
+          "partido": "Realizando Metas",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Graciela Hernández",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 10
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 75.9,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Ariel Vallarino",
@@ -10265,6 +11523,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/16MpaO-gztotezPMdr19ma3iaoLb3_7pN",
       "perfil": "https://espaciocivico.org/diputados/ariel-vallarino",
       "slug": "ariel-vallarino",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariel-vallarino",
+      "planilla_texto": "B/. 36,625",
+      "planilla_valor": 36625.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Infraestructura Pública y Asuntos del Canal",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 7,
       "leyes": 1,
       "co_patrocinios": 24,
@@ -10386,23 +11661,40 @@
         "Niñez, familia e inclusión": 1,
         "Salud": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ariel-vallarino",
-      "planilla_texto": "B/. 36,625",
-      "planilla_valor": 36625.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Infraestructura Pública y Asuntos del Canal",
-        "Comercio y Asuntos Económicos"
+      "aliados": [
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Ronald de Gracia",
+          "partido": "Realizando Metas",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Jorge Herrera",
+          "partido": "Partido Panameñista",
+          "proyectos": 11
+        }
       ],
-      "comisiones_cantidad": 3
+      "transversalidad": 78.2,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Betserai Richards",
@@ -10413,6 +11705,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1_NgnTX1kUZG382WzQ9bnG1DT2HCFzoaQ",
       "perfil": "https://espaciocivico.org/diputados/betserai-richards",
       "slug": "betserai-richards",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/betserai-richards",
+      "planilla_texto": "B/. 23,100",
+      "planilla_valor": 23100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 7,
       "leyes": 1,
       "co_patrocinios": 93,
@@ -10602,22 +11910,40 @@
         "Economía, finanzas e impuestos": 1,
         "Salud": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/betserai-richards",
-      "planilla_texto": "B/. 23,100",
-      "planilla_valor": 23100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Educación, Cultura y Deporte"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 76
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 68
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 64
+        },
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 59
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 57
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 56
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 100.0,
+      "transversalidad_esperada": 100.0
     },
     {
       "nombre": "Manuel Samaniego",
@@ -10628,6 +11954,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1byzCstXS-vDLyOOH7mopVd8hq2HCT2NI",
       "perfil": "https://espaciocivico.org/diputados/manuel-samaniego",
       "slug": "manuel-samaniego",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-samaniego",
+      "planilla_texto": "B/. 15,750",
+      "planilla_valor": 15750.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 3.4,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 7,
       "leyes": 1,
       "co_patrocinios": 101,
@@ -10825,22 +12167,40 @@
         "Economía, finanzas e impuestos": 1,
         "Estado, gobierno y transparencia": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-samaniego",
-      "planilla_texto": "B/. 15,750",
-      "planilla_valor": 15750.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 3.4,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Economía y Finanzas"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 90
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 78
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 78
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 76
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 72
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 70
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 91.6,
+      "transversalidad_esperada": 95.7
     },
     {
       "nombre": "Alaín Cedeño",
@@ -10851,6 +12211,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/1ejkmXtc_y8DF9zRay0yZso7zN9fj72w_",
       "perfil": "https://espaciocivico.org/diputados/alain-cedeno",
       "slug": "alain-cedeno",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/alain-cedeno",
+      "planilla_texto": "B/. 28,500",
+      "planilla_valor": 28500.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.2,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Asuntos Indígenas",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 6,
       "leyes": 0,
       "co_patrocinios": 20,
@@ -10953,23 +12330,40 @@
         "Salud": 1,
         "Tecnología y datos": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/alain-cedeno",
-      "planilla_texto": "B/. 28,500",
-      "planilla_valor": 28500.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.2,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Asuntos Indígenas",
-        "Gobierno, Justicia y Asuntos Constitucionales"
+      "aliados": [
+        {
+          "nombre": "Manuel Cheng",
+          "partido": "Libre Postulación",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Jorge Herrera",
+          "partido": "Partido Panameñista",
+          "proyectos": 8
+        }
       ],
-      "comisiones_cantidad": 3
+      "transversalidad": 83.5,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Jorge Herrera",
@@ -10980,6 +12374,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1fXApB5ybl0wk1oGyJBrEojNOvmqiSJv8",
       "perfil": "https://espaciocivico.org/diputados/jorge-herrera",
       "slug": "jorge-herrera",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-herrera",
+      "planilla_texto": "B/. 35,100",
+      "planilla_valor": 35100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 4.0,
+      "comisiones": [
+        "Asuntos Municipales"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 6,
       "leyes": 2,
       "co_patrocinios": 46,
@@ -11120,21 +12529,40 @@
         "Educación": 1,
         "Estado, gobierno y transparencia": 1
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-herrera",
-      "planilla_texto": "B/. 35,100",
-      "planilla_valor": 35100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 4.0,
-      "comisiones": [
-        "Asuntos Municipales"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 33
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 31
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 30
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 28
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 28
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 27
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 82.5,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Julio de la Guardia",
@@ -11145,6 +12573,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1yMOQxvs9m2DgBGTJoJBImggEYxIPh1ZY",
       "perfil": "https://espaciocivico.org/diputados/julio-de-la-guardia",
       "slug": "julio-de-la-guardia",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/julio-de-la-guardia",
+      "planilla_texto": "B/. 34,420",
+      "planilla_valor": 34420.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Comercio y Asuntos Económicos",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 29,
@@ -11264,22 +12708,40 @@
         "Cultura, deporte y turismo": 1,
         "Niñez, familia e inclusión": 1
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/julio-de-la-guardia",
-      "planilla_texto": "B/. 34,420",
-      "planilla_valor": 34420.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Gobierno, Justicia y Asuntos Constitucionales"
+      "aliados": [
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 17
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Medin Jiménez Pitti",
+          "partido": "Partido Panameñista",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 15
+        },
+        {
+          "nombre": "Ricardo Vigil López",
+          "partido": "Partido Panameñista",
+          "proyectos": 15
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 14
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 87.7,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Néstor Guardia",
@@ -11290,6 +12752,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1mEYs5Tn6v2av2cU3GVmyIbt3Y37c78ak",
       "perfil": "https://espaciocivico.org/diputados/nestor-guardia",
       "slug": "nestor-guardia",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/nestor-guardia",
+      "planilla_texto": "B/. 73,800",
+      "planilla_valor": 73800.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 11,
@@ -11388,22 +12866,40 @@
         "Niñez, familia e inclusión": 1,
         "Salud": 1
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/nestor-guardia",
-      "planilla_texto": "B/. 73,800",
-      "planilla_valor": 73800.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Comercio y Asuntos Económicos"
+      "aliados": [
+        {
+          "nombre": "Flor Brenes",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 5
+        },
+        {
+          "nombre": "Didiano Pinilla",
+          "partido": "Cambio Democrático",
+          "proyectos": 5
+        },
+        {
+          "nombre": "Gertrudis Rodríguez",
+          "partido": "Cambio Democrático",
+          "proyectos": 5
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 5
+        },
+        {
+          "nombre": "Nixon Andrade",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 5
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 75.3,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Orlando Carrasquilla",
@@ -11414,6 +12910,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1itKncJ8nnZcyx2Cd4svAOKrmnpsCuR5p",
       "perfil": "https://espaciocivico.org/diputados/orlando-carrasquilla",
       "slug": "orlando-carrasquilla",
+      "provincia_monitoreo": "Coclé",
+      "circuito_monitoreo": "2-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/orlando-carrasquilla",
+      "planilla_texto": "B/. 15,150",
+      "planilla_valor": 15150.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Asuntos Agropecuarios"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 33,
@@ -11538,22 +13050,40 @@
         "Ambiente y energía": 1,
         "Educación": 1
       },
-      "provincia_monitoreo": "Coclé",
-      "circuito_monitoreo": "2-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/orlando-carrasquilla",
-      "planilla_texto": "B/. 15,150",
-      "planilla_valor": 15150.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Asuntos Agropecuarios"
+      "aliados": [
+        {
+          "nombre": "Didiano Pinilla",
+          "partido": "Cambio Democrático",
+          "proyectos": 19
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 19
+        },
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 19
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 18
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 18
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 18
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 88.0,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Rogelio Revello",
@@ -11564,6 +13094,22 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/rogelio-revello",
+      "planilla_texto": "B/. 31,700",
+      "planilla_valor": 31700.0,
+      "asistencia_pleno": 3.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 2.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.0,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 19,
@@ -11671,22 +13217,40 @@
         "Salud": 1,
         "Trabajo y empleo": 1
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/rogelio-revello",
-      "planilla_texto": "B/. 31,700",
-      "planilla_valor": 31700.0,
-      "asistencia_pleno": 3.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 2.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.0,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Shirley Castañedas",
+          "partido": "Realizando Metas",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Victor Castillo",
+          "partido": "Realizando Metas",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Yuzaida Marín",
+          "partido": "Realizando Metas",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Jairo Salazar",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Lilia Batista",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 68.3,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Shirley Castañedas",
@@ -11697,6 +13261,21 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/shirley-castanedas",
+      "planilla_texto": "B/. 36,900",
+      "planilla_valor": 36900.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 6,
       "leyes": 1,
       "co_patrocinios": 19,
@@ -11804,21 +13383,40 @@
         "Justicia y seguridad": 1,
         "Trabajo y empleo": 1
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/shirley-castanedas",
-      "planilla_texto": "B/. 36,900",
-      "planilla_valor": 36900.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo"
+      "aliados": [
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Yuzaida Marín",
+          "partido": "Realizando Metas",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Lilia Batista",
+          "partido": "Realizando Metas",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Rogelio Revello",
+          "partido": "Realizando Metas",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Jairo Salazar",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 69.7,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Arquesio Arias",
@@ -11829,6 +13427,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1-10fdUoO7YYJH1hu8gfWXGXeZS1oh3Z5",
       "perfil": "https://espaciocivico.org/diputados/arquesio-arias",
       "slug": "arquesio-arias",
+      "provincia_monitoreo": "Guna Yala",
+      "circuito_monitoreo": "10-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/arquesio-arias",
+      "planilla_texto": "B/. 30,800",
+      "planilla_valor": 30800.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 0,
       "co_patrocinios": 24,
@@ -11929,22 +13543,40 @@
         "Estado, gobierno y transparencia": 1,
         "Justicia y seguridad": 1
       },
-      "provincia_monitoreo": "Guna Yala",
-      "circuito_monitoreo": "10-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/arquesio-arias",
-      "planilla_texto": "B/. 30,800",
-      "planilla_valor": 30800.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Trabajo, Salud y Desarrollo Social"
+      "aliados": [
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Flor Brenes",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Raphael Buchanan",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 9
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 78.9,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Jose Luis Varela",
@@ -11955,6 +13587,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/18pzGwderXg6WRuXTtF_l87RIvgphHFKO",
       "perfil": "https://espaciocivico.org/diputados/jose-luis-varela",
       "slug": "jose-luis-varela",
+      "provincia_monitoreo": "Herrera",
+      "circuito_monitoreo": "6-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-luis-varela",
+      "planilla_texto": "B/. 41,725",
+      "planilla_valor": 41725.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 1,
       "co_patrocinios": 36,
@@ -12073,22 +13721,40 @@
         "Infraestructura, transporte y vivienda": 1,
         "Justicia y seguridad": 1
       },
-      "provincia_monitoreo": "Herrera",
-      "circuito_monitoreo": "6-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-luis-varela",
-      "planilla_texto": "B/. 41,725",
-      "planilla_valor": 41725.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Comercio y Asuntos Económicos"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 29
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 26
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 25
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 24
+        },
+        {
+          "nombre": "Jhonatan Vega",
+          "partido": "Coalición Vamos",
+          "proyectos": 24
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 24
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 85.3,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Nelson Jackson",
@@ -12099,6 +13765,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1-caeFl-l2dBL8JomvWN4eEXp24MsKp-M",
       "perfil": "https://espaciocivico.org/diputados/nelson-jackson",
       "slug": "nelson-jackson",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/nelson-jackson",
+      "planilla_texto": "B/. 90,575",
+      "planilla_valor": 90575.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 5,
       "leyes": 0,
       "co_patrocinios": 11,
@@ -12183,21 +13864,40 @@
         "Salud": 2,
         "Seguridad social y pensiones": 1
       },
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/nelson-jackson",
-      "planilla_texto": "B/. 90,575",
-      "planilla_valor": 90575.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Rogelio Revello",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Victor Castillo",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Jairo Salazar",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Ronald de Gracia",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Shirley Castañedas",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 88.4,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Omar Ortega",
@@ -12208,6 +13908,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1r48XhZKnIroDhPfkJ9szoDiRF6Eyunyo",
       "perfil": "https://espaciocivico.org/diputados/omar-ortega",
       "slug": "omar-ortega",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/omar-ortega",
+      "planilla_texto": "B/. 51,825",
+      "planilla_valor": 51825.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Asuntos Indígenas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 1,
       "co_patrocinios": 11,
@@ -12300,22 +14016,40 @@
         "Infraestructura, transporte y vivienda": 1,
         "Seguridad social y pensiones": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/omar-ortega",
-      "planilla_texto": "B/. 51,825",
-      "planilla_valor": 51825.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Asuntos Indígenas"
+      "aliados": [
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 73.0,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Roberto Archibold",
@@ -12326,6 +14060,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1vnUYdZM57guE55fT821CJpq0NZyXINko",
       "perfil": "https://espaciocivico.org/diputados/roberto-archibold",
       "slug": "roberto-archibold",
+      "provincia_monitoreo": "Ngöbe Buglé",
+      "circuito_monitoreo": "12-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-archibold",
+      "planilla_texto": "B/. 29,700",
+      "planilla_valor": 29700.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.2,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Asuntos Indígenas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 5,
       "leyes": 1,
       "co_patrocinios": 55,
@@ -12460,22 +14210,40 @@
         "Conmemoraciones y festivales": 2,
         "Ambiente y energía": 1
       },
-      "provincia_monitoreo": "Ngöbe Buglé",
-      "circuito_monitoreo": "12-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/roberto-archibold",
-      "planilla_texto": "B/. 29,700",
-      "planilla_valor": 29700.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.2,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Asuntos Indígenas"
+      "aliados": [
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 32
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 31
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 31
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 30
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 29
+        },
+        {
+          "nombre": "Ricardo Vigil López",
+          "partido": "Partido Panameñista",
+          "proyectos": 29
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 83.8,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Tomas Benavides",
@@ -12486,6 +14254,21 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/tomas-benavides",
+      "planilla_texto": "B/. 36,900",
+      "planilla_valor": 36900.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Asuntos Agropecuarios"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 5,
       "leyes": 0,
       "co_patrocinios": 17,
@@ -12577,21 +14360,40 @@
         "Cultura, deporte y turismo": 1,
         "Justicia y seguridad": 1
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/tomas-benavides",
-      "planilla_texto": "B/. 36,900",
-      "planilla_valor": 36900.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Asuntos Agropecuarios"
+      "aliados": [
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Jhonatan Vega",
+          "partido": "Coalición Vamos",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 84.6,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Carlos Afú",
@@ -12602,6 +14404,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1nFZ08mVklRAT7rAYk8Rfwd6xM4dyFm39",
       "perfil": "https://espaciocivico.org/diputados/carlos-afu",
       "slug": "carlos-afu",
+      "provincia_monitoreo": "Los Santos",
+      "circuito_monitoreo": "7-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-afu",
+      "planilla_texto": "B/. 28,900",
+      "planilla_valor": 28900.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Trabajo, Salud y Desarrollo Social",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 21,
@@ -12690,22 +14508,40 @@
         "Ambiente y energía": 1,
         "Cultura, deporte y turismo": 1
       },
-      "provincia_monitoreo": "Los Santos",
-      "circuito_monitoreo": "7-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/carlos-afu",
-      "planilla_texto": "B/. 28,900",
-      "planilla_valor": 28900.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Trabajo, Salud y Desarrollo Social",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Orlando Carrasquilla",
+          "partido": "Cambio Democrático",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Medin Jiménez Pitti",
+          "partido": "Partido Panameñista",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Ricardo Vigil López",
+          "partido": "Partido Panameñista",
+          "proyectos": 10
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 85.5,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Edwin Vergara",
@@ -12716,6 +14552,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1gvykBXFM35oqR6RvltPLAQuUB4LV08C9",
       "perfil": "https://espaciocivico.org/diputados/edwin-vergara",
       "slug": "edwin-vergara",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/edwin-vergara",
+      "planilla_texto": "B/. 26,650",
+      "planilla_valor": 26650.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 39,
@@ -12822,22 +14674,40 @@
         "Justicia y seguridad": 1,
         "Tratados y relaciones exteriores": 1
       },
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/edwin-vergara",
-      "planilla_texto": "B/. 26,650",
-      "planilla_valor": 26650.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Trabajo, Salud y Desarrollo Social"
+      "aliados": [
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 25
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 24
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 24
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 23
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 22
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 21
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 87.1,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Gertrudis Rodríguez",
@@ -12848,6 +14718,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1n3SFVXjEaAjceYAyFNWQpdHLngauAlGj",
       "perfil": "https://espaciocivico.org/diputados/gertrudis-rodriguez",
       "slug": "gertrudis-rodriguez",
+      "provincia_monitoreo": "Ngöbe Buglé",
+      "circuito_monitoreo": "12-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/gertrudis-rodriguez",
+      "planilla_texto": "B/. 30,350",
+      "planilla_valor": 30350.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Educación, Cultura y Deporte"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 31,
@@ -12945,22 +14831,40 @@
         "Estado, gobierno y transparencia": 1,
         "Niñez, familia e inclusión": 1
       },
-      "provincia_monitoreo": "Ngöbe Buglé",
-      "circuito_monitoreo": "12-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/gertrudis-rodriguez",
-      "planilla_texto": "B/. 30,350",
-      "planilla_valor": 30350.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Educación, Cultura y Deporte"
+      "aliados": [
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 19
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 17
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 17
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 16
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 88.6,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Manuel Cohen",
@@ -12971,6 +14875,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1JmvtLrYr4g1bf5A0PPI68FOuLwuvHq70",
       "perfil": "https://espaciocivico.org/diputados/manuel-cohen",
       "slug": "manuel-cohen",
+      "provincia_monitoreo": "Herrera",
+      "circuito_monitoreo": "6-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cohen",
+      "planilla_texto": "B/. 27,100",
+      "planilla_valor": 27100.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Asuntos Indígenas",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 15,
@@ -13053,22 +14973,40 @@
         "Cultura, deporte y turismo": 1,
         "Justicia y seguridad": 1
       },
-      "provincia_monitoreo": "Herrera",
-      "circuito_monitoreo": "6-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-cohen",
-      "planilla_texto": "B/. 27,100",
-      "planilla_valor": 27100.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Asuntos Indígenas",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Didiano Pinilla",
+          "partido": "Cambio Democrático",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Jhonatan Vega",
+          "partido": "Coalición Vamos",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Carlos Afú",
+          "partido": "Cambio Democrático",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 85.0,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Nixon Andrade",
@@ -13079,6 +15017,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1iQ6etwoF70tDfhYBkhDhcpoJdDm_H6og",
       "perfil": "https://espaciocivico.org/diputados/nixon-andrade",
       "slug": "nixon-andrade",
+      "provincia_monitoreo": "Ngöbe Buglé",
+      "circuito_monitoreo": "12-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/nixon-andrade",
+      "planilla_texto": "B/. 38,025",
+      "planilla_valor": 38025.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 2.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.2,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 0,
       "co_patrocinios": 13,
@@ -13160,22 +15114,40 @@
         "Estado, gobierno y transparencia": 1,
         "Justicia y seguridad": 1
       },
-      "provincia_monitoreo": "Ngöbe Buglé",
-      "circuito_monitoreo": "12-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/nixon-andrade",
-      "planilla_texto": "B/. 38,025",
-      "planilla_valor": 38025.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 2.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.2,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Flor Brenes",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Javier Sucre",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 5
+        },
+        {
+          "nombre": "Gertrudis Rodríguez",
+          "partido": "Cambio Democrático",
+          "proyectos": 5
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 71.1,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Ronald de Gracia",
@@ -13186,6 +15158,22 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
+      "provincia_monitoreo": "Los Santos",
+      "circuito_monitoreo": "7-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/ronald-de-gracia",
+      "planilla_texto": "B/. 39,725",
+      "planilla_valor": 39725.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Población, Ambiente y Desarrollo",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 1,
       "co_patrocinios": 37,
@@ -13298,22 +15286,40 @@
         "Justicia y seguridad": 1,
         "Tecnología y datos": 1
       },
-      "provincia_monitoreo": "Los Santos",
-      "circuito_monitoreo": "7-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/ronald-de-gracia",
-      "planilla_texto": "B/. 39,725",
-      "planilla_valor": 39725.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Población, Ambiente y Desarrollo",
-        "Trabajo, Salud y Desarrollo Social"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 20
+        },
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 20
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 20
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 18
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 18
+        },
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 18
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 84.4,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Yesica Romero",
@@ -13324,6 +15330,22 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
+      "provincia_monitoreo": "Bocas del Toro",
+      "circuito_monitoreo": "1-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yesica-romero",
+      "planilla_texto": "B/. 61,000",
+      "planilla_valor": 61000.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 4.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 4,
       "leyes": 1,
       "co_patrocinios": 22,
@@ -13419,22 +15441,40 @@
         "Agro y pesca": 1,
         "Infraestructura, transporte y vivienda": 1
       },
-      "provincia_monitoreo": "Bocas del Toro",
-      "circuito_monitoreo": "1-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yesica-romero",
-      "planilla_texto": "B/. 61,000",
-      "planilla_valor": 61000.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 4.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Betserai Richards",
+          "partido": "Libre Postulación | Seguimos",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 13
+        },
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 13
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 90.3,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Benicio Robinson",
@@ -13445,6 +15485,24 @@
       "foto": "https://espaciocivico.org/api/drive-image/1YkmbwhY4rvz3SJkKGOT9JGYkBaIaEDKd",
       "perfil": "https://espaciocivico.org/diputados/benicio-robinson",
       "slug": "benicio-robinson",
+      "provincia_monitoreo": "Bocas del Toro",
+      "circuito_monitoreo": "1-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/benicio-robinson",
+      "planilla_texto": "B/. 261,225",
+      "planilla_valor": 261225.0,
+      "asistencia_pleno": 3.0,
+      "asistencia_comisiones": 2.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 1.9,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Gobierno, Justicia y Asuntos Constitucionales",
+        "Presupuesto",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 4,
       "proyectos": 3,
       "leyes": 0,
       "co_patrocinios": 9,
@@ -13513,24 +15571,40 @@
         "Cultura, deporte y turismo": 1,
         "Economía, finanzas e impuestos": 1
       },
-      "provincia_monitoreo": "Bocas del Toro",
-      "circuito_monitoreo": "1-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/benicio-robinson",
-      "planilla_texto": "B/. 261,225",
-      "planilla_valor": 261225.0,
-      "asistencia_pleno": 3.0,
-      "asistencia_comisiones": 2.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 1.9,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Gobierno, Justicia y Asuntos Constitucionales",
-        "Presupuesto",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 5
+        },
+        {
+          "nombre": "Flor Brenes",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 5
+        }
       ],
-      "comisiones_cantidad": 4
+      "transversalidad": 76.2,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Didiano Pinilla",
@@ -13541,6 +15615,23 @@
       "foto": "https://espaciocivico.org/api/drive-image/14wzAlv4EIuVds7NUTbD352PEIOGOrbuJ",
       "perfil": "https://espaciocivico.org/diputados/didiano-pinilla",
       "slug": "didiano-pinilla",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-4",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/didiano-pinilla",
+      "planilla_texto": "B/. 34,100",
+      "planilla_valor": 34100.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.4,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Infraestructura Pública y Asuntos del Canal"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 3,
       "leyes": 1,
       "co_patrocinios": 40,
@@ -13648,23 +15739,40 @@
         "Infraestructura, transporte y vivienda": 1,
         "Niñez, familia e inclusión": 1
       },
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-4",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/didiano-pinilla",
-      "planilla_texto": "B/. 34,100",
-      "planilla_valor": 34100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.4,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Infraestructura Pública y Asuntos del Canal"
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 25
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 24
+        },
+        {
+          "nombre": "Jhonatan Vega",
+          "partido": "Coalición Vamos",
+          "proyectos": 22
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 21
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 21
+        },
+        {
+          "nombre": "Yamireliz Chong",
+          "partido": "Coalición Vamos",
+          "proyectos": 21
+        }
       ],
-      "comisiones_cantidad": 3
+      "transversalidad": 89.8,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Flor Brenes",
@@ -13675,6 +15783,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1mbe0i9QpCMwmMUKZXge-donWz_O0_tiz",
       "perfil": "https://espaciocivico.org/diputados/flor-brenes",
       "slug": "flor-brenes",
+      "provincia_monitoreo": "Guna Yala",
+      "circuito_monitoreo": "10-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/flor-brenes",
+      "planilla_texto": "B/. 19,950",
+      "planilla_valor": 19950.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.8,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Asuntos Indígenas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 3,
       "leyes": 1,
       "co_patrocinios": 21,
@@ -13761,22 +15885,40 @@
         "Economía, finanzas e impuestos": 1,
         "Niñez, familia e inclusión": 1
       },
-      "provincia_monitoreo": "Guna Yala",
-      "circuito_monitoreo": "10-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/flor-brenes",
-      "planilla_texto": "B/. 19,950",
-      "planilla_valor": 19950.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.8,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Asuntos Indígenas"
+      "aliados": [
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 11
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Yuzaida Marín",
+          "partido": "Realizando Metas",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 79.2,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Osman Camilo Gómez",
@@ -13787,6 +15929,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1LAA0ShaiF-UX6WCoBEqYywiMeHZW3Ea5",
       "perfil": "https://espaciocivico.org/diputados/osman-camilo-gomez",
       "slug": "osman-camilo-gomez",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/osman-camilo-gomez",
+      "planilla_texto": "B/. 30,600",
+      "planilla_valor": 30600.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 3,
       "leyes": 0,
       "co_patrocinios": 13,
@@ -13859,22 +16017,40 @@
         "Educación": 1,
         "Estado, gobierno y transparencia": 1
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/osman-camilo-gomez",
-      "planilla_texto": "B/. 30,600",
-      "planilla_valor": 30600.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comunicación y Transporte",
-        "Gobierno, Justicia y Asuntos Constitucionales"
+      "aliados": [
+        {
+          "nombre": "Roberto Archibold",
+          "partido": "Partido Panameñista",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Didiano Pinilla",
+          "partido": "Cambio Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Medin Jiménez Pitti",
+          "partido": "Partido Panameñista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Ronald de Gracia",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Dana Castañeda",
+          "partido": "Realizando Metas",
+          "proyectos": 6
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 98.9,
+      "transversalidad_esperada": 98.6
     },
     {
       "nombre": "Raphael Buchanan",
@@ -13885,6 +16061,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1rO4y1MfZdU8mIGaHWRLWgTInVJm2YjFk",
       "perfil": "https://espaciocivico.org/diputados/raphael-buchanan",
       "slug": "raphael-buchanan",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/raphael-buchanan",
+      "planilla_texto": "B/. 8,749",
+      "planilla_valor": 8749.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 3,
       "leyes": 0,
       "co_patrocinios": 22,
@@ -13968,22 +16160,40 @@
         "Cultura, deporte y turismo": 1,
         "Niñez, familia e inclusión": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/raphael-buchanan",
-      "planilla_texto": "B/. 8,749",
-      "planilla_valor": 8749.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Economía y Finanzas"
+      "aliados": [
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Graciela Hernández",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 12
+        },
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Ricardo Vigil López",
+          "partido": "Partido Panameñista",
+          "proyectos": 12
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 11
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 86.2,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Eduardo Vásquez",
@@ -13994,6 +16204,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1fpZyjYKi18u5FC4zQcX5KU2FvXGl0vwj",
       "perfil": "https://espaciocivico.org/diputados/eduardo-vasquez",
       "slug": "eduardo-vasquez",
+      "provincia_monitoreo": "Panamá Oeste",
+      "circuito_monitoreo": "13-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-vasquez",
+      "planilla_texto": "B/. 39,625",
+      "planilla_valor": 39625.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.6,
+      "comisiones": [
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 25,
@@ -14058,21 +16283,40 @@
         }
       },
       "temas_autor": {},
-      "provincia_monitoreo": "Panamá Oeste",
-      "circuito_monitoreo": "13-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/eduardo-vasquez",
-      "planilla_texto": "B/. 39,625",
-      "planilla_valor": 39625.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.6,
-      "comisiones": [
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 16
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 15
+        },
+        {
+          "nombre": "Carlos Saldaña",
+          "partido": "Libre Postulación",
+          "proyectos": 14
+        },
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Manuel Samaniego",
+          "partido": "Libre Postulación",
+          "proyectos": 14
+        },
+        {
+          "nombre": "Ricardo Vigil López",
+          "partido": "Partido Panameñista",
+          "proyectos": 14
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 88.1,
+      "transversalidad_esperada": 90.0
     },
     {
       "nombre": "Eliécer Castrellón",
@@ -14083,6 +16327,22 @@
       "foto": "https://espaciocivico.org/api/drive-image/1I4jkM_zL4TaOzHnUr7BbqTWPwsA-BI8j",
       "perfil": "https://espaciocivico.org/diputados/eliecer-castrellon",
       "slug": "eliecer-castrellon",
+      "provincia_monitoreo": "Chiriquí",
+      "circuito_monitoreo": "4-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/eliecer-castrellon",
+      "planilla_texto": "B/. 19,400",
+      "planilla_valor": 19400.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 1.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      ],
+      "comisiones_cantidad": 2,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 12,
@@ -14136,22 +16396,40 @@
       "temas_autor": {
         "Agro y pesca": 1
       },
-      "provincia_monitoreo": "Chiriquí",
-      "circuito_monitoreo": "4-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/eliecer-castrellon",
-      "planilla_texto": "B/. 19,400",
-      "planilla_valor": 19400.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 1.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales"
+      "aliados": [
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Betserai Richards",
+          "partido": "Libre Postulación | Seguimos",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Graciela Hernández",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 7
+        },
+        {
+          "nombre": "José Pérez Barboni",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 2
+      "transversalidad": 98.1,
+      "transversalidad_esperada": 98.6
     },
     {
       "nombre": "Joan Guevara",
@@ -14162,6 +16440,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1KCDn2U3PCmuWkL90_1qTp_-yo4xT-B_c",
       "perfil": "https://espaciocivico.org/diputados/joan-guevara",
       "slug": "joan-guevara",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/joan-guevara",
+      "planilla_texto": "B/. 31,625",
+      "planilla_valor": 31625.0,
+      "asistencia_pleno": null,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Relaciones Exteriores"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 14,
@@ -14218,21 +16511,40 @@
         "Estado, gobierno y transparencia": 1,
         "Infraestructura, transporte y vivienda": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/joan-guevara",
-      "planilla_texto": "B/. 31,625",
-      "planilla_valor": 31625.0,
-      "asistencia_pleno": null,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Relaciones Exteriores"
+      "aliados": [
+        {
+          "nombre": "Dana Castañeda",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Graciela Hernández",
+          "partido": "Movimiento Otro Camino",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Manuel Cheng",
+          "partido": "Libre Postulación",
+          "proyectos": 7
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 98.9,
+      "transversalidad_esperada": 98.6
     },
     {
       "nombre": "Sergio Gálvez",
@@ -14243,6 +16555,23 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/sergio-galvez",
+      "planilla_texto": "B/. 33,850",
+      "planilla_valor": 33850.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Asuntos Indígenas",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 3,
       "proyectos": 1,
       "leyes": 0,
       "co_patrocinios": 20,
@@ -14304,23 +16633,40 @@
       "temas_autor": {
         "Seguridad social y pensiones": 1
       },
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/sergio-galvez",
-      "planilla_texto": "B/. 33,850",
-      "planilla_valor": 33850.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Asuntos Indígenas",
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Ronald de Gracia",
+          "partido": "Realizando Metas",
+          "proyectos": 10
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Francisco Brea",
+          "partido": "Partido Panameñista",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Manuel Cheng",
+          "partido": "Libre Postulación",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 9
+        }
       ],
-      "comisiones_cantidad": 3
+      "transversalidad": 78.5,
+      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Jaime Vargas",
@@ -14331,6 +16677,21 @@
       "foto": "https://espaciocivico.org/api/drive-image/1DnFyBBJ_iNfp3giNLzmv5WjFdHoGwFpZ",
       "perfil": "https://espaciocivico.org/diputados/jaime-vargas",
       "slug": "jaime-vargas",
+      "provincia_monitoreo": "Emberá-Wounaan",
+      "circuito_monitoreo": "5-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jaime-vargas",
+      "planilla_texto": "B/. 164,120",
+      "planilla_valor": 164120.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 1.0,
+      "viajes_ponderacion": 1.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 2.0,
+      "comisiones": [
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 0,
       "leyes": 0,
       "co_patrocinios": 15,
@@ -14375,21 +16736,40 @@
         }
       },
       "temas_autor": {},
-      "provincia_monitoreo": "Emberá-Wounaan",
-      "circuito_monitoreo": "5-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jaime-vargas",
-      "planilla_texto": "B/. 164,120",
-      "planilla_valor": 164120.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 1.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 2.0,
-      "comisiones": [
-        "Presupuesto"
+      "aliados": [
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Medin Jiménez Pitti",
+          "partido": "Partido Panameñista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Ariana Coba",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 79.0,
+      "transversalidad_esperada": 82.9
     },
     {
       "nombre": "Victor Castillo",
@@ -14400,6 +16780,21 @@
       "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/victor-castillo",
+      "planilla_texto": "B/. 12,400",
+      "planilla_valor": 12400.0,
+      "asistencia_pleno": 2.0,
+      "asistencia_comisiones": 2.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 1.7,
+      "comisiones": [
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 1,
       "proyectos": 0,
       "leyes": 0,
       "co_patrocinios": 21,
@@ -14450,21 +16845,40 @@
         }
       },
       "temas_autor": {},
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/victor-castillo",
-      "planilla_texto": "B/. 12,400",
-      "planilla_valor": 12400.0,
-      "asistencia_pleno": 2.0,
-      "asistencia_comisiones": 2.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 1.7,
-      "comisiones": [
-        "Economía y Finanzas"
+      "aliados": [
+        {
+          "nombre": "Didiano Pinilla",
+          "partido": "Cambio Democrático",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Rogelio Revello",
+          "partido": "Realizando Metas",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Ronald de Gracia",
+          "partido": "Realizando Metas",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Yuzaida Marín",
+          "partido": "Realizando Metas",
+          "proyectos": 9
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Jhonatan Vega",
+          "partido": "Coalición Vamos",
+          "proyectos": 8
+        }
       ],
-      "comisiones_cantidad": 1
+      "transversalidad": 76.5,
+      "transversalidad_esperada": 81.4
     }
   ],
   "otros_proponentes": [
@@ -18653,6 +21067,438 @@
     "7413": [
       13
     ]
+  },
+  "temas_por_partido": {
+    "Realizando Metas": {
+      "Justicia y seguridad": 18,
+      "Ambiente y energía": 5,
+      "Infraestructura, transporte y vivienda": 9,
+      "Tecnología y datos": 4,
+      "Educación": 10,
+      "Niñez, familia e inclusión": 7,
+      "Conmemoraciones y festivales": 7,
+      "Cultura, deporte y turismo": 6,
+      "Estado, gobierno y transparencia": 15,
+      "Salud": 16,
+      "Otros": 21,
+      "Economía, finanzas e impuestos": 8,
+      "Agro y pesca": 4,
+      "Trabajo y empleo": 7,
+      "Seguridad social y pensiones": 2
+    },
+    "Movimiento Otro Camino": {
+      "Infraestructura, transporte y vivienda": 8,
+      "Estado, gobierno y transparencia": 18,
+      "Economía, finanzas e impuestos": 24,
+      "Ambiente y energía": 8,
+      "Tecnología y datos": 9,
+      "Otros": 24,
+      "Justicia y seguridad": 16,
+      "Cultura, deporte y turismo": 6,
+      "Educación": 9,
+      "Niñez, familia e inclusión": 4,
+      "Salud": 10,
+      "Trabajo y empleo": 9,
+      "Seguridad social y pensiones": 4
+    },
+    "Partido Revolucionario Democrático": {
+      "Estado, gobierno y transparencia": 14,
+      "Seguridad social y pensiones": 6,
+      "Salud": 15,
+      "Educación": 11,
+      "Trabajo y empleo": 3,
+      "Infraestructura, transporte y vivienda": 9,
+      "Tecnología y datos": 3,
+      "Economía, finanzas e impuestos": 19,
+      "Justicia y seguridad": 7,
+      "Conmemoraciones y festivales": 6,
+      "Agro y pesca": 6,
+      "Cultura, deporte y turismo": 6,
+      "Niñez, familia e inclusión": 10,
+      "Otros": 20,
+      "Ambiente y energía": 9
+    },
+    "Partido Panameñista": {
+      "Infraestructura, transporte y vivienda": 6,
+      "Seguridad social y pensiones": 1,
+      "Estado, gobierno y transparencia": 14,
+      "Economía, finanzas e impuestos": 13,
+      "Justicia y seguridad": 15,
+      "Trabajo y empleo": 3,
+      "Tecnología y datos": 4,
+      "Ambiente y energía": 8,
+      "Conmemoraciones y festivales": 5,
+      "Otros": 7,
+      "Agro y pesca": 6,
+      "Niñez, familia e inclusión": 5,
+      "Tratados y relaciones exteriores": 2,
+      "Cultura, deporte y turismo": 1,
+      "Educación": 1
+    },
+    "Cambio Democrático": {
+      "Conmemoraciones y festivales": 2,
+      "Cultura, deporte y turismo": 3,
+      "Economía, finanzas e impuestos": 10,
+      "Ambiente y energía": 4,
+      "Estado, gobierno y transparencia": 3,
+      "Infraestructura, transporte y vivienda": 2,
+      "Educación": 4,
+      "Niñez, familia e inclusión": 4,
+      "Agro y pesca": 2,
+      "Otros": 6,
+      "Salud": 4,
+      "Justicia y seguridad": 3
+    },
+    "Partido Popular": {
+      "Economía, finanzas e impuestos": 2,
+      "Trabajo y empleo": 1,
+      "Educación": 5,
+      "Estado, gobierno y transparencia": 3,
+      "Justicia y seguridad": 4,
+      "Cultura, deporte y turismo": 3,
+      "Agro y pesca": 3,
+      "Otros": 4,
+      "Ambiente y energía": 1,
+      "Niñez, familia e inclusión": 1,
+      "Conmemoraciones y festivales": 2,
+      "Salud": 1
+    },
+    "Coalición Vamos": {
+      "Economía, finanzas e impuestos": 44,
+      "Estado, gobierno y transparencia": 43,
+      "Conmemoraciones y festivales": 7,
+      "Salud": 19,
+      "Justicia y seguridad": 56,
+      "Ambiente y energía": 24,
+      "Otros": 45,
+      "Trabajo y empleo": 11,
+      "Seguridad social y pensiones": 8,
+      "Infraestructura, transporte y vivienda": 14,
+      "Cultura, deporte y turismo": 20,
+      "Agro y pesca": 5,
+      "Niñez, familia e inclusión": 14,
+      "Tecnología y datos": 19,
+      "Educación": 22,
+      "Tratados y relaciones exteriores": 1
+    },
+    "Libre Postulación": {
+      "Otros": 16,
+      "Estado, gobierno y transparencia": 6,
+      "Economía, finanzas e impuestos": 7,
+      "Trabajo y empleo": 2,
+      "Infraestructura, transporte y vivienda": 7,
+      "Ambiente y energía": 9,
+      "Niñez, familia e inclusión": 4,
+      "Conmemoraciones y festivales": 2,
+      "Cultura, deporte y turismo": 4,
+      "Educación": 5,
+      "Salud": 1,
+      "Tecnología y datos": 2,
+      "Agro y pesca": 4,
+      "Justicia y seguridad": 8,
+      "Seguridad social y pensiones": 1
+    },
+    "Partido Alianza": {
+      "Agro y pesca": 1,
+      "Infraestructura, transporte y vivienda": 1,
+      "Estado, gobierno y transparencia": 2,
+      "Educación": 1
+    },
+    "Libre Postulación | Seguimos": {
+      "Educación": 2,
+      "Economía, finanzas e impuestos": 1,
+      "Estado, gobierno y transparencia": 2,
+      "Otros": 1,
+      "Salud": 1
+    },
+    "Movimiento Liberal Republicano Nacionalista": {
+      "Economía, finanzas e impuestos": 2,
+      "Justicia y seguridad": 2,
+      "Trabajo y empleo": 1,
+      "Infraestructura, transporte y vivienda": 1,
+      "Estado, gobierno y transparencia": 1,
+      "Otros": 1,
+      "Ambiente y energía": 1,
+      "Agro y pesca": 1
+    }
+  },
+  "temas_por_provincia": {
+    "Panamá Oeste": {
+      "Justicia y seguridad": 17,
+      "Economía, finanzas e impuestos": 7,
+      "Trabajo y empleo": 6,
+      "Estado, gobierno y transparencia": 9,
+      "Educación": 16,
+      "Niñez, familia e inclusión": 7,
+      "Conmemoraciones y festivales": 8,
+      "Cultura, deporte y turismo": 8,
+      "Salud": 8,
+      "Tecnología y datos": 4,
+      "Ambiente y energía": 12,
+      "Otros": 23,
+      "Infraestructura, transporte y vivienda": 6,
+      "Agro y pesca": 3,
+      "Tratados y relaciones exteriores": 1,
+      "Seguridad social y pensiones": 1
+    },
+    "Panamá": {
+      "Infraestructura, transporte y vivienda": 30,
+      "Estado, gobierno y transparencia": 72,
+      "Ambiente y energía": 31,
+      "Tecnología y datos": 29,
+      "Seguridad social y pensiones": 14,
+      "Salud": 35,
+      "Educación": 38,
+      "Economía, finanzas e impuestos": 72,
+      "Trabajo y empleo": 20,
+      "Otros": 72,
+      "Justicia y seguridad": 63,
+      "Cultura, deporte y turismo": 21,
+      "Conmemoraciones y festivales": 6,
+      "Agro y pesca": 6,
+      "Niñez, familia e inclusión": 19
+    },
+    "Veraguas": {
+      "Infraestructura, transporte y vivienda": 2,
+      "Conmemoraciones y festivales": 3,
+      "Salud": 7,
+      "Otros": 12,
+      "Justicia y seguridad": 8,
+      "Estado, gobierno y transparencia": 6,
+      "Ambiente y energía": 6,
+      "Seguridad social y pensiones": 2,
+      "Economía, finanzas e impuestos": 7,
+      "Cultura, deporte y turismo": 6,
+      "Agro y pesca": 4,
+      "Niñez, familia e inclusión": 5,
+      "Tecnología y datos": 3,
+      "Educación": 1,
+      "Trabajo y empleo": 2,
+      "Tratados y relaciones exteriores": 1
+    },
+    "Herrera": {
+      "Conmemoraciones y festivales": 4,
+      "Cultura, deporte y turismo": 4,
+      "Economía, finanzas e impuestos": 5,
+      "Infraestructura, transporte y vivienda": 2,
+      "Estado, gobierno y transparencia": 3,
+      "Salud": 2,
+      "Otros": 5,
+      "Agro y pesca": 3,
+      "Educación": 1,
+      "Niñez, familia e inclusión": 1,
+      "Justicia y seguridad": 2,
+      "Ambiente y energía": 2
+    },
+    "Coclé": {
+      "Economía, finanzas e impuestos": 7,
+      "Salud": 5,
+      "Ambiente y energía": 3,
+      "Niñez, familia e inclusión": 5,
+      "Agro y pesca": 3,
+      "Cultura, deporte y turismo": 3,
+      "Estado, gobierno y transparencia": 6,
+      "Justicia y seguridad": 5,
+      "Otros": 3,
+      "Educación": 5,
+      "Conmemoraciones y festivales": 1,
+      "Infraestructura, transporte y vivienda": 1
+    },
+    "Colón": {
+      "Infraestructura, transporte y vivienda": 7,
+      "Otros": 6,
+      "Justicia y seguridad": 7,
+      "Trabajo y empleo": 3,
+      "Ambiente y energía": 1,
+      "Seguridad social y pensiones": 3,
+      "Agro y pesca": 1,
+      "Estado, gobierno y transparencia": 2,
+      "Educación": 2,
+      "Economía, finanzas e impuestos": 7,
+      "Conmemoraciones y festivales": 3,
+      "Salud": 4,
+      "Niñez, familia e inclusión": 1
+    },
+    "Los Santos": {
+      "Cultura, deporte y turismo": 1,
+      "Ambiente y energía": 1,
+      "Infraestructura, transporte y vivienda": 1,
+      "Salud": 4,
+      "Economía, finanzas e impuestos": 2,
+      "Conmemoraciones y festivales": 1,
+      "Tecnología y datos": 1,
+      "Justicia y seguridad": 1
+    },
+    "Chiriquí": {
+      "Justicia y seguridad": 22,
+      "Seguridad social y pensiones": 2,
+      "Estado, gobierno y transparencia": 12,
+      "Agro y pesca": 9,
+      "Economía, finanzas e impuestos": 19,
+      "Otros": 19,
+      "Trabajo y empleo": 4,
+      "Tecnología y datos": 4,
+      "Ambiente y energía": 8,
+      "Infraestructura, transporte y vivienda": 6,
+      "Conmemoraciones y festivales": 2,
+      "Cultura, deporte y turismo": 4,
+      "Educación": 5,
+      "Niñez, familia e inclusión": 3,
+      "Tratados y relaciones exteriores": 1
+    },
+    "Emberá-Wounaan": {
+      "Economía, finanzas e impuestos": 2,
+      "Justicia y seguridad": 2,
+      "Trabajo y empleo": 1,
+      "Infraestructura, transporte y vivienda": 1,
+      "Estado, gobierno y transparencia": 1,
+      "Otros": 1,
+      "Ambiente y energía": 1,
+      "Agro y pesca": 1
+    },
+    "Ngöbe Buglé": {
+      "Trabajo y empleo": 1,
+      "Niñez, familia e inclusión": 5,
+      "Justicia y seguridad": 1,
+      "Estado, gobierno y transparencia": 5,
+      "Conmemoraciones y festivales": 2,
+      "Educación": 2,
+      "Ambiente y energía": 2,
+      "Otros": 2,
+      "Cultura, deporte y turismo": 1,
+      "Salud": 1
+    },
+    "Bocas del Toro": {
+      "Estado, gobierno y transparencia": 2,
+      "Otros": 2,
+      "Infraestructura, transporte y vivienda": 1,
+      "Agro y pesca": 1,
+      "Conmemoraciones y festivales": 1,
+      "Cultura, deporte y turismo": 1,
+      "Economía, finanzas e impuestos": 1
+    },
+    "Guna Yala": {
+      "Agro y pesca": 1,
+      "Niñez, familia e inclusión": 3,
+      "Estado, gobierno y transparencia": 3,
+      "Ambiente y energía": 2,
+      "Economía, finanzas e impuestos": 1,
+      "Justicia y seguridad": 1,
+      "Salud": 1
+    }
+  },
+  "red_partidos": {
+    "Realizando Metas": {
+      "Coalición Vamos": 41,
+      "Movimiento Otro Camino": 18,
+      "Realizando Metas": 87,
+      "Partido Panameñista": 24,
+      "Libre Postulación": 11,
+      "Partido Revolucionario Democrático": 34,
+      "Movimiento Liberal Republicano Nacionalista": 3,
+      "Partido Popular": 5,
+      "Partido Alianza": 8,
+      "Cambio Democrático": 13,
+      "Libre Postulación | Seguimos": 3
+    },
+    "Partido Revolucionario Democrático": {
+      "Partido Revolucionario Democrático": 70,
+      "Libre Postulación | Seguimos": 4,
+      "Coalición Vamos": 54,
+      "Libre Postulación": 14,
+      "Partido Panameñista": 30,
+      "Realizando Metas": 52,
+      "Cambio Democrático": 15,
+      "Movimiento Liberal Republicano Nacionalista": 5,
+      "Partido Popular": 3,
+      "Movimiento Otro Camino": 5,
+      "Partido Alianza": 1
+    },
+    "Coalición Vamos": {
+      "Partido Panameñista": 171,
+      "Coalición Vamos": 1209,
+      "Realizando Metas": 67,
+      "Partido Popular": 68,
+      "Libre Postulación | Seguimos": 55,
+      "Cambio Democrático": 73,
+      "Movimiento Otro Camino": 105,
+      "Libre Postulación": 224,
+      "Partido Revolucionario Democrático": 34,
+      "Partido Alianza": 6,
+      "Movimiento Liberal Republicano Nacionalista": 1
+    },
+    "Partido Panameñista": {
+      "Libre Postulación": 35,
+      "Coalición Vamos": 142,
+      "Cambio Democrático": 62,
+      "Partido Panameñista": 106,
+      "Movimiento Liberal Republicano Nacionalista": 6,
+      "Partido Revolucionario Democrático": 26,
+      "Realizando Metas": 37,
+      "Partido Alianza": 3,
+      "Libre Postulación | Seguimos": 5,
+      "Movimiento Otro Camino": 15,
+      "Partido Popular": 9
+    },
+    "Movimiento Liberal Republicano Nacionalista": {
+      "Realizando Metas": 38,
+      "Partido Panameñista": 12,
+      "Cambio Democrático": 9,
+      "Partido Revolucionario Democrático": 22,
+      "Libre Postulación": 4,
+      "Movimiento Otro Camino": 1,
+      "Partido Alianza": 3,
+      "Coalición Vamos": 4,
+      "Partido Popular": 2
+    },
+    "Libre Postulación": {
+      "Coalición Vamos": 152,
+      "Partido Panameñista": 31,
+      "Cambio Democrático": 8,
+      "Libre Postulación": 28,
+      "Libre Postulación | Seguimos": 7,
+      "Partido Popular": 8,
+      "Partido Revolucionario Democrático": 4,
+      "Realizando Metas": 4,
+      "Movimiento Otro Camino": 16,
+      "Partido Alianza": 2
+    },
+    "Movimiento Otro Camino": {
+      "Coalición Vamos": 81,
+      "Movimiento Otro Camino": 40,
+      "Libre Postulación | Seguimos": 15,
+      "Partido Popular": 5,
+      "Libre Postulación": 11,
+      "Cambio Democrático": 6,
+      "Partido Panameñista": 9,
+      "Realizando Metas": 6,
+      "Movimiento Liberal Republicano Nacionalista": 1,
+      "Partido Revolucionario Democrático": 1
+    },
+    "Cambio Democrático": {
+      "Coalición Vamos": 11,
+      "Partido Panameñista": 20,
+      "Libre Postulación | Seguimos": 2,
+      "Realizando Metas": 15,
+      "Partido Revolucionario Democrático": 10,
+      "Cambio Democrático": 25,
+      "Movimiento Liberal Republicano Nacionalista": 1,
+      "Partido Alianza": 3,
+      "Movimiento Otro Camino": 3,
+      "Libre Postulación": 5
+    },
+    "Libre Postulación | Seguimos": {
+      "Coalición Vamos": 25,
+      "Partido Revolucionario Democrático": 1,
+      "Movimiento Otro Camino": 11,
+      "Partido Alianza": 1,
+      "Libre Postulación": 2
+    },
+    "Partido Popular": {
+      "Coalición Vamos": 28,
+      "Libre Postulación": 3,
+      "Libre Postulación | Seguimos": 1
+    }
   },
   "proponentes_sin_match": [
     {

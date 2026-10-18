@@ -732,6 +732,45 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
             por_tema[t]['proyectos'] += 1
             por_tema[t]['leyes'] += r['etapa'] == 'Ley'
 
+    # Redes de co-patrocinio. Para cada proyecto: quiénes firmaron juntos (pares de diputados) y,
+    # desde el partido del autor, de qué partidos vienen los co-firmantes.
+    pares = defaultdict(lambda: defaultdict(int))     # nombre → {otro nombre: proyectos juntos}
+    matriz = defaultdict(lambda: defaultdict(int))    # partido del autor → {partido co-firmante: firmas}
+    for r in datos:
+        grupo = firmantes.get(r['ficha'], [])
+        for a in grupo:
+            for b in grupo:
+                if a['nombre'] != b['nombre']:
+                    pares[a['nombre']][b['nombre']] += 1
+        a = autor.get(r['ficha'])
+        if a:
+            for b in grupo:
+                if b['nombre'] != a['nombre']:
+                    matriz[a['partido']][b['partido']] += 1
+    partido_de = {d['nombre']: d['partido'] for d in dips}
+    tam_partido = defaultdict(int)
+    for d in dips: tam_partido[d['partido']] += 1
+
+    def red_de(nombre):
+        otros = pares.get(nombre, {})
+        total = sum(otros.values())
+        cruzan = sum(n for o, n in otros.items() if partido_de.get(o) != partido_de.get(nombre))
+        top = sorted(otros.items(), key=lambda kv: (-kv[1], kv[0]))[:6]
+        # Lo esperado si firmara al azar con cualquier diputado: depende del tamaño de su partido
+        # (quien es el único de su partido tendrá 100 % de co-firmas con otros partidos sí o sí).
+        esperada = 100 * (len(dips) - tam_partido[partido_de.get(nombre)]) / max(len(dips) - 1, 1)
+        return {'aliados': [{'nombre': o, 'partido': partido_de.get(o, ''), 'proyectos': n} for o, n in top],
+                'transversalidad': round(100 * cruzan / total, 1) if total else None,
+                'transversalidad_esperada': round(esperada, 1)}
+
+    # Temas que propone cada partido y cada provincia (como autor principal)
+    temas_partido = defaultdict(lambda: defaultdict(int))
+    temas_provincia = defaultdict(lambda: defaultdict(int))
+    for f, a in autor.items():
+        for t in temas_ficha.get(f, []):
+            temas_partido[a['partido']][t] += 1
+            temas_provincia[a['provincia']][t] += 1
+
     # Enriquecer diputados
     diputados_enriq = []
     for d in dips:
@@ -742,7 +781,8 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
             for t in temas_ficha.get(x['ficha'], []):
                 if t != TEMA_OTROS: temas_dip[t] += 1
         p = {**p, 'leyes_copatrocinio': ef['copat']['leyes'] if ef else 0, 'efectividad_ley': ef,
-             'temas_autor': dict(sorted(temas_dip.items(), key=lambda kv: (-kv[1], kv[0]))[:5])}
+             'temas_autor': dict(sorted(temas_dip.items(), key=lambda kv: (-kv[1], kv[0]))[:5]),
+             **red_de(d['nombre'])}
         m = (metricas or {}).get(d.get('slug')) or (metricas or {}).get(slug_from_href(d.get('perfil', ''))) or {}
         m = {k:v for k,v in m.items() if k not in ('nombre','partido_monitoreo')}
         if 'comisiones' in m:   # también corrige datos guardados con el formato anterior
@@ -759,7 +799,7 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
         'Ley':       {'Ley'},
         'debate':    {'Primer Debate','Segundo Debate','Tercer Debate','Enviado al Ejecutivo',
                       'Objetado por Ejecutivo','Segundo Debate(Objetado)','Tercer Debate(Objetado)'},
-        'analisis':  {'Preliminar','Enviado a subcomisión para analisis'},
+        'analisis':  {'Preliminar','Prohijado','Enviado a subcomisión para analisis'},
         'sinAvance': {'Archivado','Negado','Retirado por proponente','Suspendido'},
     }
     YEARS = sorted({r['fecha_presentacion'].split('-')[-1] for r in datos
@@ -842,6 +882,9 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
         'temas': nombres_temas,
         'por_tema': por_tema,
         'temas_por_ficha': {f: [nombres_temas.index(t) for t in ts] for f, ts in temas_ficha.items()},
+        'temas_por_partido': {p: dict(v) for p, v in temas_partido.items()},
+        'temas_por_provincia': {p: dict(v) for p, v in temas_provincia.items()},
+        'red_partidos': {a: dict(v) for a, v in matriz.items()},
         'proponentes_sin_match': [{'nombre': k, 'firmas': v}
                                   for k, v in sorted(sin_match.items(), key=lambda x: -x[1])],
     }
@@ -889,6 +932,155 @@ def actualizar_historico(resumen, respaldos, ruta='historico.json'):
     print(f"  historico.json: {len(snaps)} fotos (última {fecha})")
 
 # ─────────────────────────────────────────────
+# HISTORIAL DE ETAPAS Y NOVEDADES
+# ─────────────────────────────────────────────
+# etapas_historico.json guarda, por proyecto, cada cambio de etapa con la fecha en que se
+# DETECTÓ (la fecha de extracción, no la de la Asamblea, que no se publica). A partir de ahí
+# se generan novedades.json (lo que cambió) y novedades.xml (feed RSS).
+ETAPAS_HIST = 'etapas_historico.json'
+NOVEDADES_JSON = 'novedades.json'
+NOVEDADES_RSS = 'novedades.xml'
+# Orden real observado en los datos: el anteproyecto se "prohíja" (la comisión lo adopta), pasa a
+# primer debate y desde ahí puede ir a subcomisión antes del segundo debate.
+ORDEN_TRAMITE = ['Preliminar', 'Prohijado', 'Primer Debate', 'Enviado a subcomisión para analisis',
+                 'Segundo Debate', 'Tercer Debate', 'Enviado al Ejecutivo', 'Ley']
+ETAPAS_DETENIDO = {'Archivado', 'Negado', 'Retirado por proponente', 'Suspendido'}
+PRECISION_DIAS = 7   # solo se mide el tiempo hasta ley si se detectó a menos de 7 días de ocurrir
+
+def _fecha_iso(ts):
+    return f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
+
+def actualizar_etapas(datos, ts, ruta=ETAPAS_HIST):
+    """Registra la etapa de cada proyecto si cambió desde la última extracción."""
+    hist = _leer_json(ruta) or {}
+    fecha = _fecha_iso(ts)
+    hist.setdefault('desde', fecha)
+    fechas = hist.setdefault('fechas', [])
+    if not fechas or fechas[-1] != fecha:
+        if fechas and fecha < fechas[-1]:
+            return hist          # extracción más vieja que la última registrada: no se mezcla
+        fechas.append(fecha)
+    proy = hist.setdefault('proyectos', {})
+    vistos = set()
+    for r in datos:
+        f = r['ficha']
+        vistos.add(f)
+        h = proy.setdefault(f, [])
+        if not h or h[-1][1] != r['etapa']:
+            if h and h[-1][0] == fecha:
+                h[-1][1] = r['etapa']          # segunda corrida del mismo día: se corrige
+            else:
+                h.append([fecha, r['etapa']])
+    # Proyectos que la fuente dejó de publicar (salvo que la extracción venga claramente incompleta)
+    publicados = sum(1 for h in proy.values() if h and h[-1][1] is not None and h[-1][0] != fecha)
+    if len(datos) >= 0.8 * publicados:
+        for f, h in proy.items():
+            if f not in vistos and h and h[-1][1] is not None:
+                h.append([fecha, None])
+    with open(ruta, 'w', encoding='utf-8') as fh:
+        json.dump(hist, fh, ensure_ascii=False, separators=(',', ':'))
+    return hist
+
+def _tipo_evento(de, a):
+    if de is None: return 'nuevo'
+    if a == 'Ley': return 'ley'
+    if a in ETAPAS_DETENIDO: return 'detenido'
+    if 'Objetado' in (a or ''): return 'objetado'
+    if de in ORDEN_TRAMITE and a in ORDEN_TRAMITE and ORDEN_TRAMITE.index(a) > ORDEN_TRAMITE.index(de):
+        return 'avance'
+    if 'Objetado' in de and a in ('Enviado al Ejecutivo', 'Ley'):
+        return 'avance'                          # superó la objeción y vuelve al Ejecutivo
+    return 'cambio'
+
+def _fecha_pres(r):
+    p = (r.get('fecha_presentacion') or '').split('-')
+    return f"{p[2]}-{p[1]}-{p[0]}" if len(p) == 3 else None
+
+def generar_novedades(hist, datos):
+    from datetime import date
+    por_ficha = {r['ficha']: r for r in datos}
+    desde, fechas = hist.get('desde'), hist.get('fechas', [])
+    eventos = []
+    for f, h in hist.get('proyectos', {}).items():
+        r = por_ficha.get(f, {})
+        titulo = r.get('titulo') or r.get('anteproyecto') or ''
+        for i, (fecha, etapa) in enumerate(h):
+            if etapa is None: continue
+            if i == 0 and fecha == desde: continue    # estado inicial, no es una novedad
+            # Etapa anterior conocida (si el proyecto dejó de publicarse un tiempo, la de antes)
+            de = next((x[1] for x in reversed(h[:i]) if x[1] is not None), None)
+            if de == etapa: continue                  # reapareció igual que antes: no es novedad
+            if de is None and i > 0: continue         # sin etapa previa conocida
+            eventos.append({'fecha': fecha, 'tipo': _tipo_evento(de, etapa), 'ficha': f,
+                            'de': de, 'a': etapa, 'titulo': titulo[:220]})
+    eventos.sort(key=lambda e: (e['fecha'], int(e['ficha']) if e['ficha'].isdigit() else 0), reverse=True)
+
+    # Tiempo desde la presentación hasta ley, solo para leyes detectadas con poca demora
+    dias = []
+    for e in eventos:
+        if e['tipo'] != 'ley': continue
+        idx = fechas.index(e['fecha']) if e['fecha'] in fechas else -1
+        previa = fechas[idx - 1] if idx > 0 else None
+        pres = _fecha_pres(por_ficha.get(e['ficha'], {}))
+        if not previa or not pres: continue
+        d_ley, d_prev = date.fromisoformat(e['fecha']), date.fromisoformat(previa)
+        if (d_ley - d_prev).days <= PRECISION_DIAS:
+            dias.append({'ficha': e['ficha'], 'dias': (d_ley - date.fromisoformat(pres)).days})
+    # Huecos entre extracciones: los cambios detectados al final de un hueco pueden ser anteriores
+    huecos = [{'desde': a, 'hasta': b} for a, b in zip(fechas, fechas[1:])
+              if (date.fromisoformat(b) - date.fromisoformat(a)).days > PRECISION_DIAS]
+    vals = sorted(x['dias'] for x in dias)
+    cuantil = lambda q: vals[min(len(vals) - 1, int(round(q * (len(vals) - 1))))] if vals else None
+    return {
+        'desde': desde, 'actualizado': fechas[-1] if fechas else None, 'precision_dias': PRECISION_DIAS,
+        'huecos': huecos,
+        'eventos': eventos,
+        'tiempo_ley': {'n': len(vals), 'mediana': cuantil(.5), 'p25': cuantil(.25), 'p75': cuantil(.75), 'casos': dias},
+    }
+
+def generar_rss(nov, limite=60):
+    from html import escape as e
+    from email.utils import format_datetime
+    from datetime import datetime as dt, timezone
+    etiqueta = {'nuevo': 'Nuevo proyecto', 'ley': 'Nueva ley', 'avance': 'Avanza a {a}', 'objetado': '{a}',
+                'detenido': '{a}', 'cambio': 'Cambia a {a}'}
+    items = []
+    for ev in nov['eventos'][:limite]:
+        tit = etiqueta[ev['tipo']].format(a=ev['a']) + f": {ev['titulo'][:140]}"
+        fecha = format_datetime(dt.fromisoformat(ev['fecha']).replace(hour=12, tzinfo=timezone.utc))
+        desc = f"Ficha {ev['ficha']}. " + (f"De «{ev['de']}» a «{ev['a']}»." if ev['de'] else f"Etapa: {ev['a']}.")
+        items.append(f"""  <item>
+    <title>{e(tit)}</title>
+    <link>{SITE_URL}/#proyecto={ev['ficha']}</link>
+    <guid isPermaLink="false">{ev['ficha']}-{ev['fecha']}-{e(ev['a'])}</guid>
+    <pubDate>{fecha}</pubDate>
+    <description>{e(desc)}</description>
+  </item>""")
+    with open(NOVEDADES_RSS, 'w', encoding='utf-8') as f:
+        f.write(f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Observatorio Legislativo — Novedades</title>
+  <link>{SITE_URL}/#novedades</link>
+  <atom:link href="{SITE_URL}/{NOVEDADES_RSS}" rel="self" type="application/rss+xml"/>
+  <description>Proyectos nuevos, avances de etapa y nuevas leyes en la Asamblea Nacional de Panamá.</description>
+  <language>es-pa</language>
+{chr(10).join(items)}
+</channel>
+</rss>
+""")
+
+def actualizar_novedades(datos, ts):
+    hist = actualizar_etapas(datos, ts)
+    nov = generar_novedades(hist, datos)
+    with open(NOVEDADES_JSON, 'w', encoding='utf-8') as f:
+        json.dump(nov, f, ensure_ascii=False, separators=(',', ':'))
+    generar_rss(nov)
+    print(f"  Novedades: {len(nov['eventos'])} eventos desde {nov['desde']} · leyes con tiempo medido: {nov['tiempo_ley']['n']}")
+    return nov
+
+
+# ─────────────────────────────────────────────
 # PÁGINAS PARA COMPARTIR (una por diputado)
 # ─────────────────────────────────────────────
 # El sitio es una sola página: un enlace #diputado=... siempre mostraría la vista previa genérica.
@@ -900,16 +1092,99 @@ CARPETA_DIPUTADOS = 'diputado'
 def _fmt_num(v):
     return f"{int(round(v)):,}" if isinstance(v, (int, float)) else '—'
 
-def _pagina_diputado(d, fecha):
+def _lectura_indice(ef):
+    indice = ef.get('indice')
+    if indice is None: return None
+    if ef.get('evidencia') == 'baja': return 'pocos datos'
+    return 'sobre el promedio' if indice >= 120 else 'bajo el promedio' if indice <= 80 else 'en el promedio'
+
+def _imagen_diputado(d, ruta):
+    """
+    Dibuja la imagen de vista previa (1200×630) de un diputado. Devuelve True si se escribió.
+    No lleva fecha ni foto: así el archivo solo cambia cuando cambian sus cifras y el repositorio
+    no crece cada día (las fotos son de Espacio Cívico).
+    """
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        return False
+    import io, os
+    W, H = 1200, 630
+    BG, TXT, MUTED, ACC, BORDE, VERDE = '#080c14', '#e2e8f0', '#7a8fb0', '#3b82f6', '#1a2940', '#34d399'
+    fd = lambda size, peso='ExtraBold': _fuente('fonts/Syne-Variable.ttf', size, peso)
+    fm = lambda size, medio=False: _fuente('fonts/DMMono-Medium.ttf' if medio else 'fonts/DMMono-Regular.ttf', size)
+    im = Image.new('RGB', (W, H), BG)
+    dr = ImageDraw.Draw(im)
+    for x in range(0, W, 48): dr.line([(x, 0), (x, H)], fill='#0c1322')
+    for y in range(0, H, 48): dr.line([(0, y), (W, y)], fill='#0c1322')
+    if os.path.exists('img/logo-512.png'):
+        logo = Image.open('img/logo-512.png').convert('RGBA').resize((84, 84), Image.LANCZOS)
+        im.paste(logo, (70, 56), logo)
+    dr.text((172, 70), 'OBSERVATORIO LEGISLATIVO', font=fm(22, True), fill=ACC)
+    dr.text((172, 104), 'Asamblea Nacional de Panamá', font=fm(20), fill=MUTED)
+
+    # Nombre: se reduce la letra hasta que quepa en dos líneas como máximo
+    nombre = d['nombre']
+    for size in (80, 72, 64, 56, 50):
+        f = fd(size)
+        palabras, lineas, actual = nombre.split(), [], ''
+        for p in palabras:
+            prueba = (actual + ' ' + p).strip()
+            if dr.textlength(prueba, font=f) <= W - 140: actual = prueba
+            else: lineas.append(actual); actual = p
+        lineas.append(actual)
+        if len(lineas) <= 2: break
+    y = 186
+    for linea in lineas:
+        dr.text((70, y), linea, font=f, fill=TXT); y += int(size * 1.08)
+    lugar = ' · '.join(x for x in (d.get('partido'), d.get('provincia'), d.get('circuito')) if x)
+    dr.text((70, y + 8), lugar[:70], font=fm(24), fill=MUTED)
+
+    ef = (d.get('efectividad_ley') or {}).get('autor') or {}
+    cifras = [('Proyectos propuestos', _fmt_num(d.get('proyectos', 0)), TXT),
+              ('Leyes aprobadas', _fmt_num(d.get('leyes', 0)), VERDE),
+              ('Co-patrocinios', _fmt_num(d.get('co_patrocinios', 0)), TXT),
+              ('Efectividad', str(ef['indice']) if ef.get('indice') is not None else '—',
+               MUTED if ef.get('evidencia') == 'baja' else ACC)]
+    x0, ancho, gap, yb = 70, 245, 20, 440
+    for i, (lbl, val, color) in enumerate(cifras):
+        x = x0 + i * (ancho + gap)
+        dr.rounded_rectangle([x, yb, x + ancho, yb + 112], radius=16, fill='#0e1623', outline=BORDE, width=2)
+        dr.text((x + 20, yb + 16), lbl.upper(), font=fm(15, True), fill=MUTED)
+        dr.text((x + 20, yb + 42), val, font=fd(46), fill=color)
+    if ef.get('indice') is not None:
+        dr.text((x0 + 3 * (ancho + gap) + 20, yb + 120), f"{_lectura_indice(ef)} (100 = promedio)", font=fm(15), fill=MUTED)
+    dr.text((70, H - 50), 'Observatorio Legislativo · por @profealvarock', font=fm(18), fill=MUTED)
+
+    buf = io.BytesIO()
+    im.save(buf, 'PNG', optimize=True)
+    nuevo = buf.getvalue()
+    if os.path.exists(ruta) and open(ruta, 'rb').read() == nuevo:
+        return False
+    with open(ruta, 'wb') as fh:
+        fh.write(nuevo)
+    return True
+
+_FUENTES = {}
+def _fuente(ruta, size, peso=None):
+    from PIL import ImageFont
+    clave = (ruta, size, peso)
+    if clave not in _FUENTES:
+        f = ImageFont.truetype(ruta, size)
+        if peso:
+            try: f.set_variation_by_name(peso)
+            except Exception: pass
+        _FUENTES[clave] = f
+    return _FUENTES[clave]
+
+def _pagina_diputado(d, fecha, imagen=None):
     from html import escape as e
     slug = d['slug']
     url = f"{SITE_URL}/{CARPETA_DIPUTADOS}/{slug}/"
     destino = f"/#diputado={slug}"
     ef = (d.get('efectividad_ley') or {}).get('autor') or {}
     indice = ef.get('indice')
-    lectura = ('pocos datos' if ef.get('evidencia') == 'baja' else
-               'sobre el promedio' if (indice or 0) >= 120 else
-               'bajo el promedio' if indice is not None and indice <= 80 else 'en el promedio')
+    lectura = _lectura_indice(ef)
     lugar = ' · '.join(x for x in (d.get('provincia'), d.get('circuito')) if x)
     partes = [f"{d.get('proyectos', 0)} proyectos propuestos", f"{d.get('leyes', 0)} leyes",
               f"{d.get('co_patrocinios', 0)} co-patrocinios"]
@@ -942,7 +1217,7 @@ def _pagina_diputado(d, fecha):
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{e(d['nombre'])} — Observatorio Legislativo">
 <meta property="og:description" content="{e(descripcion)}">
-<meta property="og:image" content="{SITE_URL}/img/og-card.png">
+<meta property="og:image" content="{imagen or SITE_URL + '/img/og-card.png'}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -977,14 +1252,17 @@ def generar_paginas_diputados(resumen):
     ts = resumen.get('fecha_extraccion', '')
     fecha = f"{ts[6:8]}/{ts[4:6]}/{ts[:4]}" if len(ts) >= 8 else ''
     os.makedirs(CARPETA_DIPUTADOS, exist_ok=True)
-    slugs = set()
+    slugs, nuevas = set(), 0
     for d in resumen.get('diputados', []):
         if not d.get('slug'): continue
         slugs.add(d['slug'])
         carpeta = os.path.join(CARPETA_DIPUTADOS, d['slug'])
         os.makedirs(carpeta, exist_ok=True)
+        ruta_img = os.path.join(carpeta, 'og.png')
+        if _imagen_diputado(d, ruta_img): nuevas += 1
+        imagen = f"{SITE_URL}/{CARPETA_DIPUTADOS}/{d['slug']}/og.png" if os.path.exists(ruta_img) else None
         with open(os.path.join(carpeta, 'index.html'), 'w', encoding='utf-8') as f:
-            f.write(_pagina_diputado(d, fecha))
+            f.write(_pagina_diputado(d, fecha, imagen))
     # Quitar páginas de diputados que ya no están
     for nombre in os.listdir(CARPETA_DIPUTADOS):
         if nombre not in slugs and os.path.isdir(os.path.join(CARPETA_DIPUTADOS, nombre)):
@@ -995,7 +1273,7 @@ def generar_paginas_diputados(resumen):
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         f.writelines(f"  <url><loc>{u}</loc><lastmod>{hoy}</lastmod></url>\n" for u in urls)
         f.write('</urlset>\n')
-    print(f"  Páginas para compartir: {len(slugs)} diputados + sitemap.xml")
+    print(f"  Páginas para compartir: {len(slugs)} diputados ({nuevas} imágenes actualizadas) + sitemap.xml")
 
 def solo_resumen():
     """Regenera resumen.json a partir de los JSON ya guardados (sin navegador)."""
@@ -1009,6 +1287,12 @@ def solo_resumen():
     with open("resumen.json", "w", encoding="utf-8") as f:
         json.dump(resumen, f, ensure_ascii=False, indent=2)
     generar_paginas_diputados(resumen)
+    hist = _leer_json(ETAPAS_HIST)
+    if hist:   # sin extracción nueva no se registran etapas; solo se recalculan las novedades
+        nov = generar_novedades(hist, datos)
+        with open(NOVEDADES_JSON, 'w', encoding='utf-8') as f:
+            json.dump(nov, f, ensure_ascii=False, separators=(',', ':'))
+        generar_rss(nov)
     print(f"resumen.json regenerado: {len(datos)} proyectos, {len(dips)} diputados (extracción {ts})")
 
 def main():
@@ -1071,6 +1355,10 @@ def main():
         generar_paginas_diputados(resumen)
     except Exception as e:
         print(f"  ADVERTENCIA: no se pudieron generar las páginas de diputados: {e}")
+    try:
+        actualizar_novedades(datos, resumen['fecha_extraccion'])
+    except Exception as e:
+        print(f"  ADVERTENCIA: no se pudieron actualizar las novedades: {e}")
 
     print(f"\n{'='*55}")
     print(f" COMPLETADO")

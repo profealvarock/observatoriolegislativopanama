@@ -11,6 +11,7 @@
 <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="author" href="https://profealvarock.vercel.app/">
+<link rel="alternate" type="application/rss+xml" title="Observatorio Legislativo — Novedades" href="novedades.xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Observatorio Legislativo · Asamblea Nacional de Panamá">
 <meta property="og:description" content="Proyectos de ley, diputados, asistencia, planilla y costo legislativo, actualizado a diario. Por @profealvarock.">
@@ -506,6 +507,56 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .proy-mas{display:flex;justify-content:center;margin:14px 0 30px}
 @media(max-width:768px){.proy-filtros{grid-template-columns:1fr 1fr}.proy-filtros .proy-q{grid-column:1/-1}}
 
+/* MAPAS DE CALOR */
+.heat-scroll{overflow-x:auto}
+.heat{border-collapse:separate;border-spacing:3px;min-width:0;width:100%;font-family:var(--fm);font-size:.66rem}
+.heat th{position:static;background:none;cursor:default;text-transform:none;letter-spacing:0;color:var(--muted);font-weight:500;padding:4px 6px;white-space:nowrap;font-size:.64rem}
+.heat thead th{text-align:center;vertical-align:bottom}
+.heat tbody th{text-align:right;color:var(--text)}
+.heat td{text-align:center;padding:7px 4px;border-radius:5px;min-width:44px;font-weight:600}
+.heat td.propio{outline:2px solid var(--text);outline-offset:-2px}
+.heat td.vacio{color:var(--muted);font-weight:400;background:var(--tint)}
+.heat-leyenda{display:flex;align-items:center;gap:8px;margin-top:10px;font-family:var(--fm);font-size:.62rem;color:var(--muted)}
+.heat-leyenda span.barra{width:120px;height:8px;border-radius:4px;background:linear-gradient(90deg,color-mix(in srgb,var(--acc) 6%,transparent),var(--acc))}
+
+/* ALIANZAS (ficha) */
+.ali-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.ali-row{display:grid;grid-template-columns:1fr 120px 34px;gap:10px;align-items:center;font-family:var(--fm);font-size:.72rem}
+.ali-row a{color:var(--text);text-decoration:none;font-weight:600}
+.ali-row a:hover{color:var(--acc)}
+.ali-row small{display:block;color:var(--muted);font-weight:400;font-size:.62rem}
+.ali-bar{height:6px;border-radius:3px;background:var(--track);overflow:hidden}
+.ali-bar div{height:100%;background:var(--acc);border-radius:3px}
+.ali-trans{margin-top:16px;padding:12px;border:1px solid var(--border);border-radius:10px;font-family:var(--fm);font-size:.72rem;line-height:1.7;color:var(--muted)}
+.ali-trans b{color:var(--text)}
+
+/* NOVEDADES */
+.nov-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);margin-bottom:var(--gap)}
+.nov-filtros{display:flex;gap:8px;flex-wrap:wrap}
+.nov-filtros .cmp-select{width:auto}
+.nov-nota{font-family:var(--fm);font-size:.68rem;color:var(--muted);margin-bottom:10px;line-height:1.6}
+.nov-fecha{font-family:var(--fm);font-size:.7rem;font-weight:700;color:var(--text);margin:18px 0 8px;display:flex;align-items:center;gap:10px}
+.nov-fecha::after{content:'';flex:1;height:1px;background:var(--border)}
+.nov-fecha small{font-weight:400;color:var(--muted)}
+.nov-item{display:grid;grid-template-columns:28px 1fr;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:8px}
+.nov-ico{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;background:color-mix(in srgb,var(--nc) 16%,transparent);color:var(--nc)}
+.nov-tipo{font-family:var(--fm);font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--nc);font-weight:700}
+.nov-tit{font-size:.82rem;font-weight:600;line-height:1.45;margin:3px 0 6px}
+.nov-tit a{color:inherit;text-decoration:none}
+.nov-tit a:hover{color:var(--acc)}
+.nov-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-family:var(--fm);font-size:.66rem;color:var(--muted)}
+.nov-meta a{color:var(--acc);text-decoration:none;font-weight:600}
+.nov-flecha{color:var(--muted)}
+.t-ley{--nc:var(--st-ley)} .t-avance,.t-nuevo{--nc:var(--st-analisis)} .t-objetado{--nc:var(--st-obj)}
+.t-detenido{--nc:var(--st-sin)} .t-cambio{--nc:var(--muted)}
+.nov-tiempo-num{font-size:2.2rem;font-weight:800;letter-spacing:-.03em;color:var(--st-ley);line-height:1}
+.nov-tiempo-num small{font-size:.9rem;font-weight:600;color:var(--muted);margin-left:6px}
+.proy-hist{margin-top:6px}
+.proy-hist ol{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+.proy-hist li{display:flex;align-items:center;gap:6px;font-family:var(--fm);font-size:.64rem;color:var(--muted)}
+.proy-hist li+li::before{content:'→';color:var(--muted)}
+@media(max-width:768px){.nov-kpis{grid-template-columns:1fr 1fr}}
+
 /* ACCESIBILIDAD */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .chart-tabla th[scope="row"]{font-weight:400;text-align:left;color:var(--text);background:none;text-transform:none;letter-spacing:0;font-size:.68rem}
@@ -689,6 +740,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
 <div class="tabs-wrap">
 <div class="tabs" role="tablist" aria-label="Secciones del observatorio">
   <button class="tab active" onclick="showTab('general')">📊 General</button>
+  <button class="tab" onclick="showTab('novedades')">🆕 Novedades</button>
   <button class="tab" onclick="showTab('diputados')">👤 Diputados</button>
   <button class="tab" onclick="showTab('proyectos')">📄 Proyectos</button>
   <button class="tab" onclick="showTab('monitoreo')">📋 Monitoreo</button>
@@ -814,6 +866,48 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
   </div>
 </div>
 
+<!-- TAB NOVEDADES -->
+<div id="tab-novedades" class="tab-content">
+  <div class="nov-kpis" id="nov-kpis"><div class="loader" style="grid-column:1/-1"><div class="spinner"></div> Cargando novedades…</div></div>
+  <div class="grid2" style="margin-bottom:var(--gap)">
+    <div class="card">
+      <div class="card-title" style="--ct:var(--st-ley)">¿Cuánto tarda un proyecto en ser ley?</div>
+      <div id="nov-tiempo"></div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="--ct:var(--acc)">Recibe las novedades</div>
+      <p class="monitor-note">Suscríbete al feed RSS con tu lector favorito (Feedly, Inoreader, Thunderbird…) o con un servicio que lo convierta en correo, y entérate de cada proyecto nuevo, avance y ley sin entrar al sitio.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+        <a class="dl-btn" href="novedades.xml" target="_blank" rel="noopener" style="text-decoration:none">📡 Feed RSS</a>
+        <button class="dl-btn" onclick="copyLink(this, location.origin+'/novedades.xml')">🔗 Copiar dirección del feed</button>
+      </div>
+    </div>
+  </div>
+  <div class="sec-hdr">
+    <div class="sec-title" style="--ct:var(--acc)">Qué cambió en la Asamblea</div>
+    <div class="nov-filtros">
+      <select class="cmp-select" id="nov-periodo" aria-label="Periodo" onchange="renderNovedades()">
+        <option value="7">Últimos 7 días</option>
+        <option value="30" selected>Últimos 30 días</option>
+        <option value="90">Últimos 90 días</option>
+        <option value="0">Todo el historial</option>
+      </select>
+      <select class="cmp-select" id="nov-tipo" aria-label="Tipo de novedad" onchange="renderNovedades()">
+        <option value="">Todas las novedades</option>
+        <option value="ley">Nuevas leyes</option>
+        <option value="avance">Avances de etapa</option>
+        <option value="nuevo">Proyectos nuevos</option>
+        <option value="objetado">Objetados</option>
+        <option value="detenido">Archivados, negados o retirados</option>
+        <option value="cambio">Otros cambios</option>
+      </select>
+    </div>
+  </div>
+  <div class="nov-nota" id="nov-nota"></div>
+  <div class="nov-lista" id="nov-lista" aria-live="polite"></div>
+  <div class="proy-mas"><button class="dl-btn" id="nov-mas" onclick="masNovedades()" style="display:none">Mostrar más</button></div>
+</div>
+
 <!-- TAB DIPUTADOS -->
 <div id="tab-diputados" class="tab-content">
   <div class="map-timeline-note" id="dep-tl-note" style="margin-bottom:14px">
@@ -890,6 +984,17 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
       <div class="card-title" style="--ct:var(--acc)">Proyectos por tema</div>
       <p class="monitor-note" style="margin:-8px 0 12px">Clasificados por palabras clave del título; un proyecto puede tener varios temas. Toca una barra para filtrar.</p>
       <div class="ch xtall"><canvas id="c-temas"></canvas></div>
+    </div>
+    <div class="card wide">
+      <div class="card-title" style="--ct:var(--acc5)">¿Qué temas trabaja cada grupo?</div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:-6px 0 12px">
+        <select class="cmp-select" id="heat-temas-por" aria-label="Agrupar por" onchange="renderHeatTemas()" style="width:auto">
+          <option value="partido">Por partido</option>
+          <option value="provincia">Por provincia</option>
+        </select>
+        <span class="monitor-note">Porcentaje de los proyectos propuestos (como autor principal) por cada grupo que tocan cada tema. Un proyecto puede tener varios temas.</span>
+      </div>
+      <div class="heat-scroll" id="heat-temas"></div>
     </div>
   </div>
   <div class="sec-hdr">
@@ -987,6 +1092,11 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
       <div class="card-title" style="--ct:var(--acc3)">Leyes aprobadas por partido</div>
       <div class="ch tall"><canvas id="c-pp-leyes"></canvas></div>
     </div>
+  </div>
+  <div class="card" style="margin-bottom:var(--gap)">
+    <div class="card-title" style="--ct:var(--acc)">¿Quién se suma a los proyectos de cada partido?</div>
+    <p class="monitor-note" style="margin:-6px 0 12px">Cada fila es el partido del autor del proyecto; cada columna, el partido de los diputados que lo co-firmaron. El número es el porcentaje de las co-firmas que recibió ese partido. La celda con borde es su propio partido.</p>
+    <div class="heat-scroll" id="heat-red"></div>
   </div>
   <p class="monitor-note" style="margin-bottom:var(--gap)">Cada proyecto cuenta una sola vez, para el partido de su <strong>autor principal</strong> (primer firmante), así los totales suman lo mismo que la tabla de diputados. "Participa en" cuenta los proyectos en que firmó al menos un diputado del partido, como autor o co-patrocinador.</p>
   <div id="partido-cards" class="partido-grid"></div>
@@ -1124,6 +1234,8 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
         <dt>Autor → ley</dt><dd>Leyes ÷ proyectos que propuso como autor principal.</dd>
         <dt>Co-patr. → ley</dt><dd>Proyectos co-patrocinados que ya son ley ÷ proyectos co-patrocinados.</dd>
         <dt>Partidos y provincias</dt><dd>Cada proyecto cuenta <strong>una vez</strong>, para el partido y la provincia de su autor principal, así los totales cuadran. "Participa en" cuenta los proyectos en que firmó al menos un diputado del grupo.</dd>
+        <dt>Alianzas</dt><dd>Diputados con los que más proyectos ha firmado alguien (como autor o co-patrocinador). En Partidos, el mapa "¿Quién se suma…?" muestra de qué partidos vienen las co-firmas de los proyectos de cada partido.</dd>
+        <dt>Co-firmas con otros partidos</dt><dd>Porcentaje de las veces que firmó junto a diputados de otro partido. Se compara con lo esperado si firmara al azar, que depende del tamaño de su partido (quien es el único de su bancada siempre tendrá 100 %).</dd>
         <dt>Tema</dt><dd>Se asigna por palabras clave del título (15 temas, por ejemplo "Salud", "Tratados y relaciones exteriores" o "Conmemoraciones y festivales"). Un proyecto puede tener varios; si ninguna coincide queda en "Otros".</dd>
         <dt>Suplentes</dt><dd>Lo que firma un suplente (<code>H.D.S</code>) se suma al diputado principal al que suple, según el registro de suplencias de Espacio Cívico.</dd>
       </dl>
@@ -1163,6 +1275,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
     <section class="met-card">
       <h3>6. Historial</h3>
       <p id="met-hist">Cada día se guarda una foto de las métricas de cada diputado en <code>historico.json</code>, para graficar tendencias en Monitoreo y en la ficha de cada diputado.</p>
+      <p>También se guarda la <strong>etapa de cada proyecto</strong> en <code>etapas_historico.json</code>. De ahí salen la pestaña <a href="#novedades">Novedades</a>, el feed RSS y el historial de etapas de cada proyecto. La fecha de cada cambio es el día en que se detectó, porque la Asamblea no publica cuándo ocurrió cada paso. El tiempo hasta ley solo se mide en leyes detectadas a menos de 7 días de ocurrir.</p>
     </section>
 
     <section class="met-card met-limites">
@@ -1232,6 +1345,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
       <button class="modal-tab active" id="mtab-todos" onclick="switchModalTab('todos')">Todos los proyectos</button>
       <button class="modal-tab" id="mtab-leyes" onclick="switchModalTab('leyes')">Leyes aprobadas</button>
       <button class="modal-tab" id="mtab-hist" onclick="switchModalTab('hist')">Evolución</button>
+      <button class="modal-tab" id="mtab-red" onclick="switchModalTab('red')">Alianzas</button>
     </div>
     <div class="modal-body" id="modal-body"></div>
   </div>
@@ -1259,6 +1373,7 @@ const ChartBase = Chart;
 // negado = rojo, objetado = naranja, sin avance = grises.
 const ETAPA_COLOR = {
   'Preliminar':                          ['#184f95','#86b6ef'],
+  'Prohijado':                           ['#256abf','#5598e7'],
   'Enviado a subcomisión para analisis': ['#256abf','#5598e7'],
   'Primer Debate':                       ['#3987e5','#2a78d6'],
   'Segundo Debate':                      ['#6da7ec','#1c5cab'],
@@ -1502,6 +1617,7 @@ function switchModalTab(tab){
   document.getElementById('mtab-todos').classList.toggle('active', tab==='todos');
   document.getElementById('mtab-leyes').classList.toggle('active', tab==='leyes');
   document.getElementById('mtab-hist').classList.toggle('active', tab==='hist');
+  document.getElementById('mtab-red').classList.toggle('active', tab==='red');
   const dep = _modalDep;
   if(!dep) return;
   destroyModalChart();
@@ -1533,6 +1649,8 @@ function switchModalTab(tab){
           </div>
         </div>`).join('')
       : '<div class="gs-empty">Sin leyes aprobadas como proponente principal</div>';
+  } else if(tab==='red'){
+    renderAlianzas(dep);
   } else {
     renderModalHist(dep);
   }
@@ -1651,7 +1769,7 @@ function etapaClass(e){
   if(e.includes('Objetado'))return 'etapa-obj';
   if(e.includes('Ejecutivo'))return 'etapa-ejec';
   if(e.includes('Debate'))return 'etapa-deb';
-  if(e==='Preliminar'||e.includes('subcomisión'))return 'etapa-pre';
+  if(e==='Preliminar'||e==='Prohijado'||e.includes('subcomisión'))return 'etapa-pre';
   if(e.includes('Archivado')||e.includes('Retirado')||e.includes('Suspendido'))return 'etapa-arch';
   return 'etapa-otro';
 }
@@ -1675,7 +1793,7 @@ function countUp(el, target, delay=0){
 }
 
 // ── TABS ──────────────────────────────────────────
-const TABS=['general','diputados','proyectos','monitoreo','partidos','proponentes','costos','metodologia'];
+const TABS=['general','novedades','diputados','proyectos','monitoreo','partidos','proponentes','costos','metodologia'];
 
 // Pestañas accesibles: roles ARIA y navegación con flechas, Inicio y Fin (patrón WAI-ARIA)
 (function initTabsA11y(){
@@ -1716,6 +1834,7 @@ function showTab(name){
   if(name==='costos'&&!tabInited.costos){loadDatosRawAndRender();tabInited.costos=true;}
   if(name==='metodologia'){try{renderMetodologia();}catch(e){console.error('Metodología:',e)}}
   if(name==='proyectos'){initProyectos();}
+  if(name==='novedades'){initNovedades();}
 }
 
 // ── ENLACES DIRECTOS ──────────────────────────────
@@ -1897,8 +2016,8 @@ function renderKPI(){
   totals.forEach((c,i)=>countUp(document.getElementById(`kt${i}`),c.v,i*80));
 
   // Partición exhaustiva: 5 grupos que suman exactamente total
-  const ETAPAS_CONOCIDAS=['Preliminar','Enviado a subcomisión para analisis','Primer Debate','Segundo Debate','Tercer Debate','Enviado al Ejecutivo','Objetado por Ejecutivo','Segundo Debate(Objetado)','Tercer Debate(Objetado)','Ley','Archivado','Negado','Retirado por proponente','Suspendido'];
-  const enAnalisis=(D.etapas['Preliminar']||0)+(D.etapas['Enviado a subcomisión para analisis']||0);
+  const ETAPAS_CONOCIDAS=['Preliminar','Prohijado','Enviado a subcomisión para analisis','Primer Debate','Segundo Debate','Tercer Debate','Enviado al Ejecutivo','Objetado por Ejecutivo','Segundo Debate(Objetado)','Tercer Debate(Objetado)','Ley','Archivado','Negado','Retirado por proponente','Suspendido'];
+  const enAnalisis=(D.etapas['Preliminar']||0)+(D.etapas['Prohijado']||0)+(D.etapas['Enviado a subcomisión para analisis']||0);
   const enDebate=(D.etapas['Primer Debate']||0)+(D.etapas['Segundo Debate']||0)+(D.etapas['Tercer Debate']||0);
   const anteEjec=(D.etapas['Enviado al Ejecutivo']||0)+(D.etapas['Objetado por Ejecutivo']||0)+(D.etapas['Segundo Debate(Objetado)']||0)+(D.etapas['Tercer Debate(Objetado)']||0);
   const sinAvance=(D.etapas['Archivado']||0)+(D.etapas['Negado']||0)+(D.etapas['Retirado por proponente']||0)+(D.etapas['Suspendido']||0);
@@ -2025,6 +2144,7 @@ function renderPartidos(){
   };
   mkChart('c-pp-prop',dataProp,v=>` ${v} proyectos`,'#3b82f6');
   mkChart('c-pp-leyes',dataLeyes,v=>` ${v} leyes`,etapaColor('Ley'),true);
+  try{ renderHeatRed(); }catch(e){ console.error('Red de partidos:',e); }
 
   const maxProp=Math.max(...dataProp,1), maxLeyes=Math.max(...dataLeyes,1);
   document.getElementById('partido-cards').innerHTML=entries.map(([l,v])=>{
@@ -2904,6 +3024,8 @@ function exportDiputados(btn, todos=false){
       ['Proyectos propuestos',d=>d.proyectos||0], ['Co-patrocinios',d=>d.co_patrocinios||0], ['Leyes',d=>d.leyes||0],
       ['Autor → ley (%)',d=>d.efectividad_ley?.autor?.tasa], ['Leyes esperadas como autor',d=>d.efectividad_ley?.autor?.esperadas],
       ['Índice de efectividad autor (100 = promedio)',d=>d.efectividad_ley?.autor?.indice], ['Evidencia autor',d=>d.efectividad_ley?.autor?.evidencia],
+      ['Co-firmas con otros partidos (%)',d=>d.transversalidad], ['Esperado por tamaño del partido (%)',d=>d.transversalidad_esperada],
+      ['Firma más con',d=>(d.aliados||[]).slice(0,3).map(a=>`${a.nombre} (${a.proyectos})`).join(' | ')],
       ['Leyes como co-patrocinador',d=>d.leyes_copatrocinio], ['Co-patrocinio → ley (%)',d=>d.efectividad_ley?.copat?.tasa],
       ['Índice de efectividad co-patrocinio (100 = promedio)',d=>d.efectividad_ley?.copat?.indice],
       ['Etapa más frecuente',d=>d.topEtapa], ['Suplente',d=>d.suplente],
@@ -3077,14 +3199,14 @@ async function renderModalHist(dep){
 
 // ── PROYECTOS ─────────────────────────────────────
 const GRUPO_ETAPA={
-  analisis:['Preliminar','Enviado a subcomisión para analisis'],
+  analisis:['Preliminar','Prohijado','Enviado a subcomisión para analisis'],
   debate:['Primer Debate','Segundo Debate','Tercer Debate'],
   ejecutivo:['Enviado al Ejecutivo','Objetado por Ejecutivo','Segundo Debate(Objetado)','Tercer Debate(Objetado)'],
   ley:['Ley'],
   sin:['Archivado','Negado','Retirado por proponente','Suspendido'],
 };
 const PROY_PAGINA=20;
-let PROY=[], proyFiltrados=[], proyMostrados=0, _proyListo=null, _proyT=null;
+let PROY=[], proyFiltrados=[], proyMostrados=0, _proyListo=null, _proyT=null, ETAPAS_H=null;
 const sinTildes=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const fechaOrden=f=>{ const [d,m,y]=String(f||'').split('-'); return y ? +(y+m+d) : 0; };
 
@@ -3096,7 +3218,8 @@ function reSinTildes(w){
 
 function prepararProyectos(){
   if(!_proyListo){
-    _proyListo=ensureDatosRaw().then(()=>{
+    _proyListo=Promise.all([ensureDatosRaw(), ensureEtapas()]).then(([,H])=>{
+      ETAPAS_H=H;
       const autorPorFicha={};
       (D.diputados||[]).forEach(d=>(d.proyectos_detalle||[]).forEach(p=>{ autorPorFicha[p.ficha]=d; }));
       const temas=D.temas||[], tpf=D.temas_por_ficha||{};
@@ -3110,6 +3233,7 @@ function prepararProyectos(){
       document.getElementById('proy-anio').insertAdjacentHTML('beforeend',anios.map(a=>`<option>${esc(a)}</option>`).join(''));
       document.getElementById('proy-tema').insertAdjacentHTML('beforeend',temas.map(t=>`<option>${esc(t)}</option>`).join(''));
       renderTemasChart();
+      renderHeatTemas();
     }).catch(e=>{ _proyListo=null; throw e; });
   }
   return _proyListo;
@@ -3160,7 +3284,8 @@ function masProyectos(){
         <a href="#proyecto=${esc(p.ficha)}" title="Enlace directo a este proyecto" style="color:var(--muted);text-decoration:none">🔗</a></div>
       <div class="proy-titulo">${hl(p.titulo||p.anteproyecto||'Sin título registrado')}</div>
       <div class="proy-meta"><span>Autor principal: ${autor}</span>${temas?`<span>${temas}</span>`:''}
-        ${p._firmantes.length>1?`<details class="proy-firmas"><summary>${p._firmantes.length} firmantes</summary><p>${esc(p._firmantes.join(' · '))}</p></details>`:''}</div>
+        ${p._firmantes.length>1?`<details class="proy-firmas"><summary>${p._firmantes.length} firmantes</summary><p>${esc(p._firmantes.join(' · '))}</p></details>`:''}
+        ${historialEtapasHTML(p.ficha, ETAPAS_H)}</div>
     </article>`;
   }).join(''));
   proyMostrados+=lote.length;
@@ -3201,6 +3326,157 @@ function exportProyectosFiltrados(btn){
       ['Proponentes',p=>p.proponente],
     ], proyFiltrados);
   });
+}
+
+// ── REDES Y TEMAS POR GRUPO (mapas de calor) ──────
+const PARTIDO_CORTO={
+  'Coalición Vamos':'Vamos','Partido Revolucionario Democrático':'PRD','Partido Panameñista':'Panameñista',
+  'Realizando Metas':'RM','Movimiento Otro Camino':'MOCA','Cambio Democrático':'CD','Partido Popular':'PP',
+  'Partido Alianza':'Alianza','Movimiento Liberal Republicano Nacionalista':'Molirena',
+  'Libre Postulación':'Libre post.','Libre Postulación | Seguimos':'Libre post. (Seguimos)',
+};
+const corto=p=>PARTIDO_CORTO[p]||p;
+
+// Celda de mapa de calor: un solo tono (escala secuencial) y el valor escrito, nunca solo color
+function celdaCalor(v, max, titulo, extra=''){
+  if(!v) return `<td class="vacio ${extra}" title="${esc(titulo)}">0</td>`;
+  const pct=Math.round(8+82*v/max);
+  return `<td class="${extra}" title="${esc(titulo)}" style="background:color-mix(in srgb,var(--acc) ${pct}%,transparent);color:${pct>50?'#fff':'var(--text)'}">${fmtNum(v)}%</td>`;
+}
+const leyendaCalor=txt=>`<div class="heat-leyenda"><span>menos</span><span class="barra"></span><span>más</span><span>· ${txt}</span></div>`;
+
+function renderHeatRed(){
+  const red=D.red_partidos||{}, cont=document.getElementById('heat-red');
+  if(!cont) return;
+  const tot=p=>Object.values(red[p]||{}).reduce((a,b)=>a+b,0);
+  const filas=Object.keys(red).filter(p=>tot(p)>=20).sort((a,b)=>tot(b)-tot(a));
+  // Columnas: mismos partidos que las filas (así la diagonal es "su propio partido") y luego el resto
+  const cols=filas.concat([...new Set(Object.values(red).flatMap(Object.keys))].filter(p=>!filas.includes(p)).sort());
+  const pct=(a,b)=>tot(a)?Math.round(100*(red[a]?.[b]||0)/tot(a)):0;
+  const max=Math.max(...filas.flatMap(a=>cols.map(b=>pct(a,b))),1);
+  cont.innerHTML=`<table class="heat"><thead><tr><th scope="col">Autor ↓ · co-firmantes →</th>${cols.map(c=>`<th scope="col" title="${esc(c)}">${esc(corto(c))}</th>`).join('')}</tr></thead>
+    <tbody>${filas.map(a=>`<tr><th scope="row" title="${esc(a)} · ${fmtNum(tot(a))} co-firmas">${esc(corto(a))}</th>${
+      cols.map(b=>celdaCalor(pct(a,b),max,`Proyectos de ${a}: ${pct(a,b)}% de sus co-firmas vienen de ${b} (${red[a]?.[b]||0})`,a===b?'propio':'')).join('')
+    }</tr>`).join('')}</tbody></table>`+leyendaCalor('se muestran los partidos con al menos 20 co-firmas recibidas');
+}
+
+function renderHeatTemas(){
+  const por=document.getElementById('heat-temas-por')?.value||'partido';
+  const datos=por==='partido'?D.temas_por_partido:D.temas_por_provincia, base=por==='partido'?D.por_partido:D.por_provincia;
+  const cont=document.getElementById('heat-temas');
+  if(!cont||!datos) return;
+  const grupos=Object.keys(datos).filter(g=>(base[g]?.proyectos||0)>=5).sort((a,b)=>(base[b]?.proyectos||0)-(base[a]?.proyectos||0));
+  const temas=(D.temas||[]).filter(t=>t!=='Otros');
+  const pct=(g,t)=>Math.round(100*(datos[g]?.[t]||0)/(base[g]?.proyectos||1));
+  const max=Math.max(...temas.flatMap(t=>grupos.map(g=>pct(g,t))),1);
+  cont.innerHTML=`<table class="heat"><thead><tr><th scope="col">Tema</th>${grupos.map(g=>`<th scope="col" title="${esc(g)} · ${base[g]?.proyectos} proyectos">${esc(por==='partido'?corto(g):g)}</th>`).join('')}</tr></thead>
+    <tbody>${temas.map(t=>`<tr><th scope="row">${esc(t)}</th>${grupos.map(g=>celdaCalor(pct(g,t),max,`${g}: ${datos[g]?.[t]||0} de ${base[g]?.proyectos} proyectos (${pct(g,t)}%) sobre ${t}`)).join('')}</tr>`).join('')}</tbody></table>`
+    +leyendaCalor(`se muestran los grupos con al menos 5 proyectos propuestos`);
+}
+
+function renderAlianzas(dep){
+  const al=dep.aliados||[], body=document.getElementById('modal-body');
+  if(!al.length){ body.innerHTML='<div class="gs-empty">Sin co-firmas registradas con otros diputados.</div>'; return; }
+  const max=al[0].proyectos||1;
+  const t=dep.transversalidad, te=dep.transversalidad_esperada, dif=t!=null&&te!=null?t-te:null;
+  const lectura=dif==null?'':dif<=-10?'firma <b>bastante más con su propio partido</b> de lo que se esperaría':dif>=10?'firma <b>más con otros partidos</b> de lo que se esperaría':'firma con otros partidos <b>en la proporción esperada</b>';
+  body.innerHTML=`<p class="hist-note" style="margin-top:12px">Diputados con los que más proyectos ha firmado (como autor o co-patrocinador):</p>
+    <div class="ali-list">${al.map(a=>{
+      const otro=(D.diputados||[]).find(d=>d.nombre===a.nombre);
+      return `<div class="ali-row"><div>${otro?`<a href="#diputado=${esc(depSlug(otro))}">${esc(a.nombre)}</a>`:esc(a.nombre)}<small>${esc(a.partido)}</small></div>
+        <div class="ali-bar"><div style="width:${Math.round(100*a.proyectos/max)}%"></div></div><div style="text-align:right">${a.proyectos}</div></div>`;
+    }).join('')}</div>
+    ${t!=null?`<div class="ali-trans"><b>${fmtNum(t)}%</b> de sus co-firmas son con diputados de otros partidos. Si firmara al azar, por el tamaño de su partido sería cerca de <b>${fmtNum(te)}%</b>: ${lectura}.</div>`:''}`;
+}
+
+// ── NOVEDADES (novedades.json y etapas_historico.json, generados por el scraper) ──
+let _novPromise=null, _etapasPromise=null, NOV=null, novFiltradas=[], novMostradas=0;
+const NOV_PAGINA=40;
+const NOV_TIPOS={
+  ley:{lbl:'Nueva ley',ico:'✔'}, avance:{lbl:'Avanza',ico:'▲'}, nuevo:{lbl:'Proyecto nuevo',ico:'+'},
+  objetado:{lbl:'Objetado',ico:'!'}, detenido:{lbl:'Se detiene',ico:'■'}, cambio:{lbl:'Cambio de etapa',ico:'↔'},
+};
+const cargarJSON=url=>fetch(url).then(r=>r.ok?r.json():null).catch(()=>null);
+const ensureNovedades=()=>_novPromise||(_novPromise=cargarJSON('novedades.json'));
+const ensureEtapas=()=>_etapasPromise||(_etapasPromise=cargarJSON('etapas_historico.json'));
+const diasEntre=(a,b)=>Math.round((new Date(b+'T12:00')-new Date(a+'T12:00'))/864e5);
+const fmtFechaLarga=f=>new Date(f+'T12:00').toLocaleDateString('es-PA',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+
+function autorDeFicha(){
+  if(autorDeFicha.m) return autorDeFicha.m;
+  const m={}; (D.diputados||[]).forEach(d=>(d.proyectos_detalle||[]).forEach(p=>{ m[p.ficha]=d; }));
+  return autorDeFicha.m=m;
+}
+
+async function initNovedades(){
+  if(!D) return;
+  NOV=await ensureNovedades();
+  if(!NOV){ document.getElementById('nov-kpis').innerHTML='<div class="loader" style="grid-column:1/-1">Todavía no hay historial de novedades.</div>'; return; }
+  const fin=NOV.actualizado, ev=NOV.eventos;
+  const ult7=ev.filter(e=>diasEntre(e.fecha,fin)<7);
+  const cuenta=t=>ult7.filter(e=>e.tipo===t).length;
+  document.getElementById('nov-kpis').innerHTML=[
+    {l:'Proyectos nuevos',v:cuenta('nuevo'),c:'var(--st-analisis)'},
+    {l:'Avances de etapa',v:cuenta('avance'),c:'var(--st-debate)'},
+    {l:'Nuevas leyes',v:cuenta('ley'),c:'var(--st-ley)'},
+    {l:'Se detuvieron',v:cuenta('detenido')+cuenta('objetado'),c:'var(--st-sin)'},
+  ].map(k=>`<div class="kpi" style="--kc:${k.c}"><div class="kpi-label">${k.l}</div><div class="kpi-value">${fmtNum(k.v)}</div><div class="kpi-sub">últimos 7 días</div></div>`).join('');
+  const t=NOV.tiempo_ley||{};
+  document.getElementById('nov-tiempo').innerHTML = t.n
+    ? `<div class="nov-tiempo-num">${fmtNum(t.mediana)}<small>días (mediana)</small></div>
+       <p class="monitor-note" style="margin-top:10px">Desde la presentación hasta que figura como ley. La mitad de los casos tardó entre <b>${fmtNum(t.p25)}</b> y <b>${fmtNum(t.p75)}</b> días.
+       Se midieron <b>${t.n}</b> leyes detectadas a menos de ${NOV.precision_dias} días de ocurrir; las demás se excluyen porque no se sabe con precisión cuándo ocurrieron.</p>`
+    : '<p class="monitor-note">Aún no hay suficientes leyes con fecha precisa.</p>';
+  const huecos=(NOV.huecos||[]).map(h=>`del ${fmtFecha(h.desde)} al ${fmtFecha(h.hasta)}`);
+  document.getElementById('nov-nota').innerHTML=`Fechas = día en que el observatorio detectó el cambio (la Asamblea no publica la fecha de cada paso). Historial desde el ${esc(fmtFecha(NOV.desde))}.`
+    +(huecos.length?` No hubo extracciones ${esc(huecos.join(', '))}: los cambios detectados al final de ese periodo pueden haber ocurrido antes.`:'');
+  renderNovedades();
+}
+
+function renderNovedades(){
+  if(!NOV) return;
+  const dias=+document.getElementById('nov-periodo').value, tipo=document.getElementById('nov-tipo').value;
+  novFiltradas=NOV.eventos.filter(e=>(!dias||diasEntre(e.fecha,NOV.actualizado)<dias)&&(!tipo||e.tipo===tipo));
+  novMostradas=0;
+  document.getElementById('nov-lista').innerHTML = novFiltradas.length ? '' : '<div class="gs-empty">No hay novedades de este tipo en el periodo elegido.</div>';
+  masNovedades();
+}
+
+function masNovedades(){
+  const autores=autorDeFicha(), lista=document.getElementById('nov-lista');
+  const lote=novFiltradas.slice(novMostradas, novMostradas+NOV_PAGINA);
+  let ultima=novMostradas ? novFiltradas[novMostradas-1].fecha : null, html='';
+  lote.forEach(e=>{
+    if(e.fecha!==ultima){
+      const n=novFiltradas.filter(x=>x.fecha===e.fecha).length;
+      html+=`<div class="nov-fecha">${esc(fmtFechaLarga(e.fecha))} <small>${n} novedad${n===1?'':'es'}</small></div>`;
+      ultima=e.fecha;
+    }
+    const t=NOV_TIPOS[e.tipo]||NOV_TIPOS.cambio, a=autores[e.ficha];
+    const paso = e.de
+      ? `<span class="badge ${etapaClass(e.de)}">${esc(e.de)}</span><span class="nov-flecha">→</span><span class="badge ${etapaClass(e.a)}">${esc(e.a)}</span>`
+      : `<span class="badge ${etapaClass(e.a)}">${esc(e.a)}</span>`;
+    html+=`<article class="nov-item t-${e.tipo}">
+      <div class="nov-ico" aria-hidden="true">${t.ico}</div>
+      <div><div class="nov-tipo">${t.lbl}${e.tipo==='avance'?' a '+esc(e.a):''}</div>
+        <div class="nov-tit"><a href="#proyecto=${esc(e.ficha)}">${esc(e.titulo||'Sin título registrado')}</a></div>
+        <div class="nov-meta"><span>Ficha ${esc(e.ficha)}</span>${paso}${a?`<span>Autor: <a href="#diputado=${esc(depSlug(a))}">${esc(a.nombre)}</a></span>`:''}</div></div>
+    </article>`;
+  });
+  lista.insertAdjacentHTML('beforeend',html);
+  novMostradas+=lote.length;
+  const btn=document.getElementById('nov-mas');
+  btn.style.display=novMostradas<novFiltradas.length?'':'none';
+  btn.textContent=`Mostrar más (${fmtNum(novFiltradas.length-novMostradas)} restantes)`;
+}
+
+// Línea de tiempo de etapas de un proyecto (en la pestaña Proyectos)
+function historialEtapasHTML(ficha, H){
+  const h=(H?.proyectos?.[ficha]||[]).filter(x=>x[1]);
+  if(h.length<2) return '';
+  return `<details class="proy-hist proy-firmas"><summary>Historial de etapas (${h.length})</summary><ol>${
+    h.map(([f,e],i)=>`<li><span class="badge ${etapaClass(e)}">${esc(e)}</span>${esc(fmtFecha(f))}${i===0&&f===H.desde?' o antes':''}</li>`).join('')
+  }</ol></details>`;
 }
 
 // ── COMPARTIR FICHA ───────────────────────────────
@@ -3260,6 +3536,7 @@ async function renderComparar(){
       ['Asistencia pleno',d=>Number(d.asistencia_pleno),d=>fmtScore(d.asistencia_pleno)+' / 5','max'],
       ['Asistencia comisiones',d=>Number(d.asistencia_comisiones),d=>fmtScore(d.asistencia_comisiones)+' / 5','max'],
       ['Calificación Espacio Cívico',d=>Number(d.calificacion),d=>fmtScore(d.calificacion)+' / 5','max'],
+      ['Co-firmas con otros partidos',null,d=>d.transversalidad==null?'—':`${fmtNum(d.transversalidad)}% <span class="ief-sub">(esperado ${fmtNum(d.transversalidad_esperada)}%)</span>`],
       ['Temas que más propone',null,d=>esc(Object.keys(d.temas_autor||{}).slice(0,3).join(', ')||'—')],
       ['Comisiones',d=>d.comisiones_cantidad||0,d=>fmtNum(d.comisiones_cantidad),null],
       ['Planilla acumulada',d=>Number(d.planilla_valor),d=>fmtMoney(d.planilla_valor),'min'],

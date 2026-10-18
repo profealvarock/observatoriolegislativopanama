@@ -10,6 +10,7 @@ Desplegado en Netlify: [https://observatoriolegistalivopa.netlify.app](https://o
 | Pestaña | Contenido |
 |---------|-----------|
 | **General** | Timeline de actividad por mes, donut de etapas, embudo legislativo, top 20 diputados, mapa por provincia |
+| **Novedades** | Qué cambió: proyectos nuevos, avances de etapa, nuevas leyes y proyectos detenidos, por fecha; tiempo hasta ley; feed RSS |
 | **Diputados** | Tabla y tarjetas con producción por diputado (filtrable por partido, provincia y mes) |
 | **Proyectos** | Buscador de los proyectos de ley (título, ficha o proponente), filtros por etapa, año y tema, y gráfico de proyectos por tema |
 | **Monitoreo** | Planilla, asistencia a pleno y comisiones, calificación de desempeño |
@@ -50,7 +51,11 @@ observatoriolegislativopanama/
 ├── diputados.json          # Perfil y foto de los 71 diputados (auto-generado)
 ├── metricas_diputados.json # Planilla, asistencia, calificación (auto-generado)
 ├── historico.json          # Una foto diaria por diputado para graficar tendencias (auto-generado)
-├── diputado/<slug>/        # Página para compartir de cada diputado (auto-generado)
+├── etapas_historico.json   # Etapa de cada proyecto y fecha en que se detectó cada cambio (auto-generado)
+├── novedades.json          # Eventos (nuevo, avance, ley…) y tiempo hasta ley (auto-generado)
+├── novedades.xml           # Feed RSS de novedades (auto-generado)
+├── diputado/<slug>/        # Página para compartir de cada diputado + og.png (auto-generado)
+├── fonts/                  # Syne y DM Mono (licencia OFL) para dibujar las imágenes og.png
 ├── sitemap.xml             # Mapa del sitio para buscadores (auto-generado)
 ├── robots.txt
 ├── panama-map.svg          # Mapa base de Panamá
@@ -135,6 +140,17 @@ La Asamblea registra a los proponentes con su nombre completo (`H.D JORGE ISAAC 
 **Comisiones de cada diputado.** Espacio Cívico las publica en una sola línea separada por `|`; el scraper las separa y quita los emojis, así `comisiones_cantidad` refleja el número real.
 
 En `resumen.json`, cada diputado incluye `proyectos` (como proponente principal), `co_patrocinios`, `proyectos_suplente` (cuántos de sus proyectos firmó su suplente) y `participaciones` (fichas en que participó con cualquier rol). La pestaña de costos usa esas `participaciones`, de modo que todas las pestañas usan la misma relación.
+
+## 🆕 Novedades e historial de etapas
+- `actualizar_etapas` registra en `etapas_historico.json` cada cambio de etapa con la **fecha en que se detectó** (la Asamblea no publica la fecha de cada paso). Se reconstruyó desde las versiones de `datos.json` en git (desde el 11-mar-2026; sin extracciones entre el 11-mar y el 25-may).
+- `generar_novedades` clasifica los eventos (nuevo, avance, ley, objetado, detenido, cambio) según el orden real del trámite (`ORDEN_TRAMITE`: Preliminar → Prohijado → Primer debate → subcomisión → Segundo y Tercer debate → Ejecutivo → Ley), y calcula el **tiempo hasta ley** solo con leyes detectadas a ≤ 7 días de ocurrir.
+- `generar_rss` publica las últimas 60 novedades en `novedades.xml`.
+
+## 🤝 Redes de co-patrocinio
+En `resumen.json`: `red_partidos` (co-firmas que recibe cada partido de cada otro), `temas_por_partido`, `temas_por_provincia` y, por diputado, `aliados` (con quién más firma) y `transversalidad` (% de co-firmas con otros partidos) junto a `transversalidad_esperada` (lo esperable si firmara al azar, según el tamaño de su partido).
+
+## 🖼️ Imágenes para compartir
+`_imagen_diputado` dibuja con Pillow `diputado/<slug>/og.png` (1200×630) con nombre, partido y cifras. No lleva fecha ni foto, y solo se reescribe si su contenido cambia, para no llenar el repositorio.
 
 ## 🏷️ Temas
 `clasificar_temas` (en `scraper.py`) asigna a cada proyecto uno o más de 15 temas según palabras clave del título (lista `TEMAS`); si no coincide ninguno queda en "Otros" (~18 %, sobre todo títulos tipo "Que modifica la Ley 15 de 1995"). En `resumen.json`: `temas` (nombres), `temas_por_ficha` (índices por proyecto), `por_tema` (proyectos y leyes) y `temas_autor` en cada diputado. Para mejorar la clasificación basta con agregar palabras a `TEMAS`.
