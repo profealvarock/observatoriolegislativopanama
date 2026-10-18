@@ -23,6 +23,9 @@ Además:
 - **Datos abiertos**: descargas en CSV (proyectos, diputados, monitoreo, costos e histórico) desde la pestaña General y junto a cada tabla.
 - **Modo claro/oscuro** y diseño adaptado a celular y tablet.
 
+## ✍️ Autoría
+Creado por **@profealvarock** — [TikTok](https://www.tiktok.com/@profealvarock) · [LinkedIn](https://www.linkedin.com/in/profealvarock) · [Instagram](https://www.instagram.com/profealvarock) · [Facebook](https://www.facebook.com/profealvarock) · [X](https://x.com/profealvarock) · [Bluesky](https://bsky.app/profile/profealvarock.bsky.social) · [YouTube](https://www.youtube.com/@profealvarock)
+
 ## 🗂️ Estructura
 ```
 observatoriolegislativopanama/
@@ -104,7 +107,14 @@ La Asamblea registra a los proponentes con su nombre completo (`H.D JORGE ISAAC 
 - Los **suplentes** se asignan al diputado principal al que suplen; a los firmantes `H.D.S` se les busca primero entre los suplentes.
 - Un diputado cuenta **una sola vez por proyecto**, aunque firmen él y su suplente.
 - Las coincidencias ambiguas no se asignan. Los casos que no se resuelven solos se agregan a mano en `ALIAS_PROPONENTES`.
-- Las firmas sin diputado asociado quedan listadas en `proponentes_sin_match` dentro de `resumen.json`.
+- Quien firma como `H.D.S` siempre cuenta como suplente, aunque su nombre se parezca al del principal (p. ej. *Benisio Enisio Robinson*, suplente de Benicio Robinson).
+- Las firmas sin diputado asociado quedan listadas en `proponentes_sin_match` dentro de `resumen.json`. No se asignan por intuición: se agregan a `ALIAS_PROPONENTES` solo cuando hay certeza.
+
+**Proponentes que no son diputados.** El campo de proponentes viene separado por comas, pero varias comisiones también llevan comas en su nombre (*Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales*). `separar_proponentes` vuelve a unir esos trozos usando la lista oficial `COMISIONES_PERMANENTES`, y cada comisión se muestra con su nombre oficial. Los nombres de ciudadanos se unifican (mayúsculas y tildes) para no contar dos veces a la misma persona.
+
+**Partidos y provincias.** Cada proyecto se atribuye **una sola vez**, al partido y la provincia de su **autor principal** (primer firmante), igual que en la tabla de diputados; por eso los totales por partido suman lo mismo que los proyectos de diputados. Aparte, `participaciones` cuenta los proyectos en que firmó al menos un diputado del partido o provincia (como autor o co-patrocinador).
+
+**Comisiones de cada diputado.** Espacio Cívico las publica en una sola línea separada por `|`; el scraper las separa y quita los emojis, así `comisiones_cantidad` refleja el número real.
 
 En `resumen.json`, cada diputado incluye `proyectos` (como proponente principal), `co_patrocinios`, `proyectos_suplente` (cuántos de sus proyectos firmó su suplente) y `participaciones` (fichas en que participó con cualquier rol). La pestaña de costos usa esas `participaciones`, de modo que todas las pestañas usan la misma relación.
 

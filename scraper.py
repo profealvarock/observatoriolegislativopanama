@@ -147,6 +147,78 @@ def clasificar_proponente(nombre):
         return 'comision'
     return 'ciudadano'
 
+# Comisiones permanentes con su nombre oficial (como las publica Espacio Cívico). Varias llevan
+# comas en el nombre, y la Asamblea separa a los proponentes también con comas: sin esta lista,
+# "CREDENCIALES, REGLAMENTO, ETICA..." se partía en tres proponentes distintos.
+COMISIONES_PERMANENTES = [
+    'Credenciales, Reglamento, Ética Parlamentaria y Asuntos Judiciales',
+    'Gobierno, Justicia y Asuntos Constitucionales',
+    'Presupuesto',
+    'Economía y Finanzas',
+    'Comercio y Asuntos Económicos',
+    'Comercio, Industrias y Asuntos Económicos',
+    'Relaciones Exteriores',
+    'Educación, Cultura y Deporte',
+    'Educación, Cultura y Deportes',
+    'Trabajo, Salud y Desarrollo Social',
+    'Infraestructura Pública y Asuntos del Canal',
+    'Comunicación y Transporte',
+    'Asuntos Agropecuarios',
+    'Asuntos Indígenas',
+    'Población, Ambiente y Desarrollo',
+    'Mujer, la Niñez, la Juventud y la Familia',
+    'Asuntos Municipales',
+]
+
+def _clave_comision(s):
+    """'COMISION DE LA EDUCACION, CULTURA Y DEPORTES' → 'EDUCACION CULTURA Y DEPORTES'."""
+    n = normalizar(s)
+    n = re.sub(r'^COMISION\s+(PERMANENTE\s+)?(DE\s+)?(LA\s+|LAS\s+|LOS\s+|EL\s+)?', '', n)
+    n = re.sub(r'^DE LA\s+', '', n)
+    return re.sub(r'[^A-Z ]', ' ', n).split()
+
+_COMISIONES_CLAVE = [(_clave_comision(c), c) for c in COMISIONES_PERMANENTES]
+
+def nombre_comision(s):
+    """Nombre oficial de la comisión, si `s` corresponde a una; si no, None."""
+    k = _clave_comision(s)
+    for clave, oficial in _COMISIONES_CLAVE:
+        if k == clave:
+            return 'Comisión de ' + oficial
+    return None
+
+def _prefijo_de_comision(s):
+    k = _clave_comision(s)
+    return bool(k) and any(clave[:len(k)] == k for clave, _ in _COMISIONES_CLAVE)
+
+def separar_proponentes(texto):
+    """
+    Divide el campo 'proponente' por comas, pero vuelve a unir los trozos que forman el
+    nombre de una comisión (que también contiene comas).
+    """
+    partes = [p.strip() for p in (texto or '').split(',') if p.strip()]
+    res = []
+    for p in partes:
+        if (res and not p.upper().startswith('H.D') and not res[-1].upper().startswith('H.D')
+                and _prefijo_de_comision(res[-1]) and _prefijo_de_comision(res[-1] + ', ' + p)):
+            res[-1] = res[-1] + ', ' + p
+        else:
+            res.append(p)
+    return res
+
+_PARTICULAS = {'de', 'del', 'la', 'las', 'los', 'y'}
+
+def limpiar_nombre_otro(nombre, tipo):
+    """Nombre uniforme para proponentes que no son diputados."""
+    if tipo == 'comision':
+        return nombre_comision(nombre) or nombre.strip().upper()
+    n = re.sub(r'\s+', ' ', nombre).strip()
+    if tipo == 'ciudadano':
+        # "LORENA RÍOS CASTRO" y "Lorena Ríos Castro" → "Lorena Ríos Castro"
+        palabras = n.lower().split()
+        return ' '.join(w if (i and w in _PARTICULAS) else w.capitalize() for i, w in enumerate(palabras))
+    return n.upper()
+
 
 # ─────────────────────────────────────────────
 # SCRAPER 1: PROYECTOS LEGISLATIVOS
@@ -329,13 +401,26 @@ def slug_from_href(href):
     return (href or '').rstrip('/').split('/')[-1]
 
 def parse_commissions(raw):
-    raw = (raw or '').strip()
-    quoted = re.findall(r'"([^"]+)"', raw)
-    if quoted:
-        return [q.strip() for q in quoted if q.strip()]
-    if not raw or raw == '-':
-        return []
-    return [raw]
+    """
+    Espacio Cívico publica las comisiones en una sola línea separadas por " | " y con un emoji
+    delante ("🌎 Relaciones Exteriores | 💰 Presupuesto"). Devuelve la lista de nombres limpios.
+    """
+    if isinstance(raw, list):
+        partes = [x for item in raw for x in str(item).split('|')]
+    else:
+        raw = (raw or '').strip()
+        quoted = re.findall(r'"([^"]+)"', raw)
+        partes = quoted if quoted else ([] if raw in ('', '-') else raw.split('|'))
+    res = []
+    for p in partes:
+        # Quitar emojis y símbolos al inicio (cualquier cosa antes de la primera letra)
+        p = re.sub(r'^[^A-Za-zÁÉÍÓÚÑáéíóúñ]+', '', p).strip()
+        if p and p not in res:
+            res.append(p)
+    return res
+
+def limpiar_partido(p):
+    return re.sub(r'\s*\|\s*', ' | ', (p or '').strip())
 
 def scrape_metricas_diputados(page):
     print(f"\n[3/3] Extrayendo monitoreo de {URL_MONITOR}")
@@ -446,11 +531,13 @@ def _prod_vacio():
             'leyes_detalle':[],'proyectos_detalle':[],'participaciones':[]}
 
 def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
+    dips = [{**d, 'partido': limpiar_partido(d.get('partido'))} for d in dips]
     emp = EmparejadorDiputados(dips)
 
     prod  = defaultdict(_prod_vacio)
-    otros = defaultdict(lambda: {'tipo':'','proyectos':0,'leyes':0})
+    otros = {}                          # clave normalizada → {'nombre','tipo','proyectos','leyes'}
     firmantes = {}                      # ficha → diputados principales que participaron
+    autor = {}                          # ficha → diputado autor principal (primer firmante), si lo hay
     sin_match = defaultdict(int)        # firma "H.D" sin diputado → nº de firmas
     meses, etapas = {}, {}
 
@@ -464,22 +551,28 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
         etapas[r['etapa']] = etapas.get(r['etapa'], 0) + 1
 
         es_ley = r['etapa'] == 'Ley'
-        proponentes = [p.strip() for p in r['proponente'].split(',') if p.strip()]
+        proponentes = separar_proponentes(r['proponente'])
 
         vistos = []  # un diputado cuenta una sola vez por proyecto (p. ej. si firman él y su suplente)
         for i, p in enumerate(proponentes):
             tipo = clasificar_proponente(p)
+            if tipo != 'diputado' and nombre_comision(p):
+                tipo = 'comision'
             if tipo == 'diputado':
                 m = emp.buscar(p)
                 if not m:
                     sin_match[p] += 1
                     continue
                 dip, via_suplente = m
+                # Quien firma "H.D.S" es suplente aunque su nombre se parezca al del principal
+                # (p. ej. BENISIO ENISIO ROBINSON, suplente de Benicio Robinson)
+                via_suplente = via_suplente or p.strip().upper().startswith('H.D.S')
                 key = dip['nombre']
                 if key in vistos: continue
                 vistos.append(key)
                 prod[key]['participaciones'].append(r['ficha'])
                 if i == 0:  # proponente principal
+                    autor[r['ficha']] = dip
                     prod[key]['proyectos'] += 1
                     if via_suplente: prod[key]['proyectos_suplente'] += 1
                     titulo = r['titulo'] or r['anteproyecto'] or r['proyecto']
@@ -501,9 +594,10 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
                 else:  # co-patrocinador
                     prod[key]['co_patrocinios'] += 1
             elif i == 0:  # ministerio, comisión o ciudadano como proponente principal
-                otros[p]['tipo']      = tipo
-                otros[p]['proyectos'] += 1
-                if es_ley: otros[p]['leyes'] += 1
+                nombre = limpiar_nombre_otro(p, tipo)
+                o = otros.setdefault(normalizar(nombre), {'nombre': nombre, 'tipo': tipo, 'proyectos': 0, 'leyes': 0})
+                o['proyectos'] += 1
+                if es_ley: o['leyes'] += 1
         firmantes[r['ficha']] = [emp.por_nombre[k] for k in vistos]
 
     # Enriquecer diputados
@@ -511,14 +605,15 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
     for d in dips:
         p = prod.get(d['nombre']) or _prod_vacio()
         m = (metricas or {}).get(d.get('slug')) or (metricas or {}).get(slug_from_href(d.get('perfil', ''))) or {}
-        diputados_enriq.append({**d, **p, **{k:v for k,v in m.items() if k not in ('nombre','partido_monitoreo')}})
+        m = {k:v for k,v in m.items() if k not in ('nombre','partido_monitoreo')}
+        if 'comisiones' in m:   # también corrige datos guardados con el formato anterior
+            m['comisiones'] = parse_commissions(m['comisiones'])
+            m['comisiones_cantidad'] = len(m['comisiones'])
+        diputados_enriq.append({**d, **p, **m})
     diputados_enriq.sort(key=lambda x: x['proyectos'], reverse=True)
 
     # Otros proponentes ordenados por proyectos desc
-    otros_proponentes = [
-        {'nombre': k, 'tipo': v['tipo'], 'proyectos': v['proyectos'], 'leyes': v['leyes']}
-        for k, v in sorted(otros.items(), key=lambda x: -x[1]['proyectos'])
-    ]
+    otros_proponentes = sorted(otros.values(), key=lambda v: (-v['proyectos'], v['nombre']))
 
     # Etapa groups for map filter aggregations
     ETAPA_GROUPS = {
@@ -536,41 +631,48 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
             if etapa in vals: return g
         return 'sinAvance'
 
-    # Por partido y provincia: cada proyecto cuenta UNA vez por partido
-    # aunque lo firmen 19 diputados del mismo partido
-    por_partido  = defaultdict(lambda: {'diputados':0,'proyectos':set(),'leyes':set()})
-    por_provincia = defaultdict(lambda: {'diputados':0,'proyectos':set(),'leyes':set()})
-    # por_provincia_filtros[prov][year_key][etapa_group] = {fichas}
+    # Por partido y provincia, cada proyecto se atribuye UNA vez: al partido (y provincia) de su
+    # autor principal, igual que en la tabla de diputados, de modo que los totales cuadran con
+    # el número de proyectos. Aparte se cuenta 'participaciones': proyectos en los que firmó al
+    # menos un diputado del partido/provincia (como autor o co-patrocinador).
+    vacio = lambda: {'diputados':0,'proyectos':set(),'leyes':set(),'participaciones':set(),'leyes_participacion':set()}
+    por_partido, por_provincia = defaultdict(vacio), defaultdict(vacio)
+    # por_provincia_filtros[prov][year_key][etapa_group] = {fichas} (por autor principal)
     pv_filtros = defaultdict(lambda: {
         y: {eg: set() for eg in list(ETAPA_GROUPS.keys())+['all']} for y in YEARS+['all']
     })
 
     for r in datos:
-        partidos_proy  = {d['partido'] for d in firmantes.get(r['ficha'], [])}
-        provincias_proy = {d['provincia'] for d in firmantes.get(r['ficha'], [])}
-        for partido in partidos_proy:
-            por_partido[partido]['proyectos'].add(r['ficha'])
-            if r['etapa'] == 'Ley': por_partido[partido]['leyes'].add(r['ficha'])
-        yr = (r['fecha_presentacion'].split('-') or ['','',''])
+        ficha, es_ley = r['ficha'], r['etapa'] == 'Ley'
+        for d in firmantes.get(ficha, []):
+            for agg, k in ((por_partido, d['partido']), (por_provincia, d['provincia'])):
+                agg[k]['participaciones'].add(ficha)
+                if es_ley: agg[k]['leyes_participacion'].add(ficha)
+        a = autor.get(ficha)
+        if not a:
+            continue
+        for agg, k in ((por_partido, a['partido']), (por_provincia, a['provincia'])):
+            agg[k]['proyectos'].add(ficha)
+            if es_ley: agg[k]['leyes'].add(ficha)
+        yr = r['fecha_presentacion'].split('-')
         yr = yr[2] if len(yr) == 3 else ''
         eg = get_etapa_group(r['etapa'])
-        for prov in provincias_proy:
-            por_provincia[prov]['proyectos'].add(r['ficha'])
-            if r['etapa'] == 'Ley': por_provincia[prov]['leyes'].add(r['ficha'])
-            pv_filtros[prov]['all']['all'].add(r['ficha'])
-            pv_filtros[prov]['all'][eg].add(r['ficha'])
-            if yr in YEARS:
-                pv_filtros[prov][yr]['all'].add(r['ficha'])
-                pv_filtros[prov][yr][eg].add(r['ficha'])
+        prov = a['provincia']
+        pv_filtros[prov]['all']['all'].add(ficha)
+        pv_filtros[prov]['all'][eg].add(ficha)
+        if yr in YEARS:
+            pv_filtros[prov][yr]['all'].add(ficha)
+            pv_filtros[prov][yr][eg].add(ficha)
 
     for d in dips:
         por_partido[d['partido']]['diputados'] += 1
         por_provincia[d['provincia']]['diputados'] += 1
 
-    pp_final = {k: {'diputados':v['diputados'],'proyectos':len(v['proyectos']),'leyes':len(v['leyes'])}
-                for k,v in sorted(por_partido.items(), key=lambda x:-len(x[1]['proyectos']))}
-    pv_final = {k: {'diputados':v['diputados'],'proyectos':len(v['proyectos']),'leyes':len(v['leyes'])}
-                for k,v in sorted(por_provincia.items(), key=lambda x:-len(x[1]['proyectos']))}
+    def _final(agg):
+        return {k: {'diputados': v['diputados'], 'proyectos': len(v['proyectos']), 'leyes': len(v['leyes']),
+                    'participaciones': len(v['participaciones']), 'leyes_participacion': len(v['leyes_participacion'])}
+                for k, v in sorted(agg.items(), key=lambda x: (-len(x[1]['proyectos']), x[0]))}
+    pp_final, pv_final = _final(por_partido), _final(por_provincia)
     pv_filtros_final = {
         prov: {yr: {eg: len(s) for eg, s in egs.items()} for yr, egs in yrs.items()}
         for prov, yrs in pv_filtros.items()
