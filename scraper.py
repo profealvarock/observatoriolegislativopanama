@@ -12,18 +12,22 @@ INSTALACIÓN:
     playwright install chromium
 
 EJECUCIÓN:
-    python scraper.py
+    python scraper.py                 # scraping completo
+    python scraper.py --solo-resumen  # regenera resumen.json desde los JSON guardados
 =============================================================
 """
 
-import json, re, time, unicodedata
+import json, re, sys, time, unicodedata
 from collections import defaultdict
 from datetime import datetime
-from playwright.sync_api import sync_playwright
+from difflib import SequenceMatcher
 
 URL_LEG  = "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo"
 URL_DIPS = "https://espaciocivico.org/diputados"
 URL_MONITOR = "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc"
+
+# Fuentes que en esta ejecución usaron datos guardados en vez de datos frescos
+RESPALDOS = []
 
 
 # ─────────────────────────────────────────────
@@ -36,21 +40,101 @@ def normalizar(s):
     s = re.sub(r'^H\.D\.?S?\s+', '', s)
     return re.sub(r'\s+', ' ', s).strip()
 
-def encontrar_diputado(pn, dip_norm):
-    for dn, d in dip_norm:
-        if dn == pn: return d
-    for dn, d in dip_norm:
-        ap = ' '.join(dn.split()[-2:])
-        if len(ap) > 4 and ap in pn: return d
-    for dn, d in dip_norm:
-        w = dn.split(); wp = pn.split()
-        if len(w) >= 2 and w[-1] in wp and w[0] in wp: return d
-    return None
+_STOPWORDS = {'DE', 'DEL', 'LA', 'LAS', 'LOS', 'Y', 'JR', 'SR'}
 
-_INSTITUCIONES = ('MINISTERIO', 'PROCURADURIA', 'ORGANO EJECUTIVO',
-                  'PODER EJECUTIVO', 'PRESIDENCIA DE LA REPUBLICA',
-                  'ASAMBLEA NACIONAL', 'TRIBUNAL', 'CONTRALORIA',
-                  'DEFENSORIA', 'AUTORIDAD', 'INSTITUTO', 'JUNTA')
+def tokens_nombre(s):
+    s = normalizar(s)
+    s = re.sub(r'["“”\'‘’][^"“”\'‘’]*["“”\'‘’]', ' ', s)   # apodos: Marcos "Lobo" Rangel, Bolivar 'Bolito' Escala
+    s = re.sub(r'[^A-Z ]', ' ', s)
+    return [w for w in s.split() if len(w) > 1 and w not in _STOPWORDS]
+
+def _token_parecido(a, b):
+    # Tolera variaciones de ortografía (JHONATAN/JHONATHAN, NIXON/NIXSON)
+    if a == b: return True
+    return (a[0] == b[0] and min(len(a), len(b)) >= 4
+            and SequenceMatcher(None, a, b).ratio() >= 0.85)
+
+def _cubre(cand, prop, exacto):
+    """True si TODAS las palabras del nombre corto `cand` están en `prop` (palabras completas)."""
+    libres = list(prop)
+    for w in cand:
+        hit = next((p for p in libres if (p == w if exacto else _token_parecido(w, p))), None)
+        if hit is None: return False
+        libres.remove(hit)
+    return True
+
+# Proponentes que ningún criterio automático resuelve: nombre normalizado → diputado principal.
+ALIAS_PROPONENTES = {
+    'CARLOS ISAEL HO SOLIS': 'Walkiria Chandler',   # suplente "Charlie Ho"
+}
+
+class EmparejadorDiputados:
+    """
+    Relaciona los nombres de proponentes de la Asamblea ("H.D JORGE ISAAC BLOISE IGLESIAS",
+    "H.D.S ...") con los diputados de espaciocivico.org. Los suplentes se asignan a su principal.
+    Compara palabras completas, no fragmentos de texto, y descarta coincidencias ambiguas.
+    """
+    def __init__(self, dips):
+        self.por_nombre = {d['nombre']: d for d in dips}
+        self.principales = [(normalizar(d['nombre']), tokens_nombre(d['nombre']), d) for d in dips]
+        self.suplentes = [(normalizar(d['suplente']), tokens_nombre(d['suplente']), d)
+                          for d in dips if (d.get('suplente') or '').strip()]
+        self.cache, self.ambiguos = {}, {}
+
+    def _etapa(self, pn, ptoks, lista, exacto):
+        hits = {}
+        for n, toks, d in lista:
+            # Un nombre de una sola palabra (p. ej. suplente "Benchiman") solo vale si es exacto y largo
+            valido = len(toks) >= 2 or (exacto and len(toks) == 1 and len(toks[0]) >= 6)
+            if valido and _cubre(toks, ptoks, exacto):
+                hits[d['nombre']] = max(hits.get(d['nombre'], 0), len(toks))
+        if not hits: return None
+        mejor = max(hits.values())
+        top = [k for k, v in hits.items() if v == mejor]
+        if len(top) > 1:
+            self.ambiguos[pn] = top
+            return None
+        return self.por_nombre[top[0]]
+
+    def buscar(self, raw):
+        """Devuelve (diputado_principal, via_suplente) o None."""
+        raw = raw.strip()
+        if raw in self.cache: return self.cache[raw]
+        pn, ptoks = normalizar(raw), tokens_nombre(raw)
+        es_suplente = raw.upper().startswith('H.D.S')
+        res = None
+        if pn in ALIAS_PROPONENTES and ALIAS_PROPONENTES[pn] in self.por_nombre:
+            res = (self.por_nombre[ALIAS_PROPONENTES[pn]], True)
+        if not res:
+            for n, _, d in self.principales:
+                if n == pn: res = (d, False); break
+        if not res:
+            for n, _, d in self.suplentes:
+                if n == pn: res = (d, True); break
+        if not res:
+            # A los firmantes "H.D.S" se les busca primero entre suplentes
+            orden = [(self.principales, False), (self.suplentes, True)]
+            if es_suplente: orden.reverse()
+            for exacto in (True, False):
+                for lista, via in orden:
+                    d = self._etapa(pn, ptoks, lista, exacto)
+                    if d: res = (d, via); break
+                if res: break
+        self.cache[raw] = res
+        return res
+
+_INSTITUCIONES = ('MINISTERIO', 'PROCURADURIA', 'ORGANO EJECUTIVO', 'ORGANO JUDICIAL',
+                  'PODER EJECUTIVO', 'PRESIDENCIA DE LA REPUBLICA', 'VICEPRESIDENCIA',
+                  'TRIBUNAL', 'CONTRALORIA', 'CORTE SUPREMA',
+                  'DEFENSORIA', 'AUTORIDAD', 'INSTITUTO', 'JUNTA', 'SECRETARIA',
+                  'CAJA DE SEGURO SOCIAL', 'UNIVERSIDAD', 'BANCO', 'ALCALDIA', 'MUNICIPIO')
+
+# Comisiones permanentes de la Asamblea (aparecen como proponente sin la palabra "COMISION")
+_COMISIONES = ('COMISION', 'ASAMBLEA NACIONAL', 'CREDENCIALES', 'GOBIERNO, JUSTICIA',
+               'PRESUPUESTO', 'ECONOMIA Y FINANZAS', 'COMERCIO', 'RELACIONES EXTERIORES',
+               'EDUCACION', 'TRABAJO', 'SALUD', 'INFRAESTRUCTURA', 'COMUNICACION Y TRANSPORTE',
+               'ASUNTOS AGROPECUARIOS', 'ASUNTOS INDIGENAS', 'AMBIENTE', 'ETICA', 'MUJER',
+               'ASUNTOS MUNICIPALES')
 
 def clasificar_proponente(nombre):
     # Chequear el prefijo H.D antes de normalizar (normalizar lo elimina)
@@ -59,6 +143,8 @@ def clasificar_proponente(nombre):
     n = normalizar(nombre)
     if any(n.startswith(k) for k in _INSTITUCIONES):
         return 'ejecutivo'
+    if any(n.startswith(k) for k in _COMISIONES):
+        return 'comision'
     return 'ciudadano'
 
 
@@ -66,7 +152,7 @@ def clasificar_proponente(nombre):
 # SCRAPER 1: PROYECTOS LEGISLATIVOS
 # ─────────────────────────────────────────────
 def extraer_filas_leg(page):
-    return page.evaluate("""
+    return page.evaluate(r"""
         () => {
             const filas = [];
             const tabla = document.querySelector('table');
@@ -221,6 +307,7 @@ def scrape_diputados(page):
             with open('diputados.json', encoding='utf-8') as f:
                 raw = json.load(f)
             todos = raw if isinstance(raw, list) else raw.get('diputados', [])
+            RESPALDOS.append('diputados')
             print(f"  Usando diputados.json guardado: {len(todos)}")
         except Exception as e:
             print(f"  No se pudo cargar diputados.json: {e}")
@@ -343,6 +430,7 @@ def _fallback_metricas():
             raw = json.load(f)
         lista = raw.get('diputados', [])
         metricas = {slug_from_href(d.get('perfil_monitoreo', '')): d for d in lista if d.get('nombre')}
+        RESPALDOS.append('metricas')
         print(f"  Usando metricas_diputados.json guardado: {len(metricas)} registros")
         return metricas
     except Exception as e:
@@ -353,11 +441,17 @@ def _fallback_metricas():
 # ─────────────────────────────────────────────
 # GENERAR RESUMEN.JSON
 # ─────────────────────────────────────────────
-def generar_resumen(datos, dips, ts, metricas=None):
-    dip_norm = [(normalizar(d['nombre']), d) for d in dips]
+def _prod_vacio():
+    return {'proyectos':0,'leyes':0,'co_patrocinios':0,'proyectos_suplente':0,'etapas':{},
+            'leyes_detalle':[],'proyectos_detalle':[],'participaciones':[]}
 
-    prod  = defaultdict(lambda: {'proyectos':0,'leyes':0,'co_patrocinios':0,'etapas':{},'leyes_detalle':[],'proyectos_detalle':[]})
+def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
+    emp = EmparejadorDiputados(dips)
+
+    prod  = defaultdict(_prod_vacio)
     otros = defaultdict(lambda: {'tipo':'','proyectos':0,'leyes':0})
+    firmantes = {}                      # ficha → diputados principales que participaron
+    sin_match = defaultdict(int)        # firma "H.D" sin diputado → nº de firmas
     meses, etapas = {}, {}
 
     for r in datos:
@@ -372,42 +466,50 @@ def generar_resumen(datos, dips, ts, metricas=None):
         es_ley = r['etapa'] == 'Ley'
         proponentes = [p.strip() for p in r['proponente'].split(',') if p.strip()]
 
+        vistos = []  # un diputado cuenta una sola vez por proyecto (p. ej. si firman él y su suplente)
         for i, p in enumerate(proponentes):
             tipo = clasificar_proponente(p)
             if tipo == 'diputado':
-                pn  = normalizar(p)
-                dip = encontrar_diputado(pn, dip_norm)
-                if dip:
-                    key = dip['nombre']
-                    if i == 0:  # proponente principal
-                        prod[key]['proyectos'] += 1
-                        titulo = r['titulo'] or r['anteproyecto'] or r['proyecto']
-                        prod[key]['proyectos_detalle'].append({
+                m = emp.buscar(p)
+                if not m:
+                    sin_match[p] += 1
+                    continue
+                dip, via_suplente = m
+                key = dip['nombre']
+                if key in vistos: continue
+                vistos.append(key)
+                prod[key]['participaciones'].append(r['ficha'])
+                if i == 0:  # proponente principal
+                    prod[key]['proyectos'] += 1
+                    if via_suplente: prod[key]['proyectos_suplente'] += 1
+                    titulo = r['titulo'] or r['anteproyecto'] or r['proyecto']
+                    prod[key]['proyectos_detalle'].append({
+                        'ficha': r['ficha'],
+                        'titulo': titulo,
+                        'fecha':  r['fecha_presentacion'],
+                        'etapa':  r['etapa'],
+                    })
+                    if es_ley:
+                        prod[key]['leyes'] += 1
+                        prod[key]['leyes_detalle'].append({
                             'ficha': r['ficha'],
                             'titulo': titulo,
                             'fecha':  r['fecha_presentacion'],
-                            'etapa':  r['etapa'],
                         })
-                        if es_ley:
-                            prod[key]['leyes'] += 1
-                            prod[key]['leyes_detalle'].append({
-                                'ficha': r['ficha'],
-                                'titulo': titulo,
-                                'fecha':  r['fecha_presentacion'],
-                            })
-                        et = prod[key]['etapas']
-                        et[r['etapa']] = et.get(r['etapa'], 0) + 1
-                    else:  # co-patrocinador
-                        prod[key]['co_patrocinios'] += 1
-            elif i == 0:  # ministerio o ciudadano como proponente principal
+                    et = prod[key]['etapas']
+                    et[r['etapa']] = et.get(r['etapa'], 0) + 1
+                else:  # co-patrocinador
+                    prod[key]['co_patrocinios'] += 1
+            elif i == 0:  # ministerio, comisión o ciudadano como proponente principal
                 otros[p]['tipo']      = tipo
                 otros[p]['proyectos'] += 1
                 if es_ley: otros[p]['leyes'] += 1
+        firmantes[r['ficha']] = [emp.por_nombre[k] for k in vistos]
 
     # Enriquecer diputados
     diputados_enriq = []
     for d in dips:
-        p = prod.get(d['nombre'], {'proyectos':0,'leyes':0,'co_patrocinios':0,'etapas':{},'leyes_detalle':[],'proyectos_detalle':[]})
+        p = prod.get(d['nombre']) or _prod_vacio()
         m = (metricas or {}).get(d.get('slug')) or (metricas or {}).get(slug_from_href(d.get('perfil', ''))) or {}
         diputados_enriq.append({**d, **p, **{k:v for k,v in m.items() if k not in ('nombre','partido_monitoreo')}})
     diputados_enriq.sort(key=lambda x: x['proyectos'], reverse=True)
@@ -426,7 +528,8 @@ def generar_resumen(datos, dips, ts, metricas=None):
         'analisis':  {'Preliminar','Enviado a subcomisión para analisis'},
         'sinAvance': {'Archivado','Negado','Retirado por proponente','Suspendido'},
     }
-    YEARS = ['2024', '2025', '2026']
+    YEARS = sorted({r['fecha_presentacion'].split('-')[-1] for r in datos
+                    if len(r['fecha_presentacion'].split('-')) == 3})
 
     def get_etapa_group(etapa):
         for g, vals in ETAPA_GROUPS.items():
@@ -443,14 +546,8 @@ def generar_resumen(datos, dips, ts, metricas=None):
     })
 
     for r in datos:
-        partidos_proy, provincias_proy = set(), set()
-        for p in r['proponente'].split(','):
-            pn = normalizar(p.strip())
-            if not pn: continue
-            dip = encontrar_diputado(pn, dip_norm)
-            if dip:
-                partidos_proy.add(dip['partido'])
-                provincias_proy.add(dip['provincia'])
+        partidos_proy  = {d['partido'] for d in firmantes.get(r['ficha'], [])}
+        provincias_proy = {d['provincia'] for d in firmantes.get(r['ficha'], [])}
         for partido in partidos_proy:
             por_partido[partido]['proyectos'].add(r['ficha'])
             if r['etapa'] == 'Ley': por_partido[partido]['leyes'].add(r['ficha'])
@@ -479,8 +576,15 @@ def generar_resumen(datos, dips, ts, metricas=None):
         for prov, yrs in pv_filtros.items()
     }
 
+    if sin_match:
+        print(f"  Firmas 'H.D' sin diputado asociado: {sum(sin_match.values())} "
+              f"({len(sin_match)} nombres) — ver 'proponentes_sin_match' en resumen.json")
+    if emp.ambiguos:
+        print(f"  Nombres ambiguos (no asignados): {emp.ambiguos}")
+
     return {
         'fecha_extraccion': ts,
+        'respaldos': sorted(set(respaldos or [])),
         'fuente': URL_LEG,
         'fuente_metricas': URL_MONITOR,
         'total_proyectos': len(datos),
@@ -493,13 +597,37 @@ def generar_resumen(datos, dips, ts, metricas=None):
         'por_partido': pp_final,
         'por_provincia': pv_final,
         'por_provincia_filtros': pv_filtros_final,
+        'proponentes_sin_match': [{'nombre': k, 'firmas': v}
+                                  for k, v in sorted(sin_match.items(), key=lambda x: -x[1])],
     }
 
 
 # ─────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────
+def _leer_json(ruta):
+    try:
+        with open(ruta, encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+def solo_resumen():
+    """Regenera resumen.json a partir de los JSON ya guardados (sin navegador)."""
+    raw = _leer_json('datos.json') or {}
+    datos = raw.get('datos', [])
+    dips = (_leer_json('diputados.json') or {}).get('diputados', [])
+    metricas = _fallback_metricas()
+    RESPALDOS.clear()
+    ts = raw.get('fecha_extraccion') or datetime.now().strftime("%Y%m%d_%H%M%S")
+    resumen = generar_resumen(datos, dips, ts, metricas, (_leer_json('resumen.json') or {}).get('respaldos'))
+    with open("resumen.json", "w", encoding="utf-8") as f:
+        json.dump(resumen, f, ensure_ascii=False, indent=2)
+    print(f"resumen.json regenerado: {len(datos)} proyectos, {len(dips)} diputados (extracción {ts})")
+
 def main():
+    from playwright.sync_api import sync_playwright
+
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     print("=" * 55)
     print(" SCRAPER - Observatorio Legislativo Panamá")
@@ -515,10 +643,19 @@ def main():
         metricas = scrape_metricas_diputados(page)
         browser.close()
 
-    # Guardar datos crudos
-    with open("datos.json", "w", encoding="utf-8") as f:
-        json.dump({"fecha_extraccion":ts,"fuente":URL_LEG,"total_registros":len(datos),"datos":datos},
-                  f, ensure_ascii=False, indent=2)
+    # Si la extracción de proyectos falló (o trajo muchos menos que la vez anterior),
+    # conservar datos.json en vez de sobrescribirlo con datos incompletos.
+    previo = _leer_json('datos.json') or {}
+    n_previo = len(previo.get('datos', []))
+    if n_previo and len(datos) < n_previo * 0.9:
+        print(f"  ADVERTENCIA: solo {len(datos)} proyectos (antes {n_previo}) — usando datos.json guardado.")
+        datos = previo['datos']
+        ts = previo.get('fecha_extraccion', ts)
+        RESPALDOS.append('proyectos')
+    else:
+        with open("datos.json", "w", encoding="utf-8") as f:
+            json.dump({"fecha_extraccion":ts,"fuente":URL_LEG,"total_registros":len(datos),"datos":datos},
+                      f, ensure_ascii=False, indent=2)
 
     with open("diputados.json", "w", encoding="utf-8") as f:
         dips_metricas = []
@@ -537,7 +674,7 @@ def main():
         print("  metricas_diputados.json conservado (datos insuficientes del sitio).")
 
     # Generar resumen
-    resumen = generar_resumen(datos, dips, ts, metricas)
+    resumen = generar_resumen(datos, dips, ts, metricas, RESPALDOS)
     with open("resumen.json", "w", encoding="utf-8") as f:
         json.dump(resumen, f, ensure_ascii=False, indent=2)
 
@@ -547,7 +684,12 @@ def main():
     print(f"  Leyes     : {resumen['total_leyes']}")
     print(f"  Diputados : {len(dips)}")
     print(f"{'='*55}")
+    if RESPALDOS:
+        print(f"  Fuentes con datos de respaldo: {', '.join(RESPALDOS)}")
     print("Archivos generados: datos.json · diputados.json · resumen.json")
 
 if __name__ == "__main__":
-    main()
+    if '--solo-resumen' in sys.argv:
+        solo_resumen()
+    else:
+        main()

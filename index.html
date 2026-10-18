@@ -372,6 +372,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <div class="header-meta">
     República de Panamá<br>
     Actualizado: <span id="last-update">cargando…</span><br>
+    <span id="data-warning" style="display:none;color:#f59e0b;font-size:.75em"></span>
     <span style="font-size:.65em">sistemas.asamblea.gob.pa</span>
   </div>
 </header>
@@ -441,12 +442,9 @@ tr:hover .dep-avatar{border-color:var(--acc)}
         <button class="map-chip"        data-mftype="etapa" data-mfval="sinAvance"  onclick="setMapFilter('etapa','sinAvance')">Sin avance</button>
       </div>
       <div class="map-filter-sep"></div>
-      <div class="map-filter-group">
+      <div class="map-filter-group" id="map-year-chips">
         <span class="map-filter-lbl">Año</span>
         <button class="map-chip active" data-mftype="year" data-mfval="all"  onclick="setMapFilter('year','all')">Todos</button>
-        <button class="map-chip"        data-mftype="year" data-mfval="2024" onclick="setMapFilter('year','2024')">2024</button>
-        <button class="map-chip"        data-mftype="year" data-mfval="2025" onclick="setMapFilter('year','2025')">2025</button>
-        <button class="map-chip"        data-mftype="year" data-mfval="2026" onclick="setMapFilter('year','2026')">2026</button>
       </div>
       <div class="map-filter-sep"></div>
       <div class="map-filter-group">
@@ -636,6 +634,11 @@ tr:hover .dep-avatar{border-color:var(--acc)}
       <p style="font-family:var(--fm);font-size:.7rem;color:var(--muted);margin-bottom:14px">Proyectos presentados por ciudadanos o personas naturales</p>
       <div id="prop-ciudadano" class="prop-list"><div class="loader"><div class="spinner"></div></div></div>
     </div>
+    <div class="card">
+      <div class="card-title" style="--ct:var(--acc3)">Comisiones de la Asamblea</div>
+      <p style="font-family:var(--fm);font-size:.7rem;color:var(--muted);margin-bottom:14px">Proyectos presentados por comisiones permanentes de la Asamblea Nacional</p>
+      <div id="prop-comision" class="prop-list"><div class="loader"><div class="spinner"></div></div></div>
+    </div>
   </div>
 </div>
 
@@ -690,7 +693,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
             <th style="text-align:right">Costo mensual</th>
             <th class="costo-col-sm" style="text-align:center">Meses</th>
             <th>Costo acumulado</th>
-            <th class="costo-col-sm" style="text-align:center">Proyectos</th>
+            <th class="costo-col-sm" style="text-align:center" title="Proyectos en que participó como proponente o co-proponente (incluye los firmados por su suplente)">Participaciones</th>
             <th style="text-align:right">Costo / proyecto</th>
           </tr>
         </thead>
@@ -709,7 +712,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
   <div class="metodologia-box">
     <div class="metodologia-title">Advertencia metodológica</div>
     <div class="metodologia-body">
-      Este dashboard presenta una <strong>estimación proporcional del costo legislativo</strong>, no un costo contable exacto. El valor de planilla publicado por Espacio Cívico representa el acumulado de 9 meses, por lo que se divide entre 9 para obtener la <strong>planilla mensual</strong>. El costo mensual de cada diputado es la planilla mensual más un salario fijo de <strong>USD 7,000</strong>. Ese costo se multiplica por los meses activos en cada año (desde julio de 2024 hasta el último mes cerrado) y se divide entre la cantidad de proyectos en que participó el diputado (como proponente o co-proponente) en ese mismo año. El costo estimado de cada proyecto es la suma de la porción proporcional asignada por cada diputado asociado. El periodo de análisis inicia en <strong>julio de 2024</strong>. Los diputados sin planilla registrada aportan únicamente el salario fijo. <strong>Los proyectos firmados por diputados suplentes se contabilizan bajo el diputado principal</strong> al que suplen, utilizando el registro de suplencias de espaciocivico.org. El resultado es una aproximación analítica útil para comparación y seguimiento del gasto legislativo, no para fines contables.
+      Este dashboard presenta una <strong>estimación proporcional del costo legislativo</strong>, no un costo contable exacto. El valor de planilla publicado por Espacio Cívico representa el acumulado de 9 meses, por lo que se divide entre 9 para obtener la <strong>planilla mensual</strong>. El costo mensual de cada diputado es la planilla mensual más un salario fijo de <strong>USD 7,000</strong>. Ese costo se multiplica por los meses activos en cada año (desde julio de 2024 hasta el último mes cerrado a la fecha de extracción de los datos) y se divide entre la cantidad de proyectos en que participó el diputado (como proponente o co-proponente) en ese mismo año. El costo estimado de cada proyecto es la suma de la porción proporcional asignada por cada diputado asociado. El periodo de análisis inicia en <strong>julio de 2024</strong>. Los diputados sin planilla registrada aportan únicamente el salario fijo. <strong>Los proyectos firmados por diputados suplentes se contabilizan bajo el diputado principal</strong> al que suplen, utilizando el registro de suplencias de espaciocivico.org. El resultado es una aproximación analítica útil para comparación y seguimiento del gasto legislativo, no para fines contables.
     </div>
   </div>
 
@@ -1023,10 +1026,31 @@ async function loadData(){
   const ts = D.fecha_extraccion||'';
   document.getElementById('last-update').textContent = ts
     ? ts.replace(/(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})(\d{2})/,'$3/$2/$1 $4:$5') : '—';
+  renderAvisoDatos();
+
+  // Botones de año del mapa según los años presentes en los datos
+  const yearBox=document.getElementById('map-year-chips');
+  Object.keys(Object.values(D.por_provincia_filtros||{})[0]||{}).filter(y=>y!=='all').sort().forEach(y=>{
+    yearBox.insertAdjacentHTML('beforeend',
+      `<button class="map-chip" data-mftype="year" data-mfval="${y}" onclick="setMapFilter('year','${y}')">${y}</button>`);
+  });
 
   try{ renderKPI(); }catch(e){ console.error('KPI error:',e); }
   try{ renderGeneral(); tabInited.general=true; }catch(e){ console.error('General error:',e); }
   try{ initTable(); }catch(e){ console.error('Table error:',e); }
+}
+
+// Aviso si los datos tienen más de 3 días o alguna fuente usó datos de respaldo
+const NOMBRES_RESPALDO={proyectos:'proyectos (Asamblea)',diputados:'perfiles de diputados',metricas:'monitoreo de Espacio Cívico'};
+function renderAvisoDatos(){
+  const el=document.getElementById('data-warning');
+  const avisos=[];
+  const dias=Math.floor((Date.now()-getFechaCorte().getTime())/86400000);
+  if(dias>3) avisos.push(`Los datos tienen ${dias} días sin actualizarse`);
+  const resp=(D.respaldos||[]).map(r=>NOMBRES_RESPALDO[r]||r);
+  if(resp.length) avisos.push(`Última extracción sin datos frescos de: ${resp.join(', ')}`);
+  el.textContent=avisos.length?'⚠️ '+avisos.join(' · '):'';
+  el.style.display=avisos.length?'block':'none';
 }
 
 function processRaw(raw){
@@ -1272,6 +1296,7 @@ function renderProponentes(){
   }
   renderList('prop-ejecutivo',ejecutivo,'#a78bfa');
   renderList('prop-ciudadano',ciudadano,'#f59e0b');
+  renderList('prop-comision',otros.filter(o=>o.tipo==='comision'),'#10b981');
 }
 
 // ── MONTH FILTER (timeline click) ─────────────────
@@ -1721,10 +1746,18 @@ async function loadDatosRawAndRender(){
 
 // ── COSTOS ────────────────────────────────────────
 const SALARIO_FIJO = 7000;
+const MESES_PLANILLA = 9;   // la planilla de Espacio Cívico es el acumulado de 9 meses
 const PERIODO_INICIO = {year:2024, month:7};
 
+// Fecha de corte = fecha de extracción de los datos (no la fecha de hoy), para que el
+// costo no siga creciendo si el scraper deja de actualizar.
+function getFechaCorte(){
+  const m=((D&&D.fecha_extraccion)||'').match(/^(\d{4})(\d{2})(\d{2})/);
+  return m ? new Date(+m[1], +m[2]-1, +m[3]) : new Date();
+}
+
 function getLastClosedMonth(){
-  const now = new Date();
+  const now = getFechaCorte();
   const m = now.getMonth(); // 0-indexed; 0 = Jan
   return m === 0
     ? {year: now.getFullYear()-1, month:12}
@@ -1747,59 +1780,6 @@ function getTotalMonths(){
   return tot;
 }
 
-function normarC(s){
-  return (s||'').toUpperCase().trim()
-    .normalize('NFD').replace(/[̀-ͯ]/g,'')
-    .replace(/^H\.D\.?S?\.?\s+/,'')
-    .replace(/\s+/,' ').trim();
-}
-
-// Devuelve el nombre del diputado PRINCIPAL que corresponde a rawName,
-// buscando primero entre principales y luego entre suplentes.
-// Los suplentes se tratan como el diputado al que suplen.
-function matchDipC(rawName, normIdx, supMap, supEntries){
-  const pn = normarC(rawName);
-  const w  = pn.split(' ');
-
-  // 1. Exacto — principal
-  let m = normIdx.find(d=>d.norm===pn);
-  if(m) return m.orig;
-
-  // 2. Últimas 2 palabras — principal
-  if(w.length>=2){
-    const tail=w.slice(-2).join(' ');
-    if(tail.length>4){ m=normIdx.find(d=>d.norm.endsWith(tail)); if(m) return m.orig; }
-  }
-
-  // 3. Subconjunto: todas las palabras del nombre corto aparecen en el nombre largo — principal
-  m=normIdx.find(d=>{
-    const dw=d.norm.split(' ');
-    return dw.length>=2 && dw.every(wd=>pn.includes(wd));
-  });
-  if(m) return m.orig;
-
-  // 4. Exacto — suplente → devuelve principal
-  if(supMap[pn]) return supMap[pn];
-
-  // 5. Últimas 2 palabras — suplente
-  if(w.length>=2){
-    const tail=w.slice(-2).join(' ');
-    if(tail.length>4){
-      const found=supEntries.find(([sn])=>sn.endsWith(tail));
-      if(found) return found[1];
-    }
-  }
-
-  // 6. Subconjunto — suplente
-  const sf=supEntries.find(([sn])=>{
-    const sw=sn.split(' ');
-    return sw.length>=2 && sw.every(wd=>pn.includes(wd));
-  });
-  if(sf) return sf[1];
-
-  return null;
-}
-
 function calcCostos(){
   if(!D || !DATOS_RAW.length) return null;
 
@@ -1808,31 +1788,20 @@ function calcCostos(){
   for(let y=PERIODO_INICIO.year; y<=last.year; y++) years.push(y);
 
   const dips = D.diputados||[];
-  const normIdx = dips.map(d=>({orig:d.nombre, norm:normarC(d.nombre)}));
+  const fichaYear = {};
+  DATOS_RAW.forEach(r=>{ fichaYear[r.ficha]=parseInt((r.fecha_presentacion||'').split('-')[2])||0; });
 
-  // Mapa suplente → diputado principal (usando campo suplente de espaciocivico.org)
-  const supMap = {};
-  dips.forEach(d=>{
-    if(d.suplente&&d.suplente.trim()) supMap[normarC(d.suplente)]=d.nombre;
-  });
-  const supEntries = Object.entries(supMap);
-
-  // Construir mapa de participación: {nombre: {año: Set<ficha>}}
+  // Participación por diputado: {nombre: {año: Set<ficha>}}. La relación nombre ↔ diputado
+  // (incluidos suplentes, asignados a su principal) la calcula scraper.py en `participaciones`.
   const partMap = {};
-  dips.forEach(d=>{ partMap[d.nombre] = {}; });
-
-  DATOS_RAW.forEach(r=>{
-    const parts=(r.fecha_presentacion||'').split('-');
-    if(parts.length!==3) return;
-    const y=parseInt(parts[2]);
-    if(!years.includes(y)) return;
-    (r.proponente||'').split(',').forEach(p=>{
-      p=p.trim();
-      if(!p.toUpperCase().startsWith('H.D')) return;
-      const matched=matchDipC(p, normIdx, supMap, supEntries);
-      if(!matched) return;
-      if(!partMap[matched][y]) partMap[matched][y]=new Set();
-      partMap[matched][y].add(r.ficha);
+  const firmantes = {};   // ficha → nº de diputados principales que participaron
+  dips.forEach(d=>{
+    partMap[d.nombre] = {};
+    (d.participaciones||[]).forEach(f=>{
+      const y=fichaYear[f];
+      if(!years.includes(y)) return;
+      (partMap[d.nombre][y] ||= new Set()).add(f);
+      firmantes[f]=(firmantes[f]||0)+1;
     });
   });
 
@@ -1842,7 +1811,7 @@ function calcCostos(){
   let totalCost = 0;
 
   dips.forEach(d=>{
-    const planilla = (Number(d.planilla_valor)||0) / 9;
+    const planilla = (Number(d.planilla_valor)||0) / MESES_PLANILLA;
     const costoMensual = planilla + SALARIO_FIJO;
     const byYear = {};
     let costoAcumulado = 0;
@@ -1881,7 +1850,7 @@ function calcCostos(){
       titulo:(r.titulo||r.anteproyecto||r.proyecto||'—'),
       year:parseInt((r.fecha_presentacion||'').split('-')[2])||0,
       etapa:r.etapa,
-      proponente:r.proponente||'',
+      diputados:firmantes[r.ficha]||0,
       costo:projectCosts[r.ficha],
     }));
   proyectos.sort((a,b)=>b.costo-a.costo);
@@ -1958,7 +1927,7 @@ function renderCostos(){
     const pct=Math.round(p.costo/maxCosto*100);
     const vsAvg=avgCosto>0?((p.costo/avgCosto-1)*100).toFixed(0):0;
     const vsCol=p.costo>=avgCosto?'#10b981':'#5a7499';
-    const dipCount=(p.proponente||'').split(',').filter(x=>x.trim().toUpperCase().startsWith('H.D')).length;
+    const dipCount=p.diputados;
     return`<tr>
       <td class="costo-rank">${i+1}</td>
       <td style="max-width:300px">
@@ -1990,9 +1959,9 @@ function renderCostos(){
         <div class="dep-name">${d.nombre}</div>
         <div class="dep-sub" style="color:${pc}">${d.partido||'—'}</div>
       </div></div></td>
-      <td class="money-sm" style="text-align:right">${d.planilla>0?'B/. '+d.planilla.toLocaleString('es-PA'):'—'}</td>
+      <td class="money-sm" style="text-align:right">${d.planilla>0?fmtUSD(d.planilla):'—'}</td>
       <td class="costo-col-sm" style="font-family:var(--fm);font-size:.72rem;text-align:right;color:var(--muted)">B/. 7,000</td>
-      <td class="money" style="font-size:.78rem;font-weight:700;text-align:right;white-space:nowrap">B/. ${d.costoMensual.toLocaleString('es-PA')}</td>
+      <td class="money" style="font-size:.78rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(d.costoMensual)}</td>
       <td class="costo-col-sm" style="font-family:var(--fm);font-size:.75rem;text-align:center">${d.totalMeses}</td>
       <td>
         <div class="money" style="font-size:.8rem;font-weight:700;white-space:nowrap">${fmtUSD(d.costoAcumulado)}</div>
