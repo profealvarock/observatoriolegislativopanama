@@ -1,0 +1,2 @@
+// Observatorio Legislativo — Arranque
+loadData();

@@ -32,7 +32,7 @@ Además:
 Reglas para mantener la paleta coherente:
 - **Azul** = marca e información (confianza, institucionalidad; el azul de la bandera).
 - **Partidos sin color propio**: todos se muestran igual y se identifican por su nombre, para que ninguno quede asociado a la marca ni a los colores de éxito o alerta.
-- **Etapas** (`ETAPA_COLOR` en `index.html`): las que siguen en trámite van en una escala de azules que avanza con el proceso (validada como rampa ordinal en cada tema); Enviado al Ejecutivo = índigo; objetado = naranja; ley = verde; negado = rojo; archivado, retirado o suspendido = gris.
+- **Etapas** (`ETAPA_COLOR` en `js/base.js`): las que siguen en trámite van en una escala de azules que avanza con el proceso (validada como rampa ordinal en cada tema); Enviado al Ejecutivo = índigo; objetado = naranja; ley = verde; negado = rojo; archivado, retirado o suspendido = gris.
 - **Dinero**: montos en tinta neutra y ámbar (`--costo`) como único acento de gasto.
 - **Contraste**: textos de al menos 4.5:1 en ambos temas.
 - **Un solo eje por gráfico**: medidas de escala distinta (planilla en B/. y calificación 1–5) van en gráficos separados, nunca con dos ejes verticales.
@@ -43,7 +43,21 @@ Creado por **@profealvarock** — [Portafolio](https://profealvarock.vercel.app/
 ## 🗂️ Estructura
 ```
 observatoriolegislativopanama/
-├── index.html              # Dashboard (HTML + CSS + JS, un solo archivo)
+├── index.html              # Estructura del dashboard (HTML) + script mínimo que aplica el tema sin parpadeo
+├── css/estilos.css         # Todos los estilos
+├── js/                     # Código del sitio, cargado en este orden (comparten el ámbito global):
+│   ├── base.js             #   tema claro/oscuro, envoltorio de Chart.js, utilidades, estado global
+│   ├── navegacion.js       #   ficha (modal), buscador, pestañas, enlaces directos
+│   ├── carga.js            #   carga de resumen.json, avisos, metodología, indicadores
+│   ├── general.js          #   pestañas General, Partidos y Otros proponentes, mapa
+│   ├── diputados.js        #   Monitoreo, tabla de Diputados, índice de efectividad
+│   ├── costos.js           #   Costo Legislativo
+│   ├── descargas.js        #   descargas CSV
+│   ├── historial.js        #   gráficos de evolución
+│   ├── proyectos.js        #   pestaña Proyectos y mapas de calor
+│   ├── novedades.js        #   pestaña Novedades y botón Compartir
+│   ├── comparador.js       #   comparador de diputados
+│   └── inicio.js           #   arranque
 ├── scraper.py              # Scraper Playwright — extrae datos de 3 fuentes
 ├── requirements.txt        # Dependencias Python
 ├── resumen.json            # Datos procesados y cruzados (auto-generado)
