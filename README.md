@@ -65,6 +65,8 @@ observatoriolegislativopanama/
 ├── diputados.json          # Perfil y foto de los 71 diputados (auto-generado)
 ├── metricas_diputados.json # Planilla, asistencia, calificación (auto-generado)
 ├── historico.json          # Una foto diaria por diputado para graficar tendencias (auto-generado)
+├── scraper_planillas.py    # Scraper semanal de planillas de la Contraloría
+├── planillas_cgr.json      # Planilla pagada por diputado según la Contraloría (auto-generado, semanal)
 ├── etapas_historico.json   # Etapa de cada proyecto y fecha en que se detectó cada cambio (auto-generado)
 ├── novedades.json          # Eventos (nuevo, avance, ley…) y tiempo hasta ley (auto-generado)
 ├── novedades.xml           # Feed RSS de novedades (auto-generado)
@@ -162,6 +164,13 @@ En `resumen.json`, cada diputado incluye `proyectos` (como proponente principal)
 
 ## 🤝 Redes de co-patrocinio
 En `resumen.json`: `red_partidos` (co-firmas que recibe cada partido de cada otro), `temas_por_partido`, `temas_por_provincia` y, por diputado, `aliados` (con quién más firma) y `transversalidad` (% de co-firmas con otros partidos) junto a `transversalidad_esperada` (lo esperable si firmara al azar, según el tamaño de su partido).
+
+## 🧾 Planillas según la Contraloría (semanal)
+`scraper_planillas.py` (workflow `planillas.yml`, lunes 6 a. m. Panamá) consulta el portal de la Contraloría [Consulta de Pagos de Planillas y Donaciones de la Asamblea Nacional](https://www.contraloria.gob.pa/CGR.consultapagos/) con peticiones HTTP directas (sin navegador) y guarda en `planillas_cgr.json`, por diputado, personas, pagos y monto por tipo de planilla y año. **No guarda nombres ni cédulas de funcionarios.**
+- Primero lee la fecha "Registros actualizados hasta"; si no cambió, solo anota la fecha de revisión. La extracción completa (~130 consultas con pausas) se hace solo si la Contraloría publica datos nuevos, o a mano con `--forzar` (o el botón *Run workflow* con "forzar").
+- Equivalencias de nombres en `ALIAS_CGR` (la Contraloría usa apellidos de casada y tiene errores de tipeo); "probable" = única diputada con ese nombre de pila.
+- Hallazgos (oct-2026): datos congelados al 17-oct-2025; solo hay personal transitorio por diputado (tipo 002) de jul–dic 2024 (B/. 4.66 millones); 11 diputados no aparecen. No coincide con la "planilla acumulada" de Espacio Cívico, que sigue siendo la base del costo (cubre a los 71); el sitio muestra ambas para contrastar.
+- La sección de Transparencia de la Asamblea no se pudo automatizar: su sitio tiene un certificado mal configurado y corta las conexiones automáticas.
 
 ## 🖼️ Imágenes para compartir
 `_imagen_diputado` dibuja con Pillow `diputado/<slug>/og.png` (1200×630) con nombre, partido y cifras. No lleva fecha ni foto, y solo se reescribe si su contenido cambia, para no llenar el repositorio.

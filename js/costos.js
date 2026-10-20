@@ -170,6 +170,64 @@ function calcCostos(){
   return {dipCosts, proyectos, byYearTotals, etapaCosts, totalCost, avgCosto, years};
 }
 
+// ── VALIDACIÓN CON LA CONTRALORÍA (planillas_cgr.json, scraper_planillas.py) ──
+// El costo usa la planilla de Espacio Cívico (cubre a los 71). Aquí se contrasta con lo que la
+// Contraloría registra como pagado, que hoy solo cubre parte del periodo y de los tipos.
+let _cgrPromise=null, CGR=null;
+const ensureCGR=()=>_cgrPromise||(_cgrPromise=fetch('planillas_cgr.json').then(r=>r.ok?r.json():null).catch(()=>null));
+const NOMBRE_TIPO_CGR=t=>(CGR?.tipos?.[t]||t);
+
+function filasValidacionCGR(){
+  const porSlug=Object.fromEntries((D.diputados||[]).map(d=>[depSlug(d),d]));
+  return (CGR?.diputados||[]).filter(c=>c.slug&&porSlug[c.slug]).map(c=>{
+    const d=porSlug[c.slug], ec=Number(d.planilla_valor);
+    return {d, c, ec:Number.isFinite(ec)?ec:null, cgr:c.total, dif:Number.isFinite(ec)?c.total-ec:null};
+  }).sort((a,b)=>Math.abs(b.dif??0)-Math.abs(a.dif??0));
+}
+
+async function renderValidacionCGR(){
+  CGR=await ensureCGR();
+  const res=document.getElementById('cgr-resumen'), tb=document.getElementById('cgr-tbody');
+  if(!res) return;
+  if(!CGR){ res.innerHTML='<p class="monitor-note">Todavía no hay datos de la Contraloría.</p>'; return; }
+  const filas=filasValidacionCGR(), conAmbos=filas.filter(f=>f.ec!=null);
+  const anios=[...new Set(CGR.diputados.flatMap(d=>Object.keys(d.por_anio||{})))].sort();
+  const tipos=[...new Set(CGR.diputados.flatMap(d=>Object.keys(d.por_tipo||{})))];
+  const totCGR=conAmbos.reduce((a,f)=>a+f.cgr,0), totEC=conAmbos.reduce((a,f)=>a+f.ec,0);
+  const porSlug=Object.fromEntries((D.diputados||[]).map(d=>[depSlug(d),d]));
+  const noPub=(CGR.no_publicados||[]).map(s=>porSlug[s]?.nombre).filter(Boolean);
+  document.getElementById('cgr-col-periodo').textContent=`pagado ${anios.join('–')}`;
+  res.innerHTML=`<p class="monitor-note" style="line-height:1.8">
+    La Contraloría registra <b>B/. ${fmtNum(totCGR)}</b> pagados a la planilla de ${conAmbos.length} diputados
+    (${tipos.map(t=>esc(NOMBRE_TIPO_CGR(t).toLowerCase())).join(', ')}, ${anios.join(', ')}); Espacio Cívico reporta <b>B/. ${fmtNum(totEC)}</b> acumulados para esos mismos diputados.
+    <b>Las cifras no son comparables una a una</b>: la Contraloría publica sus datos con corte al <b>${esc(fmtFecha(CGR.corte))}</b> y desde abril de 2025 ya no indica en qué despacho trabaja cada funcionario, así que solo cubre parte del periodo; Espacio Cívico no publica la fuente ni el periodo exacto de su "planilla acumulada".
+    El costo legislativo sigue usando Espacio Cívico porque cubre a los 71 diputados; esta tabla sirve para contrastar.
+    ${noPub.length?`<br>La Contraloría no publica planilla para <b>${noPub.length}</b> diputados: ${esc(noPub.join(', '))}.`:''}
+    <br><span style="font-size:.9em">Revisado por última vez el ${esc(fmtFecha(CGR.verificado))} · <a href="${esc(CGR.fuente)}" target="_blank" rel="noopener">consulta de la Contraloría</a></span></p>`;
+  tb.innerHTML=filas.map(({d,c,ec,cgr,dif})=>`<tr>
+    <td class="td-main"><div class="dep-name"><a href="#diputado=${esc(depSlug(d))}" style="color:inherit;text-decoration:none">${esc(d.nombre)}</a></div>
+      <div class="dep-sub">${esc(c.nombre_cgr)}${c.coincidencia==='probable'?' · <span title="Nombre de casada en la Contraloría; única diputada con ese nombre de pila">coincidencia probable</span>':''}</div></td>
+    <td class="money-sm" data-label="Espacio Cívico" style="text-align:right">${ec!=null?'B/. '+fmtNum(ec):'—'}</td>
+    <td class="money-sm" data-label="Contraloría" style="text-align:right">B/. ${fmtNum(cgr)}</td>
+    <td class="costo-col-sm" data-label="Personas" style="text-align:center;font-family:var(--fm)">${c.personas}</td>
+    <td class="money-sm" data-label="Diferencia" style="text-align:right;color:${dif==null?'var(--muted)':dif>0?'var(--costo)':'var(--muted)'}">${dif==null?'—':(dif>0?'+':'−')+'B/. '+fmtNum(Math.abs(dif))}</td>
+  </tr>`).join('');
+}
+
+function exportValidacionCGR(btn){
+  withBtn(btn, async ()=>{
+    CGR=await ensureCGR();
+    if(!CGR) throw new Error('no hay datos de la Contraloría');
+    downloadCSV('planilla_contraloria_vs_espacio_civico', [
+      ['Diputado',f=>f.d.nombre], ['Nombre en la Contraloría',f=>f.c.nombre_cgr], ['Coincidencia',f=>f.c.coincidencia],
+      ['Planilla Espacio Cívico (B/.)',f=>f.ec], ['Pagado según Contraloría (B/.)',f=>f.cgr], ['Diferencia (B/.)',f=>f.dif!=null?Math.round(f.dif*100)/100:''],
+      ['Personas en planilla',f=>f.c.personas], ['Pagos',f=>f.c.pagos],
+      ...Object.keys(CGR.tipos||{}).map(t=>[`Tipo ${t} ${CGR.tipos[t]} (B/.)`,f=>f.c.por_tipo?.[t]??'']),
+      ['Corte de la Contraloría',()=>CGR.corte],
+    ], filasValidacionCGR());
+  });
+}
+
 function renderCostos(){
   const C = COSTOS || (COSTOS = calcCostos());
   if(!C){
@@ -264,6 +322,8 @@ function renderCostos(){
       <td class="money-sm" data-label="Costo / proyecto" style="text-align:right;white-space:nowrap">${d.totalProy>0?fmtUSD(d.costoPorProy):'—'}</td>
     </tr>`;
   }).join('');
+
+  renderValidacionCGR();
 
   // Gráfico por etapa
   const etapaEntries=Object.entries(etapaCosts).sort((a,b)=>b[1]-a[1]);

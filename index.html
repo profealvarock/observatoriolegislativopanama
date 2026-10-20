@@ -544,6 +544,26 @@
     <div class="ch tall"><canvas id="c-costo-etapa"></canvas></div>
   </div>
 
+  <div class="sec-hdr" style="margin-bottom:calc(var(--gap)*.6)">
+    <div class="sec-title" style="--ct:var(--acc)">Validación con la Contraloría</div>
+    <button class="dl-btn" onclick="exportValidacionCGR(this)">⬇ CSV</button>
+  </div>
+  <div class="card" style="margin-bottom:var(--gap)">
+    <div id="cgr-resumen"><div class="loader"><div class="spinner"></div> Cargando planillas de la Contraloría…</div></div>
+    <div class="costo-tbl-wrap tbl-cards" style="margin-top:14px">
+      <table class="costo-tbl">
+        <thead><tr>
+          <th>Diputado</th>
+          <th style="text-align:right">Espacio Cívico<br><span style="text-transform:none">acumulado</span></th>
+          <th style="text-align:right">Contraloría<br><span style="text-transform:none" id="cgr-col-periodo">pagado</span></th>
+          <th class="costo-col-sm" style="text-align:center">Personas</th>
+          <th style="text-align:right">Diferencia</th>
+        </tr></thead>
+        <tbody id="cgr-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <div class="metodologia-box">
     <div class="metodologia-title">Advertencia metodológica</div>
     <div class="metodologia-body">
@@ -618,6 +638,7 @@
         <li><strong>Por año</strong>: la planilla se reparte según los meses de cada año.</li>
         <li><strong>Por proyecto</strong>: el costo anual de cada diputado se divide entre los proyectos en que participó ese año; el costo de un proyecto es la suma de las porciones de sus firmantes.</li>
       </ul>
+      <p class="met-nota"><strong>Validación con la Contraloría.</strong> Cada semana se revisa el portal de <a href="https://www.contraloria.gob.pa/CGR.consultapagos/" target="_blank" rel="noopener">pagos de planillas de la Asamblea</a> y se guarda, por diputado, cuánto se pagó a su planilla (sin nombres ni cédulas de funcionarios). Hoy la Contraloría solo publica el personal transitorio de julio a diciembre de 2024, con corte al 17/10/2025, y no publica planilla para 11 diputados: por eso se muestra junto a Espacio Cívico para contrastar, sin reemplazarlo. En la pestaña Costos está la comparación.</p>
       <p class="met-nota">Es una <strong>estimación proporcional</strong> para comparar, no un costo contable: no incluye personal de apoyo, viáticos ni gastos de funcionamiento, y supone que el tiempo de cada diputado se reparte por igual entre sus proyectos.</p>
     </section>
 
@@ -634,6 +655,7 @@
         <li>El conteo histórico de <strong>proyectos por diputado anterior a octubre de 2026</strong> no es comparable con el actual, porque cambió la forma de relacionar nombres; por eso la evolución solo muestra métricas de Espacio Cívico.</li>
         <li>El total de proyectos publicado por la Asamblea a veces <strong>baja</strong> de un día a otro (registros que se retiran o reclasifican). El observatorio refleja lo que la fuente publica.</li>
         <li>El primer firmante se toma como autor principal porque la fuente no indica el rol de cada firmante.</li>
+        <li>La <strong>planilla de Espacio Cívico</strong> se describe como "monto acumulado durante el período legislativo", sin fuente ni fecha de corte, y no coincide con lo que la Contraloría registra como pagado: para muchos diputados, solo los 6 meses de personal transitorio que publica la Contraloría ya superan esa cifra. El costo legislativo podría estar <strong>subestimando</strong> la planilla de esos diputados.</li>
         <li>Los <strong>temas</strong> salen solo del título: cerca de 1 de cada 5 proyectos queda en "Otros" porque su título solo dice qué ley modifica (por ejemplo "Que modifica la Ley 15 de 1995"), y algunos pueden caer en un tema por una palabra que no es central.</li>
       </ul>
     </section>

@@ -66,6 +66,11 @@ def _cubre(cand, prop, exacto):
 # Proponentes que ningún criterio automático resuelve: nombre normalizado → diputado principal.
 ALIAS_PROPONENTES = {
     'CARLOS ISAEL HO SOLIS': 'Walkiria Chandler',   # suplente "Charlie Ho"
+    # Abelardo "Lalo" Antonío: Espacio Cívico lo registra como suplente "Lalo' Antonio" de
+    # Rogelio Revello (Colón 3-1). Fue suplente en el mismo circuito en 2019-2024.
+    'ABELARDO ENRIQUE ANTONIO QUIJANO': 'Rogelio Revello',
+    # Sin asignar a propósito: "H.D.S EDUARD ABDEL RANGEL GONZALEZ" (se le atribuye ser suplente de
+    # Patsy Lee Rentería, pero Espacio Cívico registra como su suplente a Ezequiel Cedeño).
 }
 
 class EmparejadorDiputados:
@@ -1105,10 +1110,22 @@ def _imagen_diputado(d, ruta):
     no crece cada día (las fotos son de Espacio Cívico).
     """
     try:
-        from PIL import Image, ImageDraw, ImageFont
+        from PIL import Image, ImageDraw, ImageFont, PngImagePlugin
     except ImportError:
         return False
-    import io, os
+    import io, os, hashlib
+    # Firma de lo que muestra la imagen (y de esta función): si no cambió, no se redibuja. Se compara
+    # la firma y no los píxeles porque Windows y Linux dibujan las fuentes con diferencias mínimas.
+    ef0 = (d.get('efectividad_ley') or {}).get('autor') or {}
+    datos_img = [d['nombre'], d.get('partido'), d.get('provincia'), d.get('circuito'), d.get('proyectos', 0),
+                 d.get('leyes', 0), d.get('co_patrocinios', 0), ef0.get('indice'), ef0.get('evidencia'), 'v1']
+    firma = hashlib.sha1(json.dumps(datos_img, ensure_ascii=False).encode('utf-8')).hexdigest()
+    if os.path.exists(ruta):
+        try:
+            if Image.open(ruta).info.get('firma') == firma:
+                return False
+        except Exception:
+            pass
     W, H = 1200, 630
     BG, TXT, MUTED, ACC, BORDE, VERDE = '#080c14', '#e2e8f0', '#7a8fb0', '#3b82f6', '#1a2940', '#34d399'
     fd = lambda size, peso='ExtraBold': _fuente('fonts/Syne-Variable.ttf', size, peso)
@@ -1156,13 +1173,9 @@ def _imagen_diputado(d, ruta):
         dr.text((x0 + 3 * (ancho + gap) + 20, yb + 120), f"{_lectura_indice(ef)} (100 = promedio)", font=fm(15), fill=MUTED)
     dr.text((70, H - 50), 'Observatorio Legislativo · por @profealvarock', font=fm(18), fill=MUTED)
 
-    buf = io.BytesIO()
-    im.save(buf, 'PNG', optimize=True)
-    nuevo = buf.getvalue()
-    if os.path.exists(ruta) and open(ruta, 'rb').read() == nuevo:
-        return False
-    with open(ruta, 'wb') as fh:
-        fh.write(nuevo)
+    meta = PngImagePlugin.PngInfo()
+    meta.add_text('firma', firma)
+    im.save(ruta, 'PNG', optimize=True, pnginfo=meta)
     return True
 
 _FUENTES = {}

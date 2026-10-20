@@ -1,0 +1,918 @@
+{
+ "fuente": "https://www.contraloria.gob.pa/CGR.consultapagos/",
+ "periodo": "2024-2029",
+ "corte": "2025-10-17",
+ "extraido": "2026-10-20",
+ "verificado": "2026-10-20",
+ "tipos": {
+  "001": "Personal fijo",
+  "002": "Personal transitorio por diputado",
+  "004": "Personal transitorio de inversión",
+  "050": "Décimo tercer mes",
+  "080": "Otros servicios personales",
+  "172": "Servicios profesionales"
+ },
+ "diputados": [
+  {
+   "nombre_cgr": "NELSON JACKSON",
+   "personas": 17,
+   "pagos": 166,
+   "total": 119333.34,
+   "por_tipo": {
+    "002": 119333.34
+   },
+   "por_anio": {
+    "2024": 119333.34
+   },
+   "slug": "nelson-jackson",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ARIEL VALLARINO",
+   "personas": 9,
+   "pagos": 92,
+   "total": 115753.32,
+   "por_tipo": {
+    "002": 115753.32
+   },
+   "por_anio": {
+    "2024": 115753.32
+   },
+   "slug": "ariel-vallarino",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "OSMAN GOMEZ",
+   "personas": 22,
+   "pagos": 213,
+   "total": 113963.34,
+   "por_tipo": {
+    "002": 113963.34
+   },
+   "por_anio": {
+    "2024": 113963.34
+   },
+   "slug": "osman-camilo-gomez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "FRANCISCO BREA",
+   "personas": 10,
+   "pagos": 100,
+   "total": 113366.66,
+   "por_tipo": {
+    "002": 113366.66
+   },
+   "por_anio": {
+    "2024": 113366.66
+   },
+   "slug": "francisco-brea",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ARQUESIO ARIAS",
+   "personas": 16,
+   "pagos": 158,
+   "total": 112433.36,
+   "por_tipo": {
+    "002": 112433.36
+   },
+   "por_anio": {
+    "2024": 112433.36
+   },
+   "slug": "arquesio-arias",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JULIO DE LA GUARDIA",
+   "personas": 22,
+   "pagos": 214,
+   "total": 112173.33,
+   "por_tipo": {
+    "002": 112173.33
+   },
+   "por_anio": {
+    "2024": 112173.33
+   },
+   "slug": "julio-de-la-guardia",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JAIME VARGAS",
+   "personas": 11,
+   "pagos": 108,
+   "total": 111576.66,
+   "por_tipo": {
+    "002": 111576.66
+   },
+   "por_anio": {
+    "2024": 111576.66
+   },
+   "slug": "jaime-vargas",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ORLANDO CARRASQUILLA",
+   "personas": 17,
+   "pagos": 164,
+   "total": 110980.02,
+   "por_tipo": {
+    "002": 110980.02
+   },
+   "por_anio": {
+    "2024": 110980.02
+   },
+   "slug": "orlando-carrasquilla",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ARIANA COBA",
+   "personas": 21,
+   "pagos": 201,
+   "total": 108979.98,
+   "por_tipo": {
+    "002": 108979.98
+   },
+   "por_anio": {
+    "2024": 108979.98
+   },
+   "slug": "ariana-coba",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ISAAC MOSQUERA",
+   "personas": 25,
+   "pagos": 211,
+   "total": 106599.98,
+   "por_tipo": {
+    "002": 106599.98
+   },
+   "por_anio": {
+    "2024": 106599.98
+   },
+   "slug": "isaac-mosquera",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "SERGIO GALVEZ",
+   "personas": 12,
+   "pagos": 119,
+   "total": 104953.68,
+   "por_tipo": {
+    "002": 104953.68
+   },
+   "por_anio": {
+    "2024": 104953.68
+   },
+   "slug": "sergio-galvez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JOAN GUEVARA",
+   "personas": 23,
+   "pagos": 219,
+   "total": 104690.0,
+   "por_tipo": {
+    "002": 104690.0
+   },
+   "por_anio": {
+    "2024": 104690.0
+   },
+   "slug": "joan-guevara",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ERNESTO CEDEÑO",
+   "personas": 6,
+   "pagos": 59,
+   "total": 104183.34,
+   "por_tipo": {
+    "002": 104183.34
+   },
+   "por_anio": {
+    "2024": 104183.34
+   },
+   "slug": "ernesto-cedeno",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "DIDIANO PINILLA",
+   "personas": 14,
+   "pagos": 124,
+   "total": 103593.33,
+   "por_tipo": {
+    "002": 103593.33
+   },
+   "por_anio": {
+    "2024": 103593.33
+   },
+   "slug": "didiano-pinilla",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JAIRO SALAZAR",
+   "personas": 16,
+   "pagos": 159,
+   "total": 102626.66,
+   "por_tipo": {
+    "002": 102626.66
+   },
+   "por_anio": {
+    "2024": 102626.66
+   },
+   "slug": "jairo-salazar",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ROBERTO ARCHIBOL",
+   "personas": 11,
+   "pagos": 110,
+   "total": 100836.68,
+   "por_tipo": {
+    "002": 100836.68
+   },
+   "por_anio": {
+    "2024": 100836.68
+   },
+   "slug": "roberto-archibold",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "LUIS CAMACHO",
+   "personas": 11,
+   "pagos": 115,
+   "total": 98151.67,
+   "por_tipo": {
+    "002": 98151.67
+   },
+   "por_anio": {
+    "2024": 98151.67
+   },
+   "slug": "luis-camacho-castro",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "GRACIELA HERNANDEZ",
+   "personas": 8,
+   "pagos": 60,
+   "total": 97913.32,
+   "por_tipo": {
+    "002": 97913.32
+   },
+   "por_anio": {
+    "2024": 97913.32
+   },
+   "slug": "graciela-hernandez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "MANUEL COHEN",
+   "personas": 19,
+   "pagos": 173,
+   "total": 96740.02,
+   "por_tipo": {
+    "002": 96740.02
+   },
+   "por_anio": {
+    "2024": 96740.02
+   },
+   "slug": "manuel-cohen",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JAMIS ACOSTA",
+   "personas": 17,
+   "pagos": 170,
+   "total": 96063.3,
+   "por_tipo": {
+    "002": 96063.3
+   },
+   "por_anio": {
+    "2024": 96063.3
+   },
+   "slug": "jamis-acosta",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "NESTOR GUARDIA",
+   "personas": 16,
+   "pagos": 152,
+   "total": 94870.05,
+   "por_tipo": {
+    "002": 94870.05
+   },
+   "por_anio": {
+    "2024": 94870.05
+   },
+   "slug": "nestor-guardia",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "YESICA ROMERO",
+   "personas": 15,
+   "pagos": 145,
+   "total": 94643.34,
+   "por_tipo": {
+    "002": 94643.34
+   },
+   "por_anio": {
+    "2024": 94643.34
+   },
+   "slug": "yesica-romero",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ALEXANDRA DE VASQUEZ",
+   "personas": 8,
+   "pagos": 78,
+   "total": 92168.34,
+   "por_tipo": {
+    "002": 92168.34
+   },
+   "por_anio": {
+    "2024": 92168.34
+   },
+   "slug": "alexandra-brenes",
+   "coincidencia": "probable"
+  },
+  {
+   "nombre_cgr": "MEDIN JIMENEZ",
+   "personas": 16,
+   "pagos": 159,
+   "total": 91290.01,
+   "por_tipo": {
+    "002": 91290.01
+   },
+   "por_anio": {
+    "2024": 91290.01
+   },
+   "slug": "medin-jimenez-pitti",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JOSE L VARELA",
+   "personas": 15,
+   "pagos": 146,
+   "total": 90693.3,
+   "por_tipo": {
+    "002": 90693.3
+   },
+   "por_anio": {
+    "2024": 90693.3
+   },
+   "slug": "jose-luis-varela",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "RICARDO VIGIL",
+   "personas": 4,
+   "pagos": 41,
+   "total": 89350.85,
+   "por_tipo": {
+    "002": 89350.85
+   },
+   "por_anio": {
+    "2024": 89350.85
+   },
+   "slug": "ricardo-vigil-lopez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "BETSERAI RICHARDS",
+   "personas": 6,
+   "pagos": 65,
+   "total": 88656.67,
+   "por_tipo": {
+    "002": 88656.67
+   },
+   "por_anio": {
+    "2024": 88656.67
+   },
+   "slug": "betserai-richards",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "SHIRLEY CASTAÑEDA",
+   "personas": 8,
+   "pagos": 67,
+   "total": 87466.66,
+   "por_tipo": {
+    "002": 87466.66
+   },
+   "por_anio": {
+    "2024": 87466.66
+   },
+   "slug": "shirley-castanedas",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "MARCOS CASTILLERO",
+   "personas": 26,
+   "pagos": 185,
+   "total": 86800.06,
+   "por_tipo": {
+    "002": 86800.06
+   },
+   "por_anio": {
+    "2024": 86800.06
+   },
+   "slug": "marcos-castillero",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "DANA CASTANEDA",
+   "personas": 24,
+   "pagos": 233,
+   "total": 86513.33,
+   "por_tipo": {
+    "002": 86513.33
+   },
+   "por_anio": {
+    "2024": 86513.33
+   },
+   "slug": "dana-castaneda",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "RONALD DE GRACIA",
+   "personas": 13,
+   "pagos": 126,
+   "total": 79100.01,
+   "por_tipo": {
+    "002": 79100.01
+   },
+   "por_anio": {
+    "2024": 79100.01
+   },
+   "slug": "ronald-de-gracia",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JOSE PEREZ BARBONI",
+   "personas": 5,
+   "pagos": 54,
+   "total": 78461.66,
+   "por_tipo": {
+    "002": 78461.66
+   },
+   "por_anio": {
+    "2024": 78461.66
+   },
+   "slug": "jose-perez-barboni",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "YARELIS DE RODRIGUEZ",
+   "personas": 6,
+   "pagos": 57,
+   "total": 77210.0,
+   "por_tipo": {
+    "002": 77210.0
+   },
+   "por_anio": {
+    "2024": 77210.0
+   },
+   "slug": "yarelis-rodriguez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "RAUL PINEDA",
+   "personas": 19,
+   "pagos": 160,
+   "total": 77096.72,
+   "por_tipo": {
+    "002": 77096.72
+   },
+   "por_anio": {
+    "2024": 77096.72
+   },
+   "slug": "raul-pineda",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "MANUEL CHENG",
+   "personas": 9,
+   "pagos": 73,
+   "total": 75703.32,
+   "por_tipo": {
+    "002": 75703.32
+   },
+   "por_anio": {
+    "2024": 75703.32
+   },
+   "slug": "manuel-cheng",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "AUGUSTO PALACIO",
+   "personas": 4,
+   "pagos": 42,
+   "total": 73978.33,
+   "por_tipo": {
+    "002": 73978.33
+   },
+   "por_anio": {
+    "2024": 73978.33
+   },
+   "slug": "augusto-palacios",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "EDUARDO GAITAN",
+   "personas": 5,
+   "pagos": 48,
+   "total": 73513.33,
+   "por_tipo": {
+    "002": 73513.33
+   },
+   "por_anio": {
+    "2024": 73513.33
+   },
+   "slug": "eduardo-gaitan",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "NEFTALI ZAMORA",
+   "personas": 5,
+   "pagos": 51,
+   "total": 73390.0,
+   "por_tipo": {
+    "002": 73390.0
+   },
+   "por_anio": {
+    "2024": 73390.0
+   },
+   "slug": "neftali-zamora",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JORGE GONZALEZ",
+   "personas": 6,
+   "pagos": 50,
+   "total": 72196.67,
+   "por_tipo": {
+    "002": 72196.67
+   },
+   "por_anio": {
+    "2024": 72196.67
+   },
+   "slug": "jorge-gonzalez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "LENIN ULATE",
+   "personas": 6,
+   "pagos": 63,
+   "total": 71100.01,
+   "por_tipo": {
+    "002": 71100.01
+   },
+   "por_anio": {
+    "2024": 71100.01
+   },
+   "slug": "lenin-alberto-ulate",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "LILIA DE GUERRA",
+   "personas": 9,
+   "pagos": 66,
+   "total": 69011.68,
+   "por_tipo": {
+    "002": 69011.68
+   },
+   "por_anio": {
+    "2024": 69011.68
+   },
+   "slug": "lilia-batista",
+   "coincidencia": "probable"
+  },
+  {
+   "nombre_cgr": "WALKIRIA CHANDLER",
+   "personas": 6,
+   "pagos": 47,
+   "total": 67423.33,
+   "por_tipo": {
+    "002": 67423.33
+   },
+   "por_anio": {
+    "2024": 67423.33
+   },
+   "slug": "walkiria-chandler",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "YUZAIDA DE AGUILAR",
+   "personas": 7,
+   "pagos": 59,
+   "total": 66600.0,
+   "por_tipo": {
+    "002": 66600.0
+   },
+   "por_anio": {
+    "2024": 66600.0
+   },
+   "slug": "yuzaida-marin",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ALAIN CEDENO",
+   "personas": 4,
+   "pagos": 41,
+   "total": 59666.66,
+   "por_tipo": {
+    "002": 59666.66
+   },
+   "por_anio": {
+    "2024": 59666.66
+   },
+   "slug": "alain-cedeno",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "MANUEL SAMANIEGO",
+   "personas": 4,
+   "pagos": 40,
+   "total": 59368.34,
+   "por_tipo": {
+    "002": 59368.34
+   },
+   "por_anio": {
+    "2024": 59368.34
+   },
+   "slug": "manuel-samaniego",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JONATHAN VEGA",
+   "personas": 6,
+   "pagos": 59,
+   "total": 58633.33,
+   "por_tipo": {
+    "002": 58633.33
+   },
+   "por_anio": {
+    "2024": 58633.33
+   },
+   "slug": "jhonatan-vega",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "TOMAS BENAVIDES",
+   "personas": 7,
+   "pagos": 58,
+   "total": 55490.01,
+   "por_tipo": {
+    "002": 55490.01
+   },
+   "por_anio": {
+    "2024": 55490.01
+   },
+   "slug": "tomas-benavides",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "ROBERTO ZUÑIGA",
+   "personas": 4,
+   "pagos": 31,
+   "total": 52986.65,
+   "por_tipo": {
+    "002": 52986.65
+   },
+   "por_anio": {
+    "2024": 52986.65
+   },
+   "slug": "roberto-zuniga",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "LUIS DUKE",
+   "personas": 4,
+   "pagos": 40,
+   "total": 52845.01,
+   "por_tipo": {
+    "002": 52845.01
+   },
+   "por_anio": {
+    "2024": 52845.01
+   },
+   "slug": "luis-duke",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "JORGE BLOISE",
+   "personas": 4,
+   "pagos": 35,
+   "total": 49973.33,
+   "por_tipo": {
+    "002": 49973.33
+   },
+   "por_anio": {
+    "2024": 49973.33
+   },
+   "slug": "jorge-bloise-iglesias",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "PASTSY DE HUANG",
+   "personas": 11,
+   "pagos": 88,
+   "total": 48696.66,
+   "por_tipo": {
+    "002": 48696.66
+   },
+   "por_anio": {
+    "2024": 48696.66
+   },
+   "slug": "patsy-lee-renteria",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "CARLOS SALDAÑA",
+   "personas": 3,
+   "pagos": 31,
+   "total": 47925.0,
+   "por_tipo": {
+    "002": 47925.0
+   },
+   "por_anio": {
+    "2024": 47925.0
+   },
+   "slug": "carlos-saldana",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "GERTRUDIS RODRIGUEZ",
+   "personas": 5,
+   "pagos": 45,
+   "total": 39750.0,
+   "por_tipo": {
+    "002": 39750.0
+   },
+   "por_anio": {
+    "2024": 39750.0
+   },
+   "slug": "gertrudis-rodriguez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "MIGUEL CAMPO",
+   "personas": 4,
+   "pagos": 37,
+   "total": 36750.0,
+   "por_tipo": {
+    "002": 36750.0
+   },
+   "por_anio": {
+    "2024": 36750.0
+   },
+   "slug": "miguel-angel-campos",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "YAMIRELIZ DE GARAY",
+   "personas": 3,
+   "pagos": 33,
+   "total": 34413.33,
+   "por_tipo": {
+    "002": 34413.33
+   },
+   "por_anio": {
+    "2024": 34413.33
+   },
+   "slug": "yamireliz-chong",
+   "coincidencia": "probable"
+  },
+  {
+   "nombre_cgr": "JANINE PRADO",
+   "personas": 2,
+   "pagos": 20,
+   "total": 23568.34,
+   "por_tipo": {
+    "002": 23568.34
+   },
+   "por_anio": {
+    "2024": 23568.34
+   },
+   "slug": "janine-prado",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "EDUARDO VAASQUEZ",
+   "personas": 4,
+   "pagos": 28,
+   "total": 19093.32,
+   "por_tipo": {
+    "002": 19093.32
+   },
+   "por_anio": {
+    "2024": 19093.32
+   },
+   "slug": "eduardo-vasquez",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "VICTOR CASTILLO",
+   "personas": 2,
+   "pagos": 13,
+   "total": 16706.67,
+   "por_tipo": {
+    "002": 16706.67
+   },
+   "por_anio": {
+    "2024": 16706.67
+   },
+   "slug": "victor-castillo",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "OLIVARES DE FRIAS FRIAS",
+   "personas": 1,
+   "pagos": 2,
+   "total": 4400.0,
+   "por_tipo": {
+    "002": 4400.0
+   },
+   "por_anio": {
+    "2024": 4400.0
+   },
+   "slug": null,
+   "coincidencia": null
+  },
+  {
+   "nombre_cgr": "EDWIN VERGARA",
+   "personas": 1,
+   "pagos": 6,
+   "total": 3580.0,
+   "por_tipo": {
+    "002": 3580.0
+   },
+   "por_anio": {
+    "2024": 3580.0
+   },
+   "slug": "edwin-vergara",
+   "coincidencia": "verificado"
+  },
+  {
+   "nombre_cgr": "NIXSON RODRIGUEZ",
+   "personas": 1,
+   "pagos": 8,
+   "total": 2380.0,
+   "por_tipo": {
+    "002": 2380.0
+   },
+   "por_anio": {
+    "2024": 2380.0
+   },
+   "slug": "nixon-andrade",
+   "coincidencia": "verificado"
+  }
+ ],
+ "entidades": [
+  {
+   "nombre_cgr": "ASAMBLEA LEGISLATIVA",
+   "personas": 7553,
+   "pagos": 14797,
+   "total": 5140712.01,
+   "por_tipo": {
+    "001": 878750.0,
+    "050": 4261962.01
+   },
+   "por_anio": {
+    "2024": 3640069.6,
+    "2025": 1500642.41
+   }
+  },
+  {
+   "nombre_cgr": "COMISION DE LEGISLACION",
+   "personas": 6170,
+   "pagos": 111480,
+   "total": 107952172.85,
+   "por_tipo": {
+    "001": 84246024.16,
+    "002": 23706148.69
+   },
+   "por_anio": {
+    "2024": 43964708.69,
+    "2025": 63987464.16
+   }
+  }
+ ],
+ "no_publicados": [
+  "benicio-robinson",
+  "carlos-afu",
+  "crispiano-adames",
+  "eliecer-castrellon",
+  "flor-brenes",
+  "javier-sucre",
+  "jorge-herrera",
+  "omar-ortega",
+  "paulette-thomas",
+  "raphael-buchanan",
+  "rogelio-revello"
+ ],
+ "sin_identificar": [
+  "OLIVARES DE FRIAS FRIAS"
+ ],
+ "fallidos": []
+}
