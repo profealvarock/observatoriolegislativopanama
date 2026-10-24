@@ -1,10 +1,10 @@
 {
-  "fecha_extraccion": "20261023_140751",
+  "fecha_extraccion": "20261024_131044",
   "respaldos": [],
   "fuente": "https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo",
   "fuente_metricas": "https://espaciocivico.org/buscador/diputados-monitoreo?order=field_asistencia_comisiones_an&sort=asc",
   "total_proyectos": 946,
-  "total_leyes": 119,
+  "total_leyes": 120,
   "total_diputados": 71,
   "etapas": {
     "Preliminar": 114,
@@ -15,9 +15,9 @@
     "Archivado": 68,
     "Negado": 61,
     "Segundo Debate": 165,
-    "Ley": 119,
+    "Ley": 120,
     "Retirado por proponente": 48,
-    "Enviado al Ejecutivo": 5,
+    "Enviado al Ejecutivo": 4,
     "Objetado por Ejecutivo": 31,
     "Suspendido": 7,
     "Tercer Debate(Objetado)": 2,
@@ -576,22 +576,22 @@
         "7406",
         "7411"
       ],
-      "leyes_copatrocinio": 7,
+      "leyes_copatrocinio": 8,
       "efectividad_ley": {
         "autor": {
           "proyectos": 62,
           "leyes": 3,
           "tasa": 4.8,
-          "esperadas": 4.47,
+          "esperadas": 4.51,
           "indice": 75,
           "evidencia": "alta"
         },
         "copat": {
           "proyectos": 49,
-          "leyes": 7,
-          "tasa": 14.3,
-          "esperadas": 6.93,
-          "indice": 101,
+          "leyes": 8,
+          "tasa": 16.3,
+          "esperadas": 7.07,
+          "indice": 111,
           "evidencia": "alta"
         }
       },
@@ -1024,22 +1024,22 @@
         "7411",
         "7412"
       ],
-      "leyes_copatrocinio": 22,
+      "leyes_copatrocinio": 23,
       "efectividad_ley": {
         "autor": {
           "proyectos": 29,
           "leyes": 1,
           "tasa": 3.4,
-          "esperadas": 2.77,
-          "indice": 59,
+          "esperadas": 2.85,
+          "indice": 57,
           "evidencia": "alta"
         },
         "copat": {
           "proyectos": 136,
-          "leyes": 22,
-          "tasa": 16.2,
-          "esperadas": 23.2,
-          "indice": 95,
+          "leyes": 23,
+          "tasa": 16.9,
+          "esperadas": 23.9,
+          "indice": 96,
           "evidencia": "alta"
         }
       },
@@ -1472,22 +1472,22 @@
         "7410",
         "7412"
       ],
-      "leyes_copatrocinio": 19,
+      "leyes_copatrocinio": 20,
       "efectividad_ley": {
         "autor": {
           "proyectos": 29,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 1.93,
-          "indice": 44,
+          "esperadas": 1.99,
+          "indice": 43,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 140,
-          "leyes": 19,
-          "tasa": 13.6,
-          "esperadas": 21.02,
-          "indice": 91,
+          "leyes": 20,
+          "tasa": 14.3,
+          "esperadas": 21.54,
+          "indice": 93,
           "evidencia": "alta"
         }
       },
@@ -1881,8 +1881,8 @@
           "proyectos": 102,
           "leyes": 8,
           "tasa": 7.8,
-          "esperadas": 15.2,
-          "indice": 57,
+          "esperadas": 15.75,
+          "indice": 55,
           "evidencia": "alta"
         }
       },
@@ -2226,22 +2226,22 @@
         "7405",
         "7411"
       ],
-      "leyes_copatrocinio": 10,
+      "leyes_copatrocinio": 11,
       "efectividad_ley": {
         "autor": {
           "proyectos": 25,
           "leyes": 3,
           "tasa": 12.0,
-          "esperadas": 1.64,
-          "indice": 144,
+          "esperadas": 1.67,
+          "indice": 142,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 63,
-          "leyes": 10,
-          "tasa": 15.9,
-          "esperadas": 11.69,
-          "indice": 87,
+          "leyes": 11,
+          "tasa": 17.5,
+          "esperadas": 11.9,
+          "indice": 93,
           "evidencia": "alta"
         }
       },
@@ -2584,16 +2584,16 @@
           "proyectos": 23,
           "leyes": 1,
           "tasa": 4.3,
-          "esperadas": 1.71,
-          "indice": 78,
+          "esperadas": 1.74,
+          "indice": 77,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 81,
           "leyes": 12,
           "tasa": 14.8,
-          "esperadas": 14.14,
-          "indice": 86,
+          "esperadas": 14.69,
+          "indice": 83,
           "evidencia": "alta"
         }
       },
@@ -2946,22 +2946,22 @@
         "7411",
         "7412"
       ],
-      "leyes_copatrocinio": 15,
+      "leyes_copatrocinio": 16,
       "efectividad_ley": {
         "autor": {
           "proyectos": 23,
           "leyes": 2,
           "tasa": 8.7,
-          "esperadas": 1.51,
-          "indice": 116,
+          "esperadas": 1.56,
+          "indice": 114,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 92,
-          "leyes": 15,
-          "tasa": 16.3,
-          "esperadas": 13.64,
-          "indice": 109,
+          "leyes": 16,
+          "tasa": 17.4,
+          "esperadas": 13.99,
+          "indice": 113,
           "evidencia": "alta"
         }
       },
@@ -3301,16 +3301,16 @@
           "proyectos": 20,
           "leyes": 1,
           "tasa": 5.0,
-          "esperadas": 1.55,
-          "indice": 82,
+          "esperadas": 1.57,
+          "indice": 81,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 101,
           "leyes": 16,
           "tasa": 15.8,
-          "esperadas": 15.93,
-          "indice": 100,
+          "esperadas": 16.38,
+          "indice": 98,
           "evidencia": "alta"
         }
       },
@@ -3667,22 +3667,22 @@
         "7406",
         "7411"
       ],
-      "leyes_copatrocinio": 15,
+      "leyes_copatrocinio": 16,
       "efectividad_ley": {
         "autor": {
           "proyectos": 20,
           "leyes": 4,
           "tasa": 20.0,
-          "esperadas": 2.18,
-          "indice": 150,
+          "esperadas": 2.23,
+          "indice": 148,
           "evidencia": "alta"
         },
         "copat": {
           "proyectos": 105,
-          "leyes": 15,
-          "tasa": 14.3,
-          "esperadas": 18.44,
-          "indice": 83,
+          "leyes": 16,
+          "tasa": 15.2,
+          "esperadas": 19.16,
+          "indice": 85,
           "evidencia": "alta"
         }
       },
@@ -4021,7 +4021,7 @@
           "proyectos": 20,
           "leyes": 4,
           "tasa": 20.0,
-          "esperadas": 2.11,
+          "esperadas": 2.13,
           "indice": 152,
           "evidencia": "alta"
         },
@@ -4029,8 +4029,8 @@
           "proyectos": 82,
           "leyes": 15,
           "tasa": 18.3,
-          "esperadas": 14.81,
-          "indice": 101,
+          "esperadas": 15.26,
+          "indice": 98,
           "evidencia": "alta"
         }
       },
@@ -4409,22 +4409,22 @@
         "7412",
         "7776"
       ],
-      "leyes_copatrocinio": 18,
+      "leyes_copatrocinio": 19,
       "efectividad_ley": {
         "autor": {
           "proyectos": 19,
           "leyes": 1,
           "tasa": 5.3,
-          "esperadas": 1.96,
+          "esperadas": 1.97,
           "indice": 72,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 149,
-          "leyes": 18,
-          "tasa": 12.1,
-          "esperadas": 21.11,
-          "indice": 86,
+          "leyes": 19,
+          "tasa": 12.8,
+          "esperadas": 21.84,
+          "indice": 88,
           "evidencia": "alta"
         }
       },
@@ -4695,16 +4695,16 @@
           "proyectos": 19,
           "leyes": 2,
           "tasa": 10.5,
-          "esperadas": 2.74,
-          "indice": 83,
+          "esperadas": 2.76,
+          "indice": 82,
           "evidencia": "alta"
         },
         "copat": {
           "proyectos": 31,
           "leyes": 3,
           "tasa": 9.7,
-          "esperadas": 4.23,
-          "indice": 78,
+          "esperadas": 4.37,
+          "indice": 77,
           "evidencia": "alta"
         }
       },
@@ -5006,7 +5006,7 @@
         "7412",
         "7776"
       ],
-      "leyes_copatrocinio": 13,
+      "leyes_copatrocinio": 14,
       "efectividad_ley": {
         "autor": {
           "proyectos": 18,
@@ -5018,10 +5018,10 @@
         },
         "copat": {
           "proyectos": 86,
-          "leyes": 13,
-          "tasa": 15.1,
-          "esperadas": 13.32,
-          "indice": 98,
+          "leyes": 14,
+          "tasa": 16.3,
+          "esperadas": 13.56,
+          "indice": 103,
           "evidencia": "alta"
         }
       },
@@ -5372,16 +5372,16 @@
           "proyectos": 18,
           "leyes": 1,
           "tasa": 5.6,
-          "esperadas": 1.97,
-          "indice": 72,
-          "evidencia": "media"
+          "esperadas": 2.02,
+          "indice": 71,
+          "evidencia": "alta"
         },
         "copat": {
           "proyectos": 122,
           "leyes": 11,
           "tasa": 9.0,
-          "esperadas": 17.93,
-          "indice": 64,
+          "esperadas": 18.38,
+          "indice": 63,
           "evidencia": "alta"
         }
       },
@@ -5614,7 +5614,7 @@
           "proyectos": 17,
           "leyes": 1,
           "tasa": 5.9,
-          "esperadas": 2.07,
+          "esperadas": 2.08,
           "indice": 70,
           "evidencia": "alta"
         },
@@ -5622,8 +5622,8 @@
           "proyectos": 12,
           "leyes": 4,
           "tasa": 33.3,
-          "esperadas": 1.92,
-          "indice": 161,
+          "esperadas": 1.96,
+          "indice": 159,
           "evidencia": "media"
         }
       },
@@ -5851,16 +5851,16 @@
           "proyectos": 17,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 1.71,
-          "indice": 47,
+          "esperadas": 1.75,
+          "indice": 46,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 13,
           "leyes": 3,
           "tasa": 23.1,
-          "esperadas": 1.72,
-          "indice": 140,
+          "esperadas": 1.79,
+          "indice": 137,
           "evidencia": "media"
         }
       },
@@ -6211,22 +6211,22 @@
         "7410",
         "7776"
       ],
-      "leyes_copatrocinio": 21,
+      "leyes_copatrocinio": 22,
       "efectividad_ley": {
         "autor": {
           "proyectos": 17,
           "leyes": 3,
           "tasa": 17.6,
-          "esperadas": 1.84,
-          "indice": 135,
+          "esperadas": 1.86,
+          "indice": 134,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 126,
-          "leyes": 21,
-          "tasa": 16.7,
-          "esperadas": 19.58,
-          "indice": 107,
+          "leyes": 22,
+          "tasa": 17.5,
+          "esperadas": 20.3,
+          "indice": 108,
           "evidencia": "alta"
         }
       },
@@ -6294,7 +6294,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Charlie Ho",
-      "foto": "https://espaciocivico.org/api/drive-image/1VmiaUx0rzlt-Zj2v4hcYcM1EpV0ai2XD",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/walkiria-chandler",
       "slug": "walkiria-chandler",
       "proyectos": 17,
@@ -6523,16 +6523,16 @@
           "proyectos": 17,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 1.59,
-          "indice": 49,
+          "esperadas": 1.64,
+          "indice": 48,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 85,
           "leyes": 14,
           "tasa": 16.5,
-          "esperadas": 15.94,
-          "indice": 89,
+          "esperadas": 16.29,
+          "indice": 87,
           "evidencia": "alta"
         }
       },
@@ -6600,7 +6600,7 @@
       "circuito": "8-2",
       "provincia": "Panamá",
       "suplente": "José Andrés González",
-      "foto": "https://espaciocivico.org/api/drive-image/1CDpks0hALy6EBT17Y2afzUvqAWkP92cC",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yarelis-rodriguez",
       "slug": "yarelis-rodriguez",
       "proyectos": 17,
@@ -6872,8 +6872,8 @@
           "proyectos": 111,
           "leyes": 21,
           "tasa": 18.9,
-          "esperadas": 18.23,
-          "indice": 114,
+          "esperadas": 18.68,
+          "indice": 112,
           "evidencia": "alta"
         }
       },
@@ -7109,16 +7109,16 @@
           "proyectos": 16,
           "leyes": 1,
           "tasa": 6.2,
-          "esperadas": 1.38,
-          "indice": 87,
+          "esperadas": 1.4,
+          "indice": 86,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 22,
           "leyes": 6,
           "tasa": 27.3,
-          "esperadas": 2.38,
-          "indice": 193,
+          "esperadas": 2.45,
+          "indice": 190,
           "evidencia": "alta"
         }
       },
@@ -7397,7 +7397,7 @@
         "7412",
         "7776"
       ],
-      "leyes_copatrocinio": 12,
+      "leyes_copatrocinio": 13,
       "efectividad_ley": {
         "autor": {
           "proyectos": 15,
@@ -7409,10 +7409,10 @@
         },
         "copat": {
           "proyectos": 77,
-          "leyes": 12,
-          "tasa": 15.6,
-          "esperadas": 15.21,
-          "indice": 81,
+          "leyes": 13,
+          "tasa": 16.9,
+          "esperadas": 15.69,
+          "indice": 84,
           "evidencia": "alta"
         }
       },
@@ -7631,7 +7631,7 @@
           "proyectos": 15,
           "leyes": 1,
           "tasa": 6.7,
-          "esperadas": 1.1,
+          "esperadas": 1.12,
           "indice": 96,
           "evidencia": "media"
         },
@@ -7639,8 +7639,8 @@
           "proyectos": 14,
           "leyes": 2,
           "tasa": 14.3,
-          "esperadas": 1.5,
-          "indice": 117,
+          "esperadas": 1.61,
+          "indice": 113,
           "evidencia": "media"
         }
       },
@@ -7712,7 +7712,7 @@
       "perfil": "https://espaciocivico.org/diputados/jorge-gonzalez",
       "slug": "jorge-gonzalez",
       "proyectos": 15,
-      "leyes": 0,
+      "leyes": 1,
       "co_patrocinios": 125,
       "proyectos_suplente": 1,
       "etapas": {
@@ -7720,9 +7720,15 @@
         "Primer Debate": 3,
         "Archivado": 2,
         "Enviado a subcomisión para analisis": 3,
-        "Enviado al Ejecutivo": 1
+        "Ley": 1
       },
-      "leyes_detalle": [],
+      "leyes_detalle": [
+        {
+          "ficha": "7779",
+          "titulo": "QUE ESTABLECE MEDIDAS EN LA SEÑALIZACION VIAL EN OBRAS PUBLICAS EN LA REPUBLICA DE PANAMA",
+          "fecha": "03-02-2025"
+        }
+      ],
       "proyectos_detalle": [
         {
           "ficha": "8568",
@@ -7794,7 +7800,7 @@
           "ficha": "7779",
           "titulo": "QUE ESTABLECE MEDIDAS EN LA SEÑALIZACION VIAL EN OBRAS PUBLICAS EN LA REPUBLICA DE PANAMA",
           "fecha": "03-02-2025",
-          "etapa": "Enviado al Ejecutivo"
+          "etapa": "Ley"
         },
         {
           "ficha": "7754",
@@ -7961,18 +7967,18 @@
       "efectividad_ley": {
         "autor": {
           "proyectos": 15,
-          "leyes": 0,
-          "tasa": 0.0,
-          "esperadas": 1.09,
-          "indice": 58,
+          "leyes": 1,
+          "tasa": 6.7,
+          "esperadas": 1.14,
+          "indice": 95,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 125,
           "leyes": 16,
           "tasa": 12.8,
-          "esperadas": 19.07,
-          "indice": 85,
+          "esperadas": 19.56,
+          "indice": 83,
           "evidencia": "alta"
         }
       },
@@ -8215,16 +8221,16 @@
           "proyectos": 15,
           "leyes": 2,
           "tasa": 13.3,
-          "esperadas": 1.75,
-          "indice": 108,
+          "esperadas": 1.79,
+          "indice": 106,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 32,
           "leyes": 5,
           "tasa": 15.6,
-          "esperadas": 4.48,
-          "indice": 109,
+          "esperadas": 4.62,
+          "indice": 106,
           "evidencia": "alta"
         }
       },
@@ -8441,16 +8447,16 @@
           "proyectos": 14,
           "leyes": 2,
           "tasa": 14.3,
-          "esperadas": 1.41,
-          "indice": 120,
+          "esperadas": 1.43,
+          "indice": 119,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 12,
           "leyes": 3,
           "tasa": 25.0,
-          "esperadas": 1.34,
-          "indice": 158,
+          "esperadas": 1.37,
+          "indice": 157,
           "evidencia": "media"
         }
       },
@@ -8694,22 +8700,22 @@
         "7415",
         "7406"
       ],
-      "leyes_copatrocinio": 8,
+      "leyes_copatrocinio": 9,
       "efectividad_ley": {
         "autor": {
           "proyectos": 14,
           "leyes": 1,
           "tasa": 7.1,
-          "esperadas": 1.35,
-          "indice": 88,
+          "esperadas": 1.4,
+          "indice": 86,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 50,
-          "leyes": 8,
-          "tasa": 16.0,
-          "esperadas": 7.38,
-          "indice": 107,
+          "leyes": 9,
+          "tasa": 18.0,
+          "esperadas": 7.55,
+          "indice": 116,
           "evidencia": "alta"
         }
       },
@@ -8777,7 +8783,7 @@
       "circuito": "13-4",
       "provincia": "Panamá Oeste",
       "suplente": "Abdiel Núñez",
-      "foto": "https://espaciocivico.org/api/drive-image/1CuWKrXk9dFZTB67s4FPOyzaFZHkyhZr_",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yuzaida-marin",
       "slug": "yuzaida-marin",
       "proyectos": 14,
@@ -8948,8 +8954,8 @@
           "proyectos": 32,
           "leyes": 6,
           "tasa": 18.8,
-          "esperadas": 3.89,
-          "indice": 139,
+          "esperadas": 4.06,
+          "indice": 135,
           "evidencia": "alta"
         }
       },
@@ -9215,16 +9221,16 @@
           "proyectos": 13,
           "leyes": 3,
           "tasa": 23.1,
-          "esperadas": 1.11,
-          "indice": 173,
+          "esperadas": 1.12,
+          "indice": 171,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 65,
           "leyes": 8,
           "tasa": 12.3,
-          "esperadas": 10.71,
-          "indice": 78,
+          "esperadas": 11.12,
+          "indice": 75,
           "evidencia": "alta"
         }
       },
@@ -9432,8 +9438,8 @@
           "proyectos": 10,
           "leyes": 3,
           "tasa": 30.0,
-          "esperadas": 1.34,
-          "indice": 158,
+          "esperadas": 1.44,
+          "indice": 153,
           "evidencia": "media"
         }
       },
@@ -9674,16 +9680,16 @@
           "proyectos": 12,
           "leyes": 1,
           "tasa": 8.3,
-          "esperadas": 1.22,
-          "indice": 92,
+          "esperadas": 1.24,
+          "indice": 91,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 54,
           "leyes": 12,
           "tasa": 22.2,
-          "esperadas": 10.04,
-          "indice": 117,
+          "esperadas": 10.45,
+          "indice": 113,
           "evidencia": "alta"
         }
       },
@@ -9751,7 +9757,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/api/drive-image/1clc288nbtAKzM6R_yPggugkcSqBSN_R1",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
       "slug": "yamireliz-chong",
       "proyectos": 11,
@@ -9963,22 +9969,22 @@
         "7406",
         "7410"
       ],
-      "leyes_copatrocinio": 16,
+      "leyes_copatrocinio": 17,
       "efectividad_ley": {
         "autor": {
           "proyectos": 11,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 0.84,
-          "indice": 64,
+          "esperadas": 0.87,
+          "indice": 63,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 116,
-          "leyes": 16,
-          "tasa": 13.8,
-          "esperadas": 16.96,
-          "indice": 95,
+          "leyes": 17,
+          "tasa": 14.7,
+          "esperadas": 17.55,
+          "indice": 97,
           "evidencia": "alta"
         }
       },
@@ -10231,22 +10237,22 @@
         "7412",
         "7776"
       ],
-      "leyes_copatrocinio": 12,
+      "leyes_copatrocinio": 13,
       "efectividad_ley": {
         "autor": {
           "proyectos": 10,
           "leyes": 2,
           "tasa": 20.0,
-          "esperadas": 0.9,
-          "indice": 146,
+          "esperadas": 0.91,
+          "indice": 145,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 85,
-          "leyes": 12,
-          "tasa": 14.1,
-          "esperadas": 13.15,
-          "indice": 92,
+          "leyes": 13,
+          "tasa": 15.3,
+          "esperadas": 13.53,
+          "indice": 96,
           "evidencia": "alta"
         }
       },
@@ -10619,22 +10625,22 @@
         "7412",
         "7776"
       ],
-      "leyes_copatrocinio": 25,
+      "leyes_copatrocinio": 26,
       "efectividad_ley": {
         "autor": {
           "proyectos": 10,
           "leyes": 2,
           "tasa": 20.0,
-          "esperadas": 1.2,
-          "indice": 130,
+          "esperadas": 1.22,
+          "indice": 129,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 205,
-          "leyes": 25,
-          "tasa": 12.2,
-          "esperadas": 27.32,
-          "indice": 92,
+          "leyes": 26,
+          "tasa": 12.7,
+          "esperadas": 28.19,
+          "indice": 93,
           "evidencia": "alta"
         }
       },
@@ -10895,22 +10901,22 @@
         "7411",
         "7412"
       ],
-      "leyes_copatrocinio": 14,
+      "leyes_copatrocinio": 15,
       "efectividad_ley": {
         "autor": {
           "proyectos": 10,
           "leyes": 3,
           "tasa": 30.0,
-          "esperadas": 1.07,
-          "indice": 175,
+          "esperadas": 1.09,
+          "indice": 174,
           "evidencia": "media"
         },
         "copat": {
           "proyectos": 88,
-          "leyes": 14,
-          "tasa": 15.9,
-          "esperadas": 14.73,
-          "indice": 96,
+          "leyes": 15,
+          "tasa": 17.0,
+          "esperadas": 15.18,
+          "indice": 99,
           "evidencia": "alta"
         }
       },
@@ -11091,8 +11097,8 @@
           "proyectos": 18,
           "leyes": 1,
           "tasa": 5.6,
-          "esperadas": 1.87,
-          "indice": 74,
+          "esperadas": 1.97,
+          "indice": 72,
           "evidencia": "media"
         }
       },
@@ -11309,7 +11315,7 @@
         "7405",
         "7776"
       ],
-      "leyes_copatrocinio": 13,
+      "leyes_copatrocinio": 14,
       "efectividad_ley": {
         "autor": {
           "proyectos": 8,
@@ -11321,10 +11327,10 @@
         },
         "copat": {
           "proyectos": 64,
-          "leyes": 13,
-          "tasa": 20.3,
-          "esperadas": 10.11,
-          "indice": 125,
+          "leyes": 14,
+          "tasa": 21.9,
+          "esperadas": 10.49,
+          "indice": 129,
           "evidencia": "alta"
         }
       },
@@ -11512,8 +11518,8 @@
           "proyectos": 24,
           "leyes": 6,
           "tasa": 25.0,
-          "esperadas": 3.19,
-          "indice": 160,
+          "esperadas": 3.33,
+          "indice": 155,
           "evidencia": "alta"
         }
       },
@@ -11698,8 +11704,8 @@
           "proyectos": 26,
           "leyes": 4,
           "tasa": 15.4,
-          "esperadas": 2.92,
-          "indice": 125,
+          "esperadas": 2.98,
+          "indice": 123,
           "evidencia": "alta"
         }
       },
@@ -11947,8 +11953,8 @@
           "proyectos": 93,
           "leyes": 13,
           "tasa": 14.0,
-          "esperadas": 14.76,
-          "indice": 89,
+          "esperadas": 15.17,
+          "indice": 87,
           "evidencia": "alta"
         }
       },
@@ -12189,22 +12195,22 @@
         "7410",
         "7412"
       ],
-      "leyes_copatrocinio": 19,
+      "leyes_copatrocinio": 20,
       "efectividad_ley": {
         "autor": {
           "proyectos": 7,
           "leyes": 1,
           "tasa": 14.3,
-          "esperadas": 0.81,
+          "esperadas": 0.82,
           "indice": 108,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 101,
-          "leyes": 19,
-          "tasa": 18.8,
-          "esperadas": 19.24,
-          "indice": 99,
+          "leyes": 20,
+          "tasa": 19.8,
+          "esperadas": 19.72,
+          "indice": 101,
           "evidencia": "alta"
         }
       },
@@ -12365,8 +12371,8 @@
           "proyectos": 20,
           "leyes": 4,
           "tasa": 20.0,
-          "esperadas": 3.37,
-          "indice": 113,
+          "esperadas": 3.5,
+          "indice": 110,
           "evidencia": "alta"
         }
       },
@@ -12553,7 +12559,7 @@
         "7406",
         "7412"
       ],
-      "leyes_copatrocinio": 11,
+      "leyes_copatrocinio": 12,
       "efectividad_ley": {
         "autor": {
           "proyectos": 6,
@@ -12565,10 +12571,10 @@
         },
         "copat": {
           "proyectos": 46,
-          "leyes": 11,
-          "tasa": 23.9,
-          "esperadas": 8.43,
-          "indice": 126,
+          "leyes": 12,
+          "tasa": 26.1,
+          "esperadas": 8.81,
+          "indice": 131,
           "evidencia": "alta"
         }
       },
@@ -12736,16 +12742,16 @@
           "proyectos": 6,
           "leyes": 1,
           "tasa": 16.7,
-          "esperadas": 0.54,
-          "indice": 122,
+          "esperadas": 0.56,
+          "indice": 121,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 29,
           "leyes": 5,
           "tasa": 17.2,
-          "esperadas": 3.17,
-          "indice": 139,
+          "esperadas": 3.28,
+          "indice": 136,
           "evidencia": "alta"
         }
       },
@@ -12898,9 +12904,9 @@
           "proyectos": 11,
           "leyes": 1,
           "tasa": 9.1,
-          "esperadas": 1.99,
-          "indice": 72,
-          "evidencia": "media"
+          "esperadas": 2.02,
+          "indice": 71,
+          "evidencia": "alta"
         }
       },
       "temas_autor": {
@@ -13055,9 +13061,9 @@
           "proyectos": 11,
           "leyes": 2,
           "tasa": 18.2,
-          "esperadas": 0.98,
-          "indice": 141,
-          "evidencia": "baja"
+          "esperadas": 1.11,
+          "indice": 134,
+          "evidencia": "media"
         }
       },
       "temas_autor": {
@@ -13242,8 +13248,8 @@
           "proyectos": 33,
           "leyes": 7,
           "tasa": 21.2,
-          "esperadas": 5.06,
-          "indice": 130,
+          "esperadas": 5.24,
+          "indice": 126,
           "evidencia": "alta"
         }
       },
@@ -13311,7 +13317,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Lalo' Antonio",
-      "foto": "https://espaciocivico.org/api/drive-image/1l64FLwc0g2vmPoSlnMbRWcIzT0BBthgE",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/rogelio-revello",
       "slug": "rogelio-revello",
       "proyectos": 6,
@@ -13405,16 +13411,16 @@
           "proyectos": 6,
           "leyes": 1,
           "tasa": 16.7,
-          "esperadas": 0.37,
-          "indice": 134,
+          "esperadas": 0.38,
+          "indice": 133,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 21,
           "leyes": 2,
           "tasa": 9.5,
-          "esperadas": 2.47,
-          "indice": 88,
+          "esperadas": 2.51,
+          "indice": 87,
           "evidencia": "alta"
         }
       },
@@ -13480,7 +13486,7 @@
       "circuito": "13-1",
       "provincia": "Panamá Oeste",
       "suplente": "Ricardo Valencia",
-      "foto": "https://espaciocivico.org/api/drive-image/1gW-I7YUMSYAYP-8xtuRTuNF9jX-mcCH5",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/shirley-castanedas",
       "slug": "shirley-castanedas",
       "proyectos": 6,
@@ -13578,9 +13584,9 @@
           "proyectos": 19,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 1.98,
+          "esperadas": 2.01,
           "indice": 43,
-          "evidencia": "media"
+          "evidencia": "alta"
         }
       },
       "temas_autor": {
@@ -13737,8 +13743,8 @@
           "proyectos": 24,
           "leyes": 3,
           "tasa": 12.5,
-          "esperadas": 3.66,
-          "indice": 87,
+          "esperadas": 3.87,
+          "indice": 84,
           "evidencia": "alta"
         }
       },
@@ -13913,8 +13919,8 @@
           "proyectos": 39,
           "leyes": 9,
           "tasa": 23.1,
-          "esperadas": 6.77,
-          "indice": 127,
+          "esperadas": 6.97,
+          "indice": 124,
           "evidencia": "alta"
         }
       },
@@ -14071,16 +14077,16 @@
           "proyectos": 5,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 0.51,
-          "indice": 75,
+          "esperadas": 0.53,
+          "indice": 74,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 31,
           "leyes": 4,
           "tasa": 12.9,
-          "esperadas": 4.74,
-          "indice": 88,
+          "esperadas": 4.91,
+          "indice": 86,
           "evidencia": "alta"
         }
       },
@@ -14255,8 +14261,8 @@
           "proyectos": 36,
           "leyes": 9,
           "tasa": 25.0,
-          "esperadas": 6.47,
-          "indice": 132,
+          "esperadas": 6.54,
+          "indice": 131,
           "evidencia": "alta"
         }
       },
@@ -14406,8 +14412,8 @@
           "proyectos": 15,
           "leyes": 7,
           "tasa": 46.7,
-          "esperadas": 2.07,
-          "indice": 238,
+          "esperadas": 2.11,
+          "indice": 236,
           "evidencia": "alta"
         }
       },
@@ -14551,16 +14557,16 @@
           "proyectos": 5,
           "leyes": 1,
           "tasa": 20.0,
-          "esperadas": 0.55,
-          "indice": 122,
+          "esperadas": 0.58,
+          "indice": 120,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 11,
           "leyes": 1,
           "tasa": 9.1,
-          "esperadas": 1.43,
-          "indice": 85,
+          "esperadas": 1.5,
+          "indice": 83,
           "evidencia": "media"
         }
       },
@@ -14754,8 +14760,8 @@
           "proyectos": 55,
           "leyes": 11,
           "tasa": 20.0,
-          "esperadas": 9.22,
-          "indice": 117,
+          "esperadas": 9.46,
+          "indice": 114,
           "evidencia": "alta"
         }
       },
@@ -14821,7 +14827,7 @@
       "circuito": "9-2",
       "provincia": "Veraguas",
       "suplente": "Ricardo Martinelli Linares",
-      "foto": "https://espaciocivico.org/api/drive-image/1jut9OWQ0kDwtST7BWOkS0UCeU5303_Ux",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/tomas-benavides",
       "slug": "tomas-benavides",
       "proyectos": 5,
@@ -14905,8 +14911,8 @@
           "proyectos": 17,
           "leyes": 2,
           "tasa": 11.8,
-          "esperadas": 2.15,
-          "indice": 96,
+          "esperadas": 2.19,
+          "indice": 95,
           "evidencia": "alta"
         }
       },
@@ -15051,8 +15057,8 @@
           "proyectos": 21,
           "leyes": 5,
           "tasa": 23.8,
-          "esperadas": 2.65,
-          "indice": 156,
+          "esperadas": 2.79,
+          "indice": 151,
           "evidencia": "alta"
         }
       },
@@ -15183,17 +15189,17 @@
           "proyectos": 4,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 0.36,
-          "indice": 81,
+          "esperadas": 0.37,
+          "indice": 80,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 13,
           "leyes": 1,
           "tasa": 7.7,
-          "esperadas": 1.0,
-          "indice": 100,
-          "evidencia": "baja"
+          "esperadas": 1.07,
+          "indice": 97,
+          "evidencia": "media"
         }
       },
       "temas_autor": {
@@ -15260,7 +15266,7 @@
       "circuito": "7-2",
       "provincia": "Los Santos",
       "suplente": "Luis Enrique Batista",
-      "foto": "https://espaciocivico.org/api/drive-image/1UVWdM7SQlFSbtmT1LFx6zHjJ7stYrIXR",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/ronald-de-gracia",
       "slug": "ronald-de-gracia",
       "proyectos": 4,
@@ -15364,8 +15370,8 @@
           "proyectos": 38,
           "leyes": 12,
           "tasa": 31.6,
-          "esperadas": 6.1,
-          "indice": 178,
+          "esperadas": 6.24,
+          "indice": 174,
           "evidencia": "alta"
         }
       },
@@ -15433,7 +15439,7 @@
       "circuito": "1-1",
       "provincia": "Bocas del Toro",
       "suplente": "Elias Beker",
-      "foto": "https://espaciocivico.org/api/drive-image/1uGcarNpw4uxMJ2cpmukAGm3WLFFPj5DY",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/yesica-romero",
       "slug": "yesica-romero",
       "proyectos": 4,
@@ -15521,8 +15527,8 @@
           "proyectos": 22,
           "leyes": 2,
           "tasa": 9.1,
-          "esperadas": 3.59,
-          "indice": 69,
+          "esperadas": 3.77,
+          "indice": 66,
           "evidencia": "alta"
         }
       },
@@ -15647,16 +15653,16 @@
           "proyectos": 3,
           "leyes": 1,
           "tasa": 33.3,
-          "esperadas": 0.33,
-          "indice": 136,
+          "esperadas": 0.35,
+          "indice": 135,
           "evidencia": "baja"
         },
         "copat": {
           "proyectos": 9,
           "leyes": 2,
           "tasa": 22.2,
-          "esperadas": 1.5,
-          "indice": 117,
+          "esperadas": 1.57,
+          "indice": 114,
           "evidencia": "media"
         }
       },
@@ -15826,8 +15832,8 @@
           "proyectos": 40,
           "leyes": 9,
           "tasa": 22.5,
-          "esperadas": 6.23,
-          "indice": 136,
+          "esperadas": 6.47,
+          "indice": 132,
           "evidencia": "alta"
         }
       },
@@ -15975,8 +15981,8 @@
           "proyectos": 21,
           "leyes": 1,
           "tasa": 4.8,
-          "esperadas": 2.15,
-          "indice": 69,
+          "esperadas": 2.29,
+          "indice": 66,
           "evidencia": "alta"
         }
       },
@@ -16107,8 +16113,8 @@
           "proyectos": 13,
           "leyes": 3,
           "tasa": 23.1,
-          "esperadas": 1.62,
-          "indice": 144,
+          "esperadas": 1.65,
+          "indice": 143,
           "evidencia": "media"
         }
       },
@@ -16248,8 +16254,8 @@
           "proyectos": 22,
           "leyes": 2,
           "tasa": 9.1,
-          "esperadas": 3.88,
-          "indice": 65,
+          "esperadas": 4.08,
+          "indice": 63,
           "evidencia": "alta"
         }
       },
@@ -16378,8 +16384,8 @@
           "proyectos": 25,
           "leyes": 6,
           "tasa": 24.0,
-          "esperadas": 4.73,
-          "indice": 120,
+          "esperadas": 4.84,
+          "indice": 118,
           "evidencia": "alta"
         }
       },
@@ -16488,9 +16494,9 @@
           "proyectos": 12,
           "leyes": 3,
           "tasa": 25.0,
-          "esperadas": 2.0,
-          "indice": 129,
-          "evidencia": "media"
+          "esperadas": 2.07,
+          "indice": 126,
+          "evidencia": "alta"
         }
       },
       "temas_autor": {
@@ -16603,7 +16609,7 @@
           "proyectos": 14,
           "leyes": 2,
           "tasa": 14.3,
-          "esperadas": 2.05,
+          "esperadas": 2.09,
           "indice": 98,
           "evidencia": "alta"
         }
@@ -16668,7 +16674,7 @@
       "circuito": "8-3",
       "provincia": "Panamá",
       "suplente": "Mercedes Gálvez",
-      "foto": "https://espaciocivico.org/api/drive-image/1xCbjqWbYVyszVHiohbQ6ZyYaosrR_cTk",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/sergio-galvez",
       "slug": "sergio-galvez",
       "proyectos": 1,
@@ -16724,8 +16730,8 @@
           "proyectos": 20,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 1.61,
-          "indice": 48,
+          "esperadas": 1.68,
+          "indice": 47,
           "evidencia": "media"
         }
       },
@@ -16831,8 +16837,8 @@
           "proyectos": 15,
           "leyes": 0,
           "tasa": 0.0,
-          "esperadas": 1.19,
-          "indice": 56,
+          "esperadas": 1.3,
+          "indice": 54,
           "evidencia": "media"
         }
       },
@@ -16893,7 +16899,7 @@
       "circuito": "3-1",
       "provincia": "Colón",
       "suplente": "Alejandro Salazar",
-      "foto": "https://espaciocivico.org/api/drive-image/1hSYeYwas_z-dnZz4wHuEK5d2dY2b-bdW",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
       "perfil": "https://espaciocivico.org/diputados/victor-castillo",
       "slug": "victor-castillo",
       "proyectos": 0,
@@ -16940,8 +16946,8 @@
           "proyectos": 21,
           "leyes": 1,
           "tasa": 4.8,
-          "esperadas": 3.17,
-          "indice": 54,
+          "esperadas": 3.2,
+          "indice": 53,
           "evidencia": "alta"
         }
       },
@@ -17429,9 +17435,9 @@
     "Coalición Vamos": {
       "diputados": 15,
       "proyectos": 267,
-      "leyes": 15,
+      "leyes": 16,
       "participaciones": 401,
-      "leyes_participacion": 41
+      "leyes_participacion": 42
     },
     "Partido Revolucionario Democrático": {
       "diputados": 13,
@@ -17452,21 +17458,21 @@
       "proyectos": 107,
       "leyes": 10,
       "participaciones": 221,
-      "leyes_participacion": 26
+      "leyes_participacion": 27
     },
     "Partido Panameñista": {
       "diputados": 8,
       "proyectos": 68,
       "leyes": 11,
       "participaciones": 191,
-      "leyes_participacion": 28
+      "leyes_participacion": 29
     },
     "Libre Postulación": {
       "diputados": 4,
       "proyectos": 65,
       "leyes": 7,
       "participaciones": 228,
-      "leyes_participacion": 33
+      "leyes_participacion": 34
     },
     "Cambio Democrático": {
       "diputados": 8,
@@ -17480,7 +17486,7 @@
       "proyectos": 24,
       "leyes": 2,
       "participaciones": 123,
-      "leyes_participacion": 19
+      "leyes_participacion": 20
     },
     "Movimiento Liberal Republicano Nacionalista": {
       "diputados": 1,
@@ -17508,44 +17514,44 @@
     "Panamá": {
       "diputados": 25,
       "proyectos": 399,
-      "leyes": 30,
+      "leyes": 31,
       "participaciones": 573,
-      "leyes_participacion": 48
+      "leyes_participacion": 49
     },
     "Panamá Oeste": {
       "diputados": 8,
       "proyectos": 106,
       "leyes": 8,
       "participaciones": 312,
-      "leyes_participacion": 38
+      "leyes_participacion": 39
     },
     "Chiriquí": {
       "diputados": 9,
       "proyectos": 95,
       "leyes": 9,
       "participaciones": 254,
-      "leyes_participacion": 34
+      "leyes_participacion": 35
     },
     "Veraguas": {
       "diputados": 5,
       "proyectos": 50,
       "leyes": 8,
       "participaciones": 277,
-      "leyes_participacion": 33
+      "leyes_participacion": 34
     },
     "Coclé": {
       "diputados": 5,
       "proyectos": 40,
       "leyes": 7,
       "participaciones": 129,
-      "leyes_participacion": 23
+      "leyes_participacion": 24
     },
     "Colón": {
       "diputados": 5,
       "proyectos": 38,
       "leyes": 2,
       "participaciones": 179,
-      "leyes_participacion": 23
+      "leyes_participacion": 24
     },
     "Herrera": {
       "diputados": 3,
@@ -17690,8 +17696,8 @@
         "all": 90
       },
       "2025": {
-        "Ley": 14,
-        "debate": 70,
+        "Ley": 15,
+        "debate": 69,
         "analisis": 18,
         "sinAvance": 37,
         "all": 139
@@ -17704,8 +17710,8 @@
         "all": 170
       },
       "all": {
-        "Ley": 30,
-        "debate": 182,
+        "Ley": 31,
+        "debate": 181,
         "analisis": 109,
         "sinAvance": 78,
         "all": 399
@@ -17958,14 +17964,14 @@
     "tasa_base": {
       "autor": {
         "2024-S2": 17.7,
-        "2025-S1": 18.0,
+        "2025-S1": 19.7,
         "2025-S2": 9.3,
         "2026-S1": 5.8,
         "2026-S2": 0.0
       },
       "copat": {
         "2024-S2": 25.6,
-        "2025-S1": 18.8,
+        "2025-S1": 22.3,
         "2025-S2": 8.1,
         "2026-S1": 2.0,
         "2026-S2": 0.0
@@ -18033,7 +18039,7 @@
     },
     "Infraestructura, transporte y vivienda": {
       "proyectos": 70,
-      "leyes": 5
+      "leyes": 6
     },
     "Cultura, deporte y turismo": {
       "proyectos": 60,
