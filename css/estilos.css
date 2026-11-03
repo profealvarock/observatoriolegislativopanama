@@ -724,8 +724,20 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
 .vot-tip{position:absolute;z-index:5;display:flex;gap:10px;align-items:center;min-width:180px;max-width:260px;pointer-events:none;
   background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:8px 10px;box-shadow:0 6px 20px var(--shadow)}
 .vot-tip[hidden]{display:none}
-.vot-tip img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--surface2)}
 .vt-nombre{font-weight:700;font-size:.8rem;line-height:1.25}
 .vt-sub{font-family:var(--fm);font-size:.62rem;color:var(--muted);margin-top:2px}
 .vt-sub i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:0}
 .vt-voto{margin-top:5px}
+/* Filtro "Mostrar" del hemiciclo: atenúa las curules que no coinciden y lista a quienes sí */
+.hemiciclo .h-dim{opacity:.12}
+.map-chip:disabled{opacity:.4;cursor:default}
+.vot-filtro-lista{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin:4px 0 8px;font-size:.78rem}
+.vot-filtro-lista p{font-family:var(--fm);font-size:.7rem;color:var(--muted);margin-bottom:6px}
+.vfl-grupo{display:grid;grid-template-columns:150px 1fr;gap:4px 10px;padding:4px 0;border-top:1px solid var(--border);line-height:1.5}
+.vfl-grupo:first-of-type{border-top:none}
+.vfl-bancada{font-family:var(--fm);font-size:.68rem;color:var(--muted);white-space:nowrap}
+.vfl-bancada i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+.vfl-grupo a{color:var(--text);text-decoration:none;font-weight:600}
+.vfl-grupo a:hover{color:var(--acc)}
+.vfl-grupo small{color:var(--muted);font-family:var(--fm);font-size:.62rem}
+@media(max-width:480px){.vfl-grupo{grid-template-columns:1fr}}

@@ -433,7 +433,7 @@ function separarPreside(seats, slug){
 
 // Hemiciclo en dos alas con pasillo central (como los diagramas de la Asamblea). Las curules se llenan por
 // ángulo, de izquierda a derecha, así cada bancada ocupa un sector; quien preside va abajo, al centro, con anillo.
-function hemicicloSVG(seats, color, preside){
+function hemicicloSVG(seats, color, preside, filtro='todos'){
   const N=seats.length, filas=5, rIn=44, rOut=100, cx=110, cy=104, pasillo=.13;   // pasillo en radianes a cada lado
   const radios=Array.from({length:filas},(_,i)=>rIn+(rOut-rIn)*i/(filas-1));
   const pos=[];
@@ -447,10 +447,12 @@ function hemicicloSVG(seats, color, preside){
     pos.push(...ala);
   });
   const colorP=c=>VOT.partidos?.[c]?.color||'#7a8fb0';
-  // data-i = posición en la lista de curules (quien preside va al final); la tarjeta emergente la lee
+  // data-i = posición en la lista de curules (quien preside va al final); la tarjeta emergente la lee.
+  // Con un filtro de voto, las curules que no coinciden se atenúan.
   const curul=(s,x,y,i)=>{
     const fill=color==='partido'?`style="fill:${esc(colorP(s.partido))}"`:'';
-    return `<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="5.2" data-i="${i}" class="${color==='partido'?'h-par'+(s.voto?'':' h-aus'):'v-'+(s.voto||'aus')}" ${fill}></circle>`;
+    const dim=filtro!=='todos'&&(s.voto||'aus')!==filtro?' h-dim':'';
+    return `<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="5.2" data-i="${i}" class="${color==='partido'?'h-par'+(s.voto?'':' h-aus'):'v-'+(s.voto||'aus')}${dim}" ${fill}></circle>`;
   };
   const total=N+(preside?1:0);
   return `<svg class="hemiciclo" viewBox="0 0 220 ${preside?132:112}" role="img" aria-label="Hemiciclo de ${total} curules: una por diputado. Pasa el cursor o toca una curul para ver quién es; los mismos datos están en la tabla de abajo.">
@@ -460,11 +462,11 @@ function hemicicloSVG(seats, color, preside){
   </svg>`;
 }
 
-// Tarjeta emergente de una curul: foto, nombre, bancada, voto y suplente
+// Tarjeta emergente de una curul: nombre, bancada, voto y suplente
 function tarjetaCurul(s, preside){
   const d=s.slug?(D?.diputados||[]).find(x=>depSlug(x)===s.slug):null;
   const col=VOT.partidos?.[s.partido]?.color||'#7a8fb0';
-  return `${d?.foto?`<img src="${safeUrl(d.foto)}" alt="" onerror="this.remove()">`:''}<div>
+  return `<div>
     <div class="vt-nombre">${esc(s.nombre)}</div>
     <div class="vt-sub"><i style="background:${esc(col)}"></i>${esc(bancada(s.partido))}${d?.circuito?` · circuito ${esc(d.circuito)}`:''}</div>
     <div class="vt-voto">${chipVoto(s.voto)}</div>
@@ -496,6 +498,18 @@ function activarTarjetasHemiciclo(cont, seats, nAlas){
   svg.addEventListener('mouseleave',ocultar);
 }
 
+// Lista de quienes votaron de una forma (o no registraron voto), agrupada por bancada
+function listaFiltroVoto(seats, filtro){
+  const sel=seats.filter(s=>(s.voto||'aus')===filtro);
+  const txt={favor:'votaron a favor',contra:'votaron en contra',abstencion:'se abstuvieron',aus:'no registraron voto'}[filtro];
+  const grupos={};
+  sel.forEach(s=>(grupos[s.partido]=grupos[s.partido]||[]).push(s));
+  const orden=Object.keys(grupos).sort((a,b)=>grupos[b].length-grupos[a].length||bancada(a).localeCompare(bancada(b),'es'));
+  return `<div class="vot-filtro-lista"><p><b>${sel.length}</b> diputado${sel.length===1?'':'s'} ${txt}${filtro==='aus'?' (estaban ausentes o presentes sin votar: la fuente no lo distingue)':''}.</p>
+    ${orden.map(c=>`<div class="vfl-grupo"><span class="vfl-bancada"><i style="background:${esc(VOT.partidos?.[c]?.color||'#7a8fb0')}"></i>${esc(bancada(c))} · ${grupos[c].length}</span>
+      <span>${grupos[c].map(s=>`${s.slug?`<a href="#diputado=${esc(s.slug)}">${esc(s.nombre)}</a>`:esc(s.nombre)}${s.suplente?` <small>(votó su suplente ${esc(s.suplente)})</small>`:''}`).join(', ')}</span></div>`).join('')}</div>`;
+}
+
 function renderDetalleVot(cid){
   const sel=_votSel[cid], id=sel.id;
   ensureDetalleVot(id).then(det=>{
@@ -507,19 +521,24 @@ function renderDetalleVot(cid){
     const opciones=(v&&!(VMET?.unidad_por_pregunta||[]).includes(v.tipo)&&det.preguntas.length>1?[`<option value="g">Voto global (ver metodología)</option>`]:[])
       .concat(det.preguntas.map((p,i)=>`<option value="${i}">${esc(p.t.slice(0,80))} — ${p.r===1?'Aprobado':'Rechazado'}</option>`));
     const partidos=[...new Set(seats.map(s=>s.partido))];
+    const filtro=sel.filtro||'todos', n={todos:seats.length,favor:cuenta('favor'),contra:cuenta('contra'),abstencion:cuenta('abstencion'),aus:sinVoto};
+    const FILTROS={todos:'Todos',favor:`${VOTO_ICO.favor} A favor`,contra:`${VOTO_ICO.contra} En contra`,abstencion:`${VOTO_ICO.abstencion} Abstención`,aus:'Sin voto'};
     cont.innerHTML=`<div class="vot-det-ctrl">
         ${det.preguntas.length>1||opciones.length>1?`<select class="cmp-select" aria-label="Pregunta votada" onchange="_votSel['${cid}'].q=this.value==='g'?'g':+this.value;renderDetalleVot('${cid}')">${opciones.join('')}</select>`:''}
         <div class="map-filter-group"><span class="map-filter-lbl">Colorear por</span>
           ${['voto','partido'].map(c=>`<button class="map-chip${sel.color===c?' active':''}" aria-pressed="${sel.color===c}" onclick="_votSel['${cid}'].color='${c}';renderDetalleVot('${cid}')">${c==='voto'?'Voto':'Bancada'}</button>`).join('')}</div>
+        <div class="map-filter-group" role="group" aria-label="Mostrar quién votó"><span class="map-filter-lbl">Mostrar</span>
+          ${Object.entries(FILTROS).map(([k,l])=>`<button class="map-chip${filtro===k?' active':''}" aria-pressed="${filtro===k}" ${n[k]||k==='todos'?'':'disabled'} onclick="_votSel['${cid}'].filtro='${k}';renderDetalleVot('${cid}')">${l} <span class="vot-n">${n[k]}</span></button>`).join('')}</div>
       </div>
       ${preg?`<div class="vot-preg">${esc(preg.t)} · se necesitaban ${preg.n} votos · <span class="badge ${preg.r===1?'etapa-ley':'etapa-neg'}">${preg.r===1?'Aprobado':'Rechazado'}</span>
         ${preg.o.filter(o=>o[0]>3).length?`<div class="vot-modif">Opciones de modificación (cuentan como a favor): ${preg.o.filter(o=>o[0]>3).map(o=>`${esc(o[1])} (${o[2]})`).join(' · ')}</div>`:''}</div>`:''}
-      <div class="vot-hemi-wrap">${hemicicloSVG(alas, sel.color, preside)}
+      <div class="vot-hemi-wrap">${hemicicloSVG(alas, sel.color, preside, filtro)}
         ${det.preside?`<div class="vot-barra-txt" style="text-align:center">Curul con anillo: ${esc(nombreDip(det.preside))}, quien presidía la sesión.</div>`:''}
         <div class="vot-hemi-centro">${barraVoto(cuenta('favor'),cuenta('contra'),cuenta('abstencion'))}<div class="vot-barra-txt">· ${sinVoto} curules sin voto registrado</div></div></div>
       <div class="vot-leyenda">${sel.color==='voto'
         ? ['favor','contra','abstencion'].map(s=>`<span><i class="v-${s}"></i>${VOTO_ICO[s]} ${VOTO_LBL[s]}</span>`).join('')+'<span><i class="v-aus"></i>Sin voto registrado</span>'
         : partidos.map(c=>`<span><i style="background:${esc(VOT.partidos?.[c]?.color||'#7a8fb0')}"></i>${esc(bancada(c))}</span>`).join('')+'<span><i class="v-aus"></i>Contorno = sin voto</span>'}</div>
+      ${filtro!=='todos'?listaFiltroVoto(seats, filtro):''}
       ${det.preguntas.length>1?`<details class="proy-firmas"><summary>Resultado por artículo (${det.preguntas.length})</summary><div class="tbl-scroll"><table class="cmp-tbl vot-arts">
         <thead><tr><th>Pregunta</th><th>Resultado</th><th>Votos</th></tr></thead><tbody>${det.preguntas.map((p,i)=>{
           const t=k=>p.o.filter(o=>k==='favor'?(o[0]===1||o[0]>3):o[0]===(k==='contra'?2:3)).reduce((a,o)=>a+o[2],0);
