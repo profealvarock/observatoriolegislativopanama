@@ -96,7 +96,7 @@ function renderPartidos(){
   const maxProp=Math.max(...dataProp,1), maxLeyes=Math.max(...dataLeyes,1);
   document.getElementById('partido-cards').innerHTML=entries.map(([l,v])=>{
     const ef=v.proyectos>0?((v.leyes/v.proyectos)*100).toFixed(1):0;
-    return`<div class="partido-card" style="--pc:var(--acc)">
+    return`<div class="partido-card" style="--pc:var(--acc)" data-partido="${esc(l)}">
       <div class="partido-name">${esc(l)}</div>
       <div class="p-stats-grid">
         <div class="p-stat"><div class="p-stat-v">${v.diputados}</div><div class="p-stat-l">Diputados</div></div>
@@ -125,6 +125,7 @@ function renderPartidos(){
       </div>
     </div>`;
   }).join('');
+  renderVotosPartidos().catch(e=>console.error('Votaciones por partido:',e));
 }
 
 // ── OTROS PROPONENTES ─────────────────────────────

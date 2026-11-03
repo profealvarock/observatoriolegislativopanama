@@ -45,6 +45,7 @@ function switchModalTab(tab){
   document.getElementById('mtab-leyes').classList.toggle('active', tab==='leyes');
   document.getElementById('mtab-hist').classList.toggle('active', tab==='hist');
   document.getElementById('mtab-red').classList.toggle('active', tab==='red');
+  document.getElementById('mtab-vot').classList.toggle('active', tab==='vot');
   const dep = _modalDep;
   if(!dep) return;
   destroyModalChart();
@@ -78,6 +79,8 @@ function switchModalTab(tab){
       : '<div class="gs-empty">Sin leyes aprobadas como proponente principal</div>';
   } else if(tab==='red'){
     renderAlianzas(dep);
+  } else if(tab==='vot'){
+    renderModalVotaciones(dep);
   } else {
     renderModalHist(dep);
   }
@@ -220,7 +223,7 @@ function countUp(el, target, delay=0){
 }
 
 // ── TABS ──────────────────────────────────────────
-const TABS=['general','novedades','diputados','proyectos','monitoreo','partidos','proponentes','costos','metodologia'];
+const TABS=['general','novedades','diputados','proyectos','votaciones','monitoreo','partidos','proponentes','costos','metodologia'];
 
 // Pestañas accesibles: roles ARIA y navegación con flechas, Inicio y Fin (patrón WAI-ARIA)
 (function initTabsA11y(){
@@ -251,7 +254,7 @@ function showTab(name){
   document.getElementById('tab-'+name).classList.add('active');
   // La pestaña queda en la URL (#costos, #monitoreo…) para poder compartirla
   const h=location.hash.slice(1);
-  if(!((name==='diputados'&&/^(diputado|comparar)=/.test(h))||(name==='proyectos'&&/^proyecto=/.test(h)))) setHash(name==='general'?'':name);
+  if(!((name==='diputados'&&/^(diputado|comparar)=/.test(h))||(name==='proyectos'&&/^proyecto=/.test(h))||(name==='votaciones'&&/^votacion(es)?=/.test(h)))) setHash(name==='general'?'':name);
   if(!D) return;
   if(name==='general'&&!tabInited.general){try{renderGeneral();}catch(e){console.error('General:',e)}tabInited.general=true}
   if(name==='diputados'){try{initTable();}catch(e){console.error('Table:',e)}}
@@ -262,6 +265,7 @@ function showTab(name){
   if(name==='metodologia'){try{renderMetodologia();}catch(e){console.error('Metodología:',e)}}
   if(name==='proyectos'){initProyectos();}
   if(name==='novedades'){initNovedades();}
+  if(name==='votaciones'){initVotaciones();}
 }
 
 // ── ENLACES DIRECTOS ──────────────────────────────
@@ -281,6 +285,9 @@ function routeFromHash(){
     const q=document.getElementById('proy-q'); if(q) q.value=h.slice(9);
     return initProyectos();
   }
+  // #votacion=<id> abre esa votación · #votaciones=<slug> filtra por diputado
+  if(h.startsWith('votacion=')){ votPendiente={id:+h.slice(9)}; return showTab('votaciones'); }
+  if(h.startsWith('votaciones=')){ votPendiente={dip:h.slice(11)}; return showTab('votaciones'); }
   showTab(h);
 }
 window.addEventListener('hashchange', routeFromHash);

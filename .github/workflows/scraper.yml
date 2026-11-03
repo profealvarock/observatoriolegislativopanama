@@ -9,7 +9,7 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     permissions:
       contents: write
 
@@ -31,6 +31,13 @@ jobs:
       - name: Instalar navegador Chromium
         run: playwright install chromium --with-deps
 
+      # Va antes del scraper principal para que las novedades incluyan las votaciones nuevas.
+      # Si la API de prensa507 falla, se conservan las votaciones guardadas y el resto sigue.
+      - name: Votaciones nominales (prensa507)
+        run: python scraper_votaciones.py
+        continue-on-error: true
+        timeout-minutes: 22
+
       - name: Ejecutar scraper
         run: python scraper.py
 
@@ -45,6 +52,9 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datos.json diputados.json resumen.json metricas_diputados.json historico.json sitemap.xml
           git add etapas_historico.json novedades.json novedades.xml
+          git add votaciones.json votaciones.csv preguntas.csv votos.csv votaciones_estado.json votaciones_calidad.json
+          git add votos_diputado.json votos_matriz.json
+          git add -A votaciones
           git add -A diputado
           if git diff --staged --quiet; then
             echo "Sin cambios en los datos."

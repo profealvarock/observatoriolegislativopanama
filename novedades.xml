@@ -4,8 +4,15 @@
   <title>Observatorio Legislativo — Novedades</title>
   <link>https://observatoriolegistalivopa.netlify.app/#novedades</link>
   <atom:link href="https://observatoriolegistalivopa.netlify.app/novedades.xml" rel="self" type="application/rss+xml"/>
-  <description>Proyectos nuevos, avances de etapa y nuevas leyes en la Asamblea Nacional de Panamá.</description>
+  <description>Proyectos nuevos, avances de etapa, nuevas leyes y votaciones del pleno en la Asamblea Nacional de Panamá.</description>
   <language>es-pa</language>
+  <item>
+    <title>Votación: Aprobado proyecto 724 en segundo debate (45-3-4): Que aprueba la Adenda No.1 al Contrato aprobado mediante el Decreto Ley No.6 de 10 de febrero de 1998, suscrito entre el</title>
+    <link>https://observatoriolegistalivopa.netlify.app/#votacion=9361</link>
+    <guid isPermaLink="false">votacion-9361</guid>
+    <pubDate>Wed, 21 Oct 2026 12:00:00 +0000</pubDate>
+    <description>45 a favor, 3 en contra, 4 abstenciones. Ficha 8613.</description>
+  </item>
   <item>
     <title>Nuevo proyecto: QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO PROCESAL PENAL</title>
     <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8640</link>
@@ -168,11 +175,32 @@
     <description>Ficha 8550. De «Primer Debate» a «Enviado a subcomisión para analisis».</description>
   </item>
   <item>
+    <title>Votación: Aprobado proyecto 642 en tercer debate (36-0-0): Por la cual se aprueba el Convenio Internacional del Cacao, 2026, hecho en Ginebra el 13 de febrero de 2016.</title>
+    <link>https://observatoriolegistalivopa.netlify.app/#votacion=9151</link>
+    <guid isPermaLink="false">votacion-9151</guid>
+    <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+    <description>36 a favor, 0 en contra, 0 abstenciones. Ficha 8481.</description>
+  </item>
+  <item>
     <title>Avanza a Segundo Debate: QUE ESTABLECE UN PROCEDIMIENTO EXCEPCIONAL PARA EL TRASPASO DE lOS SISTEMAS O PLANTAS DE TRATAMIENTO DE LAS AGUAS RESIDUALES Y MODIFICA LA L</title>
     <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8465</link>
     <guid isPermaLink="false">8465-2026-10-07-Segundo Debate</guid>
     <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
     <description>Ficha 8465. De «Primer Debate» a «Segundo Debate».</description>
+  </item>
+  <item>
+    <title>Votación: Aprobado proyecto 621 en tercer debate (49-0-0): Por la cual se aprueba el Convenio por el que se establece una Organización Internacional de Metrología Legal, firmado e</title>
+    <link>https://observatoriolegistalivopa.netlify.app/#votacion=9148</link>
+    <guid isPermaLink="false">votacion-9148</guid>
+    <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+    <description>49 a favor, 0 en contra, 0 abstenciones. Ficha 8392.</description>
+  </item>
+  <item>
+    <title>Votación: Aprobado proyecto 620 en tercer debate (44-0-0): Por la cual se aprueba la Convención del Metro, firmada en París el 20 de mayo de 1875, modificada el 6 de octubre de 19</title>
+    <link>https://observatoriolegistalivopa.netlify.app/#votacion=9145</link>
+    <guid isPermaLink="false">votacion-9145</guid>
+    <pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+    <description>44 a favor, 0 en contra, 0 abstenciones. Ficha 8391.</description>
   </item>
   <item>
     <title>Cambia a Primer Debate: QUE MODIFICA LA LEY 44 DE 2002 Y DICTA OTRAS DISPOSICIONES</title>
@@ -315,6 +343,27 @@
     <description>Ficha 8613. De «Primer Debate» a «Segundo Debate».</description>
   </item>
   <item>
+    <title>Votación: Aprobado proyecto 642 en segundo debate (39-0-0): Que aprueba el Convenio Internacional del Cacao, 2026, hecho en Ginebra el 13 de febrero 2026.</title>
+    <link>https://observatoriolegistalivopa.netlify.app/#votacion=9100</link>
+    <guid isPermaLink="false">votacion-9100</guid>
+    <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
+    <description>39 a favor, 0 en contra, 0 abstenciones. Ficha 8481.</description>
+  </item>
+  <item>
+    <title>Votación: Aprobado proyecto 621 en segundo debate (43-0-0): Que aprueba el Convenio por el cual se establece una Organización Internacional de Metrología Legal, firmado en París, e</title>
+    <link>https://observatoriolegistalivopa.netlify.app/#votacion=9097</link>
+    <guid isPermaLink="false">votacion-9097</guid>
+    <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
+    <description>43 a favor, 0 en contra, 0 abstenciones. Ficha 8392.</description>
+  </item>
+  <item>
+    <title>Votación: Aprobado proyecto 620 en segundo debate (42-0-0): Que aprueba la Convención del Metro, firmada en París el 20 de mayo de 1875, modificada el 6 de octubre de 1921 y Reglam</title>
+    <link>https://observatoriolegistalivopa.netlify.app/#votacion=9094</link>
+    <guid isPermaLink="false">votacion-9094</guid>
+    <pubDate>Mon, 05 Oct 2026 12:00:00 +0000</pubDate>
+    <description>42 a favor, 0 en contra, 0 abstenciones. Ficha 8391.</description>
+  </item>
+  <item>
     <title>Avanza a Prohijado: QUE VISIBILIZA EL DUELO GESTACIONAL DE LA MUJER SE ESTABLECEN DIRECTRICES GENERALES PARA SU ATENCION Y TRATAMIENTO ESPECIALIZADO POR PARTE D</title>
     <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8575</link>
     <guid isPermaLink="false">8575-2026-10-03-Prohijado</guid>
@@ -376,55 +425,6 @@
     <guid isPermaLink="false">8588-2026-10-02-Enviado a subcomisión para analisis</guid>
     <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
     <description>Ficha 8588. De «Primer Debate» a «Enviado a subcomisión para analisis».</description>
-  </item>
-  <item>
-    <title>Avanza a Enviado a subcomisión para analisis: QUE REGULA LA INSTALACION, OPERACION, MANTENIMIENTO Y SUPERVISION DE LOS SISTEMAS DE TRATAMIENTO DE AGUAS RESIDUALES EN PROYECTOS HABITACION</title>
-    <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8474</link>
-    <guid isPermaLink="false">8474-2026-10-02-Enviado a subcomisión para analisis</guid>
-    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Ficha 8474. De «Primer Debate» a «Enviado a subcomisión para analisis».</description>
-  </item>
-  <item>
-    <title>Avanza a Enviado a subcomisión para analisis: QUE ESTABLECE EL REGIMEN JURIDICO PARA LA OPERACION Y EL MANTENIMIENTO DE LAS PLANTAS DE TRATAMIENTO DE AGUAS RESIDUALES (PTAR) EN LA REPUBL</title>
-    <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8448</link>
-    <guid isPermaLink="false">8448-2026-10-02-Enviado a subcomisión para analisis</guid>
-    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Ficha 8448. De «Primer Debate» a «Enviado a subcomisión para analisis».</description>
-  </item>
-  <item>
-    <title>Nueva ley: QUE MODIFICA EL CÓDIGO JUDICIAL Y DICTA OTRAS DISPOSICIONES</title>
-    <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8396</link>
-    <guid isPermaLink="false">8396-2026-10-02-Ley</guid>
-    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Ficha 8396. De «Enviado al Ejecutivo» a «Ley».</description>
-  </item>
-  <item>
-    <title>Objetado por Ejecutivo: QUE ESTABLECE LA GOBERNANZA ADAPTATIVA DE LA INTELIGENCIA ARTIFICIAL DE PANAMA</title>
-    <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8349</link>
-    <guid isPermaLink="false">8349-2026-10-02-Objetado por Ejecutivo</guid>
-    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Ficha 8349. De «Enviado al Ejecutivo» a «Objetado por Ejecutivo».</description>
-  </item>
-  <item>
-    <title>Objetado por Ejecutivo: QUE ADICIONA ARTICULOS A LA LEY 80 DE 2012, SOBRE INCENTIVOS PARA EL FOMENTO DE LA ACTIVIDAD TURISTICA Y DICTA OTRA DISPOSICION</title>
-    <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8304</link>
-    <guid isPermaLink="false">8304-2026-10-02-Objetado por Ejecutivo</guid>
-    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Ficha 8304. De «Enviado al Ejecutivo» a «Objetado por Ejecutivo».</description>
-  </item>
-  <item>
-    <title>Objetado por Ejecutivo: QUE MODIFICA Y ADICIONA ARTICULOS DE LA LEY 47 DE 1946, ORGANICA DE EDUCACION, SOBRE REUTILIZACION DE TEXTOS ESCOLARES</title>
-    <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8302</link>
-    <guid isPermaLink="false">8302-2026-10-02-Objetado por Ejecutivo</guid>
-    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Ficha 8302. De «Enviado al Ejecutivo» a «Objetado por Ejecutivo».</description>
-  </item>
-  <item>
-    <title>Objetado por Ejecutivo: QUE ESTABLECE UN PROGRAMA DE EDUCACION SEGURA PARA COMUNIDADES RURALES DE DIFICIL ACCESO</title>
-    <link>https://observatoriolegistalivopa.netlify.app/#proyecto=8199</link>
-    <guid isPermaLink="false">8199-2026-10-02-Objetado por Ejecutivo</guid>
-    <pubDate>Fri, 02 Oct 2026 12:00:00 +0000</pubDate>
-    <description>Ficha 8199. De «Enviado al Ejecutivo» a «Objetado por Ejecutivo».</description>
   </item>
 </channel>
 </rss>

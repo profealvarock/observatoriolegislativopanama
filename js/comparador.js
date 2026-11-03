@@ -29,6 +29,10 @@ async function renderComparar(){
   const deps=slugs.map(s=>(D.diputados||[]).find(d=>depSlug(d)===s)).filter(Boolean);
   const draw=costos=>{
     const cost=d=>costos?.dipCosts.find(c=>c.slug===depSlug(d));
+    const vp=d=>VMET?.diputados?.[depSlug(d)]?.segmentos?.proyecto;
+    // Coincidencia de voto entre cada par (votaciones de proyectos en que ambos votaron personalmente)
+    const pares=[];
+    deps.forEach((a,i)=>deps.slice(i+1).forEach(b=>{ const c=coincidenciaVoto(depSlug(a),depSlug(b)); if(c) pares.push(`${esc(a.nombre)} y ${esc(b.nombre)} votaron igual en <b>${fmtPct(c.pct)}</b> de las ${fmtNum(c.n)} votaciones de proyectos en que ambos votaron`); }));
     // [etiqueta, valor numérico, texto, mejor ('max' | 'min' | null)]
     const filas=[
       ['Partido',null,d=>esc(d.partido||'—')],
@@ -43,6 +47,9 @@ async function renderComparar(){
       ['Asistencia pleno',d=>Number(d.asistencia_pleno),d=>fmtScore(d.asistencia_pleno)+' / 5','max'],
       ['Asistencia comisiones',d=>Number(d.asistencia_comisiones),d=>fmtScore(d.asistencia_comisiones)+' / 5','max'],
       ['Calificación Espacio Cívico',d=>Number(d.calificacion),d=>fmtScore(d.calificacion)+' / 5','max'],
+      ['Votaciones de proyectos en que votó',d=>vp(d)?.participo??NaN,d=>vp(d)?`${fmtNum(vp(d).participo)} <span class="ief-sub">de ${fmtNum(vp(d).decisiones)}</span>`:VMET?'—':'…','max'],
+      ['Votos a favor · en contra · abstención',null,d=>vp(d)?`${fmtPct(vp(d).pct_favor)} · ${fmtPct(vp(d).pct_contra)} · ${fmtPct(vp(d).pct_abstencion)}`:VMET?'—':'…'],
+      ['Se aparta de su bancada',null,d=>vp(d)?`${fmtPct(vp(d).tasa_disidencia)} <span class="ief-sub">(${vp(d).disidencias} de ${vp(d).base_disidencia})</span>`:VMET?'—':'…'],
       ['Co-firmas con otros partidos',null,d=>d.transversalidad==null?'—':`${fmtNum(d.transversalidad)}% <span class="ief-sub">(esperado ${fmtNum(d.transversalidad_esperada)}%)</span>`],
       ['Temas que más propone',null,d=>esc(Object.keys(d.temas_autor||{}).slice(0,3).join(', ')||'—')],
       ['Comisiones',d=>d.comisiones_cantidad||0,d=>fmtNum(d.comisiones_cantidad),null],
@@ -60,9 +67,14 @@ async function renderComparar(){
         }
         return `<tr><th>${lbl}</th>${deps.map(d=>`<td class="${ganador!=null&&val(d)===ganador?'cmp-best':''}">${txt(d)}</td>`).join('')}</tr>`;
       }).join('')}</tbody></table>
-      <p class="hist-note" style="margin-top:8px">En verde, el mejor valor de cada fila (menor costo, mayor producción o asistencia).</p>`;
+      <p class="hist-note" style="margin-top:8px">En verde, el mejor valor de cada fila (menor costo, mayor producción o asistencia).</p>
+      ${pares.length?`<p class="hist-note" style="margin-top:6px">🗳 ${pares.join(' · ')}.</p>`:''}`;
   };
   draw(COSTOS);
+  if(!VMET||!VMAT){
+    Promise.all([ensureVotaciones(), ensureVotosDip(), ensureMatriz()]).then(()=>{ if(token===_cmpToken) draw(COSTOS); })
+      .catch(e=>console.error('Comparar votaciones:',e));
+  }
   if(!COSTOS){
     try{ const c=await ensureCostos(); if(token===_cmpToken) draw(c); }catch(e){ console.error('Comparar costos:',e); }
   }

@@ -20,7 +20,7 @@ function reSinTildes(w){
 
 function prepararProyectos(){
   if(!_proyListo){
-    _proyListo=Promise.all([ensureDatosRaw(), ensureEtapas()]).then(([,H])=>{
+    _proyListo=Promise.all([ensureDatosRaw(), ensureEtapas(), ensureVotaciones()]).then(([,H])=>{
       ETAPAS_H=H;
       const autorPorFicha={};
       (D.diputados||[]).forEach(d=>(d.proyectos_detalle||[]).forEach(p=>{ autorPorFicha[p.ficha]=d; }));
@@ -87,7 +87,7 @@ function masProyectos(){
       <div class="proy-titulo">${hl(p.titulo||p.anteproyecto||'Sin título registrado')}</div>
       <div class="proy-meta"><span>Autor principal: ${autor}</span>${temas?`<span>${temas}</span>`:''}
         ${p._firmantes.length>1?`<details class="proy-firmas"><summary>${p._firmantes.length} firmantes</summary><p>${esc(p._firmantes.join(' · '))}</p></details>`:''}
-        ${historialEtapasHTML(p.ficha, ETAPAS_H)}</div>
+        ${historialEtapasHTML(p.ficha, ETAPAS_H)}${comoSeVotoHTML(p.ficha)}</div>
     </article>`;
   }).join(''));
   proyMostrados+=lote.length;

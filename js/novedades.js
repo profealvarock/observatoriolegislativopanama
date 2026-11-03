@@ -5,6 +5,7 @@ const NOV_PAGINA=40;
 const NOV_TIPOS={
   ley:{lbl:'Nueva ley',ico:'✔'}, avance:{lbl:'Avanza',ico:'▲'}, nuevo:{lbl:'Proyecto nuevo',ico:'+'},
   objetado:{lbl:'Objetado',ico:'!'}, detenido:{lbl:'Se detiene',ico:'■'}, cambio:{lbl:'Cambio de etapa',ico:'↔'},
+  votacion:{lbl:'Votación en el pleno',ico:'🗳'},
 };
 const cargarJSON=url=>fetch(url).then(r=>r.ok?r.json():null).catch(()=>null);
 const ensureNovedades=()=>_novPromise||(_novPromise=cargarJSON('novedades.json'));
@@ -61,6 +62,17 @@ function masNovedades(){
       const n=novFiltradas.filter(x=>x.fecha===e.fecha).length;
       html+=`<div class="nov-fecha">${esc(fmtFechaLarga(e.fecha))} <small>${n} novedad${n===1?'':'es'}</small></div>`;
       ultima=e.fecha;
+    }
+    if(e.tipo==='votacion'){
+      const [f,c,ab]=e.votos||[0,0,0];
+      html+=`<article class="nov-item t-votacion">
+        <div class="nov-ico" aria-hidden="true">${NOV_TIPOS.votacion.ico}</div>
+        <div><div class="nov-tipo">${NOV_TIPOS.votacion.lbl}${e.debate?' · '+esc(e.debate)+' debate':''}</div>
+          <div class="nov-tit"><a href="#votacion=${esc(e.votacion_id)}">${esc(e.titulo||'Votación sin título')}</a></div>
+          <div class="nov-meta">${e.proyecto?`<span>Proyecto ${esc(e.proyecto)}</span>`:''}${e.ficha?`<span>Ficha <a href="#proyecto=${esc(e.ficha)}">${esc(e.ficha)}</a></span>`:''}
+            <span class="badge ${{Aprobado:'etapa-ley',Rechazado:'etapa-neg',Mixto:'etapa-obj'}[e.a]||''}">${esc(e.a)}</span><span>✓ ${f} · ✕ ${c} · ○ ${ab}</span></div></div>
+      </article>`;
+      return;
     }
     const t=NOV_TIPOS[e.tipo]||NOV_TIPOS.cambio, a=autores[e.ficha];
     const paso = e.de

@@ -85,6 +85,7 @@ h1 span{color:var(--acc)}
 .card-title::before{content:'';width:4px;height:14px;border-radius:2px;flex-shrink:0;background:var(--ct,var(--acc))}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);margin-bottom:var(--gap)}
 .grid2 .wide{grid-column:1/-1}
+.grid2>*{min-width:0}  /* sin esto, una tabla ancha (mapas de calor) ensancha la tarjeta y la página en móvil */
 .ch{position:relative;height:clamp(200px,25vw,280px)}
 .ch.tall{height:clamp(240px,30vw,380px)}
 .ch.xtall{height:clamp(300px,38vw,480px)}
@@ -649,3 +650,70 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
 @media(hover:none){
   .kpi:hover,.dep-card:hover,.partido-card:hover{transform:none;box-shadow:none}
 }
+
+/* ── VOTACIONES DEL PLENO ───────────────────────── */
+/* Colores del voto validados para daltonismo en cada modo; siempre acompañados de ✓ ✕ ○ y texto */
+:root{--v-fav:#12a37a;--v-con:#ee4b4b;--v-abs:#9677f0}
+:root[data-theme="light"]{--v-fav:#047857;--v-con:#db2727;--v-abs:#7c3aed}
+.vot-seg-bar{display:flex;flex-direction:column;gap:8px;margin-bottom:var(--gap)}
+.vot-seg-bar .map-chip{font-size:.7rem;padding:5px 12px}
+.vot-n{opacity:.7;margin-left:2px}
+.vot-barra{display:flex;gap:2px;height:12px;border-radius:4px;overflow:hidden;margin:8px 0 4px;background:var(--track)}
+.vot-barra.compacta{height:8px;margin:2px 0}
+.vot-barra span{display:block;min-width:3px}
+.vb-favor{background:var(--v-fav)} .vb-contra{background:var(--v-con)} .vb-abstencion{background:var(--v-abs)}
+.vot-barra-txt,.vot-barra-vacia{font-family:var(--fm);font-size:.66rem;color:var(--muted)}
+.vot-chip{display:inline-flex;align-items:center;gap:4px;font-family:var(--fm);font-size:.68rem;font-weight:600;padding:1px 8px;border-radius:20px;white-space:nowrap;
+  background:color-mix(in srgb,var(--vc) 14%,transparent);color:var(--text);border:1px solid color-mix(in srgb,var(--vc) 55%,transparent)}
+.vot-chip.v-favor{--vc:var(--v-fav)} .vot-chip.v-contra{--vc:var(--v-con)} .vot-chip.v-abstencion{--vc:var(--v-abs)} .vot-chip.v-aus{--vc:var(--muted);font-weight:400;color:var(--muted)}
+.vot-tipo{background:var(--surface2);color:var(--text);border:1px solid var(--border)}
+.vot-unan{background:color-mix(in srgb,var(--acc) 14%,transparent);color:var(--acc)}
+.vot-item .proy-meta{margin-top:6px}
+.vot-item .vot-ver{margin-left:auto;padding:4px 10px;font-size:.66rem}
+.vot-det{margin-top:12px;border-top:1px solid var(--border);padding-top:12px}
+.vot-det-dest{border-top:none;padding-top:0}
+.vot-det-ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}
+.vot-det-ctrl .cmp-select{max-width:100%;flex:1 1 260px}
+.vot-hemi-sel-row .cmp-select{width:100%;max-width:520px}
+.vot-preg{font-family:var(--fm);font-size:.7rem;color:var(--muted);margin-bottom:8px}
+.vot-modif{margin-top:4px;font-size:.64rem}
+.vot-hemi-wrap{max-width:620px;margin:0 auto}
+.hemiciclo{width:100%;height:auto;display:block}
+.hemiciclo circle{stroke:var(--surface);stroke-width:.7}
+.hemiciclo .v-favor{fill:var(--v-fav)} .hemiciclo .v-contra{fill:var(--v-con)} .hemiciclo .v-abstencion{fill:var(--v-abs)}
+.hemiciclo .v-aus,.hemiciclo .h-aus{fill:transparent!important;stroke:var(--muted);stroke-width:.8}
+.hemiciclo .h-anillo{fill:none;stroke:var(--text);stroke-width:1.4}
+.hemiciclo .h-total{font-family:var(--fm);font-weight:500;font-size:15px;fill:var(--text)}
+.vot-hemi-centro{max-width:420px;margin:4px auto 0}
+.vot-leyenda{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;font-family:var(--fm);font-size:.66rem;color:var(--muted);margin:10px 0}
+.vot-leyenda i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.vot-leyenda i.v-favor{background:var(--v-fav)} .vot-leyenda i.v-contra{background:var(--v-con)} .vot-leyenda i.v-abstencion{background:var(--v-abs)}
+.vot-leyenda i.v-aus{border:1px solid var(--muted)} .vot-leyenda i.supl{opacity:.45}
+.vot-det .proy-firmas{margin-top:10px;font-family:var(--fm);font-size:.7rem}
+.vot-tabla th,.vot-arts th{font-weight:500;text-align:left}
+.vot-tabla a{color:var(--text);text-decoration:none;font-weight:600} .vot-tabla a:hover{color:var(--acc)}
+.vot-art-btn{background:none;border:none;color:var(--text);font:inherit;text-align:left;cursor:pointer;padding:0}
+.vot-art-btn:hover{color:var(--acc);text-decoration:underline}
+.vot-divididos{display:flex;flex-direction:column;gap:12px}
+.vot-div-top{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-family:var(--fm);font-size:.66rem;color:var(--muted)}
+.vot-div-top a{color:var(--acc);text-decoration:none;font-weight:600}
+.vot-div-tit{font-size:.8rem;margin-top:3px;line-height:1.35}
+.vot-proy-item{margin-top:10px}
+.vot-proy>summary{color:var(--acc)!important}
+.vot-filtros{grid-template-columns:2fr repeat(3,1fr)}
+.vot-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:6px}
+.vot-tiles>div{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:10px}
+.vot-tiles b{display:block;font-size:1.25rem;font-weight:800}
+.vot-tiles span{font-family:var(--fm);font-size:.62rem;color:var(--muted)}
+.vot-registro{display:flex;flex-wrap:wrap;gap:2px}
+.vot-registro a{width:8px;height:16px;border-radius:2px;display:block}
+.vot-registro a.v-favor{background:var(--v-fav)} .vot-registro a.v-contra{background:var(--v-con)} .vot-registro a.v-abstencion{background:var(--v-abs)}
+.vot-registro a.v-aus{background:var(--track)} .vot-registro a.supl{opacity:.45}
+.vot-registro a:hover,.vot-registro a:focus-visible{outline:2px solid var(--text);outline-offset:1px}
+.vot-rec{display:flex;justify-content:space-between;gap:10px;align-items:center;font-family:var(--fm);font-size:.72rem}
+.vot-rec a{color:var(--text);text-decoration:none;font-weight:600} .vot-rec a:hover{color:var(--acc)}
+.vot-rec small{display:block;color:var(--muted);font-size:.62rem;font-weight:400}
+.t-votacion{--nc:var(--acc5)}
+.met-ancha{grid-column:1/-1}
+@media(max-width:768px){.vot-filtros{grid-template-columns:1fr 1fr}.vot-tiles{grid-template-columns:1fr 1fr}.met-ancha{grid-column:auto}}
+@media(max-width:480px){.vot-item .vot-ver{margin-left:0;width:100%}.vot-rec{flex-direction:column;align-items:flex-start}}

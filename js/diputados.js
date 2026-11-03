@@ -198,7 +198,8 @@ function buildFiltered(){
     const ef=d.proyectos>0?+((d.leyes/d.proyectos)*100).toFixed(1):0;
     const topEtapa=Object.entries(d.etapas||{}).sort((a,b)=>b[1]-a[1])[0]?.[0]||'-';
     const e=d.efectividad_ley||{};
-    return{...d,efectividad:ef,topEtapa,
+    const vm=VMET?.diputados?.[depSlug(d)]?.segmentos?.proyecto;
+    return{...d,efectividad:ef,topEtapa,votos:vm||null,votDisid:vm?.tasa_disidencia??-1,
       tasaAutor:e.autor?.tasa??-1, tasaCopat:e.copat?.tasa??-1,
       // Al ordenar, los índices con "pocos datos" van después de los que tienen evidencia suficiente
       indiceAutor:e.autor?.indice==null ? -99999 : e.autor.indice-(e.autor.evidencia==='baja'?10000:0)};
@@ -216,9 +217,17 @@ function buildFiltered(){
   });
 }
 
+// Las métricas de votación llegan aparte (votos_diputado.json) y solo cuando se abre la pestaña,
+// para no sumar peso a la carga inicial; al llegar, se vuelve a pintar la tabla.
+function cargarVotosTabla(){
+  if(VMET||!document.getElementById('tab-diputados').classList.contains('active')) return;
+  ensureVotosDip().then(()=>{ if(VMET){ buildFiltered(); viewMode==='grid'?renderGrid():renderTable(); } });
+}
+
 function initTable(){
   buildChips();
   buildFiltered();
+  cargarVotosTabla();
   if(tableInited){ renderTable(); return; }
   tableInited = true;
   document.getElementById('search').addEventListener('input',()=>{buildFiltered();page=1;viewMode==='grid'?renderGrid():renderTable()});
@@ -309,6 +318,7 @@ function renderTable(){
       <td class="num col-md">${celdaTasa(d.efectividad_ley?.autor)}</td>
       <td class="num col-md">${celdaTasa(d.efectividad_ley?.copat)}</td>
       <td class="num">${celdaIndice(d.efectividad_ley)}</td>
+      <td class="num col-md">${d.votos?`<div class="ief-tasa">${fmtPct(d.votos.tasa_disidencia)}</div><div class="ief-sub">${fmtNum(d.votos.participo)} votaciones · ${fmtPct(d.votos.pct_favor)} a favor</div>`:'<span class="ief-tasa-nd">—</span>'}</td>
       <td class="col-sm"><span class="badge ${etapaClass(topEt)}">${esc(topEt)}</span></td>
     </tr>`;
   }).join('');
