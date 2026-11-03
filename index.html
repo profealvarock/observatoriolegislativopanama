@@ -334,6 +334,42 @@
 
 <!-- TAB PROYECTOS -->
 <div id="tab-proyectos" class="tab-content">
+  <!-- PANORAMA DE LOS PROYECTOS (js/panorama.js) -->
+  <section class="panorama" aria-labelledby="pan-titulo">
+    <div class="sec-hdr" style="margin-bottom:10px">
+      <h2 class="sec-title" id="pan-titulo" style="--ct:var(--acc)">Panorama de los proyectos de ley</h2>
+      <span class="pan-corte" id="pan-corte"></span>
+    </div>
+    <div class="pan-kpis" id="pan-kpis"><div class="loader" style="grid-column:1/-1"><div class="spinner"></div> Calculando indicadores…</div></div>
+
+    <div class="kpi-breakdown-hdr"><span class="kpi-breakdown-hdr-label">¿Quién propone?</span><div class="kpi-breakdown-hdr-line"></div><span class="kpi-breakdown-hdr-sum" id="pan-origen-sum"></span></div>
+    <div class="pan-kpis" id="pan-origen"></div>
+
+    <div class="kpi-breakdown-hdr"><span class="kpi-breakdown-hdr-label">Lecturas clave</span><div class="kpi-breakdown-hdr-line"></div></div>
+    <div class="pan-kpis" id="pan-lecturas"></div>
+
+    <div class="card pan-gasto">
+      <div class="card-title" style="--ct:var(--costo)">¿Cuánto cuesta legislar? Gasto estimado por proyecto</div>
+      <p class="monitor-note" style="margin:-6px 0 14px">Con la <a href="#metodologia">metodología de Costo Legislativo</a>: el costo de cada diputado en un año (planilla + salario) se reparte entre los proyectos en que participó ese año, y el costo de un proyecto es la suma de esas porciones. Es una estimación para comparar, no un costo contable. Los proyectos del Ejecutivo, ciudadanos y comisiones no tienen costo atribuido.</p>
+      <div class="pan-kpis" id="pan-gasto-kpis"></div>
+      <div class="grid2" style="margin:var(--gap) 0 0">
+        <div>
+          <p class="chart-sub">Gasto atribuido por frente legislativo (tema principal)</p>
+          <div class="ch xtall"><canvas id="c-pan-gasto-tema"></canvas></div>
+        </div>
+        <div>
+          <p class="chart-sub">¿En qué terminó el gasto? Según el estado actual del proyecto</p>
+          <div class="ch"><canvas id="c-pan-gasto-estado"></canvas></div>
+          <p class="chart-sub" style="margin-top:18px">Costo medio de un proyecto según el tipo de norma</p>
+          <div class="ch"><canvas id="c-pan-gasto-tipo"></canvas></div>
+        </div>
+      </div>
+      <p class="chart-sub" style="margin-top:18px">Los proyectos con mayor costo estimado</p>
+      <div class="pan-top" id="pan-top"></div>
+      <p class="monitor-note" style="margin-top:10px">Detalle por diputado y por año en <a href="#costos">Costo Legislativo</a>.</p>
+    </div>
+  </section>
+
   <div class="grid2" style="margin-bottom:var(--gap)">
     <div class="card wide">
       <div class="card-title" style="--ct:var(--acc)">Proyectos por tema</div>
@@ -892,6 +928,7 @@
 <script src="js/proyectos.js"></script>
 <script src="js/novedades.js"></script>
 <script src="js/votaciones.js"></script>
+<script src="js/panorama.js"></script>
 <script src="js/comparador.js"></script>
 <script src="js/inicio.js"></script>
 </body>

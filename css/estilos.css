@@ -743,3 +743,23 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
 .vfl-grupo a:hover{color:var(--acc)}
 .vfl-grupo small{color:var(--muted);font-family:var(--fm);font-size:.62rem}
 @media(max-width:480px){.vfl-grupo{grid-template-columns:1fr}}
+
+/* ── PANORAMA DE LOS PROYECTOS (pestaña Proyectos) ── */
+.panorama{margin-bottom:calc(var(--gap)*1.5)}
+.pan-corte{font-family:var(--fm);font-size:.66rem;color:var(--muted)}
+.pan-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);margin-bottom:calc(var(--gap)*1.2)}
+.pan-kpis .kpi-value.kpi-txt{font-size:clamp(1.15rem,2.2vw,1.6rem);letter-spacing:-.02em;line-height:1.15}
+.pan-gasto{margin-top:4px}
+.pan-gasto .pan-kpis{margin-bottom:0}
+.pan-top{display:flex;flex-direction:column;gap:10px}
+.pan-top-item{display:grid;grid-template-columns:1fr 140px 110px;gap:12px;align-items:center;font-size:.8rem}
+.pan-top-item a{color:var(--text);text-decoration:none;font-weight:600;line-height:1.35}
+.pan-top-item a:hover{color:var(--acc)}
+.pan-top-item small{display:block;font-family:var(--fm);font-size:.62rem;color:var(--muted);margin-top:3px}
+.pan-top-bar{height:8px;background:var(--track);border-radius:4px;overflow:hidden}
+.pan-top-bar div{height:100%;background:var(--costo);border-radius:4px}
+.pan-top-v{font-family:var(--fm);font-size:.76rem;text-align:right;color:var(--text)}
+@media(max-width:1024px){.pan-kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.pan-top-item{grid-template-columns:1fr auto}.pan-top-bar{display:none}}
+@media(max-width:400px){.pan-kpis{grid-template-columns:1fr}}
+.panorama .kpi-breakdown-hdr-sum{white-space:normal;text-align:right}

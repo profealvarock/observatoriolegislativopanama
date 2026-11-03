@@ -52,6 +52,7 @@ async function initProyectos(){
   if(!D) return;
   try{ await prepararProyectos(); }
   catch(e){ document.getElementById('proy-lista').innerHTML=`<div class="loader">⚠️ No se pudieron cargar los proyectos: ${esc(e.message)}</div>`; return; }
+  renderPanorama().catch(e=>console.error('Panorama de proyectos:',e));
   aplicarFiltroProyectos();
 }
 
