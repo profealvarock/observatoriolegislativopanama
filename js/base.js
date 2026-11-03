@@ -84,6 +84,19 @@ Chart = class extends ChartBase {
   }
 };
 
+// Chart.js mide el ancho de las etiquetas una vez y guarda la medida. Si el gráfico se dibujó antes de
+// que cargara DM Mono (Google Fonts), la medida es la de la fuente de reemplazo, más angosta, y las
+// etiquetas largas de los ejes quedan recortadas. Al terminar de cargar una fuente, se vuelven a medir.
+function remedirGraficos(){
+  Object.values(ChartBase.instances).forEach(c=>{
+    Object.values(c.scales||{}).forEach(s=>{ s._longestTextCache={}; });
+    c.update();   // con animación: update('none') durante la animación inicial deja las barras a medio camino
+  });
+}
+document.fonts?.ready.then(remedirGraficos);
+document.fonts?.addEventListener?.('loadingdone', remedirGraficos);
+if(document.fonts && !document.fonts.check("10px 'DM Mono'")) document.fonts.load("10px 'DM Mono'").then(remedirGraficos).catch(()=>{});
+
 // Cada gráfico lleva una descripción para lectores de pantalla y, debajo, una tabla plegable con
 // sus datos: así la información nunca depende solo de ver el gráfico.
 function agregarTablaDatos(chart){

@@ -8,6 +8,9 @@ const GRUPO_ETAPA={
   sin:['Archivado','Negado','Retirado por proponente','Suspendido'],
 };
 const PROY_PAGINA=20;
+// Nombres cortos de temas y tipos de norma para los ejes de los gráficos (temas_meta, de temas_cap.py)
+const temaCorto=t=>D?.temas_meta?.cortos?.[t]||t;
+const tipoCorto=k=>D?.temas_meta?.tipos_cortos?.[k]||(D?.tipos_norma||{})[k]||k;
 let PROY=[], proyFiltrados=[], proyMostrados=0, _proyListo=null, _proyT=null, ETAPAS_H=null;
 const sinTildes=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const fechaOrden=f=>{ const [d,m,y]=String(f||'').split('-'); return y ? +(y+m+d) : 0; };
@@ -27,15 +30,19 @@ function prepararProyectos(){
       const temas=D.temas||[], tpf=D.temas_por_ficha||{};
       PROY=DATOS_RAW.map(r=>{
         const firmantes=String(r.proponente||'').split(',').map(s=>s.trim()).filter(Boolean);
-        return {...r, _temas:(tpf[r.ficha]||[]).map(i=>temas[i]).filter(Boolean), _autor:autorPorFicha[r.ficha]||null,
+        return {...r, _temas:(tpf[r.ficha]||[]).map(i=>temas[i]).filter(Boolean), _tipo:(D.tipo_por_ficha||{})[r.ficha]||'', _autor:autorPorFicha[r.ficha]||null,
           _primero:(firmantes[0]||'').replace(/^H\.D\.?S?\s+/i,''), _firmantes:firmantes,
           _orden:fechaOrden(r.fecha_presentacion), _busca:sinTildes(`${r.titulo} ${r.ficha} ${r.proponente}`)};
       });
       const anios=[...new Set(PROY.map(p=>String(p.fecha_presentacion||'').split('-')[2]).filter(Boolean))].sort().reverse();
       document.getElementById('proy-anio').insertAdjacentHTML('beforeend',anios.map(a=>`<option>${esc(a)}</option>`).join(''));
       document.getElementById('proy-tema').insertAdjacentHTML('beforeend',temas.map(t=>`<option>${esc(t)}</option>`).join(''));
+      document.getElementById('proy-tipo').insertAdjacentHTML('beforeend',Object.entries(D.tipos_norma||{}).map(([k,n])=>`<option value="${esc(k)}">${esc(n)}</option>`).join(''));
       renderTemasChart();
       renderHeatTemas();
+      try{ renderFrentes(); }catch(e){ console.error('Frentes legislativos:',e); }
+      try{ renderTemasLey(); }catch(e){ console.error('Temas que llegan a ley:',e); }
+      try{ renderTipoNorma(); }catch(e){ console.error('Tipo de norma:',e); }
     }).catch(e=>{ _proyListo=null; throw e; });
   }
   return _proyListo;
@@ -55,9 +62,9 @@ function aplicarFiltroProyectos(){
   const val=id=>document.getElementById(id).value;
   const palabras=sinTildes(val('proy-q').trim()).split(/\s+/).filter(Boolean);
   const grupo=val('proy-etapa') ? new Set(GRUPO_ETAPA[val('proy-etapa')]) : null;
-  const anio=val('proy-anio'), tema=val('proy-tema'), orden=val('proy-orden');
+  const anio=val('proy-anio'), tema=val('proy-tema'), tipo=val('proy-tipo'), orden=val('proy-orden');
   proyFiltrados=PROY.filter(p=>(!grupo||grupo.has(p.etapa)) && (!anio||String(p.fecha_presentacion).endsWith('-'+anio))
-    && (!tema||p._temas.includes(tema)) && palabras.every(w=>p._busca.includes(w)));
+    && (!tema||p._temas.includes(tema)) && (!tipo||p._tipo===tipo) && palabras.every(w=>p._busca.includes(w)));
   const cmp={reciente:(a,b)=>b._orden-a._orden||b.ficha-a.ficha, antiguo:(a,b)=>a._orden-b._orden||a.ficha-b.ficha,
     firmas:(a,b)=>b._firmantes.length-a._firmantes.length||b._orden-a._orden}[orden];
   proyFiltrados.sort(cmp);
@@ -79,7 +86,8 @@ function masProyectos(){
     const autor=p._autor
       ? `<a href="#diputado=${esc(depSlug(p._autor))}">${esc(p._autor.nombre)}</a>`
       : esc(p._primero||'—');
-    const temas=p._temas.filter(t=>t!=='Otros').map(t=>`<button type="button" class="tema-chip" data-tema="${esc(t)}" onclick="filtrarTema(this.dataset.tema)">${esc(t)}</button>`).join(' ');
+    const temas=p._temas.filter(t=>t!=='Otros').map((t,i)=>`<button type="button" class="tema-chip${i===0?' principal':''}" data-tema="${esc(t)}" title="${i===0?'Tema principal':'Tema secundario'}" onclick="filtrarTema(this.dataset.tema)">${esc(t)}</button>`).join(' ')
+      +(p._tipo?` <span class="tipo-norma">${esc((D.tipos_norma||{})[p._tipo]||'')}</span>`:'');
     return `<article class="proy-item">
       <div class="proy-top"><span>Ficha ${esc(p.ficha)}</span><span>📅 ${esc(p.fecha_presentacion)}</span>
         <span class="badge ${etapaClass(p.etapa)}">${esc(p.etapa)}</span>
@@ -108,14 +116,74 @@ function renderTemasChart(){
   const temas=Object.keys(pt).filter(t=>pt[t].proyectos>0).sort((a,b)=>t2(a,b));
   function t2(a,b){ return (a==='Otros')-(b==='Otros') || pt[b].proyectos-pt[a].proyectos; }
   new Chart(canvas,{type:'bar',
-    data:{labels:temas,datasets:[{label:'Proyectos',data:temas.map(t=>pt[t].proyectos),backgroundColor:'#3b82f6',borderRadius:4,borderSkipped:false,barThickness:16}]},
+    data:{labels:temas.map(temaCorto),datasets:[{label:'Proyectos',data:temas.map(t=>pt[t].proyectos),backgroundColor:'#3b82f6',borderRadius:4,borderSkipped:false,barThickness:16}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
       onClick:(e,els)=>{ if(els.length) filtrarTema(temas[els[0].index]); },
       onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
-        callbacks:{label:c=>{ const v=pt[temas[c.dataIndex]]; return ` ${v.proyectos} proyectos · ${v.leyes} leyes (${(100*v.leyes/v.proyectos).toFixed(0)}%)`; }}}},
+        callbacks:{title:items=>temas[items[0].dataIndex],label:c=>{ const v=pt[temas[c.dataIndex]]; return ` ${v.proyectos} proyectos · ${v.leyes} leyes (${(100*v.leyes/v.proyectos).toFixed(0)}%)`; }}}},
       scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}},
         y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+}
+
+// ── FRENTES LEGISLATIVOS (clasificación CAP: tema principal = primer tema de cada ficha) ──
+const semestreDe=f=>{ const [,m,y]=String(f||'').split('-'); return y ? `${y}-S${+m<=6?1:2}` : null; };
+const fmtSemestre=s=>{ const [y,h]=s.split('-'); return (h==='S1'?'ene–jun ':'jul–dic ')+y; };
+function renderFrentes(){
+  const cont=document.getElementById('heat-frentes');
+  if(!cont||!PROY.length) return;
+  const cuenta={}, sems=new Set();
+  PROY.forEach(p=>{ const s=semestreDe(p.fecha_presentacion), t=p._temas[0]; if(!s||!t) return; sems.add(s); (cuenta[t]=cuenta[t]||{})[s]=(cuenta[t][s]||0)+1; });
+  const cols=[...sems].sort(), total=t=>Object.values(cuenta[t]||{}).reduce((a,b)=>a+b,0);
+  const filas=(D.temas||[]).filter(t=>t!=='Otros'&&total(t)).sort((a,b)=>total(b)-total(a));
+  const max=Math.max(...filas.flatMap(t=>cols.map(s=>cuenta[t][s]||0)),1);
+  const totSem=s=>filas.reduce((a,t)=>a+(cuenta[t][s]||0),0);
+  const celda=(v,tit)=>{
+    if(!v) return `<td class="vacio" title="${esc(tit)}">0</td>`;
+    const pct=Math.round(8+82*v/max);
+    return `<td title="${esc(tit)}" style="background:color-mix(in srgb,var(--acc) ${pct}%,transparent);color:${pct>50?'#fff':'var(--text)'}">${fmtNum(v)}</td>`;
+  };
+  cont.innerHTML=`<table class="heat"><thead><tr><th scope="col">Tema principal</th>${cols.map(s=>`<th scope="col">${esc(fmtSemestre(s))}</th>`).join('')}<th scope="col">Total</th></tr></thead>
+    <tbody>${filas.map(t=>`<tr><th scope="row"><button type="button" class="vot-art-btn" data-tema="${esc(t)}" onclick="filtrarTema(this.dataset.tema)">${esc(t)}</button></th>${cols.map(s=>celda(cuenta[t][s]||0,`${t}: ${cuenta[t][s]||0} proyectos en ${fmtSemestre(s)} (${Math.round(100*(cuenta[t][s]||0)/(totSem(s)||1))}% del semestre)`)).join('')}<td class="vacio">${fmtNum(total(t))}</td></tr>`).join('')}</tbody></table>`
+    +leyendaCalor('el número es la cantidad de proyectos presentados; el semestre en curso está incompleto');
+}
+
+function renderTemasLey(){
+  const canvas=document.getElementById('c-temas-ley');
+  if(!canvas||!PROY.length) return;
+  const n={}, ley={};
+  PROY.forEach(p=>{ const t=p._temas[0]; if(!t||t==='Otros') return; n[t]=(n[t]||0)+1; if(p.etapa==='Ley') ley[t]=(ley[t]||0)+1; });
+  const temas=Object.keys(n).filter(t=>n[t]>=5).sort((a,b)=>(ley[b]||0)/n[b]-(ley[a]||0)/n[a]);
+  new Chart(canvas,{type:'bar',
+    data:{labels:temas.map(temaCorto),datasets:[{label:'Ya son ley (%)',data:temas.map(t=>Math.round(1000*(ley[t]||0)/n[t])/10),backgroundColor:etapaColor('Ley'),$etapas:true,borderRadius:4,borderSkipped:false,barThickness:14}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      onClick:(e,els)=>{ if(els.length) filtrarTema(temas[els[0].index]); },
+      onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
+      plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
+        callbacks:{title:items=>temas[items[0].dataIndex],label:c=>{ const t=temas[c.dataIndex]; return ` ${ley[t]||0} de ${n[t]} proyectos ya son ley (${c.raw}%)`; }}}},
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>v+'%'}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+}
+
+function renderTipoNorma(){
+  const canvas=document.getElementById('c-tipo-norma'), pt=D.por_tipo_norma||{}, nombres=D.tipos_norma||{};
+  if(!canvas||!Object.keys(pt).length) return;
+  const tipos=Object.keys(pt).filter(k=>pt[k].proyectos).sort((a,b)=>pt[b].proyectos-pt[a].proyectos);
+  const total=tipos.reduce((a,k)=>a+pt[k].proyectos,0);
+  new Chart(canvas,{type:'bar',
+    data:{labels:tipos.map(tipoCorto),datasets:[{label:'Proyectos',data:tipos.map(k=>pt[k].proyectos),backgroundColor:'#a78bfa',borderRadius:4,borderSkipped:false,barThickness:18}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      onClick:(e,els)=>{ if(!els.length) return; document.getElementById('proy-tipo').value=tipos[els[0].index]; aplicarFiltroProyectos(); document.querySelector('.proy-filtros').scrollIntoView({behavior:'smooth',block:'start'}); },
+      onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
+      plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
+        callbacks:{title:items=>nombres[tipos[items[0].dataIndex]]||'',label:c=>{ const v=pt[tipos[c.dataIndex]]; return ` ${v.proyectos} proyectos (${Math.round(100*v.proyectos/total)}%) · ${v.leyes} ya son ley (${Math.round(100*v.leyes/v.proyectos)}%)`; }}}},
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+  const ref=pt.reforma, tra=pt.tratado;
+  document.getElementById('tipo-norma-nota').innerHTML=ref
+    ? `<b>${Math.round(100*ref.proyectos/total)}%</b> de los proyectos reforma una ley que ya existe.`
+      +(tra?.proyectos?` Los tratados son los que más llegan a ley (${Math.round(100*tra.leyes/tra.proyectos)}%): los presenta el Ejecutivo y la Asamblea solo los aprueba o rechaza.`:'')+' Toca una barra para filtrar.'
+    : '';
 }
 
 function exportProyectosFiltrados(btn){
@@ -124,7 +192,7 @@ function exportProyectosFiltrados(btn){
     if(!proyFiltrados.length) aplicarFiltroProyectos();
     downloadCSV('proyectos_filtrados', [
       ['Ficha',p=>p.ficha], ['Fecha de presentación',p=>p.fecha_presentacion], ['Título',p=>p.titulo], ['Etapa',p=>p.etapa],
-      ['Temas',p=>p._temas.join(' | ')], ['Autor principal',p=>p._autor?.nombre||p._primero], ['Nº firmantes',p=>p._firmantes.length],
+      ['Tema principal',p=>p._temas[0]||''], ['Tema secundario',p=>p._temas[1]||''], ['Tipo de norma',p=>(D.tipos_norma||{})[p._tipo]||''], ['Autor principal',p=>p._autor?.nombre||p._primero], ['Nº firmantes',p=>p._firmantes.length],
       ['Proponentes',p=>p.proponente],
     ], proyFiltrados);
   });

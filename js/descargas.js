@@ -95,7 +95,8 @@ function exportProyectos(btn){
     const datos=await ensureDatosRaw();
     downloadCSV('proyectos', [
       ['Ficha',r=>r.ficha], ['Fecha de presentación',r=>r.fecha_presentacion], ['Título',r=>r.titulo],
-      ['Etapa',r=>r.etapa], ['Temas',r=>(D.temas_por_ficha?.[r.ficha]||[]).map(i=>D.temas[i]).join(' | ')],
+      ['Etapa',r=>r.etapa], ['Tema principal',r=>D.temas[(D.temas_por_ficha?.[r.ficha]||[])[0]]||''], ['Tema secundario',r=>D.temas[(D.temas_por_ficha?.[r.ficha]||[])[1]]||''],
+      ['Tipo de norma',r=>(D.tipos_norma||{})[(D.tipo_por_ficha||{})[r.ficha]]||''],
       ['Proponente(s)',r=>r.proponente], ['Nº proyecto',r=>r.proyecto], ['Nº anteproyecto',r=>r.anteproyecto],
     ], datos);
   });

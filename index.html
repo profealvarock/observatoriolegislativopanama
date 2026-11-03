@@ -337,7 +337,7 @@
   <div class="grid2" style="margin-bottom:var(--gap)">
     <div class="card wide">
       <div class="card-title" style="--ct:var(--acc)">Proyectos por tema</div>
-      <p class="monitor-note" style="margin:-8px 0 12px">Clasificados por palabras clave del título; un proyecto puede tener varios temas. Toca una barra para filtrar.</p>
+      <p class="monitor-note" style="margin:-8px 0 12px">Temas del estándar internacional <a href="#metodologia">CAP</a>, adaptados a Panamá. Cada proyecto tiene un tema principal y, a veces, uno secundario (aquí cuentan ambos). Toca una barra para filtrar.</p>
       <div class="ch xtall"><canvas id="c-temas"></canvas></div>
     </div>
     <div class="card wide">
@@ -350,6 +350,22 @@
         <span class="monitor-note">Porcentaje de los proyectos propuestos (como autor principal) por cada grupo que tocan cada tema. Un proyecto puede tener varios temas.</span>
       </div>
       <div class="heat-scroll" id="heat-temas"></div>
+    </div>
+    <div class="card wide">
+      <div class="card-title" style="--ct:var(--acc)">¿En qué frentes se enfoca la Asamblea? Semestre a semestre</div>
+      <p class="monitor-note" style="margin:-6px 0 12px">Proyectos presentados en cada semestre según su tema principal. El color más intenso marca el frente con más proyectos.</p>
+      <div class="heat-scroll" id="heat-frentes"></div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="--ct:var(--st-ley)">¿Qué frentes llegan a ley?</div>
+      <p class="chart-sub">Porcentaje de los proyectos de cada tema (principal) que ya son ley</p>
+      <div class="ch xtall"><canvas id="c-temas-ley"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="--ct:var(--acc5)">Tipo de norma</div>
+      <p class="chart-sub">Qué clase de ley propone cada proyecto, según su título</p>
+      <div class="ch"><canvas id="c-tipo-norma"></canvas></div>
+      <p class="monitor-note" id="tipo-norma-nota" style="margin-top:10px"></p>
     </div>
   </div>
   <div class="sec-hdr">
@@ -368,6 +384,7 @@
     </select>
     <select class="cmp-select" id="proy-anio" aria-label="Año de presentación" onchange="filtrarProyectos()"><option value="">Todos los años</option></select>
     <select class="cmp-select" id="proy-tema" aria-label="Tema" onchange="filtrarProyectos()"><option value="">Todos los temas</option></select>
+    <select class="cmp-select" id="proy-tipo" aria-label="Tipo de norma" onchange="filtrarProyectos()"><option value="">Todos los tipos de norma</option></select>
     <select class="cmp-select" id="proy-orden" aria-label="Orden" onchange="filtrarProyectos()">
       <option value="reciente">Más recientes</option>
       <option value="antiguo">Más antiguos</option>
@@ -711,7 +728,7 @@
         <dt>Partidos y provincias</dt><dd>Cada proyecto cuenta <strong>una vez</strong>, para el partido y la provincia de su autor principal, así los totales cuadran. "Participa en" cuenta los proyectos en que firmó al menos un diputado del grupo.</dd>
         <dt>Alianzas</dt><dd>Diputados con los que más proyectos ha firmado alguien (como autor o co-patrocinador). En Partidos, el mapa "¿Quién se suma…?" muestra de qué partidos vienen las co-firmas de los proyectos de cada partido.</dd>
         <dt>Co-firmas con otros partidos</dt><dd>Porcentaje de las veces que firmó junto a diputados de otro partido. Se compara con lo esperado si firmara al azar, que depende del tamaño de su partido (quien es el único de su bancada siempre tendrá 100 %).</dd>
-        <dt>Tema</dt><dd>Se asigna por palabras clave del título (15 temas, por ejemplo "Salud", "Tratados y relaciones exteriores" o "Conmemoraciones y festivales"). Un proyecto puede tener varios; si ninguna coincide queda en "Otros".</dd>
+        <dt>Tema</dt><dd>Clasificación según los temas mayores del <strong>Comparative Agendas Project</strong> (CAP), el estándar internacional para comparar agendas legislativas, adaptados a Panamá (21 temas, por ejemplo "Salud", "Justicia, crimen y seguridad" o "Gobierno y administración pública"). Cada proyecto tiene un <strong>tema principal</strong> y, si aplica, uno secundario. Detalle en la sección 10.</dd>
         <dt>Suplentes</dt><dd>Lo que firma un suplente (<code>H.D.S</code>) se suma al diputado principal al que suple, según el registro de suplencias de Espacio Cívico.</dd>
       </dl>
     </section>
@@ -765,7 +782,7 @@
         <li>En las <strong>votaciones del pleno</strong> solo aparece quien votó: <strong>las ausencias no se registran</strong>, así que no se puede distinguir a quien faltó de quien estaba presente y no votó. Por eso se muestra "votó en X de Y", no una tasa de asistencia.</li>
         <li>Los títulos de las votaciones se escriben a mano: el número de proyecto y el debate se extraen con reglas tolerantes a errores, y lo que no corresponde a un proyecto queda como "otras votaciones". Si la Asamblea corrige un reporte ya descargado, el cambio no se refleja.</li>
         <li>Las votaciones cubren <strong>solo la legislatura actual</strong> (desde julio de 2024). El sistema publica reportes desde 2021, pero la numeración de proyectos se reinicia en cada legislatura y los diputados eran otros.</li>
-        <li>Los <strong>temas</strong> salen solo del título: cerca de 1 de cada 5 proyectos queda en "Otros" porque su título solo dice qué ley modifica (por ejemplo "Que modifica la Ley 15 de 1995"), y algunos pueden caer en un tema por una palabra que no es central.</li>
+        <li>Los <strong>temas</strong> salen solo del título. Si el título solo dice qué ley modifica (por ejemplo "Que modifica la Ley 15 de 1995") y no se puede saber de qué trata, el proyecto queda en "Otros". Los proyectos nuevos los clasifica un modelo automático que acierta el tema principal en cerca de 7 de cada 10 casos; los dudosos quedan marcados para revisión.</li>
       </ul>
     </section>
 
@@ -786,6 +803,17 @@
         <dt>Disidencia</dt><dd>Un voto es disidente cuando es distinto al de la <strong>mayoría estricta</strong> de la bancada del diputado en esa decisión (con al menos dos de sus miembros votando). En un empate nadie es disidente. La bancada es la que registra prensa507 en el momento del voto. Los independientes no forman bancada, así que no se les mide.</dd>
         <dt>Cohesión</dt><dd>Porcentaje de los votos de una bancada que coinciden con la opción que más votó en cada decisión (en un empate 1-1 cuenta la mitad), sumado en todas las decisiones y mes a mes. "¿Cuánto coinciden las bancadas?" cuenta las decisiones en que la mayoría de ambas votó igual.</dd>
         <dt>Diputados y suplentes</dt><dd>Cada diputado de prensa507 se relaciona con Espacio Cívico por su nombre y circuito; si no coincide el circuito, o no aparece el nombre, se confirma con su suplente o con el apellido dentro del circuito. Un caso ambiguo <strong>no se asigna</strong>. Lo que vota un suplente se muestra aparte, asociado a su principal, y no entra en los porcentajes ni en la disidencia del principal.</dd>
+      </dl>
+    </section>
+
+    <section class="met-card met-ancha">
+      <h3>10. Clasificación temática</h3>
+      <p><strong>Estándar.</strong> Se usan los temas mayores del <a href="https://www.comparativeagendas.net/" target="_blank" rel="noopener">Comparative Agendas Project</a> (CAP), con los que se estudian las agendas de parlamentos de más de 20 países, adaptados a Panamá: por ejemplo, el turismo va en "Comercio, banca y consumo", la protección animal en "Ambiente" y el deporte en "Cultura, deporte y patrimonio". <span id="met-temas-estado"></span></p>
+      <div id="met-temas-lista"></div>
+      <dl>
+        <dt>Cómo se clasificó</dt><dd>Todos los proyectos del Seguimiento Legislativo se revisaron con inteligencia artificial, título por título, y se les asignó un tema principal y, cuando corresponde, uno secundario. Esa clasificación queda guardada en <a href="clasificacion_tematica.json" target="_blank" rel="noopener">clasificacion_tematica.json</a> y no se recalcula.</dd>
+        <dt>Proyectos nuevos</dt><dd>Se clasifican automáticamente con un modelo aprendido de los proyectos ya revisados (palabras del título, leyes que cita y palabras clave). <span id="met-temas-modelo"></span> Si el modelo duda, el proyecto queda en "Otros" o marcado para revisión; en la próxima revisión con IA se corrige y el modelo aprende de él. No se usa ningún servicio externo.</dd>
+        <dt>Tipo de norma</dt><dd>Segunda dimensión, deducida del título con reglas fijas: <strong>nueva regulación</strong>, <strong>reforma</strong> de una ley existente (modifica, adiciona, deroga o subroga), <strong>declarativa o conmemorativa</strong> (días, festivales, patrimonio, condecoraciones), <strong>aprobación de tratado</strong> y <strong>presupuesto</strong>.</dd>
       </dl>
     </section>
   </div>

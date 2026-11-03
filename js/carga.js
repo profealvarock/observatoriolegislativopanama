@@ -87,6 +87,19 @@ function renderMetodologia(){
     const total=sinMatch.reduce((s,x)=>s+x.firmas,0);
     lim.insertAdjacentHTML('afterbegin',`<li data-dinamico><strong>${total} firma${total===1?'':'s'} de diputados no se asignaron</strong> porque el nombre no coincide con certeza con ningún diputado o suplente publicado: ${sinMatch.map(x=>esc(x.nombre.replace(/^H\.D\.?S?\s+/i,''))).join(', ')}.</li>`);
   }
+  const tm=D.temas_meta;
+  if(tm){
+    const principal={};
+    Object.values(D.temas_por_ficha||{}).forEach(v=>{ const t=D.temas[v[0]]; principal[t]=(principal[t]||0)+1; });
+    document.getElementById('met-temas-estado').innerHTML=`Hoy: <strong>${fmtNum(tm.revisadas_ia)}</strong> proyectos revisados con IA`
+      +(tm.clasificadas_modelo?` y <strong>${fmtNum(tm.clasificadas_modelo)}</strong> clasificados por el modelo`:'')
+      +(tm.para_revisar?` (<strong>${fmtNum(tm.para_revisar)}</strong> pendientes de revisión)`:'')+'.';
+    document.getElementById('met-temas-lista').innerHTML=`<div class="tbl-scroll"><table class="cmp-tbl" style="margin:8px 0 12px">
+      <thead><tr><th>Código CAP</th><th>Tema</th><th>Incluye</th><th>Proyectos (tema principal)</th></tr></thead>
+      <tbody>${(D.temas||[]).map(t=>`<tr><td>${tm.codigos?.[t]===99?'—':esc(tm.codigos?.[t]??'')}</td><th>${esc(t)}</th><td style="white-space:normal">${esc(tm.incluye?.[t]||'')}</td><td>${fmtNum(principal[t]||0)}</td></tr>`).join('')}</tbody></table></div>`;
+    if(tm.modelo) document.getElementById('met-temas-modelo').textContent=
+      `Probado con validación cruzada sobre ${fmtNum(tm.modelo.fichas)} proyectos revisados: acierta el tema principal en ${String(tm.modelo.acierto_tema_principal).replace('.',',')} % de los casos y lo incluye entre sus dos primeras opciones en ${String(tm.modelo.acierto_entre_2_primeros).replace('.',',')} %.`;
+  }
   ensureVotaciones().then(V=>{
     if(!V) return;
     const ult=V.ultima_extraccion?new Date(V.ultima_extraccion).toLocaleDateString('es-PA',{day:'numeric',month:'long',year:'numeric'}):'—';

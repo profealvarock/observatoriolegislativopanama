@@ -449,7 +449,7 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .chart-tabla td:not(:first-child),.chart-tabla th:not(:first-child){text-align:right}
 
 /* PROYECTOS */
-.proy-filtros{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:8px;margin-bottom:10px}
+.proy-filtros{display:grid;grid-template-columns:2fr repeat(5,1fr);gap:8px;margin-bottom:10px}
 .proy-filtros .proy-q{width:100%}
 .proy-resumen{font-family:var(--fm);font-size:.72rem;color:var(--muted);margin-bottom:10px}
 .proy-resumen b{color:var(--text)}
@@ -463,6 +463,8 @@ tr:hover .dep-avatar{border-color:var(--acc)}
 .proy-meta a:hover{text-decoration:underline}
 .tema-chip{display:inline-block;padding:1px 8px;border-radius:20px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-family:var(--fm);font-size:.62rem;cursor:pointer}
 .tema-chip:hover{border-color:var(--acc);color:var(--acc)}
+.tema-chip.principal{border-color:color-mix(in srgb,var(--acc) 55%,var(--border));font-weight:600}
+.tipo-norma{font-family:var(--fm);font-size:.6rem;color:var(--muted);border:1px dashed var(--border);border-radius:20px;padding:1px 8px}
 .proy-firmas>summary{cursor:pointer;color:var(--muted)}
 .proy-firmas>summary:hover{color:var(--acc)}
 .proy-firmas p{margin-top:6px;line-height:1.6;white-space:normal}

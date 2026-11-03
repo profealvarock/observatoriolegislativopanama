@@ -538,59 +538,11 @@ def _prod_vacio():
 # ─────────────────────────────────────────────
 # TEMAS DE LOS PROYECTOS
 # ─────────────────────────────────────────────
-# Clasificación por palabras clave en el título (sin tildes, en mayúsculas). Un proyecto puede
-# tener varios temas; si no coincide con ninguno queda en "Otros". Las expresiones buscan el
-# inicio de palabra (\b), así "EDUCA" cubre EDUCACION, EDUCATIVO, EDUCADORES…
-TEMAS = [
-    ('Conmemoraciones y festivales', [r'\bDECLARA (EL |LA |LOS |LAS )?(DIA|SEMANA|MES|ANO)\b', r'\bDIA NACIONAL\b',
-        r'\bFESTIVAL', r'\bPATRONATO', r'\bFERIA\b', r'\bCONMEMORA', r'\bHIJ[OA]S? MERITORI', r'\bDENOMINA\b']),
-    ('Tratados y relaciones exteriores', [r'\b(CONVENIO|TRATADO|CONVENCION|PROTOCOLO)\b', r'\bAPRUEBA\b.*\bACUERDO\b',
-        r'\bRELACIONES EXTERIORES\b', r'\bDIPLOMATIC']),
-    ('Salud', [r'\bSALUD', r'\bMEDIC', r'\bHOSPITAL', r'\bENFERMEDAD', r'\bCANCER', r'\bSANITARI', r'\bPACIENTE',
-        r'\bVACUN', r'\bNUTRIC', r'\bDIABET', r'\bMENTAL\b', r'\bFARMAC', r'\bODONTOLOG', r'\bSANGRE', r'\bTRANSFUSION']),
-    ('Seguridad social y pensiones', [r'\bJUBILA', r'\bPENSION', r'\bCAJA DE SEGURO SOCIAL', r'\bSEGURIDAD SOCIAL',
-        r'\bINVALIDEZ', r'\b120 A LOS 65']),
-    ('Educación', [r'\bEDUCA', r'\bESCOLAR', r'\bESCUELA', r'\bUNIVERSI', r'\bESTUDIANT', r'\bDOCENTE', r'\bBECA',
-        r'\bENSENANZA', r'\bALFABETIZ', r'\bFORMACION\b', r'\bIFARHU', r'\bCAPACITACION']),
-    ('Justicia y seguridad', [r'\bPENAL\b', r'\bDELITO', r'\bPOLICI', r'\bCARCEL', r'\bPENITENCIARI', r'\bVIOLENCIA',
-        r'\bCRIMEN', r'\bCRIMINAL', r'\bPROCESAL', r'\bJUDICIAL', r'\bSEGURIDAD (CIUDADANA|PUBLICA)', r'\bARMAS\b',
-        r'\bDROGA', r'\bJUSTICIA', r'\bFEMICIDIO', r'\bVICTIMA']),
-    ('Economía, finanzas e impuestos', [r'\bIMPUEST', r'\bTRIBUT', r'\bFISCAL', r'\bPRESUPUEST', r'\bBANC', r'\bFINANCI',
-        r'\bCREDITO', r'\bINVERSION', r'\bECONOMI', r'\bADUAN', r'\bCOMERCI', r'\bCONSUMIDOR', r'\bEMPRESA',
-        r'\bMIPYME', r'\bPRESTAMO', r'\bDEUDA', r'\bFACTURACION', r'\bLOTERIA', r'\bALQUILER', r'\bGASTOS?\b']),
-    ('Trabajo y empleo', [r'\bTRABAJ', r'\bLABORAL', r'\bEMPLEO', r'\bSALARI', r'\bSERVIDORES PUBLICOS',
-        r'\bCARRERA ADMINISTRATIVA']),
-    ('Ambiente y energía', [r'\bAMBIENT', r'\bAGUA\b', r'\bHIDRIC', r'\bBOSQUE', r'\bAREAS? PROTEGIDA', r'\bCLIMA',
-        r'\bRESIDUO', r'\bRECICL', r'\bMINER', r'\bENERGI', r'\bELECTRIC', r'\bBIODIVERSIDAD', r'\bFAUNA',
-        r'\bMANGLAR', r'\bCONTAMINA', r'\bSOSTENIBL', r'\bPLASTIC', r'\bAGUAS\b', r'\bPOLIESTIRENO', r'\bENVASES']),
-    ('Agro y pesca', [r'\bAGROPECUARI', r'\bAGRICOL', r'\bAGRO', r'\bPRODUCTOR', r'\bGANAD', r'\bPESCA', r'\bACUICOL',
-        r'\bALIMENTARI', r'\bCAFE\b', r'\bARROZ', r'\bTIERRAS\b', r'\bBANANER']),
-    ('Infraestructura, transporte y vivienda', [r'\bTRANSPORT', r'\bVIAL', r'\bCARRETER', r'\bINFRAESTRUCTURA',
-        r'\bTRANSITO', r'\bPUERTO', r'\bAEROPUERT', r'\bVIVIENDA', r'\bHABITACIONAL', r'\bURBAN',
-        r'\bORDENAMIENTO TERRITORIAL', r'\bOBRAS? PUBLICAS', r'\bVEHICUL', r'\bSERVICIOS PUBLICOS']),
-    ('Cultura, deporte y turismo', [r'\bCULTUR', r'\bDEPORT', r'\bPATRIMONIO', r'\bARTE\b', r'\bARTIST', r'\bARTESAN',
-        r'\bFOLCLOR', r'\bMUSEO', r'\bTURIS', r'\bMUSICA']),
-    ('Niñez, familia e inclusión', [r'\bNINE?Z', r'\bNIN[OA]S?\b', r'\bADOLESCEN', r'\bJUVENTUD', r'\bJOVEN',
-        r'\bFAMILIA', r'\bMUJER', r'\bGENERO\b', r'\bDISCAPACI', r'\bADULTOS? MAYOR', r'\bPOBREZA', r'\bINDIGENA',
-        r'\bAFRODESCEN', r'\bIGUALDAD', r'\bINCLUSION', r'\bETNIA']),
-    ('Estado, gobierno y transparencia', [r'\bASAMBLEA', r'\bREGLAMENTO ORGANICO', r'\bELECTORAL', r'\bCONSTITUC',
-        r'\bMUNICIP', r'\bDESCENTRALIZ', r'\bADMINISTRACION PUBLICA', r'\bTRANSPARENCIA', r'\bCORREGIMIENTO',
-        r'\bDISTRITO\b', r'\bCONTRATACION', r'\bCONTRALORIA', r'\bCORRUPCION', r'\bCOMARCA', r'\bRENDICION DE CUENTAS',
-        r'\bPARTIDOS? POLITICO', r'\bGABINETE', r'\bSECTOR PUBLICO', r'\bAUTORIDADES DEL ESTADO', r'\bREGLAMENTACION', r'\bPASAPORTE', r'\bPOLITICO ADMINISTRATIVA', r'\bMIGRA']),
-    ('Tecnología y datos', [r'\bDIGITAL', r'\bTECNOLOG', r'\bINNOVAC', r'\bCIBER', r'\bINTERNET', r'\bDATOS PERSONALES',
-        r'\bINTELIGENCIA ARTIFICIAL', r'\bTELECOMUNICA', r'\bELECTRONIC']),
-]
-TEMA_OTROS = 'Otros'
-_TEMAS_RE = [(nombre, [re.compile(p) for p in pats]) for nombre, pats in TEMAS]
-
-def _sin_tildes(s):
-    s = unicodedata.normalize('NFD', (s or '').upper())
-    return ''.join(c for c in s if unicodedata.category(c) != 'Mn')
-
-def clasificar_temas(titulo):
-    t = _sin_tildes(titulo)
-    temas = [nombre for nombre, pats in _TEMAS_RE if any(p.search(t) for p in pats)]
-    return temas or [TEMA_OTROS]
+# Clasificación temática estándar (temas del Comparative Agendas Project adaptados a Panamá) y
+# tipo de norma: ver temas_cap.py. Las fichas revisadas con IA se guardan en
+# clasificacion_tematica.json; las nuevas se clasifican con el modelo aprendido de ellas.
+import temas_cap
+TEMA_OTROS = temas_cap.NOMBRE[99]
 
 
 # ─────────────────────────────────────────────
@@ -729,8 +681,15 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
 
     # Temas: por proyecto (índices de la lista `temas` para que el JSON sea compacto),
     # totales por tema y los temas que más trabaja cada diputado como autor.
-    nombres_temas = [n for n, _ in TEMAS] + [TEMA_OTROS]
-    temas_ficha = {r['ficha']: clasificar_temas(r['titulo'] or r['anteproyecto'] or r['proyecto']) for r in datos}
+    # El primer tema de cada ficha es el principal; el segundo, si existe, el secundario.
+    clasif = temas_cap.clasificar_fichas(datos)
+    nombres_temas = [temas_cap.NOMBRE[c] for c in temas_cap.CODIGOS]
+    temas_ficha = {f: x['temas'] for f, x in clasif.items()}
+    tipo_ficha = {f: x['tipo'] for f, x in clasif.items()}
+    por_tipo = {k: {'proyectos': 0, 'leyes': 0} for k in temas_cap.NOMBRE_TIPO}
+    for r in datos:
+        por_tipo[tipo_ficha[r['ficha']]]['proyectos'] += 1
+        por_tipo[tipo_ficha[r['ficha']]]['leyes'] += r['etapa'] == 'Ley'
     por_tema = {n: {'proyectos': 0, 'leyes': 0} for n in nombres_temas}
     for r in datos:
         for t in temas_ficha[r['ficha']]:
@@ -887,6 +846,10 @@ def generar_resumen(datos, dips, ts, metricas=None, respaldos=None):
         'temas': nombres_temas,
         'por_tema': por_tema,
         'temas_por_ficha': {f: [nombres_temas.index(t) for t in ts] for f, ts in temas_ficha.items()},
+        'temas_meta': temas_cap.meta_resumen(),
+        'tipos_norma': temas_cap.NOMBRE_TIPO,
+        'tipo_por_ficha': tipo_ficha,
+        'por_tipo_norma': por_tipo,
         'temas_por_partido': {p: dict(v) for p, v in temas_partido.items()},
         'temas_por_provincia': {p: dict(v) for p, v in temas_provincia.items()},
         'red_partidos': {a: dict(v) for a, v in matriz.items()},
