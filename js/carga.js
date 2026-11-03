@@ -87,6 +87,16 @@ function renderMetodologia(){
     const total=sinMatch.reduce((s,x)=>s+x.firmas,0);
     lim.insertAdjacentHTML('afterbegin',`<li data-dinamico><strong>${total} firma${total===1?'':'s'} de diputados no se asignaron</strong> porque el nombre no coincide con certeza con ningún diputado o suplente publicado: ${sinMatch.map(x=>esc(x.nombre.replace(/^H\.D\.?S?\s+/i,''))).join(', ')}.</li>`);
   }
+  ensureVotaciones().then(V=>{
+    if(!V) return;
+    const ult=V.ultima_extraccion?new Date(V.ultima_extraccion).toLocaleDateString('es-PA',{day:'numeric',month:'long',year:'numeric'}):'—';
+    const n=V.votaciones.length;
+    document.getElementById('met-vot-estado').innerHTML=`Última extracción: <strong>${esc(ult)}</strong> · ${fmtNum(n)} votaciones desde el ${esc(fmtFecha(V.desde))}.`;
+    const chip=document.getElementById('met-chip-vot');
+    const html=`Votaciones: <b>${fmtNum(n)}</b> (extracción ${esc(ult)})`;
+    if(chip) chip.innerHTML=html;
+    else document.getElementById('met-estado').insertAdjacentHTML('beforeend',`<span class="met-chip" id="met-chip-vot">${html}</span>`);
+  });
   ensureHist().then(H=>{
     if(!H) return;
     const iPl=H.campos.indexOf('planilla');

@@ -92,6 +92,7 @@
   <button class="tab" onclick="showTab('novedades')">🆕 Novedades</button>
   <button class="tab" onclick="showTab('diputados')">👤 Diputados</button>
   <button class="tab" onclick="showTab('proyectos')">📄 Proyectos</button>
+  <button class="tab" onclick="showTab('votaciones')">🗳 Votaciones</button>
   <button class="tab" onclick="showTab('monitoreo')">📋 Monitoreo</button>
   <button class="tab" onclick="showTab('partidos')">🏛 Partidos</button>
   <button class="tab" onclick="showTab('proponentes')">🏢 Otros proponentes</button>
@@ -210,8 +211,11 @@
       <button class="dl-btn" onclick="exportCostosDiputados(this)">⬇ Costo por diputado</button>
       <button class="dl-btn" onclick="exportCostosProyectos(this)">⬇ Costo por proyecto</button>
       <button class="dl-btn" onclick="exportHistorico(this)">⬇ Histórico diario</button>
+      <a class="dl-btn" href="votaciones.csv" download style="text-decoration:none">⬇ Votaciones del pleno</a>
+      <a class="dl-btn" href="preguntas.csv" download style="text-decoration:none">⬇ Votaciones por artículo</a>
+      <a class="dl-btn" href="votos.csv" download style="text-decoration:none" title="Archivo grande (más de 20 MB): una fila por diputado y artículo">⬇ Voto de cada diputado (archivo grande)</a>
     </div>
-    <p class="datos-abiertos-note">Los archivos se abren en Excel, Google Sheets o LibreOffice. También están los JSON originales: <a href="datos.json" target="_blank" rel="noopener">datos.json</a> · <a href="resumen.json" target="_blank" rel="noopener">resumen.json</a> · <a href="historico.json" target="_blank" rel="noopener">historico.json</a>. Fuentes: sistemas.asamblea.gob.pa y espaciocivico.org.</p>
+    <p class="datos-abiertos-note">Los archivos se abren en Excel, Google Sheets o LibreOffice. También están los JSON originales: <a href="datos.json" target="_blank" rel="noopener">datos.json</a> · <a href="resumen.json" target="_blank" rel="noopener">resumen.json</a> · <a href="historico.json" target="_blank" rel="noopener">historico.json</a> · <a href="votaciones.json" target="_blank" rel="noopener">votaciones.json</a> · <a href="votos_diputado.json" target="_blank" rel="noopener">votos_diputado.json</a>. Fuentes: sistemas.asamblea.gob.pa, espaciocivico.org y prensa507.asamblea.gob.pa.</p>
   </div>
 </div>
 
@@ -249,6 +253,7 @@
         <option value="objetado">Objetados</option>
         <option value="detenido">Archivados, negados o retirados</option>
         <option value="cambio">Otros cambios</option>
+        <option value="votacion">Votaciones en el pleno</option>
       </select>
     </div>
   </div>
@@ -315,6 +320,7 @@
             <th data-col="tasaAutor" class="col-md" title="Porcentaje de los proyectos que propuso como autor principal que ya son ley">Autor → ley <span class="si">↕</span></th>
             <th data-col="tasaCopat" class="col-md" title="Porcentaje de los proyectos que co-patrocinó que ya son ley">Co-patr. → ley <span class="si">↕</span></th>
             <th data-col="indiceAutor" title="Leyes logradas como autor frente a las esperadas por la antigüedad de sus proyectos. 100 = promedio de la Cámara">Efectividad <span class="si">↕</span></th>
+            <th data-col="votDisid" class="col-md" title="En las votaciones de proyectos de ley del pleno: porcentaje de sus votos distintos a la mayoría de su bancada">Se aparta de su bancada <span class="si">↕</span></th>
             <th class="col-sm">Etapa frecuente</th>
           </tr>
         </thead>
@@ -371,6 +377,100 @@
   <div class="proy-resumen" id="proy-resumen" aria-live="polite"></div>
   <div class="proy-lista" id="proy-lista"><div class="loader"><div class="spinner"></div> Cargando proyectos…</div></div>
   <div class="proy-mas"><button class="dl-btn" id="proy-mas" onclick="masProyectos()" style="display:none">Mostrar más</button></div>
+</div>
+
+<!-- TAB VOTACIONES -->
+<div id="tab-votaciones" class="tab-content">
+  <div class="vot-seg-bar">
+    <div class="map-filter-group" id="vot-seg" role="group" aria-label="Tipo de votación"></div>
+    <p class="monitor-note" id="vot-seg-nota"></p>
+  </div>
+  <div class="nov-kpis" id="vot-kpis"><div class="loader" style="grid-column:1/-1"><div class="spinner"></div> Cargando votaciones…</div></div>
+  <div class="card" style="margin-bottom:var(--gap)">
+    <div class="card-title" style="--ct:var(--acc)">Cómo votó el pleno</div>
+    <div class="vot-hemi-sel-row">
+      <select class="cmp-select" id="vot-hemi-sel" aria-label="Votación a mostrar" onchange="elegirHemiDestacado()"></select>
+    </div>
+    <p class="monitor-note" id="vot-hemi-tit" style="margin:8px 0 4px"></p>
+    <div id="vot-hemi" class="vot-det vot-det-dest"></div>
+  </div>
+  <div class="grid2">
+    <div class="card wide">
+      <div class="card-title" style="--ct:var(--acc)">Ritmo del pleno: votaciones por mes</div>
+      <div class="ch tall"><canvas id="c-vot-mes"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="--ct:var(--acc)">¿Qué tan dividido vota el pleno?</div>
+      <p class="chart-sub">Votaciones según el porcentaje de votos a favor</p>
+      <div class="ch"><canvas id="c-vot-margen"></canvas></div>
+    </div>
+    <div class="card" id="vot-card-embudo">
+      <div class="card-title" style="--ct:var(--st-ley)">Del pleno a la ley</div>
+      <div id="vot-embudo" class="funnel" style="padding-top:6px"></div>
+    </div>
+    <div class="card" id="vot-card-dias">
+      <div class="card-title" style="--ct:var(--acc5)">Días entre el segundo y el tercer debate</div>
+      <p class="chart-sub" id="vot-dias-nota"></p>
+      <div class="ch"><canvas id="c-vot-dias"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="--ct:var(--acc2)">Cohesión de las bancadas</div>
+      <p class="chart-sub">Votos fuera de la línea mayoritaria de su bancada (%) — más corta = más cohesión</p>
+      <div class="ch"><canvas id="c-vot-cohesion"></canvas></div>
+    </div>
+    <div class="card wide">
+      <div class="card-title" style="--ct:var(--acc2)">Cohesión mes a mes</div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:-6px 0 12px">
+        <select class="cmp-select" id="vot-cohmes-p" aria-label="Bancada" onchange="renderCohesionMensual()" style="width:auto"></select>
+        <span class="monitor-note">Porcentaje de los votos de la bancada que coinciden con su mayoría, frente al promedio de todas las bancadas.</span>
+      </div>
+      <div class="ch"><canvas id="c-vot-cohmes"></canvas></div>
+    </div>
+    <div class="card wide">
+      <div class="card-title" style="--ct:var(--acc2)">¿Cuánto coinciden las bancadas?</div>
+      <p class="monitor-note" style="margin:-6px 0 12px">Para cada par de bancadas, el porcentaje de decisiones en que la mayoría de ambas votó igual. El color marca dónde más discrepan. Independientes excluidos (no forman bancada).</p>
+      <div class="heat-scroll" id="vot-acuerdo"></div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="--ct:var(--acc2)">Quiénes más se apartan de su bancada</div>
+      <p class="chart-sub" id="vot-disid-nota"></p>
+      <div class="ch xtall"><canvas id="c-vot-disid"></canvas></div>
+    </div>
+    <div class="card" id="vot-card-divididos">
+      <div class="card-title" style="--ct:var(--st-neg)">Proyectos más divididos</div>
+      <div id="vot-divididos" class="vot-divididos"></div>
+    </div>
+  </div>
+  <div class="sec-hdr">
+    <div class="sec-title" style="--ct:var(--acc)">Buscar votaciones</div>
+    <a class="dl-btn" href="votaciones.csv" download style="text-decoration:none">⬇ CSV</a>
+  </div>
+  <div class="proy-filtros vot-filtros" role="search">
+    <input type="search" class="search-box proy-q" id="vot-q" placeholder="Título, descripción o número de proyecto…" aria-label="Buscar votaciones" oninput="filtrarVotaciones()">
+    <input type="date" class="cmp-select" id="vot-desde" aria-label="Desde" title="Desde" onchange="filtrarVotaciones()">
+    <input type="date" class="cmp-select" id="vot-hasta" aria-label="Hasta" title="Hasta" onchange="filtrarVotaciones()">
+    <select class="cmp-select" id="vot-debate" aria-label="Debate" onchange="filtrarVotaciones()">
+      <option value="">Todos los debates</option>
+      <option value="Segundo">Segundo debate</option>
+      <option value="Tercer">Tercer debate</option>
+      <option value="sin">Sin debate (nombramientos, informes…)</option>
+    </select>
+    <select class="cmp-select" id="vot-resultado" aria-label="Resultado" onchange="filtrarVotaciones()">
+      <option value="">Todos los resultados</option>
+      <option value="Aprobado">Aprobadas</option>
+      <option value="Rechazado">Rechazadas</option>
+      <option value="Mixto">Mixtas (unas preguntas sí, otras no)</option>
+      <option value="unanime">Unánimes</option>
+      <option value="dividida">Divididas</option>
+      <option value="contra">La bancada elegida votó mayormente en contra o se abstuvo</option>
+    </select>
+    <select class="cmp-select" id="vot-partido" aria-label="Bancada" onchange="filtrarVotaciones()"><option value="">Todas las bancadas</option></select>
+    <select class="cmp-select" id="vot-dip" aria-label="Diputado" onchange="filtrarVotaciones()"><option value="">Todos los diputados</option></select>
+  </div>
+  <div class="proy-resumen" id="vot-resumen" aria-live="polite"></div>
+  <div class="proy-lista" id="vot-lista"></div>
+  <div class="proy-mas"><button class="dl-btn" id="vot-mas" onclick="masVotaciones()" style="display:none">Mostrar más</button></div>
+  <p class="monitor-note" style="margin-top:12px">* Debate deducido de las preguntas votadas porque el título no lo indica. Fuente: <a href="https://prensa507.asamblea.gob.pa" target="_blank" rel="noopener">prensa507.asamblea.gob.pa</a> · <a href="#metodologia">cómo se calcula</a></p>
 </div>
 
 <!-- TAB MONITOREO -->
@@ -446,6 +546,12 @@
     <div class="card-title" style="--ct:var(--acc)">¿Quién se suma a los proyectos de cada partido?</div>
     <p class="monitor-note" style="margin:-6px 0 12px">Cada fila es el partido del autor del proyecto; cada columna, el partido de los diputados que lo co-firmaron. El número es el porcentaje de las co-firmas que recibió ese partido. La celda con borde es su propio partido.</p>
     <div class="heat-scroll" id="heat-red"></div>
+  </div>
+  <div class="card" id="partido-votos" style="margin-bottom:var(--gap)" hidden>
+    <div class="card-title" style="--ct:var(--acc2)">¿Votan en bloque? Cohesión en las votaciones del pleno</div>
+    <p class="chart-sub">Votos fuera de la línea mayoritaria de su bancada en proyectos de ley (%) — más corta = más cohesión</p>
+    <div class="ch"><canvas id="c-pp-cohesion"></canvas></div>
+    <p class="monitor-note" style="margin-top:10px">La bancada es la que registra prensa507 al momento de votar, y puede no coincidir con el partido de Espacio Cívico. Más detalle en <a href="#votaciones">Votaciones</a>.</p>
   </div>
   <p class="monitor-note" style="margin-bottom:var(--gap)">Cada proyecto cuenta una sola vez, para el partido de su <strong>autor principal</strong> (primer firmante), así los totales suman lo mismo que la tabla de diputados. "Participa en" cuenta los proyectos en que firmó al menos un diputado del partido, como autor o co-patrocinador.</p>
   <div id="partido-cards" class="partido-grid"></div>
@@ -656,13 +762,31 @@
         <li>El total de proyectos publicado por la Asamblea a veces <strong>baja</strong> de un día a otro (registros que se retiran o reclasifican). El observatorio refleja lo que la fuente publica.</li>
         <li>El primer firmante se toma como autor principal porque la fuente no indica el rol de cada firmante.</li>
         <li>La <strong>planilla de Espacio Cívico</strong> se describe como "monto acumulado durante el período legislativo", sin fuente ni fecha de corte, y no coincide con lo que la Contraloría registra como pagado: para muchos diputados, solo los 6 meses de personal transitorio que publica la Contraloría ya superan esa cifra. El costo legislativo podría estar <strong>subestimando</strong> la planilla de esos diputados.</li>
+        <li>En las <strong>votaciones del pleno</strong> solo aparece quien votó: <strong>las ausencias no se registran</strong>, así que no se puede distinguir a quien faltó de quien estaba presente y no votó. Por eso se muestra "votó en X de Y", no una tasa de asistencia.</li>
+        <li>Los títulos de las votaciones se escriben a mano: el número de proyecto y el debate se extraen con reglas tolerantes a errores, y lo que no corresponde a un proyecto queda como "otras votaciones". Si la Asamblea corrige un reporte ya descargado, el cambio no se refleja.</li>
+        <li>Las votaciones cubren <strong>solo la legislatura actual</strong> (desde julio de 2024). El sistema publica reportes desde 2021, pero la numeración de proyectos se reinicia en cada legislatura y los diputados eran otros.</li>
         <li>Los <strong>temas</strong> salen solo del título: cerca de 1 de cada 5 proyectos queda en "Otros" porque su título solo dice qué ley modifica (por ejemplo "Que modifica la Ley 15 de 1995"), y algunos pueden caer en un tema por una palabra que no es central.</li>
       </ul>
     </section>
 
     <section class="met-card">
       <h3>8. Datos abiertos</h3>
-      <p>Todos los datos se pueden descargar en CSV desde la pestaña <a href="#general">General</a> o junto a cada tabla, y los archivos originales están disponibles: <a href="resumen.json" target="_blank" rel="noopener">resumen.json</a>, <a href="datos.json" target="_blank" rel="noopener">datos.json</a> e <a href="historico.json" target="_blank" rel="noopener">historico.json</a>. Puedes reutilizarlos citando la fuente.</p>
+      <p>Todos los datos se pueden descargar en CSV desde la pestaña <a href="#general">General</a> o junto a cada tabla, y los archivos originales están disponibles: <a href="resumen.json" target="_blank" rel="noopener">resumen.json</a>, <a href="datos.json" target="_blank" rel="noopener">datos.json</a> e <a href="historico.json" target="_blank" rel="noopener">historico.json</a>. Las votaciones están en <a href="votaciones.csv" download>votaciones.csv</a>, <a href="preguntas.csv" download>preguntas.csv</a> (una fila por artículo) y <a href="votos.csv" download>votos.csv</a> (una fila por diputado y artículo; archivo grande). Puedes reutilizarlos citando la fuente.</p>
+    </section>
+
+    <section class="met-card met-ancha">
+      <h3>9. Votaciones del pleno</h3>
+      <p><strong>Fuente.</strong> La API pública del sistema de votación electrónica de la Asamblea, <a href="https://prensa507.asamblea.gob.pa" target="_blank" rel="noopener">prensa507.asamblea.gob.pa</a>: reportes por sesión, con cada votación, sus preguntas (un artículo, el título o "¿Quiere la Asamblea que este proyecto sea Ley?") y el voto de cada diputado. Solo se usan las sesiones de la <strong>legislatura 2024-2029</strong> (desde el 1 de julio de 2024). Cada día se bajan solo los reportes nuevos; si la fuente no responde, se conservan las votaciones guardadas. <span id="met-vot-estado"></span></p>
+      <dl>
+        <dt>Tipos de votación</dt><dd>Proyectos de ley (segundo y tercer debate), nombramientos y ratificaciones, informes de minoría y otras. Las métricas se calculan <strong>por separado para cada tipo</strong>. En proyectos, cada votación es una decisión; en nombramientos e informes de minoría se decide persona por persona, así que <strong>cada pregunta</strong> cuenta como una decisión.</dd>
+        <dt>Proyecto y debate</dt><dd>Los títulos se escriben a mano y tienen errores ("Votacion", "proyecro", "Nª 204"), así que todo se identifica por los números internos y la fecha de la sesión. El número de proyecto se toma del título (o de la descripción) y se vincula con la ficha del Seguimiento Legislativo. Si el título no dice el debate, se deduce de las preguntas: "¿Quiere la Asamblea…?" solo se vota en tercer debate y el título del proyecto, en segundo. Esas votaciones llevan un asterisco (*).</dd>
+        <dt>Resultado</dt><dd>Se verificó con cada una de las preguntas votadas: está <strong>aprobado</strong> cuando la opción afirmativa con más votos ("A favor" o una propuesta "Modificado por…") alcanza los votos necesarios que fija el sistema (36, mayoría absoluta de 71, o 48, dos tercios); si no, está <strong>rechazado</strong>. El resultado de una votación es el de su pregunta final o, si no existe, el de la pregunta del título; sin ninguna de las dos, es "aprobado" o "rechazado" si todas sus preguntas lo fueron, y "mixto" si no.</dd>
+        <dt>Voto global</dt><dd>El voto de un diputado en una votación es su voto en la pregunta final; si no votó en ella o no existe, su voto en la pregunta del título; y si tampoco, el sentido que más repitió en los artículos (en un empate no se define). Votar una propuesta "Modificado por…" cuenta <strong>a favor</strong>, porque aprueba el artículo con cambios.</dd>
+        <dt>Unánime y dividida</dt><dd>Unánime: sin votos en contra ni abstenciones. El grado de división compara los votos a favor con el resto: 0 es unánime y 1, mitad y mitad.</dd>
+        <dt>Disidencia</dt><dd>Un voto es disidente cuando es distinto al de la <strong>mayoría estricta</strong> de la bancada del diputado en esa decisión (con al menos dos de sus miembros votando). En un empate nadie es disidente. La bancada es la que registra prensa507 en el momento del voto. Los independientes no forman bancada, así que no se les mide.</dd>
+        <dt>Cohesión</dt><dd>Porcentaje de los votos de una bancada que coinciden con la opción que más votó en cada decisión (en un empate 1-1 cuenta la mitad), sumado en todas las decisiones y mes a mes. "¿Cuánto coinciden las bancadas?" cuenta las decisiones en que la mayoría de ambas votó igual.</dd>
+        <dt>Diputados y suplentes</dt><dd>Cada diputado de prensa507 se relaciona con Espacio Cívico por su nombre y circuito; si no coincide el circuito, o no aparece el nombre, se confirma con su suplente o con el apellido dentro del circuito. Un caso ambiguo <strong>no se asigna</strong>. Lo que vota un suplente se muestra aparte, asociado a su principal, y no entra en los porcentajes ni en la disidencia del principal.</dd>
+      </dl>
     </section>
   </div>
 </div>
@@ -717,6 +841,7 @@
       <button class="modal-tab" id="mtab-leyes" onclick="switchModalTab('leyes')">Leyes aprobadas</button>
       <button class="modal-tab" id="mtab-hist" onclick="switchModalTab('hist')">Evolución</button>
       <button class="modal-tab" id="mtab-red" onclick="switchModalTab('red')">Alianzas</button>
+      <button class="modal-tab" id="mtab-vot" onclick="switchModalTab('vot')">Votaciones</button>
     </div>
     <div class="modal-body" id="modal-body"></div>
   </div>
@@ -738,6 +863,7 @@
 <script src="js/historial.js"></script>
 <script src="js/proyectos.js"></script>
 <script src="js/novedades.js"></script>
+<script src="js/votaciones.js"></script>
 <script src="js/comparador.js"></script>
 <script src="js/inicio.js"></script>
 </body>

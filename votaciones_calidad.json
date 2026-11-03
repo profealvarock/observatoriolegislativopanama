@@ -1,0 +1,397 @@
+{
+ "fecha": "2026-11-03T12:46:11-05:00",
+ "estado": "ok",
+ "reportes_api": 527,
+ "reportes_legislatura": 164,
+ "reportes_sin_votacion": 0,
+ "reportes_nuevos": 0,
+ "reportes_fallidos": [],
+ "reportes_pendientes": 0,
+ "votaciones_nuevas": 0,
+ "totales_inconsistentes": [],
+ "regla_resultado_no_cumple": [],
+ "votaciones_total": 390,
+ "preguntas_total": 3473,
+ "votos_total": 181867,
+ "votaciones_por_tipo": {
+  "proyecto": 350,
+  "nombramiento": 34,
+  "informe_minoria": 4,
+  "otra": 2
+ },
+ "sin_proyecto": [
+  {
+   "votacion_id": 8746,
+   "fecha": "2026-09-09",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 8713,
+   "fecha": "2026-09-08",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 8707,
+   "fecha": "2026-09-07",
+   "tipo": "nombramiento",
+   "titulo": "Está usted a favor de"
+  },
+  {
+   "votacion_id": 8068,
+   "fecha": "2026-08-10",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea Nacional:"
+  },
+  {
+   "votacion_id": 6668,
+   "fecha": "2026-04-27",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea Nacional."
+  },
+  {
+   "votacion_id": 6644,
+   "fecha": "2026-04-23",
+   "tipo": "informe_minoria",
+   "titulo": "INFORME DE MINORIA"
+  },
+  {
+   "votacion_id": 6506,
+   "fecha": "2026-04-08",
+   "tipo": "informe_minoria",
+   "titulo": "Informe de minoría"
+  },
+  {
+   "votacion_id": 6455,
+   "fecha": "2026-04-06",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación que ha de efectuar la Asamblea Nacional."
+  },
+  {
+   "votacion_id": 6245,
+   "fecha": "2026-03-16",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 6131,
+   "fecha": "2026-03-04",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar La Asamblea Nacional."
+  },
+  {
+   "votacion_id": 5828,
+   "fecha": "2026-01-26",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 5681,
+   "fecha": "2026-01-07",
+   "tipo": "nombramiento",
+   "titulo": "Nombramiento que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 5510,
+   "fecha": "2025-10-29",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 5330,
+   "fecha": "2025-10-20",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación que ha de efectuar la Asamblea Nacional."
+  },
+  {
+   "votacion_id": 5276,
+   "fecha": "2025-10-15",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea Nacional:"
+  },
+  {
+   "votacion_id": 4115,
+   "fecha": "2025-06-11",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 4109,
+   "fecha": "2025-06-11",
+   "tipo": "nombramiento",
+   "titulo": "Está usted a favor de"
+  },
+  {
+   "votacion_id": 4094,
+   "fecha": "2025-05-27",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 4091,
+   "fecha": "2025-05-27",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea Nacional:"
+  },
+  {
+   "votacion_id": 4082,
+   "fecha": "2025-05-26",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones que ha de efectuar la Asamblea"
+  },
+  {
+   "votacion_id": 4073,
+   "fecha": "2025-05-20",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 3710,
+   "fecha": "2025-03-19",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos que ha de efectuar la Asamblea Nacional:"
+  },
+  {
+   "votacion_id": 3599,
+   "fecha": "2025-02-05",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos"
+  },
+  {
+   "votacion_id": 3509,
+   "fecha": "2025-01-22",
+   "tipo": "informe_minoria",
+   "titulo": "Votación de informe de minoría al Proyecto de Ley N° 13"
+  },
+  {
+   "votacion_id": 3443,
+   "fecha": "2024-10-29",
+   "tipo": "informe_minoria",
+   "titulo": "Informe de minoría del proyecto de Ley N° 143"
+  },
+  {
+   "votacion_id": 3401,
+   "fecha": "2024-10-24",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos que la Asamblea a de efectuar"
+  },
+  {
+   "votacion_id": 3353,
+   "fecha": "2024-10-22",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones"
+  },
+  {
+   "votacion_id": 3293,
+   "fecha": "2024-10-08",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos"
+  },
+  {
+   "votacion_id": 3263,
+   "fecha": "2024-10-02",
+   "tipo": "nombramiento",
+   "titulo": "Rafitifaciones"
+  },
+  {
+   "votacion_id": 3227,
+   "fecha": "2024-09-30",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación de nombramientos que la Asamblea ha de efectuar"
+  },
+  {
+   "votacion_id": 3175,
+   "fecha": "2024-09-17",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos que ha de efectuar la Asamblea Nacional"
+  },
+  {
+   "votacion_id": 3151,
+   "fecha": "2024-09-03",
+   "tipo": "nombramiento",
+   "titulo": "Ratificaciones de los siguiente nombramientos:"
+  },
+  {
+   "votacion_id": 3136,
+   "fecha": "2024-08-27",
+   "tipo": "nombramiento",
+   "titulo": "Ratificación de Nombramientos"
+  },
+  {
+   "votacion_id": 3133,
+   "fecha": "2024-08-26",
+   "tipo": "otra",
+   "titulo": "Que dicta el presupuesto de la autoridad del Canal de Panamá para la vigencia fiscal del 01 de octubre de 2024 al 30 de septiembre de 2025."
+  },
+  {
+   "votacion_id": 3127,
+   "fecha": "2024-08-08",
+   "tipo": "nombramiento",
+   "titulo": "Nombramiento"
+  },
+  {
+   "votacion_id": 3121,
+   "fecha": "2024-08-07",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos"
+  },
+  {
+   "votacion_id": 3115,
+   "fecha": "2024-07-30",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos"
+  },
+  {
+   "votacion_id": 3112,
+   "fecha": "2024-07-29",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos"
+  },
+  {
+   "votacion_id": 3109,
+   "fecha": "2024-07-24",
+   "tipo": "nombramiento",
+   "titulo": "Nombramientos"
+  },
+  {
+   "votacion_id": 3100,
+   "fecha": "2024-07-03",
+   "tipo": "otra",
+   "titulo": "Resolución"
+  }
+ ],
+ "proyecto_sin_ficha": [],
+ "debate_desconocido": [],
+ "diputados_vinculados": 71,
+ "diputados_sin_vincular": [],
+ "conflictos_vinculacion": [],
+ "metodos_vinculacion": {
+  "nombre+suplente": 1,
+  "nombre+circuito": 66,
+  "circuito+apellido+suplente": 4
+ },
+ "corridas": [
+  {
+   "fecha": "2026-11-03T12:46:11-05:00",
+   "estado": "ok",
+   "reportes_nuevos": 0,
+   "votaciones_nuevas": 0,
+   "votaciones_total": 390,
+   "reportes_pendientes": 0,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T12:30:33-05:00",
+   "estado": "ok",
+   "reportes_nuevos": null,
+   "votaciones_nuevas": null,
+   "votaciones_total": 390,
+   "reportes_pendientes": null,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T12:17:46-05:00",
+   "estado": "ok",
+   "reportes_nuevos": 164,
+   "votaciones_nuevas": 390,
+   "votaciones_total": 390,
+   "reportes_pendientes": 0,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T12:12:38-05:00",
+   "estado": "ok",
+   "reportes_nuevos": null,
+   "votaciones_nuevas": null,
+   "votaciones_total": 390,
+   "reportes_pendientes": null,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T12:11:22-05:00",
+   "estado": "ok",
+   "reportes_nuevos": null,
+   "votaciones_nuevas": null,
+   "votaciones_total": 390,
+   "reportes_pendientes": null,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T12:07:33-05:00",
+   "estado": "ok",
+   "reportes_nuevos": null,
+   "votaciones_nuevas": null,
+   "votaciones_total": 390,
+   "reportes_pendientes": null,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T12:06:15-05:00",
+   "estado": "ok",
+   "reportes_nuevos": null,
+   "votaciones_nuevas": null,
+   "votaciones_total": 390,
+   "reportes_pendientes": null,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T11:59:13-05:00",
+   "estado": "ok",
+   "reportes_nuevos": 0,
+   "votaciones_nuevas": 0,
+   "votaciones_total": 390,
+   "reportes_pendientes": 0,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T11:59:08-05:00",
+   "estado": "ok",
+   "reportes_nuevos": 0,
+   "votaciones_nuevas": 0,
+   "votaciones_total": 390,
+   "reportes_pendientes": 0,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T11:58:07-05:00",
+   "estado": "ok",
+   "reportes_nuevos": 0,
+   "votaciones_nuevas": 0,
+   "votaciones_total": 390,
+   "reportes_pendientes": 0,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
+  {
+   "fecha": "2026-11-03T11:57:42-05:00",
+   "estado": "ok",
+   "reportes_nuevos": 164,
+   "votaciones_nuevas": 390,
+   "votaciones_total": 390,
+   "reportes_pendientes": 0,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 1
+  }
+ ]
+}

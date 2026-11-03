@@ -945,6 +945,7 @@ def actualizar_historico(resumen, respaldos, ruta='historico.json'):
 ETAPAS_HIST = 'etapas_historico.json'
 NOVEDADES_JSON = 'novedades.json'
 NOVEDADES_RSS = 'novedades.xml'
+VOTACIONES_JSON = 'votaciones.json'
 # Orden real observado en los datos: el anteproyecto se "prohíja" (la comisión lo adopta), pasa a
 # primer debate y desde ahí puede ir a subcomisión antes del segundo debate.
 ORDEN_TRAMITE = ['Preliminar', 'Prohijado', 'Primer Debate', 'Enviado a subcomisión para analisis',
@@ -1018,6 +1019,13 @@ def generar_novedades(hist, datos):
             if de is None and i > 0: continue         # sin etapa previa conocida
             eventos.append({'fecha': fecha, 'tipo': _tipo_evento(de, etapa), 'ficha': f,
                             'de': de, 'a': etapa, 'titulo': titulo[:220]})
+    # Una novedad por cada votación del pleno (votaciones.json, de scraper_votaciones.py) desde el inicio del historial
+    for v in (_leer_json(VOTACIONES_JSON) or {}).get('votaciones', []):
+        if desde and v['fecha'] < desde: continue
+        eventos.append({'fecha': v['fecha'], 'tipo': 'votacion', 'ficha': v.get('ficha') or '', 'de': None,
+                        'a': v['resultado'], 'titulo': (v.get('descripcion') or v.get('titulo') or '')[:220],
+                        'votacion_id': v['votacion_id'], 'proyecto': v.get('proyecto'), 'debate': v.get('debate'),
+                        'votos': [v['total_favor'], v['total_contra'], v['total_abst']]})
     eventos.sort(key=lambda e: (e['fecha'], int(e['ficha']) if e['ficha'].isdigit() else 0), reverse=True)
 
     # Tiempo desde la presentación hasta ley, solo para leyes detectadas con poca demora
@@ -1051,6 +1059,20 @@ def generar_rss(nov, limite=60):
                 'detenido': '{a}', 'cambio': 'Cambia a {a}'}
     items = []
     for ev in nov['eventos'][:limite]:
+        if ev['tipo'] == 'votacion':
+            f, c, a = ev['votos']
+            que = f"proyecto {ev['proyecto']} en {ev['debate'].lower()} debate" if ev.get('proyecto') and ev.get('debate') else 'el pleno'
+            tit = f"Votación: {ev['a']} {que} ({f}-{c}-{a}): {ev['titulo'][:120]}"
+            fecha = format_datetime(dt.fromisoformat(ev['fecha']).replace(hour=12, tzinfo=timezone.utc))
+            desc = f"{f} a favor, {c} en contra, {a} abstenciones." + (f" Ficha {ev['ficha']}." if ev['ficha'] else '')
+            items.append(f"""  <item>
+    <title>{e(tit)}</title>
+    <link>{SITE_URL}/#votacion={ev['votacion_id']}</link>
+    <guid isPermaLink="false">votacion-{ev['votacion_id']}</guid>
+    <pubDate>{fecha}</pubDate>
+    <description>{e(desc)}</description>
+  </item>""")
+            continue
         tit = etiqueta[ev['tipo']].format(a=ev['a']) + f": {ev['titulo'][:140]}"
         fecha = format_datetime(dt.fromisoformat(ev['fecha']).replace(hour=12, tzinfo=timezone.utc))
         desc = f"Ficha {ev['ficha']}. " + (f"De «{ev['de']}» a «{ev['a']}»." if ev['de'] else f"Etapa: {ev['a']}.")
@@ -1068,7 +1090,7 @@ def generar_rss(nov, limite=60):
   <title>Observatorio Legislativo — Novedades</title>
   <link>{SITE_URL}/#novedades</link>
   <atom:link href="{SITE_URL}/{NOVEDADES_RSS}" rel="self" type="application/rss+xml"/>
-  <description>Proyectos nuevos, avances de etapa y nuevas leyes en la Asamblea Nacional de Panamá.</description>
+  <description>Proyectos nuevos, avances de etapa, nuevas leyes y votaciones del pleno en la Asamblea Nacional de Panamá.</description>
   <language>es-pa</language>
 {chr(10).join(items)}
 </channel>
