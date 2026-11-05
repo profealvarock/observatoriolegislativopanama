@@ -1,5 +1,5 @@
 {
-  "fecha_extraccion": "20261104_165642",
+  "fecha_extraccion": "20261105_171134",
   "respaldos": [
     "diputados",
     "metricas"
@@ -681,9 +681,9 @@
         "Educación, Cultura y Deporte"
       ],
       "comisiones_cantidad": 2,
-      "proyectos": 30,
-      "leyes": 2,
-      "co_patrocinios": 136,
+      "proyectos": 29,
+      "leyes": 1,
+      "co_patrocinios": 137,
       "proyectos_suplente": 0,
       "etapas": {
         "Preliminar": 4,
@@ -692,18 +692,13 @@
         "Objetado por Ejecutivo": 1,
         "Segundo Debate": 12,
         "Negado": 4,
-        "Ley": 2
+        "Ley": 1
       },
       "leyes_detalle": [
         {
           "ficha": "8007",
           "titulo": "QUE ESTABLECE EL DERECHO AL OLVIDO ONCOLOGICO Y DICTA OTRAS DISPOSICIONES",
           "fecha": "13-08-2025"
-        },
-        {
-          "ficha": "8250",
-          "titulo": "QUE CREA EL PATRONATO DEL FESTIVAL NACIONAL DEL TORO GUAPO DE ANTON Y DICTA OTRA DISPOSICION",
-          "fecha": "25-09-2024"
         }
       ],
       "proyectos_detalle": [
@@ -850,12 +845,6 @@
           "titulo": "QUE ESTABLECE EL PROGRAMA HAMBRE CERO EN LOS CENTROS EDUCATIVOS DEL PAÍS Y DEROGA LA LEY 115 DE 5 DE DICIEMBRE DE 2019 Y LA LEY 35 DE 1995 SOBRE EL PROGRAMA DE DISTRIBUCIÓN DEL VASO DE LECHE Y GALLETA NUTRICIONAL O CREMAS NUTRITIVAS ENRIQUECIDAS",
           "fecha": "08-01-2025",
           "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8250",
-          "titulo": "QUE CREA EL PATRONATO DEL FESTIVAL NACIONAL DEL TORO GUAPO DE ANTON Y DICTA OTRA DISPOSICION",
-          "fecha": "25-09-2024",
-          "etapa": "Ley"
         },
         {
           "ficha": "7654",
@@ -1056,29 +1045,29 @@
         "7411",
         "7412"
       ],
-      "leyes_copatrocinio": 22,
+      "leyes_copatrocinio": 23,
       "efectividad_ley": {
         "autor": {
-          "proyectos": 30,
-          "leyes": 2,
-          "tasa": 6.7,
-          "esperadas": 3.03,
-          "indice": 77,
+          "proyectos": 29,
+          "leyes": 1,
+          "tasa": 3.4,
+          "esperadas": 2.85,
+          "indice": 57,
           "evidencia": "alta"
         },
         "copat": {
-          "proyectos": 136,
-          "leyes": 22,
-          "tasa": 16.2,
-          "esperadas": 23.63,
-          "indice": 94,
+          "proyectos": 137,
+          "leyes": 23,
+          "tasa": 16.8,
+          "esperadas": 23.88,
+          "indice": 97,
           "evidencia": "alta"
         }
       },
       "temas_autor": {
         "Educación": 11,
         "Comercio, banca y consumo": 6,
-        "Cultura, deporte y patrimonio": 5,
+        "Cultura, deporte y patrimonio": 4,
         "Bienestar social y seguridad social": 2,
         "Ciencia, tecnología y comunicaciones": 2
       },
@@ -1115,409 +1104,6 @@
         }
       ],
       "transversalidad": 49.0,
-      "transversalidad_esperada": 80.0
-    },
-    {
-      "nombre": "Alexandra Brenes",
-      "partido": "Coalición Vamos",
-      "circuito": "8-2",
-      "provincia": "Panamá",
-      "suplente": "Kareen García",
-      "foto": "https://espaciocivico.org/api/drive-image/1WXR4HeE_hvLDjR9igLCi33w6Rah2EpoJ",
-      "perfil": "https://espaciocivico.org/diputados/alexandra-brenes",
-      "slug": "alexandra-brenes",
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/alexandra-brenes",
-      "planilla_texto": "B/. 15,150",
-      "planilla_valor": 15150.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Mujer, la Niñez, la Juventud y la Familia",
-        "Gobierno, Justicia y Asuntos Constitucionales"
-      ],
-      "comisiones_cantidad": 2,
-      "proyectos": 28,
-      "leyes": 0,
-      "co_patrocinios": 102,
-      "proyectos_suplente": 0,
-      "etapas": {
-        "Preliminar": 5,
-        "Primer Debate": 6,
-        "Enviado a subcomisión para analisis": 2,
-        "Negado": 3,
-        "Retirado por proponente": 2,
-        "Segundo Debate": 7,
-        "Archivado": 2,
-        "Tercer Debate(Objetado)": 1
-      },
-      "leyes_detalle": [],
-      "proyectos_detalle": [
-        {
-          "ficha": "8576",
-          "titulo": "QUE MODIFICA, ADICIONA Y DEROGA ARTÍCULOS DE LA LEY 7 DE 14 DE FEBRERO DE 2018, QUE ADOPTA MEDIDAS PARA PREVENIR, PROHIBIR Y SANCIONAR ACTOS DISCRIMINATORIOS Y DICTA OTRAS DISPOSICIONES.",
-          "fecha": "02-09-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8557",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 462 DEL 18 DE MARZO DE 2025 QUE MODIFICA ADICIONA Y DEROGA ARTICULOS DE LA LEY 51 DE 2005 QUE REFORMA LA LEY ORGANICA DE LA CAJA DE SEGURO SOCIAL Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "18-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8549",
-          "titulo": "QUE MODIFICA ARTICULOS AL CODIGO PENAL RELACIONADOS A LOS DELITOS CONTRA LA ADMINISTRACION PUBLICA",
-          "fecha": "17-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8496",
-          "titulo": "QUE ESTABLECE FRANJAS DE SEGURIDAD O ZONAS DE AMORTIGUAMIENTO PARA LA APLICACIÓN DE AGROQUÍMICOS EN ÁREAS CRÍTICAS, A FIN DE PROTEGER LA SALUD HUMANA, LOS RECURSOS HÍDRICOS y EL AMBIENTE, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "29-07-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8464",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 285 DE 15 DE FEBRERO DE 2022, QUE CREA EL PROGRAMA NACIONAL DE ACOMPAÑAMIENTO INTEGRAL PARA JOVENES EGRESADOS DEL SISTEMA DE PROTECCION Y ACOGIMIENTO Y EL REGISTRO NACIONAL DE JOVENES EGRESADOS DEL SISTEMA DE PROTECCIÓN Y ACOGIMIENTO. Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "21-07-2026",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "8417",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO PENAL RELACIONADOS A LA INTEGRIDAD Y TRANSPARENCIA EN EL DEPORTE",
-          "fecha": "07-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8422",
-          "titulo": "QUE CONVOCA A UN PLEBISCITO NACIONAL PARA DECIDIR SOBRE LA REACTIVACION DE LA EXPLOTACION MINERA EN EL DISTRITO DE DONOSO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "07-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8372",
-          "titulo": "QUE ESTABLECE MEDIDAS DE PROTECCION CONTRA ACCIONES JUDICIALES ESTRATEGICAS CONTRA ACCIONES PUBLICAS Y PROTEGE A LOS DEFENSORES AMBIENTALES",
-          "fecha": "09-04-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8364",
-          "titulo": "QUE REGULA LA APERTURA Y FUNCIONAMIENTO DE LOS CENTROS DE ACOGIMIENTO INSTITUCIONALES Y RESIDENCIALES PARA NIÑOS, NIÑAS, ADOLESCENTES Y ADULTOS CON DISCAPACIDAD Y DEROGA EL DECRETO EJECUTIVO 404 DE 30 DE OCTUBRE DE 2020",
-          "fecha": "06-04-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8351",
-          "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 14 DE 23 DE ENERO DE 2009",
-          "fecha": "26-03-2026",
-          "etapa": "Negado"
-        },
-        {
-          "ficha": "8314",
-          "titulo": "QUE MODIFICA UN ARTICULO DEL CODIGO PENAL",
-          "fecha": "05-03-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8301",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 431 DE 2024, QUE CREA EL SISTEMA NACIONAL DE CUIDADOS, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "02-03-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8218",
-          "titulo": "QUE ESTABLECE LA OBLIGACION DE TRANSPARENCIA Y TRAZABILIDAD DEL USO DE LOS RECURSOS PUBLICOS PROVENIENTES DE FINANCIAMIENTO INTERNACIONAL",
-          "fecha": "06-01-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8198",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTÍCULOS A LA LEY 57 DEL 5 DE OCTUBRE DE 1976 POR LA CUAL SE CREA UNA NOTARIA ESPECIAL, EN EL CIRCUITO NOTARIAL DE PANAMA QUE FUNCIONARA EN EL DISTRITO DE SAN MIGUELITO",
-          "fecha": "29-10-2025",
-          "etapa": "Retirado por proponente"
-        },
-        {
-          "ficha": "8108",
-          "titulo": "QUE MODIFICA LA LEY 76 DE 15 DE NOVIEMBRE DE 2010, QUE CREA LA EMPRESA NACIONAL DE AUTOPISTAS, S.A. (ENA), Y DICTA DISPOSICIONES PARA LA TRANSPARENCIA, GOBERNANZA Y CONTROL DE LAS EXONERACIONES EN LAS CARRETERAS Y AUTOPISTAS DE PEAJE.",
-          "fecha": "15-09-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8041",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DE LA LEY 47 DE 1946, LEY ORGANICA DE EDUCACION",
-          "fecha": "25-08-2025",
-          "etapa": "Negado"
-        },
-        {
-          "ficha": "7942",
-          "titulo": "QUE TRANSPARENTA Y COMUNICA EL USO DE LOS DIVIDENDOS ENTREGADOS POR EL CANAL DE PANAMÁ",
-          "fecha": "17-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7923",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
-          "fecha": "10-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7924",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 41 DE 20 DE JULIO DE 2004, QUE CREA UN REGIMEN ESPECIAL PARA EL ESTABLECIMIENTO DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO, Y UNA ENTIDAD AUTONOMA DEL ESTADO, DENOMINADA AGENCIA DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO",
-          "fecha": "10-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7925",
-          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 22 DE 27 DE JUNIO DE 2006 QUE REGULA LA CONTRATACION PUBLICA",
-          "fecha": "10-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7926",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 90 DEL 7 DE NOVIEMBRE DE 2013, QUE AUTORIZA LA CREACION DE EMPRESA MERCADOS NACIONALES DE LA CADENA DE FRIO, S.A. Y ESTABLECE SU MARCO REGULATORIO",
-          "fecha": "10-07-2025",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7889",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO PENAL",
-          "fecha": "02-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8569",
-          "titulo": "QUE ESTABLECE EL PROCESO SUCESORIO SIMPLIFICADO ANTE NOTARIO",
-          "fecha": "20-01-2025",
-          "etapa": "Tercer Debate(Objetado)"
-        },
-        {
-          "ficha": "7714",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS LA LEY 42 DE 2012, GENERAL DE PENSION ALIMENTICIA Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "28-10-2024",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7658",
-          "titulo": "QUE MODIFICA EL CODIGO PENAL",
-          "fecha": "24-09-2024",
-          "etapa": "Negado"
-        },
-        {
-          "ficha": "7546",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY ORGANICA POR LA CUAL SE CREA EL INSTITUTO PARA LA FORMACION Y APROVECHAMIENTO DE RECURSOS HUMANOS",
-          "fecha": "19-08-2024",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7439",
-          "titulo": "QUE MODIFICA EL CODIGO PENAL",
-          "fecha": "10-07-2024",
-          "etapa": "Retirado por proponente"
-        },
-        {
-          "ficha": "7412",
-          "titulo": "QUE MODIFICA EL REGLAMENTO ORGANICO DE REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
-          "fecha": "02-07-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        }
-      ],
-      "participaciones": [
-        "8642",
-        "8644",
-        "8637",
-        "8576",
-        "8584",
-        "8557",
-        "8549",
-        "8551",
-        "8542",
-        "8496",
-        "8479",
-        "8462",
-        "8464",
-        "8454",
-        "8444",
-        "8424",
-        "8426",
-        "8437",
-        "8417",
-        "8421",
-        "8422",
-        "8373",
-        "8372",
-        "8377",
-        "8364",
-        "8351",
-        "8314",
-        "8307",
-        "8300",
-        "8301",
-        "8271",
-        "8254",
-        "8218",
-        "8198",
-        "8167",
-        "8156",
-        "8142",
-        "8124",
-        "8108",
-        "8110",
-        "8084",
-        "8075",
-        "8059",
-        "8062",
-        "8063",
-        "8058",
-        "8041",
-        "8050",
-        "8034",
-        "8030",
-        "8014",
-        "8022",
-        "8008",
-        "7998",
-        "7992",
-        "7976",
-        "7977",
-        "7968",
-        "7942",
-        "7933",
-        "7923",
-        "7924",
-        "7925",
-        "7926",
-        "7912",
-        "7913",
-        "7910",
-        "7879",
-        "7891",
-        "7887",
-        "7889",
-        "7838",
-        "7831",
-        "7825",
-        "7826",
-        "7823",
-        "7824",
-        "7786",
-        "7787",
-        "7757",
-        "7759",
-        "7756",
-        "8569",
-        "7751",
-        "7738",
-        "7735",
-        "7729",
-        "7714",
-        "7704",
-        "7705",
-        "7698",
-        "7682",
-        "7669",
-        "7650",
-        "7652",
-        "7654",
-        "7657",
-        "7658",
-        "7647",
-        "7641",
-        "7642",
-        "7607",
-        "7597",
-        "7573",
-        "7551",
-        "7554",
-        "7546",
-        "7547",
-        "7543",
-        "7529",
-        "7536",
-        "8194",
-        "8011",
-        "7496",
-        "7497",
-        "7489",
-        "8397",
-        "8146",
-        "7439",
-        "7436",
-        "7438",
-        "8252",
-        "7421",
-        "7423",
-        "7415",
-        "7420",
-        "7404",
-        "7406",
-        "7410",
-        "7412"
-      ],
-      "leyes_copatrocinio": 8,
-      "efectividad_ley": {
-        "autor": {
-          "proyectos": 28,
-          "leyes": 0,
-          "tasa": 0.0,
-          "esperadas": 2.27,
-          "indice": 40,
-          "evidencia": "alta"
-        },
-        "copat": {
-          "proyectos": 102,
-          "leyes": 8,
-          "tasa": 7.8,
-          "esperadas": 15.53,
-          "indice": 56,
-          "evidencia": "alta"
-        }
-      },
-      "temas_autor": {
-        "Gobierno y administración pública": 8,
-        "Justicia, crimen y seguridad": 7,
-        "Bienestar social y seguridad social": 5,
-        "Derechos civiles e igualdad": 3,
-        "Educación": 3
-      },
-      "aliados": [
-        {
-          "nombre": "Miguel Ángel Campos",
-          "partido": "Coalición Vamos",
-          "proyectos": 103
-        },
-        {
-          "nombre": "Janine Prado",
-          "partido": "Coalición Vamos",
-          "proyectos": 95
-        },
-        {
-          "nombre": "Lenin Alberto Ulate",
-          "partido": "Coalición Vamos",
-          "proyectos": 87
-        },
-        {
-          "nombre": "Yamireliz Chong",
-          "partido": "Coalición Vamos",
-          "proyectos": 87
-        },
-        {
-          "nombre": "Luis Duke",
-          "partido": "Coalición Vamos",
-          "proyectos": 85
-        },
-        {
-          "nombre": "Jorge Bloise Iglesias",
-          "partido": "Coalición Vamos",
-          "proyectos": 77
-        }
-      ],
-      "transversalidad": 41.8,
       "transversalidad_esperada": 80.0
     },
     {
@@ -1961,6 +1547,402 @@
         }
       ],
       "transversalidad": 46.2,
+      "transversalidad_esperada": 80.0
+    },
+    {
+      "nombre": "Alexandra Brenes",
+      "partido": "Coalición Vamos",
+      "circuito": "8-2",
+      "provincia": "Panamá",
+      "suplente": "Kareen García",
+      "foto": "https://espaciocivico.org/api/drive-image/1WXR4HeE_hvLDjR9igLCi33w6Rah2EpoJ",
+      "perfil": "https://espaciocivico.org/diputados/alexandra-brenes",
+      "slug": "alexandra-brenes",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/alexandra-brenes",
+      "planilla_texto": "B/. 15,150",
+      "planilla_valor": 15150.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Mujer, la Niñez, la Juventud y la Familia",
+        "Gobierno, Justicia y Asuntos Constitucionales"
+      ],
+      "comisiones_cantidad": 2,
+      "proyectos": 27,
+      "leyes": 0,
+      "co_patrocinios": 103,
+      "proyectos_suplente": 0,
+      "etapas": {
+        "Preliminar": 5,
+        "Primer Debate": 6,
+        "Enviado a subcomisión para analisis": 2,
+        "Negado": 3,
+        "Retirado por proponente": 2,
+        "Segundo Debate": 7,
+        "Archivado": 2
+      },
+      "leyes_detalle": [],
+      "proyectos_detalle": [
+        {
+          "ficha": "8576",
+          "titulo": "QUE MODIFICA, ADICIONA Y DEROGA ARTÍCULOS DE LA LEY 7 DE 14 DE FEBRERO DE 2018, QUE ADOPTA MEDIDAS PARA PREVENIR, PROHIBIR Y SANCIONAR ACTOS DISCRIMINATORIOS Y DICTA OTRAS DISPOSICIONES.",
+          "fecha": "02-09-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8557",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 462 DEL 18 DE MARZO DE 2025 QUE MODIFICA ADICIONA Y DEROGA ARTICULOS DE LA LEY 51 DE 2005 QUE REFORMA LA LEY ORGANICA DE LA CAJA DE SEGURO SOCIAL Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "18-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8549",
+          "titulo": "QUE MODIFICA ARTICULOS AL CODIGO PENAL RELACIONADOS A LOS DELITOS CONTRA LA ADMINISTRACION PUBLICA",
+          "fecha": "17-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8496",
+          "titulo": "QUE ESTABLECE FRANJAS DE SEGURIDAD O ZONAS DE AMORTIGUAMIENTO PARA LA APLICACIÓN DE AGROQUÍMICOS EN ÁREAS CRÍTICAS, A FIN DE PROTEGER LA SALUD HUMANA, LOS RECURSOS HÍDRICOS y EL AMBIENTE, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "29-07-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8464",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 285 DE 15 DE FEBRERO DE 2022, QUE CREA EL PROGRAMA NACIONAL DE ACOMPAÑAMIENTO INTEGRAL PARA JOVENES EGRESADOS DEL SISTEMA DE PROTECCION Y ACOGIMIENTO Y EL REGISTRO NACIONAL DE JOVENES EGRESADOS DEL SISTEMA DE PROTECCIÓN Y ACOGIMIENTO. Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "21-07-2026",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "8417",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO PENAL RELACIONADOS A LA INTEGRIDAD Y TRANSPARENCIA EN EL DEPORTE",
+          "fecha": "07-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8422",
+          "titulo": "QUE CONVOCA A UN PLEBISCITO NACIONAL PARA DECIDIR SOBRE LA REACTIVACION DE LA EXPLOTACION MINERA EN EL DISTRITO DE DONOSO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "07-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8372",
+          "titulo": "QUE ESTABLECE MEDIDAS DE PROTECCION CONTRA ACCIONES JUDICIALES ESTRATEGICAS CONTRA ACCIONES PUBLICAS Y PROTEGE A LOS DEFENSORES AMBIENTALES",
+          "fecha": "09-04-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8364",
+          "titulo": "QUE REGULA LA APERTURA Y FUNCIONAMIENTO DE LOS CENTROS DE ACOGIMIENTO INSTITUCIONALES Y RESIDENCIALES PARA NIÑOS, NIÑAS, ADOLESCENTES Y ADULTOS CON DISCAPACIDAD Y DEROGA EL DECRETO EJECUTIVO 404 DE 30 DE OCTUBRE DE 2020",
+          "fecha": "06-04-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8351",
+          "titulo": "QUE MODIFICA ARTICULOS DE LA LEY 14 DE 23 DE ENERO DE 2009",
+          "fecha": "26-03-2026",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "8314",
+          "titulo": "QUE MODIFICA UN ARTICULO DEL CODIGO PENAL",
+          "fecha": "05-03-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8301",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 431 DE 2024, QUE CREA EL SISTEMA NACIONAL DE CUIDADOS, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "02-03-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8218",
+          "titulo": "QUE ESTABLECE LA OBLIGACION DE TRANSPARENCIA Y TRAZABILIDAD DEL USO DE LOS RECURSOS PUBLICOS PROVENIENTES DE FINANCIAMIENTO INTERNACIONAL",
+          "fecha": "06-01-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8198",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTÍCULOS A LA LEY 57 DEL 5 DE OCTUBRE DE 1976 POR LA CUAL SE CREA UNA NOTARIA ESPECIAL, EN EL CIRCUITO NOTARIAL DE PANAMA QUE FUNCIONARA EN EL DISTRITO DE SAN MIGUELITO",
+          "fecha": "29-10-2025",
+          "etapa": "Retirado por proponente"
+        },
+        {
+          "ficha": "8108",
+          "titulo": "QUE MODIFICA LA LEY 76 DE 15 DE NOVIEMBRE DE 2010, QUE CREA LA EMPRESA NACIONAL DE AUTOPISTAS, S.A. (ENA), Y DICTA DISPOSICIONES PARA LA TRANSPARENCIA, GOBERNANZA Y CONTROL DE LAS EXONERACIONES EN LAS CARRETERAS Y AUTOPISTAS DE PEAJE.",
+          "fecha": "15-09-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8041",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DE LA LEY 47 DE 1946, LEY ORGANICA DE EDUCACION",
+          "fecha": "25-08-2025",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "7942",
+          "titulo": "QUE TRANSPARENTA Y COMUNICA EL USO DE LOS DIVIDENDOS ENTREGADOS POR EL CANAL DE PANAMÁ",
+          "fecha": "17-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7923",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL DECRETO LEY NO. 8 DE 15 DE FEBRERO DE 2006 QUE REESTRUCTURA EL SISTEMA DE FORMACION PROFESIONAL, CAPACITACION LABORAL EN GESTION EMPRESARIAL",
+          "fecha": "10-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7924",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 41 DE 20 DE JULIO DE 2004, QUE CREA UN REGIMEN ESPECIAL PARA EL ESTABLECIMIENTO DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO, Y UNA ENTIDAD AUTONOMA DEL ESTADO, DENOMINADA AGENCIA DEL AREA ECONOMICA ESPECIAL PANAMA-PACIFICO",
+          "fecha": "10-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7925",
+          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 22 DE 27 DE JUNIO DE 2006 QUE REGULA LA CONTRATACION PUBLICA",
+          "fecha": "10-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7926",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY 90 DEL 7 DE NOVIEMBRE DE 2013, QUE AUTORIZA LA CREACION DE EMPRESA MERCADOS NACIONALES DE LA CADENA DE FRIO, S.A. Y ESTABLECE SU MARCO REGULATORIO",
+          "fecha": "10-07-2025",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "7889",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL CODIGO PENAL",
+          "fecha": "02-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7714",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS LA LEY 42 DE 2012, GENERAL DE PENSION ALIMENTICIA Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "28-10-2024",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7658",
+          "titulo": "QUE MODIFICA EL CODIGO PENAL",
+          "fecha": "24-09-2024",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "7546",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS A LA LEY ORGANICA POR LA CUAL SE CREA EL INSTITUTO PARA LA FORMACION Y APROVECHAMIENTO DE RECURSOS HUMANOS",
+          "fecha": "19-08-2024",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "7439",
+          "titulo": "QUE MODIFICA EL CODIGO PENAL",
+          "fecha": "10-07-2024",
+          "etapa": "Retirado por proponente"
+        },
+        {
+          "ficha": "7412",
+          "titulo": "QUE MODIFICA EL REGLAMENTO ORGANICO DE REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
+          "fecha": "02-07-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        }
+      ],
+      "participaciones": [
+        "8642",
+        "8644",
+        "8637",
+        "8576",
+        "8584",
+        "8557",
+        "8549",
+        "8551",
+        "8542",
+        "8496",
+        "8479",
+        "8462",
+        "8464",
+        "8454",
+        "8444",
+        "8424",
+        "8426",
+        "8437",
+        "8417",
+        "8421",
+        "8422",
+        "8373",
+        "8372",
+        "8377",
+        "8364",
+        "8351",
+        "8314",
+        "8307",
+        "8300",
+        "8301",
+        "8271",
+        "8254",
+        "8218",
+        "8198",
+        "8167",
+        "8156",
+        "8142",
+        "8124",
+        "8108",
+        "8110",
+        "8084",
+        "8075",
+        "8059",
+        "8062",
+        "8063",
+        "8058",
+        "8041",
+        "8050",
+        "8034",
+        "8030",
+        "8014",
+        "8022",
+        "8008",
+        "7998",
+        "7992",
+        "7976",
+        "7977",
+        "7968",
+        "7942",
+        "7933",
+        "7923",
+        "7924",
+        "7925",
+        "7926",
+        "7912",
+        "7913",
+        "7910",
+        "7879",
+        "7891",
+        "7887",
+        "7889",
+        "7838",
+        "7831",
+        "7825",
+        "7826",
+        "7823",
+        "7824",
+        "7786",
+        "7787",
+        "7757",
+        "7759",
+        "7756",
+        "8569",
+        "7751",
+        "7738",
+        "7735",
+        "7729",
+        "7714",
+        "7704",
+        "7705",
+        "7698",
+        "7682",
+        "7669",
+        "7650",
+        "7652",
+        "7654",
+        "7657",
+        "7658",
+        "7647",
+        "7641",
+        "7642",
+        "7607",
+        "7597",
+        "7573",
+        "7551",
+        "7554",
+        "7546",
+        "7547",
+        "7543",
+        "7529",
+        "7536",
+        "8194",
+        "8011",
+        "7496",
+        "7497",
+        "7489",
+        "8397",
+        "8146",
+        "7439",
+        "7436",
+        "7438",
+        "8252",
+        "7421",
+        "7423",
+        "7415",
+        "7420",
+        "7404",
+        "7406",
+        "7410",
+        "7412"
+      ],
+      "leyes_copatrocinio": 8,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 27,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 2.07,
+          "indice": 42,
+          "evidencia": "alta"
+        },
+        "copat": {
+          "proyectos": 103,
+          "leyes": 8,
+          "tasa": 7.8,
+          "esperadas": 15.75,
+          "indice": 55,
+          "evidencia": "alta"
+        }
+      },
+      "temas_autor": {
+        "Gobierno y administración pública": 8,
+        "Justicia, crimen y seguridad": 6,
+        "Bienestar social y seguridad social": 5,
+        "Derechos civiles e igualdad": 3,
+        "Educación": 3
+      },
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 103
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 95
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 87
+        },
+        {
+          "nombre": "Yamireliz Chong",
+          "partido": "Coalición Vamos",
+          "proyectos": 87
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 85
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 77
+        }
+      ],
+      "transversalidad": 41.8,
       "transversalidad_esperada": 80.0
     },
     {
@@ -2721,9 +2703,9 @@
         "Economía y Finanzas"
       ],
       "comisiones_cantidad": 2,
-      "proyectos": 23,
+      "proyectos": 22,
       "leyes": 6,
-      "co_patrocinios": 79,
+      "co_patrocinios": 80,
       "proyectos_suplente": 0,
       "etapas": {
         "Preliminar": 2,
@@ -2732,7 +2714,7 @@
         "Ley": 6,
         "Archivado": 1,
         "Retirado por proponente": 1,
-        "Negado": 2,
+        "Negado": 1,
         "Enviado a subcomisión para analisis": 1
       },
       "leyes_detalle": [
@@ -2742,9 +2724,9 @@
           "fecha": "27-08-2025"
         },
         {
-          "ficha": "8371",
-          "titulo": "QUE RECONOCE EL PAGO DE LOS APORTES REALIZADOS, POR EXTENSION DE JUBILACION, A LOS EDUCADORES JUBILADOS DE LAS PROMOCIONE DE 1972 Y 1973 CERTIFICADOS POR LA CAJA DE SEGURO SOCIAL",
-          "fecha": "28-01-2025"
+          "ficha": "8250",
+          "titulo": "QUE CREA EL PATRONATO DEL FESTIVAL NACIONAL DEL TORO GUAPO DE ANTON Y DICTA OTRA DISPOSICION",
+          "fecha": "25-09-2024"
         },
         {
           "ficha": "8265",
@@ -2841,9 +2823,9 @@
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "8371",
-          "titulo": "QUE RECONOCE EL PAGO DE LOS APORTES REALIZADOS, POR EXTENSION DE JUBILACION, A LOS EDUCADORES JUBILADOS DE LAS PROMOCIONE DE 1972 Y 1973 CERTIFICADOS POR LA CAJA DE SEGURO SOCIAL",
-          "fecha": "28-01-2025",
+          "ficha": "8250",
+          "titulo": "QUE CREA EL PATRONATO DEL FESTIVAL NACIONAL DEL TORO GUAPO DE ANTON Y DICTA OTRA DISPOSICION",
+          "fecha": "25-09-2024",
           "etapa": "Ley"
         },
         {
@@ -2887,12 +2869,6 @@
           "titulo": "QUE ESTABLECE Y REGULA LA FORMACION DUAL COMO MODALIDAD EDUCATIVA EN EL TERRITORIO NACIONAL",
           "fecha": "08-07-2024",
           "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8252",
-          "titulo": "QUE ESTABLECE EL MARCO JURIDICO PARA EL DERECHO DEL ACCESO AL AGUA POTABLE, DICTA MEDIDAS PARA SU CONVERSACION E INCENTIVA SU PROTECCION Y LA DEL AMBIENTE DE ACUERDO CON LOS ESTANDARES INTERNACIONALES",
-          "fecha": "08-07-2024",
-          "etapa": "Negado"
         },
         {
           "ficha": "7421",
@@ -3014,28 +2990,28 @@
       "leyes_copatrocinio": 13,
       "efectividad_ley": {
         "autor": {
-          "proyectos": 23,
+          "proyectos": 22,
           "leyes": 6,
-          "tasa": 26.1,
-          "esperadas": 2.68,
-          "indice": 179,
+          "tasa": 27.3,
+          "esperadas": 2.48,
+          "indice": 188,
           "evidencia": "alta"
         },
         "copat": {
-          "proyectos": 79,
+          "proyectos": 80,
           "leyes": 13,
-          "tasa": 16.5,
-          "esperadas": 14.52,
-          "indice": 91,
+          "tasa": 16.2,
+          "esperadas": 14.74,
+          "indice": 89,
           "evidencia": "alta"
         }
       },
       "temas_autor": {
-        "Bienestar social y seguridad social": 5,
         "Justicia, crimen y seguridad": 5,
-        "Educación": 4,
+        "Bienestar social y seguridad social": 4,
         "Trabajo y empleo": 4,
-        "Ambiente y protección animal": 3
+        "Educación": 3,
+        "Gobierno y administración pública": 3
       },
       "aliados": [
         {
@@ -3097,9 +3073,9 @@
         "Infraestructura Pública y Asuntos del Canal"
       ],
       "comisiones_cantidad": 2,
-      "proyectos": 23,
+      "proyectos": 22,
       "leyes": 1,
-      "co_patrocinios": 81,
+      "co_patrocinios": 82,
       "proyectos_suplente": 3,
       "etapas": {
         "Preliminar": 6,
@@ -3108,8 +3084,7 @@
         "Negado": 1,
         "Archivado": 1,
         "Enviado a subcomisión para analisis": 1,
-        "Ley": 1,
-        "Retirado por proponente": 1
+        "Ley": 1
       },
       "leyes_detalle": [
         {
@@ -3250,12 +3225,6 @@
           "titulo": "QUE REFORMA LA LEY 105 DE 1973, QUE ORGANIZA LAS JUNTAS COMUNALES Y LA LEY 106 DE 1973, SOBRE REGIMEN MUNICIPAL Y DICTA OTRA DISPOSICION",
           "fecha": "18-07-2024",
           "etapa": "Ley"
-        },
-        {
-          "ficha": "7410",
-          "titulo": "QUE CREA LA FIGURA DEL AUDITORIA DE CUMPLIMIENTO NORMATIVO ESTATAL PARA LAS ENTIDADES PUBLICAS COMO GARANTE DE LA TRANSPARENCIA INSTITUCIONAL",
-          "fecha": "02-07-2024",
-          "etapa": "Retirado por proponente"
         }
       ],
       "participaciones": [
@@ -3367,24 +3336,24 @@
       "leyes_copatrocinio": 12,
       "efectividad_ley": {
         "autor": {
-          "proyectos": 23,
+          "proyectos": 22,
           "leyes": 1,
-          "tasa": 4.3,
-          "esperadas": 1.74,
-          "indice": 77,
+          "tasa": 4.5,
+          "esperadas": 1.56,
+          "indice": 82,
           "evidencia": "media"
         },
         "copat": {
-          "proyectos": 81,
+          "proyectos": 82,
           "leyes": 12,
-          "tasa": 14.8,
-          "esperadas": 14.68,
-          "indice": 83,
+          "tasa": 14.6,
+          "esperadas": 14.94,
+          "indice": 82,
           "evidencia": "alta"
         }
       },
       "temas_autor": {
-        "Gobierno y administración pública": 7,
+        "Gobierno y administración pública": 6,
         "Comercio, banca y consumo": 4,
         "Justicia, crimen y seguridad": 3,
         "Bienestar social y seguridad social": 2,
@@ -3450,16 +3419,17 @@
         "Economía y Finanzas"
       ],
       "comisiones_cantidad": 2,
-      "proyectos": 20,
+      "proyectos": 21,
       "leyes": 1,
-      "co_patrocinios": 102,
+      "co_patrocinios": 101,
       "proyectos_suplente": 1,
       "etapas": {
         "Primer Debate": 10,
         "Segundo Debate": 4,
         "Enviado a subcomisión para analisis": 3,
         "Archivado": 2,
-        "Ley": 1
+        "Ley": 1,
+        "Retirado por proponente": 1
       },
       "leyes_detalle": [
         {
@@ -3588,6 +3558,12 @@
           "titulo": "QUE PROMUEVE LA GESTION SOSTENIBLE DE LOS ACUIFEROS Y AGUAS SUBTERRANEAS EN LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES",
           "fecha": "18-09-2024",
           "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7410",
+          "titulo": "QUE CREA LA FIGURA DEL AUDITORIA DE CUMPLIMIENTO NORMATIVO ESTATAL PARA LAS ENTIDADES PUBLICAS COMO GARANTE DE LA TRANSPARENCIA INSTITUCIONAL",
+          "fecha": "02-07-2024",
+          "etapa": "Retirado por proponente"
         }
       ],
       "participaciones": [
@@ -3717,24 +3693,24 @@
       "leyes_copatrocinio": 16,
       "efectividad_ley": {
         "autor": {
-          "proyectos": 20,
+          "proyectos": 21,
           "leyes": 1,
-          "tasa": 5.0,
-          "esperadas": 1.57,
-          "indice": 81,
+          "tasa": 4.8,
+          "esperadas": 1.75,
+          "indice": 77,
           "evidencia": "media"
         },
         "copat": {
-          "proyectos": 102,
+          "proyectos": 101,
           "leyes": 16,
-          "tasa": 15.7,
-          "esperadas": 16.37,
-          "indice": 98,
+          "tasa": 15.8,
+          "esperadas": 16.11,
+          "indice": 99,
           "evidencia": "alta"
         }
       },
       "temas_autor": {
-        "Gobierno y administración pública": 7,
+        "Gobierno y administración pública": 8,
         "Justicia, crimen y seguridad": 5,
         "Macroeconomía y finanzas públicas": 5,
         "Comercio, banca y consumo": 3,
@@ -3776,6 +3752,764 @@
       "transversalidad_esperada": 80.0
     },
     {
+      "nombre": "José Pérez Barboni",
+      "partido": "Movimiento Otro Camino",
+      "circuito": "8-3",
+      "provincia": "Panamá",
+      "suplente": "Kevin 'Robinho' Carrillo",
+      "foto": "https://espaciocivico.org/api/drive-image/1jdQaEAFfkqKtIVahwrTSz0AuFmYjhrde",
+      "perfil": "https://espaciocivico.org/diputados/jose-perez-barboni",
+      "slug": "jose-perez-barboni",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-3",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-perez-barboni",
+      "planilla_texto": "B/. 14,500",
+      "planilla_valor": 14500.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
+      ],
+      "comisiones_cantidad": 2,
+      "proyectos": 20,
+      "leyes": 4,
+      "co_patrocinios": 105,
+      "proyectos_suplente": 1,
+      "etapas": {
+        "Primer Debate": 3,
+        "Preliminar": 3,
+        "Ley": 4,
+        "Segundo Debate": 3,
+        "Enviado a subcomisión para analisis": 2,
+        "Negado": 2,
+        "Objetado por Ejecutivo": 2,
+        "Archivado": 1
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "8291",
+          "titulo": "QUE DECLARA LA PLAZA BELISARIO PORRAS PATRIMONIO CULTURAL MATERIAL DE LA NACIÓN PANAMEÑA",
+          "fecha": "12-02-2026"
+        },
+        {
+          "ficha": "7645",
+          "titulo": "QUE ESTABLECE EL PROGRAMA DE INTERCAMBIO VOLUNTARIO DE ARMAS DE FUEGO, MUNICIONES, EXPLOSIVOS Y MATERIALES RELACIONADOS POR COMIDA",
+          "fecha": "18-09-2024"
+        },
+        {
+          "ficha": "7516",
+          "titulo": "QUE ESTABLECE EL RÉGIMEN DE CÁMARAS CORPORALES UTILIZADAS POR LA POLICÍA NACIONAL",
+          "fecha": "06-08-2024"
+        },
+        {
+          "ficha": "7487",
+          "titulo": "QUE DECLARA PATRIMONIO CULTURAL PANAMEÑO LA RUTA COLONIAL TRANSISTMICA DE PANAMA",
+          "fecha": "30-07-2024"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8596",
+          "titulo": "QUE DECLARA AREA PROTEGIDA UNA ZONA BOSCOSA DEL CORREGIMIENTO DE ANCON QUE COLINDA CON EL AREA DE VILLA DE LAS FUENTES EN EL CORREGIMIENTO DE BETANIA",
+          "fecha": "09-09-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8533",
+          "titulo": "QUE RECUPERA LOS BIENES DE ORIGEN ILICITO VINCULADOS A DELITOS RELACIONADOS CON DROGAS",
+          "fecha": "10-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8456",
+          "titulo": "POR LA CUAL SE GARANTIZA EL ACCESO A SEGUROS DE VIDA Y AL CREDITO BANCARIO PARA LAS PERSONAS CON DIABETES TIPO 1 Y SE PROHIBE TODA DISCRIMINACION POR RAZON DE CONDICION CRONICA DE SALUD EN LA CONTRATACION DE SEGUROS",
+          "fecha": "16-07-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8453",
+          "titulo": "SOBRE MEDIDAS DE PREVENCIÓN Y CONTROL EN TORNO A LA PRODUCCIÓN, PREPARACIÓN Y TRÁFICO DE DROGAS SINTÉTICAS Y SUS PRECURSORES",
+          "fecha": "15-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8413",
+          "titulo": "QUE OBLIGA AL PAGO DE UNA PENSION ALIMENTICIA A LOS CONDUCTORES QUE CONDUZCAN BAJO LOS EFECTOS DEL ALCOHOL O DE DROGAS Y QUE HAYAN CAUSADO LA MUERTE DE UN PADRE, MADRE O TUTOR DE UNA PERSONA MENOR DE EDAD Y DICTA OTRA DISPOSICION",
+          "fecha": "02-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8291",
+          "titulo": "QUE DECLARA LA PLAZA BELISARIO PORRAS PATRIMONIO CULTURAL MATERIAL DE LA NACIÓN PANAMEÑA",
+          "fecha": "12-02-2026",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "8214",
+          "titulo": "QUE MODIFICA ARTÍCULOS DE LA LEY 40 DE 1999, DEL RÉGIMEN ESPECIAL DE RESPONSABILIDAD PENAL PARA LA ADOLESCENCIA",
+          "fecha": "05-01-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8182",
+          "titulo": "QUE PERMITE LOS TATUAJES CORPORALES TEMPORALES O PERMANENTES EN LOS SERVIDORES PUBLICOS",
+          "fecha": "21-10-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8001",
+          "titulo": "QUE MODIFICA UN ARTICULO DE LA LEY 467 DE 24 DE ABRIL DE 2025, “QUE SUBROGA LA LEY 16 DE 2016, QUE INSTITUYE LA JUSTICIA COMUNITARIA DE PAZ, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "11-08-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7899",
+          "titulo": "QUE ESTABLECE NORMATIVA POR INDEMNIZACIÓN A DAÑOS VEHICULARES DE PARTICULARES, EMPRESAS Y TRANSPORTE PUBLICO OCASIONADAS POR LAS INSTITUCIONES GUBERNAMENTALES Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "03-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7832",
+          "titulo": "QUE DISMINUYE EL IMPUESTO SOBRE LA RENTA A LAS PERSONAS NATURALES Y ELIMINA LOS BENEFICIOS FISCALES EN LA POLITICA",
+          "fecha": "27-03-2025",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7822",
+          "titulo": "QUE ESTABLECE HONORARIOS POR SERVICIOS CONSULARES Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "20-03-2025",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "7808",
+          "titulo": "QUE REDUCE LOS GASTOS DE ALQUILER DE OFICINAS EN EL SECTOR PÚBLICO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "17-03-2025",
+          "etapa": "Objetado por Ejecutivo"
+        },
+        {
+          "ficha": "7645",
+          "titulo": "QUE ESTABLECE EL PROGRAMA DE INTERCAMBIO VOLUNTARIO DE ARMAS DE FUEGO, MUNICIONES, EXPLOSIVOS Y MATERIALES RELACIONADOS POR COMIDA",
+          "fecha": "18-09-2024",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7532",
+          "titulo": "QUE MODIFICA UN ARTICULO DEL CODIGO DE PROCEDIMIENTO TRIBUTARIO, REFERENTE A LA EVALUCACION DE PROYECTOS QUE AFECTEN LA RECAUDACION, Y DICTA OTRA DISPOSICION",
+          "fecha": "13-08-2024",
+          "etapa": "Objetado por Ejecutivo"
+        },
+        {
+          "ficha": "7516",
+          "titulo": "QUE ESTABLECE EL RÉGIMEN DE CÁMARAS CORPORALES UTILIZADAS POR LA POLICÍA NACIONAL",
+          "fecha": "06-08-2024",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7487",
+          "titulo": "QUE DECLARA PATRIMONIO CULTURAL PANAMEÑO LA RUTA COLONIAL TRANSISTMICA DE PANAMA",
+          "fecha": "30-07-2024",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "8252",
+          "titulo": "QUE ESTABLECE EL MARCO JURIDICO PARA EL DERECHO DEL ACCESO AL AGUA POTABLE, DICTA MEDIDAS PARA SU CONVERSACION E INCENTIVA SU PROTECCION Y LA DEL AMBIENTE DE ACUERDO CON LOS ESTANDARES INTERNACIONALES",
+          "fecha": "08-07-2024",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "7403",
+          "titulo": "QUE ESTABLECE NORMAS MINIMAS DE TRANSPARENCIA EN EL OTORGAMIENTO DE BECAS EN LA REPUBLICA DE PANAMA",
+          "fecha": "02-07-2024",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "7411",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL TEXTO UNICO DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
+          "fecha": "02-07-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        }
+      ],
+      "participaciones": [
+        "8596",
+        "8533",
+        "8456",
+        "8458",
+        "8451",
+        "8452",
+        "8453",
+        "8454",
+        "8444",
+        "8413",
+        "8377",
+        "8357",
+        "8324",
+        "8291",
+        "8259",
+        "8230",
+        "8214",
+        "8197",
+        "8182",
+        "8107",
+        "8083",
+        "8073",
+        "8063",
+        "8058",
+        "8046",
+        "8034",
+        "8014",
+        "8017",
+        "8008",
+        "8010",
+        "8006",
+        "7997",
+        "7998",
+        "8001",
+        "7995",
+        "7984",
+        "7986",
+        "7967",
+        "7959",
+        "7933",
+        "7921",
+        "7913",
+        "7919",
+        "7899",
+        "7887",
+        "7889",
+        "7840",
+        "7832",
+        "7831",
+        "7826",
+        "7822",
+        "7823",
+        "7801",
+        "7802",
+        "7804",
+        "7805",
+        "7808",
+        "7787",
+        "7779",
+        "7767",
+        "8371",
+        "7757",
+        "7759",
+        "7756",
+        "7754",
+        "8569",
+        "7750",
+        "7736",
+        "7735",
+        "7729",
+        "7717",
+        "7701",
+        "7682",
+        "7669",
+        "7650",
+        "7653",
+        "7654",
+        "7657",
+        "7647",
+        "7641",
+        "7642",
+        "7644",
+        "7645",
+        "7598",
+        "7567",
+        "7573",
+        "7563",
+        "7551",
+        "7555",
+        "7546",
+        "7547",
+        "7543",
+        "7544",
+        "7529",
+        "7532",
+        "7536",
+        "8194",
+        "7525",
+        "8384",
+        "7516",
+        "8011",
+        "8289",
+        "7510",
+        "7502",
+        "7497",
+        "7486",
+        "7487",
+        "7489",
+        "7490",
+        "8397",
+        "7470",
+        "7453",
+        "7449",
+        "7436",
+        "7438",
+        "8252",
+        "7423",
+        "7415",
+        "7419",
+        "7420",
+        "8366",
+        "7403",
+        "7404",
+        "7406",
+        "7411"
+      ],
+      "leyes_copatrocinio": 16,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 20,
+          "leyes": 4,
+          "tasa": 20.0,
+          "esperadas": 2.23,
+          "indice": 148,
+          "evidencia": "alta"
+        },
+        "copat": {
+          "proyectos": 105,
+          "leyes": 16,
+          "tasa": 15.2,
+          "esperadas": 19.16,
+          "indice": 85,
+          "evidencia": "alta"
+        }
+      },
+      "temas_autor": {
+        "Justicia, crimen y seguridad": 7,
+        "Gobierno y administración pública": 6,
+        "Macroeconomía y finanzas públicas": 3,
+        "Ambiente y protección animal": 2,
+        "Cultura, deporte y patrimonio": 2
+      },
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 86
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 80
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 69
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 68
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 66
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 65
+        }
+      ],
+      "transversalidad": 94.3,
+      "transversalidad_esperada": 97.1
+    },
+    {
+      "nombre": "Janine Prado",
+      "partido": "Coalición Vamos",
+      "circuito": "9-1",
+      "provincia": "Veraguas",
+      "suplente": "Francisco Jaen",
+      "foto": "https://espaciocivico.org/api/drive-image/1M6i3K-1YCPExJixXNfk58EXAPV9nTCwP",
+      "perfil": "https://espaciocivico.org/diputados/janine-prado",
+      "slug": "janine-prado",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/janine-prado",
+      "planilla_texto": "B/. 6,750",
+      "planilla_valor": 6750.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 5.0,
+      "comisiones": [
+        "Asuntos Agropecuarios",
+        "Trabajo, Salud y Desarrollo Social"
+      ],
+      "comisiones_cantidad": 2,
+      "proyectos": 19,
+      "leyes": 0,
+      "co_patrocinios": 150,
+      "proyectos_suplente": 0,
+      "etapas": {
+        "Primer Debate": 6,
+        "Preliminar": 1,
+        "Retirado por proponente": 2,
+        "Segundo Debate": 5,
+        "Negado": 2,
+        "Archivado": 2,
+        "Enviado a subcomisión para analisis": 1
+      },
+      "leyes_detalle": [],
+      "proyectos_detalle": [
+        {
+          "ficha": "8610",
+          "titulo": "QUE RECONOCE EL FESTIVAL INTERNACIONAL DE DEGUSTACION A BENEFICIO DE LA ASOCIACION NACIONAL CONTRA EL CANCER CAPITULO DE SANTIAGO EN LA PROVINCIA DE VERAGUAS, CREA SU PATRONATO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "17-09-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8551",
+          "titulo": "QUE FORTALECE LA RECUPERACION DE ACTIVOS PROVENIENTES DE DELITOS CONTRA LA ADMINISTRACION PUBLICA, ESTABLECE TECNICAS ESPECIALES DE INVESTIGACION PATRIMONIAL Y COOPERACION INTERNACIONAL PARA SU RECUPERACION, MODIFICA EL CODIGO PENAL, EL CODIGO PROCESAL PENAL Y LA LEY 23 DE 2015, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "17-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8539",
+          "titulo": "QUE RECONOCE EL FESTIVAL INTERNACIONAL DE DEGUSTACION A BENEFICIO DE LA ASOCIACION NACIONAL CONTRA EL CANCER CAPITULO DE SANTIAGO EN LA PROVINCIA DE VERAGUAS, CREA SU PATRONATO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "12-08-2026",
+          "etapa": "Retirado por proponente"
+        },
+        {
+          "ficha": "8437",
+          "titulo": "QUE REGULA EL NOMBRAMIENTO EN LOS CARGOS DE DIRECTORES REGIONALES, DIRECTORES INSTITUCIONALES Y DIRECTORES MEDICOS EN HOSPITALES PUBLICOS DEL MINISTERIO DE SALUD, CENTROS DE SALUD Y AFINES DE LA CAJA DE SEGURO SOCIAL, MEDIATE CONCURSO PUBLICO DE MERITOS Y CREDENCIALES",
+          "fecha": "09-07-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8333",
+          "titulo": "QUE MODIFICA LA LEY 46 DE 2013, GENERAL DE ADOPCIONES DE LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES.",
+          "fecha": "16-03-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8186",
+          "titulo": "QUE ESTABLECE EL USO DE DISPOSITIVOS DE MONITOREO ELECTRONICO COMO MEDIDA DE PROTECCION A LAS VICTIMAS DE DELITOS DE VIOLENCIA DOMESTICA, DELITOS CONTRA LA LIBERTAD SEXUAL, MALTRATO A PERSONAS MENORES DE EDAD, LESIONES PERSONALES Y TRATA DE PERSONAS, ASI COMO EN LOS DELITOS DONDE SE PUEDA VER AFECTADA LA SEGURIDAD PERSONAL DE LA VICTIMA",
+          "fecha": "21-10-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8167",
+          "titulo": "QUE MODIFICA LA LEY 24 DE 2006, QUE DECLARA DE ORDEN PÚBLICO Y DE INTERÉS SOCIAL LAS ACTIVIDADES DE REGULACIÓN Y TITULACIÓN MASIVA DE TIERRAS QUE EJECUTA EL ESTADO Y ADOPTA OTRAS DISPOSICIONES",
+          "fecha": "14-10-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8142",
+          "titulo": "QUE HACE DE ACCESO PUBLICO LA LISTA DE PERSONAS QUE CONTRATAN CON EL ESTADO Y MODIFICA LA LEY 22 DE 2006",
+          "fecha": "30-09-2025",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "8006",
+          "titulo": "QUE PROHIBE EL CULTO A LA PERSONALIDAD DE POLITICOS Y EMPRESARIOS EN LA REPUBLICA DE PANAMA",
+          "fecha": "12-08-2025",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "7977",
+          "titulo": "QUE MODIFICA LA LEY 86 DE 18 DE NOVIEMBRE DE 2010, QUE CREA EL PROGRAMA ESPECIAL DE ASISTENCIA ECONÓMICA PARA LOS ADULTOS MAYORES DE SETENTA AÑOS O MÁS SIN JUBILACIÓN NI PENSIÓN, EN CONDICIONES DE RIESGO SOCIAL, VULNERABILIDAD, MARGINACIÓN O POBREZA, Y SUBROGA LA LEY 44 DE 2009",
+          "fecha": "31-07-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7913",
+          "titulo": "POR EL CUAL SE DEFINE EL DELITO POLITICO EN LA LEGISLACION PANAMEÑA",
+          "fecha": "09-07-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7891",
+          "titulo": "QUE INCREMENTA LA PENA A LOS FUNCIONARIOS PUBLICOS QUE COBRAN Y NO TRABAJAN Y SANCIONA CON PENA DE PRISION A LOS SERVIDORES PUBLICOS QUE REALICEN DICHOS NOMBRAMIENTOS",
+          "fecha": "02-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7751",
+          "titulo": "QUE MODIFICA EL ARTICULO 61 DEL TEXTO UNICO DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
+          "fecha": "15-01-2025",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7704",
+          "titulo": "QUE PROTEGE LAS ROMPIENTES DE LAS OLAS ADECUADAS PARA LA PRACTICA DEPORTIVA Y ESTABLECE EL REGIMEN PARA LA CREACION DE SANTUARIOS DE OLAS EN PANAMA",
+          "fecha": "16-10-2024",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "7698",
+          "titulo": "QUE MODERNIZA LA CARRERA DIPLOMATICA Y CONSULAR, Y FOMENTA LA PROFESIONALIZACION DE LOS FUNCIONARIOS QUE LA INTEGRAN Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "15-10-2024",
+          "etapa": "Negado"
+        },
+        {
+          "ficha": "7652",
+          "titulo": "QUE SUBROGA DISPOSICIONES DE LA LEY 46 DE 2013, GENERAL DE ADOPCIONES DE LA REPUBLICA DE PANAMA",
+          "fecha": "24-09-2024",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7536",
+          "titulo": "QUE ESTABLECE LA PROTECCION DE LA INTEGRIDAD E INDEMNIDAD SEXUAL DE LAS PERSONAS MENORES DE EDAD Y MODIFICA EL CODIGO PENAL, EL CODIGO PROCESAL PENAL Y LA LEY 69 DE 2007",
+          "fecha": "13-08-2024",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7433",
+          "titulo": "QUE INCREMENTA LA PENA A LOS FUNCIONARIOS PUBLICOS QUE COBRAN Y NO TRABAJAN Y SANCIONA CON PENA DE PRISION A LOS SERVIDORES PUBLICOS QUE REALICEN DICHOS NOMBRAMIENTOS",
+          "fecha": "08-07-2024",
+          "etapa": "Retirado por proponente"
+        },
+        {
+          "ficha": "7405",
+          "titulo": "QUE TRANSPARENTA LAS GESTIONES DE LOS SERVIDORES PUBLICOS DE ALTA JERARQUIA",
+          "fecha": "02-07-2024",
+          "etapa": "Segundo Debate"
+        }
+      ],
+      "participaciones": [
+        "8642",
+        "8644",
+        "8637",
+        "8610",
+        "8590",
+        "8577",
+        "8584",
+        "8550",
+        "8551",
+        "8554",
+        "8539",
+        "8462",
+        "8464",
+        "8465",
+        "8456",
+        "8454",
+        "8444",
+        "8433",
+        "8437",
+        "8417",
+        "8421",
+        "8422",
+        "8388",
+        "8373",
+        "8377",
+        "8350",
+        "8351",
+        "8335",
+        "8337",
+        "8333",
+        "8307",
+        "8300",
+        "8301",
+        "8296",
+        "8280",
+        "8271",
+        "8227",
+        "8218",
+        "8220",
+        "8213",
+        "8216",
+        "8203",
+        "8196",
+        "8186",
+        "8167",
+        "8168",
+        "8161",
+        "8156",
+        "8142",
+        "8135",
+        "8104",
+        "8084",
+        "8059",
+        "8063",
+        "8058",
+        "8041",
+        "8042",
+        "8047",
+        "8050",
+        "8034",
+        "8030",
+        "8014",
+        "8020",
+        "8022",
+        "8024",
+        "8008",
+        "8006",
+        "7998",
+        "7992",
+        "7995",
+        "7976",
+        "7977",
+        "7967",
+        "7968",
+        "7933",
+        "7923",
+        "7924",
+        "7925",
+        "7926",
+        "7913",
+        "7910",
+        "7898",
+        "7899",
+        "7900",
+        "7885",
+        "7891",
+        "7887",
+        "7889",
+        "7840",
+        "7838",
+        "7837",
+        "7831",
+        "7826",
+        "7824",
+        "8396",
+        "7801",
+        "7804",
+        "7805",
+        "7779",
+        "7757",
+        "7759",
+        "7756",
+        "7754",
+        "8569",
+        "7748",
+        "7751",
+        "7738",
+        "7735",
+        "7729",
+        "7731",
+        "7717",
+        "7714",
+        "7704",
+        "7705",
+        "7698",
+        "7669",
+        "7650",
+        "7652",
+        "7653",
+        "7654",
+        "7657",
+        "7647",
+        "7641",
+        "7642",
+        "7607",
+        "8265",
+        "7571",
+        "7573",
+        "7574",
+        "7551",
+        "7554",
+        "7546",
+        "7547",
+        "7538",
+        "7540",
+        "7543",
+        "7544",
+        "7529",
+        "7531",
+        "7535",
+        "7536",
+        "8194",
+        "7527",
+        "7516",
+        "8011",
+        "7508",
+        "7502",
+        "7497",
+        "7498",
+        "7499",
+        "7489",
+        "7471",
+        "7453",
+        "8146",
+        "7449",
+        "7436",
+        "7437",
+        "7438",
+        "7433",
+        "8252",
+        "7423",
+        "7424",
+        "7415",
+        "8366",
+        "7404",
+        "7405",
+        "7411",
+        "7412",
+        "7776"
+      ],
+      "leyes_copatrocinio": 20,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 19,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.97,
+          "indice": 43,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 150,
+          "leyes": 20,
+          "tasa": 13.3,
+          "esperadas": 21.83,
+          "indice": 92,
+          "evidencia": "alta"
+        }
+      },
+      "temas_autor": {
+        "Gobierno y administración pública": 9,
+        "Justicia, crimen y seguridad": 6,
+        "Bienestar social y seguridad social": 3,
+        "Cultura, deporte y patrimonio": 3,
+        "Derechos civiles e igualdad": 3
+      },
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 143
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 105
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 103
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 98
+        },
+        {
+          "nombre": "Yamireliz Chong",
+          "partido": "Coalición Vamos",
+          "proyectos": 98
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 96
+        }
+      ],
+      "transversalidad": 45.6,
+      "transversalidad_esperada": 80.0
+    },
+    {
       "nombre": "Luis Duke",
       "partido": "Coalición Vamos",
       "circuito": "8-2",
@@ -3800,15 +4534,15 @@
         "Gobierno, Justicia y Asuntos Constitucionales"
       ],
       "comisiones_cantidad": 2,
-      "proyectos": 20,
+      "proyectos": 19,
       "leyes": 1,
-      "co_patrocinios": 121,
+      "co_patrocinios": 122,
       "proyectos_suplente": 1,
       "etapas": {
         "Preliminar": 3,
         "Tercer Debate": 1,
         "Primer Debate": 2,
-        "Archivado": 4,
+        "Archivado": 3,
         "Segundo Debate": 3,
         "Enviado a subcomisión para analisis": 3,
         "Retirado por proponente": 1,
@@ -3936,12 +4670,6 @@
           "ficha": "7422",
           "titulo": "QUE TRANSPARENTA LAS ACTAS Y OTROS ARCHIVOS DEL CONSEJO DE GABINETE",
           "fecha": "04-07-2024",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7420",
-          "titulo": "QUE MODIFICA LOS ARTICULOS 1550 Y 1555 DEL CODIGO JUDICIAL",
-          "fecha": "03-07-2024",
           "etapa": "Archivado"
         }
       ],
@@ -4091,25 +4819,25 @@
       "leyes_copatrocinio": 11,
       "efectividad_ley": {
         "autor": {
-          "proyectos": 20,
+          "proyectos": 19,
           "leyes": 1,
-          "tasa": 5.0,
-          "esperadas": 2.2,
-          "indice": 68,
+          "tasa": 5.3,
+          "esperadas": 2.02,
+          "indice": 71,
           "evidencia": "alta"
         },
         "copat": {
-          "proyectos": 121,
+          "proyectos": 122,
           "leyes": 11,
-          "tasa": 9.1,
-          "esperadas": 18.11,
-          "indice": 64,
+          "tasa": 9.0,
+          "esperadas": 18.37,
+          "indice": 63,
           "evidencia": "alta"
         }
       },
       "temas_autor": {
         "Gobierno y administración pública": 12,
-        "Justicia, crimen y seguridad": 4,
+        "Justicia, crimen y seguridad": 3,
         "Ambiente y protección animal": 2,
         "Ciencia, tecnología y comunicaciones": 2,
         "Cultura, deporte y patrimonio": 2
@@ -4148,371 +4876,6 @@
       ],
       "transversalidad": 46.8,
       "transversalidad_esperada": 80.0
-    },
-    {
-      "nombre": "José Pérez Barboni",
-      "partido": "Movimiento Otro Camino",
-      "circuito": "8-3",
-      "provincia": "Panamá",
-      "suplente": "Kevin 'Robinho' Carrillo",
-      "foto": "https://espaciocivico.org/api/drive-image/1jdQaEAFfkqKtIVahwrTSz0AuFmYjhrde",
-      "perfil": "https://espaciocivico.org/diputados/jose-perez-barboni",
-      "slug": "jose-perez-barboni",
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-3",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jose-perez-barboni",
-      "planilla_texto": "B/. 14,500",
-      "planilla_valor": 14500.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2,
-      "proyectos": 19,
-      "leyes": 4,
-      "co_patrocinios": 106,
-      "proyectos_suplente": 1,
-      "etapas": {
-        "Primer Debate": 3,
-        "Preliminar": 3,
-        "Ley": 4,
-        "Segundo Debate": 3,
-        "Enviado a subcomisión para analisis": 2,
-        "Negado": 1,
-        "Objetado por Ejecutivo": 2,
-        "Archivado": 1
-      },
-      "leyes_detalle": [
-        {
-          "ficha": "8291",
-          "titulo": "QUE DECLARA LA PLAZA BELISARIO PORRAS PATRIMONIO CULTURAL MATERIAL DE LA NACIÓN PANAMEÑA",
-          "fecha": "12-02-2026"
-        },
-        {
-          "ficha": "7645",
-          "titulo": "QUE ESTABLECE EL PROGRAMA DE INTERCAMBIO VOLUNTARIO DE ARMAS DE FUEGO, MUNICIONES, EXPLOSIVOS Y MATERIALES RELACIONADOS POR COMIDA",
-          "fecha": "18-09-2024"
-        },
-        {
-          "ficha": "7516",
-          "titulo": "QUE ESTABLECE EL RÉGIMEN DE CÁMARAS CORPORALES UTILIZADAS POR LA POLICÍA NACIONAL",
-          "fecha": "06-08-2024"
-        },
-        {
-          "ficha": "7487",
-          "titulo": "QUE DECLARA PATRIMONIO CULTURAL PANAMEÑO LA RUTA COLONIAL TRANSISTMICA DE PANAMA",
-          "fecha": "30-07-2024"
-        }
-      ],
-      "proyectos_detalle": [
-        {
-          "ficha": "8596",
-          "titulo": "QUE DECLARA AREA PROTEGIDA UNA ZONA BOSCOSA DEL CORREGIMIENTO DE ANCON QUE COLINDA CON EL AREA DE VILLA DE LAS FUENTES EN EL CORREGIMIENTO DE BETANIA",
-          "fecha": "09-09-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8533",
-          "titulo": "QUE RECUPERA LOS BIENES DE ORIGEN ILICITO VINCULADOS A DELITOS RELACIONADOS CON DROGAS",
-          "fecha": "10-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8456",
-          "titulo": "POR LA CUAL SE GARANTIZA EL ACCESO A SEGUROS DE VIDA Y AL CREDITO BANCARIO PARA LAS PERSONAS CON DIABETES TIPO 1 Y SE PROHIBE TODA DISCRIMINACION POR RAZON DE CONDICION CRONICA DE SALUD EN LA CONTRATACION DE SEGUROS",
-          "fecha": "16-07-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8453",
-          "titulo": "SOBRE MEDIDAS DE PREVENCIÓN Y CONTROL EN TORNO A LA PRODUCCIÓN, PREPARACIÓN Y TRÁFICO DE DROGAS SINTÉTICAS Y SUS PRECURSORES",
-          "fecha": "15-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8413",
-          "titulo": "QUE OBLIGA AL PAGO DE UNA PENSION ALIMENTICIA A LOS CONDUCTORES QUE CONDUZCAN BAJO LOS EFECTOS DEL ALCOHOL O DE DROGAS Y QUE HAYAN CAUSADO LA MUERTE DE UN PADRE, MADRE O TUTOR DE UNA PERSONA MENOR DE EDAD Y DICTA OTRA DISPOSICION",
-          "fecha": "02-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8291",
-          "titulo": "QUE DECLARA LA PLAZA BELISARIO PORRAS PATRIMONIO CULTURAL MATERIAL DE LA NACIÓN PANAMEÑA",
-          "fecha": "12-02-2026",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "8214",
-          "titulo": "QUE MODIFICA ARTÍCULOS DE LA LEY 40 DE 1999, DEL RÉGIMEN ESPECIAL DE RESPONSABILIDAD PENAL PARA LA ADOLESCENCIA",
-          "fecha": "05-01-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8182",
-          "titulo": "QUE PERMITE LOS TATUAJES CORPORALES TEMPORALES O PERMANENTES EN LOS SERVIDORES PUBLICOS",
-          "fecha": "21-10-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8001",
-          "titulo": "QUE MODIFICA UN ARTICULO DE LA LEY 467 DE 24 DE ABRIL DE 2025, “QUE SUBROGA LA LEY 16 DE 2016, QUE INSTITUYE LA JUSTICIA COMUNITARIA DE PAZ, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "11-08-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7899",
-          "titulo": "QUE ESTABLECE NORMATIVA POR INDEMNIZACIÓN A DAÑOS VEHICULARES DE PARTICULARES, EMPRESAS Y TRANSPORTE PUBLICO OCASIONADAS POR LAS INSTITUCIONES GUBERNAMENTALES Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "03-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7832",
-          "titulo": "QUE DISMINUYE EL IMPUESTO SOBRE LA RENTA A LAS PERSONAS NATURALES Y ELIMINA LOS BENEFICIOS FISCALES EN LA POLITICA",
-          "fecha": "27-03-2025",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7822",
-          "titulo": "QUE ESTABLECE HONORARIOS POR SERVICIOS CONSULARES Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "20-03-2025",
-          "etapa": "Negado"
-        },
-        {
-          "ficha": "7808",
-          "titulo": "QUE REDUCE LOS GASTOS DE ALQUILER DE OFICINAS EN EL SECTOR PÚBLICO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "17-03-2025",
-          "etapa": "Objetado por Ejecutivo"
-        },
-        {
-          "ficha": "7645",
-          "titulo": "QUE ESTABLECE EL PROGRAMA DE INTERCAMBIO VOLUNTARIO DE ARMAS DE FUEGO, MUNICIONES, EXPLOSIVOS Y MATERIALES RELACIONADOS POR COMIDA",
-          "fecha": "18-09-2024",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7532",
-          "titulo": "QUE MODIFICA UN ARTICULO DEL CODIGO DE PROCEDIMIENTO TRIBUTARIO, REFERENTE A LA EVALUCACION DE PROYECTOS QUE AFECTEN LA RECAUDACION, Y DICTA OTRA DISPOSICION",
-          "fecha": "13-08-2024",
-          "etapa": "Objetado por Ejecutivo"
-        },
-        {
-          "ficha": "7516",
-          "titulo": "QUE ESTABLECE EL RÉGIMEN DE CÁMARAS CORPORALES UTILIZADAS POR LA POLICÍA NACIONAL",
-          "fecha": "06-08-2024",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7487",
-          "titulo": "QUE DECLARA PATRIMONIO CULTURAL PANAMEÑO LA RUTA COLONIAL TRANSISTMICA DE PANAMA",
-          "fecha": "30-07-2024",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7403",
-          "titulo": "QUE ESTABLECE NORMAS MINIMAS DE TRANSPARENCIA EN EL OTORGAMIENTO DE BECAS EN LA REPUBLICA DE PANAMA",
-          "fecha": "02-07-2024",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7411",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS DEL TEXTO UNICO DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
-          "fecha": "02-07-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        }
-      ],
-      "participaciones": [
-        "8596",
-        "8533",
-        "8456",
-        "8458",
-        "8451",
-        "8452",
-        "8453",
-        "8454",
-        "8444",
-        "8413",
-        "8377",
-        "8357",
-        "8324",
-        "8291",
-        "8259",
-        "8230",
-        "8214",
-        "8197",
-        "8182",
-        "8107",
-        "8083",
-        "8073",
-        "8063",
-        "8058",
-        "8046",
-        "8034",
-        "8014",
-        "8017",
-        "8008",
-        "8010",
-        "8006",
-        "7997",
-        "7998",
-        "8001",
-        "7995",
-        "7984",
-        "7986",
-        "7967",
-        "7959",
-        "7933",
-        "7921",
-        "7913",
-        "7919",
-        "7899",
-        "7887",
-        "7889",
-        "7840",
-        "7832",
-        "7831",
-        "7826",
-        "7822",
-        "7823",
-        "7801",
-        "7802",
-        "7804",
-        "7805",
-        "7808",
-        "7787",
-        "7779",
-        "7767",
-        "8371",
-        "7757",
-        "7759",
-        "7756",
-        "7754",
-        "8569",
-        "7750",
-        "7736",
-        "7735",
-        "7729",
-        "7717",
-        "7701",
-        "7682",
-        "7669",
-        "7650",
-        "7653",
-        "7654",
-        "7657",
-        "7647",
-        "7641",
-        "7642",
-        "7644",
-        "7645",
-        "7598",
-        "7567",
-        "7573",
-        "7563",
-        "7551",
-        "7555",
-        "7546",
-        "7547",
-        "7543",
-        "7544",
-        "7529",
-        "7532",
-        "7536",
-        "8194",
-        "7525",
-        "8384",
-        "7516",
-        "8011",
-        "8289",
-        "7510",
-        "7502",
-        "7497",
-        "7486",
-        "7487",
-        "7489",
-        "7490",
-        "8397",
-        "7470",
-        "7453",
-        "7449",
-        "7436",
-        "7438",
-        "8252",
-        "7423",
-        "7415",
-        "7419",
-        "7420",
-        "8366",
-        "7403",
-        "7404",
-        "7406",
-        "7411"
-      ],
-      "leyes_copatrocinio": 16,
-      "efectividad_ley": {
-        "autor": {
-          "proyectos": 19,
-          "leyes": 4,
-          "tasa": 21.1,
-          "esperadas": 2.05,
-          "indice": 155,
-          "evidencia": "alta"
-        },
-        "copat": {
-          "proyectos": 106,
-          "leyes": 16,
-          "tasa": 15.1,
-          "esperadas": 19.41,
-          "indice": 84,
-          "evidencia": "alta"
-        }
-      },
-      "temas_autor": {
-        "Justicia, crimen y seguridad": 7,
-        "Gobierno y administración pública": 6,
-        "Macroeconomía y finanzas públicas": 3,
-        "Cultura, deporte y patrimonio": 2,
-        "Derechos civiles e igualdad": 2
-      },
-      "aliados": [
-        {
-          "nombre": "Miguel Ángel Campos",
-          "partido": "Coalición Vamos",
-          "proyectos": 86
-        },
-        {
-          "nombre": "Jorge Bloise Iglesias",
-          "partido": "Coalición Vamos",
-          "proyectos": 80
-        },
-        {
-          "nombre": "Lenin Alberto Ulate",
-          "partido": "Coalición Vamos",
-          "proyectos": 69
-        },
-        {
-          "nombre": "Roberto Zuñiga",
-          "partido": "Coalición Vamos",
-          "proyectos": 68
-        },
-        {
-          "nombre": "Luis Duke",
-          "partido": "Coalición Vamos",
-          "proyectos": 66
-        },
-        {
-          "nombre": "Janine Prado",
-          "partido": "Coalición Vamos",
-          "proyectos": 65
-        }
-      ],
-      "transversalidad": 94.3,
-      "transversalidad_esperada": 97.1
     },
     {
       "nombre": "Marcos Castillero",
@@ -4793,387 +5156,6 @@
       ],
       "transversalidad": 87.6,
       "transversalidad_esperada": 82.9
-    },
-    {
-      "nombre": "Janine Prado",
-      "partido": "Coalición Vamos",
-      "circuito": "9-1",
-      "provincia": "Veraguas",
-      "suplente": "Francisco Jaen",
-      "foto": "https://espaciocivico.org/api/drive-image/1M6i3K-1YCPExJixXNfk58EXAPV9nTCwP",
-      "perfil": "https://espaciocivico.org/diputados/janine-prado",
-      "slug": "janine-prado",
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/janine-prado",
-      "planilla_texto": "B/. 6,750",
-      "planilla_valor": 6750.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 5.0,
-      "comisiones": [
-        "Asuntos Agropecuarios",
-        "Trabajo, Salud y Desarrollo Social"
-      ],
-      "comisiones_cantidad": 2,
-      "proyectos": 18,
-      "leyes": 0,
-      "co_patrocinios": 151,
-      "proyectos_suplente": 0,
-      "etapas": {
-        "Primer Debate": 6,
-        "Preliminar": 1,
-        "Retirado por proponente": 2,
-        "Segundo Debate": 4,
-        "Negado": 2,
-        "Archivado": 2,
-        "Enviado a subcomisión para analisis": 1
-      },
-      "leyes_detalle": [],
-      "proyectos_detalle": [
-        {
-          "ficha": "8610",
-          "titulo": "QUE RECONOCE EL FESTIVAL INTERNACIONAL DE DEGUSTACION A BENEFICIO DE LA ASOCIACION NACIONAL CONTRA EL CANCER CAPITULO DE SANTIAGO EN LA PROVINCIA DE VERAGUAS, CREA SU PATRONATO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "17-09-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8551",
-          "titulo": "QUE FORTALECE LA RECUPERACION DE ACTIVOS PROVENIENTES DE DELITOS CONTRA LA ADMINISTRACION PUBLICA, ESTABLECE TECNICAS ESPECIALES DE INVESTIGACION PATRIMONIAL Y COOPERACION INTERNACIONAL PARA SU RECUPERACION, MODIFICA EL CODIGO PENAL, EL CODIGO PROCESAL PENAL Y LA LEY 23 DE 2015, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "17-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8539",
-          "titulo": "QUE RECONOCE EL FESTIVAL INTERNACIONAL DE DEGUSTACION A BENEFICIO DE LA ASOCIACION NACIONAL CONTRA EL CANCER CAPITULO DE SANTIAGO EN LA PROVINCIA DE VERAGUAS, CREA SU PATRONATO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "12-08-2026",
-          "etapa": "Retirado por proponente"
-        },
-        {
-          "ficha": "8437",
-          "titulo": "QUE REGULA EL NOMBRAMIENTO EN LOS CARGOS DE DIRECTORES REGIONALES, DIRECTORES INSTITUCIONALES Y DIRECTORES MEDICOS EN HOSPITALES PUBLICOS DEL MINISTERIO DE SALUD, CENTROS DE SALUD Y AFINES DE LA CAJA DE SEGURO SOCIAL, MEDIATE CONCURSO PUBLICO DE MERITOS Y CREDENCIALES",
-          "fecha": "09-07-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8333",
-          "titulo": "QUE MODIFICA LA LEY 46 DE 2013, GENERAL DE ADOPCIONES DE LA REPUBLICA DE PANAMA Y DICTA OTRAS DISPOSICIONES.",
-          "fecha": "16-03-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8186",
-          "titulo": "QUE ESTABLECE EL USO DE DISPOSITIVOS DE MONITOREO ELECTRONICO COMO MEDIDA DE PROTECCION A LAS VICTIMAS DE DELITOS DE VIOLENCIA DOMESTICA, DELITOS CONTRA LA LIBERTAD SEXUAL, MALTRATO A PERSONAS MENORES DE EDAD, LESIONES PERSONALES Y TRATA DE PERSONAS, ASI COMO EN LOS DELITOS DONDE SE PUEDA VER AFECTADA LA SEGURIDAD PERSONAL DE LA VICTIMA",
-          "fecha": "21-10-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8167",
-          "titulo": "QUE MODIFICA LA LEY 24 DE 2006, QUE DECLARA DE ORDEN PÚBLICO Y DE INTERÉS SOCIAL LAS ACTIVIDADES DE REGULACIÓN Y TITULACIÓN MASIVA DE TIERRAS QUE EJECUTA EL ESTADO Y ADOPTA OTRAS DISPOSICIONES",
-          "fecha": "14-10-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8142",
-          "titulo": "QUE HACE DE ACCESO PUBLICO LA LISTA DE PERSONAS QUE CONTRATAN CON EL ESTADO Y MODIFICA LA LEY 22 DE 2006",
-          "fecha": "30-09-2025",
-          "etapa": "Negado"
-        },
-        {
-          "ficha": "8006",
-          "titulo": "QUE PROHIBE EL CULTO A LA PERSONALIDAD DE POLITICOS Y EMPRESARIOS EN LA REPUBLICA DE PANAMA",
-          "fecha": "12-08-2025",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7977",
-          "titulo": "QUE MODIFICA LA LEY 86 DE 18 DE NOVIEMBRE DE 2010, QUE CREA EL PROGRAMA ESPECIAL DE ASISTENCIA ECONÓMICA PARA LOS ADULTOS MAYORES DE SETENTA AÑOS O MÁS SIN JUBILACIÓN NI PENSIÓN, EN CONDICIONES DE RIESGO SOCIAL, VULNERABILIDAD, MARGINACIÓN O POBREZA, Y SUBROGA LA LEY 44 DE 2009",
-          "fecha": "31-07-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7913",
-          "titulo": "POR EL CUAL SE DEFINE EL DELITO POLITICO EN LA LEGISLACION PANAMEÑA",
-          "fecha": "09-07-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7891",
-          "titulo": "QUE INCREMENTA LA PENA A LOS FUNCIONARIOS PUBLICOS QUE COBRAN Y NO TRABAJAN Y SANCIONA CON PENA DE PRISION A LOS SERVIDORES PUBLICOS QUE REALICEN DICHOS NOMBRAMIENTOS",
-          "fecha": "02-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7751",
-          "titulo": "QUE MODIFICA EL ARTICULO 61 DEL TEXTO UNICO DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
-          "fecha": "15-01-2025",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7704",
-          "titulo": "QUE PROTEGE LAS ROMPIENTES DE LAS OLAS ADECUADAS PARA LA PRACTICA DEPORTIVA Y ESTABLECE EL REGIMEN PARA LA CREACION DE SANTUARIOS DE OLAS EN PANAMA",
-          "fecha": "16-10-2024",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7698",
-          "titulo": "QUE MODERNIZA LA CARRERA DIPLOMATICA Y CONSULAR, Y FOMENTA LA PROFESIONALIZACION DE LOS FUNCIONARIOS QUE LA INTEGRAN Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "15-10-2024",
-          "etapa": "Negado"
-        },
-        {
-          "ficha": "7652",
-          "titulo": "QUE SUBROGA DISPOSICIONES DE LA LEY 46 DE 2013, GENERAL DE ADOPCIONES DE LA REPUBLICA DE PANAMA",
-          "fecha": "24-09-2024",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7536",
-          "titulo": "QUE ESTABLECE LA PROTECCION DE LA INTEGRIDAD E INDEMNIDAD SEXUAL DE LAS PERSONAS MENORES DE EDAD Y MODIFICA EL CODIGO PENAL, EL CODIGO PROCESAL PENAL Y LA LEY 69 DE 2007",
-          "fecha": "13-08-2024",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7433",
-          "titulo": "QUE INCREMENTA LA PENA A LOS FUNCIONARIOS PUBLICOS QUE COBRAN Y NO TRABAJAN Y SANCIONA CON PENA DE PRISION A LOS SERVIDORES PUBLICOS QUE REALICEN DICHOS NOMBRAMIENTOS",
-          "fecha": "08-07-2024",
-          "etapa": "Retirado por proponente"
-        }
-      ],
-      "participaciones": [
-        "8642",
-        "8644",
-        "8637",
-        "8610",
-        "8590",
-        "8577",
-        "8584",
-        "8550",
-        "8551",
-        "8554",
-        "8539",
-        "8462",
-        "8464",
-        "8465",
-        "8456",
-        "8454",
-        "8444",
-        "8433",
-        "8437",
-        "8417",
-        "8421",
-        "8422",
-        "8388",
-        "8373",
-        "8377",
-        "8350",
-        "8351",
-        "8335",
-        "8337",
-        "8333",
-        "8307",
-        "8300",
-        "8301",
-        "8296",
-        "8280",
-        "8271",
-        "8227",
-        "8218",
-        "8220",
-        "8213",
-        "8216",
-        "8203",
-        "8196",
-        "8186",
-        "8167",
-        "8168",
-        "8161",
-        "8156",
-        "8142",
-        "8135",
-        "8104",
-        "8084",
-        "8059",
-        "8063",
-        "8058",
-        "8041",
-        "8042",
-        "8047",
-        "8050",
-        "8034",
-        "8030",
-        "8014",
-        "8020",
-        "8022",
-        "8024",
-        "8008",
-        "8006",
-        "7998",
-        "7992",
-        "7995",
-        "7976",
-        "7977",
-        "7967",
-        "7968",
-        "7933",
-        "7923",
-        "7924",
-        "7925",
-        "7926",
-        "7913",
-        "7910",
-        "7898",
-        "7899",
-        "7900",
-        "7885",
-        "7891",
-        "7887",
-        "7889",
-        "7840",
-        "7838",
-        "7837",
-        "7831",
-        "7826",
-        "7824",
-        "8396",
-        "7801",
-        "7804",
-        "7805",
-        "7779",
-        "7757",
-        "7759",
-        "7756",
-        "7754",
-        "8569",
-        "7748",
-        "7751",
-        "7738",
-        "7735",
-        "7729",
-        "7731",
-        "7717",
-        "7714",
-        "7704",
-        "7705",
-        "7698",
-        "7669",
-        "7650",
-        "7652",
-        "7653",
-        "7654",
-        "7657",
-        "7647",
-        "7641",
-        "7642",
-        "7607",
-        "8265",
-        "7571",
-        "7573",
-        "7574",
-        "7551",
-        "7554",
-        "7546",
-        "7547",
-        "7538",
-        "7540",
-        "7543",
-        "7544",
-        "7529",
-        "7531",
-        "7535",
-        "7536",
-        "8194",
-        "7527",
-        "7516",
-        "8011",
-        "7508",
-        "7502",
-        "7497",
-        "7498",
-        "7499",
-        "7489",
-        "7471",
-        "7453",
-        "8146",
-        "7449",
-        "7436",
-        "7437",
-        "7438",
-        "7433",
-        "8252",
-        "7423",
-        "7424",
-        "7415",
-        "8366",
-        "7404",
-        "7405",
-        "7411",
-        "7412",
-        "7776"
-      ],
-      "leyes_copatrocinio": 20,
-      "efectividad_ley": {
-        "autor": {
-          "proyectos": 18,
-          "leyes": 0,
-          "tasa": 0.0,
-          "esperadas": 1.8,
-          "indice": 46,
-          "evidencia": "media"
-        },
-        "copat": {
-          "proyectos": 151,
-          "leyes": 20,
-          "tasa": 13.2,
-          "esperadas": 22.08,
-          "indice": 91,
-          "evidencia": "alta"
-        }
-      },
-      "temas_autor": {
-        "Gobierno y administración pública": 8,
-        "Justicia, crimen y seguridad": 6,
-        "Bienestar social y seguridad social": 3,
-        "Cultura, deporte y patrimonio": 3,
-        "Derechos civiles e igualdad": 3
-      },
-      "aliados": [
-        {
-          "nombre": "Miguel Ángel Campos",
-          "partido": "Coalición Vamos",
-          "proyectos": 143
-        },
-        {
-          "nombre": "Lenin Alberto Ulate",
-          "partido": "Coalición Vamos",
-          "proyectos": 105
-        },
-        {
-          "nombre": "Jorge Bloise Iglesias",
-          "partido": "Coalición Vamos",
-          "proyectos": 103
-        },
-        {
-          "nombre": "Luis Duke",
-          "partido": "Coalición Vamos",
-          "proyectos": 98
-        },
-        {
-          "nombre": "Yamireliz Chong",
-          "partido": "Coalición Vamos",
-          "proyectos": 98
-        },
-        {
-          "nombre": "Roberto Zuñiga",
-          "partido": "Coalición Vamos",
-          "proyectos": 96
-        }
-      ],
-      "transversalidad": 45.6,
-      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Jhonatan Vega",
@@ -5974,6 +5956,359 @@
       ],
       "transversalidad": 74.7,
       "transversalidad_esperada": 82.9
+    },
+    {
+      "nombre": "Jorge González",
+      "partido": "Coalición Vamos",
+      "circuito": "8-5",
+      "provincia": "Panamá",
+      "suplente": "Iveet Vargas Batista",
+      "foto": "https://espaciocivico.org/api/drive-image/1M5jz4Dz0AgT_nZJg5qoqI4-O3zY0podR",
+      "perfil": "https://espaciocivico.org/diputados/jorge-gonzalez",
+      "slug": "jorge-gonzalez",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-5",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-gonzalez",
+      "planilla_texto": "B/. 13,400",
+      "planilla_valor": 13400.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comercio y Asuntos Económicos"
+      ],
+      "comisiones_cantidad": 1,
+      "proyectos": 17,
+      "leyes": 1,
+      "co_patrocinios": 125,
+      "proyectos_suplente": 1,
+      "etapas": {
+        "Preliminar": 6,
+        "Primer Debate": 3,
+        "Archivado": 2,
+        "Enviado a subcomisión para analisis": 3,
+        "Ley": 1,
+        "Tercer Debate(Objetado)": 1,
+        "Segundo Debate": 1
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "7779",
+          "titulo": "QUE ESTABLECE MEDIDAS EN LA SEÑALIZACION VIAL EN OBRAS PUBLICAS EN LA REPUBLICA DE PANAMA",
+          "fecha": "03-02-2025"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8568",
+          "titulo": "QUE REGULA EL COBRO DE DIETAS Y PROMUEVE BUENAS PRACTICAS EN LAS JUNTAS DIRECTIVAS DE EMPRESAS ESTATALES, EMPRESAS MIXTAS, DIRECCIONES AUTONOMAS Y SEMIAUTONOMAS DE LA REPUBLICA DE PANAMA",
+          "fecha": "27-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8424",
+          "titulo": "QUE ADICIONA DISPOSICIONES AL CODIGO PENAL, MODIFICA LA LEY 40 DE 1999, SOBRE EL REGIMEN ESPECIAL DE RESPONSABILIDAD PENAL PARA LA ADOLESCENCIA, Y EL CODIGO DE LA FAMILIA, PARA FORTALECER LA REPARACION INTEGRAL DE DAÑOS PATRIMONIALES DERIVADOS DE HECHOS PUNIBLES",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8426",
+          "titulo": "QUE MODIFICA ARTICULOS DEL CODIGO PENAL, PARA FORTALECER EL CUMPLIMIENTO DE PENAS SUSTITUTIVAS, LA REPARACION PATRIMONIAL DEL ESTADO Y EL REGIMEN APLICABLE AL DELITO DE ENRIQUECIMIENTO INJUSTIFICADO.",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8427",
+          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8428",
+          "titulo": "QUE ADICIONA UN CAPITULO XII AL TITULO IX DEL LIBRO SEGUNDO DEL CODIGO PENAL PARA TIPIFICAR EL USO ILICITO DE SISTEMAS NO TRIPULADOS CON FINES DELICTIVOS Y ESTABLECE MEDIDAS PARA FORTALECER SU IDENTIFICACION E INVESTIGACION.",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8429",
+          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
+          "fecha": "09-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8430",
+          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
+          "fecha": "09-07-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8096",
+          "titulo": "QUE ESTABLECE EL REGIMEN NOTARIAL EN LA REPUBLICA DE PANAMA",
+          "fecha": "09-09-2025",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "8084",
+          "titulo": "QUE ESTABLECE MEDIDAS PARA LA DETECCION TEMPRANA, ATENCION INTEGRAL, EDUCACION E INVESTIGACION SOBRE LA INSUFICIENCIA OVARICA PRIMARIA (IOP) EN LA REPUBLICA DE PANAMA",
+          "fecha": "03-09-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8059",
+          "titulo": "QUE MODIFICA LA LEY 49 DEL 4 DE DICIEMBRE DE 1984, QUE DICTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
+          "fecha": "27-08-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7910",
+          "titulo": "QUE MODIFICA LA LEY N° 39 DE 14 DE JUNIO DE 2012, CREA UN PROGRAMA ESPECIAL DE ASISTENCIA ECONOMICA PARA LAS PERSONAS CON DISCAPACIDAD SEVERA EN CONDICIÓN DE DEPENDENCIA Y POBREZA EXTREMA",
+          "fecha": "07-07-2025",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7779",
+          "titulo": "QUE ESTABLECE MEDIDAS EN LA SEÑALIZACION VIAL EN OBRAS PUBLICAS EN LA REPUBLICA DE PANAMA",
+          "fecha": "03-02-2025",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7754",
+          "titulo": "QUE MODIFICA LA LEY 42 DE 1999 QUE ESTABLECE LA EQUIPARACION DE OPORTUNIDADES PARA LAS PERSONAS CON DISCAPACIDAD Y DICTA OTRAS DISPOSICIONES.",
+          "fecha": "20-01-2025",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "8569",
+          "titulo": "QUE ESTABLECE EL PROCESO SUCESORIO SIMPLIFICADO ANTE NOTARIO",
+          "fecha": "20-01-2025",
+          "etapa": "Tercer Debate(Objetado)"
+        },
+        {
+          "ficha": "7736",
+          "titulo": "QUE MODIFICA LA LEY 6 DEL 16 DE JUNIO DE 1987 SOBRE BENEFICIOS A JUBILADOS, PENSIONADOS Y TERCERA EDAD Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "13-01-2025",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "7705",
+          "titulo": "QUE PRESERVA LAS ROMPIENTES APROPIADAS PARA LA PRACTICA DEPORTIVA",
+          "fecha": "16-10-2024",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7598",
+          "titulo": "QUE MODIFICA LA LEY 49 DEL 4 DE DICIEMBRE DE 1984, QUE DICTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
+          "fecha": "03-09-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        }
+      ],
+      "participaciones": [
+        "8642",
+        "8643",
+        "8644",
+        "8637",
+        "8630",
+        "8568",
+        "8559",
+        "8551",
+        "8539",
+        "8540",
+        "8479",
+        "8454",
+        "8448",
+        "8424",
+        "8426",
+        "8427",
+        "8428",
+        "8429",
+        "8430",
+        "8422",
+        "8414",
+        "8373",
+        "8377",
+        "8351",
+        "8341",
+        "8334",
+        "8300",
+        "8280",
+        "8271",
+        "8227",
+        "8217",
+        "8214",
+        "8205",
+        "8206",
+        "8196",
+        "8188",
+        "8186",
+        "8167",
+        "8168",
+        "8156",
+        "8124",
+        "8107",
+        "8108",
+        "8110",
+        "8096",
+        "8084",
+        "8075",
+        "8059",
+        "8062",
+        "8063",
+        "8055",
+        "8058",
+        "8037",
+        "8034",
+        "8014",
+        "8020",
+        "8024",
+        "8010",
+        "7998",
+        "7967",
+        "7944",
+        "7933",
+        "7924",
+        "7925",
+        "7926",
+        "7913",
+        "7918",
+        "7919",
+        "7910",
+        "7891",
+        "7887",
+        "7889",
+        "7831",
+        "7825",
+        "7826",
+        "7823",
+        "7786",
+        "7787",
+        "7779",
+        "7759",
+        "7756",
+        "7754",
+        "8569",
+        "7748",
+        "7750",
+        "7740",
+        "7736",
+        "7738",
+        "7731",
+        "7704",
+        "7705",
+        "7682",
+        "7650",
+        "7652",
+        "7657",
+        "7647",
+        "7641",
+        "7642",
+        "7607",
+        "7598",
+        "7573",
+        "7550",
+        "7551",
+        "7554",
+        "7544",
+        "7529",
+        "8194",
+        "7525",
+        "7527",
+        "7516",
+        "8011",
+        "8289",
+        "7508",
+        "7496",
+        "7497",
+        "7498",
+        "7486",
+        "7487",
+        "7490",
+        "7491",
+        "8397",
+        "7470",
+        "7471",
+        "7463",
+        "8146",
+        "7445",
+        "7447",
+        "7449",
+        "7436",
+        "7437",
+        "7438",
+        "8252",
+        "7421",
+        "7423",
+        "7424",
+        "7415",
+        "8366",
+        "7404",
+        "7405",
+        "7406",
+        "7410",
+        "7412"
+      ],
+      "leyes_copatrocinio": 16,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 17,
+          "leyes": 1,
+          "tasa": 5.9,
+          "esperadas": 1.52,
+          "indice": 83,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 125,
+          "leyes": 16,
+          "tasa": 12.8,
+          "esperadas": 19.07,
+          "indice": 85,
+          "evidencia": "alta"
+        }
+      },
+      "temas_autor": {
+        "Justicia, crimen y seguridad": 7,
+        "Gobierno y administración pública": 4,
+        "Bienestar social y seguridad social": 2,
+        "Ciencia, tecnología y comunicaciones": 2,
+        "Derechos civiles e igualdad": 2
+      },
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 108
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 105
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 86
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 83
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 81
+        }
+      ],
+      "transversalidad": 47.0,
+      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Walkiria Chandler",
@@ -7397,345 +7732,6 @@
       ],
       "transversalidad": 78.6,
       "transversalidad_esperada": 82.9
-    },
-    {
-      "nombre": "Jorge González",
-      "partido": "Coalición Vamos",
-      "circuito": "8-5",
-      "provincia": "Panamá",
-      "suplente": "Iveet Vargas Batista",
-      "foto": "https://espaciocivico.org/api/drive-image/1M5jz4Dz0AgT_nZJg5qoqI4-O3zY0podR",
-      "perfil": "https://espaciocivico.org/diputados/jorge-gonzalez",
-      "slug": "jorge-gonzalez",
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-5",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/jorge-gonzalez",
-      "planilla_texto": "B/. 13,400",
-      "planilla_valor": 13400.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": null,
-      "comisiones": [
-        "Comercio y Asuntos Económicos"
-      ],
-      "comisiones_cantidad": 1,
-      "proyectos": 15,
-      "leyes": 1,
-      "co_patrocinios": 127,
-      "proyectos_suplente": 1,
-      "etapas": {
-        "Preliminar": 6,
-        "Primer Debate": 3,
-        "Archivado": 2,
-        "Enviado a subcomisión para analisis": 3,
-        "Ley": 1
-      },
-      "leyes_detalle": [
-        {
-          "ficha": "7779",
-          "titulo": "QUE ESTABLECE MEDIDAS EN LA SEÑALIZACION VIAL EN OBRAS PUBLICAS EN LA REPUBLICA DE PANAMA",
-          "fecha": "03-02-2025"
-        }
-      ],
-      "proyectos_detalle": [
-        {
-          "ficha": "8568",
-          "titulo": "QUE REGULA EL COBRO DE DIETAS Y PROMUEVE BUENAS PRACTICAS EN LAS JUNTAS DIRECTIVAS DE EMPRESAS ESTATALES, EMPRESAS MIXTAS, DIRECCIONES AUTONOMAS Y SEMIAUTONOMAS DE LA REPUBLICA DE PANAMA",
-          "fecha": "27-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8424",
-          "titulo": "QUE ADICIONA DISPOSICIONES AL CODIGO PENAL, MODIFICA LA LEY 40 DE 1999, SOBRE EL REGIMEN ESPECIAL DE RESPONSABILIDAD PENAL PARA LA ADOLESCENCIA, Y EL CODIGO DE LA FAMILIA, PARA FORTALECER LA REPARACION INTEGRAL DE DAÑOS PATRIMONIALES DERIVADOS DE HECHOS PUNIBLES",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8426",
-          "titulo": "QUE MODIFICA ARTICULOS DEL CODIGO PENAL, PARA FORTALECER EL CUMPLIMIENTO DE PENAS SUSTITUTIVAS, LA REPARACION PATRIMONIAL DEL ESTADO Y EL REGIMEN APLICABLE AL DELITO DE ENRIQUECIMIENTO INJUSTIFICADO.",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8427",
-          "titulo": "QUE ESTABLECE LA DECLARATORIA OFICIAL DE AREAS DE ALTA INCIDENCIA DELICTIVA PARA LA PREVENCION DE ZONAS ROJAS Y REGULA LA COORDINACION INTERINSTITUCIONAL OBLIGATORIA PARA LA EJECUCION DE PLANES INTEGRALES FOCALIZADOS.",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8428",
-          "titulo": "QUE ADICIONA UN CAPITULO XII AL TITULO IX DEL LIBRO SEGUNDO DEL CODIGO PENAL PARA TIPIFICAR EL USO ILICITO DE SISTEMAS NO TRIPULADOS CON FINES DELICTIVOS Y ESTABLECE MEDIDAS PARA FORTALECER SU IDENTIFICACION E INVESTIGACION.",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8429",
-          "titulo": "QUE MODIFICA EL CODIGO PENAL RELATIVO AL DELITO DE EXTORSION COMETIDO MEDIANTE TECNOLOGIAS DIGITALES O INTELIGENCIA ARTIFICIAL",
-          "fecha": "09-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8430",
-          "titulo": "QUE ESTABLECE EL MARCO LEGAL DE LA HUMANIZACION DE LA ATENCION EN LA SALUD PUBLICA Y SE DICTAN OTRAS DISPOSICIONES",
-          "fecha": "09-07-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8096",
-          "titulo": "QUE ESTABLECE EL REGIMEN NOTARIAL EN LA REPUBLICA DE PANAMA",
-          "fecha": "09-09-2025",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "8084",
-          "titulo": "QUE ESTABLECE MEDIDAS PARA LA DETECCION TEMPRANA, ATENCION INTEGRAL, EDUCACION E INVESTIGACION SOBRE LA INSUFICIENCIA OVARICA PRIMARIA (IOP) EN LA REPUBLICA DE PANAMA",
-          "fecha": "03-09-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8059",
-          "titulo": "QUE MODIFICA LA LEY 49 DEL 4 DE DICIEMBRE DE 1984, QUE DICTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
-          "fecha": "27-08-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7910",
-          "titulo": "QUE MODIFICA LA LEY N° 39 DE 14 DE JUNIO DE 2012, CREA UN PROGRAMA ESPECIAL DE ASISTENCIA ECONOMICA PARA LAS PERSONAS CON DISCAPACIDAD SEVERA EN CONDICIÓN DE DEPENDENCIA Y POBREZA EXTREMA",
-          "fecha": "07-07-2025",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7779",
-          "titulo": "QUE ESTABLECE MEDIDAS EN LA SEÑALIZACION VIAL EN OBRAS PUBLICAS EN LA REPUBLICA DE PANAMA",
-          "fecha": "03-02-2025",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7754",
-          "titulo": "QUE MODIFICA LA LEY 42 DE 1999 QUE ESTABLECE LA EQUIPARACION DE OPORTUNIDADES PARA LAS PERSONAS CON DISCAPACIDAD Y DICTA OTRAS DISPOSICIONES.",
-          "fecha": "20-01-2025",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7736",
-          "titulo": "QUE MODIFICA LA LEY 6 DEL 16 DE JUNIO DE 1987 SOBRE BENEFICIOS A JUBILADOS, PENSIONADOS Y TERCERA EDAD Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "13-01-2025",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7598",
-          "titulo": "QUE MODIFICA LA LEY 49 DEL 4 DE DICIEMBRE DE 1984, QUE DICTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
-          "fecha": "03-09-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        }
-      ],
-      "participaciones": [
-        "8642",
-        "8643",
-        "8644",
-        "8637",
-        "8630",
-        "8568",
-        "8559",
-        "8551",
-        "8539",
-        "8540",
-        "8479",
-        "8454",
-        "8448",
-        "8424",
-        "8426",
-        "8427",
-        "8428",
-        "8429",
-        "8430",
-        "8422",
-        "8414",
-        "8373",
-        "8377",
-        "8351",
-        "8341",
-        "8334",
-        "8300",
-        "8280",
-        "8271",
-        "8227",
-        "8217",
-        "8214",
-        "8205",
-        "8206",
-        "8196",
-        "8188",
-        "8186",
-        "8167",
-        "8168",
-        "8156",
-        "8124",
-        "8107",
-        "8108",
-        "8110",
-        "8096",
-        "8084",
-        "8075",
-        "8059",
-        "8062",
-        "8063",
-        "8055",
-        "8058",
-        "8037",
-        "8034",
-        "8014",
-        "8020",
-        "8024",
-        "8010",
-        "7998",
-        "7967",
-        "7944",
-        "7933",
-        "7924",
-        "7925",
-        "7926",
-        "7913",
-        "7918",
-        "7919",
-        "7910",
-        "7891",
-        "7887",
-        "7889",
-        "7831",
-        "7825",
-        "7826",
-        "7823",
-        "7786",
-        "7787",
-        "7779",
-        "7759",
-        "7756",
-        "7754",
-        "8569",
-        "7748",
-        "7750",
-        "7740",
-        "7736",
-        "7738",
-        "7731",
-        "7704",
-        "7705",
-        "7682",
-        "7650",
-        "7652",
-        "7657",
-        "7647",
-        "7641",
-        "7642",
-        "7607",
-        "7598",
-        "7573",
-        "7550",
-        "7551",
-        "7554",
-        "7544",
-        "7529",
-        "8194",
-        "7525",
-        "7527",
-        "7516",
-        "8011",
-        "8289",
-        "7508",
-        "7496",
-        "7497",
-        "7498",
-        "7486",
-        "7487",
-        "7490",
-        "7491",
-        "8397",
-        "7470",
-        "7471",
-        "7463",
-        "8146",
-        "7445",
-        "7447",
-        "7449",
-        "7436",
-        "7437",
-        "7438",
-        "8252",
-        "7421",
-        "7423",
-        "7424",
-        "7415",
-        "8366",
-        "7404",
-        "7405",
-        "7406",
-        "7410",
-        "7412"
-      ],
-      "leyes_copatrocinio": 16,
-      "efectividad_ley": {
-        "autor": {
-          "proyectos": 15,
-          "leyes": 1,
-          "tasa": 6.7,
-          "esperadas": 1.14,
-          "indice": 95,
-          "evidencia": "media"
-        },
-        "copat": {
-          "proyectos": 127,
-          "leyes": 16,
-          "tasa": 12.6,
-          "esperadas": 19.55,
-          "indice": 83,
-          "evidencia": "alta"
-        }
-      },
-      "temas_autor": {
-        "Justicia, crimen y seguridad": 6,
-        "Gobierno y administración pública": 4,
-        "Bienestar social y seguridad social": 2,
-        "Ciencia, tecnología y comunicaciones": 2,
-        "Derechos civiles e igualdad": 2
-      },
-      "aliados": [
-        {
-          "nombre": "Miguel Ángel Campos",
-          "partido": "Coalición Vamos",
-          "proyectos": 108
-        },
-        {
-          "nombre": "Lenin Alberto Ulate",
-          "partido": "Coalición Vamos",
-          "proyectos": 105
-        },
-        {
-          "nombre": "Roberto Zuñiga",
-          "partido": "Coalición Vamos",
-          "proyectos": 86
-        },
-        {
-          "nombre": "Janine Prado",
-          "partido": "Coalición Vamos",
-          "proyectos": 83
-        },
-        {
-          "nombre": "Luis Duke",
-          "partido": "Coalición Vamos",
-          "proyectos": 83
-        },
-        {
-          "nombre": "Jorge Bloise Iglesias",
-          "partido": "Coalición Vamos",
-          "proyectos": 81
-        }
-      ],
-      "transversalidad": 47.0,
-      "transversalidad_esperada": 80.0
     },
     {
       "nombre": "Luis Camacho Castro",
@@ -9454,397 +9450,305 @@
       "transversalidad_esperada": 90.0
     },
     {
-      "nombre": "Miguel Ángel Campos",
+      "nombre": "Yamireliz Chong",
       "partido": "Coalición Vamos",
-      "circuito": "9-1",
-      "provincia": "Veraguas",
-      "suplente": "Sara Itzela Gómez Castillo",
-      "foto": "https://espaciocivico.org/api/drive-image/1hcMWMaf8IEKqoOgsfK81PBJDFKmT3BZl",
-      "perfil": "https://espaciocivico.org/diputados/miguel-angel-campos",
-      "slug": "miguel-angel-campos",
-      "provincia_monitoreo": "Veraguas",
-      "circuito_monitoreo": "9-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/miguel-angel-campos",
-      "planilla_texto": "B/. 11,300",
-      "planilla_valor": 11300.0,
+      "circuito": "3-1",
+      "provincia": "Colón",
+      "suplente": "Moises Abdul Wilson",
+      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
+      "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
+      "slug": "yamireliz-chong",
+      "provincia_monitoreo": "Colón",
+      "circuito_monitoreo": "3-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/yamireliz-chong",
+      "planilla_texto": "B/. 9,100",
+      "planilla_valor": 9100.0,
       "asistencia_pleno": 5.0,
       "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": null,
+      "viajes_ponderacion": 1.0,
       "declaracion_intereses": 5.0,
       "declaracion_patrimonio": 5.0,
-      "calificacion": null,
+      "calificacion": 4.8,
       "comisiones": [
-        "Comunicación y Transporte",
-        "Relaciones Exteriores"
+        "Comercio y Asuntos Económicos",
+        "Presupuesto"
       ],
       "comisiones_cantidad": 2,
-      "proyectos": 11,
-      "leyes": 2,
-      "co_patrocinios": 204,
+      "proyectos": 12,
+      "leyes": 0,
+      "co_patrocinios": 115,
       "proyectos_suplente": 0,
       "etapas": {
-        "Segundo Debate": 5,
-        "Primer Debate": 2,
+        "Primer Debate": 4,
+        "Preliminar": 2,
+        "Segundo Debate": 3,
+        "Objetado por Ejecutivo": 1,
         "Enviado a subcomisión para analisis": 1,
-        "Ley": 2,
         "Archivado": 1
       },
-      "leyes_detalle": [
-        {
-          "ficha": "7544",
-          "titulo": "QUE MODIFICA ARTÍCULOS DE LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES",
-          "fecha": "14-08-2024"
-        },
-        {
-          "ficha": "8011",
-          "titulo": "QUE ADICIONA CAPITULOS A LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, RELATIVOS AL PROGRAMA DE ALTO RENDIMIENTO DEPORTIVO Y DE MEDICINA APLICADA AL DEPORTE",
-          "fecha": "06-08-2024"
-        }
-      ],
+      "leyes_detalle": [],
       "proyectos_detalle": [
         {
-          "ficha": "8373",
-          "titulo": "QUE MODIFICA LA LEY 488 DEL 2025, DEL TEXTO UNICO DE LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, RELATIVOS AL PROGRAMA DE ALTO RENDIMIENTO DEPORTIVO Y DE MEDICINA APLICADA AL DEPORTE.",
-          "fecha": "13-04-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8337",
-          "titulo": "QUE CREA EL SISTEMA NACIONAL DE GESTION DEL RIESGO DE DESASTRES Y EMERGENCIAS EN LA REPUBLICA DE PANAMA.",
-          "fecha": "17-03-2026",
+          "ficha": "8607",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DE LA LEY 6 DE 3 DE FEBRERO DE 1997, QUE DICTA EL MARCO REGULATORIO E INSTITUCIONAL PARA LA PRESTACION DEL SERVICIO PUBLICO DEELECTRICIDAD",
+          "fecha": "10-09-2026",
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "8124",
-          "titulo": "QUE CREA EL ETIQUETADO FRONTAL DE ADVERTENCIA NUTRICIONAL (EFAN) PARA LA PROMOCIÓN DE DECISIONES SALUDABLES.",
-          "fecha": "18-09-2025",
+          "ficha": "8584",
+          "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
+          "fecha": "02-09-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8462",
+          "titulo": "QUE PROTEGE LA INTIMIDAD DE LAS VICTIMAS FRENTE A LA CAPTACION Y DIFUSION NO AUTORIZADA DE IMAGENES SENSIBLES, ADICIONA ARTICULOS AL CODIGO PENAL.",
+          "fecha": "21-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8465",
+          "titulo": "QUE ESTABLECE UN PROCEDIMIENTO EXCEPCIONAL PARA EL TRASPASO DE lOS SISTEMAS O PLANTAS DE TRATAMIENTO DE LAS AGUAS RESIDUALES Y MODIFICA LA LEY 77 DE 28 DE DICIEMBRE DE 2001",
+          "fecha": "21-07-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8350",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS SOBRE PROCEDIMIENTO EXCEPCIONAL DE CONTRATACION DEL TEXTO UNICO DE LA LEY 22 DE 27 DE JUNIO DE 2006, ORDENADO POR LA LEY 153 DE 2020 Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "26-03-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8292",
+          "titulo": "QUE REGULA LA PROMOCION E IMPLEMENTACION DEL HIDROGENO VERDE COMO COMBUSTIBLE EN LA REPUBLICA DE PANAMA",
+          "fecha": "12-02-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8050",
+          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 45 DE 2007, QUE DICTA NORMAS SOBRE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA Y OTRA DISPOSICION",
+          "fecha": "25-08-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7968",
+          "titulo": "QUE REGULA LAS ACTIVIDADES DE COBRANZA REALIZADAS POR LAS AGENCIAS DE COBRO Y ESTABLECE DISPOSICIONES PARA LA PROTECCION DEL DERECHO A LA INTIMIDAD DE LOS CONSUMIDORES",
+          "fecha": "28-07-2025",
+          "etapa": "Objetado por Ejecutivo"
+        },
+        {
+          "ficha": "7838",
+          "titulo": "QUE CREA INCENTIVOS ECONOMICOS PARA FACILITAR LA ADQUISICION DE VIVIENDAS USADAS O DE SEGUNDA MANO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "03-04-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7786",
+          "titulo": "QUE MODIFICA LA LEY 6 DE 1 DE FEBRERO DE 2006, QUE REGLAMENTA EL ORDENAMIENTO TERRITORIAL PARA EL DESARROLLO URBANO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "10-02-2025",
           "etapa": "Enviado a subcomisión para analisis"
         },
         {
-          "ficha": "8058",
-          "titulo": "QUE ESTABLECE MEDIDAS DE PROTECCION A LOS CONSUMIDORES ANTE INTERRUPCIONES EN LOS SERVICIOS DE ELECTRICIDAD Y TELECOMUNICACIONES Y DICTA OTRA DISPOSICION",
-          "fecha": "26-08-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8034",
-          "titulo": "QUE ESTABLECE EL REGIMEN DE AUTOGESTION Y SOSTENIBILIDAD ECONOMICA DE LOS COLISEOS Y ESTADIOS DE FUTBOL ADMINISTRADOS POR EL INSTITUTO PANAMEÑO DE DEPORTES (PANDEPORTES) Y DICTA OTRAS DISPOSICIONES.",
-          "fecha": "20-08-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7933",
-          "titulo": "QUE CREA EL COMITÉ NACIONAL DE INVESTIGACIÓN ANIMAL DE PANAMÁ (CNIAP) Y DICTA OTRAS DISPOSICIONES.",
-          "fecha": "15-07-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7831",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DEL CODIGO PENAL Y SE ESTABLECEN MEDIDAS CONTRA EL DELITO DE CAPTACION ILICITA DE RECURSOS FINANCIEROS DEL PUBLICO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "25-03-2025",
+          "ficha": "7497",
+          "titulo": "QUE INTEGRA A JOVENES PROFESIONALES EN EL MERCADO LABORAL",
+          "fecha": "31-07-2024",
           "etapa": "Primer Debate"
         },
         {
-          "ficha": "7544",
-          "titulo": "QUE MODIFICA ARTÍCULOS DE LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES",
-          "fecha": "14-08-2024",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "8011",
-          "titulo": "QUE ADICIONA CAPITULOS A LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, RELATIVOS AL PROGRAMA DE ALTO RENDIMIENTO DEPORTIVO Y DE MEDICINA APLICADA AL DEPORTE",
-          "fecha": "06-08-2024",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7417",
-          "titulo": "QUE MODIFICA LA LEY 1 DE 11 DE ENERO DE 1965 Y PROHIBE EL ACCESO A AUXILIOS ECONOMICOS A FUNCIONARIOS DE ALTO MANDO Y JURISDICCION, Y A SUS FAMILIARES CON PARENTESCO HASTA EL CUARTO GRADO DE CONSANGUINIDAD Y SEGUNDO DE AFINIDAD",
+          "ficha": "7420",
+          "titulo": "QUE MODIFICA LOS ARTICULOS 1550 Y 1555 DEL CODIGO JUDICIAL",
           "fecha": "03-07-2024",
           "etapa": "Archivado"
-        },
-        {
-          "ficha": "7405",
-          "titulo": "QUE TRANSPARENTA LAS GESTIONES DE LOS SERVIDORES PUBLICOS DE ALTA JERARQUIA",
-          "fecha": "02-07-2024",
-          "etapa": "Segundo Debate"
         }
       ],
       "participaciones": [
         "8644",
-        "8603",
-        "8590",
-        "8559",
-        "8550",
+        "8607",
+        "8584",
         "8551",
-        "8554",
         "8539",
         "8540",
-        "8479",
+        "8542",
         "8462",
         "8464",
-        "8458",
-        "8451",
-        "8452",
-        "8454",
-        "8448",
+        "8465",
         "8444",
-        "8429",
-        "8430",
-        "8431",
-        "8433",
-        "8434",
-        "8435",
+        "8428",
         "8437",
         "8417",
-        "8418",
         "8421",
         "8422",
-        "8414",
-        "8388",
-        "8381",
         "8373",
         "8377",
-        "8364",
-        "8356",
         "8350",
         "8351",
-        "8341",
+        "8334",
         "8335",
         "8337",
-        "8333",
-        "8324",
-        "8307",
         "8300",
-        "8296",
-        "8293",
-        "8291",
+        "8301",
         "8292",
-        "8283",
+        "8282",
+        "8284",
         "8280",
-        "8276",
         "8271",
-        "8259",
         "8227",
-        "8222",
-        "8217",
-        "8218",
+        "8242",
         "8220",
-        "8213",
-        "8216",
+        "8214",
         "8186",
+        "8180",
         "8167",
         "8168",
-        "8161",
-        "8160",
         "8156",
-        "8135",
-        "8124",
         "8108",
         "8110",
-        "8104",
-        "8080",
         "8084",
         "8075",
+        "8062",
         "8063",
-        "8055",
-        "8056",
         "8058",
         "8041",
-        "8047",
-        "8037",
-        "8034",
+        "8050",
         "8030",
-        "8014",
-        "8020",
         "8022",
-        "8024",
         "8008",
-        "8010",
         "8006",
         "7998",
         "7992",
-        "7995",
-        "7976",
         "7977",
-        "7967",
         "7968",
-        "7940",
         "7933",
-        "7923",
-        "7924",
-        "7925",
-        "7926",
         "7912",
         "7913",
-        "7919",
         "7910",
-        "7898",
-        "7899",
-        "7900",
-        "7879",
-        "7885",
         "7891",
         "7887",
         "7889",
-        "7840",
+        "7838",
+        "7837",
         "7831",
-        "7825",
         "7826",
+        "7823",
         "7824",
         "8396",
-        "7801",
-        "7802",
-        "7804",
-        "7805",
-        "7808",
+        "7786",
         "7787",
         "7779",
-        "8371",
         "7757",
         "7759",
         "7756",
-        "8569",
         "7748",
         "7750",
         "7751",
         "7736",
-        "7738",
         "7735",
         "7729",
-        "7731",
-        "7717",
         "7714",
-        "7704",
-        "7705",
         "7698",
-        "7684",
-        "7682",
         "7669",
-        "8250",
         "7650",
-        "7652",
         "7653",
         "7654",
         "7647",
         "7641",
-        "7644",
-        "7607",
-        "7597",
-        "7598",
-        "7581",
+        "7642",
         "7573",
-        "7574",
         "7551",
-        "7555",
         "7554",
-        "8057",
         "7546",
         "7547",
         "7538",
-        "7540",
         "7543",
         "7544",
         "7529",
-        "7532",
+        "7531",
         "7536",
         "8194",
         "7525",
-        "7527",
-        "8384",
         "7516",
         "8011",
         "7508",
-        "7502",
         "7496",
         "7497",
-        "7498",
         "7499",
         "7486",
         "7487",
         "7489",
-        "7490",
         "8397",
         "7471",
-        "7461",
         "8146",
         "7449",
         "7436",
-        "7437",
         "7438",
         "8252",
-        "7421",
         "7423",
         "7424",
         "7415",
-        "7417",
         "7420",
-        "8366",
         "7404",
-        "7405",
         "7406",
-        "7410",
-        "7412",
-        "7776"
+        "7410"
       ],
-      "leyes_copatrocinio": 26,
+      "leyes_copatrocinio": 17,
       "efectividad_ley": {
         "autor": {
-          "proyectos": 11,
-          "leyes": 2,
-          "tasa": 18.2,
-          "esperadas": 1.4,
-          "indice": 121,
+          "proyectos": 12,
+          "leyes": 0,
+          "tasa": 0.0,
+          "esperadas": 1.05,
+          "indice": 59,
           "evidencia": "media"
         },
         "copat": {
-          "proyectos": 204,
-          "leyes": 26,
-          "tasa": 12.7,
-          "esperadas": 27.92,
-          "indice": 93,
+          "proyectos": 115,
+          "leyes": 17,
+          "tasa": 14.8,
+          "esperadas": 17.29,
+          "indice": 98,
           "evidencia": "alta"
         }
       },
       "temas_autor": {
-        "Cultura, deporte y patrimonio": 4,
-        "Comercio, banca y consumo": 3,
-        "Gobierno y administración pública": 2,
-        "Ambiente y protección animal": 1,
-        "Ciencia, tecnología y comunicaciones": 1
+        "Justicia, crimen y seguridad": 3,
+        "Comercio, banca y consumo": 2,
+        "Derechos civiles e igualdad": 2,
+        "Energía y minería": 2,
+        "Vivienda y desarrollo urbano": 2
       },
       "aliados": [
         {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 107
+        },
+        {
           "nombre": "Janine Prado",
           "partido": "Coalición Vamos",
-          "proyectos": 143
+          "proyectos": 98
+        },
+        {
+          "nombre": "Alexandra Brenes",
+          "partido": "Coalición Vamos",
+          "proyectos": 87
         },
         {
           "nombre": "Lenin Alberto Ulate",
           "partido": "Coalición Vamos",
-          "proyectos": 130
+          "proyectos": 87
         },
         {
           "nombre": "Jorge Bloise Iglesias",
           "partido": "Coalición Vamos",
-          "proyectos": 121
-        },
-        {
-          "nombre": "Roberto Zuñiga",
-          "partido": "Coalición Vamos",
-          "proyectos": 116
+          "proyectos": 84
         },
         {
           "nombre": "Luis Duke",
           "partido": "Coalición Vamos",
-          "proyectos": 115
-        },
-        {
-          "nombre": "Jorge González",
-          "partido": "Coalición Vamos",
-          "proyectos": 108
+          "proyectos": 81
         }
       ],
-      "transversalidad": 46.1,
+      "transversalidad": 45.0,
       "transversalidad_esperada": 80.0
     },
     {
@@ -10172,301 +10076,6 @@
       "transversalidad_esperada": 80.0
     },
     {
-      "nombre": "Yamireliz Chong",
-      "partido": "Coalición Vamos",
-      "circuito": "3-1",
-      "provincia": "Colón",
-      "suplente": "Moises Abdul Wilson",
-      "foto": "https://espaciocivico.org/img/diputados/placeholder.webp",
-      "perfil": "https://espaciocivico.org/diputados/yamireliz-chong",
-      "slug": "yamireliz-chong",
-      "provincia_monitoreo": "Colón",
-      "circuito_monitoreo": "3-1",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/yamireliz-chong",
-      "planilla_texto": "B/. 9,100",
-      "planilla_valor": 9100.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 1.0,
-      "declaracion_intereses": 5.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 4.8,
-      "comisiones": [
-        "Comercio y Asuntos Económicos",
-        "Presupuesto"
-      ],
-      "comisiones_cantidad": 2,
-      "proyectos": 11,
-      "leyes": 0,
-      "co_patrocinios": 116,
-      "proyectos_suplente": 0,
-      "etapas": {
-        "Primer Debate": 4,
-        "Preliminar": 2,
-        "Segundo Debate": 3,
-        "Objetado por Ejecutivo": 1,
-        "Enviado a subcomisión para analisis": 1
-      },
-      "leyes_detalle": [],
-      "proyectos_detalle": [
-        {
-          "ficha": "8607",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DE LA LEY 6 DE 3 DE FEBRERO DE 1997, QUE DICTA EL MARCO REGULATORIO E INSTITUCIONAL PARA LA PRESTACION DEL SERVICIO PUBLICO DEELECTRICIDAD",
-          "fecha": "10-09-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8584",
-          "titulo": "QUE MODIFICA LA LEY 285 DE 2022, SE CREAN MEDIDAS PARA LA PREVENCION DE LA CAPTACION CRIMINAL JUVENIL, SE REFORMA EL CODIGO PENAL Y SE DICTAN OTRAS DISPOSICIONES",
-          "fecha": "02-09-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8462",
-          "titulo": "QUE PROTEGE LA INTIMIDAD DE LAS VICTIMAS FRENTE A LA CAPTACION Y DIFUSION NO AUTORIZADA DE IMAGENES SENSIBLES, ADICIONA ARTICULOS AL CODIGO PENAL.",
-          "fecha": "21-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8465",
-          "titulo": "QUE ESTABLECE UN PROCEDIMIENTO EXCEPCIONAL PARA EL TRASPASO DE lOS SISTEMAS O PLANTAS DE TRATAMIENTO DE LAS AGUAS RESIDUALES Y MODIFICA LA LEY 77 DE 28 DE DICIEMBRE DE 2001",
-          "fecha": "21-07-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8350",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS SOBRE PROCEDIMIENTO EXCEPCIONAL DE CONTRATACION DEL TEXTO UNICO DE LA LEY 22 DE 27 DE JUNIO DE 2006, ORDENADO POR LA LEY 153 DE 2020 Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "26-03-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8292",
-          "titulo": "QUE REGULA LA PROMOCION E IMPLEMENTACION DEL HIDROGENO VERDE COMO COMBUSTIBLE EN LA REPUBLICA DE PANAMA",
-          "fecha": "12-02-2026",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "8050",
-          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 45 DE 2007, QUE DICTA NORMAS SOBRE PROTECCION AL CONSUMIDOR Y DEFENSA DE LA COMPETENCIA Y OTRA DISPOSICION",
-          "fecha": "25-08-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7968",
-          "titulo": "QUE REGULA LAS ACTIVIDADES DE COBRANZA REALIZADAS POR LAS AGENCIAS DE COBRO Y ESTABLECE DISPOSICIONES PARA LA PROTECCION DEL DERECHO A LA INTIMIDAD DE LOS CONSUMIDORES",
-          "fecha": "28-07-2025",
-          "etapa": "Objetado por Ejecutivo"
-        },
-        {
-          "ficha": "7838",
-          "titulo": "QUE CREA INCENTIVOS ECONOMICOS PARA FACILITAR LA ADQUISICION DE VIVIENDAS USADAS O DE SEGUNDA MANO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "03-04-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "7786",
-          "titulo": "QUE MODIFICA LA LEY 6 DE 1 DE FEBRERO DE 2006, QUE REGLAMENTA EL ORDENAMIENTO TERRITORIAL PARA EL DESARROLLO URBANO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "10-02-2025",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7497",
-          "titulo": "QUE INTEGRA A JOVENES PROFESIONALES EN EL MERCADO LABORAL",
-          "fecha": "31-07-2024",
-          "etapa": "Primer Debate"
-        }
-      ],
-      "participaciones": [
-        "8644",
-        "8607",
-        "8584",
-        "8551",
-        "8539",
-        "8540",
-        "8542",
-        "8462",
-        "8464",
-        "8465",
-        "8444",
-        "8428",
-        "8437",
-        "8417",
-        "8421",
-        "8422",
-        "8373",
-        "8377",
-        "8350",
-        "8351",
-        "8334",
-        "8335",
-        "8337",
-        "8300",
-        "8301",
-        "8292",
-        "8282",
-        "8284",
-        "8280",
-        "8271",
-        "8227",
-        "8242",
-        "8220",
-        "8214",
-        "8186",
-        "8180",
-        "8167",
-        "8168",
-        "8156",
-        "8108",
-        "8110",
-        "8084",
-        "8075",
-        "8062",
-        "8063",
-        "8058",
-        "8041",
-        "8050",
-        "8030",
-        "8022",
-        "8008",
-        "8006",
-        "7998",
-        "7992",
-        "7977",
-        "7968",
-        "7933",
-        "7912",
-        "7913",
-        "7910",
-        "7891",
-        "7887",
-        "7889",
-        "7838",
-        "7837",
-        "7831",
-        "7826",
-        "7823",
-        "7824",
-        "8396",
-        "7786",
-        "7787",
-        "7779",
-        "7757",
-        "7759",
-        "7756",
-        "7748",
-        "7750",
-        "7751",
-        "7736",
-        "7735",
-        "7729",
-        "7714",
-        "7698",
-        "7669",
-        "7650",
-        "7653",
-        "7654",
-        "7647",
-        "7641",
-        "7642",
-        "7573",
-        "7551",
-        "7554",
-        "7546",
-        "7547",
-        "7538",
-        "7543",
-        "7544",
-        "7529",
-        "7531",
-        "7536",
-        "8194",
-        "7525",
-        "7516",
-        "8011",
-        "7508",
-        "7496",
-        "7497",
-        "7499",
-        "7486",
-        "7487",
-        "7489",
-        "8397",
-        "7471",
-        "8146",
-        "7449",
-        "7436",
-        "7438",
-        "8252",
-        "7423",
-        "7424",
-        "7415",
-        "7420",
-        "7404",
-        "7406",
-        "7410"
-      ],
-      "leyes_copatrocinio": 17,
-      "efectividad_ley": {
-        "autor": {
-          "proyectos": 11,
-          "leyes": 0,
-          "tasa": 0.0,
-          "esperadas": 0.87,
-          "indice": 63,
-          "evidencia": "baja"
-        },
-        "copat": {
-          "proyectos": 116,
-          "leyes": 17,
-          "tasa": 14.7,
-          "esperadas": 17.54,
-          "indice": 97,
-          "evidencia": "alta"
-        }
-      },
-      "temas_autor": {
-        "Comercio, banca y consumo": 2,
-        "Derechos civiles e igualdad": 2,
-        "Energía y minería": 2,
-        "Justicia, crimen y seguridad": 2,
-        "Vivienda y desarrollo urbano": 2
-      },
-      "aliados": [
-        {
-          "nombre": "Miguel Ángel Campos",
-          "partido": "Coalición Vamos",
-          "proyectos": 107
-        },
-        {
-          "nombre": "Janine Prado",
-          "partido": "Coalición Vamos",
-          "proyectos": 98
-        },
-        {
-          "nombre": "Alexandra Brenes",
-          "partido": "Coalición Vamos",
-          "proyectos": 87
-        },
-        {
-          "nombre": "Lenin Alberto Ulate",
-          "partido": "Coalición Vamos",
-          "proyectos": 87
-        },
-        {
-          "nombre": "Jorge Bloise Iglesias",
-          "partido": "Coalición Vamos",
-          "proyectos": 84
-        },
-        {
-          "nombre": "Luis Duke",
-          "partido": "Coalición Vamos",
-          "proyectos": 81
-        }
-      ],
-      "transversalidad": 45.0,
-      "transversalidad_esperada": 80.0
-    },
-    {
       "nombre": "Augusto Palacios",
       "partido": "Coalición Vamos",
       "circuito": "4-1",
@@ -10733,6 +10342,394 @@
         }
       ],
       "transversalidad": 49.0,
+      "transversalidad_esperada": 80.0
+    },
+    {
+      "nombre": "Miguel Ángel Campos",
+      "partido": "Coalición Vamos",
+      "circuito": "9-1",
+      "provincia": "Veraguas",
+      "suplente": "Sara Itzela Gómez Castillo",
+      "foto": "https://espaciocivico.org/api/drive-image/1hcMWMaf8IEKqoOgsfK81PBJDFKmT3BZl",
+      "perfil": "https://espaciocivico.org/diputados/miguel-angel-campos",
+      "slug": "miguel-angel-campos",
+      "provincia_monitoreo": "Veraguas",
+      "circuito_monitoreo": "9-1",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/miguel-angel-campos",
+      "planilla_texto": "B/. 11,300",
+      "planilla_valor": 11300.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": null,
+      "declaracion_intereses": 5.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": null,
+      "comisiones": [
+        "Comunicación y Transporte",
+        "Relaciones Exteriores"
+      ],
+      "comisiones_cantidad": 2,
+      "proyectos": 10,
+      "leyes": 2,
+      "co_patrocinios": 205,
+      "proyectos_suplente": 0,
+      "etapas": {
+        "Segundo Debate": 4,
+        "Primer Debate": 2,
+        "Enviado a subcomisión para analisis": 1,
+        "Ley": 2,
+        "Archivado": 1
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "7544",
+          "titulo": "QUE MODIFICA ARTÍCULOS DE LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES",
+          "fecha": "14-08-2024"
+        },
+        {
+          "ficha": "8011",
+          "titulo": "QUE ADICIONA CAPITULOS A LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, RELATIVOS AL PROGRAMA DE ALTO RENDIMIENTO DEPORTIVO Y DE MEDICINA APLICADA AL DEPORTE",
+          "fecha": "06-08-2024"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8373",
+          "titulo": "QUE MODIFICA LA LEY 488 DEL 2025, DEL TEXTO UNICO DE LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, RELATIVOS AL PROGRAMA DE ALTO RENDIMIENTO DEPORTIVO Y DE MEDICINA APLICADA AL DEPORTE.",
+          "fecha": "13-04-2026",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8337",
+          "titulo": "QUE CREA EL SISTEMA NACIONAL DE GESTION DEL RIESGO DE DESASTRES Y EMERGENCIAS EN LA REPUBLICA DE PANAMA.",
+          "fecha": "17-03-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8124",
+          "titulo": "QUE CREA EL ETIQUETADO FRONTAL DE ADVERTENCIA NUTRICIONAL (EFAN) PARA LA PROMOCIÓN DE DECISIONES SALUDABLES.",
+          "fecha": "18-09-2025",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "8058",
+          "titulo": "QUE ESTABLECE MEDIDAS DE PROTECCION A LOS CONSUMIDORES ANTE INTERRUPCIONES EN LOS SERVICIOS DE ELECTRICIDAD Y TELECOMUNICACIONES Y DICTA OTRA DISPOSICION",
+          "fecha": "26-08-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "8034",
+          "titulo": "QUE ESTABLECE EL REGIMEN DE AUTOGESTION Y SOSTENIBILIDAD ECONOMICA DE LOS COLISEOS Y ESTADIOS DE FUTBOL ADMINISTRADOS POR EL INSTITUTO PANAMEÑO DE DEPORTES (PANDEPORTES) Y DICTA OTRAS DISPOSICIONES.",
+          "fecha": "20-08-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7933",
+          "titulo": "QUE CREA EL COMITÉ NACIONAL DE INVESTIGACIÓN ANIMAL DE PANAMÁ (CNIAP) Y DICTA OTRAS DISPOSICIONES.",
+          "fecha": "15-07-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7831",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DEL CODIGO PENAL Y SE ESTABLECEN MEDIDAS CONTRA EL DELITO DE CAPTACION ILICITA DE RECURSOS FINANCIEROS DEL PUBLICO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "25-03-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "7544",
+          "titulo": "QUE MODIFICA ARTÍCULOS DE LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES",
+          "fecha": "14-08-2024",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "8011",
+          "titulo": "QUE ADICIONA CAPITULOS A LA LEY 16 DE 1995, QUE REORGANIZA EL INSTITUTO NACIONAL DE DEPORTES, RELATIVOS AL PROGRAMA DE ALTO RENDIMIENTO DEPORTIVO Y DE MEDICINA APLICADA AL DEPORTE",
+          "fecha": "06-08-2024",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7417",
+          "titulo": "QUE MODIFICA LA LEY 1 DE 11 DE ENERO DE 1965 Y PROHIBE EL ACCESO A AUXILIOS ECONOMICOS A FUNCIONARIOS DE ALTO MANDO Y JURISDICCION, Y A SUS FAMILIARES CON PARENTESCO HASTA EL CUARTO GRADO DE CONSANGUINIDAD Y SEGUNDO DE AFINIDAD",
+          "fecha": "03-07-2024",
+          "etapa": "Archivado"
+        }
+      ],
+      "participaciones": [
+        "8644",
+        "8603",
+        "8590",
+        "8559",
+        "8550",
+        "8551",
+        "8554",
+        "8539",
+        "8540",
+        "8479",
+        "8462",
+        "8464",
+        "8458",
+        "8451",
+        "8452",
+        "8454",
+        "8448",
+        "8444",
+        "8429",
+        "8430",
+        "8431",
+        "8433",
+        "8434",
+        "8435",
+        "8437",
+        "8417",
+        "8418",
+        "8421",
+        "8422",
+        "8414",
+        "8388",
+        "8381",
+        "8373",
+        "8377",
+        "8364",
+        "8356",
+        "8350",
+        "8351",
+        "8341",
+        "8335",
+        "8337",
+        "8333",
+        "8324",
+        "8307",
+        "8300",
+        "8296",
+        "8293",
+        "8291",
+        "8292",
+        "8283",
+        "8280",
+        "8276",
+        "8271",
+        "8259",
+        "8227",
+        "8222",
+        "8217",
+        "8218",
+        "8220",
+        "8213",
+        "8216",
+        "8186",
+        "8167",
+        "8168",
+        "8161",
+        "8160",
+        "8156",
+        "8135",
+        "8124",
+        "8108",
+        "8110",
+        "8104",
+        "8080",
+        "8084",
+        "8075",
+        "8063",
+        "8055",
+        "8056",
+        "8058",
+        "8041",
+        "8047",
+        "8037",
+        "8034",
+        "8030",
+        "8014",
+        "8020",
+        "8022",
+        "8024",
+        "8008",
+        "8010",
+        "8006",
+        "7998",
+        "7992",
+        "7995",
+        "7976",
+        "7977",
+        "7967",
+        "7968",
+        "7940",
+        "7933",
+        "7923",
+        "7924",
+        "7925",
+        "7926",
+        "7912",
+        "7913",
+        "7919",
+        "7910",
+        "7898",
+        "7899",
+        "7900",
+        "7879",
+        "7885",
+        "7891",
+        "7887",
+        "7889",
+        "7840",
+        "7831",
+        "7825",
+        "7826",
+        "7824",
+        "8396",
+        "7801",
+        "7802",
+        "7804",
+        "7805",
+        "7808",
+        "7787",
+        "7779",
+        "8371",
+        "7757",
+        "7759",
+        "7756",
+        "8569",
+        "7748",
+        "7750",
+        "7751",
+        "7736",
+        "7738",
+        "7735",
+        "7729",
+        "7731",
+        "7717",
+        "7714",
+        "7704",
+        "7705",
+        "7698",
+        "7684",
+        "7682",
+        "7669",
+        "8250",
+        "7650",
+        "7652",
+        "7653",
+        "7654",
+        "7647",
+        "7641",
+        "7644",
+        "7607",
+        "7597",
+        "7598",
+        "7581",
+        "7573",
+        "7574",
+        "7551",
+        "7555",
+        "7554",
+        "8057",
+        "7546",
+        "7547",
+        "7538",
+        "7540",
+        "7543",
+        "7544",
+        "7529",
+        "7532",
+        "7536",
+        "8194",
+        "7525",
+        "7527",
+        "8384",
+        "7516",
+        "8011",
+        "7508",
+        "7502",
+        "7496",
+        "7497",
+        "7498",
+        "7499",
+        "7486",
+        "7487",
+        "7489",
+        "7490",
+        "8397",
+        "7471",
+        "7461",
+        "8146",
+        "7449",
+        "7436",
+        "7437",
+        "7438",
+        "8252",
+        "7421",
+        "7423",
+        "7424",
+        "7415",
+        "7417",
+        "7420",
+        "8366",
+        "7404",
+        "7405",
+        "7406",
+        "7410",
+        "7412",
+        "7776"
+      ],
+      "leyes_copatrocinio": 26,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 10,
+          "leyes": 2,
+          "tasa": 20.0,
+          "esperadas": 1.22,
+          "indice": 129,
+          "evidencia": "media"
+        },
+        "copat": {
+          "proyectos": 205,
+          "leyes": 26,
+          "tasa": 12.7,
+          "esperadas": 28.18,
+          "indice": 93,
+          "evidencia": "alta"
+        }
+      },
+      "temas_autor": {
+        "Cultura, deporte y patrimonio": 4,
+        "Comercio, banca y consumo": 3,
+        "Ambiente y protección animal": 1,
+        "Ciencia, tecnología y comunicaciones": 1,
+        "Educación": 1
+      },
+      "aliados": [
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 143
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 130
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 121
+        },
+        {
+          "nombre": "Roberto Zuñiga",
+          "partido": "Coalición Vamos",
+          "proyectos": 116
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 115
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 108
+        }
+      ],
+      "transversalidad": 46.1,
       "transversalidad_esperada": 80.0
     },
     {
@@ -11807,269 +11804,6 @@
       "transversalidad_esperada": 81.4
     },
     {
-      "nombre": "Manuel Samaniego",
-      "partido": "Libre Postulación",
-      "circuito": "8-6",
-      "provincia": "Panamá",
-      "suplente": "Nayelis Gonzalez",
-      "foto": "https://espaciocivico.org/api/drive-image/1byzCstXS-vDLyOOH7mopVd8hq2HCT2NI",
-      "perfil": "https://espaciocivico.org/diputados/manuel-samaniego",
-      "slug": "manuel-samaniego",
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-6",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-samaniego",
-      "planilla_texto": "B/. 15,750",
-      "planilla_valor": 15750.0,
-      "asistencia_pleno": 4.0,
-      "asistencia_comisiones": 3.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 5.0,
-      "calificacion": 3.4,
-      "comisiones": [
-        "Relaciones Exteriores",
-        "Economía y Finanzas"
-      ],
-      "comisiones_cantidad": 2,
-      "proyectos": 8,
-      "leyes": 1,
-      "co_patrocinios": 100,
-      "proyectos_suplente": 1,
-      "etapas": {
-        "Preliminar": 2,
-        "Enviado a subcomisión para analisis": 3,
-        "Segundo Debate": 2,
-        "Ley": 1
-      },
-      "leyes_detalle": [
-        {
-          "ficha": "8146",
-          "titulo": "QUE DICTA NORMAS PARA LA IMPLEMENTACION DE LA ECONOMIA CIRCULAR COMO ESTRATEGIA AMBIENTAL",
-          "fecha": "22-07-2024"
-        }
-      ],
-      "proyectos_detalle": [
-        {
-          "ficha": "8514",
-          "titulo": "QUE ESTABLECE EL PROCEDIMIENTO DE EVALUACION TARIFARIA PREVIA PARA LOS AUMENTOS DE LAS TARIFAS REGULADAS DEL SERVICIO PUBLICO DE ELECTRICIDAD Y ADICIONA DISPOSICIONES A LA LEY 6 DE 3 DE FEBRERO DE 1997",
-          "fecha": "03-08-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8480",
-          "titulo": "QUE MODIFICA LA LEY 93 DE 19 DE SEPTIEMBRE DE 2019, QUE CREA EL REGIMEN DE ASOCIACION PUBLICO PRIVADA, PARA LA INCLUSION REGULADA Y EXCLUSIVA DEL INSTITUTO DE ACUEDUCTOS Y ALCANTARILLADOS NACIONALES (IDAAN) EN PROYECTOS DE INFRAESTRUCTURA HIDRICA, Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "23-07-2026",
-          "etapa": "Preliminar"
-        },
-        {
-          "ficha": "8047",
-          "titulo": "MEDIANTE LA CUAL SE IMPLEMENTA EL SISTEMA NACIONAL DE CANALES DE RIEGO PARA LA PRODUCCION AGRICOLA",
-          "fecha": "25-08-2025",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "7745",
-          "titulo": "POR LA CUAL SE MODIFICA Y ADICIONA ARTÍCULOS A LA LEY NO.6 DE PRIMERO DE FEBRERO 2006 QUE REGLAMENTA EL ORDENAMIENTO TERRITORIAL PARA EL DESARROLLO URBANO Y DICTA OTRAS DISPOSICIONES",
-          "fecha": "14-01-2025",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7705",
-          "titulo": "QUE PRESERVA LAS ROMPIENTES APROPIADAS PARA LA PRACTICA DEPORTIVA",
-          "fecha": "16-10-2024",
-          "etapa": "Segundo Debate"
-        },
-        {
-          "ficha": "7535",
-          "titulo": "POR LA CUAL SE MODIFICA LOS ARTICULOS 412, 413, 414, 417, 418, 419, 420 Y 50 DEL CODIGO PENAL",
-          "fecha": "13-08-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        },
-        {
-          "ficha": "8146",
-          "titulo": "QUE DICTA NORMAS PARA LA IMPLEMENTACION DE LA ECONOMIA CIRCULAR COMO ESTRATEGIA AMBIENTAL",
-          "fecha": "22-07-2024",
-          "etapa": "Ley"
-        },
-        {
-          "ficha": "7449",
-          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
-          "fecha": "18-07-2024",
-          "etapa": "Enviado a subcomisión para analisis"
-        }
-      ],
-      "participaciones": [
-        "8514",
-        "8480",
-        "8458",
-        "8454",
-        "8377",
-        "8337",
-        "8271",
-        "8227",
-        "8203",
-        "8188",
-        "8156",
-        "8110",
-        "8104",
-        "8058",
-        "8042",
-        "8047",
-        "8034",
-        "8030",
-        "8020",
-        "8024",
-        "7995",
-        "7983",
-        "7977",
-        "7967",
-        "7933",
-        "7913",
-        "7918",
-        "7910",
-        "7879",
-        "7885",
-        "7891",
-        "7887",
-        "7889",
-        "7840",
-        "7831",
-        "7826",
-        "7786",
-        "7787",
-        "7779",
-        "7759",
-        "7756",
-        "7748",
-        "7750",
-        "7745",
-        "7736",
-        "7735",
-        "7729",
-        "7731",
-        "7704",
-        "7705",
-        "7682",
-        "7674",
-        "7669",
-        "7650",
-        "7652",
-        "7653",
-        "7654",
-        "7657",
-        "7647",
-        "7642",
-        "7644",
-        "7607",
-        "7597",
-        "7598",
-        "7573",
-        "7554",
-        "8057",
-        "7546",
-        "7547",
-        "7538",
-        "7543",
-        "7544",
-        "7531",
-        "7535",
-        "7536",
-        "8194",
-        "8384",
-        "7513",
-        "8011",
-        "8289",
-        "7508",
-        "7510",
-        "7502",
-        "7496",
-        "7497",
-        "7498",
-        "7486",
-        "7487",
-        "7489",
-        "8397",
-        "7471",
-        "8146",
-        "7447",
-        "7449",
-        "7436",
-        "7437",
-        "7438",
-        "8252",
-        "7421",
-        "7423",
-        "7424",
-        "7415",
-        "7420",
-        "8366",
-        "7404",
-        "7406",
-        "7410",
-        "7412"
-      ],
-      "leyes_copatrocinio": 20,
-      "efectividad_ley": {
-        "autor": {
-          "proyectos": 8,
-          "leyes": 1,
-          "tasa": 12.5,
-          "esperadas": 1.0,
-          "indice": 100,
-          "evidencia": "baja"
-        },
-        "copat": {
-          "proyectos": 100,
-          "leyes": 20,
-          "tasa": 20.0,
-          "esperadas": 19.46,
-          "indice": 103,
-          "evidencia": "alta"
-        }
-      },
-      "temas_autor": {
-        "Ambiente y protección animal": 2,
-        "Gobierno y administración pública": 2,
-        "Agro y pesca": 1,
-        "Comercio, banca y consumo": 1,
-        "Cultura, deporte y patrimonio": 1
-      },
-      "aliados": [
-        {
-          "nombre": "Miguel Ángel Campos",
-          "partido": "Coalición Vamos",
-          "proyectos": 90
-        },
-        {
-          "nombre": "Jorge Bloise Iglesias",
-          "partido": "Coalición Vamos",
-          "proyectos": 78
-        },
-        {
-          "nombre": "Lenin Alberto Ulate",
-          "partido": "Coalición Vamos",
-          "proyectos": 78
-        },
-        {
-          "nombre": "Janine Prado",
-          "partido": "Coalición Vamos",
-          "proyectos": 76
-        },
-        {
-          "nombre": "Luis Duke",
-          "partido": "Coalición Vamos",
-          "proyectos": 72
-        },
-        {
-          "nombre": "Jorge González",
-          "partido": "Coalición Vamos",
-          "proyectos": 70
-        }
-      ],
-      "transversalidad": 91.6,
-      "transversalidad_esperada": 95.7
-    },
-    {
       "nombre": "Alaín Cedeño",
       "partido": "Realizando Metas",
       "circuito": "8-6",
@@ -12491,6 +12225,263 @@
       ],
       "transversalidad": 100.0,
       "transversalidad_esperada": 100.0
+    },
+    {
+      "nombre": "Manuel Samaniego",
+      "partido": "Libre Postulación",
+      "circuito": "8-6",
+      "provincia": "Panamá",
+      "suplente": "Nayelis Gonzalez",
+      "foto": "https://espaciocivico.org/api/drive-image/1byzCstXS-vDLyOOH7mopVd8hq2HCT2NI",
+      "perfil": "https://espaciocivico.org/diputados/manuel-samaniego",
+      "slug": "manuel-samaniego",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-6",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/manuel-samaniego",
+      "planilla_texto": "B/. 15,750",
+      "planilla_valor": 15750.0,
+      "asistencia_pleno": 4.0,
+      "asistencia_comisiones": 3.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 5.0,
+      "calificacion": 3.4,
+      "comisiones": [
+        "Relaciones Exteriores",
+        "Economía y Finanzas"
+      ],
+      "comisiones_cantidad": 2,
+      "proyectos": 7,
+      "leyes": 1,
+      "co_patrocinios": 101,
+      "proyectos_suplente": 0,
+      "etapas": {
+        "Preliminar": 2,
+        "Enviado a subcomisión para analisis": 3,
+        "Segundo Debate": 1,
+        "Ley": 1
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "8146",
+          "titulo": "QUE DICTA NORMAS PARA LA IMPLEMENTACION DE LA ECONOMIA CIRCULAR COMO ESTRATEGIA AMBIENTAL",
+          "fecha": "22-07-2024"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8514",
+          "titulo": "QUE ESTABLECE EL PROCEDIMIENTO DE EVALUACION TARIFARIA PREVIA PARA LOS AUMENTOS DE LAS TARIFAS REGULADAS DEL SERVICIO PUBLICO DE ELECTRICIDAD Y ADICIONA DISPOSICIONES A LA LEY 6 DE 3 DE FEBRERO DE 1997",
+          "fecha": "03-08-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8480",
+          "titulo": "QUE MODIFICA LA LEY 93 DE 19 DE SEPTIEMBRE DE 2019, QUE CREA EL REGIMEN DE ASOCIACION PUBLICO PRIVADA, PARA LA INCLUSION REGULADA Y EXCLUSIVA DEL INSTITUTO DE ACUEDUCTOS Y ALCANTARILLADOS NACIONALES (IDAAN) EN PROYECTOS DE INFRAESTRUCTURA HIDRICA, Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "23-07-2026",
+          "etapa": "Preliminar"
+        },
+        {
+          "ficha": "8047",
+          "titulo": "MEDIANTE LA CUAL SE IMPLEMENTA EL SISTEMA NACIONAL DE CANALES DE RIEGO PARA LA PRODUCCION AGRICOLA",
+          "fecha": "25-08-2025",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "7745",
+          "titulo": "POR LA CUAL SE MODIFICA Y ADICIONA ARTÍCULOS A LA LEY NO.6 DE PRIMERO DE FEBRERO 2006 QUE REGLAMENTA EL ORDENAMIENTO TERRITORIAL PARA EL DESARROLLO URBANO Y DICTA OTRAS DISPOSICIONES",
+          "fecha": "14-01-2025",
+          "etapa": "Segundo Debate"
+        },
+        {
+          "ficha": "7535",
+          "titulo": "POR LA CUAL SE MODIFICA LOS ARTICULOS 412, 413, 414, 417, 418, 419, 420 Y 50 DEL CODIGO PENAL",
+          "fecha": "13-08-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        },
+        {
+          "ficha": "8146",
+          "titulo": "QUE DICTA NORMAS PARA LA IMPLEMENTACION DE LA ECONOMIA CIRCULAR COMO ESTRATEGIA AMBIENTAL",
+          "fecha": "22-07-2024",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7449",
+          "titulo": "QUE MODIFICA Y ADICIONA ARTICULOS AL TEXTO UNICO DE LA LEY 49 DE 1984, QUE ADOPTA EL REGLAMENTO ORGANICO DEL REGIMEN INTERNO DE LA ASAMBLEA NACIONAL",
+          "fecha": "18-07-2024",
+          "etapa": "Enviado a subcomisión para analisis"
+        }
+      ],
+      "participaciones": [
+        "8514",
+        "8480",
+        "8458",
+        "8454",
+        "8377",
+        "8337",
+        "8271",
+        "8227",
+        "8203",
+        "8188",
+        "8156",
+        "8110",
+        "8104",
+        "8058",
+        "8042",
+        "8047",
+        "8034",
+        "8030",
+        "8020",
+        "8024",
+        "7995",
+        "7983",
+        "7977",
+        "7967",
+        "7933",
+        "7913",
+        "7918",
+        "7910",
+        "7879",
+        "7885",
+        "7891",
+        "7887",
+        "7889",
+        "7840",
+        "7831",
+        "7826",
+        "7786",
+        "7787",
+        "7779",
+        "7759",
+        "7756",
+        "7748",
+        "7750",
+        "7745",
+        "7736",
+        "7735",
+        "7729",
+        "7731",
+        "7704",
+        "7705",
+        "7682",
+        "7674",
+        "7669",
+        "7650",
+        "7652",
+        "7653",
+        "7654",
+        "7657",
+        "7647",
+        "7642",
+        "7644",
+        "7607",
+        "7597",
+        "7598",
+        "7573",
+        "7554",
+        "8057",
+        "7546",
+        "7547",
+        "7538",
+        "7543",
+        "7544",
+        "7531",
+        "7535",
+        "7536",
+        "8194",
+        "8384",
+        "7513",
+        "8011",
+        "8289",
+        "7508",
+        "7510",
+        "7502",
+        "7496",
+        "7497",
+        "7498",
+        "7486",
+        "7487",
+        "7489",
+        "8397",
+        "7471",
+        "8146",
+        "7447",
+        "7449",
+        "7436",
+        "7437",
+        "7438",
+        "8252",
+        "7421",
+        "7423",
+        "7424",
+        "7415",
+        "7420",
+        "8366",
+        "7404",
+        "7406",
+        "7410",
+        "7412"
+      ],
+      "leyes_copatrocinio": 20,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 7,
+          "leyes": 1,
+          "tasa": 14.3,
+          "esperadas": 0.82,
+          "indice": 108,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 101,
+          "leyes": 20,
+          "tasa": 19.8,
+          "esperadas": 19.71,
+          "indice": 101,
+          "evidencia": "alta"
+        }
+      },
+      "temas_autor": {
+        "Gobierno y administración pública": 2,
+        "Agro y pesca": 1,
+        "Ambiente y protección animal": 1,
+        "Comercio, banca y consumo": 1,
+        "Energía y minería": 1
+      },
+      "aliados": [
+        {
+          "nombre": "Miguel Ángel Campos",
+          "partido": "Coalición Vamos",
+          "proyectos": 90
+        },
+        {
+          "nombre": "Jorge Bloise Iglesias",
+          "partido": "Coalición Vamos",
+          "proyectos": 78
+        },
+        {
+          "nombre": "Lenin Alberto Ulate",
+          "partido": "Coalición Vamos",
+          "proyectos": 78
+        },
+        {
+          "nombre": "Janine Prado",
+          "partido": "Coalición Vamos",
+          "proyectos": 76
+        },
+        {
+          "nombre": "Luis Duke",
+          "partido": "Coalición Vamos",
+          "proyectos": 72
+        },
+        {
+          "nombre": "Jorge González",
+          "partido": "Coalición Vamos",
+          "proyectos": 70
+        }
+      ],
+      "transversalidad": 91.6,
+      "transversalidad_esperada": 95.7
     },
     {
       "nombre": "Jorge Herrera",
@@ -14547,6 +14538,159 @@
       "transversalidad_esperada": 90.0
     },
     {
+      "nombre": "Omar Ortega",
+      "partido": "Realizando Metas",
+      "circuito": "8-2",
+      "provincia": "Panamá",
+      "suplente": "Juan Domingo Diaz",
+      "foto": "https://espaciocivico.org/api/drive-image/1r48XhZKnIroDhPfkJ9szoDiRF6Eyunyo",
+      "perfil": "https://espaciocivico.org/diputados/omar-ortega",
+      "slug": "omar-ortega",
+      "provincia_monitoreo": "Panamá",
+      "circuito_monitoreo": "8-2",
+      "perfil_monitoreo": "https://espaciocivico.org/diputados/omar-ortega",
+      "planilla_texto": "B/. 51,825",
+      "planilla_valor": 51825.0,
+      "asistencia_pleno": 5.0,
+      "asistencia_comisiones": 5.0,
+      "viajes_ponderacion": 5.0,
+      "declaracion_intereses": 1.0,
+      "declaracion_patrimonio": 1.0,
+      "calificacion": 3.0,
+      "comisiones": [
+        "Asuntos Municipales",
+        "Asuntos Indígenas"
+      ],
+      "comisiones_cantidad": 2,
+      "proyectos": 5,
+      "leyes": 1,
+      "co_patrocinios": 11,
+      "proyectos_suplente": 4,
+      "etapas": {
+        "Primer Debate": 2,
+        "Archivado": 1,
+        "Ley": 1,
+        "Segundo Debate": 1
+      },
+      "leyes_detalle": [
+        {
+          "ficha": "8371",
+          "titulo": "QUE RECONOCE EL PAGO DE LOS APORTES REALIZADOS, POR EXTENSION DE JUBILACION, A LOS EDUCADORES JUBILADOS DE LAS PROMOCIONE DE 1972 Y 1973 CERTIFICADOS POR LA CAJA DE SEGURO SOCIAL",
+          "fecha": "28-01-2025"
+        }
+      ],
+      "proyectos_detalle": [
+        {
+          "ficha": "8455",
+          "titulo": "QUE PROHIBE EL USO NO AUTORIZADO DE SEÑALES LUMINOSAS Y SEÑALES ACUSTICAS EN VEHICULOS PARTICULARES Y DICTA OTRAS DISPOSICIONES.",
+          "fecha": "16-07-2026",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8126",
+          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 69 DE 2007 Y DICTA MEDIDAS DE PROTECCION DE GARANTIAS CONSTITUCIONALES REFERENTE A INFORMACION DE ANTECEDENTE PENALES",
+          "fecha": "18-09-2025",
+          "etapa": "Primer Debate"
+        },
+        {
+          "ficha": "8026",
+          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 69 DE 2007 Y DICTA MEDIDAS DE PROTECCION DE GARANTIAS CONSTITUCIONALES REFERENTE A INFORMACION DE ANTECEDENTE PENALES",
+          "fecha": "19-08-2025",
+          "etapa": "Archivado"
+        },
+        {
+          "ficha": "8371",
+          "titulo": "QUE RECONOCE EL PAGO DE LOS APORTES REALIZADOS, POR EXTENSION DE JUBILACION, A LOS EDUCADORES JUBILADOS DE LAS PROMOCIONE DE 1972 Y 1973 CERTIFICADOS POR LA CAJA DE SEGURO SOCIAL",
+          "fecha": "28-01-2025",
+          "etapa": "Ley"
+        },
+        {
+          "ficha": "7764",
+          "titulo": "QUE MODIFICA LA LEY 15 DEL 28 DE ABRIL DE 1995",
+          "fecha": "27-01-2025",
+          "etapa": "Segundo Debate"
+        }
+      ],
+      "participaciones": [
+        "8523",
+        "8455",
+        "8377",
+        "8287",
+        "8135",
+        "8126",
+        "8103",
+        "8093",
+        "8026",
+        "7854",
+        "7843",
+        "8371",
+        "7764",
+        "7693",
+        "7622",
+        "7554"
+      ],
+      "leyes_copatrocinio": 1,
+      "efectividad_ley": {
+        "autor": {
+          "proyectos": 5,
+          "leyes": 1,
+          "tasa": 20.0,
+          "esperadas": 0.58,
+          "indice": 120,
+          "evidencia": "baja"
+        },
+        "copat": {
+          "proyectos": 11,
+          "leyes": 1,
+          "tasa": 9.1,
+          "esperadas": 1.5,
+          "indice": 83,
+          "evidencia": "media"
+        }
+      },
+      "temas_autor": {
+        "Derechos civiles e igualdad": 2,
+        "Justicia, crimen y seguridad": 2,
+        "Bienestar social y seguridad social": 1,
+        "Educación": 1,
+        "Transporte": 1
+      },
+      "aliados": [
+        {
+          "nombre": "Luis Camacho Castro",
+          "partido": "Realizando Metas",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Marcos Castillero",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 8
+        },
+        {
+          "nombre": "Ariel Vallarino",
+          "partido": "Realizando Metas",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Isaac Mosquera",
+          "partido": "Movimiento Liberal Republicano Nacionalista",
+          "proyectos": 7
+        },
+        {
+          "nombre": "Arquesio Arias",
+          "partido": "Partido Revolucionario Democrático",
+          "proyectos": 6
+        },
+        {
+          "nombre": "Edwin Vergara",
+          "partido": "Partido Panameñista",
+          "proyectos": 6
+        }
+      ],
+      "transversalidad": 72.7,
+      "transversalidad_esperada": 81.4
+    },
+    {
       "nombre": "Roberto Archibold",
       "partido": "Partido Panameñista",
       "circuito": "12-1",
@@ -15362,144 +15506,6 @@
       ],
       "transversalidad": 69.5,
       "transversalidad_esperada": 82.9
-    },
-    {
-      "nombre": "Omar Ortega",
-      "partido": "Realizando Metas",
-      "circuito": "8-2",
-      "provincia": "Panamá",
-      "suplente": "Juan Domingo Diaz",
-      "foto": "https://espaciocivico.org/api/drive-image/1r48XhZKnIroDhPfkJ9szoDiRF6Eyunyo",
-      "perfil": "https://espaciocivico.org/diputados/omar-ortega",
-      "slug": "omar-ortega",
-      "provincia_monitoreo": "Panamá",
-      "circuito_monitoreo": "8-2",
-      "perfil_monitoreo": "https://espaciocivico.org/diputados/omar-ortega",
-      "planilla_texto": "B/. 51,825",
-      "planilla_valor": 51825.0,
-      "asistencia_pleno": 5.0,
-      "asistencia_comisiones": 5.0,
-      "viajes_ponderacion": 5.0,
-      "declaracion_intereses": 1.0,
-      "declaracion_patrimonio": 1.0,
-      "calificacion": 3.0,
-      "comisiones": [
-        "Asuntos Municipales",
-        "Asuntos Indígenas"
-      ],
-      "comisiones_cantidad": 2,
-      "proyectos": 4,
-      "leyes": 0,
-      "co_patrocinios": 12,
-      "proyectos_suplente": 3,
-      "etapas": {
-        "Primer Debate": 2,
-        "Archivado": 1,
-        "Segundo Debate": 1
-      },
-      "leyes_detalle": [],
-      "proyectos_detalle": [
-        {
-          "ficha": "8455",
-          "titulo": "QUE PROHIBE EL USO NO AUTORIZADO DE SEÑALES LUMINOSAS Y SEÑALES ACUSTICAS EN VEHICULOS PARTICULARES Y DICTA OTRAS DISPOSICIONES.",
-          "fecha": "16-07-2026",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8126",
-          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 69 DE 2007 Y DICTA MEDIDAS DE PROTECCION DE GARANTIAS CONSTITUCIONALES REFERENTE A INFORMACION DE ANTECEDENTE PENALES",
-          "fecha": "18-09-2025",
-          "etapa": "Primer Debate"
-        },
-        {
-          "ficha": "8026",
-          "titulo": "QUE ADICIONA ARTICULOS A LA LEY 69 DE 2007 Y DICTA MEDIDAS DE PROTECCION DE GARANTIAS CONSTITUCIONALES REFERENTE A INFORMACION DE ANTECEDENTE PENALES",
-          "fecha": "19-08-2025",
-          "etapa": "Archivado"
-        },
-        {
-          "ficha": "7764",
-          "titulo": "QUE MODIFICA LA LEY 15 DEL 28 DE ABRIL DE 1995",
-          "fecha": "27-01-2025",
-          "etapa": "Segundo Debate"
-        }
-      ],
-      "participaciones": [
-        "8523",
-        "8455",
-        "8377",
-        "8287",
-        "8135",
-        "8126",
-        "8103",
-        "8093",
-        "8026",
-        "7854",
-        "7843",
-        "8371",
-        "7764",
-        "7693",
-        "7622",
-        "7554"
-      ],
-      "leyes_copatrocinio": 2,
-      "efectividad_ley": {
-        "autor": {
-          "proyectos": 4,
-          "leyes": 0,
-          "tasa": 0.0,
-          "esperadas": 0.38,
-          "indice": 80,
-          "evidencia": "baja"
-        },
-        "copat": {
-          "proyectos": 12,
-          "leyes": 2,
-          "tasa": 16.7,
-          "esperadas": 1.72,
-          "indice": 109,
-          "evidencia": "media"
-        }
-      },
-      "temas_autor": {
-        "Derechos civiles e igualdad": 2,
-        "Justicia, crimen y seguridad": 2,
-        "Transporte": 1
-      },
-      "aliados": [
-        {
-          "nombre": "Luis Camacho Castro",
-          "partido": "Realizando Metas",
-          "proyectos": 8
-        },
-        {
-          "nombre": "Marcos Castillero",
-          "partido": "Partido Revolucionario Democrático",
-          "proyectos": 8
-        },
-        {
-          "nombre": "Ariel Vallarino",
-          "partido": "Realizando Metas",
-          "proyectos": 7
-        },
-        {
-          "nombre": "Isaac Mosquera",
-          "partido": "Movimiento Liberal Republicano Nacionalista",
-          "proyectos": 7
-        },
-        {
-          "nombre": "Arquesio Arias",
-          "partido": "Partido Revolucionario Democrático",
-          "proyectos": 6
-        },
-        {
-          "nombre": "Edwin Vergara",
-          "partido": "Partido Panameñista",
-          "proyectos": 6
-        }
-      ],
-      "transversalidad": 72.7,
-      "transversalidad_esperada": 81.4
     },
     {
       "nombre": "Ronald de Gracia",
@@ -17133,12 +17139,6 @@
       "leyes": 3
     },
     {
-      "nombre": "Candy Chen",
-      "tipo": "ciudadano",
-      "proyectos": 2,
-      "leyes": 0
-    },
-    {
       "nombre": "Carlos Solis",
       "tipo": "ciudadano",
       "proyectos": 2,
@@ -17164,6 +17164,12 @@
     },
     {
       "nombre": "Luis Carlos Manuel Gómez Rudy",
+      "tipo": "ciudadano",
+      "proyectos": 2,
+      "leyes": 0
+    },
+    {
+      "nombre": "Luis Mencomo",
       "tipo": "ciudadano",
       "proyectos": 2,
       "leyes": 0
@@ -17247,6 +17253,12 @@
       "leyes": 0
     },
     {
+      "nombre": "Candy Chen",
+      "tipo": "ciudadano",
+      "proyectos": 1,
+      "leyes": 0
+    },
+    {
       "nombre": "Cecilia Saldaña",
       "tipo": "ciudadano",
       "proyectos": 1,
@@ -17325,12 +17337,6 @@
       "leyes": 0
     },
     {
-      "nombre": "Izabel Campos",
-      "tipo": "ciudadano",
-      "proyectos": 1,
-      "leyes": 0
-    },
-    {
       "nombre": "Jorge Fernández",
       "tipo": "ciudadano",
       "proyectos": 1,
@@ -17367,6 +17373,12 @@
       "leyes": 0
     },
     {
+      "nombre": "Lilia Zurita",
+      "tipo": "ciudadano",
+      "proyectos": 1,
+      "leyes": 0
+    },
+    {
       "nombre": "Lisell Chavez",
       "tipo": "ciudadano",
       "proyectos": 1,
@@ -17391,7 +17403,7 @@
       "leyes": 0
     },
     {
-      "nombre": "Luis Mencomo",
+      "nombre": "Luis Pinedo",
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
@@ -17491,19 +17503,13 @@
       "tipo": "ciudadano",
       "proyectos": 1,
       "leyes": 0
-    },
-    {
-      "nombre": "Yaneline Ureña",
-      "tipo": "ciudadano",
-      "proyectos": 1,
-      "leyes": 0
     }
   ],
   "por_partido": {
     "Coalición Vamos": {
       "diputados": 15,
-      "proyectos": 264,
-      "leyes": 15,
+      "proyectos": 265,
+      "leyes": 14,
       "participaciones": 403,
       "leyes_participacion": 42
     },
@@ -17516,24 +17522,17 @@
     },
     "Realizando Metas": {
       "diputados": 14,
-      "proyectos": 108,
-      "leyes": 10,
+      "proyectos": 109,
+      "leyes": 11,
       "participaciones": 205,
       "leyes_participacion": 27
     },
     "Movimiento Otro Camino": {
       "diputados": 3,
-      "proyectos": 106,
+      "proyectos": 107,
       "leyes": 10,
       "participaciones": 221,
       "leyes_participacion": 27
-    },
-    "Libre Postulación": {
-      "diputados": 4,
-      "proyectos": 70,
-      "leyes": 9,
-      "participaciones": 228,
-      "leyes_participacion": 34
     },
     "Partido Panameñista": {
       "diputados": 8,
@@ -17541,6 +17540,13 @@
       "leyes": 11,
       "participaciones": 192,
       "leyes_participacion": 29
+    },
+    "Libre Postulación": {
+      "diputados": 4,
+      "proyectos": 67,
+      "leyes": 9,
+      "participaciones": 228,
+      "leyes_participacion": 34
     },
     "Cambio Democrático": {
       "diputados": 8,
@@ -17588,7 +17594,7 @@
     },
     "Panamá Oeste": {
       "diputados": 8,
-      "proyectos": 109,
+      "proyectos": 108,
       "leyes": 10,
       "participaciones": 317,
       "leyes_participacion": 39
@@ -17616,7 +17622,7 @@
     },
     "Colón": {
       "diputados": 5,
-      "proyectos": 38,
+      "proyectos": 39,
       "leyes": 2,
       "participaciones": 180,
       "leyes_participacion": 24
@@ -17667,18 +17673,18 @@
   "por_provincia_filtros": {
     "Panamá": {
       "2024": {
-        "Ley": 14,
+        "Ley": 13,
         "debate": 29,
         "analisis": 18,
         "sinAvance": 26,
-        "all": 87
+        "all": 86
       },
       "2025": {
-        "Ley": 14,
+        "Ley": 15,
         "debate": 69,
         "analisis": 18,
         "sinAvance": 37,
-        "all": 138
+        "all": 139
       },
       "2026": {
         "Ley": 2,
@@ -17697,18 +17703,18 @@
     },
     "Panamá Oeste": {
       "2024": {
-        "Ley": 5,
+        "Ley": 6,
         "debate": 7,
         "analisis": 4,
-        "sinAvance": 5,
+        "sinAvance": 4,
         "all": 21
       },
       "2025": {
-        "Ley": 5,
+        "Ley": 4,
         "debate": 19,
         "analisis": 1,
         "sinAvance": 6,
-        "all": 31
+        "all": 30
       },
       "2026": {
         "Ley": 0,
@@ -17721,8 +17727,8 @@
         "Ley": 10,
         "debate": 57,
         "analisis": 26,
-        "sinAvance": 16,
-        "all": 109
+        "sinAvance": 15,
+        "all": 108
       }
     },
     "Ngöbe Buglé": {
@@ -17760,8 +17766,8 @@
         "Ley": 0,
         "debate": 3,
         "analisis": 0,
-        "sinAvance": 0,
-        "all": 3
+        "sinAvance": 1,
+        "all": 4
       },
       "2025": {
         "Ley": 1,
@@ -17781,8 +17787,8 @@
         "Ley": 2,
         "debate": 24,
         "analisis": 10,
-        "sinAvance": 2,
-        "all": 38
+        "sinAvance": 3,
+        "all": 39
       }
     },
     "Herrera": {
@@ -22533,9 +22539,9 @@
       "Justicia, crimen y seguridad": 28,
       "Energía y minería": 3,
       "Ciencia, tecnología y comunicaciones": 5,
-      "Educación": 11,
+      "Educación": 12,
       "Transporte": 8,
-      "Bienestar social y seguridad social": 5,
+      "Bienestar social y seguridad social": 6,
       "Comercio, banca y consumo": 11,
       "Salud": 22,
       "Derechos civiles e igualdad": 10,
@@ -22549,10 +22555,10 @@
       "Agro y pesca": 3
     },
     "Coalición Vamos": {
-      "Ambiente y protección animal": 23,
+      "Ambiente y protección animal": 24,
       "Seguridad nacional y emergencias": 5,
       "Comercio, banca y consumo": 26,
-      "Gobierno y administración pública": 63,
+      "Gobierno y administración pública": 64,
       "Cultura, deporte y patrimonio": 24,
       "Salud": 18,
       "Justicia, crimen y seguridad": 67,
@@ -22655,14 +22661,14 @@
       "Vivienda y desarrollo urbano": 12,
       "Seguridad nacional y emergencias": 2,
       "Gobierno y administración pública": 27,
-      "Ambiente y protección animal": 6,
+      "Ambiente y protección animal": 7,
       "Macroeconomía y finanzas públicas": 9,
       "Ciencia, tecnología y comunicaciones": 10,
       "Transporte": 2,
       "Justicia, crimen y seguridad": 24,
       "Comercio, banca y consumo": 17,
       "Educación": 9,
-      "Tierras, agua y territorio": 2,
+      "Tierras, agua y territorio": 3,
       "Derechos civiles e igualdad": 6,
       "Energía y minería": 2,
       "Trabajo y empleo": 8,
@@ -22675,11 +22681,11 @@
       "Otros": 1
     },
     "Libre Postulación": {
-      "Tierras, agua y territorio": 5,
-      "Gobierno y administración pública": 15,
+      "Tierras, agua y territorio": 4,
+      "Gobierno y administración pública": 14,
       "Trabajo y empleo": 6,
       "Relaciones internacionales": 2,
-      "Bienestar social y seguridad social": 8,
+      "Bienestar social y seguridad social": 7,
       "Justicia, crimen y seguridad": 12,
       "Vivienda y desarrollo urbano": 4,
       "Energía y minería": 1,
@@ -22691,8 +22697,8 @@
       "Transporte": 3,
       "Agro y pesca": 7,
       "Otros": 1,
-      "Educación": 4,
-      "Ambiente y protección animal": 8,
+      "Educación": 3,
+      "Ambiente y protección animal": 6,
       "Macroeconomía y finanzas públicas": 2
     },
     "Partido Alianza": {
@@ -22736,30 +22742,30 @@
       "Vivienda y desarrollo urbano": 23,
       "Energía y minería": 10,
       "Ciencia, tecnología y comunicaciones": 28,
-      "Educación": 35,
-      "Bienestar social y seguridad social": 31,
-      "Ambiente y protección animal": 24,
+      "Educación": 36,
+      "Bienestar social y seguridad social": 32,
+      "Ambiente y protección animal": 25,
       "Macroeconomía y finanzas públicas": 26,
       "Derechos civiles e igualdad": 21,
       "Trabajo y empleo": 21,
       "Relaciones internacionales": 6,
-      "Justicia, crimen y seguridad": 84,
+      "Justicia, crimen y seguridad": 83,
       "Transporte": 15,
-      "Cultura, deporte y patrimonio": 25,
+      "Cultura, deporte y patrimonio": 24,
       "Agro y pesca": 9,
-      "Tierras, agua y territorio": 9,
+      "Tierras, agua y territorio": 10,
       "Migración": 1
     },
     "Panamá Oeste": {
-      "Cultura, deporte y patrimonio": 11,
-      "Ambiente y protección animal": 14,
+      "Cultura, deporte y patrimonio": 12,
+      "Ambiente y protección animal": 13,
       "Salud": 13,
       "Seguridad nacional y emergencias": 3,
       "Gobierno y administración pública": 13,
       "Justicia, crimen y seguridad": 23,
-      "Educación": 16,
-      "Bienestar social y seguridad social": 13,
-      "Tierras, agua y territorio": 5,
+      "Educación": 15,
+      "Bienestar social y seguridad social": 12,
+      "Tierras, agua y territorio": 4,
       "Trabajo y empleo": 9,
       "Transporte": 5,
       "Comercio, banca y consumo": 9,
@@ -22787,7 +22793,7 @@
       "Gobierno y administración pública": 3,
       "Transporte": 4,
       "Energía y minería": 4,
-      "Justicia, crimen y seguridad": 7,
+      "Justicia, crimen y seguridad": 8,
       "Bienestar social y seguridad social": 6,
       "Trabajo y empleo": 3,
       "Comercio, banca y consumo": 10,
@@ -22919,28 +22925,28 @@
   },
   "red_partidos": {
     "Realizando Metas": {
-      "Cambio Democrático": 10,
-      "Realizando Metas": 82,
-      "Coalición Vamos": 35,
-      "Movimiento Otro Camino": 15,
-      "Partido Panameñista": 17,
-      "Libre Postulación": 9,
-      "Partido Revolucionario Democrático": 27,
-      "Partido Alianza": 7,
+      "Realizando Metas": 88,
+      "Cambio Democrático": 14,
+      "Coalición Vamos": 41,
+      "Movimiento Otro Camino": 18,
+      "Partido Panameñista": 24,
+      "Libre Postulación": 11,
+      "Partido Revolucionario Democrático": 34,
       "Movimiento Liberal Republicano Nacionalista": 3,
-      "Partido Popular": 2,
-      "Libre Postulación | Seguimos": 2
+      "Partido Alianza": 8,
+      "Partido Popular": 4,
+      "Libre Postulación | Seguimos": 3
     },
     "Coalición Vamos": {
-      "Coalición Vamos": 1193,
+      "Coalición Vamos": 1210,
       "Partido Popular": 72,
-      "Realizando Metas": 68,
-      "Cambio Democrático": 74,
-      "Partido Revolucionario Democrático": 36,
+      "Partido Revolucionario Democrático": 34,
+      "Cambio Democrático": 70,
+      "Realizando Metas": 66,
       "Partido Panameñista": 172,
-      "Libre Postulación | Seguimos": 53,
+      "Libre Postulación | Seguimos": 55,
+      "Libre Postulación": 218,
       "Movimiento Otro Camino": 104,
-      "Libre Postulación": 213,
       "Partido Alianza": 6,
       "Movimiento Liberal Republicano Nacionalista": 1
     },
@@ -22950,8 +22956,8 @@
       "Coalición Vamos": 23,
       "Libre Postulación | Seguimos": 3,
       "Cambio Democrático": 29,
-      "Movimiento Liberal Republicano Nacionalista": 1,
       "Partido Revolucionario Democrático": 10,
+      "Movimiento Liberal Republicano Nacionalista": 1,
       "Partido Alianza": 3,
       "Libre Postulación": 9,
       "Movimiento Otro Camino": 6,
@@ -22964,13 +22970,13 @@
       "Realizando Metas": 1
     },
     "Partido Revolucionario Democrático": {
-      "Cambio Democrático": 16,
-      "Realizando Metas": 57,
       "Partido Revolucionario Democrático": 75,
+      "Realizando Metas": 57,
       "Coalición Vamos": 55,
+      "Cambio Democrático": 16,
       "Libre Postulación | Seguimos": 4,
-      "Partido Panameñista": 30,
       "Partido Popular": 3,
+      "Partido Panameñista": 30,
       "Movimiento Liberal Republicano Nacionalista": 5,
       "Libre Postulación": 14,
       "Movimiento Otro Camino": 5,
@@ -22979,10 +22985,10 @@
     "Partido Panameñista": {
       "Partido Panameñista": 106,
       "Coalición Vamos": 142,
-      "Libre Postulación": 35,
       "Cambio Democrático": 62,
-      "Partido Revolucionario Democrático": 26,
+      "Libre Postulación": 35,
       "Movimiento Liberal Republicano Nacionalista": 6,
+      "Partido Revolucionario Democrático": 26,
       "Realizando Metas": 37,
       "Partido Alianza": 3,
       "Libre Postulación | Seguimos": 5,
@@ -22990,43 +22996,43 @@
       "Partido Popular": 9
     },
     "Movimiento Liberal Republicano Nacionalista": {
-      "Cambio Democrático": 9,
       "Realizando Metas": 38,
       "Partido Revolucionario Democrático": 22,
       "Partido Panameñista": 12,
+      "Cambio Democrático": 9,
       "Libre Postulación": 4,
       "Partido Alianza": 3,
-      "Movimiento Otro Camino": 1,
       "Coalición Vamos": 4,
+      "Movimiento Otro Camino": 1,
       "Partido Popular": 2
     },
     "Libre Postulación": {
-      "Coalición Vamos": 192,
-      "Partido Panameñista": 37,
+      "Coalición Vamos": 156,
+      "Partido Panameñista": 30,
       "Cambio Democrático": 12,
-      "Libre Postulación": 36,
-      "Partido Revolucionario Democrático": 11,
-      "Partido Popular": 9,
-      "Realizando Metas": 12,
-      "Libre Postulación | Seguimos": 10,
-      "Movimiento Otro Camino": 20,
-      "Partido Alianza": 3
+      "Libre Postulación": 29,
+      "Partido Revolucionario Democrático": 6,
+      "Partido Popular": 7,
+      "Realizando Metas": 7,
+      "Libre Postulación | Seguimos": 6,
+      "Movimiento Otro Camino": 15,
+      "Partido Alianza": 2
     },
     "Movimiento Otro Camino": {
-      "Coalición Vamos": 69,
-      "Movimiento Otro Camino": 38,
-      "Libre Postulación | Seguimos": 14,
+      "Coalición Vamos": 81,
+      "Movimiento Otro Camino": 39,
+      "Libre Postulación | Seguimos": 15,
       "Partido Popular": 4,
-      "Libre Postulación": 7,
-      "Cambio Democrático": 1,
+      "Libre Postulación": 10,
       "Realizando Metas": 3,
+      "Cambio Democrático": 1,
       "Partido Panameñista": 5,
       "Movimiento Liberal Republicano Nacionalista": 1,
       "Partido Revolucionario Democrático": 1
     },
     "Libre Postulación | Seguimos": {
-      "Partido Revolucionario Democrático": 1,
       "Coalición Vamos": 25,
+      "Partido Revolucionario Democrático": 1,
       "Movimiento Otro Camino": 11,
       "Partido Alianza": 1,
       "Libre Postulación": 2
