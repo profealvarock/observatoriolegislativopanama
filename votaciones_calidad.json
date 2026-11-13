@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-12T12:26:24-05:00",
+ "fecha": "2026-11-13T12:00:58-05:00",
  "estado": "ok",
  "reportes_api": 527,
  "reportes_legislatura": 164,
@@ -272,6 +272,17 @@
   "circuito+apellido+suplente": 4
  },
  "corridas": [
+  {
+   "fecha": "2026-11-13T12:00:58-05:00",
+   "estado": "ok",
+   "reportes_nuevos": 0,
+   "votaciones_nuevas": 0,
+   "votaciones_total": 390,
+   "reportes_pendientes": 0,
+   "sin_proyecto": 40,
+   "proyecto_sin_ficha": 0,
+   "diputados_sin_vincular": 0
+  },
   {
    "fecha": "2026-11-12T12:26:24-05:00",
    "estado": "ok",
