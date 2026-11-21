@@ -82,6 +82,7 @@
       <button class="tab" data-tab="aprobacion" hidden>⭐ Aprobación y confianza</button>
       <button class="tab" data-tab="costo-vida" hidden>🛒 Costo de vida</button>
       <button class="tab" data-tab="salarios" hidden>💵 Salarios y empleo</button>
+      <button class="tab" data-tab="educacion" hidden>🎓 Educación</button>
       <button class="tab" data-tab="sismo" hidden>🌎 Sismo</button>
       <button class="tab" data-tab="mineria" hidden>⛏️ Minería</button>
       <button class="tab" data-tab="general" hidden>📊 Resumen</button>
@@ -778,6 +779,11 @@
   <div id="sal-root"><div class="loader"><div class="spinner"></div> Cargando salarios y empleo…</div></div>
 </div>
 
+<!-- TAB EDUCACIÓN · datos en data/educacion.json (js/educacion.js) -->
+<div id="tab-educacion" class="tab-content">
+  <div id="edu-root"><div class="loader"><div class="spinner"></div> Cargando datos de educación…</div></div>
+</div>
+
 <!-- TAB MINERÍA · datos en data/mineria.json; proyectos y votaciones de la Asamblea en vivo (js/mineria.js) -->
 <div id="tab-mineria" class="tab-content">
   <div id="min-root"><div class="loader"><div class="spinner"></div> Cargando datos de minería…</div></div>
@@ -787,7 +793,7 @@
 <div id="tab-metodologia" class="tab-content">
   <div class="met-intro">
     <h2>Cómo se construyen estos datos</h2>
-    <p>El Observatorio Ciudadano de Panamá es un centro de consulta con datos públicos, organizado en tres grupos: <strong>Percepción</strong> (cómo se evalúa al Gobierno y a las instituciones), <strong>Intereses ciudadanos</strong> (costo de la vida, salarios y empleo, el sismo de 2026 y la minería) y <strong>Asamblea Nacional</strong> (quién propone qué, cuánto avanza, cómo se vota y cuánto cuesta). Aquí se explica de dónde sale cada número, qué decisiones se tomaron al calcularlo y qué limitaciones tiene. Si encuentras un error, escríbeme por cualquiera de las redes al pie de la página.</p>
+    <p>El Observatorio Ciudadano de Panamá es un centro de consulta con datos públicos, organizado en tres grupos: <strong>Percepción</strong> (cómo se evalúa al Gobierno y a las instituciones), <strong>Intereses ciudadanos</strong> (costo de la vida, salarios y empleo, educación, el sismo de 2026 y la minería) y <strong>Asamblea Nacional</strong> (quién propone qué, cuánto avanza, cómo se vota y cuánto cuesta). Aquí se explica de dónde sale cada número, qué decisiones se tomaron al calcularlo y qué limitaciones tiene. Si encuentras un error, escríbeme por cualquiera de las redes al pie de la página.</p>
     <div class="met-estado" id="met-estado"></div>
   </div>
 
@@ -969,6 +975,18 @@
         <dt>Precisión</dt><dd>Son estimaciones de una encuesta por muestreo: los grupos con pocos asalariados (minería, comarcas, organismos extraterritoriales) tienen medianas menos precisas. La calculadora "¿Cómo se compara tu salario?" corre en tu navegador y no guarda nada.</dd>
       </dl>
     </section>
+
+    <section class="met-card met-ancha">
+      <h3>17. 🎓 Educación</h3>
+      <dl>
+        <dt>Analfabetismo</dt><dd><strong>Censo 2023</strong> del INEC: población de 10 y más años que no sabe leer ni escribir. Total nacional, por sexo y por provincia según los cuadros 12 y 14 del INEC; la tasa por provincia y sexo se calcula con los conteos del cuadro 19 (sin las personas que no declararon). Se compara con los censos de 2000 y 2010; Panamá Oeste no existía antes de 2014.</dd>
+        <dt>Nivel educativo</dt><dd>Cuadro 20 del Censo 2023. Se usa la población de <strong>25 y más años</strong>, el estándar internacional para medir el nivel alcanzado (a esa edad la mayoría terminó de estudiar). Cada nivel cuenta a quien aprobó algún grado de él, aunque no lo terminara; "universitaria" suma licenciatura, posgrado, maestría y doctorado. Los años de estudio promedio los publica el INEC para la población de 4 y más años.</dd>
+        <dt>Qué se estudia</dt><dd>Anuario de Educación del INEC: matrícula y graduados de todas las universidades del país por <strong>sector de estudio</strong> (agrupación de carreras afines) y sexo. El INEC no publica la matrícula nacional carrera por carrera; la Universidad de Panamá sí la publica por facultad en el mismo anuario.</dd>
+        <dt>Deserción escolar</dt><dd>Tasas oficiales de <strong>MEDUCA</strong> (cuadros 2-12, 3-12 y 4-12): porcentaje de la matrícula de primaria, premedia y media, oficial y particular, que abandonó durante el año lectivo, por sexo, área y región educativa. MEDUCA advierte que una parte corresponde a traslados a otros centros. La <strong>deserción universitaria</strong> queda pendiente: no hay una tasa nacional oficial y los estudios disponibles no son comparables.</dd>
+        <dt>Gasto por alumno</dt><dd>Gasto del Gobierno Central en educación dividido por la matrícula oficial de cada nivel (anuario de Educación del INEC).</dd>
+        <dt>Actualización</dt><dd>El Censo se carga una vez (el próximo es en 2033). Cada lunes el proceso busca el año lectivo más reciente publicado por MEDUCA y el anuario de Educación más reciente del INEC, localiza los cuadros por su título y los lee de los archivos oficiales. El sitio de MEDUCA no envía su certificado intermedio; el proceso lo completa desde la dirección que indica el propio certificado y verifica la cadena, sin desactivar la verificación.</dd>
+      </dl>
+    </section>
   </div>
 </div>
 
@@ -1053,6 +1071,7 @@
 <script src="js/costo_vida.js"></script>
 <script src="js/mineria.js"></script>
 <script src="js/salarios.js"></script>
+<script src="js/educacion.js"></script>
 <script src="js/portada.js"></script>
 <script src="js/inicio.js"></script>
 </body>

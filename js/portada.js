@@ -30,6 +30,7 @@ async function initPortada(){
   const [ap,cv,sm,mi,sa]=(await Promise.allSettled(['aprobacion','costo_vida','sismo','mineria','salarios'].map(cargarIndicador))).map(r=>r.status==='fulfilled'?r.value:null);
   const m=(Dx,id)=>Dx?metricaPorId(Dx,id):null;
   const medSal=m(sa,'mediana_salario'), desem=m(sa,'desempleo');
+  const ed=await cargarIndicador('educacion').catch(()=>null), analf=m(ed,'analfabetismo'), desMed=m(ed,'desercion_media');
 
   const mala=m(ap,'gestion_mala'), conf=m(ap,'confianza_presidente');
   const g95=m(cv,'gasolina_95_gal'), cbfa=m(cv,'cbfa');
@@ -66,6 +67,10 @@ async function initPortada(){
         dato:medSal?fmtValor(medSal):null, etiqueta:'mediana del salario mensual (la mitad gana menos)',
         extra:desem?`Desempleo: <b>${esc(fmtValor(desem))}</b> · por sector, sexo y provincia`:'',
         fuente:'INEC · Mitradel', fecha:medSal?.fecha_corte}),
+      portadaCard({href:'#educacion', titulo:'🎓 Educación',
+        dato:analf?fmtDec(analf.valor,2)+'%':null, etiqueta:'de analfabetismo en la población de 10 y más años (Censo 2023)',
+        extra:desMed?`Deserción en media: <b>${esc(fmtDec(desMed.valor,2))}%</b> (${esc(desMed.periodo)}) · carreras más estudiadas`:'',
+        fuente:'INEC · MEDUCA', fecha:desMed?.fecha_corte||analf?.fecha_corte}),
       portadaCard({href:'#sismo', titulo:'🌎 Sismo del 9 de octubre',
         dato:afe?fmtValor(afe):null, etiqueta:'personas registradas en la evaluación de daños',
         extra:alb?`Albergues activos: <b>${esc(fmtValor(alb))}</b>`:'',

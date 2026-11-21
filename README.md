@@ -13,7 +13,7 @@ El menú tiene cuatro grupos y, dentro de cada uno, sus secciones (`js/navegacio
 |-------|-----------|-------|
 | **🏠 Inicio** | Una tarjeta por sección con su cifra clave, fuente y frescura | todos |
 | **⭐ Percepción** | Aprobación y confianza (presidente, gabinete, instituciones) | `data/aprobacion.json` |
-| **🏘️ Intereses ciudadanos** | Costo de vida · Salarios y empleo · Sismo · Minería | `data/costo_vida.json`, `data/salarios.json`, `data/sismo.json`, `data/mineria.json` |
+| **🏘️ Intereses ciudadanos** | Costo de vida · Salarios y empleo · Educación · Sismo · Minería | `data/costo_vida.json`, `data/salarios.json`, `data/educacion.json`, `data/sismo.json`, `data/mineria.json` |
 | **🏛️ Asamblea Nacional** | Las secciones de la tabla siguiente | `resumen.json`, `datos.json`, `votaciones.json`… |
 | **📘 Metodología** | Fuentes, reglas y limitaciones de todo el sitio | — |
 
