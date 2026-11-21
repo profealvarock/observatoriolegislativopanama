@@ -35,7 +35,7 @@ async function initSismo(){
   const conFecha=(x,ref)=>x&&x.fecha_corte&&ref&&x.fecha_corte!==ref.fecha_corte?` <span class="ind-al">(al ${esc(fmtDia(x.fecha_corte,false))})</span>`:'';
   const af=m('afectados'), fa=m('fallecidos'), he=m('heridos'), al=m('albergados'), ag=m('albergues');
   const rl=m('replicas_localizadas'), r4=m('replicas_m4'), rd=m('replicas_detectadas');
-  const dias={etiqueta:archivo?'Días desde el sismo (al cierre)':'Días desde el sismo', valor:null, unidad:'días',
+  const dias={etiqueta:'Días desde el sismo', valor:null, unidad:'días',
     fuente:ev.fuente, url:ev.url, fecha_corte:fh, periodo:ev.inicio?.slice(0,10)};
 
   root.innerHTML=`

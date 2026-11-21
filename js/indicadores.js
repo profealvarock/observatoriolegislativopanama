@@ -153,8 +153,10 @@ function exportIndicadorMetricas(p){
     ['ID',m=>m.id], ['Indicador',m=>m.etiqueta], ['Valor',m=>m.valor==null?(m.estado||'s/d'):m.valor], ['Unidad',m=>m.unidad],
     ['Fecha de corte',m=>m.fecha_corte], ['Período',m=>m.periodo], ['Variación',m=>m.variacion],
     ['Fuente',m=>m.fuente], ['URL',m=>m.url], ['Calidad',m=>m.calidad], ['Notas',m=>m.notas],
-  ], D.metricas||[]);
+  ], D.metricas||[], fechaIndicador(D));
 }
+// El nombre del archivo lleva la fecha de corte de la pestaña, no la de resumen.json
+const fechaIndicador = D => String(D.fecha_corte||D.generado||hoyPanama()).slice(0,10);
 // Series anidadas (p. ej. una medición con varias instituciones) se aplanan a una fila por dato.
 const IND_APLANAR = {};
 function exportIndicadorSerie(p, nombre){
@@ -162,7 +164,7 @@ function exportIndicadorSerie(p, nombre){
   const aplanar=IND_APLANAR[p+'.'+nombre];
   const filas=(aplanar ? aplanar(D) : (D.series?.[nombre]||[]));
   const claves=[...new Set(filas.flatMap(f=>Object.keys(f)))];
-  downloadCSV(`${p}_${nombre}`, claves.map(k=>[k, f=>{ const v=f[k]; return v!=null&&typeof v==='object'?JSON.stringify(v):v; }]), filas);
+  downloadCSV(`${p}_${nombre}`, claves.map(k=>[k, f=>{ const v=f[k]; return v!=null&&typeof v==='object'?JSON.stringify(v):v; }]), filas, fechaIndicador(D));
 }
 function descargasIndicadorHTML(p, series){
   return `<div class="card ind-descargas">

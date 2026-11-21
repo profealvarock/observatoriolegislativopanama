@@ -194,6 +194,16 @@ def test_vea_ignora_notas_sin_medicion():
     assert ai.parse_vea('El presidente habló de la encuesta de Vea Panamá en su conferencia.') is None
 
 
+def test_sismo_en_modo_archivo_no_se_actualiza(monkeypatch):
+    def no_llamar(*a, **k):
+        raise AssertionError('en modo archivo no debe consultar fuentes')
+    monkeypatch.setattr(ai, 'http_get', no_llamar)
+    monkeypatch.setattr(ai, 'existe', no_llamar)
+    sm = {'activo': False, 'metricas': [], 'series': {'replicas': []}, 'fuentes': {}}
+    assert ai.modulo_sinaproc(sm, date(2026, 11, 23), lambda *a: None) is False
+    assert ai.modulo_igc(sm, date(2026, 11, 23), lambda *a: None) is False
+
+
 # ── Job completo sin red: un módulo caído no rompe el resto ──────────────────
 
 def test_job_conserva_valores_y_registra_advertencias(tmp_path, monkeypatch):

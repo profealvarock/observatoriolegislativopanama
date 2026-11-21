@@ -560,6 +560,8 @@ def _numero_comunicado(url):
 def modulo_sinaproc(sm, hoy, avisar):
     """Último balance de Sinaproc: prueba los comunicados numerados siguientes al conocido y los
     artículos recientes del feed que hablen de evaluaciones o afectados."""
+    if sm.get('activo') is False:   # modo archivo histórico: no se revisa más
+        return False
     fuente = sm.setdefault('fuentes', {}).setdefault('sinaproc', {})
     n0 = _numero_comunicado(fuente.get('url')) or 0
     candidatos = []
@@ -619,6 +621,8 @@ def modulo_sinaproc(sm, hoy, avisar):
 
 def modulo_igc(sm, hoy, avisar):
     """Conteo de réplicas del IGC-UP, tomado de notas de prensa que lo citan."""
+    if sm.get('activo') is False:
+        return False
     serie = sm['series'].setdefault('replicas', [])
     ultimo = serie[-1] if serie else {'periodo': '0000', 'localizadas': 0}
     arts, errs = _articulos_prensa(r'replica|sismo|geociencias', desde=date.fromisoformat(ultimo['periodo'][:10]) + timedelta(days=1)
