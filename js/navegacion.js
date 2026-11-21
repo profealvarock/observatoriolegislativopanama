@@ -250,6 +250,8 @@ function showTab(name){
   document.querySelectorAll('.tab').forEach((t,i)=>{
     const on=TABS[i]===name;
     t.classList.toggle('active',on); t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1;
+    // En móvil la barra se desplaza: la pestaña elegida (p. ej. por enlace directo) queda a la vista
+    if(on){ const bar=t.parentElement; if(bar && bar.scrollWidth>bar.clientWidth) bar.scrollTo({left:t.offsetLeft-bar.clientWidth/2+t.offsetWidth/2,behavior:'auto'}); }
   });
   document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
