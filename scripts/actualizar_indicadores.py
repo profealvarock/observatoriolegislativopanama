@@ -1,5 +1,5 @@
 """
-Observatorio Ciudadano de Panamá — actualización semanal de Aprobación, Sismo, Costo de vida, Salarios y Minería.
+Observatorio Ciudadano de Panamá — actualización semanal de Aprobación, Sismo, Costo de vida, Salarios, Educación y Minería.
 
 Lee y actualiza data/aprobacion.json, data/sismo.json, data/costo_vida.json y data/mineria.json. Hay un módulo por
 fuente; cada uno valida lo que encuentra (número, rango razonable, fecha de corte no futura) y,
@@ -25,7 +25,7 @@ from xml.etree import ElementTree
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / 'data'
-ARCHIVOS = {'aprobacion': 'aprobacion.json', 'sismo': 'sismo.json', 'costo_vida': 'costo_vida.json', 'mineria': 'mineria.json', 'salarios': 'salarios.json'}
+ARCHIVOS = {'aprobacion': 'aprobacion.json', 'sismo': 'sismo.json', 'costo_vida': 'costo_vida.json', 'mineria': 'mineria.json', 'salarios': 'salarios.json', 'educacion': 'educacion.json'}
 
 UA = 'Mozilla/5.0 (compatible; ObservatorioLegislativoPA/1.0; +https://observatoriolegistalivopa.netlify.app)'
 TIMEOUT = 30
@@ -134,9 +134,52 @@ def fecha_mayor(D):
 
 # ── RED ──────────────────────────────────────────────────────────────────────
 
+_BUNDLES = {}
+
+
+def _bundle_con_intermedio(host):
+    """Algunos servidores públicos (p. ej. meduca.gob.pa) no envían su certificado intermedio. Como hacen los
+    navegadores, se descarga el intermedio desde la dirección 'CA Issuers' (AIA) del propio certificado y se
+    valida la cadena completa contra las raíces de certifi. La verificación TLS nunca se desactiva."""
+    if host in _BUNDLES:
+        return _BUNDLES[host]
+    import socket, ssl, tempfile, urllib.request, certifi
+    ctx = ssl.create_default_context()
+    ctx.check_hostname, ctx.verify_mode = False, ssl.CERT_NONE   # solo para leer el certificado, no para usarlo
+    with socket.create_connection((host, 443), timeout=TIMEOUT) as s, ctx.wrap_socket(s, server_hostname=host) as t:
+        der = t.getpeercert(binary_form=True)
+    with tempfile.NamedTemporaryFile('w', suffix='.pem', delete=False) as f:
+        f.write(ssl.DER_cert_to_PEM_cert(der))
+    info = ssl._ssl._test_decode_cert(f.name)   # noqa: SLF001 — lee la extensión AIA sin dependencias extra
+    os_remove(f.name)
+    emisores = [u for u in info.get('caIssuers', ()) if u.startswith('http')]
+    if not emisores:
+        raise ssl.SSLError(f'{host}: el certificado no indica dónde obtener su intermedio')
+    with urllib.request.urlopen(emisores[0], timeout=TIMEOUT) as resp:   # el intermedio se sirve por HTTP (estándar AIA)
+        inter = resp.read()
+    pem = inter.decode() if inter.lstrip().startswith(b'-----BEGIN') else ssl.DER_cert_to_PEM_cert(inter)
+    with tempfile.NamedTemporaryFile('w', suffix='.pem', delete=False, encoding='utf-8') as f:
+        f.write(open(certifi.where(), encoding='utf-8').read() + '\n' + pem)
+    _BUNDLES[host] = f.name
+    return f.name
+
+
+def os_remove(ruta):
+    import os
+    try:
+        os.remove(ruta)
+    except OSError:
+        pass
+
+
 def http_get(url, binario=False):
     import requests
-    r = requests.get(url, headers={'User-Agent': UA, 'Accept-Language': 'es-PA,es;q=0.9'}, timeout=TIMEOUT)
+    cab = {'User-Agent': UA, 'Accept-Language': 'es-PA,es;q=0.9'}
+    try:
+        r = requests.get(url, headers=cab, timeout=TIMEOUT)
+    except requests.exceptions.SSLError:
+        host = re.sub(r'^https?://([^/:]+).*', r'\1', url)
+        r = requests.get(url, headers=cab, timeout=TIMEOUT, verify=_bundle_con_intermedio(host))
     r.raise_for_status()
     if binario:
         return r.content
@@ -939,6 +982,324 @@ def _actualizar_kpis_salarios(sa):
                                             'variacion': round(u['valor'] - a['valor'], 1) if a else None})
 
 
+# ── EDUCACIÓN (Censo 2023, MEDUCA, INEC) ─────────────────────────────────────
+INEC_LISTA_EDU = INEC + '/publicaciones/Default2.aspx?ID_CATEGORIA=6&ID_SUBCATEGORIA=41'
+INEC_PUB_EDU = INEC + '/publicaciones/Default3.aspx?ID_PUBLICACION={id}&ID_CATEGORIA=6&ID_SUBCATEGORIA=41'
+INEC_PUB_CENSO_EDU = INEC + '/publicaciones/Default3.aspx?ID_PUBLICACION=1212&ID_CATEGORIA=19&ID_SUBCATEGORIA=71'
+MEDUCA_ESTADISTICAS = 'https://www.meduca.gob.pa/transparencia/estadisticas/'
+NIVELES_MEDUCA = {'2-12': 'primaria', '3-12': 'premedia', '4-12': 'media'}
+# Columnas del cuadro 20 del Censo 2023 (población de 4 y más años por nivel de instrucción)
+COLS_INSTRUCCION = ['total', 'sin_grado', 'preescolar', 'primaria', 'secundaria', 'universitaria', 'postgrado', 'maestria',
+                    'doctorado', 'superior_no_univ', 'vocacional', 'especial', 'no_declarado', 'promedio_anios']
+
+
+def filas_excel(datos):
+    """Filas de la primera hoja de un Excel .xlsx (openpyxl) o .xls antiguo (xlrd), como listas de valores."""
+    if datos[:4] == b'PK\x03\x04':
+        import openpyxl
+        ws = openpyxl.load_workbook(io.BytesIO(datos), data_only=True, read_only=True).worksheets[0]
+        return [list(r) for r in ws.iter_rows(values_only=True)]
+    import xlrd
+    sh = xlrd.open_workbook(file_contents=datos).sheet_by_index(0)
+    return [sh.row_values(i) for i in range(sh.nrows)]
+
+
+def _num(v):
+    if isinstance(v, (int, float)) and not isinstance(v, bool):
+        return float(v)
+    if isinstance(v, str) and re.fullmatch(r'-?\d+(\.\d+)?', v.strip()):
+        return float(v)
+    return None
+
+
+def _prov_censo(texto):
+    c = sin_tildes(_etiqueta_inec(texto)).replace('hererra', 'herrera')
+    c = re.sub(r'\s*\(\d+\)$', '', c).strip()
+    return PROVINCIAS_INEC.get(c)
+
+
+def parse_censo_analfabetismo(datos_c12, datos_c14, datos_c19):
+    """Censo 2023 → {'nacional': {Total|Hombres|Mujeres: {tasa, analfabetas, poblacion}},
+                      'historico': [{anio, tasa}], 'provincias': [{provincia, Total|Hombres|Mujeres: {tasa, analfabetas}, '2000','2010'}]}"""
+    nac, hist = {}, []
+    for r in filas_excel(datos_c12):
+        etq = next((str(c).strip() for c in r if isinstance(c, str) and c.strip()), '')
+        nums = [_num(c) for c in r if _num(c) is not None]
+        if etq.upper() in ('TOTAL', 'HOMBRES', 'MUJERES') and len(nums) >= 8:
+            sexo = etq.capitalize() if etq.upper() != 'TOTAL' else 'Total'
+            nac[sexo] = {'poblacion': int(nums[4]), 'analfabetas': int(nums[6]), 'tasa': round(nums[7], 2)}
+            if sexo == 'Total':
+                hist.append({'anio': 2010, 'tasa': round(nums[3], 1)})
+    provs = {}
+    for r in filas_excel(datos_c14):
+        etq = next((c for c in r if isinstance(c, str) and c.strip()), '')
+        nums = [_num(c) for c in r[1:]]
+        if etq.strip().upper() == 'TOTAL' and len(nums) >= 6 and nums[1] is not None:
+            hist.insert(0, {'anio': 2000, 'tasa': round(nums[1], 1)})
+            hist.append({'anio': 2023, 'tasa': round(nums[5], 2)})
+        p = _prov_censo(etq) if etq else None
+        if p and len(nums) >= 6 and nums[5] is not None:
+            provs[p] = {'provincia': p, 'Total': {'analfabetas': int(nums[4]), 'tasa': round(nums[5], 2)},
+                        '2000': round(nums[1], 1) if nums[1] is not None else None, '2010': round(nums[3], 1) if nums[3] is not None else None}
+    vistos = set()
+    for r in filas_excel(datos_c19):   # la primera aparición de cada nombre es la fila de la provincia (después vienen distritos)
+        etq = r[0] if r and isinstance(r[0], str) else ''
+        p = _prov_censo(etq) if etq else None
+        nums = [n for n in (_num(c) if str(c).strip() != '-' else 0.0 for c in r[1:]) if n is not None]   # se saltan celdas vacías
+        if not p or p in vistos or len(nums) < 7:
+            continue
+        vistos.add(p)
+        _tot, _alf, alf_h, alf_m, _an, an_h, an_m = nums[:7]
+        if p in provs:
+            provs[p]['Hombres'] = {'analfabetas': int(an_h), 'tasa': round(an_h / (alf_h + an_h) * 100, 2) if alf_h + an_h else None}
+            provs[p]['Mujeres'] = {'analfabetas': int(an_m), 'tasa': round(an_m / (alf_m + an_m) * 100, 2) if alf_m + an_m else None}
+    if not nac or not provs:
+        return None
+    return {'nacional': nac, 'historico': sorted(hist, key=lambda h: h['anio']), 'provincias': list(provs.values())}
+
+
+def parse_censo_instruccion(datos_c20, edad_min=25):
+    """Censo 2023, cuadro 20 → nivel de instrucción de la población de 25 y más años (estándar internacional para el
+    nivel alcanzado) y promedio de años aprobados (4 y más años), para el país y cada provincia, por sexo."""
+    salida, actual, sexo = {}, None, None
+    for r in filas_excel(datos_c20):
+        textos = [str(c).strip() for c in r[1:4] if isinstance(c, str) and str(c).strip()]
+        etq = textos[0] if textos else ''
+        vals = [_num(c) if _num(c) is not None else (0.0 if str(c).strip() == '-' else None) for c in r[4:18]]
+        if not etq or vals[0] is None:
+            continue
+        clave = sin_tildes(etq)
+        p = _prov_censo(etq)
+        if clave == 'total':
+            actual, sexo = 'República', 'Total'
+        elif p:
+            actual, sexo = p, 'Total'
+        elif clave in ('hombres', 'mujeres'):
+            sexo = clave.capitalize()
+        elif actual:
+            m = re.match(r'(\d+)\s*-\s*\d+|(\d+) y mas', clave)
+            if m and int(m.group(1) or m.group(2)) >= edad_min:
+                acc = salida.setdefault(actual, {}).setdefault(sexo, {'_suma': [0.0] * 13})
+                acc['_suma'] = [a + (v or 0) for a, v in zip(acc['_suma'], vals[:13])]
+            continue
+        else:
+            continue
+        reg = salida.setdefault(actual, {}).setdefault(sexo, {'_suma': [0.0] * 13})
+        if vals[13] is not None:
+            reg['promedio_anios'] = round(vals[13], 2)
+    res = {}
+    for lugar, sexos in salida.items():
+        res[lugar] = {}
+        for sx, d in sexos.items():
+            s = dict(zip(COLS_INSTRUCCION[:13], d['_suma']))
+            base = s['total'] - s['no_declarado']
+            if base <= 0:
+                continue
+            pct = lambda *ks: round(sum(s[k] for k in ks) / base * 100, 2)
+            res[lugar][sx] = {
+                'poblacion_25': int(s['total']), 'promedio_anios': d.get('promedio_anios'),
+                'sin_grado': pct('sin_grado', 'preescolar', 'especial'), 'primaria': pct('primaria'), 'secundaria': pct('secundaria'),
+                'tecnica': pct('superior_no_univ', 'vocacional'), 'universitaria': pct('universitaria', 'postgrado', 'maestria', 'doctorado'),
+                'posgrado': pct('postgrado', 'maestria', 'doctorado')}
+    return res or None
+
+
+def parse_meduca_tasas(texto):
+    """Cuadro de MEDUCA 'Tasa de aprobados, (aplazados,) reprobados y desertores … en la República, por sexo, según área y
+    región educativa'. Cada fila: región, matrícula (total, H, M), 100.00 y tasas (subtotal, H, M) de cada condición;
+    las tres últimas son los desertores.  → [{region, matricula, aprobados, reprobados, desertores: {Total, Hombres, Mujeres}}]"""
+    filas = []
+    for linea in (texto or '').splitlines():
+        m = re.match(r'^\s*([^\W\d_][^\d]*?)\s+([\d,].*)$', linea)   # la región puede llevar tildes o diéresis (Ngäbe-Buglé)
+        if not m:
+            continue
+        toks = m.group(2).split()
+        nums = []
+        for t in toks:
+            if t == '-':
+                nums.append(0.0)
+            elif re.fullmatch(r'\d{1,3}(,\d{3})+|\d+(\.\d+)?', t):
+                nums.append(float(t.replace(',', '')))
+            else:
+                nums = []
+                break
+        if len(nums) < 13 or abs(nums[3] - 100) > 0.01:
+            continue
+        filas.append({'region': m.group(1).strip(), 'matricula': int(nums[0]), 'aprobados': nums[4], 'reprobados': nums[-6],
+                      'desertores': {'Total': nums[-3], 'Hombres': nums[-2], 'Mujeres': nums[-1]}})
+    return filas
+
+
+def parse_inec_sector_estudio(datos_xlsx):
+    """INEC Educación, cuadro de matrícula o graduados universitarios 'por sexo, según sector de estudio y dependencia':
+    filas del bloque TOTAL (antes de 'Oficial') → {'total': {..}, 'sectores': [{sector, total, hombres, mujeres}]}"""
+    filas, total, buffer = [], None, []
+    for r in filas_excel(datos_xlsx)[4:]:
+        celdas = [c for c in r if c not in (None, '')]
+        if not celdas:
+            buffer = []
+            continue
+        if isinstance(celdas[0], str) and (len(celdas) < 4 or _num(celdas[1]) is None):
+            buffer.append(celdas[0])
+            continue
+        if not (isinstance(celdas[0], str) and len(celdas) >= 5):
+            continue
+        etq = _etiqueta_inec('\n'.join(buffer + [celdas[0]]))
+        buffer = []
+        clave = sin_tildes(etq)
+        if clave.startswith(('oficial', 'particular')):
+            break
+        t, h, m = _num(celdas[1]), _num(celdas[3]), _num(celdas[4])
+        if t is None:
+            continue
+        reg = {'sector': etq, 'total': int(t), 'hombres': int(h or 0), 'mujeres': int(m or 0)}
+        if clave == 'total':
+            total = reg
+        else:
+            filas.append(reg)
+    return {'total': total, 'sectores': filas} if total and filas else None
+
+
+def parse_inec_costo_alumno(datos_xlsx):
+    """INEC Educación, 'Gastos … y costo por alumno … según nivel de educación' → (año, {nivel: costo})"""
+    filas = filas_excel(datos_xlsx)
+    anios = next(([str(c).strip() for c in r if c not in (None, '')] for r in filas[:8]
+                  if sum(bool(re.match(r'\d{4}', str(c).strip())) for c in r if c not in (None, '')) >= 3), [])
+    nivel, res = 'Total', {}
+    for r in filas:
+        celdas = [c for c in r if c not in (None, '')]
+        if not celdas or not isinstance(celdas[0], str):
+            continue
+        etq = celdas[0].strip()
+        if etq.endswith(':'):
+            nivel = etq.rstrip(':').strip()
+        elif etq.upper() == 'TOTAL':
+            nivel = 'Total'
+        elif etq.lower().startswith('costo por alumno') and _num(celdas[-1]) is not None:
+            res[nivel] = round(_num(celdas[-1]), 2)
+    anio = re.match(r'\d{4}', anios[-1]).group(0) if anios else None
+    return (anio, res) if res and anio else None
+
+
+def _enlaces(html):
+    return [(re.sub(r'\s+', ' ', html_lib.unescape(re.sub(r'<[^>]+>', ' ', t))).strip(), html_lib.unescape(u))
+            for u, t in re.findall(r'href="([^"]+)"[^>]*>(.*?)</a>', html or '', re.S)]
+
+
+def modulo_educacion(ed, hoy, avisar):
+    """Educación: Censo 2023 (una vez), tasas de MEDUCA por nivel (último año publicado) y educación universitaria y
+    costo por alumno del último anuario de Educación del INEC."""
+    s = ed.setdefault('series', {})
+    cambio = False
+    # 1) Censo 2023: estático hasta el próximo censo; solo se carga si falta
+    if not ed.get('censo'):
+        try:
+            arch = {}
+            for texto, urls in _archivos_publicacion(http_get(INEC_PUB_CENSO_EDU)):
+                n = re.match(r'(\d+)\s', texto)
+                if n and n.group(1) in ('12', '14', '19', '20'):
+                    arch[n.group(1)] = (urls.get('xlsx') or urls.get('xls'), texto)
+            datos = {k: http_get(u, binario=True) for k, (u, _) in arch.items()}
+            alf = parse_censo_analfabetismo(datos['12'], datos['14'], datos['19'])
+            ins = parse_censo_instruccion(datos['20'])
+            if not alf or not ins:
+                raise ErrorValidacion('no se pudieron leer los cuadros de alfabetismo o instrucción del Censo 2023')
+            validar_numero(alf['nacional']['Total']['tasa'], 'analfabetismo', (0, 50))
+            ed['censo'] = {'fecha_corte': '2023-09-30', 'url': INEC_PUB_CENSO_EDU,
+                           'cuadros': {k: {'titulo': t, 'url': u} for k, (u, t) in arch.items()},
+                           'analfabetismo': alf, 'instruccion': ins}
+            cambio = True
+        except Exception as e:  # noqa: BLE001
+            avisar('educacion', f'Censo 2023: {e}')
+    # 2) MEDUCA: tasas de deserción por nivel (cuadros 2-12, 3-12 y 4-12, el año más reciente publicado)
+    try:
+        cands = {}
+        for texto, url in _enlaces(http_get(MEDUCA_ESTADISTICAS)):
+            m = re.search(r'[_-]((?:2|3|4)-12)[_-](?:primaria|premedia|media)[_-](\d{4})\.pdf$', url, re.I)
+            if m and 'republica' in sin_tildes(texto) or (m and 'Rep' in texto):
+                nivel, anio = NIVELES_MEDUCA[m.group(1)], int(m.group(2))
+                if anio > cands.get(nivel, (0,))[0]:
+                    cands[nivel] = (anio, url, texto)
+        for nivel, (anio, url, texto) in cands.items():
+            serie = s.setdefault('desercion_' + nivel, [])
+            if any(x['periodo'] == str(anio) for x in serie):
+                continue
+            filas = parse_meduca_tasas(pdf_a_texto(http_get(url, binario=True)))
+            tot = next((f for f in filas if f['region'].lower() == 'total'), None)
+            if not tot:
+                avisar('educacion', f'MEDUCA {nivel} {anio}: el cuadro no trae la fila Total.')
+                continue
+            validar_numero(tot['desertores']['Total'], f'deserción {nivel}', (0, 50))
+            s['desercion_' + nivel] = dedup_series(serie + [{'periodo': str(anio), 'titulo': texto, 'url': url,
+                                                             'nacional': tot, 'regiones': [f for f in filas if f is not tot]}])
+            cambio = True
+        if len(cands) < 3:
+            avisar('educacion', 'MEDUCA: faltan cuadros de tasas por nivel (' + ', '.join(sorted(set(NIVELES_MEDUCA.values()) - set(cands))) + ').')
+    except Exception as e:  # noqa: BLE001
+        avisar('educacion', f'MEDUCA: {e}')
+    # 3) INEC, anuario de Educación más reciente: universidad por sector de estudio y costo por alumno
+    try:
+        pubs = [(int(pid), html_lib.unescape(t).strip()) for pid, t in re.findall(r'ID_PUBLICACION=(\d+)[^"]*"[^>]*>([^<]+)<', http_get(INEC_LISTA_EDU))
+                if re.match(r'Educaci[oó]n: a[ñn]o \d{4}', html_lib.unescape(t).strip())]
+        pid, titulo = pubs[0]
+        anio = re.search(r'\d{4}', titulo).group(0)
+        if not any(x.get('periodo') == anio for x in s.get('universidad', [])):
+            reg = {'periodo': anio, 'titulo': titulo, 'url': INEC_PUB_EDU.format(id=pid)}
+            for texto, urls in _archivos_publicacion(http_get(INEC_PUB_EDU.format(id=pid))):
+                T = sin_tildes(texto)
+                if 'xlsx' not in urls:
+                    continue
+                if 'educacion universitaria' in T and 'sector de estudio' in T and T.split(' ', 2)[1].startswith(('matricula', 'graduados')):
+                    clave = 'matricula' if 'matricula' in T.split(' ', 3)[1] else 'graduados'
+                    r = parse_inec_sector_estudio(http_get(urls['xlsx'], binario=True))
+                    if r:
+                        reg[clave] = r
+                        reg[clave + '_cuadro'] = urls['xlsx']
+                elif 'costo por alumno' in T:
+                    r = parse_inec_costo_alumno(http_get(urls['xlsx'], binario=True))
+                    if r:
+                        reg['costo_alumno'] = {'anio': r[0], 'niveles': r[1], 'cuadro': urls['xlsx']}
+            if 'matricula' in reg:
+                s['universidad'] = dedup_series(s.get('universidad', []) + [reg])
+                cambio = True
+            else:
+                avisar('educacion', f'INEC «{titulo}»: no se encontró la matrícula universitaria por sector de estudio.')
+    except Exception as e:  # noqa: BLE001
+        avisar('educacion', f'INEC Educación: {e}')
+    if cambio:
+        _actualizar_kpis_educacion(ed)
+    return cambio
+
+
+def _actualizar_kpis_educacion(ed):
+    c, s = ed.get('censo') or {}, ed.get('series') or {}
+    alf = (c.get('analfabetismo') or {}).get('nacional', {})
+    ins = (c.get('instruccion') or {}).get('República', {})
+    def poner(mid, valor, fecha, periodo, url, variacion=None):
+        m = metrica(ed, mid)
+        if m and valor is not None:
+            m.update({'valor': valor, 'fecha_corte': fecha, 'periodo': periodo, 'url': url, 'variacion': variacion})
+    hist = (c.get('analfabetismo') or {}).get('historico', [])
+    prev = next((h['tasa'] for h in hist if h['anio'] == 2010), None)
+    if alf.get('Total'):
+        poner('analfabetismo', alf['Total']['tasa'], c['fecha_corte'], '2023', c['url'],
+              round(alf['Total']['tasa'] - prev, 2) if prev is not None else None)
+    if ins.get('Total'):
+        poner('universitaria_25', ins['Total']['universitaria'], c['fecha_corte'], '2023', c['url'])
+        poner('promedio_anios', ins['Total']['promedio_anios'], c['fecha_corte'], '2023', c['url'])
+    for nivel in ('primaria', 'premedia', 'media'):
+        serie = s.get('desercion_' + nivel) or []
+        if serie:
+            u, a = serie[-1], (serie[-2] if len(serie) > 1 else None)
+            v = u['nacional']['desertores']['Total']
+            poner('desercion_' + nivel, v, f"{u['periodo']}-12-31", u['periodo'], u['url'],
+                  round(v - a['nacional']['desertores']['Total'], 2) if a else None)
+    uni = (s.get('universidad') or [])[-1:]
+    if uni and uni[0].get('costo_alumno'):
+        ca = uni[0]['costo_alumno']
+        poner('costo_alumno', ca['niveles'].get('Total'), f"{ca['anio']}-12-31", ca['anio'], ca['cuadro'])
+
+
 _PATRON_MINERO = re.compile(r'\bmina\b|\bminas\b|miner[ia]|minero|cobre panama|first quantum|donoso|recursos minerales|moratoria minera')
 _PATRON_NO_MINERO = re.compile(r'\bminas? antipersonal|mina de sal|minas? de oro de|minsa\b')
 
@@ -982,6 +1343,7 @@ MODULOS = [
     ('encuestas', 'aprobacion', modulo_encuestas),
     ('noticias_mineria', 'mineria', modulo_noticias_mineria),
     ('salarios', 'salarios', modulo_salarios),
+    ('educacion', 'educacion', modulo_educacion),
     ('foto', 'costo_vida', modulo_foto_costo),   # al final: la foto lleva los valores ya actualizados
 ]
 

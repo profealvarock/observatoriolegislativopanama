@@ -1,0 +1,2602 @@
+{
+  "generado": "2026-11-21T04:00:17Z",
+  "pestana": "educacion",
+  "cadencia": "Censo: cada 10 años · MEDUCA: anual · Anuario de Educación del INEC: anual",
+  "fecha_corte": "2025-12-31",
+  "advertencias": [],
+  "fuentes": {
+    "censo": {
+      "nombre": "INEC — Censos Nacionales de Población y Vivienda 2023 (educación)",
+      "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1212&ID_CATEGORIA=19&ID_SUBCATEGORIA=71",
+      "detalle": "Alfabetismo de la población de 10 y más años; nivel de instrucción de la de 4 y más años",
+      "calidad": "alta"
+    },
+    "meduca": {
+      "nombre": "MEDUCA — Estadísticas educativas (tasas de aprobados, reprobados y desertores)",
+      "url": "https://www.meduca.gob.pa/transparencia/estadisticas/",
+      "detalle": "Sector oficial y particular, por sexo, área y región educativa",
+      "calidad": "alta"
+    },
+    "inec_edu": {
+      "nombre": "INEC — Estadísticas Sociales: Educación (anuario)",
+      "url": "https://www.inec.gob.pa/publicaciones/Default2.aspx?ID_CATEGORIA=6&ID_SUBCATEGORIA=41",
+      "detalle": "Matrícula y graduados universitarios por sector de estudio; gasto y costo por alumno",
+      "calidad": "alta"
+    }
+  },
+  "metricas": [
+    {
+      "id": "analfabetismo",
+      "etiqueta": "Analfabetismo (10 y más años)",
+      "valor": 3.65,
+      "unidad": "%",
+      "fecha_corte": "2023-09-30",
+      "periodo": "2023",
+      "variacion": -1.85,
+      "fuente": "INEC — Censo 2023",
+      "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1212&ID_CATEGORIA=19&ID_SUBCATEGORIA=71",
+      "calidad": "alta",
+      "notas": "Variación frente al Censo 2010."
+    },
+    {
+      "id": "promedio_anios",
+      "etiqueta": "Años de estudio promedio",
+      "valor": 11.66,
+      "unidad": "años",
+      "fecha_corte": "2023-09-30",
+      "periodo": "2023",
+      "variacion": null,
+      "fuente": "INEC — Censo 2023",
+      "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1212&ID_CATEGORIA=19&ID_SUBCATEGORIA=71",
+      "calidad": "alta",
+      "notas": "Promedio de años aprobados de la población de 4 y más años."
+    },
+    {
+      "id": "universitaria_25",
+      "etiqueta": "Con estudios universitarios (25 y más años)",
+      "valor": 29.16,
+      "unidad": "%",
+      "fecha_corte": "2023-09-30",
+      "periodo": "2023",
+      "variacion": null,
+      "fuente": "INEC — Censo 2023",
+      "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1212&ID_CATEGORIA=19&ID_SUBCATEGORIA=71",
+      "calidad": "alta",
+      "notas": "Algún grado universitario, posgrado, maestría o doctorado."
+    },
+    {
+      "id": "desercion_primaria",
+      "etiqueta": "Deserción en primaria",
+      "valor": 0.63,
+      "unidad": "%",
+      "fecha_corte": "2025-12-31",
+      "periodo": "2025",
+      "variacion": 0.03,
+      "fuente": "MEDUCA — Cuadro 2-12",
+      "url": "https://www.meduca.gob.pa/wp-content/uploads/2026/08/17062026_Cuadro_2-12_Primaria_2025.pdf",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "desercion_premedia",
+      "etiqueta": "Deserción en premedia",
+      "valor": 1.85,
+      "unidad": "%",
+      "fecha_corte": "2025-12-31",
+      "periodo": "2025",
+      "variacion": -0.02,
+      "fuente": "MEDUCA — Cuadro 3-12",
+      "url": "https://www.meduca.gob.pa/wp-content/uploads/2026/08/22062025_CUADRO_3-12_Premedia_2025.pdf",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "desercion_media",
+      "etiqueta": "Deserción en media",
+      "valor": 2.19,
+      "unidad": "%",
+      "fecha_corte": "2025-12-31",
+      "periodo": "2025",
+      "variacion": -0.2,
+      "fuente": "MEDUCA — Cuadro 4-12",
+      "url": "https://www.meduca.gob.pa/wp-content/uploads/2026/08/19062026_Cuadro_4-12_Media_2025.pdf",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "desercion_universidad",
+      "etiqueta": "Deserción universitaria",
+      "valor": null,
+      "unidad": "%",
+      "fecha_corte": null,
+      "periodo": null,
+      "variacion": null,
+      "fuente": "Sin fuente oficial nacional",
+      "url": null,
+      "calidad": "baja",
+      "estado": "pendiente",
+      "notas": "Pendiente: ni el INEC ni el MEDUCA publican una tasa nacional de deserción universitaria. Los estudios académicos disponibles usan años y métodos distintos (entre 10 % y 40 %) y no son comparables, por eso no se muestra ninguno."
+    },
+    {
+      "id": "costo_alumno",
+      "etiqueta": "Gasto público por alumno",
+      "valor": 2261.56,
+      "unidad": "USD/año",
+      "fecha_corte": "2024-12-31",
+      "periodo": "2024",
+      "variacion": null,
+      "fuente": "INEC — Educación (Gobierno Central)",
+      "url": "https://www.inec.gob.pa/archivos/P0705547520260130074700Cuadro%2019.xlsx",
+      "calidad": "alta",
+      "notas": "Gasto del Gobierno Central en educación dividido por la matrícula oficial."
+    }
+  ],
+  "series": {
+    "universidad": [
+      {
+        "periodo": "2024",
+        "titulo": "Educación: año 2024",
+        "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1378&ID_CATEGORIA=6&ID_SUBCATEGORIA=41",
+        "matricula": {
+          "total": {
+            "sector": "TOTAL",
+            "total": 193773,
+            "hombres": 77416,
+            "mujeres": 116357
+          },
+          "sectores": [
+            {
+              "sector": "Formación de personal docente y ciencias de la educación",
+              "total": 37692,
+              "hombres": 9662,
+              "mujeres": 28030
+            },
+            {
+              "sector": "Artes",
+              "total": 6844,
+              "hombres": 2984,
+              "mujeres": 3860
+            },
+            {
+              "sector": "Humanidades",
+              "total": 8384,
+              "hombres": 3428,
+              "mujeres": 4956
+            },
+            {
+              "sector": "Ciencias sociales y del comportamiento",
+              "total": 6198,
+              "hombres": 1501,
+              "mujeres": 4697
+            },
+            {
+              "sector": "Periodismo e información",
+              "total": 1380,
+              "hombres": 443,
+              "mujeres": 937
+            },
+            {
+              "sector": "Educación comercial y administración",
+              "total": 38267,
+              "hombres": 13584,
+              "mujeres": 24683
+            },
+            {
+              "sector": "Derecho",
+              "total": 11679,
+              "hombres": 4681,
+              "mujeres": 6998
+            },
+            {
+              "sector": "Ciencias de la vida",
+              "total": 3461,
+              "hombres": 1213,
+              "mujeres": 2248
+            },
+            {
+              "sector": "Ciencias físicas",
+              "total": 1205,
+              "hombres": 635,
+              "mujeres": 570
+            },
+            {
+              "sector": "Matemáticas y estadística",
+              "total": 4163,
+              "hombres": 1412,
+              "mujeres": 2751
+            },
+            {
+              "sector": "Informática",
+              "total": 12442,
+              "hombres": 9257,
+              "mujeres": 3185
+            },
+            {
+              "sector": "Ingeniería y profesiones afines",
+              "total": 6450,
+              "hombres": 5141,
+              "mujeres": 1309
+            },
+            {
+              "sector": "Industria y producción",
+              "total": 4423,
+              "hombres": 2729,
+              "mujeres": 1694
+            },
+            {
+              "sector": "Arquitectura y construcción",
+              "total": 7912,
+              "hombres": 4212,
+              "mujeres": 3700
+            },
+            {
+              "sector": "Agricultura, silvicultura y pesca",
+              "total": 2688,
+              "hombres": 1499,
+              "mujeres": 1189
+            },
+            {
+              "sector": "Veterinaria",
+              "total": 293,
+              "hombres": 73,
+              "mujeres": 220
+            },
+            {
+              "sector": "Medicina",
+              "total": 15774,
+              "hombres": 4274,
+              "mujeres": 11500
+            },
+            {
+              "sector": "Servicios sociales",
+              "total": 3903,
+              "hombres": 574,
+              "mujeres": 3329
+            },
+            {
+              "sector": "Servicios personales",
+              "total": 4660,
+              "hombres": 2528,
+              "mujeres": 2132
+            },
+            {
+              "sector": "Servicios de transporte",
+              "total": 9173,
+              "hombres": 4561,
+              "mujeres": 4612
+            },
+            {
+              "sector": "Protección del medio ambiente",
+              "total": 2447,
+              "hombres": 1182,
+              "mujeres": 1265
+            },
+            {
+              "sector": "Servicios de seguridad",
+              "total": 4335,
+              "hombres": 1843,
+              "mujeres": 2492
+            }
+          ]
+        },
+        "matricula_cuadro": "https://www.inec.gob.pa/archivos/P0579518620260130072637Cuadro%204.xlsx",
+        "graduados": {
+          "total": {
+            "sector": "TOTAL",
+            "total": 32792,
+            "hombres": 11455,
+            "mujeres": 21337
+          },
+          "sectores": [
+            {
+              "sector": "Formación de personal docente y ciencias de la educación",
+              "total": 9141,
+              "hombres": 2362,
+              "mujeres": 6779
+            },
+            {
+              "sector": "Artes",
+              "total": 686,
+              "hombres": 215,
+              "mujeres": 471
+            },
+            {
+              "sector": "Humanidades",
+              "total": 1231,
+              "hombres": 396,
+              "mujeres": 835
+            },
+            {
+              "sector": "Ciencias sociales y del comportamiento",
+              "total": 864,
+              "hombres": 220,
+              "mujeres": 644
+            },
+            {
+              "sector": "Periodismo e información",
+              "total": 188,
+              "hombres": 52,
+              "mujeres": 136
+            },
+            {
+              "sector": "Educación comercial y administración",
+              "total": 6583,
+              "hombres": 2075,
+              "mujeres": 4508
+            },
+            {
+              "sector": "Derecho",
+              "total": 1140,
+              "hombres": 440,
+              "mujeres": 700
+            },
+            {
+              "sector": "Ciencias de la vida",
+              "total": 335,
+              "hombres": 105,
+              "mujeres": 230
+            },
+            {
+              "sector": "Ciencias físicas",
+              "total": 134,
+              "hombres": 71,
+              "mujeres": 63
+            },
+            {
+              "sector": "Matemáticas y estadística",
+              "total": 616,
+              "hombres": 135,
+              "mujeres": 481
+            },
+            {
+              "sector": "Informática",
+              "total": 1598,
+              "hombres": 1136,
+              "mujeres": 462
+            },
+            {
+              "sector": "Ingeniería y profesiones afines",
+              "total": 1039,
+              "hombres": 788,
+              "mujeres": 251
+            },
+            {
+              "sector": "Industria y producción",
+              "total": 991,
+              "hombres": 488,
+              "mujeres": 503
+            },
+            {
+              "sector": "Arquitectura y construcción",
+              "total": 1155,
+              "hombres": 597,
+              "mujeres": 558
+            },
+            {
+              "sector": "Agricultura, silvicultura y pesca",
+              "total": 290,
+              "hombres": 141,
+              "mujeres": 149
+            },
+            {
+              "sector": "Veterinaria",
+              "total": 50,
+              "hombres": 14,
+              "mujeres": 36
+            },
+            {
+              "sector": "Medicina",
+              "total": 2147,
+              "hombres": 577,
+              "mujeres": 1570
+            },
+            {
+              "sector": "Servicios sociales",
+              "total": 848,
+              "hombres": 122,
+              "mujeres": 726
+            },
+            {
+              "sector": "Servicios personales",
+              "total": 653,
+              "hombres": 305,
+              "mujeres": 348
+            },
+            {
+              "sector": "Servicios de transporte",
+              "total": 1921,
+              "hombres": 800,
+              "mujeres": 1121
+            },
+            {
+              "sector": "Protección del medio ambiente",
+              "total": 360,
+              "hombres": 143,
+              "mujeres": 217
+            },
+            {
+              "sector": "Servicios de seguridad",
+              "total": 822,
+              "hombres": 273,
+              "mujeres": 549
+            }
+          ]
+        },
+        "graduados_cuadro": "https://www.inec.gob.pa/archivos/P053342420260130072751Cuadro%206.xlsx",
+        "costo_alumno": {
+          "anio": "2024",
+          "niveles": {
+            "Total": 2261.56,
+            "Inicial y primaria": 1706.25,
+            "Educación Especial": 3905.87,
+            "Premedia y media": 2228.01,
+            "Universitaria": 3947.56
+          },
+          "cuadro": "https://www.inec.gob.pa/archivos/P0705547520260130074700Cuadro%2019.xlsx"
+        }
+      }
+    ],
+    "desercion_primaria": [
+      {
+        "periodo": "2024",
+        "titulo": "Cuadro 2-12: Tasa de aprobados, reprobados, desertores en la educación primaria en la República de Panamá. Año lectivo 2024",
+        "url": "https://www.meduca.gob.pa/wp-content/uploads/2025/07/04062025_cuadro_2-12_primaria_2024.pdf",
+        "nacional": {
+          "region": "Total",
+          "matricula": 482961,
+          "aprobados": 96.4,
+          "reprobados": 3.1,
+          "desertores": {
+            "Total": 0.6,
+            "Hombres": 0.6,
+            "Mujeres": 0.5
+          }
+        },
+        "regiones": [
+          {
+            "region": "Indígena",
+            "matricula": 82926,
+            "aprobados": 89.9,
+            "reprobados": 8.6,
+            "desertores": {
+              "Total": 1.5,
+              "Hombres": 1.7,
+              "Mujeres": 1.3
+            }
+          },
+          {
+            "region": "Rural",
+            "matricula": 143652,
+            "aprobados": 96.9,
+            "reprobados": 2.8,
+            "desertores": {
+              "Total": 0.4,
+              "Hombres": 0.4,
+              "Mujeres": 0.3
+            }
+          },
+          {
+            "region": "Urbana",
+            "matricula": 256383,
+            "aprobados": 98.2,
+            "reprobados": 1.5,
+            "desertores": {
+              "Total": 0.4,
+              "Hombres": 0.4,
+              "Mujeres": 0.4
+            }
+          },
+          {
+            "region": "Bocas del Toro",
+            "matricula": 31403,
+            "aprobados": 93.9,
+            "reprobados": 5.5,
+            "desertores": {
+              "Total": 0.5,
+              "Hombres": 0.6,
+              "Mujeres": 0.5
+            }
+          },
+          {
+            "region": "Chiriquí",
+            "matricula": 49639,
+            "aprobados": 97.3,
+            "reprobados": 2.3,
+            "desertores": {
+              "Total": 0.5,
+              "Hombres": 0.5,
+              "Mujeres": 0.5
+            }
+          },
+          {
+            "region": "Coclé",
+            "matricula": 28420,
+            "aprobados": 98.5,
+            "reprobados": 1.3,
+            "desertores": {
+              "Total": 0.1,
+              "Hombres": 0.2,
+              "Mujeres": 0.1
+            }
+          },
+          {
+            "region": "Colón",
+            "matricula": 35533,
+            "aprobados": 96.7,
+            "reprobados": 3.2,
+            "desertores": {
+              "Total": 0.1,
+              "Hombres": 0.2,
+              "Mujeres": 0.1
+            }
+          },
+          {
+            "region": "Comarcas",
+            "matricula": 69757,
+            "aprobados": 89.1,
+            "reprobados": 9.3,
+            "desertores": {
+              "Total": 1.7,
+              "Hombres": 1.8,
+              "Mujeres": 1.5
+            }
+          },
+          {
+            "region": "Emberá Wounaan",
+            "matricula": 2397,
+            "aprobados": 93.0,
+            "reprobados": 6.9,
+            "desertores": {
+              "Total": 0.1,
+              "Hombres": 0.2,
+              "Mujeres": 0.0
+            }
+          },
+          {
+            "region": "Guna Yala",
+            "matricula": 6782,
+            "aprobados": 88.9,
+            "reprobados": 9.5,
+            "desertores": {
+              "Total": 1.7,
+              "Hombres": 1.9,
+              "Mujeres": 1.5
+            }
+          },
+          {
+            "region": "Ngäbe-Buglé",
+            "matricula": 60578,
+            "aprobados": 89.0,
+            "reprobados": 9.3,
+            "desertores": {
+              "Total": 1.7,
+              "Hombres": 1.9,
+              "Mujeres": 1.5
+            }
+          },
+          {
+            "region": "Darién",
+            "matricula": 8333,
+            "aprobados": 95.9,
+            "reprobados": 3.5,
+            "desertores": {
+              "Total": 0.7,
+              "Hombres": 0.8,
+              "Mujeres": 0.5
+            }
+          },
+          {
+            "region": "Herrera",
+            "matricula": 10504,
+            "aprobados": 99.2,
+            "reprobados": 0.7,
+            "desertores": {
+              "Total": 0.0,
+              "Hombres": 0.0,
+              "Mujeres": 0.0
+            }
+          },
+          {
+            "region": "Los Santos",
+            "matricula": 7250,
+            "aprobados": 99.2,
+            "reprobados": 0.7,
+            "desertores": {
+              "Total": 0.0,
+              "Hombres": 0.1,
+              "Mujeres": 0.0
+            }
+          },
+          {
+            "region": "Panamá Centro",
+            "matricula": 77144,
+            "aprobados": 98.2,
+            "reprobados": 1.3,
+            "desertores": {
+              "Total": 0.5,
+              "Hombres": 0.5,
+              "Mujeres": 0.5
+            }
+          },
+          {
+            "region": "Panamá Este",
+            "matricula": 12123,
+            "aprobados": 98.1,
+            "reprobados": 1.4,
+            "desertores": {
+              "Total": 0.5,
+              "Hombres": 0.6,
+              "Mujeres": 0.4
+            }
+          },
+          {
+            "region": "Panamá Norte",
+            "matricula": 24849,
+            "aprobados": 96.4,
+            "reprobados": 3.4,
+            "desertores": {
+              "Total": 0.3,
+              "Hombres": 0.3,
+              "Mujeres": 0.2
+            }
+          },
+          {
+            "region": "Panamá Oeste",
+            "matricula": 71400,
+            "aprobados": 98.3,
+            "reprobados": 1.2,
+            "desertores": {
+              "Total": 0.5,
+              "Hombres": 0.5,
+              "Mujeres": 0.5
+            }
+          },
+          {
+            "region": "San Miguelito",
+            "matricula": 29315,
+            "aprobados": 99.0,
+            "reprobados": 0.8,
+            "desertores": {
+              "Total": 0.2,
+              "Hombres": 0.3,
+              "Mujeres": 0.2
+            }
+          },
+          {
+            "region": "Veraguas",
+            "matricula": 27291,
+            "aprobados": 97.8,
+            "reprobados": 1.7,
+            "desertores": {
+              "Total": 0.5,
+              "Hombres": 0.5,
+              "Mujeres": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "periodo": "2025",
+        "titulo": "Cuadro 2-12: Tasa de aprobados, reprobados, desertores en la educación primaria en la República de Panamá, por sexo, según región educativa. Año lectivo 2025 →",
+        "url": "https://www.meduca.gob.pa/wp-content/uploads/2026/08/17062026_Cuadro_2-12_Primaria_2025.pdf",
+        "nacional": {
+          "region": "Total",
+          "matricula": 480042,
+          "aprobados": 97.07,
+          "reprobados": 2.3,
+          "desertores": {
+            "Total": 0.63,
+            "Hombres": 0.65,
+            "Mujeres": 0.62
+          }
+        },
+        "regiones": [
+          {
+            "region": "Indígena",
+            "matricula": 88745,
+            "aprobados": 92.02,
+            "reprobados": 6.12,
+            "desertores": {
+              "Total": 1.86,
+              "Hombres": 1.85,
+              "Mujeres": 1.87
+            }
+          },
+          {
+            "region": "Rural",
+            "matricula": 144351,
+            "aprobados": 97.86,
+            "reprobados": 1.74,
+            "desertores": {
+              "Total": 0.4,
+              "Hombres": 0.42,
+              "Mujeres": 0.37
+            }
+          },
+          {
+            "region": "Urbana",
+            "matricula": 246946,
+            "aprobados": 98.42,
+            "reprobados": 1.24,
+            "desertores": {
+              "Total": 0.33,
+              "Hombres": 0.35,
+              "Mujeres": 0.32
+            }
+          },
+          {
+            "region": "Bocas del Toro",
+            "matricula": 31148,
+            "aprobados": 96.36,
+            "reprobados": 3.04,
+            "desertores": {
+              "Total": 0.6,
+              "Hombres": 0.61,
+              "Mujeres": 0.59
+            }
+          },
+          {
+            "region": "Chiriquí",
+            "matricula": 50034,
+            "aprobados": 97.6,
+            "reprobados": 1.79,
+            "desertores": {
+              "Total": 0.61,
+              "Hombres": 0.6,
+              "Mujeres": 0.63
+            }
+          },
+          {
+            "region": "Coclé",
+            "matricula": 28119,
+            "aprobados": 99.06,
+            "reprobados": 0.9,
+            "desertores": {
+              "Total": 0.04,
+              "Hombres": 0.06,
+              "Mujeres": 0.02
+            }
+          },
+          {
+            "region": "Colón",
+            "matricula": 35597,
+            "aprobados": 97.6,
+            "reprobados": 2.3,
+            "desertores": {
+              "Total": 0.1,
+              "Hombres": 0.13,
+              "Mujeres": 0.07
+            }
+          },
+          {
+            "region": "Comarcas",
+            "matricula": 75275,
+            "aprobados": 91.29,
+            "reprobados": 6.65,
+            "desertores": {
+              "Total": 2.06,
+              "Hombres": 2.05,
+              "Mujeres": 2.07
+            }
+          },
+          {
+            "region": "Emberá Wounaan",
+            "matricula": 2425,
+            "aprobados": 94.89,
+            "reprobados": 4.78,
+            "desertores": {
+              "Total": 0.33,
+              "Hombres": 0.08,
+              "Mujeres": 0.59
+            }
+          },
+          {
+            "region": "Guna Yala",
+            "matricula": 7198,
+            "aprobados": 90.18,
+            "reprobados": 7.63,
+            "desertores": {
+              "Total": 2.2,
+              "Hombres": 2.3,
+              "Mujeres": 2.08
+            }
+          },
+          {
+            "region": "Ngäbe-Buglé",
+            "matricula": 65652,
+            "aprobados": 91.28,
+            "reprobados": 6.62,
+            "desertores": {
+              "Total": 2.11,
+              "Hombres": 2.09,
+              "Mujeres": 2.13
+            }
+          },
+          {
+            "region": "Darién",
+            "matricula": 8556,
+            "aprobados": 97.48,
+            "reprobados": 2.0,
+            "desertores": {
+              "Total": 0.53,
+              "Hombres": 0.48,
+              "Mujeres": 0.57
+            }
+          },
+          {
+            "region": "Herrera",
+            "matricula": 10280,
+            "aprobados": 99.23,
+            "reprobados": 0.75,
+            "desertores": {
+              "Total": 0.02,
+              "Hombres": 0.04,
+              "Mujeres": 0.0
+            }
+          },
+          {
+            "region": "Los Santos",
+            "matricula": 7130,
+            "aprobados": 99.55,
+            "reprobados": 0.42,
+            "desertores": {
+              "Total": 0.03,
+              "Hombres": 0.03,
+              "Mujeres": 0.03
+            }
+          },
+          {
+            "region": "Panamá Centro",
+            "matricula": 71954,
+            "aprobados": 97.85,
+            "reprobados": 1.66,
+            "desertores": {
+              "Total": 0.49,
+              "Hombres": 0.54,
+              "Mujeres": 0.44
+            }
+          },
+          {
+            "region": "Panamá Este",
+            "matricula": 11543,
+            "aprobados": 97.91,
+            "reprobados": 1.76,
+            "desertores": {
+              "Total": 0.33,
+              "Hombres": 0.32,
+              "Mujeres": 0.33
+            }
+          },
+          {
+            "region": "Panamá Norte",
+            "matricula": 23741,
+            "aprobados": 98.98,
+            "reprobados": 0.83,
+            "desertores": {
+              "Total": 0.19,
+              "Hombres": 0.21,
+              "Mujeres": 0.16
+            }
+          },
+          {
+            "region": "Panamá Oeste",
+            "matricula": 69894,
+            "aprobados": 98.68,
+            "reprobados": 1.02,
+            "desertores": {
+              "Total": 0.3,
+              "Hombres": 0.32,
+              "Mujeres": 0.28
+            }
+          },
+          {
+            "region": "San Miguelito",
+            "matricula": 28846,
+            "aprobados": 99.21,
+            "reprobados": 0.61,
+            "desertores": {
+              "Total": 0.18,
+              "Hombres": 0.21,
+              "Mujeres": 0.15
+            }
+          },
+          {
+            "region": "Veraguas",
+            "matricula": 27925,
+            "aprobados": 98.04,
+            "reprobados": 1.2,
+            "desertores": {
+              "Total": 0.76,
+              "Hombres": 0.76,
+              "Mujeres": 0.75
+            }
+          }
+        ]
+      }
+    ],
+    "desercion_premedia": [
+      {
+        "periodo": "2024",
+        "titulo": "Cuadro 3-12: Tasa de aprobados, aplazados, reprobados y desertores en la educación premedia en la República de Panamá. Año lectivo 2024",
+        "url": "https://www.meduca.gob.pa/wp-content/uploads/2025/07/09062025_Cuadro_3-12_Premedia_2024.pdf",
+        "nacional": {
+          "region": "Total",
+          "matricula": 218293,
+          "aprobados": 79.22,
+          "reprobados": 5.67,
+          "desertores": {
+            "Total": 1.87,
+            "Hombres": 2.22,
+            "Mujeres": 1.51
+          }
+        },
+        "regiones": [
+          {
+            "region": "Indígena",
+            "matricula": 28331,
+            "aprobados": 77.23,
+            "reprobados": 5.81,
+            "desertores": {
+              "Total": 4.37,
+              "Hombres": 4.74,
+              "Mujeres": 3.95
+            }
+          },
+          {
+            "region": "Rural",
+            "matricula": 53389,
+            "aprobados": 80.01,
+            "reprobados": 5.0,
+            "desertores": {
+              "Total": 1.53,
+              "Hombres": 1.9,
+              "Mujeres": 1.14
+            }
+          },
+          {
+            "region": "Urbana",
+            "matricula": 136573,
+            "aprobados": 79.32,
+            "reprobados": 5.9,
+            "desertores": {
+              "Total": 1.49,
+              "Hombres": 1.79,
+              "Mujeres": 1.18
+            }
+          },
+          {
+            "region": "Bocas del Toro",
+            "matricula": 12391,
+            "aprobados": 66.62,
+            "reprobados": 9.12,
+            "desertores": {
+              "Total": 2.88,
+              "Hombres": 3.5,
+              "Mujeres": 2.23
+            }
+          },
+          {
+            "region": "Chiriquí",
+            "matricula": 23610,
+            "aprobados": 80.05,
+            "reprobados": 4.42,
+            "desertores": {
+              "Total": 2.92,
+              "Hombres": 3.57,
+              "Mujeres": 2.25
+            }
+          },
+          {
+            "region": "Coclé",
+            "matricula": 12599,
+            "aprobados": 80.87,
+            "reprobados": 5.7,
+            "desertores": {
+              "Total": 0.67,
+              "Hombres": 0.87,
+              "Mujeres": 0.46
+            }
+          },
+          {
+            "region": "Colón",
+            "matricula": 18852,
+            "aprobados": 76.67,
+            "reprobados": 5.34,
+            "desertores": {
+              "Total": 1.09,
+              "Hombres": 1.4,
+              "Mujeres": 0.76
+            }
+          },
+          {
+            "region": "Comarcas",
+            "matricula": 24711,
+            "aprobados": 76.96,
+            "reprobados": 6.1,
+            "desertores": {
+              "Total": 4.67,
+              "Hombres": 5.04,
+              "Mujeres": 4.24
+            }
+          },
+          {
+            "region": "Emberá Wounaan",
+            "matricula": 835,
+            "aprobados": 85.39,
+            "reprobados": 8.5,
+            "desertores": {
+              "Total": 0.6,
+              "Hombres": 0.7,
+              "Mujeres": 0.49
+            }
+          },
+          {
+            "region": "Guna Yala",
+            "matricula": 2338,
+            "aprobados": 79.04,
+            "reprobados": 4.96,
+            "desertores": {
+              "Total": 4.83,
+              "Hombres": 4.18,
+              "Mujeres": 5.44
+            }
+          },
+          {
+            "region": "Ngäbe-Buglé",
+            "matricula": 21538,
+            "aprobados": 76.4,
+            "reprobados": 6.13,
+            "desertores": {
+              "Total": 4.81,
+              "Hombres": 5.28,
+              "Mujeres": 4.24
+            }
+          },
+          {
+            "region": "Darién",
+            "matricula": 3580,
+            "aprobados": 83.44,
+            "reprobados": 4.19,
+            "desertores": {
+              "Total": 2.37,
+              "Hombres": 2.61,
+              "Mujeres": 2.12
+            }
+          },
+          {
+            "region": "Herrera",
+            "matricula": 4730,
+            "aprobados": 79.09,
+            "reprobados": 7.32,
+            "desertores": {
+              "Total": 1.16,
+              "Hombres": 1.57,
+              "Mujeres": 0.76
+            }
+          },
+          {
+            "region": "Los Santos",
+            "matricula": 3425,
+            "aprobados": 83.15,
+            "reprobados": 6.66,
+            "desertores": {
+              "Total": 0.5,
+              "Hombres": 0.55,
+              "Mujeres": 0.44
+            }
+          },
+          {
+            "region": "Panamá Centro",
+            "matricula": 39334,
+            "aprobados": 82.05,
+            "reprobados": 5.5,
+            "desertores": {
+              "Total": 1.17,
+              "Hombres": 1.42,
+              "Mujeres": 0.92
+            }
+          },
+          {
+            "region": "Panamá Este",
+            "matricula": 4659,
+            "aprobados": 87.06,
+            "reprobados": 4.38,
+            "desertores": {
+              "Total": 0.24,
+              "Hombres": 0.37,
+              "Mujeres": 0.09
+            }
+          },
+          {
+            "region": "Panamá Norte",
+            "matricula": 10464,
+            "aprobados": 81.67,
+            "reprobados": 4.43,
+            "desertores": {
+              "Total": 1.47,
+              "Hombres": 1.89,
+              "Mujeres": 1.03
+            }
+          },
+          {
+            "region": "Panamá Oeste",
+            "matricula": 32548,
+            "aprobados": 78.73,
+            "reprobados": 5.93,
+            "desertores": {
+              "Total": 1.39,
+              "Hombres": 1.65,
+              "Mujeres": 1.1
+            }
+          },
+          {
+            "region": "San Miguelito",
+            "matricula": 14508,
+            "aprobados": 76.87,
+            "reprobados": 6.8,
+            "desertores": {
+              "Total": 1.5,
+              "Hombres": 1.67,
+              "Mujeres": 1.33
+            }
+          },
+          {
+            "region": "Veraguas",
+            "matricula": 12882,
+            "aprobados": 84.51,
+            "reprobados": 3.82,
+            "desertores": {
+              "Total": 1.16,
+              "Hombres": 1.36,
+              "Mujeres": 0.93
+            }
+          }
+        ]
+      },
+      {
+        "periodo": "2025",
+        "titulo": "Cuadro 3-12: Tasa de aprobados, aplazados, reprobados y desertores en la educación premedia en la República de Panamá, por sexo, según región educativa. Año lectivo 2025 →",
+        "url": "https://www.meduca.gob.pa/wp-content/uploads/2026/08/22062025_CUADRO_3-12_Premedia_2025.pdf",
+        "nacional": {
+          "region": "Total",
+          "matricula": 218733,
+          "aprobados": 79.86,
+          "reprobados": 5.25,
+          "desertores": {
+            "Total": 1.85,
+            "Hombres": 2.07,
+            "Mujeres": 1.61
+          }
+        },
+        "regiones": [
+          {
+            "region": "Indígena",
+            "matricula": 28850,
+            "aprobados": 81.07,
+            "reprobados": 4.28,
+            "desertores": {
+              "Total": 3.97,
+              "Hombres": 3.93,
+              "Mujeres": 4.01
+            }
+          },
+          {
+            "region": "Rural",
+            "matricula": 55863,
+            "aprobados": 84.32,
+            "reprobados": 3.64,
+            "desertores": {
+              "Total": 1.6,
+              "Hombres": 1.91,
+              "Mujeres": 1.27
+            }
+          },
+          {
+            "region": "Urbana",
+            "matricula": 134020,
+            "aprobados": 77.73,
+            "reprobados": 6.13,
+            "desertores": {
+              "Total": 1.5,
+              "Hombres": 1.73,
+              "Mujeres": 1.26
+            }
+          },
+          {
+            "region": "Bocas del Toro",
+            "matricula": 12899,
+            "aprobados": 80.56,
+            "reprobados": 3.66,
+            "desertores": {
+              "Total": 2.06,
+              "Hombres": 2.36,
+              "Mujeres": 1.75
+            }
+          },
+          {
+            "region": "Chiriquí",
+            "matricula": 24306,
+            "aprobados": 77.44,
+            "reprobados": 4.96,
+            "desertores": {
+              "Total": 3.84,
+              "Hombres": 4.53,
+              "Mujeres": 3.14
+            }
+          },
+          {
+            "region": "Coclé",
+            "matricula": 14038,
+            "aprobados": 84.73,
+            "reprobados": 3.31,
+            "desertores": {
+              "Total": 0.88,
+              "Hombres": 1.09,
+              "Mujeres": 0.65
+            }
+          },
+          {
+            "region": "Colón",
+            "matricula": 16808,
+            "aprobados": 80.62,
+            "reprobados": 8.84,
+            "desertores": {
+              "Total": 0.3,
+              "Hombres": 0.49,
+              "Mujeres": 0.11
+            }
+          },
+          {
+            "region": "Comarcas",
+            "matricula": 25492,
+            "aprobados": 79.59,
+            "reprobados": 4.54,
+            "desertores": {
+              "Total": 4.34,
+              "Hombres": 4.3,
+              "Mujeres": 4.39
+            }
+          },
+          {
+            "region": "Emberá Wounaan",
+            "matricula": 940,
+            "aprobados": 82.66,
+            "reprobados": 4.89,
+            "desertores": {
+              "Total": 1.17,
+              "Hombres": 1.33,
+              "Mujeres": 1.02
+            }
+          },
+          {
+            "region": "Guna Yala",
+            "matricula": 2327,
+            "aprobados": 84.92,
+            "reprobados": 3.52,
+            "desertores": {
+              "Total": 3.31,
+              "Hombres": 3.32,
+              "Mujeres": 3.3
+            }
+          },
+          {
+            "region": "Ngäbe-Buglé",
+            "matricula": 22225,
+            "aprobados": 78.91,
+            "reprobados": 4.63,
+            "desertores": {
+              "Total": 4.58,
+              "Hombres": 4.51,
+              "Mujeres": 4.67
+            }
+          },
+          {
+            "region": "Darién",
+            "matricula": 3610,
+            "aprobados": 87.04,
+            "reprobados": 3.02,
+            "desertores": {
+              "Total": 1.97,
+              "Hombres": 2.03,
+              "Mujeres": 1.9
+            }
+          },
+          {
+            "region": "Herrera",
+            "matricula": 5662,
+            "aprobados": 81.01,
+            "reprobados": 6.18,
+            "desertores": {
+              "Total": 1.1,
+              "Hombres": 1.25,
+              "Mujeres": 0.94
+            }
+          },
+          {
+            "region": "Los Santos",
+            "matricula": 3468,
+            "aprobados": 84.43,
+            "reprobados": 4.93,
+            "desertores": {
+              "Total": 0.75,
+              "Hombres": 0.95,
+              "Mujeres": 0.54
+            }
+          },
+          {
+            "region": "Panamá Centro",
+            "matricula": 38724,
+            "aprobados": 77.71,
+            "reprobados": 5.64,
+            "desertores": {
+              "Total": 1.42,
+              "Hombres": 1.67,
+              "Mujeres": 1.17
+            }
+          },
+          {
+            "region": "Panamá Este",
+            "matricula": 4236,
+            "aprobados": 86.73,
+            "reprobados": 4.46,
+            "desertores": {
+              "Total": 1.04,
+              "Hombres": 1.02,
+              "Mujeres": 1.06
+            }
+          },
+          {
+            "region": "Panamá Norte",
+            "matricula": 10229,
+            "aprobados": 81.08,
+            "reprobados": 5.04,
+            "desertores": {
+              "Total": 0.96,
+              "Hombres": 1.14,
+              "Mujeres": 0.77
+            }
+          },
+          {
+            "region": "Panamá Oeste",
+            "matricula": 32871,
+            "aprobados": 79.36,
+            "reprobados": 5.26,
+            "desertores": {
+              "Total": 1.26,
+              "Hombres": 1.36,
+              "Mujeres": 1.15
+            }
+          },
+          {
+            "region": "San Miguelito",
+            "matricula": 12941,
+            "aprobados": 71.3,
+            "reprobados": 8.6,
+            "desertores": {
+              "Total": 1.07,
+              "Hombres": 1.31,
+              "Mujeres": 0.82
+            }
+          },
+          {
+            "region": "Veraguas",
+            "matricula": 13449,
+            "aprobados": 86.94,
+            "reprobados": 2.51,
+            "desertores": {
+              "Total": 1.22,
+              "Hombres": 1.5,
+              "Mujeres": 0.92
+            }
+          }
+        ]
+      }
+    ],
+    "desercion_media": [
+      {
+        "periodo": "2024",
+        "titulo": "Cuadro 4-12: Tasa de aprobados, aplazados, reprobados y desertores en la educación media en la República de Panamá. Año lectivo 2024",
+        "url": "https://www.meduca.gob.pa/wp-content/uploads/2025/08/04062025_Cuadro_4-12_Media_2024.pdf",
+        "nacional": {
+          "region": "Total",
+          "matricula": 149934,
+          "aprobados": 78.02,
+          "reprobados": 4.97,
+          "desertores": {
+            "Total": 2.39,
+            "Hombres": 2.7,
+            "Mujeres": 2.09
+          }
+        },
+        "regiones": [
+          {
+            "region": "Indígena",
+            "matricula": 12322,
+            "aprobados": 71.12,
+            "reprobados": 5.74,
+            "desertores": {
+              "Total": 8.7,
+              "Hombres": 8.13,
+              "Mujeres": 9.41
+            }
+          },
+          {
+            "region": "Rural",
+            "matricula": 29874,
+            "aprobados": 75.91,
+            "reprobados": 5.42,
+            "desertores": {
+              "Total": 2.59,
+              "Hombres": 3.13,
+              "Mujeres": 2.06
+            }
+          },
+          {
+            "region": "Urbana",
+            "matricula": 107538,
+            "aprobados": 79.45,
+            "reprobados": 4.75,
+            "desertores": {
+              "Total": 1.61,
+              "Hombres": 1.87,
+              "Mujeres": 1.36
+            }
+          },
+          {
+            "region": "Bocas del Toro",
+            "matricula": 7697,
+            "aprobados": 64.54,
+            "reprobados": 9.78,
+            "desertores": {
+              "Total": 5.14,
+              "Hombres": 5.83,
+              "Mujeres": 4.43
+            }
+          },
+          {
+            "region": "Chiriquí",
+            "matricula": 19457,
+            "aprobados": 78.07,
+            "reprobados": 3.81,
+            "desertores": {
+              "Total": 3.34,
+              "Hombres": 3.97,
+              "Mujeres": 2.71
+            }
+          },
+          {
+            "region": "Coclé",
+            "matricula": 10350,
+            "aprobados": 79.3,
+            "reprobados": 5.18,
+            "desertores": {
+              "Total": 1.55,
+              "Hombres": 1.68,
+              "Mujeres": 1.41
+            }
+          },
+          {
+            "region": "Colón",
+            "matricula": 10956,
+            "aprobados": 76.97,
+            "reprobados": 4.69,
+            "desertores": {
+              "Total": 0.92,
+              "Hombres": 1.09,
+              "Mujeres": 0.78
+            }
+          },
+          {
+            "region": "Comarcas",
+            "matricula": 11843,
+            "aprobados": 70.96,
+            "reprobados": 5.85,
+            "desertores": {
+              "Total": 8.89,
+              "Hombres": 8.26,
+              "Mujeres": 9.66
+            }
+          },
+          {
+            "region": "Emberá Wounaan",
+            "matricula": 396,
+            "aprobados": 75.76,
+            "reprobados": 4.29,
+            "desertores": {
+              "Total": 7.32,
+              "Hombres": 7.94,
+              "Mujeres": 6.59
+            }
+          },
+          {
+            "region": "Guna Yala",
+            "matricula": 667,
+            "aprobados": 74.21,
+            "reprobados": 9.15,
+            "desertores": {
+              "Total": 4.35,
+              "Hombres": 3.8,
+              "Mujeres": 4.92
+            }
+          },
+          {
+            "region": "Ngäbe-Buglé",
+            "matricula": 10780,
+            "aprobados": 70.58,
+            "reprobados": 5.71,
+            "desertores": {
+              "Total": 9.23,
+              "Hombres": 8.53,
+              "Mujeres": 10.1
+            }
+          },
+          {
+            "region": "Darién",
+            "matricula": 1702,
+            "aprobados": 78.2,
+            "reprobados": 4.41,
+            "desertores": {
+              "Total": 3.7,
+              "Hombres": 3.48,
+              "Mujeres": 3.97
+            }
+          },
+          {
+            "region": "Herrera",
+            "matricula": 4639,
+            "aprobados": 73.53,
+            "reprobados": 7.31,
+            "desertores": {
+              "Total": 1.96,
+              "Hombres": 2.36,
+              "Mujeres": 1.58
+            }
+          },
+          {
+            "region": "Los Santos",
+            "matricula": 3036,
+            "aprobados": 74.8,
+            "reprobados": 7.64,
+            "desertores": {
+              "Total": 0.56,
+              "Hombres": 0.75,
+              "Mujeres": 0.35
+            }
+          },
+          {
+            "region": "Panamá Centro",
+            "matricula": 29307,
+            "aprobados": 84.3,
+            "reprobados": 3.45,
+            "desertores": {
+              "Total": 1.04,
+              "Hombres": 1.25,
+              "Mujeres": 0.86
+            }
+          },
+          {
+            "region": "Panamá Este",
+            "matricula": 2696,
+            "aprobados": 81.53,
+            "reprobados": 3.86,
+            "desertores": {
+              "Total": 0.07,
+              "Hombres": 0.16,
+              "Mujeres": 0.0
+            }
+          },
+          {
+            "region": "Panamá Norte",
+            "matricula": 3502,
+            "aprobados": 86.78,
+            "reprobados": 2.2,
+            "desertores": {
+              "Total": 2.66,
+              "Hombres": 3.19,
+              "Mujeres": 2.18
+            }
+          },
+          {
+            "region": "Panamá Oeste",
+            "matricula": 22855,
+            "aprobados": 76.09,
+            "reprobados": 6.3,
+            "desertores": {
+              "Total": 1.49,
+              "Hombres": 1.5,
+              "Mujeres": 1.48
+            }
+          },
+          {
+            "region": "San Miguelito",
+            "matricula": 10632,
+            "aprobados": 79.63,
+            "reprobados": 5.01,
+            "desertores": {
+              "Total": 1.34,
+              "Hombres": 1.82,
+              "Mujeres": 0.81
+            }
+          },
+          {
+            "region": "Veraguas",
+            "matricula": 11262,
+            "aprobados": 79.64,
+            "reprobados": 3.56,
+            "desertores": {
+              "Total": 1.57,
+              "Hombres": 2.12,
+              "Mujeres": 1.05
+            }
+          }
+        ]
+      },
+      {
+        "periodo": "2025",
+        "titulo": "Cuadro 4-12: Tasa de aprobados, aplazados, reprobados y desertores en la educación media en la República de Panamá, por sexo, según región educativa. Año lectivo 2025 →",
+        "url": "https://www.meduca.gob.pa/wp-content/uploads/2026/08/19062026_Cuadro_4-12_Media_2025.pdf",
+        "nacional": {
+          "region": "Total",
+          "matricula": 158985,
+          "aprobados": 80.62,
+          "reprobados": 4.02,
+          "desertores": {
+            "Total": 2.19,
+            "Hombres": 2.41,
+            "Mujeres": 1.98
+          }
+        },
+        "regiones": [
+          {
+            "region": "Indígena",
+            "matricula": 12994,
+            "aprobados": 73.27,
+            "reprobados": 5.95,
+            "desertores": {
+              "Total": 6.53,
+              "Hombres": 5.74,
+              "Mujeres": 7.54
+            }
+          },
+          {
+            "region": "Rural",
+            "matricula": 30766,
+            "aprobados": 82.28,
+            "reprobados": 3.28,
+            "desertores": {
+              "Total": 2.4,
+              "Hombres": 2.65,
+              "Mujeres": 2.15
+            }
+          },
+          {
+            "region": "Urbana",
+            "matricula": 115225,
+            "aprobados": 81.0,
+            "reprobados": 4.0,
+            "desertores": {
+              "Total": 1.65,
+              "Hombres": 1.92,
+              "Mujeres": 1.39
+            }
+          },
+          {
+            "region": "Bocas del Toro",
+            "matricula": 7803,
+            "aprobados": 81.48,
+            "reprobados": 3.09,
+            "desertores": {
+              "Total": 3.2,
+              "Hombres": 3.39,
+              "Mujeres": 3.01
+            }
+          },
+          {
+            "region": "Chiriquí",
+            "matricula": 19742,
+            "aprobados": 78.62,
+            "reprobados": 3.52,
+            "desertores": {
+              "Total": 4.84,
+              "Hombres": 5.85,
+              "Mujeres": 3.87
+            }
+          },
+          {
+            "region": "Coclé",
+            "matricula": 10672,
+            "aprobados": 83.63,
+            "reprobados": 2.59,
+            "desertores": {
+              "Total": 0.99,
+              "Hombres": 1.1,
+              "Mujeres": 0.89
+            }
+          },
+          {
+            "region": "Colón",
+            "matricula": 12618,
+            "aprobados": 87.81,
+            "reprobados": 2.19,
+            "desertores": {
+              "Total": 0.4,
+              "Hombres": 0.42,
+              "Mujeres": 0.37
+            }
+          },
+          {
+            "region": "Comarcas",
+            "matricula": 12396,
+            "aprobados": 72.74,
+            "reprobados": 6.11,
+            "desertores": {
+              "Total": 6.59,
+              "Hombres": 5.79,
+              "Mujeres": 7.6
+            }
+          },
+          {
+            "region": "Emberá Wounaan",
+            "matricula": 414,
+            "aprobados": 80.68,
+            "reprobados": 2.9,
+            "desertores": {
+              "Total": 3.14,
+              "Hombres": 3.02,
+              "Mujeres": 3.3
+            }
+          },
+          {
+            "region": "Guna Yala",
+            "matricula": 925,
+            "aprobados": 78.27,
+            "reprobados": 5.08,
+            "desertores": {
+              "Total": 3.35,
+              "Hombres": 2.99,
+              "Mujeres": 3.72
+            }
+          },
+          {
+            "region": "Ngäbe-Buglé",
+            "matricula": 11057,
+            "aprobados": 71.98,
+            "reprobados": 6.32,
+            "desertores": {
+              "Total": 6.99,
+              "Hombres": 6.11,
+              "Mujeres": 8.13
+            }
+          },
+          {
+            "region": "Darién",
+            "matricula": 1927,
+            "aprobados": 83.96,
+            "reprobados": 2.7,
+            "desertores": {
+              "Total": 1.92,
+              "Hombres": 2.13,
+              "Mujeres": 1.7
+            }
+          },
+          {
+            "region": "Herrera",
+            "matricula": 4662,
+            "aprobados": 78.51,
+            "reprobados": 3.37,
+            "desertores": {
+              "Total": 2.06,
+              "Hombres": 2.47,
+              "Mujeres": 1.69
+            }
+          },
+          {
+            "region": "Los Santos",
+            "matricula": 2976,
+            "aprobados": 77.92,
+            "reprobados": 4.03,
+            "desertores": {
+              "Total": 1.48,
+              "Hombres": 1.89,
+              "Mujeres": 1.01
+            }
+          },
+          {
+            "region": "Panamá Centro",
+            "matricula": 33545,
+            "aprobados": 81.65,
+            "reprobados": 4.16,
+            "desertores": {
+              "Total": 1.17,
+              "Hombres": 1.26,
+              "Mujeres": 1.09
+            }
+          },
+          {
+            "region": "Panamá Este",
+            "matricula": 2599,
+            "aprobados": 75.72,
+            "reprobados": 7.27,
+            "desertores": {
+              "Total": 2.92,
+              "Hombres": 2.73,
+              "Mujeres": 3.15
+            }
+          },
+          {
+            "region": "Panamá Norte",
+            "matricula": 5770,
+            "aprobados": 85.91,
+            "reprobados": 2.17,
+            "desertores": {
+              "Total": 1.04,
+              "Hombres": 1.41,
+              "Mujeres": 0.73
+            }
+          },
+          {
+            "region": "Panamá Oeste",
+            "matricula": 23890,
+            "aprobados": 81.03,
+            "reprobados": 4.99,
+            "desertores": {
+              "Total": 1.2,
+              "Hombres": 1.26,
+              "Mujeres": 1.13
+            }
+          },
+          {
+            "region": "San Miguelito",
+            "matricula": 8945,
+            "aprobados": 74.26,
+            "reprobados": 6.65,
+            "desertores": {
+              "Total": 0.93,
+              "Hombres": 1.28,
+              "Mujeres": 0.57
+            }
+          },
+          {
+            "region": "Veraguas",
+            "matricula": 11440,
+            "aprobados": 81.82,
+            "reprobados": 2.77,
+            "desertores": {
+              "Total": 2.01,
+              "Hombres": 2.26,
+              "Mujeres": 1.78
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "censo": {
+    "fecha_corte": "2023-09-30",
+    "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1212&ID_CATEGORIA=19&ID_SUBCATEGORIA=71",
+    "cuadros": {
+      "12": {
+        "titulo": "12 Población de 10 y más años de edad en la República, por alfabetismo, según sexo y grupos de edad: Censos 2010 y 2023 Pdf / Excel",
+        "url": "https://www.inec.gob.pa/archivos/P0579518620231213141713Cuadro%2012.xls"
+      },
+      "14": {
+        "titulo": "14 Población analfabeta de 10 y más años de edad en la República, según provincia y comarca indígena: Censos de 2000, 2010 y 2023 Pdf / Excel",
+        "url": "https://www.inec.gob.pa/archivos/P0705547520231213141808Cuadro%2014.xls"
+      },
+      "19": {
+        "titulo": "19 Población de 10 y más años de edad en la República, por alfabetismo y sexo, según provincia, comarca indígena, distrito y corregimiento: Censos 2023 Pdf / Excel",
+        "url": "https://www.inec.gob.pa/archivos/P0289562520231213142359Cuadro%2019.xls"
+      },
+      "20": {
+        "titulo": "20 Población de 4 y más años de edad en la República, por nivel de instrucción, según provincia, comarca indígena, sexo y grupos de edad: Censos 2023 Pdf / Excel",
+        "url": "https://www.inec.gob.pa/archivos/P0289562520231213142433Cuadro%2020.xls"
+      }
+    },
+    "analfabetismo": {
+      "nacional": {
+        "Total": {
+          "poblacion": 3384451,
+          "analfabetas": 123674,
+          "tasa": 3.65
+        },
+        "Hombres": {
+          "poblacion": 1668792,
+          "analfabetas": 54210,
+          "tasa": 3.25
+        },
+        "Mujeres": {
+          "poblacion": 1715659,
+          "analfabetas": 69464,
+          "tasa": 4.05
+        }
+      },
+      "historico": [
+        {
+          "anio": 2000,
+          "tasa": 7.6
+        },
+        {
+          "anio": 2010,
+          "tasa": 5.5
+        },
+        {
+          "anio": 2023,
+          "tasa": 3.65
+        }
+      ],
+      "provincias": [
+        {
+          "provincia": "Bocas del Toro",
+          "Total": {
+            "analfabetas": 9668,
+            "tasa": 8.24
+          },
+          "2000": 16.9,
+          "2010": 12.1,
+          "Hombres": {
+            "analfabetas": 3827,
+            "tasa": 6.54
+          },
+          "Mujeres": {
+            "analfabetas": 5841,
+            "tasa": 9.94
+          }
+        },
+        {
+          "provincia": "Coclé",
+          "Total": {
+            "analfabetas": 5719,
+            "tasa": 2.52
+          },
+          "2000": 6.1,
+          "2010": 4.7,
+          "Hombres": {
+            "analfabetas": 3019,
+            "tasa": 2.62
+          },
+          "Mujeres": {
+            "analfabetas": 2700,
+            "tasa": 2.41
+          }
+        },
+        {
+          "provincia": "Colón",
+          "Total": {
+            "analfabetas": 4382,
+            "tasa": 1.9
+          },
+          "2000": 3.7,
+          "2010": 2.5,
+          "Hombres": {
+            "analfabetas": 2185,
+            "tasa": 1.92
+          },
+          "Mujeres": {
+            "analfabetas": 2197,
+            "tasa": 1.88
+          }
+        },
+        {
+          "provincia": "Chiriquí",
+          "Total": {
+            "analfabetas": 15981,
+            "tasa": 4.03
+          },
+          "2000": 7.7,
+          "2010": 5.9,
+          "Hombres": {
+            "analfabetas": 8098,
+            "tasa": 4.1
+          },
+          "Mujeres": {
+            "analfabetas": 7883,
+            "tasa": 3.95
+          }
+        },
+        {
+          "provincia": "Darién",
+          "Total": {
+            "analfabetas": 4132,
+            "tasa": 9.83
+          },
+          "2000": 23.0,
+          "2010": 15.9,
+          "Hombres": {
+            "analfabetas": 2008,
+            "tasa": 8.96
+          },
+          "Mujeres": {
+            "analfabetas": 2124,
+            "tasa": 10.82
+          }
+        },
+        {
+          "provincia": "Herrera",
+          "Total": {
+            "analfabetas": 4514,
+            "tasa": 4.23
+          },
+          "2000": 10.4,
+          "2010": 7.0,
+          "Hombres": {
+            "analfabetas": 2554,
+            "tasa": 4.8
+          },
+          "Mujeres": {
+            "analfabetas": 1960,
+            "tasa": 3.66
+          }
+        },
+        {
+          "provincia": "Los Santos",
+          "Total": {
+            "analfabetas": 3655,
+            "tasa": 4.19
+          },
+          "2000": 10.7,
+          "2010": 6.8,
+          "Hombres": {
+            "analfabetas": 2159,
+            "tasa": 4.94
+          },
+          "Mujeres": {
+            "analfabetas": 1496,
+            "tasa": 3.44
+          }
+        },
+        {
+          "provincia": "Panamá",
+          "Total": {
+            "analfabetas": 17657,
+            "tasa": 1.43
+          },
+          "2000": 2.8,
+          "2010": 2.0,
+          "Hombres": {
+            "analfabetas": 7929,
+            "tasa": 1.33
+          },
+          "Mujeres": {
+            "analfabetas": 9728,
+            "tasa": 1.54
+          }
+        },
+        {
+          "provincia": "Panamá Oeste",
+          "Total": {
+            "analfabetas": 8587,
+            "tasa": 1.57
+          },
+          "2000": null,
+          "2010": null,
+          "Hombres": {
+            "analfabetas": 3850,
+            "tasa": 1.43
+          },
+          "Mujeres": {
+            "analfabetas": 4737,
+            "tasa": 1.7
+          }
+        },
+        {
+          "provincia": "Veraguas",
+          "Total": {
+            "analfabetas": 15131,
+            "tasa": 6.94
+          },
+          "2000": 15.2,
+          "2010": 10.9,
+          "Hombres": {
+            "analfabetas": 7555,
+            "tasa": 6.74
+          },
+          "Mujeres": {
+            "analfabetas": 7576,
+            "tasa": 7.14
+          }
+        },
+        {
+          "provincia": "Comarca Guna Yala",
+          "Total": {
+            "analfabetas": 4690,
+            "tasa": 19.85
+          },
+          "2000": 38.5,
+          "2010": 28.3,
+          "Hombres": {
+            "analfabetas": 1356,
+            "tasa": 12.23
+          },
+          "Mujeres": {
+            "analfabetas": 3334,
+            "tasa": 26.58
+          }
+        },
+        {
+          "provincia": "Comarca Emberá",
+          "Total": {
+            "analfabetas": 1242,
+            "tasa": 13.85
+          },
+          "2000": 34.5,
+          "2010": 22.9,
+          "Hombres": {
+            "analfabetas": 460,
+            "tasa": 9.5
+          },
+          "Mujeres": {
+            "analfabetas": 782,
+            "tasa": 18.95
+          }
+        },
+        {
+          "provincia": "Comarca Ngäbe Buglé",
+          "Total": {
+            "analfabetas": 28316,
+            "tasa": 19.4
+          },
+          "2000": 45.9,
+          "2010": 30.8,
+          "Hombres": {
+            "analfabetas": 9210,
+            "tasa": 13.38
+          },
+          "Mujeres": {
+            "analfabetas": 19106,
+            "tasa": 24.77
+          }
+        }
+      ]
+    },
+    "instruccion": {
+      "República": {
+        "Total": {
+          "poblacion_25": 2378830,
+          "promedio_anios": 11.66,
+          "sin_grado": 4.59,
+          "primaria": 21.98,
+          "secundaria": 42.75,
+          "tecnica": 1.52,
+          "universitaria": 29.16,
+          "posgrado": 5.1
+        },
+        "Hombres": {
+          "poblacion_25": 1156328,
+          "promedio_anios": 11.19,
+          "sin_grado": 3.99,
+          "primaria": 23.82,
+          "secundaria": 46.46,
+          "tecnica": 1.56,
+          "universitaria": 24.18,
+          "posgrado": 4.1
+        },
+        "Mujeres": {
+          "poblacion_25": 1222502,
+          "promedio_anios": 12.11,
+          "sin_grado": 5.15,
+          "primaria": 20.25,
+          "secundaria": 39.25,
+          "tecnica": 1.48,
+          "universitaria": 33.87,
+          "posgrado": 6.03
+        }
+      },
+      "Bocas del Toro": {
+        "Total": {
+          "poblacion_25": 67601,
+          "promedio_anios": 8.67,
+          "sin_grado": 13.79,
+          "primaria": 29.24,
+          "secundaria": 39.48,
+          "tecnica": 0.57,
+          "universitaria": 16.92,
+          "posgrado": 1.97
+        },
+        "Hombres": {
+          "poblacion_25": 33467,
+          "promedio_anios": 8.52,
+          "sin_grado": 11.3,
+          "primaria": 30.06,
+          "secundaria": 45.38,
+          "tecnica": 0.53,
+          "universitaria": 12.73,
+          "posgrado": 1.42
+        },
+        "Mujeres": {
+          "poblacion_25": 34134,
+          "promedio_anios": 8.83,
+          "sin_grado": 16.22,
+          "primaria": 28.45,
+          "secundaria": 33.7,
+          "tecnica": 0.61,
+          "universitaria": 21.02,
+          "posgrado": 2.52
+        }
+      },
+      "Coclé": {
+        "Total": {
+          "poblacion_25": 160505,
+          "promedio_anios": 10.58,
+          "sin_grado": 2.58,
+          "primaria": 38.74,
+          "secundaria": 37.45,
+          "tecnica": 0.98,
+          "universitaria": 20.26,
+          "posgrado": 2.58
+        },
+        "Hombres": {
+          "poblacion_25": 81047,
+          "promedio_anios": 10.01,
+          "sin_grado": 2.56,
+          "primaria": 41.99,
+          "secundaria": 39.56,
+          "tecnica": 0.86,
+          "universitaria": 15.04,
+          "posgrado": 1.67
+        },
+        "Mujeres": {
+          "poblacion_25": 79458,
+          "promedio_anios": 11.16,
+          "sin_grado": 2.6,
+          "primaria": 35.42,
+          "secundaria": 35.29,
+          "tecnica": 1.11,
+          "universitaria": 25.58,
+          "posgrado": 3.52
+        }
+      },
+      "Colón": {
+        "Total": {
+          "poblacion_25": 155804,
+          "promedio_anios": 11.54,
+          "sin_grado": 2.38,
+          "primaria": 19.09,
+          "secundaria": 53.66,
+          "tecnica": 0.97,
+          "universitaria": 23.91,
+          "posgrado": 2.67
+        },
+        "Hombres": {
+          "poblacion_25": 75870,
+          "promedio_anios": 10.93,
+          "sin_grado": 2.35,
+          "primaria": 21.3,
+          "secundaria": 58.32,
+          "tecnica": 1.03,
+          "universitaria": 17.0,
+          "posgrado": 1.62
+        },
+        "Mujeres": {
+          "poblacion_25": 79934,
+          "promedio_anios": 12.14,
+          "sin_grado": 2.41,
+          "primaria": 16.98,
+          "secundaria": 49.23,
+          "tecnica": 0.91,
+          "universitaria": 30.47,
+          "posgrado": 3.66
+        }
+      },
+      "Chiriquí": {
+        "Total": {
+          "poblacion_25": 280653,
+          "promedio_anios": 11.4,
+          "sin_grado": 5.06,
+          "primaria": 26.43,
+          "secundaria": 39.45,
+          "tecnica": 1.19,
+          "universitaria": 27.86,
+          "posgrado": 4.67
+        },
+        "Hombres": {
+          "poblacion_25": 137896,
+          "promedio_anios": 10.75,
+          "sin_grado": 5.1,
+          "primaria": 29.18,
+          "secundaria": 42.98,
+          "tecnica": 1.06,
+          "universitaria": 21.68,
+          "posgrado": 3.33
+        },
+        "Mujeres": {
+          "poblacion_25": 142757,
+          "promedio_anios": 12.04,
+          "sin_grado": 5.03,
+          "primaria": 23.77,
+          "secundaria": 36.04,
+          "tecnica": 1.32,
+          "universitaria": 33.83,
+          "posgrado": 5.97
+        }
+      },
+      "Darién": {
+        "Total": {
+          "poblacion_25": 26761,
+          "promedio_anios": 8.23,
+          "sin_grado": 13.2,
+          "primaria": 40.62,
+          "secundaria": 34.53,
+          "tecnica": 0.43,
+          "universitaria": 11.23,
+          "posgrado": 1.18
+        },
+        "Hombres": {
+          "poblacion_25": 14337,
+          "promedio_anios": 7.96,
+          "sin_grado": 11.72,
+          "primaria": 44.52,
+          "secundaria": 35.71,
+          "tecnica": 0.43,
+          "universitaria": 7.62,
+          "posgrado": 0.76
+        },
+        "Mujeres": {
+          "poblacion_25": 12424,
+          "promedio_anios": 8.53,
+          "sin_grado": 14.91,
+          "primaria": 36.12,
+          "secundaria": 33.16,
+          "tecnica": 0.43,
+          "universitaria": 15.39,
+          "posgrado": 1.67
+        }
+      },
+      "Herrera": {
+        "Total": {
+          "poblacion_25": 81314,
+          "promedio_anios": 11.59,
+          "sin_grado": 4.5,
+          "primaria": 31.23,
+          "secundaria": 34.89,
+          "tecnica": 1.78,
+          "universitaria": 27.6,
+          "posgrado": 4.0
+        },
+        "Hombres": {
+          "poblacion_25": 40088,
+          "promedio_anios": 10.88,
+          "sin_grado": 4.9,
+          "primaria": 34.27,
+          "secundaria": 37.89,
+          "tecnica": 1.37,
+          "universitaria": 21.56,
+          "posgrado": 2.78
+        },
+        "Mujeres": {
+          "poblacion_25": 41226,
+          "promedio_anios": 12.3,
+          "sin_grado": 4.1,
+          "primaria": 28.29,
+          "secundaria": 31.96,
+          "tecnica": 2.17,
+          "universitaria": 33.48,
+          "posgrado": 5.18
+        }
+      },
+      "Los Santos": {
+        "Total": {
+          "poblacion_25": 68451,
+          "promedio_anios": 11.45,
+          "sin_grado": 4.3,
+          "primaria": 35.04,
+          "secundaria": 32.18,
+          "tecnica": 1.67,
+          "universitaria": 26.81,
+          "posgrado": 4.18
+        },
+        "Hombres": {
+          "poblacion_25": 34004,
+          "promedio_anios": 10.67,
+          "sin_grado": 4.75,
+          "primaria": 38.7,
+          "secundaria": 34.43,
+          "tecnica": 1.46,
+          "universitaria": 20.66,
+          "posgrado": 2.83
+        },
+        "Mujeres": {
+          "poblacion_25": 34447,
+          "promedio_anios": 12.24,
+          "sin_grado": 3.86,
+          "primaria": 31.42,
+          "secundaria": 29.95,
+          "tecnica": 1.88,
+          "universitaria": 32.88,
+          "posgrado": 5.5
+        }
+      },
+      "Panamá": {
+        "Total": {
+          "poblacion_25": 900217,
+          "promedio_anios": 13.24,
+          "sin_grado": 1.94,
+          "primaria": 13.31,
+          "secundaria": 46.18,
+          "tecnica": 2.05,
+          "universitaria": 36.52,
+          "posgrado": 7.69
+        },
+        "Hombres": {
+          "poblacion_25": 429226,
+          "promedio_anios": 12.78,
+          "sin_grado": 1.76,
+          "primaria": 13.91,
+          "secundaria": 49.91,
+          "tecnica": 2.19,
+          "universitaria": 32.24,
+          "posgrado": 6.83
+        },
+        "Mujeres": {
+          "poblacion_25": 470991,
+          "promedio_anios": 13.68,
+          "sin_grado": 2.11,
+          "primaria": 12.77,
+          "secundaria": 42.79,
+          "tecnica": 1.91,
+          "universitaria": 40.42,
+          "posgrado": 8.48
+        }
+      },
+      "Panamá Oeste": {
+        "Total": {
+          "poblacion_25": 390628,
+          "promedio_anios": 12.23,
+          "sin_grado": 1.86,
+          "primaria": 18.53,
+          "secundaria": 47.87,
+          "tecnica": 1.76,
+          "universitaria": 29.99,
+          "posgrado": 4.13
+        },
+        "Hombres": {
+          "poblacion_25": 189321,
+          "promedio_anios": 11.74,
+          "sin_grado": 1.57,
+          "primaria": 19.73,
+          "secundaria": 52.06,
+          "tecnica": 1.95,
+          "universitaria": 24.68,
+          "posgrado": 3.11
+        },
+        "Mujeres": {
+          "poblacion_25": 201307,
+          "promedio_anios": 12.71,
+          "sin_grado": 2.14,
+          "primaria": 17.39,
+          "secundaria": 43.92,
+          "tecnica": 1.58,
+          "universitaria": 34.97,
+          "posgrado": 5.1
+        }
+      },
+      "Veraguas": {
+        "Total": {
+          "poblacion_25": 154211,
+          "promedio_anios": 10.69,
+          "sin_grado": 7.85,
+          "primaria": 32.54,
+          "secundaria": 33.52,
+          "tecnica": 0.7,
+          "universitaria": 25.39,
+          "posgrado": 4.1
+        },
+        "Hombres": {
+          "poblacion_25": 79120,
+          "promedio_anios": 10.17,
+          "sin_grado": 7.32,
+          "primaria": 35.33,
+          "secundaria": 36.86,
+          "tecnica": 0.74,
+          "universitaria": 19.75,
+          "posgrado": 2.83
+        },
+        "Mujeres": {
+          "poblacion_25": 75091,
+          "promedio_anios": 11.23,
+          "sin_grado": 8.4,
+          "primaria": 29.59,
+          "secundaria": 30.0,
+          "tecnica": 0.67,
+          "universitaria": 31.34,
+          "posgrado": 5.45
+        }
+      },
+      "Comarca Guna Yala": {
+        "Total": {
+          "poblacion_25": 14551,
+          "promedio_anios": 6.14,
+          "sin_grado": 29.47,
+          "primaria": 37.08,
+          "secundaria": 28.68,
+          "tecnica": 0.14,
+          "universitaria": 4.63,
+          "posgrado": 0.27
+        },
+        "Hombres": {
+          "poblacion_25": 6552,
+          "promedio_anios": 6.71,
+          "sin_grado": 17.99,
+          "primaria": 38.74,
+          "secundaria": 37.38,
+          "tecnica": 0.23,
+          "universitaria": 5.66,
+          "posgrado": 0.44
+        },
+        "Mujeres": {
+          "poblacion_25": 7999,
+          "promedio_anios": 5.61,
+          "sin_grado": 38.87,
+          "primaria": 35.72,
+          "secundaria": 21.55,
+          "tecnica": 0.08,
+          "universitaria": 3.79,
+          "posgrado": 0.13
+        }
+      },
+      "Comarca Emberá": {
+        "Total": {
+          "poblacion_25": 5218,
+          "promedio_anios": 6.98,
+          "sin_grado": 21.12,
+          "primaria": 40.38,
+          "secundaria": 33.14,
+          "tecnica": 0.15,
+          "universitaria": 5.21,
+          "posgrado": 0.17
+        },
+        "Hombres": {
+          "poblacion_25": 2828,
+          "promedio_anios": 7.61,
+          "sin_grado": 14.32,
+          "primaria": 38.72,
+          "secundaria": 40.91,
+          "tecnica": 0.18,
+          "universitaria": 5.87,
+          "posgrado": 0.25
+        },
+        "Mujeres": {
+          "poblacion_25": 2390,
+          "promedio_anios": 6.25,
+          "sin_grado": 29.16,
+          "primaria": 42.34,
+          "secundaria": 23.93,
+          "tecnica": 0.13,
+          "universitaria": 4.44,
+          "posgrado": 0.08
+        }
+      },
+      "Comarca Ngäbe Buglé": {
+        "Total": {
+          "poblacion_25": 72916,
+          "promedio_anios": 6.09,
+          "sin_grado": 34.7,
+          "primaria": 36.9,
+          "secundaria": 21.88,
+          "tecnica": 0.2,
+          "universitaria": 6.32,
+          "posgrado": 0.38
+        },
+        "Hombres": {
+          "poblacion_25": 32572,
+          "promedio_anios": 6.53,
+          "sin_grado": 25.37,
+          "primaria": 39.83,
+          "secundaria": 27.24,
+          "tecnica": 0.26,
+          "universitaria": 7.3,
+          "posgrado": 0.49
+        },
+        "Mujeres": {
+          "poblacion_25": 40344,
+          "promedio_anios": 5.7,
+          "sin_grado": 42.23,
+          "primaria": 34.53,
+          "secundaria": 17.56,
+          "tecnica": 0.16,
+          "universitaria": 5.52,
+          "posgrado": 0.29
+        }
+      }
+    }
+  }
+}

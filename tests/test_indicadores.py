@@ -257,6 +257,79 @@ def test_periodo_eml():
     assert ai.periodo_eml('sin fecha') is None
 
 
+# ── Educación (Censo 2023, MEDUCA, INEC) ─────────────────────────────────────
+
+def test_analfabetismo_censo_nacional_provincia_y_sexo():
+    r = ai.parse_censo_analfabetismo((FIX / 'inec_censo2023_c12_alfabetismo_sexo.xls').read_bytes(),
+                                     (FIX / 'inec_censo2023_c14_analfabetismo_provincia.xls').read_bytes(),
+                                     (FIX / 'inec_censo2023_c19_alfabetismo_provincia_sexo.xls').read_bytes())
+    assert r['nacional']['Total'] == {'poblacion': 3384451, 'analfabetas': 123674, 'tasa': 3.65}
+    assert (r['nacional']['Hombres']['tasa'], r['nacional']['Mujeres']['tasa']) == (3.25, 4.05)
+    assert [h['tasa'] for h in r['historico']] == [7.6, 5.5, 3.65]
+    prov = {p['provincia']: p for p in r['provincias']}
+    assert len(prov) == 13
+    assert prov['Darién']['Total']['tasa'] == 9.83
+    assert prov['Comarca Ngäbe Buglé']['Mujeres']['tasa'] == 24.77     # la primera fila con ese nombre es la provincia, no el distrito
+    assert prov['Panamá Oeste']['2000'] is None                         # provincia creada en 2014
+
+
+def test_nivel_de_instruccion_25_y_mas():
+    r = ai.parse_censo_instruccion((FIX / 'inec_censo2023_c20_instruccion.xls').read_bytes())
+    rep = r['República']
+    assert rep['Total']['promedio_anios'] == 11.66
+    assert rep['Mujeres']['universitaria'] > rep['Hombres']['universitaria']
+    for sx in ('Total', 'Hombres', 'Mujeres'):
+        d = rep[sx]
+        assert abs(d['sin_grado'] + d['primaria'] + d['secundaria'] + d['tecnica'] + d['universitaria'] - 100) < 0.05
+    assert len(r) == 14 and r['Comarca Ngäbe Buglé']['Mujeres']['sin_grado'] == 42.23
+
+
+def test_desercion_meduca_por_region_y_sexo():
+    filas = ai.parse_meduca_tasas(ai.pdf_a_texto((FIX / 'meduca_2025_cuadro3-12_premedia.pdf').read_bytes()))
+    tot = next(f for f in filas if f['region'] == 'Total')
+    assert tot['desertores'] == {'Total': 1.85, 'Hombres': 2.07, 'Mujeres': 1.61}
+    assert tot['matricula'] == 218733
+    regiones = {f['region'] for f in filas}
+    assert {'Ngäbe-Buglé', 'Panamá Centro', 'San Miguelito', 'Comarcas'} <= regiones
+    prim = ai.parse_meduca_tasas(ai.pdf_a_texto((FIX / 'meduca_2025_cuadro2-12_primaria.pdf').read_bytes()))
+    assert next(f for f in prim if f['region'] == 'Total')['desertores']['Total'] == 0.63
+
+
+def test_matricula_universitaria_por_sector():
+    r = ai.parse_inec_sector_estudio((FIX / 'inec_educacion2024_c4_matricula_sector.xlsx').read_bytes())
+    assert r['total'] == {'sector': 'TOTAL', 'total': 193773, 'hombres': 77416, 'mujeres': 116357}
+    sectores = {x['sector']: x['total'] for x in r['sectores']}
+    assert sectores['Educación comercial y administración'] == 38267
+    assert sectores['Formación de personal docente y ciencias de la educación'] == 37692   # etiqueta de dos filas
+    assert len(r['sectores']) == 22
+    assert sum(sectores.values()) == 193773                                                # solo el bloque TOTAL, sin oficial/particular
+
+
+def test_costo_por_alumno():
+    anio, niveles = ai.parse_inec_costo_alumno((FIX / 'inec_educacion2024_c19_costo_alumno.xlsx').read_bytes())
+    assert anio == '2024'
+    assert niveles['Total'] == 2261.56 and niveles['Universitaria'] == 3947.56
+
+
+def test_bundle_intermedio_no_desactiva_la_verificacion(monkeypatch):
+    # Si el servidor no envía el intermedio, se completa la cadena; nunca se usa verify=False.
+    import requests
+    llamadas = []
+
+    def falso_get(url, headers=None, timeout=None, verify=True):
+        llamadas.append(verify)
+        if verify is True:
+            raise requests.exceptions.SSLError('falta el intermedio')
+        class R:
+            status_code, encoding, text, content = 200, 'utf-8', 'ok', b'ok'
+            def raise_for_status(self): pass
+        return R()
+    monkeypatch.setattr(requests, 'get', falso_get)
+    monkeypatch.setattr(ai, '_bundle_con_intermedio', lambda host: '/tmp/bundle.pem')
+    assert ai.http_get('https://ejemplo.gob.pa/x') == 'ok'
+    assert llamadas == [True, '/tmp/bundle.pem'] and False not in llamadas
+
+
 # ── Minería ──────────────────────────────────────────────────────────────────
 
 @pytest.mark.parametrize('titulo,esperado', [
