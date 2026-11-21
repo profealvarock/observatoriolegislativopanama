@@ -204,6 +204,35 @@ def test_sismo_en_modo_archivo_no_se_actualiza(monkeypatch):
     assert ai.modulo_igc(sm, date(2026, 11, 23), lambda *a: None) is False
 
 
+# ── Minería ──────────────────────────────────────────────────────────────────
+
+@pytest.mark.parametrize('titulo,esperado', [
+    ('En seis días comenzarán las negociaciones que definirán el futuro de la mina de cobre de Donoso', True),
+    ('Panamá autoriza negociaciones con First Quantum para reapertura de Cobre Panamá', True),
+    ('Reformas al Código de Recursos Minerales: ¿qué cambios se plantean?', True),
+    ('Minsa reporta nuevos casos de dengue', False),
+    ('Dengue y malaria en Panamá: qué los causa', False),
+])
+def test_es_noticia_minera(titulo, esperado):
+    assert ai.es_noticia_minera(titulo) is esperado
+
+
+def test_noticias_mineras_se_agregan_sin_duplicar(monkeypatch):
+    rss = '''<rss><channel>
+      <item><title>Mulino anuncia negociación con First Quantum</title><link>https://ej.pa/a</link><pubDate>Mon, 16 Nov 2026 20:00:00 +0000</pubDate></item>
+      <item><title>Encuesta: 60% apoya referéndum minero</title><link>https://ej.pa/b</link><pubDate>Tue, 17 Nov 2026 10:00:00 +0000</pubDate></item>
+      <item><title>Minsa amplía horario de vacunación</title><link>https://ej.pa/c</link><pubDate>Tue, 17 Nov 2026 10:00:00 +0000</pubDate></item>
+    </channel></rss>'''
+    monkeypatch.setattr(ai, 'FEEDS_PRENSA', ['https://ej.pa/rss'])
+    monkeypatch.setattr(ai, 'http_get', lambda url, binario=False: rss)
+    avisos = []
+    mi = {'series': {'noticias': [{'periodo': '2026-11-16', 'titulo': 'ya estaba', 'url': 'https://ej.pa/a', 'medio': 'ej.pa'}]}}
+    assert ai.modulo_noticias_mineria(mi, date(2026, 11, 20), lambda m, t: avisos.append((m, t))) is True
+    urls = [n['url'] for n in mi['series']['noticias']]
+    assert urls == ['https://ej.pa/b', 'https://ej.pa/a']          # sin duplicar y sin la nota del Minsa
+    assert any(m == 'encuestas' for m, _ in avisos)               # la encuesta queda para revisar a mano
+
+
 # ── Job completo sin red: un módulo caído no rompe el resto ──────────────────
 
 def test_job_conserva_valores_y_registra_advertencias(tmp_path, monkeypatch):

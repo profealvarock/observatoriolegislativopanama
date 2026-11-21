@@ -1,0 +1,322 @@
+{
+  "generado": "2026-11-21T02:43:38Z",
+  "pestana": "mineria",
+  "cadencia": "Noticias: revisión semanal · encuestas: trimestral",
+  "fecha_corte": "2026-11-17",
+  "advertencias": [],
+  "fuentes": {
+    "infobae_negociacion": {
+      "nombre": "Infobae (17 nov 2026): inicio de negociaciones con First Quantum",
+      "url": "https://www.infobae.com/panama/2026/11/17/en-seis-dias-comenzaran-las-negociaciones-que-definiran-el-futuro-de-la-mina-de-cobre-de-donoso-en-panama/",
+      "calidad": "media"
+    },
+    "prensa_latina_anuncio": {
+      "nombre": "Prensa Latina (16 nov 2026): anuncio presidencial y auditoría SGS",
+      "url": "https://www.prensa-latina.cu/2026/11/16/presidente-panameno-anuncia-proceso-para-reapertura-de-mina-de-cobre/",
+      "calidad": "media"
+    },
+    "telemetro_estado": {
+      "nombre": "Telemetro (2 oct 2026): estado de la mina y procesamiento",
+      "url": "https://www.telemetro.com/nacionales/cobre-panama-que-sigue-ahora-y-que-pasara-la-mina-donoso-n6093778",
+      "calidad": "media"
+    },
+    "intelcom": {
+      "nombre": "MICI — INTELCOM: exportaciones de bienes 2025 (con datos del INEC)",
+      "url": "https://intelcom.gob.pa/storage/informes/February2026/xkzgwxULgJNJ4EnhLWWe.pdf",
+      "calidad": "alta"
+    },
+    "vea": {
+      "nombre": "Vea Panamá (Prodigious Consulting / La Estrella de Panamá)",
+      "url": "https://www.laestrella.com.pa/panama/nacional/el-687-de-los-panamenos-quiere-un-referendum-el-664-votaria-no-a-la-mina-LN24295493",
+      "detalle": "Encuestas cara a cara en ocho provincias · margen ±2.5 %",
+      "calidad": "alta"
+    },
+    "cid": {
+      "nombre": "CID Gallup (vía Crítica)",
+      "url": "https://www.critica.com.pa/nacional/55-de-panamenos-respalda-reapertura-minera-con-condiciones-507815",
+      "detalle": "1,223 entrevistas, 26 mar – 1 abr 2026",
+      "calidad": "media"
+    },
+    "doxa": {
+      "nombre": "Doxa para Arca Media (vía Destino Panamá)",
+      "url": "https://destinopanama.com.pa/2026/07/futuro-de-la-mina-divide-a-las-encuestas-de-opinion/",
+      "detalle": "Publicada a fines de julio de 2026; ficha técnica no localizada",
+      "calidad": "media"
+    }
+  },
+  "estado": {
+    "titulo": "Mina Cobre Panamá (Donoso, Colón)",
+    "puntos": [
+      {
+        "texto": "Sin extracción desde noviembre de 2023, cuando la Corte Suprema declaró inconstitucional por unanimidad el contrato aprobado mediante la Ley 406.",
+        "fuente": "La Prensa",
+        "url": "https://www.prensa.com/politica/cobre-panama-estas-son-las-claves-para-entender-el-proyecto-minero/"
+      },
+      {
+        "texto": "El sitio sigue bajo un plan de preservación y supervisión ambiental del Estado. Desde abril de 2026 se procesa solo roca extraída antes del cierre (Resolución MICI No. 27), lo que no constituye una reapertura.",
+        "fuente": "Telemetro y La Prensa",
+        "url": "https://www.telemetro.com/nacionales/cobre-panama-que-sigue-ahora-y-que-pasara-la-mina-donoso-n6093778"
+      },
+      {
+        "texto": "El 16 de noviembre de 2026 el presidente Mulino anunció negociaciones con First Quantum para una reactivación limitada orientada al cierre definitivo. El equipo lo encabeza el ministro de Comercio, Julio Moltó.",
+        "fuente": "Prensa Latina",
+        "url": "https://www.prensa-latina.cu/2026/11/16/presidente-panameno-anuncia-proceso-para-reapertura-de-mina-de-cobre/"
+      },
+      {
+        "texto": "Condiciones anunciadas por el Gobierno: ingresos para el Estado superiores a 375 millones de dólares al año, terminación de los arbitrajes y que la operación financie el cierre sin recursos del presupuesto. La figura jurídica aún no está definida.",
+        "fuente": "Infobae",
+        "url": "https://www.infobae.com/panama/2026/11/17/en-seis-dias-comenzaran-las-negociaciones-que-definiran-el-futuro-de-la-mina-de-cobre-de-donoso-en-panama/"
+      }
+    ]
+  },
+  "metricas": [
+    {
+      "id": "estado_mina",
+      "etiqueta": "Estado de la mina",
+      "valor": "Cerrada · en negociación",
+      "unidad": "",
+      "fecha_corte": "2026-11-17",
+      "periodo": "2026-11-17",
+      "variacion": null,
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/panama/2026/11/17/en-seis-dias-comenzaran-las-negociaciones-que-definiran-el-futuro-de-la-mina-de-cobre-de-donoso-en-panama/",
+      "calidad": "media",
+      "notas": "Negociaciones formales programadas desde el lunes 23 de noviembre de 2026."
+    },
+    {
+      "id": "auditoria_cumplimiento",
+      "etiqueta": "Auditoría integral (SGS)",
+      "valor": 87.73,
+      "unidad": "%",
+      "fecha_corte": "2026-11-16",
+      "periodo": "2026",
+      "variacion": null,
+      "fuente": "Prensa Latina",
+      "url": "https://www.prensa-latina.cu/2026/11/16/presidente-panameno-anuncia-proceso-para-reapertura-de-mina-de-cobre/",
+      "calidad": "media",
+      "notas": "Cumplimiento de 370 compromisos evaluados; nueve incumplimientos. El informe completo no está publicado."
+    },
+    {
+      "id": "arbitrajes_usd",
+      "etiqueta": "Arbitrajes contra Panamá",
+      "valor": 27000,
+      "unidad": "USD millones",
+      "fecha_corte": "2026-11-17",
+      "periodo": "2026-11-17",
+      "variacion": null,
+      "fuente": "Infobae (cifra del ministro Moltó)",
+      "url": "https://www.infobae.com/panama/2026/11/17/en-seis-dias-comenzaran-las-negociaciones-que-definiran-el-futuro-de-la-mina-de-cobre-de-donoso-en-panama/",
+      "calidad": "media",
+      "notas": "Reclamaciones de First Quantum \"superiores a 27,000 millones de dólares\"; suspendidas para negociar."
+    },
+    {
+      "id": "material_procesado",
+      "etiqueta": "Material almacenado ya procesado",
+      "valor": 16,
+      "unidad": "%",
+      "fecha_corte": "2026-09-30",
+      "periodo": "2026-04-07/2026-09-30",
+      "variacion": null,
+      "fuente": "Telemetro",
+      "url": "https://www.telemetro.com/nacionales/cobre-panama-que-sigue-ahora-y-que-pasara-la-mina-donoso-n6093778",
+      "calidad": "media",
+      "notas": "De 31.6 millones de toneladas de roca extraída antes de noviembre de 2023."
+    },
+    {
+      "id": "exportaciones_cobre_2025",
+      "etiqueta": "Exportación de concentrado de cobre 2025",
+      "valor": 339.85,
+      "unidad": "USD millones",
+      "fecha_corte": "2025-12-31",
+      "periodo": "2025",
+      "variacion": null,
+      "fuente": "MICI — INTELCOM (datos del INEC)",
+      "url": "https://intelcom.gob.pa/storage/informes/February2026/xkzgwxULgJNJ4EnhLWWe.pdf",
+      "calidad": "alta",
+      "notas": "Concentrado almacenado tras el cierre: B/.169.7 M en el segundo trimestre y B/.170.1 M en el tercero; 25.7 % de las exportaciones registradas del país en 2025 (B/.1,319.97 M)."
+    },
+    {
+      "id": "ingresos_q3_2026",
+      "etiqueta": "Ventas de Cobre Panamá, 3.er trimestre 2026",
+      "valor": 203,
+      "unidad": "USD millones",
+      "fecha_corte": "2026-09-30",
+      "periodo": "2026-07-01/2026-09-30",
+      "variacion": null,
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/panama/2026/11/17/en-seis-dias-comenzaran-las-negociaciones-que-definiran-el-futuro-de-la-mina-de-cobre-de-donoso-en-panama/",
+      "calidad": "media",
+      "notas": "Por la venta de mineral extraído antes del cierre."
+    },
+    {
+      "id": "concesiones_metalicas",
+      "etiqueta": "Nuevas concesiones de minería metálica",
+      "valor": "Prohibidas",
+      "unidad": "",
+      "fecha_corte": "2025-04-26",
+      "periodo": "2023-11-03",
+      "variacion": null,
+      "fuente": "Ley 407 de 2023; la Corte rechazó una demanda en su contra (La Prensa)",
+      "url": "https://www.prensa.com/judiciales/la-corte-suprema-de-justicia-mantiene-vigente-la-prohibicion-total-de-mineria-metalica/",
+      "calidad": "alta",
+      "notas": "Moratoria indefinida (Gaceta Oficial 29904). El MICI informó en abril de 2024 que canceló las concesiones metálicas."
+    },
+    {
+      "id": "concesiones_no_metalicas",
+      "etiqueta": "Concesiones no metálicas vigentes",
+      "valor": null,
+      "unidad": "concesiones",
+      "fecha_corte": null,
+      "periodo": null,
+      "variacion": null,
+      "fuente": "MICI — catastro minero",
+      "url": null,
+      "calidad": "media",
+      "estado": "pendiente",
+      "notas": "Pendiente: el MICI no publica un listado consultable de concesiones vigentes."
+    }
+  ],
+  "series": {
+    "encuestas": [
+      {
+        "periodo": "2026-01",
+        "fuente": "vea",
+        "a_favor": 29.9,
+        "en_contra": 64.9,
+        "pregunta": "¿Está de acuerdo con reabrir la mina bajo mejores términos y condiciones para Panamá?",
+        "url": "https://www.laestrella.com.pa/panama/nacional/el-649-se-opone-a-la-reapertura-de-la-mina-segun-encuesta-FJ19101206"
+      },
+      {
+        "periodo": "2026-03-26/2026-04-01",
+        "fuente": "cid",
+        "a_favor": 55,
+        "en_contra": 42,
+        "pregunta": "Reapertura si se garantiza transparencia y beneficios directos a la población",
+        "url": "https://www.critica.com.pa/nacional/55-de-panamenos-respalda-reapertura-minera-con-condiciones-507815"
+      },
+      {
+        "periodo": "2026-04",
+        "fuente": "vea",
+        "a_favor": 24.4,
+        "en_contra": 74.0,
+        "pregunta": "¿Está de acuerdo con reabrir la mina bajo mejores términos y condiciones para Panamá?",
+        "url": "https://www.laestrella.com.pa/panama/nacional/el-687-de-los-panamenos-quiere-un-referendum-el-664-votaria-no-a-la-mina-LN24295493"
+      },
+      {
+        "periodo": "2026-07",
+        "fuente": "vea",
+        "a_favor": 29.6,
+        "en_contra": 67.8,
+        "pregunta": "¿Está de acuerdo con reabrir la mina bajo mejores términos y condiciones para Panamá?",
+        "url": "https://www.laestrella.com.pa/panama/nacional/el-687-de-los-panamenos-quiere-un-referendum-el-664-votaria-no-a-la-mina-LN24295493"
+      },
+      {
+        "periodo": "2026-07-29",
+        "fuente": "doxa",
+        "a_favor": 50,
+        "en_contra": null,
+        "pregunta": "Reapertura ordenada de la mina",
+        "url": "https://destinopanama.com.pa/2026/07/futuro-de-la-mina-divide-a-las-encuestas-de-opinion/"
+      }
+    ],
+    "referendo": [
+      {
+        "periodo": "2026-07",
+        "fuente": "vea",
+        "quiere_referendo": 68.7,
+        "votaria_no": 66.4,
+        "url": "https://www.laestrella.com.pa/panama/nacional/el-687-de-los-panamenos-quiere-un-referendum-el-664-votaria-no-a-la-mina-LN24295493"
+      }
+    ],
+    "cronologia": [
+      {
+        "fecha": "2023-11-03",
+        "titulo": "Ley 407: moratoria indefinida",
+        "descripcion": "Se prohíben nuevas concesiones de minería metálica en todo el país.",
+        "fuente": "Panamá América",
+        "url": "https://www.panamaamerica.com.pa/economia/moratoria-minera-ya-es-ley-de-la-republica-1228602"
+      },
+      {
+        "fecha": "2023-11",
+        "titulo": "Fallo de la Corte Suprema",
+        "descripcion": "Declara inconstitucional, por unanimidad, el contrato de la Ley 406. La mina deja de operar.",
+        "fuente": "La Prensa",
+        "url": "https://www.prensa.com/politica/cobre-panama-estas-son-las-claves-para-entender-el-proyecto-minero/"
+      },
+      {
+        "fecha": "2024-04-25",
+        "titulo": "Cancelación de concesiones metálicas",
+        "descripcion": "El MICI informa que concluyó la cancelación y anulación de las concesiones de minería metálica.",
+        "fuente": "La Prensa",
+        "url": "https://www.prensa.com/economia/mici-concluye-el-proceso-de-cancelacion-de-concesiones-metalicas/"
+      },
+      {
+        "fecha": "2025-04-26",
+        "titulo": "La Corte mantiene la moratoria",
+        "descripcion": "Rechaza una demanda de inconstitucionalidad contra cinco artículos de la Ley 407 (Edicto 458).",
+        "fuente": "La Prensa",
+        "url": "https://www.prensa.com/judiciales/la-corte-suprema-de-justicia-mantiene-vigente-la-prohibicion-total-de-mineria-metalica/"
+      },
+      {
+        "fecha": "2025-06",
+        "titulo": "Exportación del concentrado almacenado",
+        "descripcion": "Primer envío de 33,000 toneladas de concentrado, por unos 89 millones de dólares.",
+        "fuente": "La Prensa",
+        "url": "https://www.prensa.com/economia/89-millones-lo-que-genero-el-primer-cargamento-de-concentrado-de-cobre/"
+      },
+      {
+        "fecha": "2026-04-07",
+        "titulo": "Resolución MICI No. 27",
+        "descripcion": "Autoriza procesar y exportar solo el material ya extraído (más de 38 millones de toneladas de roca; unas 70,000 t de concentrado). Prohíbe nueva extracción.",
+        "fuente": "La Prensa",
+        "url": "https://www.prensa.com/economia/mici-autoriza-a-minera-panama-a-procesar-exportar-y-comercializar-mineral-expuesto/"
+      },
+      {
+        "fecha": "2026-04-14",
+        "titulo": "Reforma al Código de Recursos Minerales",
+        "descripcion": "Primer debate del proyecto de ley 579 (minería no metálica) en la Comisión de Comercio.",
+        "fuente": "La Estrella de Panamá",
+        "url": "https://www.laestrella.com.pa/economia/reformas-al-codigo-de-recursos-minerales-que-cambios-se-plantean-OA21564093"
+      },
+      {
+        "fecha": "2026-09-30",
+        "titulo": "Informe de la comisión interministerial",
+        "descripcion": "17 recomendaciones y seis criterios sobre el futuro de la mina, tras la auditoría de SGS.",
+        "fuente": "Prensa Latina",
+        "url": "https://www.prensa-latina.cu/2026/11/16/presidente-panameno-anuncia-proceso-para-reapertura-de-mina-de-cobre/"
+      },
+      {
+        "fecha": "2026-11-16",
+        "titulo": "Anuncio presidencial",
+        "descripcion": "Mulino anuncia negociaciones para una reactivación limitada orientada al cierre definitivo.",
+        "fuente": "Prensa Latina",
+        "url": "https://www.prensa-latina.cu/2026/11/16/presidente-panameno-anuncia-proceso-para-reapertura-de-mina-de-cobre/"
+      },
+      {
+        "fecha": "2026-11-23",
+        "titulo": "Inicio de negociaciones formales",
+        "descripcion": "Fecha anunciada por los ministros Chapman y Moltó.",
+        "programado": true,
+        "fuente": "Infobae",
+        "url": "https://www.infobae.com/panama/2026/11/17/en-seis-dias-comenzaran-las-negociaciones-que-definiran-el-futuro-de-la-mina-de-cobre-de-donoso-en-panama/"
+      }
+    ],
+    "noticias": [
+      {
+        "periodo": "2026-11-20",
+        "titulo": "¡Extraían oro de forma ilegal en Donoso! Decomisan equipos utilizados para minería en área protegida",
+        "url": "https://www.tvn-2.com/nacionales/decomisan-equipos-utilizados-mineria-ilegal_1_2272044.html",
+        "medio": "tvn-2.com"
+      },
+      {
+        "periodo": "2026-11-18",
+        "titulo": "Mina de Donoso: ¿Qué es el Acuerdo de Escazú y por qué es clave en las conversaciones con Minera Panamá?",
+        "url": "https://www.tvn-2.com/contenido-exclusivo/mina-donoso-acuerdo-escazu-clave-conversaciones-gobierno-minera-panama_1_2271522.html",
+        "medio": "tvn-2.com"
+      }
+    ]
+  },
+  "asamblea": {
+    "patron": "miner[ií]a|minera|minero|\\bminas?\\b|recursos minerales|explotaci[oó]n minera|\\bcobre\\b|metal[ií]fer"
+  }
+}

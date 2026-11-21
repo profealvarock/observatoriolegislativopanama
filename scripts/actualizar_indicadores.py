@@ -1,7 +1,7 @@
 """
-Observatorio Legislativo — actualización semanal de las pestañas Aprobación, Sismo y Costo de vida.
+Observatorio Ciudadano de Panamá — actualización semanal de Aprobación, Sismo, Costo de vida y Minería.
 
-Lee y actualiza data/aprobacion.json, data/sismo.json y data/costo_vida.json. Hay un módulo por
+Lee y actualiza data/aprobacion.json, data/sismo.json, data/costo_vida.json y data/mineria.json. Hay un módulo por
 fuente; cada uno valida lo que encuentra (número, rango razonable, fecha de corte no futura) y,
 si falla, no rompe el job: se conserva el valor anterior y el problema queda en "advertencias"
 dentro del JSON. Las series solo crecen: se agregan registros nuevos y se deduplican por período.
@@ -25,7 +25,7 @@ from xml.etree import ElementTree
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / 'data'
-ARCHIVOS = {'aprobacion': 'aprobacion.json', 'sismo': 'sismo.json', 'costo_vida': 'costo_vida.json'}
+ARCHIVOS = {'aprobacion': 'aprobacion.json', 'sismo': 'sismo.json', 'costo_vida': 'costo_vida.json', 'mineria': 'mineria.json'}
 
 UA = 'Mozilla/5.0 (compatible; ObservatorioLegislativoPA/1.0; +https://observatoriolegistalivopa.netlify.app)'
 TIMEOUT = 30
@@ -705,6 +705,40 @@ def modulo_encuestas(ap, hoy, avisar):
     return cambio
 
 
+_PATRON_MINERO = re.compile(r'\bmina\b|\bminas\b|miner[ia]|minero|cobre panama|first quantum|donoso|recursos minerales|moratoria minera')
+_PATRON_NO_MINERO = re.compile(r'\bminas? antipersonal|mina de sal|minas? de oro de|minsa\b')
+
+
+def es_noticia_minera(titulo):
+    """¿El titular trata de minería en Panamá? (filtro simple sobre el texto sin tildes)"""
+    t = sin_tildes(titulo)
+    return bool(_PATRON_MINERO.search(t)) and not _PATRON_NO_MINERO.search(t)
+
+
+def modulo_noticias_mineria(mi, hoy, avisar):
+    """Guarda los titulares sobre minería de los RSS de prensa (enlace y fecha), sin interpretar cifras.
+    Las encuestas nuevas se avisan para revisarlas a mano antes de cargarlas."""
+    previas = mi['series'].setdefault('noticias', [])
+    conocidas = {n['url'] for n in previas}
+    arts, errs = _articulos_prensa(r'.', desde=hoy - timedelta(days=21), hasta=hoy)
+    for err in errs:
+        avisar('noticias', f'Feed de prensa no disponible: {err}')
+    nuevas = []
+    for a in arts:
+        if not es_noticia_minera(a['titulo']) or a['url'] in conocidas or not a['fecha']:
+            continue
+        medio = re.sub(r'^www\.', '', re.sub(r'^https?://([^/]+).*', r'\1', a['url']))
+        nuevas.append({'periodo': a['fecha'].isoformat(), 'titulo': a['titulo'], 'url': a['url'], 'medio': medio})
+        conocidas.add(a['url'])
+        if re.search(r'encuesta|sondeo|referend', sin_tildes(a['titulo'])):
+            avisar('encuestas', f'Posible encuesta sobre minería para revisar a mano: {a["titulo"]} — {a["url"]}')
+    if not nuevas:
+        return False
+    # Las más recientes primero; se conservan las últimas 40 para que el archivo no crezca sin límite.
+    mi['series']['noticias'] = sorted(previas + nuevas, key=lambda n: (n['periodo'], n['url']), reverse=True)[:40]
+    return True
+
+
 MODULOS = [
     ('combustible', 'costo_vida', modulo_combustible),
     ('cbfa', 'costo_vida', modulo_cbfa),
@@ -712,6 +746,7 @@ MODULOS = [
     ('sinaproc', 'sismo', modulo_sinaproc),
     ('igc', 'sismo', modulo_igc),
     ('encuestas', 'aprobacion', modulo_encuestas),
+    ('noticias_mineria', 'mineria', modulo_noticias_mineria),
     ('foto', 'costo_vida', modulo_foto_costo),   # al final: la foto lleva los valores ya actualizados
 ]
 
@@ -745,7 +780,7 @@ def ejecutar(hoy, solo=None, data_dir=DATA):
             continue
         D['advertencias'] = advertencias[k]
         for nombre_serie, serie in list((D.get('series') or {}).items()):
-            if isinstance(serie, list) and serie and isinstance(serie[0], dict) and 'periodo' in serie[0] and nombre_serie != 'cronologia':
+            if isinstance(serie, list) and serie and isinstance(serie[0], dict) and 'periodo' in serie[0] and nombre_serie not in ('cronologia', 'noticias', 'encuestas', 'referendo'):
                 D['series'][nombre_serie] = dedup_series(serie)
         D['fecha_corte'] = fecha_mayor(D) or D.get('fecha_corte')
         if _sin_generado(D) != originales[k]:
