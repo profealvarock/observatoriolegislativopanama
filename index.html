@@ -97,6 +97,9 @@
   <button class="tab" onclick="showTab('partidos')">🏛 Partidos</button>
   <button class="tab" onclick="showTab('proponentes')">🏢 Otros proponentes</button>
   <button class="tab" onclick="showTab('costos')">💰 Costo Legislativo</button>
+  <button class="tab" onclick="showTab('aprobacion')">⭐ Aprobación</button>
+  <button class="tab" onclick="showTab('sismo')">🌎 Sismo</button>
+  <button class="tab" onclick="showTab('costo-vida')">🛒 Costo de vida</button>
   <button class="tab" onclick="showTab('metodologia')">📘 Metodología</button>
 </div>
 </div>
@@ -733,6 +736,21 @@
 
 </div>
 
+<!-- TAB APROBACIÓN · datos en data/aprobacion.json (js/aprobacion.js) -->
+<div id="tab-aprobacion" class="tab-content">
+  <div id="apr-root"><div class="loader"><div class="spinner"></div> Cargando encuestas…</div></div>
+</div>
+
+<!-- TAB SISMO · datos en data/sismo.json (js/sismo.js) -->
+<div id="tab-sismo" class="tab-content">
+  <div id="sis-root"><div class="loader"><div class="spinner"></div> Cargando datos del sismo…</div></div>
+</div>
+
+<!-- TAB COSTO DE VIDA · datos en data/costo_vida.json (js/costo_vida.js) -->
+<div id="tab-costo-vida" class="tab-content">
+  <div id="cv-root"><div class="loader"><div class="spinner"></div> Cargando indicadores…</div></div>
+</div>
+
 <!-- TAB METODOLOGÍA -->
 <div id="tab-metodologia" class="tab-content">
   <div class="met-intro">
@@ -852,6 +870,50 @@
         <dt>Tipo de norma</dt><dd>Segunda dimensión, deducida del título con reglas fijas: <strong>nueva regulación</strong>, <strong>reforma</strong> de una ley existente (modifica, adiciona, deroga o subroga), <strong>declarativa o conmemorativa</strong> (días, festivales, patrimonio, condecoraciones), <strong>aprobación de tratado</strong> y <strong>presupuesto</strong>.</dd>
       </dl>
     </section>
+
+    <section class="met-card met-ancha" id="met-indicadores">
+      <h3>11. Aprobación, Sismo y Costo de vida: reglas comunes</h3>
+      <p>Estas tres pestañas no salen de la Asamblea: reúnen indicadores públicos de contexto. Cada una lee su propio archivo (<a href="data/aprobacion.json" target="_blank" rel="noopener">data/aprobacion.json</a>, <a href="data/sismo.json" target="_blank" rel="noopener">data/sismo.json</a> y <a href="data/costo_vida.json" target="_blank" rel="noopener">data/costo_vida.json</a>) y <strong>toda cifra lleva su fuente, su fecha de corte y su enlace</strong>. Si un dato no existe o no tiene una fuente verificada, se muestra "s/d" o "pendiente": nunca se estima ni se completa a mano.</p>
+      <dl>
+        <dt>Actualización</dt><dd>Un proceso automático corre <strong>cada lunes a las 6:00 a. m. (hora de Panamá)</strong>. Tiene un módulo por fuente; cada dato se valida (que sea un número, que esté en un rango razonable —por ejemplo, combustible entre 2 y 10 dólares por galón— y que su fecha de corte no sea futura). Si una fuente no responde o cambia su formato, se conserva el valor anterior y el problema queda anotado en "avisos de la última actualización", visible en cada pestaña.</dd>
+        <dt>Frescura</dt><dd>Junto a cada fecha de corte hay un indicador de color según los días transcurridos: <span class="fresh fresh-verde"><span class="fresh-dot"></span>7 días o menos</span> <span class="fresh fresh-ambar"><span class="fresh-dot"></span>de 8 a 30 días</span> <span class="fresh fresh-rojo"><span class="fresh-dot"></span>más de 30 días</span>. El encabezado usa la fecha más reciente de la pestaña; una tarjeta muestra su propio indicador cuando su fecha es distinta. Que una cifra esté en rojo no significa que esté mal: puede ser que la fuente publique con poca frecuencia (las encuestas son trimestrales y la canasta básica sale con dos meses de rezago).</dd>
+        <dt>Calidad</dt><dd>Cada fuente se califica como <strong>alta</strong> (organismo oficial o encuesta con ficha técnica publicada), <strong>media</strong> (cifra oficial citada por la prensa, o aproximada) o <strong>baja</strong> (sin metodología verificable o sin publicación original localizada). Las de calidad baja llevan la marca <span class="pill-calidad">Calidad de fuente: baja</span>.</dd>
+        <dt>Series</dt><dd>Las series históricas solo crecen: cada corte agrega registros y nunca borra los anteriores. Si una fuente revisa una cifra ya publicada (el MEF lo hace con la canasta del mes anterior), se usa la cifra revisada y se guarda la primera publicada en <code>valor_inicial</code>.</dd>
+      </dl>
+    </section>
+
+    <section class="met-card">
+      <h3>12. ⭐ Aprobación</h3>
+      <ul>
+        <li><strong>Vea Panamá</strong> (Prodigious Consulting y La Estrella de Panamá): gestión presidencial, rumbo del país, confianza en el Gobierno y la institución más creíble. Ficha de julio de 2026: 1,508 entrevistas cara a cara del 12 al 16 de julio, margen de ±2.5 %.</li>
+        <li><strong>Latinobarómetro 2026</strong> (campo del 7 de mayo al 17 de junio, 1,000 entrevistas): porcentaje que confía "mucho" o "algo" en cada institución, publicado por La Prensa.</li>
+        <li><strong>Gabinete</strong>: Data Consulting Group (marzo de 2026, 2,000 casos, ±3 %). Se marca con <strong>calidad baja</strong>: la firma describe sus cifras como "estimaciones basadas en segmentación de audiencias" y el cuadro original fue elaborado con inteligencia artificial.</li>
+        <li><strong>Cadencia:</strong> las encuestas salen más o menos cada trimestre. Cada semana el proceso solo busca notas nuevas; si encuentra una medición completa (buena, mala y fechas de campo), agrega el punto a la serie. Si ve una nota que parece encuesta pero no puede leerla, deja un aviso para revisarla a mano.</li>
+        <li><strong>Advertencias:</strong> el gráfico de gestión no interpola: si una medición no publicó un porcentaje (septiembre de 2025, "buena"), el punto queda vacío. Las dos fuentes de confianza miden cosas distintas (confianza en cada institución frente a "la más creíble") y no se comparan entre sí. Las instituciones sin medición pública (SINAPROC, Ministerio Público, Defensoría, Corte Suprema, SENAN/SENAFRONT y CSS) salen de la lista en cuanto aparece un dato con fuente.</li>
+      </ul>
+    </section>
+
+    <section class="met-card">
+      <h3>13. 🌎 Sismo</h3>
+      <ul>
+        <li><strong>Sinaproc</strong>: balances oficiales (comunicados numerados). Cada cifra toma el comunicado más reciente que la trae, porque no todos repiten todos los campos; por eso una tarjeta puede tener una fecha distinta a otra. "Personas registradas" son las incluidas en la Evaluación de Daños y Análisis de Necesidades (EDAN), no necesariamente personas con daños.</li>
+        <li><strong>IGC-UP</strong> (Instituto de Geociencias, Universidad de Panamá): magnitud y conteo de réplicas. El conteo se toma de notas de prensa que citan al instituto; cuando la cifra es aproximada, se indica.</li>
+        <li><strong>Advertencias:</strong> la magnitud fue revisada (Sinaproc reportó 7.2 al inicio; el IGC-UP, 7.5) y la profundidad varía entre boletines. La réplica M6.9 del 9 de octubre solo la reporta Infobae y se marca como "sin verificar". Los deslizamientos de tierra son el conteo preliminar del IGC-UP con imágenes Sentinel-2 (2,351 al 17 de octubre); una cifra de 4,822 que circuló no tiene publicación original localizada y no se usa. Los desplazamientos de Búcaro e Isla Cañas tampoco tienen publicación original localizada: se muestran con calidad baja. El epicentro se ubica en el mapa con una proyección aproximada.</li>
+        <li><strong>Cadencia y cierre:</strong> se revisa cada semana. Si Sinaproc o el IGC-UP no publican, se conserva el último valor y el indicador de frescura lo marca. Cuando termine la emergencia, la pestaña pasa a <strong>archivo histórico</strong> con una sola marca en el archivo (<code>"activo": false</code>).</li>
+      </ul>
+    </section>
+
+    <section class="met-card met-ancha">
+      <h3>14. 🛒 Costo de vida</h3>
+      <dl>
+        <dt>Combustible</dt><dd>Precio máximo de venta en Panamá y Colón, fijado cada 14 días por la <strong>Secretaría Nacional de Energía</strong> (viernes a las 6:00 a. m.). La Secretaría publica el período en su sitio, pero los precios vienen en una imagen; por eso las cifras se toman de notas de prensa que los transcriben, y solo si la nota nombra la fecha de inicio del período. El precio oficial es por litro: se convierte a galón (× 3.785) y se redondea a centavos.</dd>
+        <dt>Canasta básica</dt><dd>Costo calórico de la canasta básica familiar de alimentos (CBFA) del <strong>MEF</strong> para los distritos de Panamá y San Miguelito, leído del informe mensual en PDF. Sale con unos dos meses de rezago porque depende de los precios del INEC. La cifra de Acodeco (cerca de $303) usa otra metodología y no se mezcla con esta serie.</dd>
+        <dt>Electricidad</dt><dd>Pliegos tarifarios de la <strong>ASEP</strong> vigentes del 1 de septiembre de 2026 al 31 de agosto de 2030; el Estado aporta un subsidio para septiembre–diciembre de 2026 y los consumos de hasta 300 kWh quedan protegidos por el Fondo de Estabilización Tarifaria. El <strong>precio por kWh está pendiente</strong>: debe calcularse sumando los cargos del pliego (energía, distribución y comercialización) para el bloque residencial, y ese cálculo aún no está documentado. Cadencia semestral.</dd>
+        <dt>Agua y gas</dt><dd><strong>Agua (IDAAN): pendiente.</strong> El único pliego localizado (ASEP) no indica su fecha de vigencia, así que no se publica su cifra. <strong>Gas licuado de 25 lb:</strong> $4.37 en Panamá y San Miguelito según el Decreto Ejecutivo 32 del 28 de abril de 2026 (Acodeco, citado por la prensa; varía por localidad). El decreto rige seis meses prorrogables: si la vigencia vence sin prórroga publicada, el proceso lo avisa. Ambos se revisan una vez al mes.</dd>
+        <dt>Foto semanal</dt><dd>Cada lunes se guarda en la serie <code>fotos</code> una copia de todos los valores vigentes, para poder reconstruir qué mostraba el sitio en cada fecha.</dd>
+        <dt>Calculadora</dt><dd>Gasto mensual = galones por semana × 52 ÷ 12 × precio vigente, comparado con el precio de hace 3 quincenas. Se calcula en tu navegador; no se guarda nada.</dd>
+      </dl>
+    </section>
   </div>
 </div>
 
@@ -930,6 +992,10 @@
 <script src="js/votaciones.js"></script>
 <script src="js/panorama.js"></script>
 <script src="js/comparador.js"></script>
+<script src="js/indicadores.js"></script>
+<script src="js/aprobacion.js"></script>
+<script src="js/sismo.js"></script>
+<script src="js/costo_vida.js"></script>
 <script src="js/inicio.js"></script>
 </body>
 </html>

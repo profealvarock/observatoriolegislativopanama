@@ -763,3 +763,119 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,su
 @media(max-width:640px){.pan-top-item{grid-template-columns:1fr auto}.pan-top-bar{display:none}}
 @media(max-width:400px){.pan-kpis{grid-template-columns:1fr}}
 .panorama .kpi-breakdown-hdr-sum{white-space:normal;text-align:right}
+
+/* ── APROBACIÓN · SISMO · COSTO DE VIDA (js/indicadores.js y una hoja por pestaña) ── */
+/* Encabezado de pestaña con frescura, cadencia y avisos del job semanal */
+.ind-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:var(--gap)}
+.ind-head-txt{flex:1 1 340px;min-width:0}
+.ind-head-txt h2{font-size:clamp(1.05rem,2.4vw,1.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+.ind-head-txt p{font-family:var(--fm);font-size:.74rem;color:var(--muted);line-height:1.65;max-width:72ch}
+.ind-head-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:flex-end}
+.ind-chip{font-family:var(--fm);font-size:.66rem;padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:var(--surface);color:var(--text)}
+.ind-gen{font-family:var(--fm);font-size:.62rem;color:var(--muted)}
+.ind-avisos{margin:-6px 0 var(--gap);font-family:var(--fm);font-size:.7rem;border:1px solid rgba(245,158,11,.35);background:rgba(245,158,11,.06);border-radius:10px;padding:8px 14px}
+.ind-avisos summary{cursor:pointer;color:var(--acc2);font-weight:700}
+.ind-avisos ul{margin:8px 0 2px 18px;display:flex;flex-direction:column;gap:4px;color:var(--muted);line-height:1.55}
+.ind-avisos b{color:var(--text)}
+
+/* Frescura: ≤7 días verde · 8–30 ámbar · >30 rojo */
+.fresh{display:inline-flex;align-items:center;gap:6px;font-family:var(--fm);font-size:.66rem;padding:3px 9px;border-radius:20px;border:1px solid var(--fc,var(--border));color:var(--fc,var(--muted));background:color-mix(in srgb,var(--fc,var(--muted)) 9%,transparent);white-space:nowrap}
+.fresh-dot{width:7px;height:7px;border-radius:50%;background:var(--fc,var(--muted));flex-shrink:0}
+.fresh-verde{--fc:var(--acc3)} .fresh-ambar{--fc:var(--acc2)} .fresh-rojo{--fc:var(--acc4)} .fresh-sd{--fc:var(--muted)}
+.fresh-fecha{color:var(--muted)}
+.pill-calidad{display:inline-flex;align-items:center;gap:6px;font-family:var(--fm);font-size:.64rem;font-weight:700;padding:3px 9px;border-radius:20px;color:var(--acc4);border:1px solid var(--acc4);background:color-mix(in srgb,var(--acc4) 10%,transparent);white-space:nowrap;vertical-align:middle}
+.pill-calidad::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--acc4)}
+.ind-sinfuente{color:var(--muted);font-style:italic}
+
+/* Tarjetas KPI con fuente y fecha */
+.ind-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:var(--gap);margin-bottom:var(--gap)}
+.ind-kpis-mini{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:10px;margin-bottom:12px}
+.ind-kpis-mini .kpi{padding:12px 14px}
+.ind-kpis-mini .ind-kpi-value{font-size:clamp(1.1rem,2.4vw,1.45rem)}
+.ind-kpis-mini .ind-unidad{display:block;font-size:.5em;margin-top:2px}
+.ind-kpi{display:flex;flex-direction:column;min-width:0}
+.ind-kpi-value{font-size:clamp(1.25rem,2vw,1.6rem);white-space:nowrap}
+.ind-unidad{font-size:.55em;font-weight:600;color:var(--muted);letter-spacing:0;white-space:nowrap}
+.ind-badges .fresh{white-space:normal;max-width:100%}
+.ind-kpi-texto .ind-kpi-value{font-size:clamp(1rem,1.5vw,1.2rem);letter-spacing:-.02em;line-height:1.15;white-space:normal}
+.ind-sd{color:var(--muted)!important;font-style:italic;font-weight:600}
+.ind-kpi .kpi-sub{line-height:1.5}
+.ind-kpi .kpi-sub b{color:var(--text)}
+.ind-fuente{font-family:var(--fm);font-size:.6rem;color:var(--muted);margin-top:auto;padding-top:10px;line-height:1.5}
+.ind-fuente a,.ind-fuentes a,.chart-sub a,.ind-bar-lbl a,.sis-crono a,.sis-otros a,.cv-tbl a{color:var(--acc)}
+.ind-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ind-al{color:var(--muted);white-space:nowrap}
+
+.ind-nota{font-family:var(--fm);font-size:.66rem;color:var(--muted);line-height:1.6;margin-top:8px}
+.ind-nota:empty{display:none}
+.ind-nota-warn{color:var(--text);border-left:3px solid var(--acc4);padding-left:10px}
+.ind-seg{display:flex;gap:6px;flex-wrap:wrap;margin:-4px 0 6px}
+.ind-sinmed{margin-top:12px;border-top:1px solid var(--border);padding-top:10px}
+.ind-pills{display:flex;flex-wrap:wrap;gap:6px}
+.ind-pill{font-family:var(--fm);font-size:.64rem;padding:3px 10px;border-radius:20px;border:1px dashed var(--border);color:var(--muted);background:var(--bg)}
+.ind-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+
+/* Barras HTML (gabinete, daños): legibles a 400 px sin canvas */
+.ind-bars{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:8px}
+.ind-bar{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(60px,2fr) auto;gap:10px;align-items:center;font-size:.78rem}
+.ind-bar-lbl{min-width:0;line-height:1.35}
+.ind-bar-lbl b{font-weight:700}
+.ind-bar-lbl span{font-family:var(--fm);font-size:.62rem;color:var(--muted)}
+.ind-bar-track{height:9px;background:var(--track);border-radius:5px;overflow:hidden}
+.ind-bar-fill{display:block;height:100%;border-radius:5px;background:var(--bc,var(--acc2));transition:width .6s cubic-bezier(.4,0,.2,1)}
+.ind-bar-val{font-family:var(--fm);font-size:.74rem;text-align:right;min-width:52px}
+.ind-bar-2l{grid-template-columns:1fr auto;row-gap:5px}
+.ind-bar-2l .ind-bar-track{grid-column:1/-1;grid-row:2}
+.ind-bar-2l .ind-bar-val{grid-row:1;grid-column:2}
+.ind-bar-nota{grid-column:1/-1;font-family:var(--fm);font-size:.6rem;color:var(--muted);line-height:1.5}
+.ind-fuentes ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-family:var(--fm);font-size:.68rem;color:var(--muted);line-height:1.6}
+.ind-fuentes .pill-calidad{margin-left:6px}
+.ind-descargas{margin-bottom:var(--gap)}
+
+/* Sismo: mapa reutilizado, cronología y chips de magnitud */
+.sis-map .sis-prov{cursor:default;stroke-width:2}
+.sis-map .sis-prov:hover{opacity:1;stroke-width:3}
+.sis-epi path{fill:#facc15;stroke:#7c2d12;stroke-width:1.5}
+.sis-epi-onda{fill:none;stroke:#ef4444;stroke-width:2.5;transform-box:fill-box;transform-origin:center;animation:sisOnda 2.4s ease-out infinite}
+@keyframes sisOnda{from{opacity:.9;transform:scale(.6)}to{opacity:0;transform:scale(2.6)}}
+.sis-leyenda{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:10px;font-family:var(--fm);font-size:.64rem;color:var(--muted)}
+.sis-leyenda span{display:inline-flex;align-items:center;gap:6px}
+.sis-leyenda i{display:inline-block;width:12px;height:12px;border-radius:50%;border:1px solid var(--border)}
+.sis-leyenda i.sis-ley-epi{border:0;width:auto;height:auto;color:#facc15;font-style:normal;font-size:.9rem;text-shadow:0 0 2px #7c2d12}
+.mag-chip{display:inline-block;font-family:var(--fm);font-size:.64rem;font-weight:700;padding:1px 7px;border-radius:5px;border:1px solid var(--mc,var(--border));color:var(--mc,var(--muted));background:color-mix(in srgb,var(--mc,var(--muted)) 12%,transparent);white-space:nowrap}
+.mag-alta{--mc:var(--acc4)} .mag-media{--mc:var(--acc2)} .mag-baja{--mc:var(--muted)}
+.sis-crono{list-style:none;display:flex;flex-direction:column;gap:12px;border-left:2px solid var(--border);padding-left:14px;margin-top:6px}
+.sis-crono li{display:grid;grid-template-columns:minmax(84px,auto) 1fr;gap:10px;font-size:.78rem;line-height:1.5;position:relative}
+.sis-crono li::before{content:'';position:absolute;left:-20px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--surface);border:2px solid var(--acc4)}
+.sis-crono-fecha{font-family:var(--fm);font-size:.66rem;color:var(--muted);padding-top:2px}
+.sis-crono-fuente{display:block;font-family:var(--fm);font-size:.6rem;color:var(--muted)}
+.sis-noverif>span:last-child{font-style:italic;color:var(--muted)}
+.sis-tag{font-family:var(--fm);font-size:.6rem;font-style:normal;color:var(--acc2);border:1px dashed var(--acc2);border-radius:4px;padding:0 5px;margin-left:4px}
+.sis-otros{list-style:none;display:flex;flex-direction:column;gap:6px;font-family:var(--fm);font-size:.68rem;color:var(--muted);line-height:1.6;margin-bottom:8px}
+.sis-otros b{color:var(--text)}
+
+/* Costo de vida: variaciones, calculadora y tablero */
+.cv-var{font-family:var(--fm);white-space:nowrap}
+.cv-baja{color:var(--acc3)} .cv-sube{color:var(--acc4)}
+.cv-calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) minmax(0,1.6fr);gap:var(--gap);align-items:end}
+.cv-calc label{display:flex;flex-direction:column;gap:8px;font-family:var(--fm);font-size:.7rem;color:var(--muted)}
+.cv-calc output{color:var(--text);font-weight:700}
+.cv-calc select{background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 10px;font-family:var(--fm);font-size:.75rem;min-height:38px}
+.cv-calc input[type=range]{width:100%;accent-color:var(--acc);min-height:28px}
+.cv-calc-out{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:10px;background:var(--surface2);border:1px solid var(--border);min-width:0}
+.cv-calc-total{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;letter-spacing:-.03em;color:var(--acc3)}
+.cv-calc-total small{font-size:.7rem;font-weight:400;color:var(--muted);letter-spacing:0}
+.cv-calc-comp{font-family:var(--fm);font-size:.64rem;color:var(--muted);line-height:1.5}
+.cv-tbl td small{color:var(--muted)}
+.cv-tbl td,.cv-tbl th{vertical-align:top}
+.cv-tbl{min-width:640px}
+.cv-tbl .fresh{margin-top:4px}
+@media(max-width:768px){.cv-calc{grid-template-columns:1fr}.ind-head-meta{justify-content:flex-start}}
+@media(max-width:480px){.ind-bar{grid-template-columns:1fr auto}.ind-bar .ind-bar-track{grid-column:1/-1;grid-row:2}.ind-bar .ind-bar-val{grid-row:1;grid-column:2}.sis-crono li{grid-template-columns:1fr;gap:2px}}
+
+/* Menos movimiento: sin animaciones ni transiciones decorativas */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .sis-epi-onda{display:none}
+  .kpi:hover{transform:none}
+}

@@ -5,7 +5,7 @@ function fechaArchivo(){
   return m ? `${m[1]}-${m[2]}-${m[3]}` : new Date().toISOString().slice(0,10);
 }
 // columnas: [[título, fila=>valor], …]. Se antepone BOM para que Excel respete las tildes.
-function downloadCSV(nombre, columnas, filas){
+function downloadCSV(nombre, columnas, filas, fecha=fechaArchivo()){
   const cel=v=>{
     if(v==null) return '';
     const s=String(v);
@@ -16,7 +16,7 @@ function downloadCSV(nombre, columnas, filas){
   const blob=new Blob(['﻿'+lineas.join('\r\n')],{type:'text/csv;charset=utf-8'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
-  a.download=`observatorio_${nombre}_${fechaArchivo()}.csv`;
+  a.download=`observatorio_${nombre}_${fecha}.csv`;
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(()=>URL.revokeObjectURL(a.href),2000);
 }

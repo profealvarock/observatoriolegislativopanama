@@ -1,0 +1,364 @@
+{
+  "generado": "2026-11-21T01:15:36Z",
+  "pestana": "sismo",
+  "activo": true,
+  "cadencia": "Boletines: revisión semanal",
+  "fecha_corte": "2026-11-20",
+  "advertencias": [],
+  "fuentes": {
+    "sinaproc": {
+      "nombre": "Sinaproc, Comunicado #31 (balance al 2026-11-13)",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-31/",
+      "calidad": "alta",
+      "notas": "Balance preliminar; las cifras pueden variar conforme se validan los registros."
+    },
+    "igc_prensa_latina": {
+      "nombre": "IGC-UP, vía Prensa Latina",
+      "url": "https://www.prensa-latina.cu/2026/10/28/panama-registra-mas-de-nueve-mil-replicas-tras-potente-sismo/",
+      "calidad": "media"
+    },
+    "infobae": {
+      "nombre": "Infobae",
+      "url": "https://www.infobae.com/panama/2026/10/27/nueva-replica-de-57-vuelve-a-sacudir-panama-y-eleva-a-mas-de-1152-los-movimientos-registrados/",
+      "calidad": "media"
+    },
+    "ocha": {
+      "nombre": "OCHA — Flash Update No. 01 (9 oct 2026)",
+      "url": "https://www.unocha.org/publications/report/panama/panama-terremoto-flash-update-no-01-al-9-de-octubre-de-2026",
+      "calidad": "alta"
+    }
+  },
+  "evento": {
+    "inicio": "2026-10-09T12:56:00-05:00",
+    "magnitud": 7.5,
+    "magnitud_inicial": 7.2,
+    "profundidad_km": 10,
+    "falla": "Azuero–Soná",
+    "epicentro": {
+      "lat": 7.648,
+      "lon": -80.69,
+      "descripcion": "39 km al noroeste de Tonosí, Los Santos"
+    },
+    "fuente": "IGC-UP; ubicación del epicentro según Sinaproc (Comunicado #23)",
+    "url": "https://www.sinaproc.gob.pa/comunicado-oficial-23/",
+    "notas": "Sinaproc reportó M7.2 al inicio; el IGC-UP la revisó a M7.5. Otras agencias internacionales publicaron estimaciones distintas (hasta Mw 7.7). La profundidad también varía según el boletín: 10 km en el registro inicial y 4 km en el Comunicado #26 de Sinaproc."
+  },
+  "afectacion_provincias": {
+    "fuente": "Provincias más afectadas: Los Santos, Herrera, Veraguas y Coclé. Chiriquí: afectaciones reportadas por el COE provincial (Sinaproc, Comunicado #23).",
+    "url": "https://www.sinaproc.gob.pa/comunicado-oficial-23/",
+    "niveles": {
+      "Los Santos": 2,
+      "Herrera": 2,
+      "Veraguas": 2,
+      "Coclé": 2,
+      "Chiriquí": 1
+    },
+    "etiquetas": {
+      "2": "Más afectada",
+      "1": "Afectación reportada",
+      "0": "Sin reporte"
+    }
+  },
+  "metricas": [
+    {
+      "id": "magnitud",
+      "etiqueta": "Magnitud",
+      "valor": 7.5,
+      "unidad": "M",
+      "fecha_corte": "2026-10-09",
+      "periodo": "2026-10-09",
+      "variacion": null,
+      "fuente": "IGC-UP (Sinaproc reportó 7.2 al inicio)",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-23/",
+      "calidad": "alta",
+      "notas": "Profundidad 10 km · falla Azuero–Soná"
+    },
+    {
+      "id": "afectados",
+      "etiqueta": "Personas registradas (EDAN)",
+      "valor": 70306,
+      "unidad": "personas",
+      "fecha_corte": "2026-11-13",
+      "periodo": "2026-10-09/2026-11-13",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #31",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-31/",
+      "calidad": "alta",
+      "notas": "Personas registradas en la Evaluación de Daños y Análisis de Necesidades; balance preliminar."
+    },
+    {
+      "id": "fallecidos",
+      "etiqueta": "Fallecidos",
+      "valor": 2,
+      "unidad": "personas",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-09/2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "heridos",
+      "etiqueta": "Heridos",
+      "valor": 27,
+      "unidad": "personas",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-09/2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "albergados",
+      "etiqueta": "Personas en albergues",
+      "valor": 4428,
+      "unidad": "personas",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "albergues",
+      "etiqueta": "Albergues",
+      "valor": 91,
+      "unidad": "albergues",
+      "fecha_corte": "2026-11-13",
+      "periodo": "2026-11-13",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #31",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-31/",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "viviendas_evaluadas",
+      "etiqueta": "Viviendas evaluadas",
+      "valor": 22245,
+      "unidad": "viviendas",
+      "fecha_corte": "2026-11-13",
+      "periodo": "2026-10-09/2026-11-13",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #31",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-31/",
+      "calidad": "alta",
+      "notas": "Viviendas evaluadas, no necesariamente dañadas."
+    },
+    {
+      "id": "escuelas",
+      "etiqueta": "Centros educativos con afectaciones",
+      "valor": 619,
+      "unidad": "escuelas",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-09/2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "salud",
+      "etiqueta": "Instalaciones de salud afectadas",
+      "valor": 120,
+      "unidad": "instalaciones",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-09/2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "derrumbes",
+      "etiqueta": "Deslizamientos de tierra",
+      "valor": 2351,
+      "unidad": "deslizamientos",
+      "fecha_corte": "2026-10-17",
+      "periodo": "2026-10-09/2026-10-17",
+      "variacion": null,
+      "fuente": "IGC-UP (imágenes Sentinel-2), vía La Prensa",
+      "url": "https://www.prensa.com/sociedad/terremoto-en-panama-provoco-al-menos-2351-deslizamientos-de-tierra/",
+      "calidad": "media",
+      "notas": "Conteo preliminar del Instituto de Geociencias con imágenes Copernicus Sentinel-2; puede aumentar. Reemplaza la cifra de 4,822, cuya publicación original no se localizó."
+    },
+    {
+      "id": "replicas_localizadas",
+      "etiqueta": "Réplicas localizadas",
+      "valor": 1690,
+      "unidad": "réplicas",
+      "fecha_corte": "2026-11-20",
+      "periodo": "2026-10-09/2026-11-20",
+      "variacion": null,
+      "fuente": "IGC-UP, vía prensa",
+      "url": "https://www.tvn-2.com/nacionales/replicas-sismo-pasado-9-octubre-instituto-de-geociencias_1_2271973.html",
+      "calidad": "media",
+      "notas": "Cifra aproximada citada en la prensa."
+    },
+    {
+      "id": "replicas_m4",
+      "etiqueta": "Réplicas mayores de M4.0",
+      "valor": 426,
+      "unidad": "réplicas",
+      "fecha_corte": "2026-10-28",
+      "periodo": "2026-10-09/2026-10-28",
+      "variacion": null,
+      "fuente": "IGC-UP, vía Prensa Latina",
+      "url": "https://www.prensa-latina.cu/2026/10/28/panama-registra-mas-de-nueve-mil-replicas-tras-potente-sismo/",
+      "calidad": "media",
+      "notas": ""
+    },
+    {
+      "id": "replicas_detectadas",
+      "etiqueta": "Réplicas detectadas",
+      "valor": 9553,
+      "unidad": "réplicas",
+      "fecha_corte": "2026-10-28",
+      "periodo": "2026-10-09/2026-10-28",
+      "variacion": null,
+      "fuente": "IGC-UP, vía Prensa Latina",
+      "url": "https://www.prensa-latina.cu/2026/10/28/panama-registra-mas-de-nueve-mil-replicas-tras-potente-sismo/",
+      "calidad": "media",
+      "notas": "Incluye eventos detectados que no pudieron localizarse."
+    },
+    {
+      "id": "comunidades_atendidas",
+      "etiqueta": "Comunidades atendidas",
+      "valor": 175,
+      "unidad": "comunidades",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-09/2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "ayuda_tierra_t",
+      "etiqueta": "Ayuda por vía terrestre",
+      "valor": 365,
+      "unidad": "t",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-09/2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": "\"Más de 365 toneladas\"."
+    },
+    {
+      "id": "ayuda_aire_lb",
+      "etiqueta": "Ayuda por vía aérea",
+      "valor": 208317,
+      "unidad": "lb",
+      "fecha_corte": "2026-10-30",
+      "periodo": "2026-10-09/2026-10-30",
+      "variacion": null,
+      "fuente": "Sinaproc, Comunicado #26",
+      "url": "https://www.sinaproc.gob.pa/comunicado-oficial-26/",
+      "calidad": "alta",
+      "notas": "\"Más de 208,317 libras\"."
+    }
+  ],
+  "otros_datos": [
+    {
+      "id": "desplazamiento_bucaro",
+      "etiqueta": "Desplazamiento del terreno en Búcaro",
+      "valor_texto": "1.0–1.2 m",
+      "fuente": "Publicación original no localizada",
+      "url": null,
+      "calidad": "baja",
+      "fecha_corte": "2026-10-28"
+    },
+    {
+      "id": "hundimiento_isla_canas",
+      "etiqueta": "Hundimientos en Isla Cañas",
+      "valor_texto": "15–30 cm",
+      "fuente": "Publicación original no localizada",
+      "url": null,
+      "calidad": "baja",
+      "fecha_corte": "2026-10-28"
+    }
+  ],
+  "series": {
+    "replicas": [
+      {
+        "periodo": "2026-10-12",
+        "localizadas": 350,
+        "minimo": true,
+        "fuente": "IGC-UP",
+        "url": null
+      },
+      {
+        "periodo": "2026-10-26",
+        "localizadas": 1056,
+        "fuente": "IGC-UP",
+        "url": null
+      },
+      {
+        "periodo": "2026-10-27",
+        "localizadas": 1152,
+        "fuente": "IGC-UP, vía Infobae",
+        "url": "https://www.infobae.com/panama/2026/10/27/nueva-replica-de-57-vuelve-a-sacudir-panama-y-eleva-a-mas-de-1152-los-movimientos-registrados/"
+      },
+      {
+        "periodo": "2026-10-28",
+        "localizadas": 1154,
+        "mayores_m4": 426,
+        "detectadas": 9553,
+        "fuente": "IGC-UP, vía Prensa Latina",
+        "url": "https://www.prensa-latina.cu/2026/10/28/panama-registra-mas-de-nueve-mil-replicas-tras-potente-sismo/"
+      },
+      {
+        "periodo": "2026-11-20",
+        "localizadas": 1690,
+        "aproximado": true,
+        "fuente": "IGC-UP, vía prensa",
+        "url": "https://www.tvn-2.com/nacionales/replicas-sismo-pasado-9-octubre-instituto-de-geociencias_1_2271973.html"
+      }
+    ],
+    "cronologia": [
+      {
+        "fecha": "2026-10-09T12:56:00-05:00",
+        "magnitud": 7.5,
+        "descripcion": "Sismo principal, 39 km al NO de Tonosí, profundidad 10 km (falla Azuero–Soná).",
+        "verificado": true,
+        "fuente": "IGC-UP / Sinaproc",
+        "url": "https://www.sinaproc.gob.pa/comunicado-oficial-23/"
+      },
+      {
+        "fecha": "2026-10-09",
+        "magnitud": 5.2,
+        "descripcion": "Réplica mayor el mismo día.",
+        "verificado": true,
+        "fuente": "IGC-UP",
+        "url": null
+      },
+      {
+        "fecha": "2026-10-09",
+        "magnitud": 6.9,
+        "descripcion": "Réplica reportada solo por Infobae; sin confirmación del IGC-UP.",
+        "verificado": false,
+        "fuente": "Infobae",
+        "url": "https://www.infobae.com/panama/2026/10/27/nueva-replica-de-57-vuelve-a-sacudir-panama-y-eleva-a-mas-de-1152-los-movimientos-registrados/"
+      },
+      {
+        "fecha": "2026-10-27T10:26:00-05:00",
+        "magnitud": 5.7,
+        "descripcion": "Réplica cerca de isla Coiba.",
+        "verificado": true,
+        "fuente": "IGC-UP, vía Infobae",
+        "url": "https://www.infobae.com/panama/2026/10/27/nueva-replica-de-57-vuelve-a-sacudir-panama-y-eleva-a-mas-de-1152-los-movimientos-registrados/"
+      }
+    ]
+  }
+}
