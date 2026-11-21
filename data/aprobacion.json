@@ -1,0 +1,170 @@
+{
+  "generado": "2026-11-20T12:00:00Z",
+  "pestana": "aprobacion",
+  "cadencia": "Encuestas: cadencia trimestral",
+  "fecha_corte": "2026-07-16",
+  "advertencias": [],
+  "fuentes": {
+    "vea": {
+      "nombre": "Vea Panamá (Prodigious Consulting / La Estrella de Panamá)",
+      "url": "https://www.laestrella.com.pa/panama/nacional/la-desaprobacion-a-mulino-baja-levemente-pero-la-desconfianza-aumenta-GD24273216",
+      "urls": [
+        "https://www.laestrella.com.pa/panama/nacional/la-desaprobacion-a-mulino-baja-levemente-pero-la-desconfianza-aumenta-GD24273216",
+        "https://www.laestrella.com.pa/panama/nacional/la-desconfianza-institucional-baja-pero-sigue-siendo-mayoritaria-OE24317494"
+      ],
+      "detalle": "Última medición: campo 12–16 jul 2026 · n=1,508 entrevistas cara a cara · margen ±2.5 %",
+      "calidad": "alta"
+    },
+    "latinobarometro": {
+      "nombre": "Latinobarómetro 2026",
+      "url": "https://www.prensa.com/politica/en-panama-la-iglesia-genera-mas-confianza-que-el-gobierno-y-los-partidos-politicos/",
+      "detalle": "Campo 7 may – 17 jun 2026 · n=1,000",
+      "calidad": "alta"
+    },
+    "dcg": {
+      "nombre": "Data Consulting Group",
+      "url": "https://destinopanama.com.pa/2026/04/ministra-herrera-la-mejor-evaluada-en-el-gabinete-de-mulino-segun-estudio/",
+      "detalle": "Campo marzo 2026 · n=2,000 · margen ±3 %",
+      "calidad": "baja",
+      "notas": "La firma lo describe como \"estimaciones basadas en segmentación de audiencias\" y el cuadro original fue elaborado con inteligencia artificial."
+    }
+  },
+  "metricas": [
+    {
+      "id": "gestion_buena",
+      "etiqueta": "Gestión presidencial · buena o muy buena",
+      "valor": 17.9,
+      "unidad": "%",
+      "fecha_corte": "2026-07-16",
+      "periodo": "2026-07-12/2026-07-16",
+      "variacion": -0.5,
+      "fuente": "Vea Panamá (Prodigious Consulting / La Estrella de Panamá)",
+      "url": "https://www.laestrella.com.pa/panama/nacional/la-desaprobacion-a-mulino-baja-levemente-pero-la-desconfianza-aumenta-GD24273216",
+      "calidad": "alta",
+      "notas": "n=1,508 · ±2.5 %. Variación frente a abril de 2026 (18.4 %)."
+    },
+    {
+      "id": "gestion_mala",
+      "etiqueta": "Gestión presidencial · mala o muy mala",
+      "valor": 77.6,
+      "unidad": "%",
+      "fecha_corte": "2026-07-16",
+      "periodo": "2026-07-12/2026-07-16",
+      "variacion": -3.2,
+      "fuente": "Vea Panamá (Prodigious Consulting / La Estrella de Panamá)",
+      "url": "https://www.laestrella.com.pa/panama/nacional/la-desaprobacion-a-mulino-baja-levemente-pero-la-desconfianza-aumenta-GD24273216",
+      "calidad": "alta",
+      "notas": "Variación frente a abril de 2026 (80.8 %)."
+    },
+    {
+      "id": "confianza_presidente",
+      "etiqueta": "Confía en el presidente",
+      "valor": 20,
+      "unidad": "%",
+      "fecha_corte": "2026-06-17",
+      "periodo": "2026-05-07/2026-06-17",
+      "variacion": null,
+      "fuente": "Latinobarómetro 2026",
+      "url": "https://www.prensa.com/politica/en-panama-la-iglesia-genera-mas-confianza-que-el-gobierno-y-los-partidos-politicos/",
+      "calidad": "alta",
+      "notas": "% que confía \"mucho\" o \"algo\" · n=1,000."
+    },
+    {
+      "id": "mal_camino",
+      "etiqueta": "El país va por mal camino",
+      "valor": 79.5,
+      "unidad": "%",
+      "fecha_corte": "2026-07-16",
+      "periodo": "2026-07-12/2026-07-16",
+      "variacion": null,
+      "fuente": "Vea Panamá (Prodigious Consulting / La Estrella de Panamá)",
+      "url": "https://www.laestrella.com.pa/panama/nacional/la-desaprobacion-a-mulino-baja-levemente-pero-la-desconfianza-aumenta-GD24273216",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "confianza_gobierno_baja",
+      "etiqueta": "Confianza en el Gobierno baja o muy baja",
+      "valor": 69.4,
+      "unidad": "%",
+      "fecha_corte": "2026-07-16",
+      "periodo": "2026-07-12/2026-07-16",
+      "variacion": null,
+      "fuente": "Vea Panamá (Prodigious Consulting / La Estrella de Panamá)",
+      "url": "https://www.laestrella.com.pa/panama/nacional/la-desaprobacion-a-mulino-baja-levemente-pero-la-desconfianza-aumenta-GD24273216",
+      "calidad": "alta",
+      "notas": ""
+    }
+  ],
+  "series": {
+    "gestion": [
+      { "periodo": "2025-03", "buena": 31.0, "mala": null, "fuente": "vea" },
+      { "periodo": "2025-06", "buena": 10.4, "mala": 89.0, "fuente": "vea" },
+      { "periodo": "2025-09", "buena": null, "mala": 76.3, "fuente": "vea" },
+      { "periodo": "2026-01", "buena": 19.5, "mala": 76.3, "fuente": "vea" },
+      { "periodo": "2026-04", "buena": 18.4, "mala": 80.8, "fuente": "vea" },
+      { "periodo": "2026-07", "buena": 17.9, "mala": 77.6, "fuente": "vea" }
+    ],
+    "instituciones": [
+      {
+        "periodo": "2026-05-07/2026-06-17",
+        "fecha_corte": "2026-06-17",
+        "fuente": "latinobarometro",
+        "medida": "% que confía \"mucho\" o \"algo\"",
+        "valores": {
+          "Iglesia": 72, "Policía Nacional": 46, "Radio": 46, "Televisión": 41,
+          "Tribunal Electoral": 40, "Periódicos": 38, "Redes sociales": 36,
+          "Órgano Judicial": 27, "Asamblea Nacional": 26, "Presidente": 20,
+          "Gobierno": 18, "Partidos políticos": 11
+        }
+      },
+      {
+        "periodo": "2026-07-12/2026-07-16",
+        "fecha_corte": "2026-07-16",
+        "fuente": "vea",
+        "medida": "% que la señala como la institución más creíble",
+        "url": "https://www.laestrella.com.pa/panama/nacional/la-desconfianza-institucional-baja-pero-sigue-siendo-mayoritaria-OE24317494",
+        "valores": {
+          "Bomberos": 8.2, "Autoridad del Canal": 7.2, "Policía Nacional": 6.6,
+          "Contraloría": 4.6, "Acodeco": 3.0
+        },
+        "ninguna": 40
+      }
+    ],
+    "gabinete": [
+      {
+        "periodo": "2026-03",
+        "fecha_corte": "2026-03-31",
+        "fuente": "dcg",
+        "calidad": "baja",
+        "ministros": [
+          { "nombre": "Herrera", "cartera": "Cultura", "valor": 28.7 },
+          { "nombre": "Orillac", "cartera": "Presidencia", "valor": 27.5 },
+          { "nombre": "Moltó", "cartera": "Comercio", "valor": 26.9 },
+          { "nombre": "Molinar", "cartera": "Educación", "valor": 26.9 },
+          { "nombre": "Ábrego", "cartera": "Seguridad", "valor": 25.0 },
+          { "nombre": "Navarro", "cartera": "Ambiente", "valor": null },
+          { "nombre": "Montalvo", "cartera": "Gobierno", "valor": 21.8 },
+          { "nombre": "Boyd Galindo", "cartera": "Salud", "valor": 20.6 },
+          { "nombre": "Muñoz", "cartera": "Trabajo", "valor": 19.7 },
+          { "nombre": "Martínez-Acha", "cartera": "Exteriores", "valor": 19.7 },
+          { "nombre": "Andrade", "cartera": "Obras Públicas", "valor": 19.6 },
+          { "nombre": "Carles de Arango", "cartera": "Desarrollo Social", "valor": 19.6 },
+          { "nombre": "Chapman", "cartera": "MEF", "valor": 17.8 },
+          { "nombre": "Palacios", "cartera": "Mujer", "valor": 16.2 },
+          { "nombre": "Jované", "cartera": "Vivienda", "valor": 15.2 },
+          { "nombre": "Linares", "cartera": "MIDA", "valor": 14.9 },
+          { "nombre": "Icaza", "cartera": "Canal", "valor": 13.7 }
+        ]
+      }
+    ]
+  },
+  "sin_medicion": [
+    { "nombre": "SINAPROC", "alias": ["sinaproc", "proteccion civil"] },
+    { "nombre": "Ministerio Público", "alias": ["ministerio publico", "procuraduria"] },
+    { "nombre": "Defensoría del Pueblo", "alias": ["defensoria del pueblo", "defensoria"] },
+    { "nombre": "Corte Suprema", "alias": ["corte suprema", "corte suprema de justicia"] },
+    { "nombre": "SENAN / SENAFRONT", "alias": ["senan", "senafront", "servicio nacional aeronaval", "servicio nacional de fronteras"] },
+    { "nombre": "CSS", "alias": ["css", "caja de seguro social"] }
+  ]
+}
