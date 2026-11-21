@@ -17,6 +17,8 @@ El menú tiene cuatro grupos y, dentro de cada uno, sus secciones (`js/navegacio
 | **🏛️ Asamblea Nacional** | Las secciones de la tabla siguiente | `resumen.json`, `datos.json`, `votaciones.json`… |
 | **📘 Metodología** | Fuentes, reglas y limitaciones de todo el sitio | — |
 
+**Calidad visual:** `python scripts/auditoria_ui.py .` recorre todas las secciones en anchos de 320 a 1440 px y reporta textos o cifras que se salen de su marco, texto recortado, letra de menos de 11 px y controles de menos de 32 px (requiere Playwright). Debe terminar con `fuera=0, recortes=0, chicas=0`.
+
 Los indicadores de `data/` los actualiza cada lunes `scripts/actualizar_indicadores.py` (workflow `actualizar-indicadores.yml`); las pruebas están en `tests/` (`python -m pytest tests` y `node --test tests/frescura.test.mjs`).
 
 ## 📊 Secciones de la Asamblea Nacional

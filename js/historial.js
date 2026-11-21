@@ -15,7 +15,7 @@ function histSerie(H, slug, campo){
   return H.snapshots.map(s=>{ const v=s.diputados?.[slug]?.[i]; return v==null?null:Number(v); });
 }
 const fmtFecha=f=>{ const [y,m,d]=String(f).split('-'); return `${d}/${m}/${y.slice(2)}`; };
-const histAxis={grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}};
+const histAxis={grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11}}};
 const histTooltip={backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1};
 
 async function renderMonitorHist(){
@@ -50,7 +50,7 @@ function lineaSimple(canvas, labels, datasets, {fmt, eje, max, escalonado=false,
   return new Chart(canvas,{type:'line',
     data:{labels,datasets:datasets.map(d=>({pointRadius:0,tension:escalonado?0:.2,stepped:escalonado,spanGaps:true,...d}))},
     options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
-      plugins:{legend:{display:datasets.length>1,labels:{color:'#94a3b8',font:{family:'DM Mono',size:10},boxWidth:10}},
+      plugins:{legend:{display:datasets.length>1,labels:{color:'#94a3b8',font:{family:'DM Mono',size:11},boxWidth:10}},
         tooltip:{...histTooltip,callbacks:{label:c=>` ${c.dataset.label}: ${fmt(c.raw)}`}}},
       scales:{x:{...histAxis,ticks:{...histAxis.ticks,maxTicksLimit:maxTicks,maxRotation:0}},
         y:{...histAxis,beginAtZero:true,max,ticks:{...histAxis.ticks,callback:v=>(eje||fmt)(v)}}}}});

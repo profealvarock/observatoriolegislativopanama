@@ -123,8 +123,8 @@ function renderTemasChart(){
       onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
         callbacks:{title:items=>temas[items[0].dataIndex],label:c=>{ const v=pt[temas[c.dataIndex]]; return ` ${v.proyectos} proyectos · ${v.leyes} leyes (${(100*v.leyes/v.proyectos).toFixed(0)}%)`; }}}},
-      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}},
-        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},precision:0}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}});
 }
 
 // ── FRENTES LEGISLATIVOS (clasificación CAP: tema principal = primer tema de cada ficha) ──
@@ -162,8 +162,8 @@ function renderTemasLey(){
       onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
         callbacks:{title:items=>temas[items[0].dataIndex],label:c=>{ const t=temas[c.dataIndex]; return ` ${ley[t]||0} de ${n[t]} proyectos ya son ley (${c.raw}%)`; }}}},
-      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>v+'%'}},
-        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},callback:v=>v+'%'}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}});
 }
 
 function renderTipoNorma(){
@@ -178,8 +178,8 @@ function renderTipoNorma(){
       onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
         callbacks:{title:items=>nombres[tipos[items[0].dataIndex]]||'',label:c=>{ const v=pt[tipos[c.dataIndex]]; return ` ${v.proyectos} proyectos (${Math.round(100*v.proyectos/total)}%) · ${v.leyes} ya son ley (${Math.round(100*v.leyes/v.proyectos)}%)`; }}}},
-      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}},
-        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},precision:0}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}});
   const ref=pt.reforma, tra=pt.tratado;
   document.getElementById('tipo-norma-nota').innerHTML=ref
     ? `<b>${Math.round(100*ref.proyectos/total)}%</b> de los proyectos reforma una ley que ya existe.`

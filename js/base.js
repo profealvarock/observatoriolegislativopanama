@@ -227,3 +227,33 @@ function setMapFilter(type,val){
   renderMap();
 }
 
+// ── CIFRAS QUE CABEN EN SU MARCO ──────────────────
+// Las cifras grandes (tarjetas KPI, Inicio, calculadoras) no se parten en dos líneas. Si una no cabe en el
+// ancho de su tarjeta —p. ej. "B/. 2,808,379" en una columna angosta—, se reduce su tamaño de letra hasta que
+// quepa (hasta un 40 % del original). Se recalcula cuando cambia el texto (las cifras se animan al cargar),
+// al cambiar de pestaña y al cambiar el tamaño de la pantalla.
+const CIFRAS_AJUSTABLES='.kpi-value,.pc-dato,.cv-calc-total';
+function ajustarCifra(el){
+  // Se parte siempre del tamaño propio del elemento (algunas tarjetas lo fijan en línea) y no del ya reducido
+  if(el.dataset.fsBase===undefined) el.dataset.fsBase=el.style.fontSize||'';
+  el.style.fontSize=el.dataset.fsBase;
+  if(!el.clientWidth || getComputedStyle(el).whiteSpace!=='nowrap') return;
+  let f=parseFloat(getComputedStyle(el).fontSize);
+  const min=f*.4;
+  for(let i=0; i<24 && el.scrollWidth>el.clientWidth+1 && f>min; i++){
+    f*=.93; el.style.fontSize=f.toFixed(1)+'px';
+  }
+}
+function ajustarCifras(raiz=document){
+  raiz.querySelectorAll(CIFRAS_AJUSTABLES).forEach(ajustarCifra);
+}
+(function vigilarCifras(){
+  let pendiente=null;
+  const programar=()=>{ clearTimeout(pendiente); pendiente=setTimeout(()=>ajustarCifras(document.querySelector('.tab-content.active')||document),120); };
+  new MutationObserver(muts=>{
+    if(muts.some(m=>{ const n=m.target.nodeType===3?m.target.parentElement:m.target; return n && (n.closest?.(CIFRAS_AJUSTABLES) || n.querySelector?.(CIFRAS_AJUSTABLES)); })) programar();
+  }).observe(document.body,{subtree:true,childList:true,characterData:true});
+  window.addEventListener('resize',programar);
+  document.fonts?.ready.then(programar);
+})();
+

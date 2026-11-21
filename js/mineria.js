@@ -133,7 +133,7 @@ async function minAsamblea(D){
         <td><a href="#proyecto=${esc(p.ficha)}">${esc(p.ficha)}</a></td>
         <td style="white-space:nowrap">${esc(fmtDia(fechaOrd(p.fecha_presentacion)))}</td>
         <td style="white-space:normal;min-width:240px">${esc(p.titulo)}</td>
-        <td><span class="badge ${etapaClass(p.etapa||'')}" style="font-size:.6rem">${esc(p.etapa||'s/d')}</span></td>
+        <td><span class="badge ${etapaClass(p.etapa||'')}" style="font-size:.6875rem">${esc(p.etapa||'s/d')}</span></td>
         <td style="white-space:normal">${esc(String(p.proponente||'').replace(/^H\.D\.?S?\s+/i,'').split(',')[0])}</td>
       </tr>`).join('')||'<tr><td colspan="5" class="ind-sd">Ningún proyecto con tema minero en la legislatura actual.</td></tr>'}</tbody>
     </table></div>

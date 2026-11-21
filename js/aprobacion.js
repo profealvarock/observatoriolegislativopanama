@@ -117,7 +117,7 @@ function aprGraficoInst(D, fuente){
     type:'bar',
     data:{labels:filas.map(f=>f[0]),datasets:[{label:fuente==='vea'?'La más creíble (%)':'Confía mucho o algo (%)',data:filas.map(f=>f[1]),backgroundColor:color,borderRadius:4,borderSkipped:false}]},
     options:{...opcionesBase({sufijo:'%'}),indexAxis:'y',plugins:{...opcionesBase({sufijo:'%'}).plugins,legend:{display:false}},
-      scales:{x:{...opcionesBase().scales.x,min:0},y:{...opcionesBase().scales.y,ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10},autoSkip:false}}}},
+      scales:{x:{...opcionesBase().scales.x,min:0},y:{...opcionesBase().scales.y,ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11},autoSkip:false}}}},
   });
   const [n1,v1]=filas[0]||[];
   ariaGrafico(aprChartInst,`Confianza en instituciones según ${F.nombre||fuente}, ${fmtPeriodo(med.periodo)}. Primera: ${n1} con ${v1}%.`);

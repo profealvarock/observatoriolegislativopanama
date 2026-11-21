@@ -65,7 +65,7 @@ function renderMonitorSummary(){
     {l:'Alertas',v:lowPleno,max:items.length||1,c:'var(--st-neg)',t:`${lowPleno} con pleno bajo 3/5`},
   ].map(x=>`<div class="mini-row">
       <span>${x.l}</span><div class="mini-track"><div class="mini-fill" style="width:${Math.max(4,Math.round((x.v/x.max)*100))}%;background:${x.c}"></div></div><span>${x.money?fmtMoney(x.v):(Number.isFinite(x.v)?Math.round(x.v):0)}</span>
-      <div style="grid-column:1/-1;color:var(--muted);font-size:.65rem">${esc(x.t)}${topScore&&x.l==='Comis.'?` · Mejor calificación: ${esc(topScore.nombre)}`:''}</div>
+      <div style="grid-column:1/-1;color:var(--muted);font-size:.6875rem">${esc(x.t)}${topScore&&x.l==='Comis.'?` · Mejor calificación: ${esc(topScore.nombre)}`:''}</div>
     </div>`).join('');
 }
 function renderMonitorChart(){
@@ -78,8 +78,8 @@ function renderMonitorChart(){
   const base=(fmt,max)=>({responsive:true,maintainAspectRatio:false,
     plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
       callbacks:{title:c=>top[c[0].dataIndex].nombre,label:c=>' '+fmt(c.raw)}}},
-    scales:{x:{ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:9},maxRotation:50},grid:{display:false}},
-      y:{beginAtZero:true,max,ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.03)'}}}});
+    scales:{x:{ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},maxRotation:50},grid:{display:false}},
+      y:{beginAtZero:true,max,ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,.03)'}}}});
   new Chart(ctx,{type:'bar',
     data:{labels,datasets:[{label:'Planilla acumulada',data:top.map(d=>d.planilla_valor||0),backgroundColor:'rgba(245,158,11,.8)',borderRadius:4}]},
     options:base(v=>'B/. '+fmtNum(v))});

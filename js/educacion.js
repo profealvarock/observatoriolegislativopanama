@@ -144,7 +144,7 @@ function eduInstruccion(D){
   eduChartInstr=new Chart(document.getElementById('c-edu-instr'),{type:'bar',
     data:{labels:lugares.map(x=>x.l),datasets:EDU_TRAMOS.map(([k,t,c])=>({label:t,data:lugares.map(x=>x.d[k]),backgroundColor:c}))},
     options:{...opcionesBase({sufijo:'%'}),indexAxis:'y',
-      scales:{x:{...opcionesBase().scales.x,stacked:true,min:0,max:100},y:{...opcionesBase().scales.y,stacked:true,ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10},autoSkip:false}}}}});
+      scales:{x:{...opcionesBase().scales.x,stacked:true,min:0,max:100},y:{...opcionesBase().scales.y,stacked:true,ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11},autoSkip:false}}}}});
   const r=I['República']?.[sx];
   if(r) ariaGrafico(eduChartInstr,`Nivel educativo de la población de 25 y más años (${sx}): ${eduPct(r.universitaria)} con estudios universitarios, ${eduPct(r.secundaria)} secundaria, ${eduPct(r.primaria)} primaria y ${eduPct(r.sin_grado)} sin grado.`);
 }

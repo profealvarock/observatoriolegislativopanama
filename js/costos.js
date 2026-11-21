@@ -203,7 +203,7 @@ async function renderValidacionCGR(){
     <b>Las cifras no son comparables una a una</b>: la Contraloría publica sus datos con corte al <b>${esc(fmtFecha(CGR.corte))}</b> y desde abril de 2025 ya no indica en qué despacho trabaja cada funcionario, así que solo cubre parte del periodo; Espacio Cívico no publica la fuente ni el periodo exacto de su "planilla acumulada".
     El costo legislativo sigue usando Espacio Cívico porque cubre a los 71 diputados; esta tabla sirve para contrastar.
     ${noPub.length?`<br>La Contraloría no publica planilla para <b>${noPub.length}</b> diputados: ${esc(noPub.join(', '))}.`:''}
-    <br><span style="font-size:.9em">Revisado por última vez el ${esc(fmtFecha(CGR.verificado))} · <a href="${esc(CGR.fuente)}" target="_blank" rel="noopener">consulta de la Contraloría</a></span></p>`;
+    <br><span style="font-size:max(.9em,11px)">Revisado por última vez el ${esc(fmtFecha(CGR.verificado))} · <a href="${esc(CGR.fuente)}" target="_blank" rel="noopener">consulta de la Contraloría</a></span></p>`;
   tb.innerHTML=filas.map(({d,c,ec,cgr,dif})=>`<tr>
     <td class="td-main"><div class="dep-name"><a href="#diputado=${esc(depSlug(d))}" style="color:inherit;text-decoration:none">${esc(d.nombre)}</a></div>
       <div class="dep-sub">${esc(c.nombre_cgr)}${c.coincidencia==='probable'?' · <span title="Nombre de casada en la Contraloría; única diputada con ese nombre de pila">coincidencia probable</span>':''}</div></td>
@@ -252,7 +252,7 @@ function renderCostos(){
   ].map((k,i)=>`
     <div class="kpi fade-in" style="--kc:${k.c};animation-delay:${i*.08}s">
       <div class="kpi-label">${k.l}</div>
-      <div class="kpi-value" style="${k.txt?`font-size:1rem;line-height:1.3;color:${k.c}`:'font-family:var(--fm);color:var(--text);font-size:clamp(1.2rem,1.9vw,1.8rem);letter-spacing:-.03em;white-space:nowrap'}">${esc(k.v)}</div>
+      <div class="kpi-value${k.txt?' kpi-txt':''}" style="${k.txt?`font-size:1rem;line-height:1.3;color:${k.c}`:'font-family:var(--fm);color:var(--text);font-size:clamp(1.2rem,1.9vw,1.8rem);letter-spacing:-.03em;white-space:nowrap'}">${esc(k.v)}</div>
       <div class="kpi-sub" style="font-family:var(--fm)">${k.s}</div>
     </div>`).join('');
 
@@ -283,15 +283,15 @@ function renderCostos(){
       <td class="costo-rank td-hide-card">${i+1}</td>
       <td class="td-main" style="max-width:300px">
         <div style="font-size:.78rem;font-weight:600;line-height:1.4"><span class="costo-rank-inline" style="color:var(--muted)">${i+1}. </span>${esc(p.titulo)}</div>
-        <div style="font-family:var(--fm);font-size:.62rem;color:var(--muted);margin-top:2px">Ficha ${esc(p.ficha)}</div>
+        <div style="font-family:var(--fm);font-size:.6875rem;color:var(--muted);margin-top:2px">Ficha ${esc(p.ficha)}</div>
       </td>
       <td class="costo-col-sm" data-label="Año" style="font-family:var(--fm);font-size:.72rem">${p.year}</td>
-      <td data-label="Etapa"><span class="badge ${etapaClass(p.etapa||'')}" style="font-size:.6rem">${esc(p.etapa)}</span></td>
+      <td data-label="Etapa"><span class="badge ${etapaClass(p.etapa||'')}" style="font-size:.6875rem">${esc(p.etapa)}</span></td>
       <td class="costo-col-sm" data-label="Diputados" style="font-family:var(--fm);font-size:.75rem;text-align:center">${dipCount}</td>
       <td class="money" data-label="Costo estimado" style="font-size:.82rem;font-weight:700;text-align:right;white-space:nowrap">${fmtUSD(p.costo)}</td>
       <td class="costo-col-sm" data-label="Vs promedio">
         <div class="costo-bar-wrap"><div class="costo-bar-fill" style="width:${pct}%"></div></div>
-        <div style="font-family:var(--fm);font-size:.6rem;color:${vsCol};margin-top:3px">${vsAvg>0?'+':''}${vsAvg}% vs prom.</div>
+        <div style="font-family:var(--fm);font-size:.6875rem;color:${vsCol};margin-top:3px">${vsAvg>0?'+':''}${vsAvg}% vs prom.</div>
       </td>
     </tr>`;
   }).join('');
@@ -342,9 +342,9 @@ function renderCostos(){
           tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
             callbacks:{label:ctx=>` B/. ${fmtNum(ctx.raw)}`}}},
         scales:{
-          x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},maxRotation:35,
+          x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},maxRotation:35,
             callback:function(val){const l=this.getLabelForValue(val);return isMobile()&&l&&l.length>11?l.slice(0,10)+'…':l}}},
-          y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},
+          y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},
             callback:v=>'B/. '+Math.round(v/1000)+'K'}}}},
     });
   }

@@ -102,8 +102,8 @@ function renderGastoProyectos(C){
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{
         title:items=>temas[items[0].dataIndex],
         label:c=>{ const x=porTema[temas[c.dataIndex]]; return [` ${fmtBalboas(x.g)} (${pct(x.g,atribuido)}% del gasto atribuido)`,` ${x.n} proyectos · costo medio ${fmtBalboas(x.g/x.n)} · ${x.ley} ya son ley`]; }}}},
-      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>fmtBalboasCorto(v)}},
-        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},callback:v=>fmtBalboasCorto(v)}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}});
 
   // ¿En qué terminó el gasto? (grupos de etapa de la pestaña Proyectos)
   const GRUPOS=[['ley','Ya es ley','Ley'],['ejecutivo','Ante el Ejecutivo','Enviado al Ejecutivo'],['debate','En debate','Segundo Debate'],
@@ -118,8 +118,8 @@ function renderGastoProyectos(C){
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{
         label:c=>{ const x=porGrupo[grupos[c.dataIndex][0]]; return ` ${fmtBalboas(x.g)} (${pct(x.g,atribuido)}%) · ${x.n} proyectos`; }}}},
-      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>fmtBalboasCorto(v)}},
-        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},callback:v=>fmtBalboasCorto(v)}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}});
 
   // Costo medio por tipo de norma
   const porTipo={};
@@ -131,8 +131,8 @@ function renderGastoProyectos(C){
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{
         title:items=>(D.tipos_norma||{})[tipos[items[0].dataIndex]]||'',
         label:c=>{ const x=porTipo[tipos[c.dataIndex]]; return ` costo medio ${fmtBalboas(x.g/x.n)} · ${x.n} proyectos · total ${fmtBalboasCorto(x.g)}`; }}}},
-      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},callback:v=>fmtBalboasCorto(v)}},
-        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+      scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},callback:v=>fmtBalboasCorto(v)}},
+        y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}});
 
   // Los 6 proyectos con mayor costo estimado
   const top=[...conCosto].sort((a,b)=>b._costo-a._costo).slice(0,6), max=top[0]?._costo||1;

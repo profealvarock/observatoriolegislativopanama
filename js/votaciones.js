@@ -143,7 +143,7 @@ function elegirHemiDestacado(){
   mostrarDetalleVot(id,'vot-hemi');
 }
 
-const OPC_EJES={grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}};
+const OPC_EJES={grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},precision:0}};
 const OPC_TOOLTIP={backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1};
 const MESES_CORTOS=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 const fmtMes=m=>{ const [y,mm]=m.split('-'); return `${MESES_CORTOS[+mm-1]} ${y.slice(2)}`; };
@@ -162,7 +162,7 @@ function chartVotMes(vs){
       {label:'Unánimes',data:meses.map(m=>cuenta(m,true)),backgroundColor:'#3b82f6',borderRadius:4,borderSkipped:false},
       {label:'Divididas',data:meses.map(m=>cuenta(m,false)),backgroundColor:'#f59e0b',borderRadius:4,borderSkipped:false}]},
     options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{position:'top',align:'end',labels:{boxWidth:10,font:{family:'DM Mono',size:10}}},tooltip:{...OPC_TOOLTIP,mode:'index',
+      plugins:{legend:{position:'top',align:'end',labels:{boxWidth:10,font:{family:'DM Mono',size:11}}},tooltip:{...OPC_TOOLTIP,mode:'index',
         callbacks:{footer:items=>`Total: ${items.reduce((a,i)=>a+i.raw,0)} votaciones`}}},
       scales:{x:{stacked:true,grid:{display:false},ticks:{...OPC_EJES.ticks,maxRotation:0,autoSkip:true,maxTicksLimit:isMobile()?6:14}},
         y:{stacked:true,beginAtZero:true,...OPC_EJES}}}}));
@@ -187,7 +187,7 @@ function chartVotMargen(vs){
     data:{labels,datasets:[{label:'Votaciones',data,backgroundColor:'#3b82f6',borderRadius:4,borderSkipped:false,barThickness:18}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{...OPC_TOOLTIP,callbacks:{label:c=>` ${c.raw} votaciones (${fmtPct(pct1(c.raw,vs.length))})`}}},
-      scales:{x:{beginAtZero:true,...OPC_EJES},y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}}));
+      scales:{x:{beginAtZero:true,...OPC_EJES},y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}}));
 }
 
 // Del pleno a la ley: proyectos aprobados en 2.º y 3.er debate y su etapa actual
@@ -230,7 +230,7 @@ function chartDiasDebate(){
     data:{labels:DIAS_BINS.map(b=>b[0]),datasets:[{label:'Proyectos',data:DIAS_BINS.map(([,a,b])=>dias.filter(d=>d>=a&&d<=b).length),backgroundColor:'#a78bfa',borderRadius:4,borderSkipped:false}]},
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{...OPC_TOOLTIP,callbacks:{label:c=>` ${c.raw} proyectos`}}},
-      scales:{x:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}},y:{beginAtZero:true,...OPC_EJES}}}}));
+      scales:{x:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}},y:{beginAtZero:true,...OPC_EJES}}}}));
 }
 
 // Cohesión de bancada: % de votos fuera de la línea mayoritaria del partido (más largo = menos cohesión)
@@ -247,7 +247,7 @@ function chartCohesion(id, seg, lista){
         const s=ps[c.dataIndex][1].segmentos[seg];
         return [` Cohesión: ${fmtPct(s.cohesion)} de sus votos con la mayoría de la bancada`,` ${fmtNum(s.disidencias)} votos disidentes en ${fmtNum(s.decisiones)} decisiones`];
       }}}},
-      scales:{x:{beginAtZero:true,...OPC_EJES,ticks:{...OPC_EJES.ticks,callback:v=>v+'%'}},y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}});
+      scales:{x:{beginAtZero:true,...OPC_EJES,ticks:{...OPC_EJES.ticks,callback:v=>v+'%'}},y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}});
   lista?.push(ch);
   return ch;
 }
@@ -273,7 +273,7 @@ function renderCohesionMensual(){
       {label:bancada(code),data:meses.map(m=>serie[m]??null),borderColor:'#3b82f6',backgroundColor:'#3b82f6',borderWidth:2,pointRadius:4,spanGaps:true,tension:.2},
       {label:'Promedio de las bancadas',data:prom,borderColor:'#7a8fb0',backgroundColor:'#7a8fb0',borderWidth:2,borderDash:[5,4],pointRadius:0,spanGaps:true,tension:.2}]},
     options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
-      plugins:{legend:{position:'top',align:'end',labels:{boxWidth:10,font:{family:'DM Mono',size:10}}},
+      plugins:{legend:{position:'top',align:'end',labels:{boxWidth:10,font:{family:'DM Mono',size:11}}},
         tooltip:{...OPC_TOOLTIP,callbacks:{label:c=>` ${c.dataset.label}: ${fmtPct(c.raw)}`}}},
       scales:{x:{grid:{display:false},ticks:{...OPC_EJES.ticks,maxRotation:0,autoSkip:true,maxTicksLimit:isMobile()?6:12}},
         y:{...OPC_EJES,suggestedMax:100,ticks:{...OPC_EJES.ticks,callback:v=>v+'%'}}}}});
@@ -313,7 +313,7 @@ function chartDisidencia(){
       onClick:(e,els)=>{ if(els.length) location.hash='diputado='+rows[els[0].index].slug; },
       onHover:(e,els)=>{ e.native.target.style.cursor=els.length?'pointer':'default'; },
       plugins:{legend:{display:false},tooltip:{...OPC_TOOLTIP,callbacks:{label:c=>{ const s=rows[c.dataIndex].s; return ` ${fmtPct(s.tasa_disidencia)}: ${s.disidencias} de ${s.base_disidencia} votos`; }}}},
-      scales:{x:{beginAtZero:true,...OPC_EJES,ticks:{...OPC_EJES.ticks,callback:v=>v+'%'}},y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}}));
+      scales:{x:{beginAtZero:true,...OPC_EJES,ticks:{...OPC_EJES.ticks,callback:v=>v+'%'}},y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}}));
 }
 
 function renderMasDivididos(){

@@ -16,8 +16,8 @@ function renderGeneral(){
       plugins:{legend:{display:false},
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
           callbacks:{label:ctx=>` ${ctx.raw} proyectos — clic para filtrar`}}},
-      scales:{x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:isMobileTl?9:10},maxRotation:45,maxTicksLimit:isMobileTl?7:undefined}},
-        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}},
+      scales:{x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:isMobileTl?10:11},maxRotation:45,maxTicksLimit:isMobileTl?7:undefined}},
+        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11}}}},
       onClick:(evt,els)=>{
         if(!els.length)return;
         const idx=els[0].index;
@@ -28,7 +28,7 @@ function renderGeneral(){
   });
   tlChart.$responsive = m=>{
     const t=tlChart.config.options.scales.x.ticks;
-    t.font.size=m?9:10; t.maxTicksLimit=m?7:undefined;
+    t.font.size=m?10:11; t.maxTicksLimit=m?7:undefined;
   };
 
   // En el orden del trámite (no por tamaño), para que la escala de color se lea como avance
@@ -39,13 +39,13 @@ function renderGeneral(){
     data:{labels:entries.map(e=>e[0]),datasets:[{data:entries.map(e=>e[1]),$etapas:true,
       backgroundColor:entries.map(e=>etapaColor(e[0])),borderWidth:2,borderColor:'#0e1623',hoverOffset:8}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'68%',
-      plugins:{legend:{position:isMobileDonut?'bottom':'right',labels:{color:'#94a3b8',font:{family:'DM Mono',size:isMobileDonut?9:10},padding:isMobileDonut?5:8,boxWidth:10}},
+      plugins:{legend:{position:isMobileDonut?'bottom':'right',labels:{color:'#94a3b8',font:{family:'DM Mono',size:isMobileDonut?10:11},padding:isMobileDonut?5:8,boxWidth:10}},
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
           callbacks:{label:ctx=>` ${ctx.label}: ${ctx.raw} (${((ctx.raw/D.total_proyectos)*100).toFixed(1)}%)`}}}}
   });
   donutChart.$responsive = m=>{
     const l=donutChart.config.options.plugins.legend;
-    l.position=m?'bottom':'right'; l.labels.font.size=m?9:10; l.labels.padding=m?5:8;
+    l.position=m?'bottom':'right'; l.labels.font.size=m?10:11; l.labels.padding=m?5:8;
   };
 
   renderFunnel();
@@ -64,9 +64,9 @@ function renderGeneral(){
       plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:11}}},
         tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
           callbacks:{title:ctx=>top[ctx[0].dataIndex].nombre,label:ctx=>` ${ctx.dataset.label}: ${ctx.raw}`}}},
-      scales:{x:{grid:{display:false},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:9},maxRotation:40,
+      scales:{x:{grid:{display:false},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},maxRotation:40,
         callback:function(val){const l=this.getLabelForValue(val);return isMobile()&&l&&l.length>9?l.slice(0,8)+'…':l}}},
-        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}}}}}
+        y:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11}}}}}
   });
 }
 
@@ -85,8 +85,8 @@ function renderPartidos(){
       data:{labels,datasets:[{data,backgroundColor:color,$etapas:etapas,borderRadius:5,borderSkipped:false,barThickness:18}]},
       options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
         plugins:{legend:{display:false},tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,callbacks:{label:ctx=>cb(ctx.raw)}}},
-        scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},precision:0}},
-          y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:10}}}}}
+        scales:{x:{beginAtZero:true,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},precision:0}},
+          y:{grid:{display:false},ticks:{color:'#94a3b8',font:{family:'DM Mono',size:11}}}}}
     });
   };
   mkChart('c-pp-prop',dataProp,v=>` ${v} proyectos`,'#3b82f6');
@@ -254,12 +254,12 @@ function renderMap(){
     if(vEl) vEl.textContent=data.proyectos||0;
 
     // Guardar contenido en data-attribute para que handlers táctiles lo lean siempre actualizado
-    const filtroLabel = mapEtapaFilter!=='all'?`<br><span style="color:var(--acc2);font-size:.65rem">${MAP_ETAPA_LABELS[mapEtapaFilter]||''}</span>`:'';
+    const filtroLabel = mapEtapaFilter!=='all'?`<br><span style="color:var(--acc2);font-size:.6875rem">${MAP_ETAPA_LABELS[mapEtapaFilter]||''}</span>`:'';
     const yearLabel   = mapYearFilter!=='all'?` · ${mapYearFilter}`:'';
     el.dataset.tipHtml = `<b style="color:var(--text)">${esc(prov)}</b>${esc(yearLabel)}<br>
       <span style="color:var(--acc)">${data.proyectos||0} proyectos</span> &nbsp;
       <span style="color:var(--acc3)">${data.leyes||0} leyes</span><br>
-      <span style="color:var(--muted)">${data.diputados||0} diputados</span>${data.participaciones!=null&&mapEtapaFilter==='all'&&mapYearFilter==='all'?`<br><span style="color:var(--muted);font-size:.65rem">Autor principal · participa en ${data.participaciones}</span>`:''}${filtroLabel}`;
+      <span style="color:var(--muted)">${data.diputados||0} diputados</span>${data.participaciones!=null&&mapEtapaFilter==='all'&&mapYearFilter==='all'?`<br><span style="color:var(--muted);font-size:.6875rem">Autor principal · participa en ${data.participaciones}</span>`:''}${filtroLabel}`;
     el.dataset.mapProv = prov; // para navegación en touch
 
     // ── Mouse (inline → overwrite-safe en cada render) ──

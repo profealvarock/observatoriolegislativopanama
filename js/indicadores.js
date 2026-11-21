@@ -135,13 +135,13 @@ function opcionesBase({ejeY='', min, max, sufijo=''}={}){
     responsive:true, maintainAspectRatio:false,
     animation: prefiereMenosMovimiento() ? false : undefined,
     interaction:{mode:'index',intersect:false},
-    plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:10},boxWidth:10}},
+    plugins:{legend:{labels:{color:'#94a3b8',font:{family:'DM Mono',size:11},boxWidth:10}},
       tooltip:{backgroundColor:'#0e1623',borderColor:'#1a2940',borderWidth:1,
         callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.raw==null?'s/d':Number(ctx.raw).toLocaleString('es-PA')}${sufijo}`}}},
     scales:{
-      x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10},maxRotation:0,autoSkip:true}},
-      y:{min,max,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:10}},
-        title:{display:!!ejeY,text:ejeY,color:'#7a8fb0',font:{family:'DM Mono',size:10}}},
+      x:{grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11},maxRotation:0,autoSkip:true}},
+      y:{min,max,grid:{color:'rgba(255,255,255,.03)'},ticks:{color:'#7a8fb0',font:{family:'DM Mono',size:11}},
+        title:{display:!!ejeY,text:ejeY,color:'#7a8fb0',font:{family:'DM Mono',size:11}}},
     },
   };
 }

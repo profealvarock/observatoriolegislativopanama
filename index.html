@@ -57,7 +57,7 @@
     <div class="header-meta">
       República de Panamá<br>
       Asamblea actualizada: <span id="last-update">cargando…</span><br>
-      <span style="font-size:.65em">Datos públicos · cada cifra con su fuente</span>
+      <span style="font-size:max(.8em,11px)">Datos públicos · cada cifra con su fuente</span>
     </div>
     <button type="button" class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar entre modo claro y oscuro">
       <span class="tt-sun" aria-hidden="true">☀️</span><span class="tt-moon" aria-hidden="true">🌙</span>
@@ -177,7 +177,7 @@
 
     <div class="map-timeline-note" id="map-tl-note">
       <span id="map-tl-text"></span>
-      <button onclick="clearMonthFilter()" style="margin-left:auto;background:none;border:1px solid rgba(245,158,11,.4);color:var(--acc2);font-family:var(--fm);font-size:.65rem;border-radius:4px;padding:2px 8px;cursor:pointer">✕ Limpiar</button>
+      <button onclick="clearMonthFilter()" style="margin-left:auto;background:none;border:1px solid rgba(245,158,11,.4);color:var(--acc2);font-family:var(--fm);font-size:.6875rem;border-radius:4px;padding:2px 8px;cursor:pointer">✕ Limpiar</button>
     </div>
     <div class="map-wrap" id="map-wrap">
       <img class="panama-map-base" src="panama-map.svg" alt="Mapa administrativo de Panama">
@@ -292,7 +292,7 @@
 <div id="tab-diputados" class="tab-content">
   <div class="map-timeline-note" id="dep-tl-note" style="margin-bottom:14px">
     <span id="dep-tl-text"></span>
-    <button onclick="clearMonthFilter()" style="margin-left:auto;background:none;border:1px solid rgba(245,158,11,.4);color:var(--acc2);font-family:var(--fm);font-size:.65rem;border-radius:4px;padding:2px 8px;cursor:pointer">✕ Limpiar</button>
+    <button onclick="clearMonthFilter()" style="margin-left:auto;background:none;border:1px solid rgba(245,158,11,.4);color:var(--acc2);font-family:var(--fm);font-size:.6875rem;border-radius:4px;padding:2px 8px;cursor:pointer">✕ Limpiar</button>
   </div>
   <details class="cmp-box" id="cmp-box">
     <summary>⚖ Comparar diputados</summary>
@@ -674,7 +674,7 @@
 
   <div class="sec-hdr" style="margin-bottom:calc(var(--gap)*.6)">
     <div class="sec-title">Top 30 proyectos — mayor costo estimado</div>
-    <span style="font-family:var(--fm);font-size:.65rem;color:var(--muted)">Suma del costo proporcional de cada diputado asociado al proyecto</span>
+    <span style="font-family:var(--fm);font-size:.6875rem;color:var(--muted)">Suma del costo proporcional de cada diputado asociado al proyecto</span>
     <button class="dl-btn" onclick="exportCostosProyectos(this)" title="Incluye todos los proyectos, no solo el top 30">⬇ CSV (todos)</button>
   </div>
   <div class="card" style="margin-bottom:var(--gap)">
@@ -698,7 +698,7 @@
 
   <div class="sec-hdr" style="margin-bottom:calc(var(--gap)*.6)">
     <div class="sec-title" style="--ct:var(--acc5)">Costo acumulado por diputado</div>
-    <span style="font-family:var(--fm);font-size:.65rem;color:var(--muted)">Planilla (Espacio Cívico) + salario fijo USD 7,000 × meses cerrados</span>
+    <span style="font-family:var(--fm);font-size:.6875rem;color:var(--muted)">Planilla (Espacio Cívico) + salario fijo USD 7,000 × meses cerrados</span>
     <button class="dl-btn" onclick="exportCostosDiputados(this)">⬇ CSV</button>
   </div>
   <div class="card" style="margin-bottom:var(--gap)">
@@ -1046,7 +1046,7 @@
   </div>
 </div>
 
-<footer style="padding:20px var(--px);max-width:1400px;margin:0 auto;border-top:1px solid var(--border);font-family:var(--fm);font-size:clamp(.65rem,1.2vw,.72rem);color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+<footer style="padding:20px var(--px);max-width:1400px;margin:0 auto;border-top:1px solid var(--border);font-family:var(--fm);font-size:clamp(.6875rem,1.2vw,.72rem);color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
   <span>Observatorio Ciudadano de Panamá · centro de consulta ciudadana · por <a href="https://profealvarock.vercel.app/" target="_blank" rel="noopener" style="color:var(--acc)">@profealvarock</a></span>
   <span>Proyectos: <a href="https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo" target="_blank" style="color:var(--acc)">sistemas.asamblea.gob.pa</a> · Diputados: <a href="https://espaciocivico.org/diputados" target="_blank" style="color:var(--acc)">espaciocivico.org</a></span>
 </footer>
