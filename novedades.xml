@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Observatorio Legislativo — Novedades</title>
+  <title>Observatorio Ciudadano de Panamá — Novedades de la Asamblea</title>
   <link>https://observatoriolegistalivopa.netlify.app/#novedades</link>
   <atom:link href="https://observatoriolegistalivopa.netlify.app/novedades.xml" rel="self" type="application/rss+xml"/>
   <description>Proyectos nuevos, avances de etapa, nuevas leyes y votaciones del pleno en la Asamblea Nacional de Panamá.</description>
