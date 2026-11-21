@@ -179,16 +179,16 @@
     },
     {
       "id": "derrumbes",
-      "etiqueta": "Derrumbes (Sentinel-2)",
-      "valor": 4822,
-      "unidad": "derrumbes",
-      "fecha_corte": "2026-10-28",
-      "periodo": "2026-10-09/2026-10-28",
+      "etiqueta": "Deslizamientos de tierra",
+      "valor": 2351,
+      "unidad": "deslizamientos",
+      "fecha_corte": "2026-10-17",
+      "periodo": "2026-10-09/2026-10-17",
       "variacion": null,
-      "fuente": "Análisis de imágenes Sentinel-2 (publicación original no localizada)",
-      "url": null,
-      "calidad": "baja",
-      "notas": "No se encontró la publicación de esta cifra. El IGC-UP reportó un conteo preliminar de 2,351 deslizamientos con imágenes Sentinel-2 (La Prensa: https://www.prensa.com/sociedad/terremoto-en-panama-provoco-al-menos-2351-deslizamientos-de-tierra/)."
+      "fuente": "IGC-UP (imágenes Sentinel-2), vía La Prensa",
+      "url": "https://www.prensa.com/sociedad/terremoto-en-panama-provoco-al-menos-2351-deslizamientos-de-tierra/",
+      "calidad": "media",
+      "notas": "Conteo preliminar del Instituto de Geociencias con imágenes Copernicus Sentinel-2; puede aumentar. Reemplaza la cifra de 4,822, cuya publicación original no se localizó."
     },
     {
       "id": "replicas_localizadas",
