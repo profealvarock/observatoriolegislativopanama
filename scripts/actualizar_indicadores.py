@@ -1,5 +1,5 @@
 """
-Observatorio Ciudadano de Panamá — actualización semanal de Aprobación, Sismo, Costo de vida y Minería.
+Observatorio Ciudadano de Panamá — actualización semanal de Aprobación, Sismo, Costo de vida, Salarios y Minería.
 
 Lee y actualiza data/aprobacion.json, data/sismo.json, data/costo_vida.json y data/mineria.json. Hay un módulo por
 fuente; cada uno valida lo que encuentra (número, rango razonable, fecha de corte no futura) y,
@@ -25,7 +25,7 @@ from xml.etree import ElementTree
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATA = RAIZ / 'data'
-ARCHIVOS = {'aprobacion': 'aprobacion.json', 'sismo': 'sismo.json', 'costo_vida': 'costo_vida.json', 'mineria': 'mineria.json'}
+ARCHIVOS = {'aprobacion': 'aprobacion.json', 'sismo': 'sismo.json', 'costo_vida': 'costo_vida.json', 'mineria': 'mineria.json', 'salarios': 'salarios.json'}
 
 UA = 'Mozilla/5.0 (compatible; ObservatorioLegislativoPA/1.0; +https://observatoriolegistalivopa.netlify.app)'
 TIMEOUT = 30
@@ -705,6 +705,240 @@ def modulo_encuestas(ap, hoy, avisar):
     return cambio
 
 
+# ── SALARIOS Y EMPLEO (INEC, Encuesta de Mercado Laboral) ───────────────────
+INEC = 'https://www.inec.gob.pa'
+INEC_LISTA_EML = INEC + '/publicaciones/Default2.aspx?ID_CATEGORIA=5&ID_SUBCATEGORIA=38'
+INEC_PUB = INEC + '/publicaciones/Default3.aspx?ID_PUBLICACION={id}&ID_CATEGORIA=5&ID_SUBCATEGORIA=38'
+# Subcategorías que el INEC desglosa dentro de una rama: no se muestran como sectores aparte
+SUBRAMAS = ('articulos no durables', 'articulos durables', 'al por mayor', 'al por menor y reparacion')
+PROVINCIAS_INEC = {'bocas del toro': 'Bocas del Toro', 'cocle': 'Coclé', 'colon': 'Colón', 'chiriqui': 'Chiriquí',
+                   'darien': 'Darién', 'herrera': 'Herrera', 'los santos': 'Los Santos', 'panama': 'Panamá',
+                   'panama oeste': 'Panamá Oeste', 'veraguas': 'Veraguas', 'comarca kuna yala': 'Comarca Guna Yala',
+                   'comarca guna yala': 'Comarca Guna Yala', 'comarca gunayala': 'Comarca Guna Yala',
+                   'comarca embera': 'Comarca Emberá', 'comarca ngabe bugle': 'Comarca Ngäbe Buglé',
+                   'comarca ngobe bugle': 'Comarca Ngäbe Buglé'}
+
+
+def _etiqueta_inec(s):
+    """'Suministro de agua; alcantarilla-\\n  do,  gestión…' → 'Suministro de agua; alcantarillado, gestión…'"""
+    s = re.sub(r'-\s*\n\s*', '', str(s or ''))
+    return re.sub(r'\s+', ' ', s).strip()
+
+
+def periodo_eml(texto):
+    """'… ENCUESTA DE MERCADO LABORAL: AGOSTO 2026' → '2026-08'"""
+    m = re.search(r'(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|setiembre|octubre|noviembre|diciembre)\s+(?:de\s+)?(\d{4})',
+                  sin_tildes(texto or ''))
+    return f'{m.group(2)}-{MESES[m.group(1)]:02d}' if m else None
+
+
+def parse_mediana_inec(datos_xlsx):
+    """Cuadro del INEC 'MEDIANA DE SALARIO MENSUAL … SEGÚN SEXO Y <dimensión>' (Excel).
+    Las etiquetas largas ocupan varias filas: el texto se acumula hasta la fila que trae los números.
+    → {'titulo', 'periodo',
+       'grupos': {'Total'|'Hombres'|'Mujeres': {'mediana', 'empleados', 'filas': [{etiqueta, mediana, empleados}]}},
+       'provincias': [{'provincia', 'Total'|'Hombres'|'Mujeres': {'mediana', 'empleados'}}]}   (cuadro por provincia)"""
+    import openpyxl
+    ws = openpyxl.load_workbook(io.BytesIO(datos_xlsx), data_only=True, read_only=True).worksheets[0]
+    filas = [list(r) for r in ws.iter_rows(values_only=True)]
+    titulo = ' '.join(_etiqueta_inec(c) for r in filas[:6] for c in r if isinstance(c, str))
+    if 'MEDIANA DE SALARIO' not in titulo.upper():
+        return None
+    num = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+    grupos, provincias, sexo, prov, buffer = {}, [], None, None, []
+    for r in filas[4:]:
+        celdas = [c for c in r if c is not None and c != '']
+        if not celdas:
+            buffer = []
+            continue
+        if isinstance(celdas[0], str) and (len(celdas) < 3 or not num(celdas[1])):
+            buffer.append(celdas[0])           # parte de una etiqueta de varias filas
+            continue
+        if not (isinstance(celdas[0], str) and len(celdas) >= 3 and num(celdas[1])):
+            buffer = []
+            continue
+        etq = _etiqueta_inec('\n'.join(buffer + [celdas[0]]))   # con salto de línea: une "alcantarilla-\ndo"
+        buffer = []
+        med = round(float(celdas[1]), 2)
+        emp = int(celdas[2]) if num(celdas[2]) else None
+        clave = sin_tildes(etq).strip()
+        if clave in PROVINCIAS_INEC:
+            prov = {'provincia': PROVINCIAS_INEC[clave], 'Total': {'mediana': med, 'empleados': emp}}
+            provincias.append(prov)
+            sexo = 'Total'
+            continue
+        if clave in ('total', 'hombres', 'mujeres'):
+            sexo = {'total': 'Total', 'hombres': 'Hombres', 'mujeres': 'Mujeres'}[clave]
+            if prov is not None:
+                prov[sexo] = {'mediana': med, 'empleados': emp}
+            elif sexo not in grupos:
+                grupos[sexo] = {'mediana': med, 'empleados': emp, 'filas': []}
+            continue
+        if prov is None and sexo in grupos and not clave.startswith(SUBRAMAS):
+            grupos[sexo]['filas'].append({'etiqueta': etq, 'mediana': med, 'empleados': emp})
+    if not grupos:
+        return None
+    return {'titulo': titulo, 'periodo': periodo_eml(titulo), 'grupos': grupos, 'provincias': provincias}
+
+
+def parse_desempleo(texto):
+    """Comentario del INEC: 'La tasa de desempleo nacional disminuyó 1.9 puntos … pasando de 10.4% a 8.5%'
+    → {'tasa': 8.5, 'anterior': 10.4, 'jovenes_20_24': 22.6}"""
+    t = re.sub(r'\s+', ' ', texto or '')
+    m = re.search(r'tasa de desempleo nacional.{0,120}?pasando de (\d{1,2}[.,]\d)\s?% a (\d{1,2}[.,]\d)\s?%', t, re.I)
+    if not m:
+        return None
+    r = {'anterior': a_decimal(m.group(1)), 'tasa': a_decimal(m.group(2))}
+    j = re.search(r'20 a 24 años presentó una tasa de desocupación de (\d{1,2}[.,]\d)\s?%', t, re.I)
+    if j:
+        r['jovenes_20_24'] = a_decimal(j.group(1))
+    return r
+
+
+def parse_informalidad_csv(texto):
+    """Cuadro 'EMPLEO INFORMAL EN LA REPÚBLICA … SEGÚN AÑO' (CSV con ';') → [(año, %)]"""
+    salida = []
+    for linea in (texto or '').splitlines():
+        partes = [p.strip() for p in linea.split(';')]
+        m = re.match(r'(\d{4})', partes[0]) if partes else None
+        if m and len(partes) >= 6 and re.match(r'^\d{1,2}([.,]\d)?$', partes[-1]):
+            salida.append((int(m.group(1)), a_decimal(partes[-1])))
+    return salida
+
+
+def _publicaciones_eml(html):
+    """Lista de publicaciones del INEC → [(id, titulo)] de boletines de la Encuesta de Mercado Laboral y de
+    Situación de la población ocupada, en el orden de la página (más reciente primero)."""
+    salida = []
+    for pid, tit in re.findall(r'ID_PUBLICACION=(\d+)[^"]*"[^>]*>([^<]+)<', html or ''):
+        tit = html_lib.unescape(tit).strip()
+        if re.search(r'Encuesta (de )?Mercado Laboral|Situaci[oó]n de la [Pp]oblaci[oó]n [Oo]cupada', tit) and 'Confiabilidad' not in tit:
+            salida.append((int(pid), tit))
+    return salida
+
+
+def _archivos_publicacion(html):
+    """Filas de una publicación del INEC → [(titulo_cuadro, {ext: url})]"""
+    salida = []
+    for fila in re.findall(r'<tr.*?</tr>', re.sub(r'\s+', ' ', html or ''), re.I):
+        links = re.findall(r'href="([^"]*archivos[^"]+)"', fila)
+        if not links:
+            continue
+        texto = re.sub(r'\s+', ' ', html_lib.unescape(re.sub(r'<[^>]+>', ' ', fila))).strip()
+        urls = {}
+        for l in links:
+            l = html_lib.unescape(l).replace('../', '')
+            url = l if l.startswith('http') else f'{INEC}/{l.lstrip("/")}'
+            urls[url.rsplit('.', 1)[-1].lower()] = url.replace(' ', '%20')
+        salida.append((texto, urls))
+    return salida
+
+
+def modulo_salarios(sa, hoy, avisar):
+    """Medianas salariales y empleo de la última Encuesta de Mercado Laboral del INEC. Cada cuadro se busca
+    por su título (la numeración cambia entre boletines) y se lee del Excel oficial."""
+    series = sa.setdefault('series', {})
+    cambio = False
+    pubs = _publicaciones_eml(http_get(INEC_LISTA_EML))
+    if not pubs:
+        avisar('salarios', 'No se pudo leer la lista de publicaciones del INEC.')
+        return False
+    hechos = set()   # dimensiones ya actualizadas en esta corrida (se toma la publicación más reciente de cada una)
+    for pid, titulo in pubs[:6]:
+        if {'sector', 'ocupacion', 'provincia', 'desempleo', 'informalidad'} <= hechos:
+            break
+        try:
+            archivos = _archivos_publicacion(http_get(INEC_PUB.format(id=pid)))
+        except Exception as e:  # noqa: BLE001
+            avisar('salarios', f'No se pudo abrir «{titulo}» ({e}).')
+            continue
+        url_pub = INEC_PUB.format(id=pid)
+        for texto, urls in archivos:
+            T = sin_tildes(texto)
+            dim = ('provincia' if 'provincia' in T else 'sector' if 'categoria en la actividad' in T else
+                   'ocupacion' if 'ocupacion' in T else None) if 'mediana de salario' in T else None
+            try:
+                if dim and dim not in hechos and 'xlsx' in urls:
+                    r = parse_mediana_inec(http_get(urls['xlsx'], binario=True))
+                    if not r or not r['periodo']:
+                        raise ErrorValidacion(f'cuadro sin datos legibles: {texto[:80]}')
+                    validar_fecha(r['periodo'] + '-01', hoy, 'salarios')
+                    for g in r['grupos'].values():
+                        validar_numero(g['mediana'], 'mediana salarial', (100, 5000))
+                    if dim == 'provincia' and not r['provincias']:
+                        raise ErrorValidacion(f'el cuadro por provincia no trae provincias: {texto[:80]}')
+                    registro = {'periodo': r['periodo'], 'fuente': titulo, 'url': url_pub, 'cuadro': urls['xlsx']}
+                    if dim == 'provincia':
+                        registro['nacional'] = {k: {'mediana': v['mediana'], 'empleados': v['empleados']} for k, v in r['grupos'].items()}
+                        registro['provincias'] = r['provincias']
+                    else:
+                        registro['grupos'] = r['grupos']
+                    serie = series.setdefault(dim, [])
+                    if not any(x['periodo'] == registro['periodo'] and x == registro for x in serie):
+                        series[dim] = dedup_series(serie + [registro])
+                        cambio = True
+                    hechos.add(dim)
+                    if dim == 'sector':   # la mediana nacional sale del mismo cuadro
+                        tot = r['grupos'].get('Total', {})
+                        hist = series.setdefault('mediana_historica', [])
+                        if tot.get('mediana') and not any(h['periodo'] == r['periodo'] for h in hist):
+                            series['mediana_historica'] = dedup_series(hist + [{'periodo': r['periodo'], 'valor': tot['mediana'], 'url': url_pub}])
+                            cambio = True
+                elif 'empleo informal' in T and 'informalidad' not in hechos and 'csv' in urls:
+                    b = http_get(urls['csv'], binario=True)
+                    pares = parse_informalidad_csv(b.decode('utf-8-sig', errors='replace'))
+                    if pares:
+                        nueva = [{'periodo': str(a), 'valor': v} for a, v in pares if a >= 2015]
+                        if series.get('informalidad') != nueva:
+                            series['informalidad'] = nueva
+                            cambio = True
+                        hechos.add('informalidad')
+                elif T.startswith('comentario') and 'desempleo' not in hechos and 'mercado laboral' in sin_tildes(titulo) and 'pdf' in urls:
+                    d = parse_desempleo(pdf_a_texto(http_get(urls['pdf'], binario=True)))
+                    per = periodo_eml(titulo)
+                    if d and per:
+                        validar_numero(d['tasa'], 'desempleo', RANGOS['porcentaje'])
+                        reg = {'periodo': per, 'tasa': d['tasa'], 'anterior': d['anterior'], 'jovenes_20_24': d.get('jovenes_20_24'), 'url': urls['pdf']}
+                        serie = series.setdefault('desempleo', [])
+                        if reg not in serie:
+                            series['desempleo'] = dedup_series(serie + [reg])
+                            cambio = True
+                        hechos.add('desempleo')
+            except Exception as e:  # noqa: BLE001
+                avisar('salarios', f'{titulo}: {e}')
+    faltan = {'sector', 'ocupacion', 'provincia', 'desempleo', 'informalidad'} - hechos
+    if faltan:
+        avisar('salarios', 'No se encontraron en las publicaciones recientes del INEC: ' + ', '.join(sorted(faltan)) + '. Se conservan los datos anteriores.')
+    if cambio:
+        _actualizar_kpis_salarios(sa)
+    return cambio
+
+
+def _actualizar_kpis_salarios(sa):
+    s = sa['series']
+    fin = lambda p: (date(int(p[:4]) + (p[5:7] == '12'), int(p[5:7]) % 12 + 1, 1) - timedelta(days=1)).isoformat()
+    hist = s.get('mediana_historica') or []
+    if hist and metrica(sa, 'mediana_salario'):
+        u, a = hist[-1], (hist[-2] if len(hist) > 1 else None)
+        metrica(sa, 'mediana_salario').update({'valor': u['valor'], 'fecha_corte': fin(u['periodo']), 'periodo': u['periodo'],
+                                               'url': u.get('url'), 'variacion': round(u['valor'] - a['valor'], 2) if a else None})
+    des = (s.get('desempleo') or [])[-1:]
+    if des:
+        d = des[0]
+        for mid, k, var in (('desempleo', 'tasa', True), ('desempleo_jovenes', 'jovenes_20_24', False)):
+            m = metrica(sa, mid)
+            if m and d.get(k) is not None:
+                m.update({'valor': d[k], 'fecha_corte': fin(d['periodo']), 'periodo': d['periodo'], 'url': d['url'],
+                          'variacion': round(d['tasa'] - d['anterior'], 1) if var and d.get('anterior') is not None else None})
+    inf = s.get('informalidad') or []
+    if inf and metrica(sa, 'informalidad'):
+        u, a = inf[-1], (inf[-2] if len(inf) > 1 else None)
+        mes = (s.get('desempleo') or [{}])[-1].get('periodo', '')
+        corte = fin(mes) if mes.startswith(u['periodo']) else f"{u['periodo']}-12-31"
+        metrica(sa, 'informalidad').update({'valor': u['valor'], 'fecha_corte': corte, 'periodo': u['periodo'],
+                                            'variacion': round(u['valor'] - a['valor'], 1) if a else None})
+
+
 _PATRON_MINERO = re.compile(r'\bmina\b|\bminas\b|miner[ia]|minero|cobre panama|first quantum|donoso|recursos minerales|moratoria minera')
 _PATRON_NO_MINERO = re.compile(r'\bminas? antipersonal|mina de sal|minas? de oro de|minsa\b')
 
@@ -747,6 +981,7 @@ MODULOS = [
     ('igc', 'sismo', modulo_igc),
     ('encuestas', 'aprobacion', modulo_encuestas),
     ('noticias_mineria', 'mineria', modulo_noticias_mineria),
+    ('salarios', 'salarios', modulo_salarios),
     ('foto', 'costo_vida', modulo_foto_costo),   # al final: la foto lleva los valores ya actualizados
 ]
 

@@ -1,0 +1,1011 @@
+{
+  "generado": "2026-11-21T03:19:56Z",
+  "pestana": "salarios",
+  "cadencia": "Salario mínimo: cada 2 años · Encuesta de Mercado Laboral (INEC): 1–2 veces al año",
+  "fecha_corte": "2026-08-31",
+  "advertencias": [],
+  "fuentes": {
+    "decreto": {
+      "nombre": "Decreto Ejecutivo No. 13 del 31 de diciembre de 2025 (Mitradel), tasas transcritas por La Prensa",
+      "url": "https://www.prensa.com/economia/salario-minimo-2026-en-panama-estas-son-las-nuevas-tarifas-por-actividad-y-region/",
+      "detalle": "Vigente desde el 16 de enero de 2026 para el período 2026-2027",
+      "calidad": "alta"
+    },
+    "inec_eml": {
+      "nombre": "INEC — Encuesta de Mercado Laboral",
+      "url": "https://www.inec.gob.pa/publicaciones/Default2.aspx?ID_CATEGORIA=5&ID_SUBCATEGORIA=38",
+      "detalle": "Mediana del salario mensual de los empleados de 15 y más años que declararon su salario",
+      "calidad": "alta"
+    }
+  },
+  "salario_minimo": {
+    "vigencia": "2026-01-16/2027-12-31",
+    "fecha_corte": "2026-01-16",
+    "horas_mes": 208,
+    "region_1": "Distritos de Panamá, Colón, San Miguelito, David, Santiago, Chitré, La Chorrera y Arraiján, entre otros que fija el decreto",
+    "region_2": "Resto de los distritos del país",
+    "tasas": [
+      {
+        "actividad": "Agricultura, ganadería, silvicultura y pesca — pequeña empresa",
+        "nacional": 1.64,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Agricultura, ganadería, silvicultura y pesca — gran empresa",
+        "nacional": 2.1,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Actividades bananeras",
+        "nacional": 2.58,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Pesca artesanal",
+        "nacional": 2.3,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Pesca industrial",
+        "nacional": 2.65,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Industrias manufactureras — pequeña empresa",
+        "region1": 2.32,
+        "region2": 1.95,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Industrias manufactureras — gran empresa",
+        "region1": 3.13,
+        "region2": 2.58,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Fabricación de cemento y concreto",
+        "region1": 3.39,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Construcción",
+        "region1": 3.51,
+        "region2": 3.3,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Suministro de electricidad, gas y agua",
+        "nacional": 3.5,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Comercio al por mayor y al por menor — gran empresa",
+        "region1": 3.02,
+        "region2": 2.48,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Supermercados con cinco o más sucursales",
+        "region1": 3.09,
+        "region2": 2.54,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Discotecas, bares y cantinas",
+        "nacional": 3.4,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Hoteles",
+        "region1": 2.96,
+        "region2": 2.43,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Restaurantes — gran empresa",
+        "region1": 3.09,
+        "region2": 2.54,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Transporte de carga en zonas francas",
+        "region1": 3.49,
+        "region2": 2.6,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Tripulantes de cabina en vuelos internacionales",
+        "nacional": 5.01,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Mecánicos de transporte aéreo",
+        "nacional": 4.92,
+        "unidad": "hora"
+      },
+      {
+        "actividad": "Trabajo doméstico",
+        "region1": 350.0,
+        "region2": 320.0,
+        "unidad": "mes"
+      }
+    ],
+    "notas": "Selección de tasas del decreto publicada por La Prensa; el decreto completo fija más actividades y ocupaciones. El equivalente mensual se calcula como tasa por hora × 208 (48 horas semanales × 52 semanas ÷ 12 meses)."
+  },
+  "metricas": [
+    {
+      "id": "mediana_salario",
+      "etiqueta": "Mediana del salario mensual",
+      "valor": 769.39,
+      "unidad": "USD/mes",
+      "fecha_corte": "2026-08-31",
+      "periodo": "2026-08",
+      "variacion": 13.59,
+      "fuente": "INEC — Encuesta de Mercado Laboral",
+      "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1434&ID_CATEGORIA=5&ID_SUBCATEGORIA=38",
+      "calidad": "alta",
+      "notas": "La mitad de los empleados gana menos que esta cifra y la otra mitad, más."
+    },
+    {
+      "id": "desempleo",
+      "etiqueta": "Tasa de desempleo",
+      "valor": 8.5,
+      "unidad": "%",
+      "fecha_corte": "2026-08-31",
+      "periodo": "2026-08",
+      "variacion": -1.9,
+      "fuente": "INEC — Encuesta de Mercado Laboral (comentario)",
+      "url": "https://www.inec.gob.pa/archivos/P053342420260930151945Comentarios.pdf",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "desempleo_jovenes",
+      "etiqueta": "Desempleo de 20 a 24 años",
+      "valor": 22.6,
+      "unidad": "%",
+      "fecha_corte": "2026-08-31",
+      "periodo": "2026-08",
+      "variacion": null,
+      "fuente": "INEC — Encuesta de Mercado Laboral (comentario)",
+      "url": "https://www.inec.gob.pa/archivos/P053342420260930151945Comentarios.pdf",
+      "calidad": "alta",
+      "notas": ""
+    },
+    {
+      "id": "informalidad",
+      "etiqueta": "Empleo informal (no agrícola)",
+      "valor": 45.8,
+      "unidad": "%",
+      "fecha_corte": "2026-08-31",
+      "periodo": "2026",
+      "variacion": -1.3,
+      "fuente": "INEC — Situación de la población ocupada",
+      "url": "https://www.inec.gob.pa/publicaciones/Default2.aspx?ID_CATEGORIA=5&ID_SUBCATEGORIA=38",
+      "calidad": "alta",
+      "notas": "Porcentaje de la población ocupada no agrícola con empleo informal."
+    },
+    {
+      "id": "mediana_educacion",
+      "etiqueta": "Salario por nivel educativo",
+      "valor": null,
+      "unidad": "USD/mes",
+      "fecha_corte": null,
+      "periodo": null,
+      "variacion": null,
+      "fuente": "INEC — Encuesta de Mercado Laboral",
+      "url": "https://www.inec.gob.pa/publicaciones/Default2.aspx?ID_CATEGORIA=5&ID_SUBCATEGORIA=38",
+      "calidad": "alta",
+      "estado": "pendiente",
+      "notas": "Pendiente: el INEC no publica la mediana salarial por nivel de instrucción en sus boletines de la Encuesta de Mercado Laboral (2023–2026). Como referencia aproximada se muestra el salario por ocupación."
+    }
+  ],
+  "series": {
+    "mediana_historica": [
+      {
+        "periodo": "2023-08",
+        "valor": 735.4,
+        "url": "https://www.inec.gob.pa/archivos/P0705547520250124083204Comentarios%20EML%20octubre%202024.pdf"
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 734.0,
+        "url": "https://www.inec.gob.pa/archivos/P0705547520250124083204Comentarios%20EML%20octubre%202024.pdf"
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 755.8,
+        "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1382&ID_CATEGORIA=5&ID_SUBCATEGORIA=38"
+      },
+      {
+        "periodo": "2026-08",
+        "valor": 769.39,
+        "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1434&ID_CATEGORIA=5&ID_SUBCATEGORIA=38"
+      }
+    ],
+    "informalidad": [
+      {
+        "periodo": "2015",
+        "valor": 39.9
+      },
+      {
+        "periodo": "2016",
+        "valor": 40.2
+      },
+      {
+        "periodo": "2017",
+        "valor": 40.8
+      },
+      {
+        "periodo": "2018",
+        "valor": 43.6
+      },
+      {
+        "periodo": "2019",
+        "valor": 44.9
+      },
+      {
+        "periodo": "2020",
+        "valor": 52.8
+      },
+      {
+        "periodo": "2021",
+        "valor": 47.6
+      },
+      {
+        "periodo": "2022",
+        "valor": 48.2
+      },
+      {
+        "periodo": "2023",
+        "valor": 47.4
+      },
+      {
+        "periodo": "2024",
+        "valor": 47.7
+      },
+      {
+        "periodo": "2025",
+        "valor": 47.1
+      },
+      {
+        "periodo": "2026",
+        "valor": 45.8
+      }
+    ],
+    "desempleo": [
+      {
+        "periodo": "2026-08",
+        "tasa": 8.5,
+        "anterior": 10.4,
+        "jovenes_20_24": 22.6,
+        "url": "https://www.inec.gob.pa/archivos/P053342420260930151945Comentarios.pdf"
+      }
+    ],
+    "sector": [
+      {
+        "periodo": "2026-08",
+        "fuente": "Boletín de la Encuesta Mercado Laboral Agosto 2026",
+        "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1434&ID_CATEGORIA=5&ID_SUBCATEGORIA=38",
+        "cuadro": "https://www.inec.gob.pa/archivos/P053342420260930153022Cuadro%2021.xlsx",
+        "grupos": {
+          "Total": {
+            "mediana": 769.39,
+            "empleados": 1253616,
+            "filas": [
+              {
+                "etiqueta": "Agricultura, ganadería, caza, silvicultura, pesca y actividades de servicios conexas",
+                "mediana": 353.46,
+                "empleados": 73138
+              },
+              {
+                "etiqueta": "Explotación de minas y canteras",
+                "mediana": 1110.36,
+                "empleados": 3759
+              },
+              {
+                "etiqueta": "Industria Manufacturera",
+                "mediana": 725.98,
+                "empleados": 76571
+              },
+              {
+                "etiqueta": "Suministro de electricidad, gas, vapor y aire acondicionado",
+                "mediana": 993.98,
+                "empleados": 6115
+              },
+              {
+                "etiqueta": "Suministro de agua; alcantarillado, gestión de desechos y actividades de saneamiento",
+                "mediana": 855.52,
+                "empleados": 11196
+              },
+              {
+                "etiqueta": "Construcción",
+                "mediana": 762.84,
+                "empleados": 91062
+              },
+              {
+                "etiqueta": "Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas",
+                "mediana": 712.34,
+                "empleados": 211013
+              },
+              {
+                "etiqueta": "Transporte, almacenamiento y correo",
+                "mediana": 951.93,
+                "empleados": 80146
+              },
+              {
+                "etiqueta": "Hoteles y Restaurantes",
+                "mediana": 668.79,
+                "empleados": 88445
+              },
+              {
+                "etiqueta": "Información y comunicación",
+                "mediana": 928.26,
+                "empleados": 19249
+              },
+              {
+                "etiqueta": "Actividades financieras y de seguros",
+                "mediana": 1272.7,
+                "empleados": 46985
+              },
+              {
+                "etiqueta": "Actividades inmobiliarias",
+                "mediana": 859.65,
+                "empleados": 13261
+              },
+              {
+                "etiqueta": "Actividades profesionales, científicas y técnicas",
+                "mediana": 985.17,
+                "empleados": 24942
+              },
+              {
+                "etiqueta": "Actividades administrativas y servicios de apoyo",
+                "mediana": 744.28,
+                "empleados": 52745
+              },
+              {
+                "etiqueta": "Administración pública y defensa; planes de seguridad social de afiliación obligatoria",
+                "mediana": 1062.8,
+                "empleados": 130203
+              },
+              {
+                "etiqueta": "Enseñanza",
+                "mediana": 1329.01,
+                "empleados": 119048
+              },
+              {
+                "etiqueta": "Servicios sociales y relacionados con la salud humana",
+                "mediana": 1176.65,
+                "empleados": 72018
+              },
+              {
+                "etiqueta": "Artes, entretenimiento y creatividad",
+                "mediana": 742.84,
+                "empleados": 15413
+              },
+              {
+                "etiqueta": "Otras actividades de servicio",
+                "mediana": 661.85,
+                "empleados": 23361
+              },
+              {
+                "etiqueta": "Actividades de los hogares en calidad de empleadores, actividades indiferenciadas de producción de bienes y servicios de los hogares para uso propio",
+                "mediana": 325.94,
+                "empleados": 92756
+              },
+              {
+                "etiqueta": "Actividades de organizaciones y órganos extraterritoriales y actividades no declaradas",
+                "mediana": 2579.71,
+                "empleados": 2190
+              }
+            ]
+          },
+          "Hombres": {
+            "mediana": 764.57,
+            "empleados": 693521,
+            "filas": [
+              {
+                "etiqueta": "Agricultura, ganadería, caza, silvicultura, pesca y actividades de servicios conexas",
+                "mediana": 336.29,
+                "empleados": 67794
+              },
+              {
+                "etiqueta": "Explotación de minas y canteras",
+                "mediana": 1053.11,
+                "empleados": 3496
+              },
+              {
+                "etiqueta": "Industria Manufacturera",
+                "mediana": 731.15,
+                "empleados": 58506
+              },
+              {
+                "etiqueta": "Suministro de electricidad, gas, vapor y aire acondicionado",
+                "mediana": 939.02,
+                "empleados": 4323
+              },
+              {
+                "etiqueta": "Suministro de agua; alcantarillado, gestión de desechos y actividades de saneamiento",
+                "mediana": 857.46,
+                "empleados": 9234
+              },
+              {
+                "etiqueta": "Construcción",
+                "mediana": 747.7,
+                "empleados": 81185
+              },
+              {
+                "etiqueta": "Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas",
+                "mediana": 710.73,
+                "empleados": 124627
+              },
+              {
+                "etiqueta": "Transporte, almacenamiento y correo",
+                "mediana": 945.49,
+                "empleados": 59824
+              },
+              {
+                "etiqueta": "Hoteles y Restaurantes",
+                "mediana": 693.22,
+                "empleados": 39723
+              },
+              {
+                "etiqueta": "Información y comunicación",
+                "mediana": 950.67,
+                "empleados": 13406
+              },
+              {
+                "etiqueta": "Actividades financieras y de seguros",
+                "mediana": 1422.69,
+                "empleados": 18859
+              },
+              {
+                "etiqueta": "Actividades inmobiliarias",
+                "mediana": 762.47,
+                "empleados": 6473
+              },
+              {
+                "etiqueta": "Actividades profesionales, científicas y técnicas",
+                "mediana": 1158.25,
+                "empleados": 11712
+              },
+              {
+                "etiqueta": "Actividades administrativas y servicios de apoyo",
+                "mediana": 745.41,
+                "empleados": 34301
+              },
+              {
+                "etiqueta": "Administración pública y defensa; planes de seguridad social de afiliación obligatoria",
+                "mediana": 1080.11,
+                "empleados": 73143
+              },
+              {
+                "etiqueta": "Enseñanza",
+                "mediana": 1298.01,
+                "empleados": 35530
+              },
+              {
+                "etiqueta": "Servicios sociales y relacionados con la salud humana",
+                "mediana": 1203.56,
+                "empleados": 21207
+              },
+              {
+                "etiqueta": "Artes, entretenimiento y creatividad",
+                "mediana": 703.43,
+                "empleados": 8267
+              },
+              {
+                "etiqueta": "Otras actividades de servicio",
+                "mediana": 646.93,
+                "empleados": 11531
+              },
+              {
+                "etiqueta": "Actividades de los hogares en calidad de empleadores, actividades indiferenciadas de producción de bienes y servicios de los hogares para uso propio",
+                "mediana": 463.95,
+                "empleados": 9863
+              },
+              {
+                "etiqueta": "Actividades de organizaciones y órganos extraterritoriales y actividades no declaradas",
+                "mediana": 703.36,
+                "empleados": 517
+              }
+            ]
+          },
+          "Mujeres": {
+            "mediana": 776.35,
+            "empleados": 560095,
+            "filas": [
+              {
+                "etiqueta": "Agricultura, ganadería, caza, silvicultura, pesca y actividades de servicios conexas",
+                "mediana": 577.39,
+                "empleados": 5344
+              },
+              {
+                "etiqueta": "Explotación de minas y canteras",
+                "mediana": 1842.95,
+                "empleados": 263
+              },
+              {
+                "etiqueta": "Industria Manufacturera",
+                "mediana": 706.82,
+                "empleados": 18065
+              },
+              {
+                "etiqueta": "Suministro de electricidad, gas, vapor y aire acondicionado",
+                "mediana": 1100.47,
+                "empleados": 1792
+              },
+              {
+                "etiqueta": "Suministro de agua; alcantarillado, gestión de desechos y actividades de saneamiento",
+                "mediana": 844.48,
+                "empleados": 1962
+              },
+              {
+                "etiqueta": "Construcción",
+                "mediana": 950.43,
+                "empleados": 9877
+              },
+              {
+                "etiqueta": "Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas",
+                "mediana": 714.55,
+                "empleados": 86386
+              },
+              {
+                "etiqueta": "Transporte, almacenamiento y correo",
+                "mediana": 965.45,
+                "empleados": 20322
+              },
+              {
+                "etiqueta": "Hoteles y Restaurantes",
+                "mediana": 643.52,
+                "empleados": 48722
+              },
+              {
+                "etiqueta": "Información y comunicación",
+                "mediana": 881.37,
+                "empleados": 5843
+              },
+              {
+                "etiqueta": "Actividades financieras y de seguros",
+                "mediana": 1194.13,
+                "empleados": 28126
+              },
+              {
+                "etiqueta": "Actividades inmobiliarias",
+                "mediana": 969.53,
+                "empleados": 6788
+              },
+              {
+                "etiqueta": "Actividades profesionales, científicas y técnicas",
+                "mediana": 911.83,
+                "empleados": 13230
+              },
+              {
+                "etiqueta": "Actividades administrativas y servicios de apoyo",
+                "mediana": 741.65,
+                "empleados": 18444
+              },
+              {
+                "etiqueta": "Administración pública y defensa; planes de seguridad social de afiliación obligatoria",
+                "mediana": 1037.3,
+                "empleados": 57060
+              },
+              {
+                "etiqueta": "Enseñanza",
+                "mediana": 1342.22,
+                "empleados": 83518
+              },
+              {
+                "etiqueta": "Servicios sociales y relacionados con la salud humana",
+                "mediana": 1168.07,
+                "empleados": 50811
+              },
+              {
+                "etiqueta": "Artes, entretenimiento y creatividad",
+                "mediana": 791.53,
+                "empleados": 7146
+              },
+              {
+                "etiqueta": "Otras actividades de servicio",
+                "mediana": 674.2,
+                "empleados": 11830
+              },
+              {
+                "etiqueta": "Actividades de los hogares en calidad de empleadores, actividades indiferenciadas de producción de bienes y servicios de los hogares para uso propio",
+                "mediana": 314.88,
+                "empleados": 82893
+              },
+              {
+                "etiqueta": "Actividades de organizaciones y órganos extraterritoriales y actividades no declaradas",
+                "mediana": 2663.04,
+                "empleados": 1673
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "ocupacion": [
+      {
+        "periodo": "2026-08",
+        "fuente": "Boletín de la Encuesta Mercado Laboral Agosto 2026",
+        "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1434&ID_CATEGORIA=5&ID_SUBCATEGORIA=38",
+        "cuadro": "https://www.inec.gob.pa/archivos/P0579518620260930153044Cuadro%2022.xlsx",
+        "grupos": {
+          "Total": {
+            "mediana": 769.39,
+            "empleados": 1253616,
+            "filas": [
+              {
+                "etiqueta": "Directores y gerentes de los sectores público, privado y de organizaciones de interés social",
+                "mediana": 1329.55,
+                "empleados": 82484
+              },
+              {
+                "etiqueta": "Profesionales, científicos e intelectuales",
+                "mediana": 1577.21,
+                "empleados": 216356
+              },
+              {
+                "etiqueta": "Técnicos y profesionales de nivel medio",
+                "mediana": 949.7,
+                "empleados": 146082
+              },
+              {
+                "etiqueta": "Empleados de oficina",
+                "mediana": 783.91,
+                "empleados": 99457
+              },
+              {
+                "etiqueta": "Trabajadores de los servicios y vendedores de comercios y mercados",
+                "mediana": 686.13,
+                "empleados": 240298
+              },
+              {
+                "etiqueta": "Agricultores y trabajadores agropecuarios, forestales, de la pesca y caza",
+                "mediana": 474.87,
+                "empleados": 4155
+              },
+              {
+                "etiqueta": "Artesanos y trabajadores de la minería, la construcción, la industria manufacturera, la mecánica y ocupaciones afines",
+                "mediana": 750.86,
+                "empleados": 110955
+              },
+              {
+                "etiqueta": "Operadores de instalaciones fijas y máquinas; ensambladores, conductores y operadores de máquinas móviles",
+                "mediana": 796.88,
+                "empleados": 77267
+              },
+              {
+                "etiqueta": "Trabajadores no calificados de los servicios, la minería, construcción, industria manufacturera, transporte y otras ocupaciones elementales",
+                "mediana": 516.13,
+                "empleados": 276562
+              }
+            ]
+          },
+          "Hombres": {
+            "mediana": 764.57,
+            "empleados": 693521,
+            "filas": [
+              {
+                "etiqueta": "Directores y gerentes de los sectores público, privado y de organizaciones de interés social",
+                "mediana": 1361.09,
+                "empleados": 41728
+              },
+              {
+                "etiqueta": "Profesionales, científicos e intelectuales",
+                "mediana": 1741.24,
+                "empleados": 82770
+              },
+              {
+                "etiqueta": "Técnicos y profesionales de nivel medio",
+                "mediana": 951.28,
+                "empleados": 60308
+              },
+              {
+                "etiqueta": "Empleados de oficina",
+                "mediana": 781.56,
+                "empleados": 31811
+              },
+              {
+                "etiqueta": "Trabajadores de los servicios y vendedores de comercios y mercados",
+                "mediana": 759.37,
+                "empleados": 118742
+              },
+              {
+                "etiqueta": "Agricultores y trabajadores agropecuarios, forestales, de la pesca y caza",
+                "mediana": 455.51,
+                "empleados": 3524
+              },
+              {
+                "etiqueta": "Artesanos y trabajadores de la minería, la construcción, la industria manufacturera, la mecánica y ocupaciones afines",
+                "mediana": 757.56,
+                "empleados": 104039
+              },
+              {
+                "etiqueta": "Operadores de instalaciones fijas y máquinas; ensambladores, conductores y operadores de máquinas móviles",
+                "mediana": 796.79,
+                "empleados": 75179
+              },
+              {
+                "etiqueta": "Trabajadores no calificados de los servicios, la minería, construcción, industria manufacturera, transporte y otras ocupaciones elementales",
+                "mediana": 544.7,
+                "empleados": 175420
+              }
+            ]
+          },
+          "Mujeres": {
+            "mediana": 776.35,
+            "empleados": 560095,
+            "filas": [
+              {
+                "etiqueta": "Directores y gerentes de los sectores público, privado y de organizaciones de interés social",
+                "mediana": 1291.47,
+                "empleados": 40756
+              },
+              {
+                "etiqueta": "Profesionales, científicos e intelectuales",
+                "mediana": 1502.16,
+                "empleados": 133586
+              },
+              {
+                "etiqueta": "Técnicos y profesionales de nivel medio",
+                "mediana": 948.77,
+                "empleados": 85774
+              },
+              {
+                "etiqueta": "Empleados de oficina",
+                "mediana": 785.07,
+                "empleados": 67646
+              },
+              {
+                "etiqueta": "Trabajadores de los servicios y vendedores de comercios y mercados",
+                "mediana": 614.12,
+                "empleados": 121556
+              },
+              {
+                "etiqueta": "Agricultores y trabajadores agropecuarios, forestales, de la pesca y caza",
+                "mediana": 640.13,
+                "empleados": 631
+              },
+              {
+                "etiqueta": "Artesanos y trabajadores de la minería, la construcción, la industria manufacturera, la mecánica y ocupaciones afines",
+                "mediana": 651.12,
+                "empleados": 6916
+              },
+              {
+                "etiqueta": "Operadores de instalaciones fijas y máquinas; ensambladores, conductores y operadores de máquinas móviles",
+                "mediana": 802.36,
+                "empleados": 2088
+              },
+              {
+                "etiqueta": "Trabajadores no calificados de los servicios, la minería, construcción, industria manufacturera, transporte y otras ocupaciones elementales",
+                "mediana": 470.05,
+                "empleados": 101142
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "provincia": [
+      {
+        "periodo": "2025-09",
+        "fuente": "Boletín de la Encuesta Mercado Laboral Septiembre 2025",
+        "url": "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1382&ID_CATEGORIA=5&ID_SUBCATEGORIA=38",
+        "cuadro": "https://www.inec.gob.pa/archivos/P030194820260304104121Cuadro%2025.xlsx",
+        "nacional": {
+          "Total": {
+            "mediana": 755.8,
+            "empleados": 1210496
+          },
+          "Hombres": {
+            "mediana": 745.94,
+            "empleados": 663975
+          },
+          "Mujeres": {
+            "mediana": 770.15,
+            "empleados": 546521
+          }
+        },
+        "provincias": [
+          {
+            "provincia": "Bocas del Toro",
+            "Total": {
+              "mediana": 619.4,
+              "empleados": 36215
+            },
+            "Hombres": {
+              "mediana": 539.71,
+              "empleados": 22925
+            },
+            "Mujeres": {
+              "mediana": 805.33,
+              "empleados": 13290
+            }
+          },
+          {
+            "provincia": "Coclé",
+            "Total": {
+              "mediana": 657.99,
+              "empleados": 63562
+            },
+            "Hombres": {
+              "mediana": 644.23,
+              "empleados": 36572
+            },
+            "Mujeres": {
+              "mediana": 682.93,
+              "empleados": 26990
+            }
+          },
+          {
+            "provincia": "Colón",
+            "Total": {
+              "mediana": 787.75,
+              "empleados": 77028
+            },
+            "Hombres": {
+              "mediana": 785.99,
+              "empleados": 46856
+            },
+            "Mujeres": {
+              "mediana": 790.75,
+              "empleados": 30172
+            }
+          },
+          {
+            "provincia": "Chiriquí",
+            "Total": {
+              "mediana": 688.33,
+              "empleados": 111373
+            },
+            "Hombres": {
+              "mediana": 670.07,
+              "empleados": 64145
+            },
+            "Mujeres": {
+              "mediana": 718.16,
+              "empleados": 47228
+            }
+          },
+          {
+            "provincia": "Darién",
+            "Total": {
+              "mediana": 532.19,
+              "empleados": 10183
+            },
+            "Hombres": {
+              "mediana": 484.02,
+              "empleados": 6727
+            },
+            "Mujeres": {
+              "mediana": 599.38,
+              "empleados": 3456
+            }
+          },
+          {
+            "provincia": "Herrera",
+            "Total": {
+              "mediana": 689.71,
+              "empleados": 31085
+            },
+            "Hombres": {
+              "mediana": 660.1,
+              "empleados": 17868
+            },
+            "Mujeres": {
+              "mediana": 733.87,
+              "empleados": 13217
+            }
+          },
+          {
+            "provincia": "Los Santos",
+            "Total": {
+              "mediana": 670.61,
+              "empleados": 22717
+            },
+            "Hombres": {
+              "mediana": 608.37,
+              "empleados": 12148
+            },
+            "Mujeres": {
+              "mediana": 745.24,
+              "empleados": 10569
+            }
+          },
+          {
+            "provincia": "Panamá",
+            "Total": {
+              "mediana": 786.74,
+              "empleados": 566984
+            },
+            "Hombres": {
+              "mediana": 785.78,
+              "empleados": 295685
+            },
+            "Mujeres": {
+              "mediana": 788.05,
+              "empleados": 271299
+            }
+          },
+          {
+            "provincia": "Panamá Oeste",
+            "Total": {
+              "mediana": 773.12,
+              "empleados": 222242
+            },
+            "Hombres": {
+              "mediana": 773.14,
+              "empleados": 118308
+            },
+            "Mujeres": {
+              "mediana": 773.1,
+              "empleados": 103934
+            }
+          },
+          {
+            "provincia": "Veraguas",
+            "Total": {
+              "mediana": 682.27,
+              "empleados": 52630
+            },
+            "Hombres": {
+              "mediana": 648.04,
+              "empleados": 31330
+            },
+            "Mujeres": {
+              "mediana": 744.61,
+              "empleados": 21300
+            }
+          },
+          {
+            "provincia": "Comarca Guna Yala",
+            "Total": {
+              "mediana": 156.91,
+              "empleados": 2535
+            },
+            "Hombres": {
+              "mediana": 208.97,
+              "empleados": 1479
+            },
+            "Mujeres": {
+              "mediana": 104.93,
+              "empleados": 1056
+            }
+          },
+          {
+            "provincia": "Comarca Emberá",
+            "Total": {
+              "mediana": 604.63,
+              "empleados": 461
+            },
+            "Hombres": {
+              "mediana": 617.24,
+              "empleados": 351
+            },
+            "Mujeres": {
+              "mediana": 550.0,
+              "empleados": 110
+            }
+          },
+          {
+            "provincia": "Comarca Ngäbe Buglé",
+            "Total": {
+              "mediana": 326.71,
+              "empleados": 13481
+            },
+            "Hombres": {
+              "mediana": 297.18,
+              "empleados": 9581
+            },
+            "Mujeres": {
+              "mediana": 487.84,
+              "empleados": 3900
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

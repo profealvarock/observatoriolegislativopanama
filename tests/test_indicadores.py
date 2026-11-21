@@ -204,6 +204,59 @@ def test_sismo_en_modo_archivo_no_se_actualiza(monkeypatch):
     assert ai.modulo_igc(sm, date(2026, 11, 23), lambda *a: None) is False
 
 
+# ── Salarios y empleo (INEC) ─────────────────────────────────────────────────
+
+def test_mediana_por_sector_y_sexo():
+    r = ai.parse_mediana_inec((FIX / 'inec_eml_ago2026_cuadro21_sector.xlsx').read_bytes())
+    assert r['periodo'] == '2026-08'
+    g = r['grupos']
+    assert (g['Total']['mediana'], g['Hombres']['mediana'], g['Mujeres']['mediana']) == (769.39, 764.57, 776.35)
+    sectores = {f['etiqueta']: f['mediana'] for f in g['Total']['filas']}
+    assert sectores['Enseñanza'] == 1329.01
+    assert sectores['Agricultura, ganadería, caza, silvicultura, pesca y actividades de servicios conexas'] == 353.46
+    # las etiquetas de varias filas se unen y la palabra cortada con guion se recompone
+    assert any(k.startswith('Suministro de agua; alcantarillado, gestión') for k in sectores)
+    # las subramas (artículos durables, al por mayor…) no se cuentan como sectores
+    assert not any(k.startswith(('Artículos', 'Al por mayor')) for k in sectores)
+    assert len(g['Total']['filas']) == len(g['Mujeres']['filas']) == 21
+
+
+def test_mediana_por_ocupacion():
+    r = ai.parse_mediana_inec((FIX / 'inec_eml_ago2026_cuadro22_ocupacion.xlsx').read_bytes())
+    ocup = {f['etiqueta']: f['mediana'] for f in r['grupos']['Total']['filas']}
+    assert ocup['Profesionales, científicos e intelectuales'] == 1577.21
+    assert len(ocup) == 9
+
+
+def test_mediana_por_provincia_y_sexo():
+    r = ai.parse_mediana_inec((FIX / 'inec_eml_sep2025_cuadro25_provincia.xlsx').read_bytes())
+    assert r['periodo'] == '2025-09'
+    assert r['grupos']['Total']['mediana'] == 755.8
+    prov = {p['provincia']: p for p in r['provincias']}
+    assert len(prov) == 13
+    assert prov['Panamá']['Total']['mediana'] == 786.74
+    assert prov['Comarca Ngäbe Buglé']['Mujeres']['mediana'] == 487.84
+    assert prov['Bocas del Toro']['Hombres']['mediana'] == 539.71
+
+
+def test_desempleo_del_comentario():
+    d = ai.parse_desempleo(leer('inec_eml_ago2026_comentario.txt'))
+    assert d == {'anterior': 10.4, 'tasa': 8.5, 'jovenes_20_24': 22.6}
+
+
+def test_informalidad_csv():
+    texto = (FIX / 'inec_situacion_ago2026_cuadro11_informalidad.csv').read_bytes().decode('utf-8-sig', errors='replace')
+    pares = dict(ai.parse_informalidad_csv(texto))
+    assert pares[2026] == 45.8 and pares[2025] == 47.1 and pares[2024] == 47.7
+    assert pares[2020] == 52.8        # 2020 trae "…" en el desglose, pero el porcentaje total es válido
+
+
+def test_periodo_eml():
+    assert ai.periodo_eml('Boletín de la Encuesta Mercado Laboral Agosto 2026') == '2026-08'
+    assert ai.periodo_eml('ENCUESTA DE MERCADO LABORAL: SEPTIEMBRE 2025') == '2025-09'
+    assert ai.periodo_eml('sin fecha') is None
+
+
 # ── Minería ──────────────────────────────────────────────────────────────────
 
 @pytest.mark.parametrize('titulo,esperado', [
