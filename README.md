@@ -1,15 +1,29 @@
-# 🏛️ Observatorio Legislativo — Asamblea Nacional de Panamá
+# 🏛️ Observatorio Ciudadano de Panamá
 
-Dashboard interactivo que muestra la producción legislativa de la Asamblea Nacional, con datos actualizados automáticamente cada 24 horas.
+Centro de consulta ciudadana con datos públicos sobre la Asamblea Nacional, la percepción del Gobierno y de las instituciones, y lo que afecta la vida diaria (costo de la vida, el sismo de 2026 y la minería). Cada cifra trae su fuente, su fecha de corte y un indicador de frescura. Los datos de la Asamblea se actualizan cada 24 horas; los indicadores de contexto, cada lunes.
 
 ## 🌐 Demo
 Desplegado en Netlify: [https://observatoriolegistalivopa.netlify.app](https://observatoriolegistalivopa.netlify.app)
 
-## 📊 Qué muestra
+## 🧭 Cómo está organizado
 
-| Pestaña | Contenido |
+El menú tiene cuatro grupos y, dentro de cada uno, sus secciones (`js/navegacion.js`, constante `GRUPOS`):
+
+| Grupo | Secciones | Datos |
+|-------|-----------|-------|
+| **🏠 Inicio** | Una tarjeta por sección con su cifra clave, fuente y frescura | todos |
+| **⭐ Percepción** | Aprobación y confianza (presidente, gabinete, instituciones) | `data/aprobacion.json` |
+| **🏘️ Intereses ciudadanos** | Costo de vida · Sismo · Minería | `data/costo_vida.json`, `data/sismo.json`, `data/mineria.json` |
+| **🏛️ Asamblea Nacional** | Las secciones de la tabla siguiente | `resumen.json`, `datos.json`, `votaciones.json`… |
+| **📘 Metodología** | Fuentes, reglas y limitaciones de todo el sitio | — |
+
+Los indicadores de `data/` los actualiza cada lunes `scripts/actualizar_indicadores.py` (workflow `actualizar-indicadores.yml`); las pruebas están en `tests/` (`python -m pytest tests` y `node --test tests/frescura.test.mjs`).
+
+## 📊 Secciones de la Asamblea Nacional
+
+| Sección | Contenido |
 |---------|-----------|
-| **General** | Timeline de actividad por mes, donut de etapas, embudo legislativo, top 20 diputados, mapa por provincia |
+| **Resumen** | Totales y desglose por estado, timeline de actividad por mes, donut de etapas, embudo legislativo, top 20 diputados, mapa por provincia |
 | **Novedades** | Qué cambió: proyectos nuevos, avances de etapa, nuevas leyes y proyectos detenidos, por fecha; tiempo hasta ley; feed RSS |
 | **Diputados** | Tabla y tarjetas con producción por diputado (filtrable por partido, provincia y mes) |
 | **Proyectos** | Buscador de los proyectos de ley (título, ficha o proponente), filtros por etapa, año y tema, y gráfico de proyectos por tema |

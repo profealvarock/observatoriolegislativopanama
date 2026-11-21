@@ -1050,7 +1050,7 @@ def generar_rss(nov, limite=60):
         f.write(f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Observatorio Legislativo — Novedades</title>
+  <title>Observatorio Ciudadano de Panamá — Novedades de la Asamblea</title>
   <link>{SITE_URL}/#novedades</link>
   <atom:link href="{SITE_URL}/{NOVEDADES_RSS}" rel="self" type="application/rss+xml"/>
   <description>Proyectos nuevos, avances de etapa, nuevas leyes y votaciones del pleno en la Asamblea Nacional de Panamá.</description>
@@ -1156,7 +1156,7 @@ def _imagen_diputado(d, ruta):
         dr.text((x + 20, yb + 42), val, font=fd(46), fill=color)
     if ef.get('indice') is not None:
         dr.text((x0 + 3 * (ancho + gap) + 20, yb + 120), f"{_lectura_indice(ef)} (100 = promedio)", font=fm(15), fill=MUTED)
-    dr.text((70, H - 50), 'Observatorio Legislativo · por @profealvarock', font=fm(18), fill=MUTED)
+    dr.text((70, H - 50), 'Observatorio Ciudadano de Panamá · por @profealvarock', font=fm(18), fill=MUTED)
 
     meta = PngImagePlugin.PngInfo()
     meta.add_text('firma', firma)
@@ -1207,13 +1207,13 @@ def _pagina_diputado(d, fecha, imagen=None):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{e(d['nombre'])} — Observatorio Legislativo</title>
+<title>{e(d['nombre'])} — Observatorio Ciudadano de Panamá</title>
 <meta name="description" content="{e(descripcion)}">
 <link rel="canonical" href="{url}">
 <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="{url}">
-<meta property="og:title" content="{e(d['nombre'])} — Observatorio Legislativo">
+<meta property="og:title" content="{e(d['nombre'])} — Observatorio Ciudadano de Panamá">
 <meta property="og:description" content="{e(descripcion)}">
 <meta property="og:image" content="{imagen or SITE_URL + '/img/og-card.png'}">
 <meta property="og:image:width" content="1200">
@@ -1232,13 +1232,13 @@ td{{padding:8px 0;border-bottom:1px solid #1a2940}} td+td{{text-align:right;font
 </head>
 <body>
 <main>
-  <a href="/"><img src="/img/logo.svg" alt="Observatorio Legislativo" width="44" height="44"></a>
+  <a href="/"><img src="/img/logo.svg" alt="Observatorio Ciudadano de Panamá" width="44" height="44"></a>
   <h1>{e(d['nombre'])}</h1>
   <p class="sub">{e(d.get('partido') or '')} · {e(lugar)}</p>
   <table>{''.join(f'<tr><td>{e(k)}</td><td>{e(str(v))}</td></tr>' for k, v in filas)}</table>
   {f'<p>Temas que más propone: {e(temas)}.</p>' if temas else ''}
   <a class="btn" href="{destino}">Ver la ficha completa en el observatorio →</a>
-  <p class="pie">Datos al {e(fecha)} · Fuentes: Asamblea Nacional y Espacio Cívico · Observatorio Legislativo por @profealvarock</p>
+  <p class="pie">Datos al {e(fecha)} · Fuentes: Asamblea Nacional y Espacio Cívico · Observatorio Ciudadano de Panamá, por @profealvarock</p>
 </main>
 <script>location.replace({json.dumps(destino)});</script>
 </body>

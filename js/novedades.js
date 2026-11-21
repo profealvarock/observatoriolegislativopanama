@@ -108,7 +108,7 @@ async function compartirFicha(btn){
   if(!dep) return copyLink(btn);
   const url=`${location.origin}/diputado/${depSlug(dep)}/`;
   if(navigator.share && isMobile()){
-    try{ await navigator.share({title:`${dep.nombre} — Observatorio Legislativo`, url}); return; }
+    try{ await navigator.share({title:`${dep.nombre} — Observatorio Ciudadano de Panamá`, url}); return; }
     catch(e){ if(e.name==='AbortError') return; }
   }
   copyLink(btn, url);
