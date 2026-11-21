@@ -81,6 +81,7 @@
       <button class="tab active" data-tab="inicio" hidden>🏠 Inicio</button>
       <button class="tab" data-tab="aprobacion" hidden>⭐ Aprobación y confianza</button>
       <button class="tab" data-tab="costo-vida" hidden>🛒 Costo de vida</button>
+      <button class="tab" data-tab="salarios" hidden>💵 Salarios y empleo</button>
       <button class="tab" data-tab="sismo" hidden>🌎 Sismo</button>
       <button class="tab" data-tab="mineria" hidden>⛏️ Minería</button>
       <button class="tab" data-tab="general" hidden>📊 Resumen</button>
@@ -772,6 +773,11 @@
   <div id="cv-root"><div class="loader"><div class="spinner"></div> Cargando indicadores…</div></div>
 </div>
 
+<!-- TAB SALARIOS · datos en data/salarios.json (js/salarios.js) -->
+<div id="tab-salarios" class="tab-content">
+  <div id="sal-root"><div class="loader"><div class="spinner"></div> Cargando salarios y empleo…</div></div>
+</div>
+
 <!-- TAB MINERÍA · datos en data/mineria.json; proyectos y votaciones de la Asamblea en vivo (js/mineria.js) -->
 <div id="tab-mineria" class="tab-content">
   <div id="min-root"><div class="loader"><div class="spinner"></div> Cargando datos de minería…</div></div>
@@ -781,7 +787,7 @@
 <div id="tab-metodologia" class="tab-content">
   <div class="met-intro">
     <h2>Cómo se construyen estos datos</h2>
-    <p>El Observatorio Ciudadano de Panamá es un centro de consulta con datos públicos, organizado en tres grupos: <strong>Percepción</strong> (cómo se evalúa al Gobierno y a las instituciones), <strong>Intereses ciudadanos</strong> (costo de la vida, el sismo de 2026 y la minería) y <strong>Asamblea Nacional</strong> (quién propone qué, cuánto avanza, cómo se vota y cuánto cuesta). Aquí se explica de dónde sale cada número, qué decisiones se tomaron al calcularlo y qué limitaciones tiene. Si encuentras un error, escríbeme por cualquiera de las redes al pie de la página.</p>
+    <p>El Observatorio Ciudadano de Panamá es un centro de consulta con datos públicos, organizado en tres grupos: <strong>Percepción</strong> (cómo se evalúa al Gobierno y a las instituciones), <strong>Intereses ciudadanos</strong> (costo de la vida, salarios y empleo, el sismo de 2026 y la minería) y <strong>Asamblea Nacional</strong> (quién propone qué, cuánto avanza, cómo se vota y cuánto cuesta). Aquí se explica de dónde sale cada número, qué decisiones se tomaron al calcularlo y qué limitaciones tiene. Si encuentras un error, escríbeme por cualquiera de las redes al pie de la página.</p>
     <div class="met-estado" id="met-estado"></div>
   </div>
 
@@ -951,6 +957,18 @@
         <dt>Noticias</dt><dd>Cada lunes el proceso guarda los titulares sobre minería de los RSS de TVN y Panamá América, con su fecha y enlace. No se interpretan cifras de esas notas: si una parece una encuesta nueva, queda como aviso para revisarla a mano antes de cargarla.</dd>
       </dl>
     </section>
+
+    <section class="met-card met-ancha">
+      <h3>16. 💵 Salarios y empleo</h3>
+      <dl>
+        <dt>Salario mínimo</dt><dd><strong>Decreto Ejecutivo No. 13 del 31 de diciembre de 2025</strong> (Mitradel), vigente desde el 16 de enero de 2026 para 2026-2027. Las tasas varían por actividad, tamaño de empresa, ocupación y región (Región 1: distritos urbanos principales; Región 2: el resto). Se muestra la selección de tasas publicada por La Prensa; el decreto tiene más categorías. El "equivalente mensual" es un cálculo propio: tasa por hora × 208 (48 horas semanales × 52 semanas ÷ 12 meses), solo para comparar con la mediana.</dd>
+        <dt>Mediana salarial</dt><dd>De la <strong>Encuesta de Mercado Laboral del INEC</strong>: salario mensual de los empleados de 15 y más años que lo declararon. Se usa la <strong>mediana</strong>, no el promedio: la mitad gana menos y la otra mitad más, así unos pocos salarios muy altos no la distorsionan. Por sector económico, ocupación y sexo sale del último boletín (agosto de 2026); por provincia y comarca, del último boletín que publica ese cuadro (septiembre de 2025), y se indica su fecha.</dd>
+        <dt>Nivel educativo</dt><dd><strong>Pendiente.</strong> El INEC no publica la mediana salarial por nivel de instrucción en los boletines de 2023 a 2026; solo publica cuántas personas trabajan por nivel. No se estima: como referencia se muestra el salario por ocupación.</dd>
+        <dt>Desempleo e informalidad</dt><dd>La tasa de desempleo (y la de 20 a 24 años) se toma del comentario oficial del boletín; la informalidad, del cuadro "Empleo informal en la República" del boletín de Situación de la población ocupada (población ocupada no agrícola).</dd>
+        <dt>Actualización</dt><dd>Cada lunes el proceso revisa las publicaciones del INEC. Cuando sale un boletín nuevo, busca los cuadros por su título (la numeración cambia entre boletines), los lee del Excel oficial y los valida (medianas entre 100 y 5,000 dólares, fecha no futura). Si un cuadro no aparece, conserva el anterior y lo anota en los avisos.</dd>
+        <dt>Precisión</dt><dd>Son estimaciones de una encuesta por muestreo: los grupos con pocos asalariados (minería, comarcas, organismos extraterritoriales) tienen medianas menos precisas. La calculadora "¿Cómo se compara tu salario?" corre en tu navegador y no guarda nada.</dd>
+      </dl>
+    </section>
   </div>
 </div>
 
@@ -1034,6 +1052,7 @@
 <script src="js/sismo.js"></script>
 <script src="js/costo_vida.js"></script>
 <script src="js/mineria.js"></script>
+<script src="js/salarios.js"></script>
 <script src="js/portada.js"></script>
 <script src="js/inicio.js"></script>
 </body>

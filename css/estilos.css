@@ -939,6 +939,21 @@ body[data-grupo="percepcion"] #gs-wrap,body[data-grupo="intereses"] #gs-wrap,bod
 .min-tbl td a{color:var(--acc)}
 .min-eco{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
 
+/* Salarios y empleo */
+.sal-track{position:relative}
+.sal-track::after{content:'';position:absolute;top:0;bottom:0;left:var(--ref);width:2px;background:var(--text);opacity:.55}
+.sal-bars .ind-bar-lbl b{font-size:.74rem}
+.sal-prov-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:var(--gap);align-items:start}
+.sal-calc{grid-template-columns:repeat(3,minmax(0,1fr))}
+.sal-calc .cv-calc-out{grid-column:1/-1}
+.cv-calc input[type=number]{background:var(--bg);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 10px;font-family:var(--fm);font-size:.8rem;min-height:38px;width:100%}
+.sal-tbl td small{color:var(--muted)}
+@media(max-width:900px){.sal-prov-grid{grid-template-columns:1fr}}
+.cv-calc label{min-width:0}
+.cv-calc select{width:100%;min-width:0;max-width:100%}
+.ind-kpis-3{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+@media(max-width:768px){.sal-calc{grid-template-columns:minmax(0,1fr)}}
+
 /* Menos movimiento: sin animaciones ni transiciones decorativas */
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}

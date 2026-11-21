@@ -229,8 +229,8 @@ const GRUPOS=[
   {id:'inicio',      nombre:'Inicio',               icono:'🏠', tabs:['inicio']},
   {id:'percepcion',  nombre:'Percepción',           icono:'⭐', tabs:['aprobacion'],
    desc:'Reputación del Gobierno y de las instituciones públicas'},
-  {id:'intereses',   nombre:'Intereses ciudadanos', icono:'🏘️', tabs:['costo-vida','sismo','mineria'],
-   desc:'Lo que afecta la vida diaria: precios, emergencias y minería'},
+  {id:'intereses',   nombre:'Intereses ciudadanos', icono:'🏘️', tabs:['costo-vida','salarios','sismo','mineria'],
+   desc:'Lo que afecta la vida diaria: precios, salarios y empleo, emergencias y minería'},
   {id:'asamblea',    nombre:'Asamblea Nacional',    icono:'🏛️', tabs:['general','novedades','diputados','proyectos','votaciones','monitoreo','partidos','proponentes','costos'],
    desc:'Proyectos de ley, diputados, votaciones y costo legislativo'},
   {id:'metodologia', nombre:'Metodología',          icono:'📘', tabs:['metodologia']},
@@ -292,6 +292,7 @@ function showTab(name){
   if(name==='sismo'){initSismo();}
   if(name==='costo-vida'){initCostoVida();}
   if(name==='mineria'){initMineria();}
+  if(name==='salarios'){initSalarios();}
   if(!D) return;
   if(name==='general'&&!tabInited.general){try{renderGeneral();}catch(e){console.error('General:',e)}tabInited.general=true}
   if(name==='diputados'){try{initTable();}catch(e){console.error('Table:',e)}}

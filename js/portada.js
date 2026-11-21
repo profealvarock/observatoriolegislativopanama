@@ -27,8 +27,9 @@ function portadaGrupo(id, tarjetas){
 async function initPortada(){
   const root=document.getElementById('portada-root');
   if(!root) return;
-  const [ap,cv,sm,mi]=(await Promise.allSettled(['aprobacion','costo_vida','sismo','mineria'].map(cargarIndicador))).map(r=>r.status==='fulfilled'?r.value:null);
+  const [ap,cv,sm,mi,sa]=(await Promise.allSettled(['aprobacion','costo_vida','sismo','mineria','salarios'].map(cargarIndicador))).map(r=>r.status==='fulfilled'?r.value:null);
   const m=(Dx,id)=>Dx?metricaPorId(Dx,id):null;
+  const medSal=m(sa,'mediana_salario'), desem=m(sa,'desempleo');
 
   const mala=m(ap,'gestion_mala'), conf=m(ap,'confianza_presidente');
   const g95=m(cv,'gasolina_95_gal'), cbfa=m(cv,'cbfa');
@@ -61,6 +62,10 @@ async function initPortada(){
         dato:g95?fmtValor(g95):null, etiqueta:'el galón de gasolina 95 en Panamá y Colón',
         extra:cbfa?`Canasta básica: <b>${esc(fmtValor(cbfa))}</b> (${esc(fmtPeriodo(cbfa.periodo))})`:'',
         fuente:'Secretaría de Energía · MEF', fecha:g95?.fecha_corte}),
+      portadaCard({href:'#salarios', titulo:'💵 Salarios y empleo',
+        dato:medSal?fmtValor(medSal):null, etiqueta:'mediana del salario mensual (la mitad gana menos)',
+        extra:desem?`Desempleo: <b>${esc(fmtValor(desem))}</b> · por sector, sexo y provincia`:'',
+        fuente:'INEC · Mitradel', fecha:medSal?.fecha_corte}),
       portadaCard({href:'#sismo', titulo:'🌎 Sismo del 9 de octubre',
         dato:afe?fmtValor(afe):null, etiqueta:'personas registradas en la evaluación de daños',
         extra:alb?`Albergues activos: <b>${esc(fmtValor(alb))}</b>`:'',

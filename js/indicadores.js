@@ -2,7 +2,7 @@
 // carga de data/*.json, indicador de frescura, tarjetas KPI con fuente y fecha, avisos y descargas.
 // Ninguna cifra vive en el código: todo sale de los JSON que actualiza scripts/actualizar_indicadores.py.
 
-const IND_RUTAS = { aprobacion:'data/aprobacion.json', sismo:'data/sismo.json', costo_vida:'data/costo_vida.json', mineria:'data/mineria.json' };
+const IND_RUTAS = { aprobacion:'data/aprobacion.json', sismo:'data/sismo.json', costo_vida:'data/costo_vida.json', mineria:'data/mineria.json', salarios:'data/salarios.json' };
 const IND_CACHE = {};
 
 async function cargarIndicador(p){
