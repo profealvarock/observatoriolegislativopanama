@@ -35,8 +35,10 @@ jobs:
         run: pip install requests pypdf pytest
 
       # Si un parser se rompe, las pruebas fallan antes de tocar los datos.
-      - name: Pruebas de los parsers
-        run: python -m pytest tests -q
+      - name: Pruebas de los parsers y de la regla de frescura
+        run: |
+          python -m pytest tests -q
+          node --test tests/frescura.test.mjs
 
       # El script no falla si una fuente está caída: conserva el valor y lo anota en "advertencias".
       - name: Ejecutar actualización

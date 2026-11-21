@@ -223,7 +223,8 @@ function countUp(el, target, delay=0){
 }
 
 // ── TABS ──────────────────────────────────────────
-const TABS=['general','novedades','diputados','proyectos','votaciones','monitoreo','partidos','proponentes','costos','metodologia'];
+// Mismo orden que los botones de la barra: el índice empareja botón y panel
+const TABS=['general','novedades','diputados','proyectos','votaciones','monitoreo','partidos','proponentes','costos','aprobacion','sismo','costo-vida','metodologia'];
 
 // Pestañas accesibles: roles ARIA y navegación con flechas, Inicio y Fin (patrón WAI-ARIA)
 (function initTabsA11y(){
@@ -255,6 +256,10 @@ function showTab(name){
   // La pestaña queda en la URL (#costos, #monitoreo…) para poder compartirla
   const h=location.hash.slice(1);
   if(!((name==='diputados'&&/^(diputado|comparar)=/.test(h))||(name==='proyectos'&&/^proyecto=/.test(h))||(name==='votaciones'&&/^votacion(es)?=/.test(h)))) setHash(name==='general'?'':name);
+  // Aprobación, Sismo y Costo de vida leen sus propios JSON (data/): no dependen de resumen.json
+  if(name==='aprobacion'){initAprobacion();}
+  if(name==='sismo'){initSismo();}
+  if(name==='costo-vida'){initCostoVida();}
   if(!D) return;
   if(name==='general'&&!tabInited.general){try{renderGeneral();}catch(e){console.error('General:',e)}tabInited.general=true}
   if(name==='diputados'){try{initTable();}catch(e){console.error('Table:',e)}}
