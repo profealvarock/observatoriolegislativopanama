@@ -1,8 +1,8 @@
-// Observatorio Legislativo — Piezas comunes de las pestañas Aprobación, Sismo y Costo de vida:
+// Observatorio Ciudadano — Piezas comunes de Inicio, Aprobación, Sismo, Costo de vida y Minería:
 // carga de data/*.json, indicador de frescura, tarjetas KPI con fuente y fecha, avisos y descargas.
 // Ninguna cifra vive en el código: todo sale de los JSON que actualiza scripts/actualizar_indicadores.py.
 
-const IND_RUTAS = { aprobacion:'data/aprobacion.json', sismo:'data/sismo.json', costo_vida:'data/costo_vida.json' };
+const IND_RUTAS = { aprobacion:'data/aprobacion.json', sismo:'data/sismo.json', costo_vida:'data/costo_vida.json', mineria:'data/mineria.json' };
 const IND_CACHE = {};
 
 async function cargarIndicador(p){
@@ -35,6 +35,7 @@ const MES_CORTO = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','
 function fmtDia(f, conAnio=true){
   if(!f) return 's/d';
   const [y,m,d] = String(f).slice(0,10).split('-');
+  if(!m) return y;                                   // solo el año: '2026'
   if(!d) return `${MES_CORTO[+m-1]} ${y}`;
   return `${+d} ${MES_CORTO[+m-1]}${conAnio?' '+y:''}`;
 }
@@ -57,7 +58,7 @@ function fmtValor(m, opts={}){
   if(typeof v==='string') return v;
   if(u==='%') return fmtDec(v, opts.dec??1)+'%';
   if(u.startsWith('USD/')) return '$'+fmtDec(v, opts.dec??2);
-  if(u==='USD millones') return '$'+fmtNum(v)+' M';
+  if(u==='USD millones') return '$'+(Number.isInteger(v)?fmtNum(v):fmtDec(v,1))+' M';
   if(u==='M') return 'M'+fmtDec(v,1);
   if(Number.isInteger(v)) return fmtNum(v)+(opts.conUnidad&&u?` ${u}`:'');
   return fmtDec(v, opts.dec??1)+(opts.conUnidad&&u?` ${u}`:'');

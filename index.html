@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080c14">
 <meta name="author" content="profealvarock">
-<meta name="description" content="Observatorio ciudadano de la Asamblea Nacional de Panamá: proyectos de ley, diputados, asistencia, planilla y costo legislativo, actualizado a diario.">
+<meta name="description" content="Observatorio Ciudadano de Panamá: centro de consulta con datos públicos sobre la Asamblea Nacional, la percepción del Gobierno y las instituciones, el costo de la vida, el sismo de 2026 y la minería. Cada cifra con su fuente y su fecha.">
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="author" href="https://profealvarock.vercel.app/">
-<link rel="alternate" type="application/rss+xml" title="Observatorio Legislativo — Novedades" href="novedades.xml">
+<link rel="alternate" type="application/rss+xml" title="Observatorio Ciudadano de Panamá — Novedades de la Asamblea" href="novedades.xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Observatorio Legislativo · Asamblea Nacional de Panamá">
-<meta property="og:description" content="Proyectos de ley, diputados, asistencia, planilla y costo legislativo, actualizado a diario. Por @profealvarock.">
+<meta property="og:title" content="Observatorio Ciudadano de Panamá · Centro de consulta ciudadana">
+<meta property="og:description" content="Asamblea Nacional, percepción del Gobierno, costo de la vida, sismo y minería: datos públicos con fuente y fecha. Por @profealvarock.">
 <meta property="og:image" content="https://observatoriolegistalivopa.netlify.app/img/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Observatorio Legislativo — Asamblea Nacional de Panamá">
+<meta property="og:image:alt" content="Observatorio Ciudadano de Panamá">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@profealvarock">
-<title>Asamblea Nacional · Observatorio Legislativo</title>
+<title>Observatorio Ciudadano de Panamá · Centro de consulta ciudadana</title>
 <script>
 // Aplica el tema antes de pintar la página (evita el parpadeo). Preferencia guardada > sistema.
 (function(){
@@ -45,18 +45,19 @@
 
 <header>
   <div class="logo-area">
-    <a class="logo-icon" href="#" title="Inicio del Observatorio Legislativo">
-      <img src="img/logo.svg" alt="Observatorio Legislativo" width="52" height="52">
+    <a class="logo-icon" href="#" title="Inicio del Observatorio Ciudadano">
+      <img src="img/logo.svg" alt="Observatorio Ciudadano de Panamá" width="52" height="52">
     </a>
     <div>
-      <h1>Asamblea Nacional<br><span>Observatorio Legislativo</span></h1>
+      <h1>Observatorio Ciudadano<br><span>de Panamá</span></h1>
+      <p class="site-tagline">Centro de consulta ciudadana: Asamblea, Gobierno y vida diaria</p>
     </div>
   </div>
   <div class="header-right">
     <div class="header-meta">
       República de Panamá<br>
-      Actualizado: <span id="last-update">cargando…</span><br>
-      <span style="font-size:.65em">sistemas.asamblea.gob.pa</span>
+      Asamblea actualizada: <span id="last-update">cargando…</span><br>
+      <span style="font-size:.65em">Datos públicos · cada cifra con su fuente</span>
     </div>
     <button type="button" class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema" title="Cambiar entre modo claro y oscuro">
       <span class="tt-sun" aria-hidden="true">☀️</span><span class="tt-moon" aria-hidden="true">🌙</span>
@@ -64,48 +65,68 @@
   </div>
 </header>
 
-<div class="data-banner" id="data-banner" role="status" hidden></div>
+<!-- MENÚ: grupos temáticos y, debajo, las secciones del grupo elegido (js/navegacion.js) -->
+<nav class="menu" aria-label="Secciones del observatorio">
+  <div class="menu-grupos">
+    <button type="button" class="menu-grupo active" data-grupo="inicio" aria-current="true"><span aria-hidden="true">🏠</span> Inicio</button>
+    <button type="button" class="menu-grupo" data-grupo="percepcion"><span aria-hidden="true">⭐</span> Percepción</button>
+    <button type="button" class="menu-grupo" data-grupo="intereses"><span aria-hidden="true">🏘️</span> Intereses ciudadanos</button>
+    <button type="button" class="menu-grupo" data-grupo="asamblea"><span aria-hidden="true">🏛️</span> Asamblea Nacional</button>
+    <button type="button" class="menu-grupo" data-grupo="metodologia"><span aria-hidden="true">📘</span> Metodología</button>
+  </div>
+  <div class="menu-secciones" id="menu-secciones" hidden>
+    <p class="menu-grupo-desc" id="menu-grupo-desc"></p>
+    <div class="tabs-wrap">
+    <div class="tabs" role="tablist" aria-label="Secciones del grupo">
+      <button class="tab active" data-tab="inicio" hidden>🏠 Inicio</button>
+      <button class="tab" data-tab="aprobacion" hidden>⭐ Aprobación y confianza</button>
+      <button class="tab" data-tab="costo-vida" hidden>🛒 Costo de vida</button>
+      <button class="tab" data-tab="sismo" hidden>🌎 Sismo</button>
+      <button class="tab" data-tab="mineria" hidden>⛏️ Minería</button>
+      <button class="tab" data-tab="general" hidden>📊 Resumen</button>
+      <button class="tab" data-tab="novedades" hidden>🆕 Novedades</button>
+      <button class="tab" data-tab="diputados" hidden>👤 Diputados</button>
+      <button class="tab" data-tab="proyectos" hidden>📄 Proyectos</button>
+      <button class="tab" data-tab="votaciones" hidden>🗳 Votaciones</button>
+      <button class="tab" data-tab="monitoreo" hidden>📋 Monitoreo</button>
+      <button class="tab" data-tab="partidos" hidden>🏛 Partidos</button>
+      <button class="tab" data-tab="proponentes" hidden>🏢 Otros proponentes</button>
+      <button class="tab" data-tab="costos" hidden>💰 Costo Legislativo</button>
+      <button class="tab" data-tab="metodologia" hidden>📘 Metodología</button>
+    </div>
+    </div>
+  </div>
+</nav>
 
-<div class="kpi-totals" id="kpi-totals">
-  <div class="loader" style="grid-column:1/-1"><div class="spinner"></div> Cargando…</div>
-</div>
-<div class="kpi-breakdown-hdr" id="kpi-breakdown-hdr" style="display:none">
-  <span class="kpi-breakdown-hdr-label">Desglose por estado del proyecto</span>
-  <div class="kpi-breakdown-hdr-line"></div>
-  <span class="kpi-breakdown-hdr-sum" id="kpi-breakdown-sum"></span>
-</div>
-<div class="kpi-grid" id="kpi-grid"></div>
+<!-- Aviso y buscador de la Asamblea: solo se muestran en ese grupo y en Inicio (css: body[data-grupo]) -->
+<div class="data-banner" id="data-banner" role="status" hidden></div>
 
 <!-- GLOBAL SEARCH -->
 <div class="gs-wrap" id="gs-wrap">
   <div class="gs-inner" onclick="document.getElementById('global-search').focus()">
     <span class="gs-icon">🔍</span>
-    <input type="text" id="global-search" class="gs-input" placeholder="Buscar diputado, partido o proponente…" autocomplete="off" oninput="gsInput(this.value)">
+    <input type="text" id="global-search" class="gs-input" placeholder="Buscar en la Asamblea: diputado, partido o proponente…" autocomplete="off" oninput="gsInput(this.value)" aria-label="Buscar diputado, partido o proponente de la Asamblea">
     <span class="gs-kbd">Esc</span>
   </div>
   <div class="gs-dropdown" id="gs-dropdown"></div>
 </div>
 
-<div class="tabs-wrap">
-<div class="tabs" role="tablist" aria-label="Secciones del observatorio">
-  <button class="tab active" onclick="showTab('general')">📊 General</button>
-  <button class="tab" onclick="showTab('novedades')">🆕 Novedades</button>
-  <button class="tab" onclick="showTab('diputados')">👤 Diputados</button>
-  <button class="tab" onclick="showTab('proyectos')">📄 Proyectos</button>
-  <button class="tab" onclick="showTab('votaciones')">🗳 Votaciones</button>
-  <button class="tab" onclick="showTab('monitoreo')">📋 Monitoreo</button>
-  <button class="tab" onclick="showTab('partidos')">🏛 Partidos</button>
-  <button class="tab" onclick="showTab('proponentes')">🏢 Otros proponentes</button>
-  <button class="tab" onclick="showTab('costos')">💰 Costo Legislativo</button>
-  <button class="tab" onclick="showTab('aprobacion')">⭐ Aprobación</button>
-  <button class="tab" onclick="showTab('sismo')">🌎 Sismo</button>
-  <button class="tab" onclick="showTab('costo-vida')">🛒 Costo de vida</button>
-  <button class="tab" onclick="showTab('metodologia')">📘 Metodología</button>
-</div>
+<!-- TAB INICIO · centro de consulta (js/portada.js) -->
+<div id="tab-inicio" class="tab-content active">
+  <div id="portada-root"><div class="loader"><div class="spinner"></div> Cargando…</div></div>
 </div>
 
-<!-- TAB GENERAL -->
-<div id="tab-general" class="tab-content active">
+<!-- TAB GENERAL (Asamblea · Resumen) -->
+<div id="tab-general" class="tab-content">
+  <div class="kpi-totals" id="kpi-totals">
+    <div class="loader" style="grid-column:1/-1"><div class="spinner"></div> Cargando…</div>
+  </div>
+  <div class="kpi-breakdown-hdr" id="kpi-breakdown-hdr" style="display:none">
+    <span class="kpi-breakdown-hdr-label">Desglose por estado del proyecto</span>
+    <div class="kpi-breakdown-hdr-line"></div>
+    <span class="kpi-breakdown-hdr-sum" id="kpi-breakdown-sum"></span>
+  </div>
+  <div class="kpi-grid" id="kpi-grid"></div>
   <div class="grid2">
     <div class="card wide">
       <div class="card-title">Actividad legislativa por mes</div>
@@ -751,11 +772,16 @@
   <div id="cv-root"><div class="loader"><div class="spinner"></div> Cargando indicadores…</div></div>
 </div>
 
+<!-- TAB MINERÍA · datos en data/mineria.json; proyectos y votaciones de la Asamblea en vivo (js/mineria.js) -->
+<div id="tab-mineria" class="tab-content">
+  <div id="min-root"><div class="loader"><div class="spinner"></div> Cargando datos de minería…</div></div>
+</div>
+
 <!-- TAB METODOLOGÍA -->
 <div id="tab-metodologia" class="tab-content">
   <div class="met-intro">
     <h2>Cómo se construyen estos datos</h2>
-    <p>Este observatorio reúne datos públicos y los cruza para responder preguntas simples: quién propone qué, cuánto avanza y cuánto cuesta. Aquí se explica de dónde sale cada número, qué decisiones se tomaron al calcularlo y qué limitaciones tiene. Si encuentras un error, escríbeme por cualquiera de las redes al pie de la página.</p>
+    <p>El Observatorio Ciudadano de Panamá es un centro de consulta con datos públicos, organizado en tres grupos: <strong>Percepción</strong> (cómo se evalúa al Gobierno y a las instituciones), <strong>Intereses ciudadanos</strong> (costo de la vida, el sismo de 2026 y la minería) y <strong>Asamblea Nacional</strong> (quién propone qué, cuánto avanza, cómo se vota y cuánto cuesta). Aquí se explica de dónde sale cada número, qué decisiones se tomaron al calcularlo y qué limitaciones tiene. Si encuentras un error, escríbeme por cualquiera de las redes al pie de la página.</p>
     <div class="met-estado" id="met-estado"></div>
   </div>
 
@@ -872,8 +898,8 @@
     </section>
 
     <section class="met-card met-ancha" id="met-indicadores">
-      <h3>11. Aprobación, Sismo y Costo de vida: reglas comunes</h3>
-      <p>Estas tres pestañas no salen de la Asamblea: reúnen indicadores públicos de contexto. Cada una lee su propio archivo (<a href="data/aprobacion.json" target="_blank" rel="noopener">data/aprobacion.json</a>, <a href="data/sismo.json" target="_blank" rel="noopener">data/sismo.json</a> y <a href="data/costo_vida.json" target="_blank" rel="noopener">data/costo_vida.json</a>) y <strong>toda cifra lleva su fuente, su fecha de corte y su enlace</strong>. Si un dato no existe o no tiene una fuente verificada, se muestra "s/d" o "pendiente": nunca se estima ni se completa a mano.</p>
+      <h3>11. Percepción e Intereses ciudadanos: reglas comunes</h3>
+      <p>Estas secciones no salen de la Asamblea: reúnen indicadores públicos de contexto. Cada una lee su propio archivo (<a href="data/aprobacion.json" target="_blank" rel="noopener">data/aprobacion.json</a>, <a href="data/costo_vida.json" target="_blank" rel="noopener">data/costo_vida.json</a>, <a href="data/sismo.json" target="_blank" rel="noopener">data/sismo.json</a> y <a href="data/mineria.json" target="_blank" rel="noopener">data/mineria.json</a>) y <strong>toda cifra lleva su fuente, su fecha de corte y su enlace</strong>. Si un dato no existe o no tiene una fuente verificada, se muestra "s/d" o "pendiente": nunca se estima ni se completa a mano.</p>
       <dl>
         <dt>Actualización</dt><dd>Un proceso automático corre <strong>cada lunes a las 6:00 a. m. (hora de Panamá)</strong>. Tiene un módulo por fuente; cada dato se valida (que sea un número, que esté en un rango razonable —por ejemplo, combustible entre 2 y 10 dólares por galón— y que su fecha de corte no sea futura). Si una fuente no responde o cambia su formato, se conserva el valor anterior y el problema queda anotado en "avisos de la última actualización", visible en cada pestaña.</dd>
         <dt>Frescura</dt><dd>Junto a cada fecha de corte hay un indicador de color según los días transcurridos: <span class="fresh fresh-verde"><span class="fresh-dot"></span>7 días o menos</span> <span class="fresh fresh-ambar"><span class="fresh-dot"></span>de 8 a 30 días</span> <span class="fresh fresh-rojo"><span class="fresh-dot"></span>más de 30 días</span>. El encabezado usa la fecha más reciente de la pestaña; una tarjeta muestra su propio indicador cuando su fecha es distinta. Que una cifra esté en rojo no significa que esté mal: puede ser que la fuente publique con poca frecuencia (las encuestas son trimestrales y la canasta básica sale con dos meses de rezago).</dd>
@@ -914,6 +940,17 @@
         <dt>Calculadora</dt><dd>Gasto mensual = galones por semana × 52 ÷ 12 × precio vigente, comparado con el precio de hace 3 quincenas. Se calcula en tu navegador; no se guarda nada.</dd>
       </dl>
     </section>
+
+    <section class="met-card met-ancha">
+      <h3>15. ⛏️ Minería</h3>
+      <dl>
+        <dt>Mina Cobre Panamá</dt><dd>Estado de la mina, auditoría, arbitrajes y negociación según comunicados oficiales y prensa nacional e internacional, con el enlace de cada nota. El informe completo de la auditoría integral (SGS) no está publicado: su porcentaje de cumplimiento (87.73 % de 370 compromisos) se toma de la prensa y se marca con calidad media.</dd>
+        <dt>Opinión pública</dt><dd>Se muestran por separado las encuestas de <strong>Vea Panamá</strong>, <strong>CID Gallup</strong> y <strong>Doxa</strong>. No se promedian ni se comparan como una serie: cada una hace una pregunta distinta (por ejemplo, "reabrir bajo mejores términos" frente a "reabrir con transparencia y beneficios"), y eso explica buena parte de sus diferencias. La pregunta exacta acompaña a cada barra.</dd>
+        <dt>Economía y concesiones</dt><dd>Exportaciones de concentrado de cobre del informe anual del MICI (INTELCOM), con datos del INEC. Las concesiones metálicas nuevas están prohibidas por la <strong>Ley 407 de 2023</strong> (moratoria indefinida, confirmada por la Corte en 2025). El número de concesiones no metálicas vigentes queda <strong>pendiente</strong>: el MICI no publica un listado consultable.</dd>
+        <dt>Minería en la Asamblea</dt><dd>Se calcula en tu navegador con los mismos datos de la sección Asamblea: proyectos de ley y votaciones del pleno de la legislatura actual cuyo título menciona minería, minera, recursos minerales o cobre. Se actualiza cada día con el scraper de la Asamblea, sin intervención manual.</dd>
+        <dt>Noticias</dt><dd>Cada lunes el proceso guarda los titulares sobre minería de los RSS de TVN y Panamá América, con su fecha y enlace. No se interpretan cifras de esas notas: si una parece una encuesta nueva, queda como aviso para revisarla a mano antes de cargarla.</dd>
+      </dl>
+    </section>
   </div>
 </div>
 
@@ -925,7 +962,7 @@
   <div class="autoria-info">
     <div class="autoria-lbl">Autoría</div>
     <div class="autoria-name" id="autoria-titulo"><a href="https://profealvarock.vercel.app/" target="_blank" rel="noopener me">Creado por <span>@profealvarock</span></a></div>
-    <div class="autoria-desc">Observatorio ciudadano e independiente con datos públicos de la Asamblea Nacional y Espacio Cívico. Conoce más proyectos en mi <a href="https://profealvarock.vercel.app/" target="_blank" rel="noopener me" style="color:var(--acc)">portafolio</a> y sígueme para novedades y análisis.</div>
+    <div class="autoria-desc">Observatorio ciudadano e independiente: datos públicos de la Asamblea Nacional, del Gobierno y de fuentes oficiales, siempre con su fuente. Conoce más proyectos en mi <a href="https://profealvarock.vercel.app/" target="_blank" rel="noopener me" style="color:var(--acc)">portafolio</a> y sígueme para novedades y análisis.</div>
   </div>
   <nav class="redes" aria-label="Portafolio y redes sociales de profealvarock">
     <a class="red red-portafolio" href="https://profealvarock.vercel.app/" target="_blank" rel="noopener me" aria-label="Portafolio de profealvarock">
@@ -974,7 +1011,7 @@
 </div>
 
 <footer style="padding:20px var(--px);max-width:1400px;margin:0 auto;border-top:1px solid var(--border);font-family:var(--fm);font-size:clamp(.65rem,1.2vw,.72rem);color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-  <span>Observatorio Legislativo · Asamblea Nacional de Panamá · por <a href="https://profealvarock.vercel.app/" target="_blank" rel="noopener" style="color:var(--acc)">@profealvarock</a></span>
+  <span>Observatorio Ciudadano de Panamá · centro de consulta ciudadana · por <a href="https://profealvarock.vercel.app/" target="_blank" rel="noopener" style="color:var(--acc)">@profealvarock</a></span>
   <span>Proyectos: <a href="https://sistemas.asamblea.gob.pa/segLegis/viewsPublico/SeguimientoLegislativo" target="_blank" style="color:var(--acc)">sistemas.asamblea.gob.pa</a> · Diputados: <a href="https://espaciocivico.org/diputados" target="_blank" style="color:var(--acc)">espaciocivico.org</a></span>
 </footer>
 
@@ -996,6 +1033,8 @@
 <script src="js/aprobacion.js"></script>
 <script src="js/sismo.js"></script>
 <script src="js/costo_vida.js"></script>
+<script src="js/mineria.js"></script>
+<script src="js/portada.js"></script>
 <script src="js/inicio.js"></script>
 </body>
 </html>

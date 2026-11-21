@@ -222,46 +222,76 @@ function countUp(el, target, delay=0){
   }, delay);
 }
 
-// ── TABS ──────────────────────────────────────────
-// Mismo orden que los botones de la barra: el índice empareja botón y panel
-const TABS=['general','novedades','diputados','proyectos','votaciones','monitoreo','partidos','proponentes','costos','aprobacion','sismo','costo-vida','metodologia'];
+// ── MENÚ: GRUPOS Y SECCIONES ──────────────────────
+// Centro de consulta ciudadana: cuatro grupos temáticos y, dentro de cada uno, sus secciones.
+// Cada sección conserva su enlace directo (#sismo, #costos…), así que los enlaces viejos siguen sirviendo.
+const GRUPOS=[
+  {id:'inicio',      nombre:'Inicio',               icono:'🏠', tabs:['inicio']},
+  {id:'percepcion',  nombre:'Percepción',           icono:'⭐', tabs:['aprobacion'],
+   desc:'Reputación del Gobierno y de las instituciones públicas'},
+  {id:'intereses',   nombre:'Intereses ciudadanos', icono:'🏘️', tabs:['costo-vida','sismo','mineria'],
+   desc:'Lo que afecta la vida diaria: precios, emergencias y minería'},
+  {id:'asamblea',    nombre:'Asamblea Nacional',    icono:'🏛️', tabs:['general','novedades','diputados','proyectos','votaciones','monitoreo','partidos','proponentes','costos'],
+   desc:'Proyectos de ley, diputados, votaciones y costo legislativo'},
+  {id:'metodologia', nombre:'Metodología',          icono:'📘', tabs:['metodologia']},
+];
+const TABS=GRUPOS.flatMap(g=>g.tabs);
+const grupoDe=t=>GRUPOS.find(g=>g.tabs.includes(t))||GRUPOS[0];
+const ultimaDeGrupo={};   // al volver a un grupo se abre la última sección vista en él
 
-// Pestañas accesibles: roles ARIA y navegación con flechas, Inicio y Fin (patrón WAI-ARIA)
+// Secciones accesibles: roles ARIA y flechas, Inicio y Fin dentro del grupo (patrón WAI-ARIA)
 (function initTabsA11y(){
-  const btns=[...document.querySelectorAll('.tabs .tab')];
-  btns.forEach((b,i)=>{
-    const name=TABS[i], panel=document.getElementById('tab-'+name);
+  document.querySelectorAll('.tabs .tab[data-tab]').forEach(b=>{
+    const name=b.dataset.tab, panel=document.getElementById('tab-'+name);
     b.id='tabbtn-'+name; b.setAttribute('role','tab'); b.setAttribute('aria-controls','tab-'+name);
-    b.setAttribute('aria-selected',b.classList.contains('active')?'true':'false');
-    b.tabIndex=b.classList.contains('active')?0:-1;
+    b.addEventListener('click',()=>showTab(name));
     if(panel){ panel.setAttribute('role','tabpanel'); panel.setAttribute('aria-labelledby','tabbtn-'+name); panel.tabIndex=-1; }
     b.addEventListener('keydown',e=>{
       const k={ArrowRight:1,ArrowLeft:-1,Home:'ini',End:'fin'}[e.key];
       if(k===undefined) return;
       e.preventDefault();
-      const j=k==='ini'?0:k==='fin'?btns.length-1:(i+k+btns.length)%btns.length;
-      showTab(TABS[j]); btns[j].focus();
+      const vis=[...document.querySelectorAll('.tabs .tab[data-tab]:not([hidden])')], i=vis.indexOf(b);
+      const j=k==='ini'?0:k==='fin'?vis.length-1:(i+k+vis.length)%vis.length;
+      showTab(vis[j].dataset.tab); vis[j].focus();
     });
   });
+  document.querySelectorAll('.menu-grupo[data-grupo]').forEach(b=>b.addEventListener('click',()=>{
+    const g=GRUPOS.find(x=>x.id===b.dataset.grupo);
+    showTab(ultimaDeGrupo[g.id]||g.tabs[0]);
+  }));
 })();
 
 function showTab(name){
-  if(!TABS.includes(name)) name='general';
-  document.querySelectorAll('.tab').forEach((t,i)=>{
-    const on=TABS[i]===name;
+  if(!TABS.includes(name)) name='inicio';
+  const g=grupoDe(name);
+  ultimaDeGrupo[g.id]=name;
+  document.body.dataset.grupo=g.id;
+  document.querySelectorAll('.menu-grupo[data-grupo]').forEach(b=>{
+    const on=b.dataset.grupo===g.id;
+    b.classList.toggle('active',on);
+    on ? b.setAttribute('aria-current','true') : b.removeAttribute('aria-current');
+  });
+  // La barra de secciones solo muestra las del grupo; si el grupo tiene una sola sección, se oculta
+  const sec=document.getElementById('menu-secciones');
+  if(sec){ sec.hidden=g.tabs.length<2; const d=document.getElementById('menu-grupo-desc'); if(d) d.textContent=g.desc||''; }
+  document.querySelectorAll('.tabs .tab[data-tab]').forEach(t=>{
+    const on=t.dataset.tab===name;
+    t.hidden=!g.tabs.includes(t.dataset.tab);
     t.classList.toggle('active',on); t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1;
-    // En móvil la barra se desplaza: la pestaña elegida (p. ej. por enlace directo) queda a la vista
+    // En móvil la barra se desplaza: la sección elegida (p. ej. por enlace directo) queda a la vista
     if(on){ const bar=t.parentElement; if(bar && bar.scrollWidth>bar.clientWidth) bar.scrollTo({left:t.offsetLeft-bar.clientWidth/2+t.offsetWidth/2,behavior:'auto'}); }
   });
   document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
-  // La pestaña queda en la URL (#costos, #monitoreo…) para poder compartirla
+  // La sección queda en la URL (#costos, #sismo…) para poder compartirla
   const h=location.hash.slice(1);
-  if(!((name==='diputados'&&/^(diputado|comparar)=/.test(h))||(name==='proyectos'&&/^proyecto=/.test(h))||(name==='votaciones'&&/^votacion(es)?=/.test(h)))) setHash(name==='general'?'':name);
-  // Aprobación, Sismo y Costo de vida leen sus propios JSON (data/): no dependen de resumen.json
+  if(!((name==='diputados'&&/^(diputado|comparar)=/.test(h))||(name==='proyectos'&&/^proyecto=/.test(h))||(name==='votaciones'&&/^votacion(es)?=/.test(h)))) setHash(name==='inicio'?'':name);
+  // Inicio y las secciones de Percepción e Intereses leen sus propios JSON (data/): no dependen de resumen.json
+  if(name==='inicio'){initPortada();}
   if(name==='aprobacion'){initAprobacion();}
   if(name==='sismo'){initSismo();}
   if(name==='costo-vida'){initCostoVida();}
+  if(name==='mineria'){initMineria();}
   if(!D) return;
   if(name==='general'&&!tabInited.general){try{renderGeneral();}catch(e){console.error('General:',e)}tabInited.general=true}
   if(name==='diputados'){try{initTable();}catch(e){console.error('Table:',e)}}

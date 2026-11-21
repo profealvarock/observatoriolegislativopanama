@@ -37,5 +37,6 @@ test('formato de períodos', () => {
   assert.equal(fmtPeriodo('2026-11-13/2026-11-27'), '13 – 27 nov 2026');
   assert.equal(fmtPeriodo('2026-10-30/2026-11-13'), '30 oct – 13 nov 2026');
   assert.equal(fmtPeriodo('2026-06'), 'jun 2026');
+  assert.equal(fmtPeriodo('2026'), '2026');
   assert.equal(fmtPeriodo(null), 's/d');
 });

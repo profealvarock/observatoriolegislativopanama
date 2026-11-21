@@ -46,7 +46,7 @@ function renderAvisoDatos(){
   const el=document.getElementById('data-banner');
   const avisos=[];
   const dias=diasSinActualizar();
-  if(dias>=DIAS_AVISO) avisos.push(`Los datos tienen <strong>${dias} días</strong> sin actualizarse (última extracción: ${esc(fmtFechaCorte())}). Las cifras pueden no reflejar cambios recientes.`);
+  if(dias>=DIAS_AVISO) avisos.push(`Asamblea Nacional: los datos tienen <strong>${dias} días</strong> sin actualizarse (última extracción: ${esc(fmtFechaCorte())}). Las cifras pueden no reflejar cambios recientes.`);
   const resp=(D.respaldos||[]).map(r=>NOMBRES_RESPALDO[r]||r);
   if(resp.length) avisos.push(`En la última actualización no se pudo obtener información nueva de <strong>${esc(resp.join(', '))}</strong>; se muestran los últimos datos disponibles.`);
   el.hidden=!avisos.length;
