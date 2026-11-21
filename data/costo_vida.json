@@ -1,33 +1,250 @@
 {
-  "generado": "2026-11-20T12:00:00Z",
+  "generado": "2026-11-21T01:15:36Z",
   "pestana": "costo_vida",
   "cadencia": "Combustible quincenal · CBFA mensual con rezago · Electricidad semestral · Agua y gas: revisión mensual",
-  "fecha_corte": "2026-10-30",
-  "advertencias": [],
+  "fecha_corte": "2026-11-13",
+  "advertencias": [
+    {
+      "fecha": "2026-11-20",
+      "modulo": "cbfa",
+      "mensaje": "El MEF revisó 2026-07: 367.03 → 368.24 (informe https://www.mef.gob.pa/wp-content/uploads/2026/11/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-AGOSTO-2026.pdf)."
+    },
+    {
+      "fecha": "2026-11-20",
+      "modulo": "electricidad",
+      "mensaje": "Precio por kWh pendiente: requiere calcularlo a mano desde el pliego tarifario de ASEP."
+    },
+    {
+      "fecha": "2026-11-20",
+      "modulo": "agua",
+      "mensaje": "Tarifa de agua pendiente: el pliego de ASEP/IDAAN localizado no tiene fecha de vigencia."
+    },
+    {
+      "fecha": "2026-11-20",
+      "modulo": "gas",
+      "mensaje": "La vigencia del precio del gas de 25 lb terminó el 2026-10-28 (decreto de seis meses, prorrogable): verificar la prórroga con Acodeco."
+    }
+  ],
   "metricas": [
-    { "id": "gasolina_95_gal", "etiqueta": "Gasolina 95", "valor": 5.01, "unidad": "USD/galón", "valor_litro": 1.324, "fecha_corte": "2026-10-30", "periodo": "2026-10-30/2026-11-13", "variacion": -0.37, "fuente": "Secretaría Nacional de Energía (vía La Estrella de Panamá)", "url": "https://www.laestrella.com.pa/panama/informacion-util/baja-la-gasolina-y-sube-el-diesel-estas-son-las-cifras-hasta-el-13-de-noviembre-OO26930835", "calidad": "alta", "cadencia": "Quincenal (viernes 6:00 a. m.)", "notas": "Precio máximo de venta en Panamá y Colón." },
-    { "id": "gasolina_91_gal", "etiqueta": "Gasolina 91", "valor": 4.50, "unidad": "USD/galón", "valor_litro": 1.189, "fecha_corte": "2026-10-30", "periodo": "2026-10-30/2026-11-13", "variacion": -0.34, "fuente": "Secretaría Nacional de Energía (vía La Estrella de Panamá)", "url": "https://www.laestrella.com.pa/panama/informacion-util/baja-la-gasolina-y-sube-el-diesel-estas-son-las-cifras-hasta-el-13-de-noviembre-OO26930835", "calidad": "alta", "cadencia": "Quincenal (viernes 6:00 a. m.)", "notas": "Precio máximo de venta en Panamá y Colón." },
-    { "id": "diesel_gal", "etiqueta": "Diésel bajo azufre", "valor": 5.82, "unidad": "USD/galón", "valor_litro": 1.537, "fecha_corte": "2026-10-30", "periodo": "2026-10-30/2026-11-13", "variacion": 0.08, "fuente": "Secretaría Nacional de Energía (vía La Estrella de Panamá)", "url": "https://www.laestrella.com.pa/panama/informacion-util/baja-la-gasolina-y-sube-el-diesel-estas-son-las-cifras-hasta-el-13-de-noviembre-OO26930835", "calidad": "alta", "cadencia": "Quincenal (viernes 6:00 a. m.)", "notas": "Precio máximo de venta en Panamá y Colón." },
-    { "id": "cbfa", "etiqueta": "Canasta básica (CBFA)", "valor": 366.98, "unidad": "USD/mes", "fecha_corte": "2026-06-30", "periodo": "2026-06", "variacion": -0.02, "fuente": "MEF — Dirección de Análisis Económico y Social", "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf", "calidad": "alta", "cadencia": "Mensual, con rezago", "notas": "Distritos de Panamá y San Miguelito. El MEF publica con unos 2 meses de rezago. La cifra de Acodeco (~$303) usa otra metodología y no se mezcla con esta serie." },
-    { "id": "subsidio_electrico", "etiqueta": "Subsidio eléctrico", "valor": 122, "unidad": "USD millones", "fecha_corte": "2026-09-08", "periodo": "2026-09-01/2026-12-31", "variacion": null, "fuente": "La Prensa; vigencia de los pliegos según el MEF", "url": "https://www.prensa.com/economia/gabinete-aprueba-subsidio-de-tarifa-electrica-por-32-millones/", "url_secundaria": "https://www.mef.gob.pa/2026/09/el-estado-protege-a-usuarios-ante-el-ajuste-de-la-tarifa-electrica/", "calidad": "media", "cadencia": "Semestral", "notas": "Aporte estatal del segundo semestre de 2026 (sep–dic). Los consumos de hasta 300 kWh están protegidos por el Fondo de Estabilización Tarifaria (FET). Pliegos tarifarios ASEP vigentes del 1 sep 2026 al 31 ago 2030." },
-    { "id": "electricidad_kwh", "etiqueta": "Electricidad (residencial)", "valor": null, "unidad": "USD/kWh", "fecha_corte": null, "periodo": "2026-09-01/2030-08-31", "variacion": null, "fuente": "ASEP — pliegos tarifarios (Naturgy / ENSA)", "url": "https://www.mef.gob.pa/2026/09/el-estado-protege-a-usuarios-ante-el-ajuste-de-la-tarifa-electrica/", "calidad": "media", "cadencia": "Semestral", "estado": "pendiente", "notas": "Pendiente: el precio por kWh debe calcularse a partir del pliego tarifario de ASEP (cargos de energía, distribución y comercialización para el bloque residencial) y aún no se ha documentado ese cálculo." },
-    { "id": "agua_idaan", "etiqueta": "Agua (IDAAN)", "valor": null, "unidad": "USD/1,000 galones", "fecha_corte": null, "periodo": null, "variacion": null, "fuente": "IDAAN / ASEP", "url": "https://asep.gob.pa/wp-content/uploads/agua/tarifas/tarifa_1_IDAAN.pdf", "calidad": "baja", "cadencia": "Revisión mensual", "estado": "pendiente", "notas": "Pendiente: el único pliego localizado (ASEP, tarifa_1_IDAAN.pdf) no indica fecha de vigencia, así que no se publica su cifra hasta verificarla." },
-    { "id": "gas_25lb", "etiqueta": "Gas licuado 25 lb", "valor": 4.37, "unidad": "USD/cilindro", "fecha_corte": "2026-09-10", "periodo": "2026-04-28/2026-10-28", "variacion": null, "fuente": "Acodeco — Decreto Ejecutivo N.º 32 del 28 de abril de 2026 (vía Telemetro y Panamá América)", "url": "https://www.telemetro.com/nacionales/tanque-gas-25-libras-estos-son-los-precios-maximos-que-deben-cobrarte-panama-n6091379", "calidad": "media", "cadencia": "Revisión mensual", "notas": "Precio subsidiado al consumidor en Panamá y San Miguelito; varía por localidad. El decreto rige seis meses, prorrogables: revisar si se prorrogó después del 28 de octubre." }
+    {
+      "id": "gasolina_95_gal",
+      "etiqueta": "Gasolina 95",
+      "valor": 4.66,
+      "unidad": "USD/galón",
+      "valor_litro": 1.231,
+      "fecha_corte": "2026-11-13",
+      "periodo": "2026-11-13/2026-11-27",
+      "variacion": -0.35,
+      "fuente": "Secretaría Nacional de Energía (vía prensa)",
+      "url": "https://www.telemetro.com/nacionales/gasolina-y-diesel-bajan-precio-panama-el-viernes-13-noviembre-asi-quedan-los-costos-n6098199",
+      "calidad": "alta",
+      "cadencia": "Quincenal (viernes 6:00 a. m.)",
+      "notas": "Precio máximo de venta en Panamá y Colón."
+    },
+    {
+      "id": "gasolina_91_gal",
+      "etiqueta": "Gasolina 91",
+      "valor": 4.17,
+      "unidad": "USD/galón",
+      "valor_litro": 1.102,
+      "fecha_corte": "2026-11-13",
+      "periodo": "2026-11-13/2026-11-27",
+      "variacion": -0.33,
+      "fuente": "Secretaría Nacional de Energía (vía prensa)",
+      "url": "https://www.telemetro.com/nacionales/gasolina-y-diesel-bajan-precio-panama-el-viernes-13-noviembre-asi-quedan-los-costos-n6098199",
+      "calidad": "alta",
+      "cadencia": "Quincenal (viernes 6:00 a. m.)",
+      "notas": "Precio máximo de venta en Panamá y Colón."
+    },
+    {
+      "id": "diesel_gal",
+      "etiqueta": "Diésel bajo azufre",
+      "valor": 5.43,
+      "unidad": "USD/galón",
+      "valor_litro": 1.434,
+      "fecha_corte": "2026-11-13",
+      "periodo": "2026-11-13/2026-11-27",
+      "variacion": -0.39,
+      "fuente": "Secretaría Nacional de Energía (vía prensa)",
+      "url": "https://www.telemetro.com/nacionales/gasolina-y-diesel-bajan-precio-panama-el-viernes-13-noviembre-asi-quedan-los-costos-n6098199",
+      "calidad": "alta",
+      "cadencia": "Quincenal (viernes 6:00 a. m.)",
+      "notas": "Precio máximo de venta en Panamá y Colón."
+    },
+    {
+      "id": "cbfa",
+      "etiqueta": "Canasta básica (CBFA)",
+      "valor": 369.21,
+      "unidad": "USD/mes",
+      "fecha_corte": "2026-08-31",
+      "periodo": "2026-08",
+      "variacion": 0.97,
+      "fuente": "MEF — Dirección de Análisis Económico y Social",
+      "url": "https://www.mef.gob.pa/wp-content/uploads/2026/11/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-AGOSTO-2026.pdf",
+      "calidad": "alta",
+      "cadencia": "Mensual, con rezago",
+      "notas": "Distritos de Panamá y San Miguelito. El MEF publica con unos 2 meses de rezago. La cifra de Acodeco (~$303) usa otra metodología y no se mezcla con esta serie."
+    },
+    {
+      "id": "subsidio_electrico",
+      "etiqueta": "Subsidio eléctrico",
+      "valor": 122,
+      "unidad": "USD millones",
+      "fecha_corte": "2026-09-08",
+      "periodo": "2026-09-01/2026-12-31",
+      "variacion": null,
+      "fuente": "La Prensa; vigencia de los pliegos según el MEF",
+      "url": "https://www.prensa.com/economia/gabinete-aprueba-subsidio-de-tarifa-electrica-por-32-millones/",
+      "url_secundaria": "https://www.mef.gob.pa/2026/09/el-estado-protege-a-usuarios-ante-el-ajuste-de-la-tarifa-electrica/",
+      "calidad": "media",
+      "cadencia": "Semestral",
+      "notas": "Aporte estatal del segundo semestre de 2026 (sep–dic). Los consumos de hasta 300 kWh están protegidos por el Fondo de Estabilización Tarifaria (FET). Pliegos tarifarios ASEP vigentes del 1 sep 2026 al 31 ago 2030."
+    },
+    {
+      "id": "electricidad_kwh",
+      "etiqueta": "Electricidad (residencial)",
+      "valor": null,
+      "unidad": "USD/kWh",
+      "fecha_corte": null,
+      "periodo": "2026-09-01/2030-08-31",
+      "variacion": null,
+      "fuente": "ASEP — pliegos tarifarios (Naturgy / ENSA)",
+      "url": "https://www.mef.gob.pa/2026/09/el-estado-protege-a-usuarios-ante-el-ajuste-de-la-tarifa-electrica/",
+      "calidad": "media",
+      "cadencia": "Semestral",
+      "estado": "pendiente",
+      "notas": "Pendiente: el precio por kWh debe calcularse a partir del pliego tarifario de ASEP (cargos de energía, distribución y comercialización para el bloque residencial) y aún no se ha documentado ese cálculo."
+    },
+    {
+      "id": "agua_idaan",
+      "etiqueta": "Agua (IDAAN)",
+      "valor": null,
+      "unidad": "USD/1,000 galones",
+      "fecha_corte": null,
+      "periodo": null,
+      "variacion": null,
+      "fuente": "IDAAN / ASEP",
+      "url": "https://asep.gob.pa/wp-content/uploads/agua/tarifas/tarifa_1_IDAAN.pdf",
+      "calidad": "baja",
+      "cadencia": "Revisión mensual",
+      "estado": "pendiente",
+      "notas": "Pendiente: el único pliego localizado (ASEP, tarifa_1_IDAAN.pdf) no indica fecha de vigencia, así que no se publica su cifra hasta verificarla."
+    },
+    {
+      "id": "gas_25lb",
+      "etiqueta": "Gas licuado 25 lb",
+      "valor": 4.37,
+      "unidad": "USD/cilindro",
+      "fecha_corte": "2026-09-10",
+      "periodo": "2026-04-28/2026-10-28",
+      "variacion": null,
+      "fuente": "Acodeco — Decreto Ejecutivo N.º 32 del 28 de abril de 2026 (vía Telemetro y Panamá América)",
+      "url": "https://www.telemetro.com/nacionales/tanque-gas-25-libras-estos-son-los-precios-maximos-que-deben-cobrarte-panama-n6091379",
+      "calidad": "media",
+      "cadencia": "Revisión mensual",
+      "notas": "Precio subsidiado al consumidor en Panamá y San Miguelito; varía por localidad. El decreto rige seis meses, prorrogables: revisar si se prorrogó después del 28 de octubre."
+    }
   ],
   "series": {
     "combustible": [
-      { "periodo": "2026-10-02/2026-10-16", "g95": 5.39, "g91": 4.99, "diesel": 5.72, "fuente": "Secretaría Nacional de Energía", "url": "https://www.energia.gob.pa/comunicado-de-prensa-actualizacion-de-los-precios-de-los-combustibles-del-2-al-16-de-octubre-de-2026/" },
-      { "periodo": "2026-10-16/2026-10-30", "g95": 5.38, "g91": 4.84, "diesel": 5.74, "fuente": "Secretaría Nacional de Energía", "url": "https://www.energia.gob.pa/comunicado-de-prensa-actualizacion-de-los-precios-de-los-combustibles-del-16-al-30-de-octubre-de-2026/" },
-      { "periodo": "2026-10-30/2026-11-13", "g95": 5.01, "g91": 4.50, "diesel": 5.82, "g95_litro": 1.324, "g91_litro": 1.189, "diesel_litro": 1.537, "fuente": "Secretaría Nacional de Energía (vía La Estrella de Panamá)", "url": "https://www.laestrella.com.pa/panama/informacion-util/baja-la-gasolina-y-sube-el-diesel-estas-son-las-cifras-hasta-el-13-de-noviembre-OO26930835" }
+      {
+        "periodo": "2026-10-02/2026-10-16",
+        "g95": 5.39,
+        "g91": 4.99,
+        "diesel": 5.72,
+        "fuente": "Secretaría Nacional de Energía",
+        "url": "https://www.energia.gob.pa/comunicado-de-prensa-actualizacion-de-los-precios-de-los-combustibles-del-2-al-16-de-octubre-de-2026/"
+      },
+      {
+        "periodo": "2026-10-16/2026-10-30",
+        "g95": 5.38,
+        "g91": 4.84,
+        "diesel": 5.74,
+        "fuente": "Secretaría Nacional de Energía",
+        "url": "https://www.energia.gob.pa/comunicado-de-prensa-actualizacion-de-los-precios-de-los-combustibles-del-16-al-30-de-octubre-de-2026/"
+      },
+      {
+        "periodo": "2026-10-30/2026-11-13",
+        "g95": 5.01,
+        "g91": 4.5,
+        "diesel": 5.82,
+        "g95_litro": 1.324,
+        "g91_litro": 1.189,
+        "diesel_litro": 1.537,
+        "fuente": "Secretaría Nacional de Energía (vía La Estrella de Panamá)",
+        "url": "https://www.laestrella.com.pa/panama/informacion-util/baja-la-gasolina-y-sube-el-diesel-estas-son-las-cifras-hasta-el-13-de-noviembre-OO26930835"
+      },
+      {
+        "periodo": "2026-11-13/2026-11-27",
+        "g95": 4.66,
+        "g95_litro": 1.231,
+        "g91": 4.17,
+        "g91_litro": 1.102,
+        "diesel": 5.43,
+        "diesel_litro": 1.434,
+        "fuente": "Secretaría Nacional de Energía (vía prensa)",
+        "url": "https://www.telemetro.com/nacionales/gasolina-y-diesel-bajan-precio-panama-el-viernes-13-noviembre-asi-quedan-los-costos-n6098199",
+        "comunicado": "https://www.energia.gob.pa/comunicado-de-prensa-actualizacion-de-los-precios-de-los-combustibles-del-13-al-27-de-noviembre-de-2026/"
+      }
     ],
     "cbfa": [
-      { "periodo": "2026-01", "valor": 363.52, "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf" },
-      { "periodo": "2026-02", "valor": 363.65, "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf" },
-      { "periodo": "2026-03", "valor": 365.88, "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf" },
-      { "periodo": "2026-04", "valor": 365.28, "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf" },
-      { "periodo": "2026-05", "valor": 367.00, "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf" },
-      { "periodo": "2026-06", "valor": 366.98, "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf" }
+      {
+        "periodo": "2026-01",
+        "valor": 363.52,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf"
+      },
+      {
+        "periodo": "2026-02",
+        "valor": 363.65,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf"
+      },
+      {
+        "periodo": "2026-03",
+        "valor": 365.88,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf"
+      },
+      {
+        "periodo": "2026-04",
+        "valor": 365.28,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf"
+      },
+      {
+        "periodo": "2026-05",
+        "valor": 367.0,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf"
+      },
+      {
+        "periodo": "2026-06",
+        "valor": 366.98,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf"
+      },
+      {
+        "periodo": "2026-07",
+        "valor": 368.24,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/10/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JULIO-2026.pdf",
+        "valor_inicial": 367.03,
+        "revisado_en": "https://www.mef.gob.pa/wp-content/uploads/2026/11/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-AGOSTO-2026.pdf"
+      },
+      {
+        "periodo": "2026-08",
+        "valor": 369.21,
+        "url": "https://www.mef.gob.pa/wp-content/uploads/2026/11/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-AGOSTO-2026.pdf"
+      }
     ],
-    "fotos": []
+    "fotos": [
+      {
+        "periodo": "2026-11-20",
+        "valores": {
+          "gasolina_95_gal": 4.66,
+          "gasolina_91_gal": 4.17,
+          "diesel_gal": 5.43,
+          "cbfa": 369.21,
+          "subsidio_electrico": 122,
+          "electricidad_kwh": null,
+          "agua_idaan": null,
+          "gas_25lb": 4.37
+        }
+      }
+    ]
   }
 }
