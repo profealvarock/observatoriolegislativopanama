@@ -1,26 +1,21 @@
 {
-  "generado": "2026-11-21T01:15:36Z",
+  "generado": "2026-11-23T22:28:53Z",
   "pestana": "costo_vida",
   "cadencia": "Combustible quincenal · CBFA mensual con rezago · Electricidad semestral · Agua y gas: revisión mensual",
   "fecha_corte": "2026-11-13",
   "advertencias": [
     {
-      "fecha": "2026-11-20",
-      "modulo": "cbfa",
-      "mensaje": "El MEF revisó 2026-07: 367.03 → 368.24 (informe https://www.mef.gob.pa/wp-content/uploads/2026/11/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-AGOSTO-2026.pdf)."
-    },
-    {
-      "fecha": "2026-11-20",
+      "fecha": "2026-11-23",
       "modulo": "electricidad",
       "mensaje": "Precio por kWh pendiente: requiere calcularlo a mano desde el pliego tarifario de ASEP."
     },
     {
-      "fecha": "2026-11-20",
+      "fecha": "2026-11-23",
       "modulo": "agua",
       "mensaje": "Tarifa de agua pendiente: el pliego de ASEP/IDAAN localizado no tiene fecha de vigencia."
     },
     {
-      "fecha": "2026-11-20",
+      "fecha": "2026-11-23",
       "modulo": "gas",
       "mensaje": "La vigencia del precio del gas de 25 lb terminó el 2026-10-28 (decreto de seis meses, prorrogable): verificar la prórroga con Acodeco."
     }
@@ -234,6 +229,19 @@
     "fotos": [
       {
         "periodo": "2026-11-20",
+        "valores": {
+          "gasolina_95_gal": 4.66,
+          "gasolina_91_gal": 4.17,
+          "diesel_gal": 5.43,
+          "cbfa": 369.21,
+          "subsidio_electrico": 122,
+          "electricidad_kwh": null,
+          "agua_idaan": null,
+          "gas_25lb": 4.37
+        }
+      },
+      {
+        "periodo": "2026-11-23",
         "valores": {
           "gasolina_95_gal": 4.66,
           "gasolina_91_gal": 4.17,

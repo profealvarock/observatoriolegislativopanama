@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-21T02:43:38Z",
+  "generado": "2026-11-23T22:28:53Z",
   "pestana": "mineria",
   "cadencia": "Noticias: revisión semanal · encuestas: trimestral",
   "fecha_corte": "2026-11-17",
@@ -302,6 +302,12 @@
       }
     ],
     "noticias": [
+      {
+        "periodo": "2026-11-23",
+        "titulo": "Mina de Donoso: Comisión Interministerial informó que Minera Panamá aceptó las condiciones expuestas por el Gobierno",
+        "url": "https://www.tvn-2.com/nacionales/mina-donoso-comision-interministerial-minera-panama_1_2272290.html",
+        "medio": "tvn-2.com"
+      },
       {
         "periodo": "2026-11-20",
         "titulo": "¡Extraían oro de forma ilegal en Donoso! Decomisan equipos utilizados para minería en área protegida",
